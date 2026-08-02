@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les recettes d'Alissia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <div class="monogram">A</div>
+      <div class="header-text">
+        <h1>Les recettes <em>d'Alissia</em></h1>
+        <p>Mon carnet de cuisine personnel · <span class="header-count" id="header-count"></span></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="filter-bar">
+  <div class="container">
+    <div class="filter-inner">
+      <span class="filter-label">Chercher</span>
+      <div class="search-wrap">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="search-input" placeholder="Nom de la recette…">
+      </div>
+      <span class="filter-label">Filtrer par ingrédient</span>
+      <div class="ing-input-wrap">
+        <input type="text" id="ing-input" placeholder="Ex : fraises, thon…">
+        <div class="ing-suggestions" id="ing-suggestions"></div>
+      </div>
+      <div class="ingredient-filter-wrap" id="active-filters"></div>
+      <button class="filter-reset" id="reset-btn">Réinitialiser</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="tabs" id="tabs">
+    <button class="tab-btn active" data-cat="all">Toutes <span class="tab-count" id="count-all">0</span></button>
+    <button class="tab-btn" data-cat="apero">Apéro <span class="tab-count" id="count-apero">0</span></button>
+    <button class="tab-btn" data-cat="entree">Entrée <span class="tab-count" id="count-entree">0</span></button>
+    <button class="tab-btn" data-cat="plat">Plat <span class="tab-count" id="count-plat">0</span></button>
+    <button class="tab-btn" data-cat="dessert">Dessert <span class="tab-count" id="count-dessert">0</span></button>
+    <button class="tab-btn" data-cat="boisson">Boisson <span class="tab-count" id="count-boisson">0</span></button>
+    <button class="tab-btn" data-cat="sauce">Sauce <span class="tab-count" id="count-sauce">0</span></button>
+    <button class="tab-btn" data-cat="base-culinaire">Base culinaire <span class="tab-count" id="count-base-culinaire">0</span></button>
+  </div>
+
+  <div class="section visible" id="section-all">
+    <div class="results-info" id="info-all"></div>
+    <div class="grid" id="grid-all"></div>
+    <div class="no-section" id="empty-all">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-apero">
+    <div class="results-info" id="info-apero"></div>
+    <div class="grid" id="grid-apero"></div>
+    <div class="no-section" id="empty-apero">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-entree">
+    <div class="results-info" id="info-entree"></div>
+    <div class="grid" id="grid-entree"></div>
+    <div class="no-section" id="empty-entree">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-plat">
+    <div class="results-info" id="info-plat"></div>
+    <div class="grid" id="grid-plat"></div>
+    <div class="no-section" id="empty-plat">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-dessert">
+    <div class="results-info" id="info-dessert"></div>
+    <div class="grid" id="grid-dessert"></div>
+    <div class="no-section" id="empty-dessert">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-boisson">
+    <div class="results-info" id="info-boisson"></div>
+    <div class="grid" id="grid-boisson"></div>
+    <div class="no-section" id="empty-boisson">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-sauce">
+    <div class="results-info" id="info-sauce"></div>
+    <div class="grid" id="grid-sauce"></div>
+    <div class="no-section" id="empty-sauce">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-base-culinaire">
+    <div class="results-info" id="info-base-culinaire"></div>
+    <div class="grid" id="grid-base-culinaire"></div>
+    <div class="no-section" id="empty-base-culinaire">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <!-- Photo zone -->
+      <div class="modal-photo-wrap" id="modal-photo-wrap">
+        <img id="modal-photo" src="" alt="" style="display:none;">
+        <div class="modal-photo-placeholder" id="modal-photo-placeholder">
+          <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" opacity="0.35"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+      </div>
+      <div class="modal-header-info">
+        <div class="modal-cat" id="modal-cat"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-meta" id="modal-meta"></div>
+        <!-- Variant selector (only shown for recipes with several versions) -->
+        <div class="variant-tabs" id="variant-tabs"></div>
+        <!-- Serving adjuster -->
+        <div class="serving-adjuster" id="serving-adjuster">
+          <span class="serving-label">Adapter pour</span>
+          <button class="serving-btn" id="serving-minus" aria-label="Moins de personnes">−</button>
+          <span class="serving-count" id="serving-count">4</span>
+          <span class="serving-unit">pers.</span>
+          <button class="serving-btn" id="serving-plus" aria-label="Plus de personnes">+</button>
+        </div>
+      </div>
+      <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+    </div>
+    <div class="modal-body">
+      <div>
+        <div class="modal-section-title">Ingrédients</div>
+        <ul class="ing-list" id="modal-ings"></ul>
+      </div>
+      <div>
+        <div class="modal-section-title">Préparation</div>
+        <ol class="steps-list" id="modal-steps"></ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>@Alissia </p>
+  </div>
+</footer>
+
+<script src="recettes-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
