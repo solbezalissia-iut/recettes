@@ -253,6 +253,7 @@ document.getElementById('serving-plus').addEventListener('click', () => {
 });
 
 document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('modal-back').addEventListener('click', closeModal);
 document.getElementById('modal-overlay').addEventListener('click', e => {
   if (e.target === document.getElementById('modal-overlay')) closeModal();
 });

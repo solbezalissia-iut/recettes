@@ -384,6 +384,23 @@ header p {
 }
 .serving-unit { font-size: 0.78rem; color: rgba(250,247,242,0.5); }
 
+.modal-back {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: var(--cream);
+  padding: 0.4rem 0.85rem;
+  border-radius: 99px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+}
+.modal-back:hover { background: rgba(255,255,255,0.2); }
+
 .modal-close {
   position: absolute;
   top: 1.25rem;

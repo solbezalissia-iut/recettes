@@ -958,6 +958,87 @@ const recettes = [
     ]
   },
   {
+    "titre": "Beignets fourrés au Nutella",
+    "photo": "photos/enattente.png",
+    "temps": "90 min (+ pousse)",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "300 g de farine",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "30 g de sucre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "7 g de levure boulangère sèche",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure boulangère sèche"
+      },
+      {
+        "texte": "150 ml de lait tiède",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "30 g de beurre mou",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "200 g de Nutella",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "Nutella"
+      },
+      {
+        "texte": "huile de friture",
+        "valeur": 1,
+        "unite": null,
+        "reste": "huile de friture"
+      },
+      {
+        "texte": "sucre pour enrober",
+        "valeur": 1,
+        "unite": null,
+        "reste": "sucre pour enrober"
+      }
+    ],
+    "etapes": [
+      "Dans un bol, délayer la levure dans le lait tiède avec une pincée de sucre, laisser reposer 10 minutes.",
+      "Dans un saladier, mélanger la farine, le sucre et le sel. Ajouter l'œuf et le mélange lait-levure, pétrir jusqu'à obtenir une pâte homogène.",
+      "Incorporer le beurre mou et pétrir 5 à 8 minutes, jusqu'à ce que la pâte soit lisse et élastique.",
+      "Couvrir et laisser lever 1 heure dans un endroit chaud, jusqu'à ce que la pâte double de volume.",
+      "Dégazer la pâte, l'étaler sur 1 cm d'épaisseur et découper des cercles à l'aide d'un emporte-pièce.",
+      "Déposer une petite cuillère de Nutella congelé (préalablement formé en petites boules et congelé 30 minutes) au centre de la moitié des cercles.",
+      "Humidifier les bords à l'eau, recouvrir avec un second cercle de pâte et souder fermement les bords.",
+      "Laisser lever à nouveau 30 minutes sur une plaque farinée, recouverts d'un torchon.",
+      "Chauffer l'huile à 170°C et faire frire les beignets 2 à 3 minutes de chaque côté, jusqu'à coloration dorée.",
+      "Égoutter sur du papier absorbant et rouler immédiatement dans le sucre."
+    ]
+  },
+  {
     "titre": "Beignets frits sucrés au miel et sucre glace",
     "photo": "photos/enattente.png",
     "temps": "120 min",
@@ -1491,6 +1572,81 @@ const recettes = [
       "Laisser prendre le nappage à température ambiante ou au réfrigérateur quelques minutes avant de découper.",
       "Découper le gâteau en carrés d'environ 4 par 4 cm pour obtenir environ une trentaine de carrés.",
       "Conserver au réfrigérateur dans une boîte hermétique jusqu'au service pour garder le caramel et le chocolat fermes."
+    ]
+  },
+  {
+    "titre": "Biscuits façon BN au Nutella",
+    "photo": "photos/enattente.png",
+    "temps": "45 min (+ repos)",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "120 g de beurre",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "70 g de sucre",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "30 g de sucre glace",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "5 g de levure chimique",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "50 g de maïzena",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "30 g de lait",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 c. à café de vanille liquide",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "vanille liquide"
+      },
+      {
+        "texte": "Nutella pour la garniture",
+        "valeur": 1,
+        "unite": null,
+        "reste": "Nutella pour la garniture"
+      }
+    ],
+    "etapes": [
+      "Dans un bol, mélanger la farine, la maïzena et la levure chimique.",
+      "Faire fondre le beurre, puis le mélanger avec le sucre glace jusqu'à obtenir un mélange homogène.",
+      "Verser ce mélange dans le bol contenant les poudres et mélanger jusqu'à obtenir une pâte.",
+      "Ajouter le lait et la vanille liquide, mélanger jusqu'à obtenir une pâte lisse et homogène.",
+      "Envelopper la pâte dans du film plastique et réfrigérer 1 heure.",
+      "Étaler la pâte sur 3 mm d'épaisseur sur une feuille de cuisson.",
+      "Découper les biscuits à l'aide d'un emporte-pièce ovale, puis découper des petits yeux et une bouche avec la pointe d'un couteau sur la moitié des biscuits, pour l'effet 'visage' façon BN.",
+      "Badigeonner les biscuits de lait au pinceau et piquer légèrement la pâte avec un pic en bois.",
+      "Enfourner à 200°C pendant 13 minutes.",
+      "Étaler du Nutella sur la partie pleine de chaque biscuit et refermer avec la face 'visage' pour former le sandwich."
     ]
   },
   {
@@ -2061,6 +2217,135 @@ const recettes = [
           "Retirer le cure-dent, ajouter un peu de pâte de Lotus fondue et parsemer de miettes de biscuits Lotus."
         ]
       }
+    ]
+  },
+  {
+    "titre": "Boulettes de bœuf sauce champignons à la crème",
+    "photo": "photos/enattente.png",
+    "temps": "45 min",
+    "personnes": "4",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "500 g de viande hachée de bœuf",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "viande hachée de bœuf"
+      },
+      {
+        "texte": "60 g de chapelure",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "chapelure"
+      },
+      {
+        "texte": "0,5 c. à soupe d'ail en poudre",
+        "valeur": 0.5,
+        "unite": "c. à soupe",
+        "reste": "ail en poudre"
+      },
+      {
+        "texte": "0,5 c. à soupe d'oignon en poudre",
+        "valeur": 0.5,
+        "unite": "c. à soupe",
+        "reste": "oignon en poudre"
+      },
+      {
+        "texte": "0,5 c. à soupe de paprika",
+        "valeur": 0.5,
+        "unite": "c. à soupe",
+        "reste": "paprika"
+      },
+      {
+        "texte": "0,5 c. à soupe de paprika fumé",
+        "valeur": 0.5,
+        "unite": "c. à soupe",
+        "reste": "paprika fumé"
+      },
+      {
+        "texte": "2 gousses d'ail, hachées",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail, hachées"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "sel et poivre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "sel et poivre"
+      },
+      {
+        "texte": "2 échalotes, émincées",
+        "valeur": 2,
+        "unite": null,
+        "reste": "échalotes, émincées"
+      },
+      {
+        "texte": "3 c. à soupe de beurre",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "beurre"
+      },
+      {
+        "texte": "250 g de champignons, en tranches",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "champignons, en tranches"
+      },
+      {
+        "texte": "2 c. à soupe de farine",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 cube de bouillon de bœuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "cube de bouillon de bœuf"
+      },
+      {
+        "texte": "375 ml de bouillon de bœuf",
+        "valeur": 375,
+        "unite": "ml",
+        "reste": "bouillon de bœuf"
+      },
+      {
+        "texte": "250 ml de crème liquide entière",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "crème liquide entière"
+      },
+      {
+        "texte": "1 c. à soupe de moutarde",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "moutarde"
+      },
+      {
+        "texte": "1 c. à soupe de persil frais haché",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "persil frais haché"
+      }
+    ],
+    "etapes": [
+      "Dans un bol, mélanger la viande hachée avec la chapelure, l'ail en poudre, l'oignon en poudre, le paprika, le paprika fumé, l'ail haché, l'œuf, le sel et le poivre.",
+      "Former des boulettes régulières avec le mélange.",
+      "Faire cuire les boulettes dans une poêle à feu moyen avec un peu de beurre, jusqu'à ce qu'elles soient bien dorées sur toutes les faces.",
+      "Retirer les boulettes de la poêle et réserver au chaud.",
+      "Dans la même poêle, faire revenir les échalotes émincées avec un peu de beurre jusqu'à ce qu'elles soient translucides, en ajoutant un peu d'eau pour déglacer les sucs de cuisson.",
+      "Ajouter les champignons et laisser revenir jusqu'à ce qu'ils soient bien dorés.",
+      "Saupoudrer de farine, bien mélanger, puis verser le bouillon de bœuf (avec le cube dilué dedans) petit à petit en remuant.",
+      "Ajouter la crème, la moutarde et le persil, mélanger et laisser mijoter jusqu'à ce que la sauce épaississe légèrement.",
+      "Remettre les boulettes dans la sauce et laisser mijoter encore 10 minutes à couvert, jusqu'à ce qu'elles soient bien cuites à cœur.",
+      "Servir chaud, avec des pâtes, du riz ou une purée."
     ]
   },
   {
@@ -2759,6 +3044,61 @@ const recettes = [
     ]
   },
   {
+    "titre": "Brookies chocolat classiques",
+    "photo": "photos/enattente.png",
+    "temps": "40 min",
+    "personnes": "6",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "150 g de farine",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "200 g de sucre",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de beurre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "150 g de chocolat noir",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de pépites de chocolat",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pépites de chocolat"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180°C et chemiser un moule carré de papier cuisson.",
+      "Faire fondre le beurre et le chocolat noir ensemble au bain-marie ou au micro-ondes.",
+      "Ajouter le sucre au mélange fondu et bien mélanger.",
+      "Incorporer les œufs un à un, puis ajouter la farine et mélanger jusqu'à obtenir une pâte homogène.",
+      "Ajouter les pépites de chocolat et mélanger délicatement.",
+      "Verser la préparation dans le moule et lisser la surface.",
+      "Enfourner 22 à 25 minutes : le centre doit rester légèrement fondant, façon brownie-cookie.",
+      "Laisser refroidir au moins 15 minutes dans le moule avant de découper en carrés."
+    ]
+  },
+  {
     "titre": "Brownies fondants au chocolat noir",
     "photo": "photos/enattente.png",
     "temps": "25 min",
@@ -2862,21 +3202,21 @@ const recettes = [
   {
     "titre": "Bûche caramel beurre salé et spéculoos",
     "photo": "photos/enattente.png",
-    "temps": "10-12 h",
+    "temps": "12 h (dont 7h de congélation cumulée)",
     "personnes": "8-10",
     "cat": "dessert",
     "ingredients": [
       {
-        "texte": "400 ml de crème liquide entière bien froide",
+        "texte": "400 ml de crème liquide entière bien froide (ganache)",
         "valeur": 400,
         "unite": "ml",
-        "reste": "crème liquide entière bien froide"
+        "reste": "crème liquide entière bien froide (ganache)"
       },
       {
-        "texte": "200 ml de crème liquide entière",
+        "texte": "200 ml de crème liquide entière (ganache, chaude)",
         "valeur": 200,
         "unite": "ml",
-        "reste": "crème liquide entière"
+        "reste": "crème liquide entière (ganache, chaude)"
       },
       {
         "texte": "200 g de chocolat blanc",
@@ -2897,10 +3237,10 @@ const recettes = [
         "reste": "spéculoos"
       },
       {
-        "texte": "60 g de beurre maison doux",
+        "texte": "60 g de beurre doux fondu",
         "valeur": 60,
         "unite": "g",
-        "reste": "beurre maison doux"
+        "reste": "beurre doux fondu"
       },
       {
         "texte": "4 œufs",
@@ -2921,10 +3261,10 @@ const recettes = [
         "reste": "farine"
       },
       {
-        "texte": "1 sachet sucre vanillé (optionnel)",
+        "texte": "1 sachet sucre vanillé, facultatif",
         "valeur": 1,
         "unite": null,
-        "reste": "sachet sucre vanillé (optionnel)"
+        "reste": "sachet sucre vanillé, facultatif"
       },
       {
         "texte": "150 g de sucre (caramel)",
@@ -2933,49 +3273,57 @@ const recettes = [
         "reste": "sucre (caramel)"
       },
       {
-        "texte": "80 g de beurre maison demi-sel",
+        "texte": "80 g de beurre demi-sel",
         "valeur": 80,
         "unite": "g",
-        "reste": "beurre maison demi-sel"
+        "reste": "beurre demi-sel"
       },
       {
-        "texte": "20 cl de crème liquide entière (caramel)",
+        "texte": "20 cl de crème liquide entière chaude (caramel)",
         "valeur": 20,
         "unite": "cl",
-        "reste": "crème liquide entière (caramel)"
+        "reste": "crème liquide entière chaude (caramel)"
       },
       {
-        "texte": "2 g de gélatine",
-        "valeur": 2,
+        "texte": "4 g de gélatine en feuilles (insert caramel, quantité augmentée pour une tenue fiable)",
+        "valeur": 4,
         "unite": "g",
-        "reste": "gélatine"
+        "reste": "gélatine en feuilles (insert caramel, quantité augmentée pour une tenue fiable)"
       },
       {
         "texte": "1 bombe spray velours blanc",
         "valeur": 1,
         "unite": null,
         "reste": "bombe spray velours blanc"
-      },
-      {
-        "texte": "0,5 sachet levure chimique",
-        "valeur": 0.5,
-        "unite": null,
-        "reste": "sachet levure chimique"
       }
     ],
     "etapes": [
-      "Ganache montée vanille (J-1) : chauffer 100 ml de crème avec la vanille (graines + gousse). Verser sur le chocolat blanc haché et mélanger. Ajouter 200 ml de crème froide, mélanger. Filmer au contact et réserver au frais minimum 4 h (idéalement une nuit). Monter au batteur juste avant le montage.",
-      "Caramel beurre salé (insert) : faire fondre le sucre à sec jusqu'à obtenir un caramel ambré. Hors du feu, ajouter le beurre en morceaux. Incorporer la crème chaude petit à petit. Ajouter la gélatine préalablement hydratée. Mélanger et laisser refroidir à température ambiante. Couler dans un moule à insert et congeler au moins 3 h (idéalement une nuit).",
-      "Génoise : préchauffer le four à 180°C. Mélanger farine et levure. Séparer les œufs. Monter les blancs en neige avec le sucre et le sel. Ajouter les jaunes, puis incorporer farine et levure. Verser dans un moule beurré et enfourner 20 min.",
-      "Croustillant spéculoos : réduire les spéculoos en miettes, ajouter le beurre fondu et mélanger. Étaler sur la génoise et réserver au frais 15-20 min.",
-      "Montage : déposer la ganache vanille dans le moule. Ajouter l'insert caramel congelé. Recouvrir de ganache. Ajouter la génoise avec croustillant. Lisser et congeler minimum 4 h (idéalement une nuit).",
-      "Glaçage : démouler la bûche bien congelée et pulvériser le spray velours à 20-25 cm. Laisser décongeler 4-5 h au réfrigérateur."
+      "⚠️ Le caramel de l'insert doit être franchement pris et bien froid avant congélation, sinon il reste coulant même congelé et fait éclater la bûche au démoulage : bien respecter la gélatine et le temps de repos.",
+      "Préparer le caramel en premier (il doit congeler le plus longtemps) : faire ramollir la gélatine dans l'eau froide 10 minutes.",
+      "Dans une casserole, faire fondre le sucre à sec à feu moyen jusqu'à obtenir un caramel ambré, sans le brûler.",
+      "Hors du feu, ajouter le beurre demi-sel en morceaux en fouettant, puis incorporer la crème chaude petit à petit en continuant de fouetter (attention aux projections).",
+      "Remettre 1 minute sur feu doux pour bien lisser, puis retirer du feu et incorporer la gélatine essorée jusqu'à dissolution complète.",
+      "Laisser tiédir à température ambiante 10 minutes, puis couler dans un moule à insert nettement plus petit que le moule à bûche (au moins 2 cm d'écart).",
+      "Congeler au moins 4 h, idéalement toute une nuit, jusqu'à ce que l'insert soit totalement dur au toucher.",
+      "Préparer la ganache montée vanille : chauffer 100 ml de crème avec la vanille (graines et gousse) jusqu'à frémissement.",
+      "Verser sur le chocolat blanc haché et mélanger jusqu'à obtenir une ganache lisse, puis ajouter les 300 ml de crème froide restants.",
+      "Filmer au contact et réserver au réfrigérateur minimum 4 h, idéalement toute une nuit.",
+      "Préparer la génoise : fouetter les œufs avec le sucre (et le sucre vanillé) jusqu'à blanchiment, incorporer délicatement la farine tamisée, verser sur une plaque et cuire 20 minutes à 180°C. Laisser refroidir puis découper aux dimensions du moule.",
+      "Préparer le croustillant spéculoos : réduire les spéculoos en miettes fines, ajouter le beurre fondu et mélanger jusqu'à obtenir une texture sableuse humide.",
+      "Étaler en fine couche sur la génoise et réserver au réfrigérateur 15 à 20 minutes pour qu'il fige.",
+      "Sortir la ganache et la monter au batteur jusqu'à texture ferme, juste avant le montage.",
+      "Montage : chemiser le moule de rhodoïd, déposer une couche de ganache montée au fond et sur les côtés.",
+      "Démouler l'insert caramel bien congelé et le centrer sans qu'il touche les bords, puis le recouvrir entièrement de ganache.",
+      "Ajouter la génoise recouverte de son croustillant, face croustillante vers la ganache, et appuyer légèrement pour souder l'ensemble.",
+      "Lisser la base et congeler l'ensemble minimum 6 h, idéalement toute une nuit.",
+      "Démouler la bûche encore congelée, la poser sur une grille et pulvériser le spray velours blanc à 20-25 cm de distance.",
+      "Laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
     ]
   },
   {
     "titre": "Bûche chocolat-framboise avec croustillant praliné",
     "photo": "photos/enattente.png",
-    "temps": "10-12 heures",
+    "temps": "12 h (dont 8h de congélation cumulée)",
     "personnes": "8-10",
     "cat": "dessert",
     "ingredients": [
@@ -2998,22 +3346,16 @@ const recettes = [
         "reste": "framboises fraîches ou surgelées"
       },
       {
-        "texte": "200 g de sucre",
-        "valeur": 200,
+        "texte": "150 g de sucre",
+        "valeur": 150,
         "unite": "g",
         "reste": "sucre"
       },
       {
-        "texte": "20 cl d'eau",
-        "valeur": 20,
-        "unite": "cl",
-        "reste": "eau"
-      },
-      {
-        "texte": "2 g de gélatine",
-        "valeur": 2,
+        "texte": "10 g de gélatine en feuilles (insert, c'est elle qui manquait et faisait couler l'insert)",
+        "valeur": 10,
         "unite": "g",
-        "reste": "gélatine"
+        "reste": "gélatine en feuilles (insert, c'est elle qui manquait et faisait couler l'insert)"
       },
       {
         "texte": "4 œufs",
@@ -3022,10 +3364,10 @@ const recettes = [
         "reste": "œufs"
       },
       {
-        "texte": "125 g de sucre",
+        "texte": "125 g de sucre (génoise)",
         "valeur": 125,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "sucre (génoise)"
       },
       {
         "texte": "125 g de farine",
@@ -3034,16 +3376,10 @@ const recettes = [
         "reste": "farine"
       },
       {
-        "texte": "1 sachet de sucre vanillé (optionnel)",
+        "texte": "1 sachet de sucre vanillé, facultatif",
         "valeur": 1,
         "unite": null,
-        "reste": "sachet de sucre vanillé (optionnel)"
-      },
-      {
-        "texte": "0,5 sachet de levure",
-        "valeur": 0.5,
-        "unite": null,
-        "reste": "sachet de levure"
+        "reste": "sachet de sucre vanillé, facultatif"
       },
       {
         "texte": "100 g de praliné noisette maison",
@@ -3071,35 +3407,28 @@ const recettes = [
       }
     ],
     "etapes": [
-      "Faire chauffer la crème jusqu'à frémissement.",
-      "Verser en 3 fois sur le chocolat noir haché.",
-      "Mélanger jusqu'à obtention d'une ganache lisse.",
-      "Filmer au contact et réserver au réfrigérateur minimum 4 h (idéalement une nuit).",
-      "Monter au batteur juste avant utilisation (texture chantilly ferme).",
-      "Mettre les framboises, le sucre et l'eau dans une casserole.",
-      "Cuire 10 à 15 min à feu moyen.",
-      "Mixer puis passer au tamis pour retirer les grains.",
-      "Couler l'appareil dans un moule à insert (ou un moule long recouvert de film).",
-      "Mettre au congélateur au moins 3 h, idéalement toute la nuit.",
-      "Préchauffer le four à 180 °C et beurrer le moule.",
-      "Mélanger la farine et la levure.",
-      "Séparer les œufs. Monter les blancs en neige avec le sel, puis ajouter le sucre.",
-      "Baisser la vitesse, incorporer les jaunes, puis la farine et la levure en pluie.",
-      "Verser dans le moule, lisser et enfourner pour 20 minutes.",
-      "Faire fondre le chocolat au lait.",
-      "Ajouter le praliné noisette et mélanger.",
-      "Écraser grossièrement les cornflakes.",
-      "Incorporer au mélange chocolat-praliné.",
-      "Étaler sur la génoise ou dans le moule puis réserver 15-20 min au réfrigérateur.",
-      "Déposer une couche de ganache montée dans le moule.",
-      "Ajouter une couche de coulis de framboise.",
-      "Recouvrir d'un peu de ganache.",
-      "Ajouter la génoise recouverte du croustillant.",
-      "Lisser et fermer avec une seconde génoise si besoin.",
-      "Congeler minimum 4 h (idéalement une nuit).",
-      "Sortir la bûche bien congelée.",
-      "Pulvériser le spray velours chocolat à 20-25 cm.",
-      "Laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
+      "⚠️ Point clé pour éviter que l'insert ne coule et ne casse la bûche : l'insert doit être congelé À CŒUR (dur comme un glaçon, pas juste pris) et coulé dans un moule à insert nettement plus petit que le moule à bûche final (au moins 2 cm de moins en largeur et hauteur), pour qu'il reste bien enrobé de ganache tout autour sans jamais toucher les parois.",
+      "Préparer la ganache montée : faire chauffer 100 ml de crème jusqu'à frémissement, puis la verser en 3 fois sur le chocolat noir haché en mélangeant entre chaque ajout jusqu'à obtenir une ganache lisse.",
+      "Ajouter les 300 ml de crème restants froids, mélanger, filmer au contact et réserver au réfrigérateur minimum 4 h, idéalement toute une nuit.",
+      "Préparer l'insert framboise : faire ramollir la gélatine dans un grand bol d'eau froide pendant 10 minutes.",
+      "Mixer les framboises crues avec le sucre pour obtenir un coulis, puis le faire chauffer dans une casserole à feu doux jusqu'à ce qu'il soit tiède (ne pas faire bouillir).",
+      "Hors du feu, essorer la gélatine et l'incorporer au coulis tiède en mélangeant bien jusqu'à dissolution complète — c'est cette étape qui manquait et qui empêchait l'insert de tenir.",
+      "Passer le coulis au tamis pour retirer les grains, puis le couler dans un moule à insert nettement plus petit que le moule à bûche (par exemple un moule de 4 cm de large pour une bûche de 8 cm).",
+      "Congeler au moins 4 h, idéalement toute une nuit, jusqu'à ce que l'insert soit totalement dur au toucher.",
+      "Préparer la génoise : fouetter les œufs avec le sucre (et le sucre vanillé) jusqu'à blanchiment et doublement de volume, puis incorporer délicatement la farine tamisée.",
+      "Verser sur une plaque ou dans un moule et cuire 20 minutes à 180°C. Laisser refroidir puis découper aux dimensions du moule à bûche.",
+      "Préparer le croustillant : faire fondre le chocolat au lait, ajouter le praliné noisette et mélanger.",
+      "Écraser grossièrement les cornflakes et les incorporer délicatement au mélange chocolat-praliné.",
+      "Étaler le croustillant en fine couche sur la génoise et réserver au réfrigérateur 15 à 20 minutes pour qu'il fige.",
+      "Sortir la ganache du réfrigérateur et la monter au batteur jusqu'à obtenir une texture ferme type chantilly, juste avant le montage (pas avant, elle retomberait).",
+      "Montage : chemiser le moule à bûche de rhodoïd, déposer une couche de ganache montée dans le fond et sur les côtés à la spatule.",
+      "Démouler l'insert congelé (toujours dur) et le centrer sur la ganache sans qu'il touche les bords du moule.",
+      "Recouvrir complètement l'insert de ganache montée, en s'assurant qu'il n'y ait plus aucune partie visible.",
+      "Ajouter la génoise recouverte de son croustillant, face croustillante contre la ganache, et appuyer légèrement pour bien souder l'ensemble.",
+      "Lisser la base et congeler la bûche entière minimum 6 h, idéalement une nuit complète — c'est cette congélation longue de l'ensemble (pas seulement de l'insert) qui garantit que la bûche garde sa forme au démoulage.",
+      "Sortir la bûche bien congelée et la démouler aussitôt (le rhodoïd facilite le démoulage), la poser sur une grille au-dessus d'un plat.",
+      "Pulvériser le spray velours chocolat à 20-25 cm de distance, en mouvements réguliers, pour un effet velouté uniforme.",
+      "Transférer la bûche sur le plat de service et laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
     ]
   },
   {
@@ -3172,7 +3501,7 @@ const recettes = [
   {
     "titre": "Bûche marron-vanille au croustillant de tuiles",
     "photo": "photos/enattente.png",
-    "temps": "10-12 h",
+    "temps": "12 h (dont 7h de congélation cumulée)",
     "personnes": "8-10",
     "cat": "dessert",
     "ingredients": [
@@ -3195,16 +3524,10 @@ const recettes = [
         "reste": "farine"
       },
       {
-        "texte": "1 sachet de sucre vanillé",
+        "texte": "1 sachet sucre vanillé, facultatif",
         "valeur": 1,
         "unite": null,
-        "reste": "sachet de sucre vanillé"
-      },
-      {
-        "texte": "0,5 sachet de levure chimique",
-        "valeur": 0.5,
-        "unite": null,
-        "reste": "sachet de levure chimique"
+        "reste": "sachet sucre vanillé, facultatif"
       },
       {
         "texte": "250 g de crème de marron",
@@ -3213,22 +3536,22 @@ const recettes = [
         "reste": "crème de marron"
       },
       {
-        "texte": "1 gousse de vanille (ou extrait)",
+        "texte": "1 gousse de vanille (ou 1 c. à c. extrait)",
         "valeur": 1,
         "unite": null,
-        "reste": "gousse de vanille (ou extrait)"
+        "reste": "gousse de vanille (ou 1 c. à c. extrait)"
       },
       {
-        "texte": "400 g de crème liquide entière",
-        "valeur": 400,
+        "texte": "6 g de gélatine en feuilles (ganache, quantité augmentée pour une tenue fiable)",
+        "valeur": 6,
         "unite": "g",
-        "reste": "crème liquide entière"
+        "reste": "gélatine en feuilles (ganache, quantité augmentée pour une tenue fiable)"
       },
       {
-        "texte": "2 g de gélatine",
-        "valeur": 2,
+        "texte": "350 g de crème liquide entière (dont 150 g chaude et 200 g froide)",
+        "valeur": 350,
         "unite": "g",
-        "reste": "gélatine"
+        "reste": "crème liquide entière (dont 150 g chaude et 200 g froide)"
       },
       {
         "texte": "200 g d'yaourt grec",
@@ -3237,34 +3560,40 @@ const recettes = [
         "reste": "yaourt grec"
       },
       {
-        "texte": "40 g de sucre",
+        "texte": "40 g de sucre (insert)",
         "valeur": 40,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "sucre (insert)"
       },
       {
-        "texte": "1 c. à soupe de crème liquide",
+        "texte": "4 g de gélatine en feuilles (insert)",
+        "valeur": 4,
+        "unite": "g",
+        "reste": "gélatine en feuilles (insert)"
+      },
+      {
+        "texte": "1 c. à soupe de crème liquide (pour dissoudre la gélatine de l'insert)",
         "valeur": 1,
         "unite": "c. à soupe",
-        "reste": "crème liquide"
+        "reste": "crème liquide (pour dissoudre la gélatine de l'insert)"
       },
       {
-        "texte": "50 g de sucre",
+        "texte": "50 g de sucre (croustillant tuile)",
         "valeur": 50,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "sucre (croustillant tuile)"
       },
       {
-        "texte": "50 g de beurre maison fondu",
+        "texte": "50 g de beurre fondu",
         "valeur": 50,
         "unite": "g",
-        "reste": "beurre maison fondu"
+        "reste": "beurre fondu"
       },
       {
-        "texte": "50 g de farine",
+        "texte": "50 g de farine (croustillant tuile)",
         "valeur": 50,
         "unite": "g",
-        "reste": "farine"
+        "reste": "farine (croustillant tuile)"
       },
       {
         "texte": "30 g de miel",
@@ -3280,21 +3609,28 @@ const recettes = [
       }
     ],
     "etapes": [
-      "Réhydrater la gélatine dans de l'eau froide.",
-      "Chauffer 200 g de crème liquide avec la vanille, hors du feu ajouter la gélatine essorée puis incorporer la crème de marron.",
-      "Ajouter les 200 g de crème froide, mélanger, filmer et réserver au réfrigérateur minimum 4 h puis monter au batteur avant utilisation.",
-      "Pour l'insert, mélanger yaourt grec, sucre et vanille.",
-      "Chauffer légèrement 1 c. à soupe de crème, y dissoudre la gélatine puis incorporer au mélange yaourt.",
-      "Couler dans un moule et congeler minimum 3 h ou une nuit.",
-      "Pour la génoise, préchauffer le four à 180 °C, mélanger farine et levure.",
-      "Monter les blancs en neige avec le sucre, ajouter les jaunes puis incorporer farine et levure.",
-      "Verser dans un moule et cuire environ 20 minutes.",
-      "Pour le croustillant tulipe, mélanger sucre, beurre fondu, farine, miel et vanille puis étaler finement.",
-      "Cuire 6 à 8 min à 180 °C et façonner immédiatement en forme de tuiles.",
-      "Pour le montage, déposer une couche de ganache montée dans le moule, ajouter insert ou génoise puis recouvrir de ganache.",
-      "Fermer avec génoise si nécessaire puis congeler minimum 4 h ou une nuit.",
-      "Démouler la bûche congelée et pulvériser le spray velours.",
-      "Décorer avec les tuiles croustillantes et laisser décongeler 4 à 5 h au réfrigérateur."
+      "⚠️ Comme pour toutes les bûches à insert : préparer l'insert dans un moule nettement plus petit que le moule à bûche (au moins 2 cm d'écart en largeur), et le congeler jusqu'à ce qu'il soit dur comme un glaçon avant de l'utiliser — c'est ce qui évite qu'il ne coule et ne fasse craquer la bûche à la découpe.",
+      "Préparer l'insert en premier (il doit congeler le plus longtemps) : faire tremper 4 g de gélatine dans l'eau froide 10 minutes.",
+      "Dans un bol, mélanger le yaourt grec, le sucre et les graines de vanille.",
+      "Chauffer légèrement la cuillère de crème liquide (tiède, pas bouillante), y dissoudre la gélatine essorée, puis verser dans le mélange yaourt-vanille en homogénéisant bien.",
+      "Couler dans un moule à insert plus petit que le moule à bûche et congeler au moins 4 h, idéalement toute une nuit, jusqu'à ce qu'il soit totalement dur.",
+      "Préparer la ganache montée marron-vanille : réhydrater les 6 g de gélatine dans l'eau froide.",
+      "Chauffer 150 g de crème liquide avec la vanille jusqu'à frémissement, retirer du feu et incorporer la gélatine essorée jusqu'à dissolution complète.",
+      "Ajouter la crème de marron et mélanger jusqu'à obtenir une base bien lisse, puis incorporer les 200 g de crème froide.",
+      "Filmer au contact et réserver au réfrigérateur minimum 4 h, idéalement toute une nuit.",
+      "Préparer la génoise : fouetter les œufs avec le sucre (et le sucre vanillé) jusqu'à blanchiment et doublement de volume, incorporer délicatement la farine tamisée.",
+      "Verser sur une plaque et cuire 20 minutes à 180°C. Laisser refroidir puis découper aux dimensions du moule à bûche.",
+      "Préparer le croustillant tuile : mélanger le sucre, le beurre fondu, la farine, le miel et un peu de vanille jusqu'à obtenir une pâte lisse.",
+      "Étaler très finement en disques sur une plaque recouverte de papier cuisson et cuire 6 à 8 minutes à 180°C, jusqu'à ce que les bords soient légèrement dorés.",
+      "À la sortie du four, façonner immédiatement les tuiles encore chaudes et souples (sur un rouleau ou à la main) avant qu'elles ne durcissent, puis laisser refroidir : elles deviennent croustillantes en refroidissant.",
+      "Sortir la ganache et la monter au batteur jusqu'à texture ferme, juste avant le montage.",
+      "Montage : chemiser le moule de rhodoïd, déposer une couche de ganache montée au fond et sur les côtés.",
+      "Démouler l'insert bien congelé et le centrer sans qu'il touche les parois du moule, puis le recouvrir entièrement de ganache.",
+      "Ajouter la génoise, appuyer légèrement pour souder, lisser la base.",
+      "Congeler l'ensemble minimum 6 h, idéalement toute une nuit.",
+      "Démouler la bûche encore congelée, la poser sur une grille et pulvériser le spray velours blanc à 20-25 cm de distance.",
+      "Décorer avec les tuiles croustillantes juste avant de servir (elles ramollissent si elles restent trop longtemps au contact de l'humidité du frigo).",
+      "Laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
     ]
   },
   {
@@ -4124,6 +4460,56 @@ const recettes = [
     ]
   },
   {
+    "titre": "Charlotte poire-nutella",
+    "photo": "photos/enattente.png",
+    "temps": "30 min (+ 4h de réfrigération)",
+    "personnes": "10",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "1 kg de fromage blanc",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "fromage blanc"
+      },
+      {
+        "texte": "100 biscuits boudoirs",
+        "valeur": 100,
+        "unite": null,
+        "reste": "biscuits boudoirs"
+      },
+      {
+        "texte": "1 kg de poires au sirop, égouttées et coupées en morceaux",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "poires au sirop, égouttées et coupées en morceaux"
+      },
+      {
+        "texte": "300 g de Nutella",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "Nutella"
+      },
+      {
+        "texte": "jus des poires au sirop, pour imbiber",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jus des poires au sirop, pour imbiber"
+      }
+    ],
+    "etapes": [
+      "Chemiser un moule à charlotte de film alimentaire pour faciliter le démoulage.",
+      "Tremper rapidement les boudoirs dans le jus de poire réservé, puis tapisser le fond et les parois du moule avec, côté bombé vers l'extérieur.",
+      "Étaler une couche de fromage blanc sur le fond de boudoirs.",
+      "Répartir une couche de morceaux de poire par-dessus.",
+      "Ajouter quelques cuillères de Nutella réparties en petits tas ou en filet.",
+      "Recouvrir d'une nouvelle couche de boudoirs légèrement imbibés.",
+      "Répéter l'opération (fromage blanc, poires, Nutella, boudoirs) jusqu'à remplir complètement le moule, en terminant par une couche de boudoirs.",
+      "Couvrir et réfrigérer au moins 4 heures, idéalement toute une nuit, pour que la charlotte se tienne bien.",
+      "Démouler délicatement sur un plat de service juste avant de servir."
+    ]
+  },
+  {
     "titre": "Chaussons feuilletés au Nutella en forme de cœur",
     "photo": "photos/enattente.png",
     "temps": "20 min",
@@ -4667,6 +5053,35 @@ const recettes = [
     ]
   },
   {
+    "titre": "Chips de chèvre au four",
+    "photo": "photos/enattente.png",
+    "temps": "20 min",
+    "personnes": "4",
+    "cat": "apero",
+    "ingredients": [
+      {
+        "texte": "1 bûche de fromage de chèvre bien froide",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bûche de fromage de chèvre bien froide"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180°C et préparer une plaque recouverte de papier cuisson.",
+      "Couper le fromage de chèvre bien froid en tranches fines et régulières à l'aide d'un couteau tranchant.",
+      "Disposer les tranches sur la plaque sans qu'elles se touchent.",
+      "Saupoudrer légèrement de paprika.",
+      "Enfourner 8 à 10 minutes, jusqu'à ce que les chips soient dorées et croustillantes sur les bords.",
+      "Laisser refroidir quelques minutes sur la plaque avant de les décoller délicatement : elles durcissent en refroidissant."
+    ]
+  },
+  {
     "titre": "Chips de pommes de terre croustillantes roulées au four",
     "photo": "photos/enattente.png",
     "temps": "29 min",
@@ -5044,6 +5459,58 @@ const recettes = [
       "Ajouter 20 ml de sirop de curaçao bleu et 20 ml de sirop de fruits rouges, en superposant les couches pour obtenir un arc-en-ciel vivant.",
       "Garnir avec 6 feuilles de menthe fraîche et quelques glaçons supplémentaires si nécessaire.",
       "Servir immédiatement avec une paille large et déguster frais en partageant entre amis."
+    ]
+  },
+  {
+    "titre": "Cocktail vodka tropical",
+    "photo": "photos/enattente.png",
+    "temps": "5 min",
+    "personnes": "1",
+    "cat": "boisson",
+    "ingredients": [
+      {
+        "texte": "40 ml de vodka",
+        "valeur": 40,
+        "unite": "ml",
+        "reste": "vodka"
+      },
+      {
+        "texte": "20 ml de sirop de grenadine",
+        "valeur": 20,
+        "unite": "ml",
+        "reste": "sirop de grenadine"
+      },
+      {
+        "texte": "80 ml de jus d'orange",
+        "valeur": 80,
+        "unite": "ml",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "80 ml de jus d'ananas",
+        "valeur": 80,
+        "unite": "ml",
+        "reste": "jus d'ananas"
+      },
+      {
+        "texte": "glaçons",
+        "valeur": 1,
+        "unite": null,
+        "reste": "glaçons"
+      },
+      {
+        "texte": "1 tranche d'orange ou d'ananas pour la déco",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tranche d'orange ou d'ananas pour la déco"
+      }
+    ],
+    "etapes": [
+      "Remplir un grand verre de glaçons.",
+      "Verser la vodka, puis le jus d'orange et le jus d'ananas.",
+      "Verser délicatement le sirop de grenadine en dernier, sans mélanger, pour qu'il tombe au fond et crée un effet dégradé.",
+      "Décorer avec une tranche d'orange ou d'ananas sur le bord du verre.",
+      "Mélanger légèrement avec une paille juste avant de déguster, pour marier les saveurs progressivement."
     ]
   },
   {
@@ -5478,6 +5945,79 @@ const recettes = [
     ]
   },
   {
+    "titre": "Cookies framboise et chocolat blanc",
+    "photo": "photos/enattente.png",
+    "temps": "30 min (+ repos)",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "120 g de beurre mou",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de sucre roux",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre roux"
+      },
+      {
+        "texte": "50 g de sucre blanc",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "sucre blanc"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "180 g de farine",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 c. à café de levure chimique",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "100 g de chocolat blanc en pépites ou morceaux",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat blanc en pépites ou morceaux"
+      },
+      {
+        "texte": "100 g de framboises fraîches ou surgelées",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "framboises fraîches ou surgelées"
+      }
+    ],
+    "etapes": [
+      "Crémer le beurre mou avec les sucres jusqu'à obtenir un mélange homogène.",
+      "Ajouter l'œuf et mélanger.",
+      "Incorporer la farine, la levure chimique et le sel.",
+      "Ajouter le chocolat blanc et mélanger délicatement.",
+      "Incorporer les framboises en dernier, très délicatement, pour ne pas trop les écraser.",
+      "Réserver la pâte au frais 20 minutes.",
+      "Préchauffer le four à 180°C, façonner des boules de pâte et les déposer espacées sur une plaque recouverte de papier cuisson.",
+      "Cuire 10 à 12 minutes, jusqu'à ce que les bords soient dorés et le centre encore moelleux. Laisser refroidir sur une grille avant de déguster."
+    ]
+  },
+  {
     "titre": "Cookies pistache-framboise et chocolat blanc",
     "photo": "photos/enattente.png",
     "temps": "35 min",
@@ -5791,6 +6331,66 @@ const recettes = [
       "Plonger les corndogs dans l'huile chaude et maintenir une cuisson dorée pendant environ 2 à 3 minutes, jusqu'à ce que la pâte soit bien croustillante.",
       "Sortir les corndogs et les égoutter sur du papier absorbant. Répéter l'opération avec les autres bâtonnets.",
       "Servir chaud accompagné de la sauce choisie et saupoudrer éventuellement d'un peu de sel."
+    ]
+  },
+  {
+    "titre": "Coulant au chocolat individuel",
+    "photo": "photos/enattente.png",
+    "temps": "25 min",
+    "personnes": "4",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "150 g de chocolat noir",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "150 g de beurre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "2 jaunes d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "90 g de sucre",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "50 g de farine",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "beurre et cacao pour les moules",
+        "valeur": 1,
+        "unite": null,
+        "reste": "beurre et cacao pour les moules"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 220°C. Beurrer généreusement 4 moules individuels (ramequins ou moules à muffins) puis les saupoudrer de cacao en poudre.",
+      "Faire fondre le chocolat noir avec le beurre au bain-marie jusqu'à obtenir une texture lisse.",
+      "Dans un bol, fouetter les œufs entiers, les jaunes supplémentaires et le sucre jusqu'à ce que le mélange blanchisse légèrement.",
+      "Incorporer le chocolat fondu au mélange d'œufs, puis ajouter la farine tamisée et mélanger juste ce qu'il faut pour l'incorporer.",
+      "Répartir la pâte dans les moules préparés, aux trois quarts de leur hauteur.",
+      "Enfourner 8 à 10 minutes selon la puissance du four : le dessus doit être pris mais le centre doit rester bien coulant.",
+      "Laisser reposer 1 minute hors du four, puis démouler délicatement sur une assiette et servir immédiatement, tant que le cœur est encore fondant."
     ]
   },
   {
@@ -6263,6 +6863,60 @@ const recettes = [
       "Incorporer 100 g ou 100 ml de garniture aux fruits selon préférence.",
       "Diviser la crème en portions et aromatiser séparément avec le chocolat blanc fondu (100 g minimum) ou le chocolat noir/lait (100 g à 200 g selon goût).",
       "Utiliser la crème chantilly mascarpone pour garnir et napper les couches de gâteau."
+    ]
+  },
+  {
+    "titre": "Crêpes façon Stanimirovic",
+    "photo": "photos/enattente.png",
+    "temps": "25 min (+ repos)",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "40 g de beurre fondu",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "4 c. à soupe de sucre",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "sucre"
+      },
+      {
+        "texte": "333 g de farine",
+        "valeur": 333,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "666 ml de lait",
+        "valeur": 666,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Dans un saladier, fouetter les œufs avec le sucre et le sel jusqu'à obtenir un mélange mousseux.",
+      "Ajouter le beurre fondu tiède et mélanger.",
+      "Incorporer la farine en trois fois, en alternant avec le lait, tout en fouettant pour éviter les grumeaux.",
+      "Fouetter jusqu'à obtenir une pâte bien lisse et fluide.",
+      "Laisser reposer la pâte au moins 30 minutes à température ambiante.",
+      "Chauffer une poêle à crêpes légèrement beurrée à feu moyen-vif, verser une louche de pâte en inclinant la poêle pour bien l'étaler.",
+      "Cuire 1 à 2 minutes de chaque côté jusqu'à ce que la crêpe soit dorée, puis répéter avec le reste de la pâte."
     ]
   },
   {
@@ -9295,6 +9949,83 @@ const recettes = [
     ]
   },
   {
+    "titre": "Gâteau Kinder Country façon croustillant au mascarpone",
+    "photo": "photos/enattente.png",
+    "temps": "240 min",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "100 g de beurre fondu",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "300 g de biscuits petit beurre",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "biscuits petit beurre"
+      },
+      {
+        "texte": "300 g de mascarpone",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "500 ml de crème liquide entière (30%)",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "crème liquide entière (30%)"
+      },
+      {
+        "texte": "2 c. à soupe de sucre glace",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "5 barres Kinder Country",
+        "valeur": 5,
+        "unite": null,
+        "reste": "barres Kinder Country"
+      },
+      {
+        "texte": "50 g de céréales soufflées, type riz soufflé",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "céréales soufflées, type riz soufflé"
+      },
+      {
+        "texte": "20 g de céréales soufflées supplémentaires pour le dessus",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "céréales soufflées supplémentaires pour le dessus"
+      },
+      {
+        "texte": "200 g de chocolat au lait",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat au lait"
+      }
+    ],
+    "etapes": [
+      "Chemiser un moule à gâteau de 20 à 22 cm de diamètre avec du film alimentaire ou du papier sulfurisé, en laissant dépasser sur les bords pour faciliter le démoulage.",
+      "Émietter finement les biscuits petit beurre (au robot ou dans un sachet avec un rouleau à pâtisserie).",
+      "Mélanger les miettes avec le beurre fondu jusqu'à obtenir une texture sableuse et légèrement collante.",
+      "Répartir cette base dans le moule et tasser fermement avec le dos d'une cuillère pour former une couche uniforme et compacte. Réserver au frais pendant la préparation de la crème.",
+      "Dans un grand bol bien froid, fouetter le mascarpone avec la crème liquide et le sucre glace jusqu'à obtenir une crème ferme qui tient bien au fouet.",
+      "Incorporer délicatement les 50 g de céréales soufflées à la crème, pour rappeler la texture croustillante des Kinder Country.",
+      "Casser les barres Kinder Country en morceaux et les incorporer également à la crème, en mélangeant délicatement pour ne pas les écraser complètement.",
+      "Verser la crème sur la base biscuitée refroidie et lisser soigneusement la surface à la spatule.",
+      "Parsemer les céréales soufflées supplémentaires sur le dessus pour le croquant final.",
+      "Faire fondre le chocolat au lait au bain-marie ou au micro-ondes par petits intervalles, puis l'étaler uniformément sur le dessus du gâteau à l'aide d'une spatule ou en le faisant couler délicatement.",
+      "Laisser le chocolat légèrement figer à température ambiante quelques minutes, puis placer le gâteau au réfrigérateur au moins 4 heures, idéalement toute une nuit, jusqu'à ce qu'il soit bien raffermi.",
+      "Démouler délicatement à l'aide du film alimentaire et servir bien frais, en appréciant le contraste entre la crème onctueuse, la base croustillante et le chocolat sur le dessus."
+    ]
+  },
+  {
     "titre": "Gâteau Kinder sans cuisson au chocolat blanc",
     "photo": "photos/enattente.png",
     "temps": "240 min",
@@ -9880,6 +10611,89 @@ const recettes = [
     ]
   },
   {
+    "titre": "Gâteau renversé à l'ananas",
+    "photo": "photos/enattente.png",
+    "temps": "55 min",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "500 g d'ananas frais ou en conserve, en rondelles",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "ananas frais ou en conserve, en rondelles"
+      },
+      {
+        "texte": "150 g de sucre (caramel)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre (caramel)"
+      },
+      {
+        "texte": "60 g de beurre demi-sel fondu",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "beurre demi-sel fondu"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "120 g de sucre (pâte)",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "sucre (pâte)"
+      },
+      {
+        "texte": "120 ml de lait tiède",
+        "valeur": 120,
+        "unite": "ml",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "5 ml d'extrait de vanille",
+        "valeur": 5,
+        "unite": "ml",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "180 g de farine",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 c. à café de levure chimique",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180°C et beurrer un moule à manqué rond d'environ 22 cm.",
+      "Préparer le caramel : faire chauffer le sucre à sec dans une petite casserole à feu doux jusqu'à obtenir une couleur ambrée, sans le brûler.",
+      "Hors du feu, ajouter le beurre demi-sel fondu et mélanger rapidement jusqu'à obtenir un caramel lisse et homogène.",
+      "Verser aussitôt le caramel dans le fond du moule en l'étalant uniformément sur toute la surface avant qu'il ne fige.",
+      "Égoutter les rondelles d'ananas si besoin, puis les disposer sur le caramel en les serrant bien pour former une couche compacte et régulière.",
+      "Préparer la pâte : dans un grand bol, fouetter les œufs avec le sucre jusqu'à ce que le mélange pâlisse et double de volume.",
+      "Ajouter le lait tiède et l'extrait de vanille, mélanger.",
+      "Incorporer progressivement la farine tamisée, la levure chimique et le sel, en fouettant jusqu'à obtenir une pâte lisse et sans grumeaux.",
+      "Verser délicatement la pâte sur les rondelles d'ananas dans le moule, en lissant la surface sans déplacer les fruits.",
+      "Enfourner 35 à 40 minutes, jusqu'à ce que le gâteau soit doré et qu'un couteau planté au centre ressorte propre.",
+      "Laisser reposer le gâteau 5 minutes hors du four, puis démouler soigneusement en retournant le moule sur un plat de service, pour révéler le caramel et les rondelles d'ananas sur le dessus.",
+      "Servir tiède ou à température ambiante."
+    ]
+  },
+  {
     "titre": "Gâteau simple œuf et sucre à la farine",
     "photo": "photos/enattente.png",
     "temps": "35 min",
@@ -10326,6 +11140,46 @@ const recettes = [
     ]
   },
   {
+    "titre": "Glaçage au sucre glace",
+    "photo": "photos/enattente.png",
+    "temps": "5 min",
+    "personnes": "pour 1 gâteau ou une douzaine de biscuits",
+    "cat": "base-culinaire",
+    "ingredients": [
+      {
+        "texte": "150 g de sucre glace",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "2 c. à soupe d'eau ou jus de citron",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "eau ou jus de citron"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille, facultatif",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille, facultatif"
+      },
+      {
+        "texte": "colorant alimentaire, facultatif",
+        "valeur": 1,
+        "unite": null,
+        "reste": "colorant alimentaire, facultatif"
+      }
+    ],
+    "etapes": [
+      "Tamiser le sucre glace dans un bol pour éviter les grumeaux.",
+      "Ajouter l'eau ou le jus de citron petit à petit, en mélangeant à la cuillère ou au fouet, jusqu'à obtenir une texture lisse et coulante mais pas liquide.",
+      "Ajouter l'extrait de vanille et quelques gouttes de colorant si désiré, puis mélanger.",
+      "Ajuster la texture : plus épais avec un peu de sucre glace en plus, plus fluide avec quelques gouttes d'eau supplémentaires.",
+      "Utiliser aussitôt, en napant le gâteau ou les biscuits encore tièdes ou complètement refroidis selon l'effet recherché, puis laisser figer à l'air libre."
+    ]
+  },
+  {
     "titre": "Glace au cookie dough express",
     "photo": "photos/enattente.png",
     "temps": "105 min",
@@ -10478,6 +11332,48 @@ const recettes = [
       "Fouettez le mélange jusqu'à ce que le sucre soit complètement dissous.",
       "Versez le mélange dans un récipient hermétique.",
       "Placez le récipient au congélateur pendant au moins 4 heures."
+    ]
+  },
+  {
+    "titre": "Glace maison à la pêche",
+    "photo": "photos/enattente.png",
+    "temps": "20 min (+ 4h de congélation)",
+    "personnes": "6",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "4 pêches bien mûres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "pêches bien mûres"
+      },
+      {
+        "texte": "500 ml de crème liquide entière bien froide",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 c. à soupe de jus de citron",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "jus de citron"
+      }
+    ],
+    "etapes": [
+      "Peler les pêches, retirer le noyau et les couper en morceaux.",
+      "Mixer les pêches avec le sucre et le jus de citron jusqu'à obtenir une purée lisse.",
+      "Fouetter la crème liquide bien froide en chantilly ferme.",
+      "Incorporer délicatement la purée de pêches à la chantilly, en soulevant la masse à la spatule pour ne pas la faire retomber.",
+      "Verser dans un contenant hermétique et lisser la surface.",
+      "Placer au congélateur au moins 4 heures, idéalement toute une nuit.",
+      "Sortir la glace 5 à 10 minutes avant de servir pour faciliter le service à la cuillère."
     ]
   },
   {
@@ -10859,6 +11755,47 @@ const recettes = [
       "Placer les gnocchis-churros sur la plaque, badigeonner ou arroser d'huile végétale sur toute la surface.",
       "Enfourner 20 à 25 minutes à 190°C jusqu'à ce que les bords soient dorés et croustillants.",
       "Saupoudrer de parmesan râpé et parsemer d'herbes fraîches juste avant de servir chaud."
+    ]
+  },
+  {
+    "titre": "Granita fruits rouges",
+    "photo": "photos/enattente.png",
+    "temps": "140 min",
+    "personnes": "4",
+    "cat": "boisson",
+    "ingredients": [
+      {
+        "texte": "400 g de fruits rouges mélangés (fraises, framboises, myrtilles)",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "fruits rouges mélangés (fraises, framboises, myrtilles)"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "300 ml d'eau",
+        "valeur": 300,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 c. à soupe de jus de citron",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "jus de citron"
+      }
+    ],
+    "etapes": [
+      "Mixer les fruits rouges avec le sucre, l'eau et le jus de citron jusqu'à obtenir un mélange lisse.",
+      "Passer au tamis si désiré pour retirer les grains de framboise.",
+      "Verser le mélange dans un plat peu profond et placer au congélateur.",
+      "Toutes les 30 minutes, gratter la surface à la fourchette pour casser les cristaux et obtenir une texture granuleuse et homogène.",
+      "Répéter l'opération pendant environ 2 heures, jusqu'à ce que toute la préparation soit congelée en petits grains.",
+      "Servir dans des verres bien frais, éventuellement décoré de quelques fruits rouges frais."
     ]
   },
   {
@@ -11713,6 +12650,73 @@ const recettes = [
     ]
   },
   {
+    "titre": "Lasagnes burrata et pesto",
+    "photo": "photos/enattente.png",
+    "temps": "27 min",
+    "personnes": "4",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "6 feuilles de lasagnes fraîches",
+        "valeur": 6,
+        "unite": null,
+        "reste": "feuilles de lasagnes fraîches"
+      },
+      {
+        "texte": "1 burrata",
+        "valeur": 1,
+        "unite": null,
+        "reste": "burrata"
+      },
+      {
+        "texte": "4 tranches jambon Serrano",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tranches jambon Serrano"
+      },
+      {
+        "texte": "100 ml de pesto",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "pesto"
+      },
+      {
+        "texte": "40 g de roquette",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "roquette"
+      },
+      {
+        "texte": "1 tomate",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tomate"
+      },
+      {
+        "texte": "8 tomates cerises",
+        "valeur": 8,
+        "unite": null,
+        "reste": "tomates cerises"
+      },
+      {
+        "texte": "20 g de pignons de pin",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "pignons de pin"
+      }
+    ],
+    "etapes": [
+      "Préparer les feuilles de lasagnes selon les instructions du paquet et les égoutter légèrement.",
+      "Émietter ou déchirer la burrata et réserver.",
+      "Couper la tomate en rondelles fines et les tomates cerises en deux.",
+      "Disposer une première couche de feuilles de lasagnes dans un plat, ajouter une cuillerée de pesto, quelques dés de burrata, quelques tranches de Serrano et une poignée de roquette.",
+      "Répéter l'assemblage en alternant les couches jusqu'à épuisement des ingrédients, terminer par une couche de lasagnes et napper légèrement de pesto.",
+      "Parsemer les pignons de pin grillés sur le dessus et disposer les rondelles de tomate et les demi-tomates cerises pour la couleur et la fraîcheur.",
+      "Enfourner brièvement à four chaud (environ 180°C) pendant 8 à 12 minutes juste pour réchauffer et légèrement fondre la burrata sans la faire dégouliner.",
+      "Sortir du four et laisser reposer 2 minutes avant de servir pour que les saveurs se mêlent."
+    ]
+  },
+  {
     "titre": "Lasagnes froides aux légumes et ricotta",
     "photo": "photos/enattente.png",
     "temps": "40 min",
@@ -11816,73 +12820,6 @@ const recettes = [
       "Préparez la farce: dans un bol, mélangez la ricotta avec l'échalote finement ciselée, le persil et la menthe hachés, le sumac, le sel, le piment, le zaatar, puis ajoutez un filet de miel et d'huile d'olive; fouettez pendant 2 minutes à l'aide d'une cuillère jusqu'à obtenir une texture lisse.",
       "Dressage: découpez les pâtes en deux, étalez une couche de pesto rouge, ajoutez les légumes rôtis, puis la farce à la ricotta; superposez les couches et terminez par un filet de miel sur le dessus des lasagnes froides.",
       "Réfrigérez quelques heures avant service pour que les saveurs se mêlent et que la farce prenne de la tenue."
-    ]
-  },
-  {
-    "titre": "Lasagnes burrata et pesto",
-    "photo": "photos/enattente.png",
-    "temps": "27 min",
-    "personnes": "4",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "6 feuilles de lasagnes fraîches",
-        "valeur": 6,
-        "unite": null,
-        "reste": "feuilles de lasagnes fraîches"
-      },
-      {
-        "texte": "1 burrata",
-        "valeur": 1,
-        "unite": null,
-        "reste": "burrata"
-      },
-      {
-        "texte": "4 tranches jambon Serrano",
-        "valeur": 4,
-        "unite": null,
-        "reste": "tranches jambon Serrano"
-      },
-      {
-        "texte": "100 ml de pesto",
-        "valeur": 100,
-        "unite": "ml",
-        "reste": "pesto"
-      },
-      {
-        "texte": "40 g de roquette",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "roquette"
-      },
-      {
-        "texte": "1 tomate",
-        "valeur": 1,
-        "unite": null,
-        "reste": "tomate"
-      },
-      {
-        "texte": "8 tomates cerises",
-        "valeur": 8,
-        "unite": null,
-        "reste": "tomates cerises"
-      },
-      {
-        "texte": "20 g de pignons de pin",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "pignons de pin"
-      }
-    ],
-    "etapes": [
-      "Préparer les feuilles de lasagnes selon les instructions du paquet et les égoutter légèrement.",
-      "Émietter ou déchirer la burrata et réserver.",
-      "Couper la tomate en rondelles fines et les tomates cerises en deux.",
-      "Disposer une première couche de feuilles de lasagnes dans un plat, ajouter une cuillerée de pesto, quelques dés de burrata, quelques tranches de Serrano et une poignée de roquette.",
-      "Répéter l'assemblage en alternant les couches jusqu'à épuisement des ingrédients, terminer par une couche de lasagnes et napper légèrement de pesto.",
-      "Parsemer les pignons de pin grillés sur le dessus et disposer les rondelles de tomate et les demi-tomates cerises pour la couleur et la fraîcheur.",
-      "Enfourner brièvement à four chaud (environ 180°C) pendant 8 à 12 minutes juste pour réchauffer et légèrement fondre la burrata sans la faire dégouliner.",
-      "Sortir du four et laisser reposer 2 minutes avant de servir pour que les saveurs se mêlent."
     ]
   },
   {
@@ -12682,6 +13619,67 @@ const recettes = [
       "Dans un bol, mélanger le beurre maison ramolli avec l'œuf, puis ajouter la farine, la levure, le parmesan, le jambon coupé en dés, le caprice des dieux râpé, le sel et le poivre.",
       "Former des boules de pâte et les placer sur une plaque recouverte de papier sulfurisé.",
       "Enfourner pendant environ 15 minutes, puis laisser refroidir avant de servir avec du chèvre frais en topping."
+    ]
+  },
+  {
+    "titre": "Makis express au concombre (sans riz)",
+    "photo": "photos/enattente.png",
+    "temps": "25 min",
+    "personnes": "4",
+    "cat": "apero",
+    "ingredients": [
+      {
+        "texte": "4 concombres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "concombres"
+      },
+      {
+        "texte": "1 avocat",
+        "valeur": 1,
+        "unite": null,
+        "reste": "avocat"
+      },
+      {
+        "texte": "1 poivron rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron rouge"
+      },
+      {
+        "texte": "50 g de riz à sushi cuit",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "riz à sushi cuit"
+      },
+      {
+        "texte": "1 boîte de thon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "boîte de thon"
+      },
+      {
+        "texte": "1 carotte, râpée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte, râpée"
+      },
+      {
+        "texte": "sauce soja, wasabi ou mayonnaise épicée pour l'accompagnement",
+        "valeur": 1,
+        "unite": null,
+        "reste": "sauce soja, wasabi ou mayonnaise épicée pour l'accompagnement"
+      }
+    ],
+    "etapes": [
+      "Faire cuire le riz à sushi selon les instructions du paquet et l'assaisonner légèrement.",
+      "Laver les concombres, les couper en deux dans la longueur.",
+      "À l'aide d'une petite cuillère, évider délicatement l'intérieur de chaque moitié de concombre en retirant les graines, pour former une coque creuse.",
+      "Couper l'avocat et le poivron rouge en fines lamelles.",
+      "Garnir chaque concombre creusé d'une couche de riz, en tassant légèrement avec le dos d'une cuillère.",
+      "Ajouter des lamelles d'avocat, de poivron, un peu de thon égoutté et de carotte râpée.",
+      "Couper les concombres garnis en tranches d'environ 1 cm d'épaisseur.",
+      "Servir avec de la sauce soja, du wasabi ou de la mayonnaise épicée."
     ]
   },
   {
@@ -13620,6 +14618,59 @@ const recettes = [
     ]
   },
   {
+    "titre": "Moelleux au chocolat",
+    "photo": "photos/enattente.png",
+    "temps": "35 min",
+    "personnes": "6",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat noir",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "150 g de beurre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "80 g de farine",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180°C et beurrer un moule.",
+      "Faire fondre le chocolat noir avec le beurre au bain-marie jusqu'à obtenir une texture lisse.",
+      "Fouetter les œufs avec le sucre jusqu'à ce que le mélange blanchisse et mousse légèrement.",
+      "Incorporer le chocolat fondu au mélange d'œufs, puis ajouter la farine tamisée et le sel, mélanger jusqu'à obtenir une pâte homogène.",
+      "Verser dans le moule et enfourner 22 à 25 minutes : contrairement au coulant, le centre doit être cuit et moelleux, pas liquide — vérifier avec la pointe d'un couteau qui doit ressortir avec quelques miettes humides mais pas de pâte crue.",
+      "Laisser tiédir avant de démouler et de couper en parts."
+    ]
+  },
+  {
     "titre": "Mousse au chocolat noir classique",
     "photo": "photos/enattente.png",
     "temps": "6 h",
@@ -13657,6 +14708,47 @@ const recettes = [
       "Mélanger avec une cuillère en bois, puis incorporer un à un les jaunes d'œuf très rapidement (pour éviter qu'ils ne cuisent).",
       "Battre les blancs en neige et les ajouter très délicatement à la préparation.",
       "Verser le mélange dans des ramequins individuels et les placer au frigo au moins 6 heures, au mieux toute la nuit."
+    ]
+  },
+  {
+    "titre": "Mousse au chocolat Toblerone",
+    "photo": "photos/enattente.png",
+    "temps": "20 min (+ 6h de réfrigération)",
+    "personnes": "4",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "200 g de Toblerone (chocolat au lait, miel et nougatine)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "Toblerone (chocolat au lait, miel et nougatine)"
+      },
+      {
+        "texte": "50 g de beurre mou",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Casser le Toblerone en morceaux et le faire fondre avec le beurre au bain-marie, en mélangeant jusqu'à obtenir une texture lisse (les morceaux de nougatine peuvent rester légèrement présents, c'est normal).",
+      "Incorporer un à un les jaunes d'œufs très rapidement, hors du feu, pour éviter qu'ils ne cuisent.",
+      "Battre les blancs en neige ferme avec une pincée de sel.",
+      "Incorporer délicatement les blancs en neige à la préparation au chocolat, en soulevant la masse à la spatule pour ne pas les casser.",
+      "Répartir la mousse dans des ramequins individuels.",
+      "Réfrigérer au moins 6 heures, idéalement toute une nuit, avant de déguster."
     ]
   },
   {
@@ -14291,6 +15383,48 @@ const recettes = [
       "Dans un bol, mélanger : farine, poudre d'ail, paprika, poivre, sel, eau (ajouter lentement plus d'eau si nécessaire).",
       "Tremper les nuggets dans la farine sèche puis dans le mélange humide.",
       "Faire frire les nuggets par deux fournées dans l'huile chaude."
+    ]
+  },
+  {
+    "titre": "Œuf mollet en fausse coque à la Floraline",
+    "photo": "photos/enattente.png",
+    "temps": "20 min",
+    "personnes": "2",
+    "cat": "apero",
+    "ingredients": [
+      {
+        "texte": "4 c. à soupe de Floraline (semoule de blé fine à cuisson rapide)",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "Floraline (semoule de blé fine à cuisson rapide)"
+      },
+      {
+        "texte": "400 ml de lait",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Porter une casserole d'eau à ébullition et y plonger les œufs pour les cuire mollets, 6 à 7 minutes.",
+      "Retirer les œufs, les rafraîchir sous l'eau froide, les écaler délicatement, puis réserver au chaud.",
+      "Dans une casserole, chauffer le lait avec une pincée de sel à feu moyen.",
+      "Ajouter la Floraline en pluie tout en fouettant, et mélanger sans cesser jusqu'à ce que la préparation épaississe et forme une texture lisse et un peu élastique, façon coque d'œuf.",
+      "Retirer du feu, laisser tiédir légèrement pour pouvoir la manipuler sans se brûler.",
+      "Enrober chaque œuf mollet d'une couche de Floraline pour lui donner l'aspect d'une coquille d'œuf à la coque, en lissant bien la surface à la cuillère ou avec les mains légèrement humides.",
+      "Servir aussitôt, à déguster comme un véritable œuf à la coque, à la cuillère."
     ]
   },
   {
@@ -16155,6 +17289,42 @@ const recettes = [
     ]
   },
   {
+    "titre": "Pâtes fraîches maison (œufs et farine)",
+    "photo": "photos/enattente.png",
+    "temps": "30 min (+ repos)",
+    "personnes": "4",
+    "cat": "base-culinaire",
+    "ingredients": [
+      {
+        "texte": "400 g de farine",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "160 ml d'eau (à ajuster selon l'absorption de la farine)",
+        "valeur": 160,
+        "unite": "ml",
+        "reste": "eau (à ajuster selon l'absorption de la farine)"
+      }
+    ],
+    "etapes": [
+      "Sur un plan de travail, former un puits avec la farine.",
+      "Casser les œufs au centre et les mélanger à la fourchette avec un peu d'eau.",
+      "Incorporer progressivement la farine depuis les bords, en ajoutant de l'eau petit à petit jusqu'à obtenir une pâte homogène qui ne colle plus.",
+      "Pétrir la pâte pendant 8 à 10 minutes, jusqu'à ce qu'elle soit lisse et élastique.",
+      "Former une boule, filmer et laisser reposer 30 minutes à température ambiante.",
+      "Étaler la pâte finement au rouleau ou au laminoir, puis découper la forme de pâtes souhaitée (tagliatelles, lasagnes...).",
+      "Cuire dans une grande casserole d'eau bouillante salée 2 à 3 minutes seulement, les pâtes fraîches cuisant beaucoup plus vite que les pâtes sèches."
+    ]
+  },
+  {
     "titre": "Pâtes maison en 5 minutes avec 2 ingrédients",
     "photo": "photos/enattente.png",
     "temps": "15 min",
@@ -16256,6 +17426,75 @@ const recettes = [
       "Égoutter les pâtes et les petits pois en réservant un peu d'eau de cuisson.",
       "Mélanger les pâtes et les petits pois avec le pesto, en ajoutant un peu d'eau de cuisson si nécessaire pour obtenir une sauce onctueuse.",
       "Répartir dans des assiettes, déchirer la burrata par-dessus et assaisonner de sel et de poivre avant de servir."
+    ]
+  },
+  {
+    "titre": "Pâtes rapides tomate, saucisse et fromage",
+    "photo": "photos/enattente.png",
+    "temps": "20 min",
+    "personnes": "2",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "1 c. à café d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "150 g de tomates cerises",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "tomates cerises"
+      },
+      {
+        "texte": "80 g de saucisse de volaille (ou autre protéine au choix), coupée en rondelles",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "saucisse de volaille (ou autre protéine au choix), coupée en rondelles"
+      },
+      {
+        "texte": "1 c. à café de persil séché",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "persil séché"
+      },
+      {
+        "texte": "1 c. à café de purée de piment, facultatif",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "purée de piment, facultatif"
+      },
+      {
+        "texte": "20 ml d'eau bouillante",
+        "valeur": 20,
+        "unite": "ml",
+        "reste": "eau bouillante"
+      },
+      {
+        "texte": "30 g de crème liquide 15%",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "crème liquide 15%"
+      },
+      {
+        "texte": "150 g de pâtes déjà cuites",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "pâtes déjà cuites"
+      },
+      {
+        "texte": "10 g d'emmental râpé",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "emmental râpé"
+      }
+    ],
+    "etapes": [
+      "Dans une poêle, chauffer l'huile d'olive et ajouter les tomates cerises, les rondelles de saucisse, le persil, la purée de piment, l'eau bouillante et la crème.",
+      "Laisser mijoter à feu moyen pendant 6 minutes, en écrasant légèrement les tomates cerises pour qu'elles rendent leur jus.",
+      "Ajouter les pâtes déjà cuites et l'emmental râpé.",
+      "Mélanger jusqu'à ce que le fromage fonde et enrobe bien les pâtes, puis servir aussitôt."
     ]
   },
   {
@@ -16462,6 +17701,79 @@ const recettes = [
       "Commencer la cuisson des œufs pochés.",
       "Disposer le yaourt sur une assiette, puis les œufs pochés et assaisonner de poivre noir. Verser le beurre épicé par-dessus et terminer avec l'aneth.",
       "Tremper la pita dans le yaourt et déguster !"
+    ]
+  },
+  {
+    "titre": "Pizza chips Doritos",
+    "photo": "photos/enattente.png",
+    "temps": "45 min",
+    "personnes": "6",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "320 g de farine de blé",
+        "valeur": 320,
+        "unite": "g",
+        "reste": "farine de blé"
+      },
+      {
+        "texte": "1 sachet Doritos nature ou pizza, écrasés",
+        "valeur": 1,
+        "unite": null,
+        "reste": "sachet Doritos nature ou pizza, écrasés"
+      },
+      {
+        "texte": "210 g d'eau",
+        "valeur": 210,
+        "unite": "g",
+        "reste": "eau"
+      },
+      {
+        "texte": "15 g de levure boulangère fraîche",
+        "valeur": 15,
+        "unite": "g",
+        "reste": "levure boulangère fraîche"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "20 g d'huile d'olive",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "150 g de mozzarella râpée",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mozzarella râpée"
+      },
+      {
+        "texte": "300 g de tomate concassée",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "tomate concassée"
+      },
+      {
+        "texte": "50 g de pepperoni, en rondelles",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "pepperoni, en rondelles"
+      }
+    ],
+    "etapes": [
+      "Écraser grossièrement les Doritos dans leur sachet fermé.",
+      "Dans un bol, mélanger la farine, l'huile d'olive, les Doritos écrasés, l'eau, la levure et le sel.",
+      "Pétrir jusqu'à obtenir une pâte homogène, couvrir et laisser reposer 40 minutes dans un endroit tiède.",
+      "Ajouter un peu de mozzarella râpée dans la pâte et malaxer brièvement pour l'incorporer.",
+      "Étaler la pâte dans un moule à pizza huilé.",
+      "Répartir la tomate concassée sur toute la surface.",
+      "Ajouter le reste de mozzarella râpée, puis disposer les rondelles de pepperoni.",
+      "Préchauffer le four à 210°C et enfourner 15 à 20 minutes, jusqu'à ce que la croûte soit dorée et le fromage fondu."
     ]
   },
   {
@@ -18312,6 +19624,60 @@ const recettes = [
     ]
   },
   {
+    "titre": "Sablés nature maison",
+    "photo": "photos/enattente.png",
+    "temps": "30 min (+ repos)",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "125 g de beurre mou",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille, facultatif",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille, facultatif"
+      }
+    ],
+    "etapes": [
+      "Dans un saladier, travailler le beurre mou avec le sucre jusqu'à obtenir une texture crémeuse.",
+      "Ajouter l'œuf et la vanille, mélanger jusqu'à homogénéité.",
+      "Incorporer la farine et le sel, mélanger rapidement sans trop pétrir jusqu'à obtenir une pâte homogène.",
+      "Former une boule, l'aplatir en disque, filmer et réfrigérer au moins 30 minutes.",
+      "Préchauffer le four à 180°C. Étaler la pâte sur 4 à 5 mm d'épaisseur et découper les sablés à l'emporte-pièce.",
+      "Disposer sur une plaque recouverte de papier cuisson et cuire 10 à 12 minutes, jusqu'à ce que les bords soient légèrement dorés.",
+      "Laisser refroidir sur une grille avant de déguster ou de garnir."
+    ]
+  },
+  {
     "titre": "Salade de burger",
     "photo": "photos/enattente.png",
     "temps": "40 min",
@@ -19085,6 +20451,52 @@ const recettes = [
       "Retirer du feu, incorporer l'extrait de vanille et mélanger brièvement.",
       "Laisser refroidir le sirop à température ambiante avant l'utilisation.",
       "Optionnel : ajouter le sirop de chocolat pour une version chocolatée ; mélanger jusqu'à homogénéité."
+    ]
+  },
+  {
+    "titre": "Smoothie fraise-banane",
+    "photo": "photos/enattente.png",
+    "temps": "10 min",
+    "personnes": "2",
+    "cat": "boisson",
+    "ingredients": [
+      {
+        "texte": "200 g de fraises",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      {
+        "texte": "1 banane",
+        "valeur": 1,
+        "unite": null,
+        "reste": "banane"
+      },
+      {
+        "texte": "200 ml de lait ou boisson végétale",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "lait ou boisson végétale"
+      },
+      {
+        "texte": "1 c. à soupe de miel, facultatif",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "miel, facultatif"
+      },
+      {
+        "texte": "5 glaçons",
+        "valeur": 5,
+        "unite": null,
+        "reste": "glaçons"
+      }
+    ],
+    "etapes": [
+      "Laver et équeuter les fraises, éplucher la banane et la couper en morceaux.",
+      "Placer les fraises, la banane, le lait et le miel dans un blender.",
+      "Ajouter les glaçons et mixer à puissance élevée jusqu'à obtenir une texture bien lisse et mousseuse.",
+      "Goûter et ajuster en miel selon le goût.",
+      "Verser dans des verres et déguster immédiatement."
     ]
   },
   {
@@ -20585,6 +21997,79 @@ const recettes = [
     ]
   },
   {
+    "titre": "Tiramisu Kinder Bueno",
+    "photo": "photos/enattente.png",
+    "temps": "30 min (+ 4h de réfrigération)",
+    "personnes": "6",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "4 œufs, jaunes et blancs séparés",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs, jaunes et blancs séparés"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "500 g de mascarpone",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "24 biscuits cuillères",
+        "valeur": 24,
+        "unite": null,
+        "reste": "biscuits cuillères"
+      },
+      {
+        "texte": "200 ml de lait",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "6 Kinder Bueno, émiettés",
+        "valeur": 6,
+        "unite": null,
+        "reste": "Kinder Bueno, émiettés"
+      },
+      {
+        "texte": "100 g de pâte à tartiner noisette",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pâte à tartiner noisette"
+      },
+      {
+        "texte": "2 Kinder Bueno pour la déco",
+        "valeur": 2,
+        "unite": null,
+        "reste": "Kinder Bueno pour la déco"
+      }
+    ],
+    "etapes": [
+      "Fouetter les jaunes d'œufs avec le sucre jusqu'à blanchiment, puis ajouter le mascarpone et fouetter jusqu'à obtenir une crème lisse.",
+      "Monter les blancs en neige ferme avec une pincée de sel et les incorporer délicatement à la crème au mascarpone.",
+      "Faire fondre légèrement la pâte à tartiner noisette et l'incorporer à la moitié de la crème pour obtenir une couche parfumée.",
+      "Tremper rapidement les biscuits cuillères dans le lait et tapisser le fond d'un plat.",
+      "Étaler la crème nature, parsemer de Kinder Bueno émietté, puis ajouter une couche de biscuits imbibés.",
+      "Étaler la crème au Nutella, parsemer à nouveau de Kinder Bueno émietté.",
+      "Réfrigérer au moins 4 heures, idéalement toute une nuit.",
+      "Décorer avec des morceaux de Kinder Bueno juste avant de servir."
+    ]
+  },
+  {
     "titre": "Tiramisu Nocciolata bianca et Kinder Bueno White",
     "photo": "photos/enattente.png",
     "temps": "120 min",
@@ -20735,6 +22220,135 @@ const recettes = [
       "Sur un plat, disposer une couche de biscuits apéritif, puis étaler une couche de mélange de mascarpone.",
       "Alterner les couches de tomates et de mascarpone jusqu'à épuisement des ingrédients, puis terminer par une couche de stracciatella.",
       "Décorer le dessus avec quelques olives et un filet de crème de balsamique avant de servir."
+    ]
+  },
+  {
+    "titre": "Tiramisu spéculoos et pâte à tartiner",
+    "photo": "photos/enattente.png",
+    "temps": "30 min (+ 4h de réfrigération)",
+    "personnes": "6",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "4 œufs, jaunes et blancs séparés",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs, jaunes et blancs séparés"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "500 g de mascarpone",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "200 g de spéculoos",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "spéculoos"
+      },
+      {
+        "texte": "150 ml de lait",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "150 g de pâte à tartiner noisette",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "pâte à tartiner noisette"
+      },
+      {
+        "texte": "spéculoos émiettés pour la déco",
+        "valeur": 1,
+        "unite": null,
+        "reste": "spéculoos émiettés pour la déco"
+      }
+    ],
+    "etapes": [
+      "Fouetter les jaunes d'œufs avec le sucre jusqu'à blanchiment, ajouter le mascarpone et fouetter jusqu'à obtenir une crème lisse.",
+      "Faire fondre légèrement la pâte à tartiner et l'incorporer à la crème au mascarpone.",
+      "Monter les blancs en neige ferme avec une pincée de sel et les incorporer délicatement à la préparation.",
+      "Tremper rapidement les spéculoos dans le lait et tapisser le fond d'un plat.",
+      "Étaler une couche de crème sur les spéculoos.",
+      "Répéter l'opération en alternant spéculoos imbibés et crème, en terminant par la crème.",
+      "Réfrigérer au moins 4 heures, idéalement toute une nuit.",
+      "Parsemer de spéculoos émiettés juste avant de servir."
+    ]
+  },
+  {
+    "titre": "Tiramisu traditionnel au café",
+    "photo": "photos/enattente.png",
+    "temps": "30 min (+ 4h de réfrigération)",
+    "personnes": "6",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "4 œufs, jaunes et blancs séparés",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs, jaunes et blancs séparés"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "500 g de mascarpone",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "250 ml de café fort refroidi",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "café fort refroidi"
+      },
+      {
+        "texte": "24 biscuits cuillères ou boudoirs",
+        "valeur": 24,
+        "unite": null,
+        "reste": "biscuits cuillères ou boudoirs"
+      },
+      {
+        "texte": "2 c. à soupe de cacao amer en poudre pour la finition",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "cacao amer en poudre pour la finition"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Préparer un café fort et le laisser refroidir complètement dans une assiette creuse.",
+      "Fouetter les jaunes d'œufs avec le sucre jusqu'à ce que le mélange blanchisse et double de volume.",
+      "Ajouter le mascarpone et fouetter jusqu'à obtenir une crème lisse et homogène.",
+      "Monter les blancs en neige ferme avec une pincée de sel, puis les incorporer délicatement à la préparation au mascarpone à la spatule.",
+      "Tremper rapidement chaque biscuit dans le café froid (sans trop le détremper) et tapisser le fond d'un plat.",
+      "Étaler une couche de crème au mascarpone sur les biscuits.",
+      "Répéter l'opération : une couche de biscuits imbibés, une couche de crème, en terminant par la crème.",
+      "Réfrigérer au moins 4 heures, idéalement toute une nuit.",
+      "Juste avant de servir, saupoudrer généreusement de cacao amer en poudre à l'aide d'une passoire fine."
     ]
   },
   {
