@@ -22950,5 +22950,22 @@ const recettes = [
     "etapes": [
       "Aaaaa"
     ]
+  },
+  {
+    "titre": "Alicaca",
+    "temps": "Alicaca",
+    "personnes": "4",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "Alicaca",
+        "valeur": 1,
+        "unite": null,
+        "reste": "Alicaca"
+      }
+    ],
+    "etapes": [
+      "Alicaca"
+    ]
   }
 ];
