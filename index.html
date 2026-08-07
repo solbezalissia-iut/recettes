@@ -14,7 +14,10 @@
 <header>
   <div class="container">
     <div class="header-inner">
-      <div class="monogram">A</div>
+      <div class="header-photo" id="header-photo">
+        <img src="photos/profil.jpg" alt="Photo d'Alissia" onerror="this.style.display='none'; document.getElementById('header-photo-fallback').style.display='flex';">
+        <div class="monogram" id="header-photo-fallback" style="display:none;">A</div>
+      </div>
       <div class="header-text">
         <h1>Les recettes <em>d'Alissia</em></h1>
         <p>Mon carnet de cuisine personnel · <span class="header-count" id="header-count"></span></p>
@@ -140,6 +143,7 @@
         </div>
       </div>
       <button class="modal-back" id="modal-back" aria-label="Retour à la liste">← Retour</button>
+      <button class="modal-edit" id="modal-edit" aria-label="Modifier cette recette" title="Modifier cette recette">✎</button>
       <button class="modal-delete" id="modal-delete" aria-label="Supprimer cette recette" title="Supprimer cette recette">🗑</button>
       <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
     </div>
@@ -156,11 +160,11 @@
   </div>
 </div>
 
-<!-- MODAL AJOUT RECETTE -->
+<!-- MODAL AJOUT / MODIFICATION RECETTE -->
 <div class="modal-overlay" id="add-modal-overlay">
   <div class="add-modal" id="add-modal">
     <div class="add-modal-header">
-      <h2>Ajouter une recette</h2>
+      <h2 id="add-modal-title">Ajouter une recette</h2>
       <p>Publiez-la en ligne sur votre dépôt GitHub, ou enregistrez-la seulement dans ce navigateur.</p>
       <button class="modal-close" id="add-modal-close" aria-label="Fermer">✕</button>
     </div>
@@ -217,13 +221,13 @@
             <input type="password" id="github-token" placeholder="Collez ici votre jeton d'accès personnel GitHub (ghp_…)">
             <span class="hint">
               Sans jeton, la recette reste enregistrée uniquement dans ce navigateur. Avec un jeton, elle est publiée directement sur
-              <strong>solbezalissia-iut/recettes</strong> (branche <strong>main</strong>) et apparaîtra en ligne pour tout le monde après la republication automatique de GitHub Pages (souvent moins d'une minute).
+              <strong>solbezalissia-iut/recettes</strong> (branche <strong>main</strong>) et apparaîtra en ligne pour tout le monde après la republication automatique de GitHub Pages (souvent 1 à 10 minutes).
               <br>Pour en créer un : GitHub → photo de profil → Settings → Developer settings → Personal access tokens → Fine-grained tokens → New token → limitez-le au dépôt <strong>recettes</strong> avec la permission <strong>Contents: Read and write</strong>.
               Le jeton est mémorisé uniquement sur cet appareil, dans ce navigateur.
             </span>
           </div>
         </div>
-        <div class="form-success" id="add-form-success">Recette ajoutée avec succès !</div>
+        <div class="form-success" id="add-form-success">Recette enregistrée avec succès !</div>
         <div class="publish-status" id="publish-status"></div>
         <div class="form-actions">
           <button type="button" class="btn-secondary" id="add-form-cancel">Annuler</button>

@@ -23,7 +23,7 @@ function findSubstitution(ingredientName) {
   return found ? found.suggestion : null;
 }
 
-// ── Publication / suppression directe sur GitHub (dépôt GitHub Pages du site) ──
+// ── Publication / modification / suppression directe sur GitHub (dépôt GitHub Pages du site) ──
 const GITHUB_OWNER = 'solbezalissia-iut';
 const GITHUB_REPO = 'recettes';
 const GITHUB_BRANCH = 'main';
@@ -92,6 +92,7 @@ async function githubPutFile(path, base64Content, message, sha) {
 // proprement dans le tableau `recettes` du fichier recettes-data.js.
 function formatRecipeForFile(recipe) {
   const { isUserAdded, publishedToGithub, ...clean } = recipe;
+  if (clean.photo && clean.photo.startsWith('data:')) delete clean.photo;
   const json = JSON.stringify(clean, null, 2);
   return json.split('\n').map(line => '  ' + line).join('\n');
 }
@@ -111,7 +112,7 @@ function insertRecipeIntoSource(source, recipe) {
 }
 
 // Exécute le fichier de données (comme le fait la page elle-même via la balise <script>)
-// pour en extraire le vrai tableau `recettes`, utile pour retirer une recette avec certitude.
+// pour en extraire le vrai tableau `recettes`, utile pour modifier/retirer une recette avec certitude.
 function parseRecettesSource(source) {
   const fn = new Function(source + '\nreturn recettes;');
   return fn();
@@ -178,6 +179,53 @@ async function deleteRecipeFromGithub(recipe) {
     `Suppression de la recette : ${recipe.titre}`,
     current.sha
   );
+}
+
+// Modifie une recette existante sur GitHub (ou l'ajoute si elle n'y était pas encore).
+// originalTitre sert à la retrouver dans le fichier même si le titre a été changé.
+async function updateRecipeOnGithub(originalTitre, updatedRecipe, photoFile) {
+  const statusEl = document.getElementById('publish-status');
+  statusEl.className = 'publish-status visible info';
+
+  let photoPath = null;
+  if (photoFile) {
+    statusEl.textContent = 'Envoi de la nouvelle photo vers GitHub…';
+    const ext = (photoFile.type.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
+    photoPath = `photos/${slugify(updatedRecipe.titre)}-${Date.now()}.${ext}`;
+    const dataUrl = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(photoFile);
+    });
+    const base64 = dataUrl.split(',')[1];
+    await githubPutFile(photoPath, base64, `Mise à jour photo : ${updatedRecipe.titre}`);
+  }
+
+  statusEl.textContent = 'Mise à jour de la recette sur GitHub…';
+  const recipeForFile = { ...updatedRecipe };
+  if (photoPath) recipeForFile.photo = photoPath;
+
+  const current = await githubGetFile(GITHUB_DATA_PATH);
+  if (!current) throw new Error(`Fichier ${GITHUB_DATA_PATH} introuvable sur le dépôt.`);
+  const currentSource = base64ToUtf8(current.content.replace(/\n/g, ''));
+  const parsed = parseRecettesSource(currentSource);
+  const idx = parsed.findIndex(r => r.titre === originalTitre);
+  if (idx === -1) {
+    parsed.push(recipeForFile);
+  } else {
+    parsed[idx] = recipeForFile;
+  }
+  const updatedSource = serializeRecettesSource(parsed);
+
+  await githubPutFile(
+    GITHUB_DATA_PATH,
+    utf8ToBase64(updatedSource),
+    `Modification de la recette : ${updatedRecipe.titre}`,
+    current.sha
+  );
+
+  return photoPath;
 }
 
 // ── Recettes ajoutées par l'utilisateur (stockées dans le navigateur) ──
@@ -524,7 +572,7 @@ document.getElementById('modal-delete').addEventListener('click', async () => {
     renderFilters();
     buildGrids();
     closeModal();
-    alert('Recette supprimée du dépôt GitHub. Elle disparaîtra du site en ligne après la republication automatique de GitHub Pages (une à deux minutes).');
+    alert('Recette supprimée du dépôt GitHub. Elle disparaîtra du site en ligne après la republication automatique de GitHub Pages (une à dix minutes selon le cache).');
   } catch (err) {
     console.error(err);
     alert(`La suppression a échoué : ${err.message}`);
@@ -638,12 +686,14 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   });
 });
 
-// ── Ajout de recette ──
+// ── Ajout / modification de recette ──
 const addModalOverlay = document.getElementById('add-modal-overlay');
 const addForm = document.getElementById('add-recipe-form');
 const newPhotoInput = document.getElementById('new-photo');
 const newPhotoPreview = document.getElementById('new-photo-preview');
 let newPhotoDataUrl = '';
+let editingRecetteIdx = null;
+let editingOriginalTitre = null;
 
 function openAddModal() {
   addModalOverlay.classList.add('open');
@@ -660,9 +710,19 @@ function closeAddModal() {
   const statusEl = document.getElementById('publish-status');
   statusEl.classList.remove('visible', 'info', 'error');
   statusEl.textContent = '';
+  editingRecetteIdx = null;
+  editingOriginalTitre = null;
+  document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
+  document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
 }
 
-document.getElementById('add-recipe-btn').addEventListener('click', openAddModal);
+document.getElementById('add-recipe-btn').addEventListener('click', () => {
+  editingRecetteIdx = null;
+  editingOriginalTitre = null;
+  document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
+  document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
+  openAddModal();
+});
 document.getElementById('add-modal-close').addEventListener('click', closeAddModal);
 document.getElementById('add-form-cancel').addEventListener('click', closeAddModal);
 addModalOverlay.addEventListener('click', e => { if (e.target === addModalOverlay) closeAddModal(); });
@@ -676,6 +736,38 @@ newPhotoInput.addEventListener('change', () => {
     newPhotoPreview.innerHTML = `<img src="${newPhotoDataUrl}" alt="Aperçu">`;
   };
   reader.readAsDataURL(file);
+});
+
+// ── Modifier une recette existante : ouvre le même formulaire, pré-rempli ──
+document.getElementById('modal-edit').addEventListener('click', () => {
+  if (currentRecetteIdx === null) return;
+  const r = recettes[currentRecetteIdx];
+
+  if (r.variantes) {
+    alert("La modification n'est pas encore prise en charge pour les recettes à plusieurs versions. Tu peux la supprimer et la recréer si besoin.");
+    return;
+  }
+
+  editingRecetteIdx = currentRecetteIdx;
+  editingOriginalTitre = r.titre;
+
+  document.getElementById('add-modal-title').textContent = 'Modifier la recette';
+  document.getElementById('add-form-submit').textContent = 'Enregistrer les modifications';
+
+  document.getElementById('new-titre').value = r.titre;
+  document.getElementById('new-cat').value = r.cat;
+  document.getElementById('new-temps').value = r.temps;
+  document.getElementById('new-personnes').value = r.personnes;
+  document.getElementById('new-ingredients').value = r.ingredients.map(ingLabel).join('\n');
+  document.getElementById('new-etapes').value = r.etapes.join('\n');
+
+  newPhotoDataUrl = '';
+  newPhotoPreview.innerHTML = r.photo ? `<img src="${r.photo}" alt="Aperçu">` : 'Aperçu';
+
+  closeModal();
+  addModalOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (githubToken) document.getElementById('github-token').value = githubToken;
 });
 
 // Essaie d'extraire quantité / unité / reste d'une ligne d'ingrédient libre,
@@ -710,6 +802,55 @@ addForm.addEventListener('submit', async e => {
 
   if (!titre || !ingredientsLines.length || !etapesLines.length) return;
 
+  const isEditing = editingRecetteIdx !== null;
+
+  if (isEditing) {
+    const existing = recettes[editingRecetteIdx];
+    const updatedRecipe = {
+      ...existing,
+      titre, cat, temps, personnes,
+      ingredients: ingredientsLines.map(parseIngredientLine),
+      etapes: etapesLines
+    };
+    if (newPhotoDataUrl) updatedRecipe.photo = newPhotoDataUrl;
+
+    recettes[editingRecetteIdx] = updatedRecipe;
+    if (updatedRecipe.isUserAdded && !updatedRecipe.publishedToGithub) {
+      saveUserRecipes();
+    }
+    allIngredients = getAllIngredients();
+    renderFilters();
+    buildGrids();
+
+    if (tokenInput) {
+      githubToken = tokenInput;
+      localStorage.setItem('githubToken', tokenInput);
+      submitBtn.disabled = true;
+      try {
+        const publishedPhotoPath = await updateRecipeOnGithub(editingOriginalTitre, updatedRecipe, photoFile);
+        if (publishedPhotoPath) updatedRecipe.photo = publishedPhotoPath;
+        updatedRecipe.publishedToGithub = true;
+        recettes[editingRecetteIdx] = updatedRecipe;
+        saveUserRecipes();
+        statusEl.className = 'publish-status visible info';
+        statusEl.textContent = 'Modifications publiées sur GitHub ! Elles apparaîtront en ligne pour tout le monde dans quelques minutes, le temps que GitHub Pages republie le site.';
+        document.getElementById('add-form-success').classList.add('visible');
+        setTimeout(() => { closeAddModal(); }, 2200);
+      } catch (err) {
+        console.error(err);
+        statusEl.className = 'publish-status visible error';
+        statusEl.textContent = `Les modifications sont enregistrées dans ce navigateur, mais la publication sur GitHub a échoué : ${err.message}.`;
+      } finally {
+        submitBtn.disabled = false;
+      }
+    } else {
+      document.getElementById('add-form-success').classList.add('visible');
+      setTimeout(() => { closeAddModal(); }, 900);
+    }
+    return;
+  }
+
+  // ── Ajout d'une nouvelle recette ──
   const newRecipe = {
     titre,
     photo: newPhotoDataUrl || undefined,
@@ -739,7 +880,7 @@ addForm.addEventListener('submit', async e => {
       newRecipe.publishedToGithub = true;
       saveUserRecipes();
       statusEl.className = 'publish-status visible info';
-      statusEl.textContent = 'Recette publiée sur GitHub ! Elle apparaîtra en ligne pour tout le monde dans une minute ou deux, le temps que GitHub Pages republie le site.';
+      statusEl.textContent = 'Recette publiée sur GitHub ! Elle apparaîtra en ligne pour tout le monde dans quelques minutes, le temps que GitHub Pages republie le site.';
       document.getElementById('add-form-success').classList.add('visible');
       setTimeout(() => { closeAddModal(); }, 2200);
     } catch (err) {
