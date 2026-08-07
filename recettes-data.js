@@ -22883,5 +22883,29 @@ const recettes = [
       "Laisser refroidir (pas trop sinon ce sera dur).",
       "Étaler la crème entre 2 biscuits de même taille refroidis."
     ]
+  },
+  {
+    "titre": "h",
+    "temps": "df",
+    "personnes": "4",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "dffd",
+        "valeur": 1,
+        "unite": null,
+        "reste": "dffd"
+      },
+      {
+        "texte": "df",
+        "valeur": 1,
+        "unite": null,
+        "reste": "df"
+      }
+    ],
+    "etapes": [
+      "dfx",
+      "fg"
+    ]
   }
 ];
