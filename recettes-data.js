@@ -22932,5 +22932,23 @@ const recettes = [
       "caca",
       "caca"
     ]
+  },
+  {
+    "titre": "Teste",
+    "photo": "photos/teste-1786124566914.jpg",
+    "temps": "Caca",
+    "personnes": "4",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "Jsjsks",
+        "valeur": 1,
+        "unite": null,
+        "reste": "Jsjsks"
+      }
+    ],
+    "etapes": [
+      "Aaaaa"
+    ]
   }
 ];
