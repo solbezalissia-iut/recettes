@@ -22907,5 +22907,30 @@ const recettes = [
       "dfx",
       "fg"
     ]
+  },
+  {
+    "titre": "Alissia",
+    "photo": "photos/alissia-1786123945256.png",
+    "temps": "e",
+    "personnes": "4",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "3g farine",
+        "valeur": 3,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "4g sucre",
+        "valeur": 4,
+        "unite": "g",
+        "reste": "sucre"
+      }
+    ],
+    "etapes": [
+      "caca",
+      "caca"
+    ]
   }
 ];
