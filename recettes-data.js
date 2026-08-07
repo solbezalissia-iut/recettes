@@ -22878,28 +22878,5 @@ const recettes = [
       "Laisser refroidir (pas trop sinon ce sera dur).",
       "Étaler la crème entre 2 biscuits de même taille refroidis."
     ]
-  },
-  {
-    "titre": "Alicaca",
-    "temps": "Le caca",
-    "personnes": "4",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "Alissia",
-        "valeur": 1,
-        "unite": null,
-        "reste": "Alissia"
-      },
-      {
-        "texte": "Du caca",
-        "valeur": 1,
-        "unite": null,
-        "reste": "Du caca"
-      }
-    ],
-    "etapes": [
-      "Mélanger Alissia et le caca"
-    ]
   }
 ];
