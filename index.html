@@ -37,7 +37,24 @@
         <div class="ing-suggestions" id="ing-suggestions"></div>
       </div>
       <div class="ingredient-filter-wrap" id="active-filters"></div>
+      <span class="filter-label">Temps</span>
+      <select class="filter-select" id="time-filter">
+        <option value="">Tous</option>
+        <option value="15">≤ 15 min</option>
+        <option value="30">≤ 30 min</option>
+        <option value="60">≤ 1 h</option>
+        <option value="9999">Plus d'1 h</option>
+      </select>
+      <span class="filter-label">Trier</span>
+      <select class="filter-select" id="sort-select">
+        <option value="default">Par défaut</option>
+        <option value="az">Nom A → Z</option>
+        <option value="za">Nom Z → A</option>
+        <option value="time-asc">Temps croissant</option>
+        <option value="time-desc">Temps décroissant</option>
+      </select>
       <button class="filter-reset" id="reset-btn">Réinitialiser</button>
+      <button class="add-recipe-btn" id="add-recipe-btn">+ Ajouter une recette</button>
     </div>
   </div>
 </div>
@@ -134,6 +151,84 @@
         <div class="modal-section-title">Préparation</div>
         <ol class="steps-list" id="modal-steps"></ol>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL AJOUT RECETTE -->
+<div class="modal-overlay" id="add-modal-overlay">
+  <div class="add-modal" id="add-modal">
+    <div class="add-modal-header">
+      <h2>Ajouter une recette</h2>
+      <p>Publiez-la en ligne sur votre dépôt GitHub, ou enregistrez-la seulement dans ce navigateur.</p>
+      <button class="modal-close" id="add-modal-close" aria-label="Fermer">✕</button>
+    </div>
+    <div class="add-modal-body">
+      <form id="add-recipe-form">
+        <div class="form-grid">
+          <div class="form-field full">
+            <label for="new-titre">Titre de la recette</label>
+            <input type="text" id="new-titre" required placeholder="Ex : Tarte aux pommes de grand-mère">
+          </div>
+          <div class="form-field">
+            <label for="new-cat">Catégorie</label>
+            <select id="new-cat" required>
+              <option value="apero">Apéro</option>
+              <option value="entree">Entrée</option>
+              <option value="plat" selected>Plat</option>
+              <option value="dessert">Dessert</option>
+              <option value="boisson">Boisson</option>
+              <option value="sauce">Sauce</option>
+              <option value="base-culinaire">Base culinaire</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="new-temps">Temps</label>
+            <input type="text" id="new-temps" required placeholder="Ex : 30 min">
+          </div>
+          <div class="form-field">
+            <label for="new-personnes">Nombre de personnes</label>
+            <input type="number" id="new-personnes" min="1" value="4" required>
+          </div>
+          <div class="form-field">
+            <label for="new-photo">Photo (optionnelle)</label>
+            <div class="form-photo-row">
+              <input type="file" id="new-photo" accept="image/*">
+            </div>
+          </div>
+          <div class="form-field full">
+            <div class="form-photo-row">
+              <div class="form-photo-preview" id="new-photo-preview">Aperçu</div>
+              <span class="hint">Une photo au format paysage (comme un plat vu de dessus ou de trois-quarts) s'affichera le mieux en pleine largeur.</span>
+            </div>
+          </div>
+          <div class="form-field full">
+            <label for="new-ingredients">Ingrédients (un par ligne)</label>
+            <textarea id="new-ingredients" rows="5" required placeholder="200 g de farine&#10;2 œufs&#10;1 pincée de sel"></textarea>
+            <span class="hint">Commencez chaque ligne par la quantité si possible (ex : "150 g de sucre") pour que les portions puissent s'adapter automatiquement.</span>
+          </div>
+          <div class="form-field full">
+            <label for="new-etapes">Préparation (une étape par ligne)</label>
+            <textarea id="new-etapes" rows="5" required placeholder="Préchauffer le four à 180°C.&#10;Mélanger les ingrédients secs.&#10;..."></textarea>
+          </div>
+          <div class="form-field full github-publish-block">
+            <label for="github-token">Publier en ligne sur GitHub (optionnel)</label>
+            <input type="password" id="github-token" placeholder="Collez ici votre jeton d'accès personnel GitHub (ghp_…)">
+            <span class="hint">
+              Sans jeton, la recette reste enregistrée uniquement dans ce navigateur. Avec un jeton, elle est publiée directement sur
+              <strong>solbezalissia-iut/recettes</strong> (branche <strong>main</strong>) et apparaîtra en ligne pour tout le monde après la republication automatique de GitHub Pages (souvent moins d'une minute).
+              <br>Pour en créer un : GitHub → photo de profil → Settings → Developer settings → Personal access tokens → Fine-grained tokens → New token → limitez-le au dépôt <strong>recettes</strong> avec la permission <strong>Contents: Read and write</strong>.
+              Le jeton est mémorisé uniquement sur cet appareil, dans ce navigateur.
+            </span>
+          </div>
+        </div>
+        <div class="form-success" id="add-form-success">Recette ajoutée avec succès !</div>
+        <div class="publish-status" id="publish-status"></div>
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="add-form-cancel">Annuler</button>
+          <button type="submit" class="btn-primary" id="add-form-submit">Enregistrer la recette</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

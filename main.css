@@ -156,6 +156,114 @@ header p {
 }
 .filter-reset:hover { border-color: var(--mocha); color: var(--mocha); }
 
+/* ── Extra filters: temps & tri ── */
+.filter-select {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.85rem;
+  background: var(--cream);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.filter-select:focus { outline: none; border-color: var(--caramel); }
+
+.add-recipe-btn {
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--caramel);
+  border-radius: var(--radius);
+  background: var(--caramel);
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, box-shadow 0.15s;
+  margin-left: auto;
+}
+.add-recipe-btn:hover { background: var(--mocha); border-color: var(--mocha); box-shadow: 0 3px 10px rgba(196,123,58,0.3); }
+@media (max-width: 780px) { .add-recipe-btn { margin-left: 0; } }
+
+/* ── Formulaire d'ajout de recette ── */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.form-field input[type="text"],
+.form-field input[type="number"],
+.form-field input[type="password"],
+.form-field select,
+.form-field textarea {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.9rem;
+  background: var(--warm-white);
+  color: var(--text);
+  resize: vertical;
+}
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: none; border-color: var(--caramel); }
+.form-field .hint { font-size: 0.74rem; color: var(--muted); font-style: italic; }
+.form-photo-preview {
+  width: 100px; height: 100px; border-radius: var(--radius);
+  background: var(--sand);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+.form-photo-preview img { width: 100%; height: 100%; object-fit: cover; }
+.form-photo-row { display: flex; align-items: center; gap: 1rem; }
+.form-actions { display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem; }
+.btn-primary, .btn-secondary {
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-primary { background: var(--caramel); border: 1px solid var(--caramel); color: white; }
+.btn-primary:hover { background: var(--mocha); border-color: var(--mocha); }
+.btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--muted); }
+.btn-secondary:hover { border-color: var(--mocha); color: var(--mocha); }
+.form-success {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(122,158,126,0.15);
+  border: 1px solid var(--sage);
+  color: var(--mocha);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+.form-success.visible { display: block; }
+@media (max-width: 560px) { .form-grid { grid-template-columns: 1fr; } }
+
+.github-publish-block {
+  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--border);
+}
+.github-publish-block .hint { line-height: 1.6; margin-top: 0.5rem; }
+.publish-status {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+.publish-status.visible { display: block; }
+.publish-status.info { background: rgba(122,158,126,0.12); border: 1px solid var(--sage); color: var(--mocha); }
+.publish-status.error { background: rgba(212,133,106,0.12); border: 1px solid var(--blush); color: var(--mocha); }
+
 /* ── TABS ── */
 .tabs {
   display: flex;
@@ -215,22 +323,23 @@ header p {
 .recipe-card:hover { background: var(--cream); transform: translateY(-2px); box-shadow: 0 10px 24px rgba(44,26,14,0.12); z-index: 2; }
 .recipe-card.hidden { display: none; }
 
-/* Photo thumbnail */
+/* Photo — pleine largeur en haut de la carte, format paysage */
 .card-photo {
   width: 100%;
-  height: 160px;
+  height: 190px;
   overflow: hidden;
   background: var(--sand);
   flex-shrink: 0;
+  position: relative;
 }
 .card-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
-.recipe-card:hover .card-photo img { transform: scale(1.03); }
+.recipe-card:hover .card-photo img { transform: scale(1.06); }
 
 .card-photo--placeholder {
   display: flex;
@@ -288,16 +397,39 @@ header p {
   margin: auto;
 }
 
-/* Modal photo */
+/* ── Modal "Ajouter une recette" ── */
+.add-modal {
+  background: var(--warm-white);
+  max-width: 640px;
+  width: 100%;
+  border-radius: 6px;
+  margin: auto;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.add-modal-header {
+  background: var(--espresso);
+  color: var(--cream);
+  padding: 1.5rem 2rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.add-modal-header h2 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 1.4rem; }
+.add-modal-header p { font-size: 0.82rem; color: rgba(250,247,242,0.6); margin-top: 0.3rem; }
+.add-modal-body { padding: 1.75rem 2rem; overflow-y: auto; }
+
+/* Modal photo — pleine largeur, format paysage, coins arrondis hérités du modal */
 .modal-photo-wrap {
   width: 100%;
-  height: 260px;
+  height: 280px;
   overflow: hidden;
   background: var(--sand);
   flex-shrink: 0;
+  position: relative;
 }
 .modal-photo-wrap--placeholder {
-  height: 80px;
+  height: 140px;
 }
 .modal-photo-wrap img {
   width: 100%;
@@ -318,10 +450,9 @@ header p {
 .modal-header {
   background: var(--espresso);
   color: var(--cream);
-  padding: 1.5rem 2rem;
   position: relative;
 }
-.modal-header-info { padding-right: 2.5rem; }
+.modal-header-info { padding: 1.5rem 2rem; padding-right: 2.5rem; }
 .modal-cat { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--caramel); font-weight: 500; margin-bottom: 0.4rem; }
 .modal-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; line-height: 1.25; }
 .modal-meta { margin-top: 0.6rem; display: flex; gap: 1.5rem; font-size: 0.82rem; color: rgba(250,247,242,0.6); }
@@ -388,37 +519,44 @@ header p {
   position: absolute;
   top: 1.25rem;
   left: 1.25rem;
-  background: rgba(255,255,255,0.1);
-  border: none;
+  z-index: 5;
+  background: rgba(44,26,14,0.78);
+  border: 1px solid rgba(250,247,242,0.35);
   color: var(--cream);
-  padding: 0.4rem 0.85rem;
+  padding: 0.45rem 0.95rem;
   border-radius: 99px;
   cursor: pointer;
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  transition: background 0.15s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+  transition: background 0.15s, border-color 0.15s;
 }
-.modal-back:hover { background: rgba(255,255,255,0.2); }
+.modal-back:hover { background: rgba(44,26,14,0.95); border-color: rgba(250,247,242,0.6); }
 
 .modal-close {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  background: rgba(255,255,255,0.1);
-  border: none;
+  z-index: 5;
+  background: rgba(44,26,14,0.78);
+  border: 1px solid rgba(250,247,242,0.35);
   color: var(--cream);
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.15s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+  transition: background 0.15s, border-color 0.15s;
 }
-.modal-close:hover { background: rgba(255,255,255,0.2); }
+.modal-close:hover { background: rgba(44,26,14,0.95); border-color: rgba(250,247,242,0.6); }
 
 .modal-body { padding: 2rem; display: grid; grid-template-columns: 1fr 1.6fr; gap: 2rem; }
 @media (max-width: 540px) { .modal-body { grid-template-columns: 1fr; } }
