@@ -23,6 +23,163 @@ function findSubstitution(ingredientName) {
   return found ? found.suggestion : null;
 }
 
+// ── Publication / suppression directe sur GitHub (dépôt GitHub Pages du site) ──
+const GITHUB_OWNER = 'solbezalissia-iut';
+const GITHUB_REPO = 'recettes';
+const GITHUB_BRANCH = 'main';
+const GITHUB_DATA_PATH = 'recettes-data.js';
+const GITHUB_API_ROOT = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents`;
+
+let githubToken = localStorage.getItem('githubToken') || '';
+
+function slugify(str) {
+  return str
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60) || 'recette';
+}
+
+// Encode une chaîne texte (UTF-8, accents compris) en base64, comme l'exige l'API GitHub.
+function utf8ToBase64(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+function base64ToUtf8(b64) {
+  return decodeURIComponent(escape(atob(b64)));
+}
+
+async function githubGetFile(path) {
+  const res = await fetch(`${GITHUB_API_ROOT}/${path}?ref=${GITHUB_BRANCH}`, {
+    headers: {
+      Authorization: `Bearer ${githubToken}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    }
+  });
+  if (!res.ok) {
+    if (res.status === 404) return null;
+    throw new Error(`Lecture GitHub échouée (${res.status})`);
+  }
+  return res.json();
+}
+
+async function githubPutFile(path, base64Content, message, sha) {
+  const body = {
+    message,
+    content: base64Content,
+    branch: GITHUB_BRANCH
+  };
+  if (sha) body.sha = sha;
+  const res = await fetch(`${GITHUB_API_ROOT}/${path}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `Bearer ${githubToken}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const errBody = await res.json().catch(() => ({}));
+    throw new Error(errBody.message || `Écriture GitHub échouée (${res.status})`);
+  }
+  return res.json();
+}
+
+// Formate un objet recette en JSON indenté à 2 espaces, aligné pour s'insérer
+// proprement dans le tableau `recettes` du fichier recettes-data.js.
+function formatRecipeForFile(recipe) {
+  const { isUserAdded, publishedToGithub, ...clean } = recipe;
+  const json = JSON.stringify(clean, null, 2);
+  return json.split('\n').map(line => '  ' + line).join('\n');
+}
+
+function insertRecipeIntoSource(source, recipe) {
+  const block = formatRecipeForFile(recipe);
+  const trimmed = source.replace(/\s+$/, '');
+  if (!trimmed.endsWith('];')) {
+    throw new Error("Structure de recettes-data.js non reconnue, insertion impossible.");
+  }
+  // Retire le "];" final, puis tout espace/retour à la ligne restant après le "}" du dernier objet.
+  const withoutClosing = trimmed.slice(0, -2).replace(/\s+$/, '');
+  if (!withoutClosing.endsWith('}')) {
+    throw new Error("Fin de fichier inattendue, insertion impossible.");
+  }
+  return `${withoutClosing},\n${block}\n];\n`;
+}
+
+// Exécute le fichier de données (comme le fait la page elle-même via la balise <script>)
+// pour en extraire le vrai tableau `recettes`, utile pour retirer une recette avec certitude.
+function parseRecettesSource(source) {
+  const fn = new Function(source + '\nreturn recettes;');
+  return fn();
+}
+
+function serializeRecettesSource(recipesArray) {
+  const body = recipesArray.map(r => formatRecipeForFile(r)).join(',\n');
+  return `const recettes = [\n${body}\n];\n`;
+}
+
+async function publishRecipeToGithub(recipe, photoFile) {
+  const statusEl = document.getElementById('publish-status');
+  statusEl.className = 'publish-status visible info';
+
+  let photoPath = null;
+  if (photoFile) {
+    statusEl.textContent = 'Envoi de la photo vers GitHub…';
+    const ext = (photoFile.type.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
+    photoPath = `photos/${slugify(recipe.titre)}-${Date.now()}.${ext}`;
+    const dataUrl = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(photoFile);
+    });
+    const base64 = dataUrl.split(',')[1];
+    await githubPutFile(photoPath, base64, `Ajout photo : ${recipe.titre}`);
+  }
+
+  statusEl.textContent = 'Mise à jour de la liste des recettes sur GitHub…';
+  const recipeForFile = { ...recipe };
+  if (photoPath) recipeForFile.photo = photoPath;
+  else delete recipeForFile.photo;
+
+  const current = await githubGetFile(GITHUB_DATA_PATH);
+  if (!current) throw new Error(`Fichier ${GITHUB_DATA_PATH} introuvable sur le dépôt.`);
+  const currentSource = base64ToUtf8(current.content.replace(/\n/g, ''));
+  const updatedSource = insertRecipeIntoSource(currentSource, recipeForFile);
+
+  await githubPutFile(
+    GITHUB_DATA_PATH,
+    utf8ToBase64(updatedSource),
+    `Ajout de la recette : ${recipe.titre}`,
+    current.sha
+  );
+
+  return photoPath;
+}
+
+async function deleteRecipeFromGithub(recipe) {
+  const current = await githubGetFile(GITHUB_DATA_PATH);
+  if (!current) throw new Error(`Fichier ${GITHUB_DATA_PATH} introuvable sur le dépôt.`);
+  const currentSource = base64ToUtf8(current.content.replace(/\n/g, ''));
+  const parsed = parseRecettesSource(currentSource);
+  const idx = parsed.findIndex(r => r.titre === recipe.titre);
+  if (idx === -1) {
+    throw new Error(`Recette introuvable dans le fichier en ligne (elle a peut-être déjà été supprimée, ou pas encore publiée).`);
+  }
+  parsed.splice(idx, 1);
+  const updatedSource = serializeRecettesSource(parsed);
+  await githubPutFile(
+    GITHUB_DATA_PATH,
+    utf8ToBase64(updatedSource),
+    `Suppression de la recette : ${recipe.titre}`,
+    current.sha
+  );
+}
+
 // ── Recettes ajoutées par l'utilisateur (stockées dans le navigateur) ──
 (function loadUserRecipes() {
   try {
@@ -326,6 +483,56 @@ function closeModal() {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
+// ── Suppression d'une recette depuis la fiche recette ──
+document.getElementById('modal-delete').addEventListener('click', async () => {
+  if (currentRecetteIdx === null) return;
+  const idx = currentRecetteIdx;
+  const recipe = recettes[idx];
+
+  const confirmed = confirm(`Supprimer définitivement "${recipe.titre}" ?\n\nCette action ne peut pas être annulée facilement.`);
+  if (!confirmed) return;
+
+  const deleteBtn = document.getElementById('modal-delete');
+  deleteBtn.disabled = true;
+
+  // Cas simple : recette ajoutée localement et jamais publiée → suppression locale uniquement, immédiate.
+  if (recipe.isUserAdded && !recipe.publishedToGithub) {
+    recettes.splice(idx, 1);
+    saveUserRecipes();
+    allIngredients = getAllIngredients();
+    renderFilters();
+    buildGrids();
+    closeModal();
+    deleteBtn.disabled = false;
+    return;
+  }
+
+  // Sinon la recette existe dans le fichier en ligne (recette d'origine ou déjà publiée) :
+  // il faut un jeton GitHub pour la retirer réellement du dépôt.
+  let token = githubToken;
+  if (!token) {
+    token = prompt('Collez votre jeton GitHub (avec accès en écriture au dépôt "recettes") pour confirmer la suppression en ligne :', '');
+    if (!token) { deleteBtn.disabled = false; return; }
+    localStorage.setItem('githubToken', token);
+  }
+  githubToken = token;
+
+  try {
+    await deleteRecipeFromGithub(recipe);
+    recettes.splice(idx, 1);
+    allIngredients = getAllIngredients();
+    renderFilters();
+    buildGrids();
+    closeModal();
+    alert('Recette supprimée du dépôt GitHub. Elle disparaîtra du site en ligne après la republication automatique de GitHub Pages (une à deux minutes).');
+  } catch (err) {
+    console.error(err);
+    alert(`La suppression a échoué : ${err.message}`);
+  } finally {
+    deleteBtn.disabled = false;
+  }
+});
+
 // ── Filters & search ──
 function getAllIngredients() {
   const set = new Set();
@@ -441,8 +648,7 @@ let newPhotoDataUrl = '';
 function openAddModal() {
   addModalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
-  const savedToken = localStorage.getItem('githubToken');
-  if (savedToken) document.getElementById('github-token').value = savedToken;
+  if (githubToken) document.getElementById('github-token').value = githubToken;
 }
 function closeAddModal() {
   addModalOverlay.classList.remove('open');
@@ -487,132 +693,6 @@ function parseIngredientLine(line) {
   }
   return { texte: trimmed, valeur: 1, unite: null, reste: trimmed };
 }
-
-// ── Publication directe sur GitHub (dépôt GitHub Pages du site) ──
-const GITHUB_OWNER = 'solbezalissia-iut';
-const GITHUB_REPO = 'recettes';
-const GITHUB_BRANCH = 'main';
-const GITHUB_DATA_PATH = 'recettes-data.js';
-const GITHUB_API_ROOT = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents`;
-
-function slugify(str) {
-  return str
-    .toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .slice(0, 60) || 'recette';
-}
-
-// Encode une chaîne texte (UTF-8, accents compris) en base64, comme l'exige l'API GitHub.
-function utf8ToBase64(str) {
-  return btoa(unescape(encodeURIComponent(str)));
-}
-function base64ToUtf8(b64) {
-  return decodeURIComponent(escape(atob(b64)));
-}
-
-async function githubGetFile(path) {
-  const res = await fetch(`${GITHUB_API_ROOT}/${path}?ref=${GITHUB_BRANCH}`, {
-    headers: {
-      Authorization: `Bearer ${githubToken}`,
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28'
-    }
-  });
-  if (!res.ok) {
-    if (res.status === 404) return null;
-    throw new Error(`Lecture GitHub échouée (${res.status})`);
-  }
-  return res.json();
-}
-
-async function githubPutFile(path, base64Content, message, sha) {
-  const body = {
-    message,
-    content: base64Content,
-    branch: GITHUB_BRANCH
-  };
-  if (sha) body.sha = sha;
-  const res = await fetch(`${GITHUB_API_ROOT}/${path}`, {
-    method: 'PUT',
-    headers: {
-      Authorization: `Bearer ${githubToken}`,
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(body)
-  });
-  if (!res.ok) {
-    const errBody = await res.json().catch(() => ({}));
-    throw new Error(errBody.message || `Écriture GitHub échouée (${res.status})`);
-  }
-  return res.json();
-}
-
-// Formate un objet recette en JSON indenté à 2 espaces, aligné pour s'insérer
-// proprement dans le tableau `recettes` du fichier recettes-data.js.
-function formatRecipeForFile(recipe) {
-  const { isUserAdded, publishedToGithub, ...clean } = recipe;
-  const json = JSON.stringify(clean, null, 2);
-  return json.split('\n').map(line => '  ' + line).join('\n');
-}
-
-function insertRecipeIntoSource(source, recipe) {
-  const block = formatRecipeForFile(recipe);
-  const trimmed = source.replace(/\s+$/, '');
-  if (!trimmed.endsWith('];')) {
-    throw new Error("Structure de recettes-data.js non reconnue, insertion impossible.");
-  }
-  // Retire le "];" final, puis tout espace/retour à la ligne restant après le "}" du dernier objet.
-  const withoutClosing = trimmed.slice(0, -2).replace(/\s+$/, '');
-  if (!withoutClosing.endsWith('}')) {
-    throw new Error("Fin de fichier inattendue, insertion impossible.");
-  }
-  return `${withoutClosing},\n${block}\n];\n`;
-}
-
-async function publishRecipeToGithub(recipe, photoFile) {
-  const statusEl = document.getElementById('publish-status');
-  statusEl.className = 'publish-status visible info';
-
-  let photoPath = null;
-  if (photoFile) {
-    statusEl.textContent = 'Envoi de la photo vers GitHub…';
-    const ext = (photoFile.type.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
-    photoPath = `photos/${slugify(recipe.titre)}-${Date.now()}.${ext}`;
-    const dataUrl = await new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(photoFile);
-    });
-    const base64 = dataUrl.split(',')[1];
-    await githubPutFile(photoPath, base64, `Ajout photo : ${recipe.titre}`);
-  }
-
-  statusEl.textContent = 'Mise à jour de la liste des recettes sur GitHub…';
-  const recipeForFile = { ...recipe };
-  if (photoPath) recipeForFile.photo = photoPath;
-  else delete recipeForFile.photo;
-
-  const current = await githubGetFile(GITHUB_DATA_PATH);
-  if (!current) throw new Error(`Fichier ${GITHUB_DATA_PATH} introuvable sur le dépôt.`);
-  const currentSource = base64ToUtf8(current.content.replace(/\n/g, ''));
-  const updatedSource = insertRecipeIntoSource(currentSource, recipeForFile);
-
-  await githubPutFile(
-    GITHUB_DATA_PATH,
-    utf8ToBase64(updatedSource),
-    `Ajout de la recette : ${recipe.titre}`,
-    current.sha
-  );
-
-  return photoPath;
-}
-
-let githubToken = '';
 
 addForm.addEventListener('submit', async e => {
   e.preventDefault();

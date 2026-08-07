@@ -558,6 +558,33 @@ header p {
 }
 .modal-close:hover { background: rgba(44,26,14,0.95); border-color: rgba(250,247,242,0.6); }
 
+.modal-delete {
+  position: absolute;
+  top: 1.25rem;
+  right: 4.3rem;
+  z-index: 5;
+  background: rgba(44,26,14,0.78);
+  border: 1px solid rgba(250,247,242,0.35);
+  color: var(--cream);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+  transition: background 0.15s, border-color 0.15s;
+}
+.modal-delete:hover { background: rgba(212,133,106,0.85); border-color: var(--blush); }
+.modal-delete:disabled { opacity: 0.5; cursor: wait; }
+@media (max-width: 480px) {
+  .modal-delete { right: 1.25rem; top: 4rem; }
+  .modal-close { top: 4rem; }
+}
+
 .modal-body { padding: 2rem; display: grid; grid-template-columns: 1fr 1.6fr; gap: 2rem; }
 @media (max-width: 540px) { .modal-body { grid-template-columns: 1fr; } }
 

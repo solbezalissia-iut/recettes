@@ -8231,7 +8231,7 @@ const recettes = [
   {
     "titre": "Entremets pêche-abricot façon vitrine pâtissière (grand + minis)",
     "photo": "photos/enattente.png",
-    "temps": "180 min (+ congélation 4h minimum et prise du glaçage)",
+    "temps": "180 min (+ nuit de congélation)",
     "personnes": "10 (1 entremets 20 cm) + 6 individuels",
     "cat": "dessert",
     "ingredients": [
@@ -8260,10 +8260,16 @@ const recettes = [
         "reste": "vanille (insert)"
       },
       {
-        "texte": "3 g d'agar-agar (insert)",
-        "valeur": 3,
+        "texte": "8 g de gélatine en feuilles (insert)",
+        "valeur": 8,
         "unite": "g",
-        "reste": "agar-agar (insert)"
+        "reste": "gélatine en feuilles (insert)"
+      },
+      {
+        "texte": "40 g d'eau (insert, pour la gélatine)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "eau (insert, pour la gélatine)"
       },
       {
         "texte": "140 g de beurre (financier)",
@@ -8338,14 +8344,14 @@ const recettes = [
         "reste": "mascarpone (mousse)"
       },
       {
-        "texte": "250 g de crème liquide entière bien froide (mousse)",
-        "valeur": 250,
+        "texte": "400 g de crème liquide entière bien froide (mousse)",
+        "valeur": 400,
         "unite": "g",
         "reste": "crème liquide entière bien froide (mousse)"
       },
       {
-        "texte": "90 g de sucre glace (mousse)",
-        "valeur": 90,
+        "texte": "100 g de sucre glace (mousse)",
+        "valeur": 100,
         "unite": "g",
         "reste": "sucre glace (mousse)"
       },
@@ -8356,10 +8362,10 @@ const recettes = [
         "reste": "vanille (mousse)"
       },
       {
-        "texte": "1,5 g d'agar-agar (mousse)",
-        "valeur": 1.5,
+        "texte": "10 g de gélatine en feuilles (mousse)",
+        "valeur": 10,
         "unite": "g",
-        "reste": "agar-agar (mousse)"
+        "reste": "gélatine en feuilles (mousse)"
       },
       {
         "texte": "50 g de lait (mousse)",
@@ -8368,34 +8374,22 @@ const recettes = [
         "reste": "lait (mousse)"
       },
       {
-        "texte": "250 g de lait entier (glaçage)",
-        "valeur": 250,
+        "texte": "150 g d'eau (glaçage)",
+        "valeur": 150,
         "unite": "g",
-        "reste": "lait entier (glaçage)"
+        "reste": "eau (glaçage)"
       },
       {
-        "texte": "80 g de sucre (glaçage)",
-        "valeur": 80,
+        "texte": "150 g de sucre (glaçage)",
+        "valeur": 150,
         "unite": "g",
         "reste": "sucre (glaçage)"
       },
       {
-        "texte": "6 g de gélatine en feuilles, soit environ 3 feuilles (glaçage)",
-        "valeur": 6,
+        "texte": "8 g de gélatine en feuilles (glaçage)",
+        "valeur": 8,
         "unite": "g",
-        "reste": "gélatine en feuilles, soit environ 3 feuilles (glaçage)"
-      },
-      {
-        "texte": "1 c. à café de vanille (glaçage)",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "vanille (glaçage)"
-      },
-      {
-        "texte": "100 g de chocolat blanc, pour un effet plus opaque type vitrine (glaçage)",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "chocolat blanc, pour un effet plus opaque type vitrine (glaçage)"
+        "reste": "gélatine en feuilles (glaçage)"
       },
       {
         "texte": "cubes de pêche fraîche (décor)",
@@ -8414,43 +8408,44 @@ const recettes = [
         "valeur": 1,
         "unite": null,
         "reste": "amandes effilées torréfiées (décor)"
+      },
+      {
+        "texte": "crème mascarpone pour pochage, facultatif (décor)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "crème mascarpone pour pochage, facultatif (décor)"
+      },
+      {
+        "texte": "sucre glace pour le voile (décor)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "sucre glace pour le voile (décor)"
       }
     ],
     "etapes": [
-      "INSERT PÊCHE-ABRICOT (à préparer en premier) : couper les abricots et les pêches en petits morceaux.",
-      "Mettre les fruits dans une casserole avec le sucre et la vanille, puis cuire environ 15 minutes à feu moyen.",
-      "Mixer légèrement la préparation en gardant un peu de texture avec quelques morceaux de fruits.",
-      "Remettre sur le feu et ajouter les 3 g d'agar-agar en pluie fine tout en remuant.",
-      "Porter à ébullition pendant 1 minute complète : c'est indispensable pour que l'agar-agar prenne correctement.",
-      "Couler immédiatement la préparation : un disque de 16 cm de diamètre pour l'entremets de 20 cm, et six disques de 5 cm pour les entremets individuels.",
-      "Laisser prendre à température ambiante, puis congeler au moins 4 heures.",
-      "FINANCIER NOISETTE : faire fondre le beurre jusqu'à obtenir une couleur ambrée type beurre noisette.",
+      "Préparer l'insert : couper les abricots et les pêches en morceaux, les mettre dans une casserole avec le sucre et la vanille, et cuire à feu doux pendant 15 minutes en remuant régulièrement.",
+      "Mixer partiellement la compotée pour obtenir une texture semi-lisse avec encore quelques morceaux de fruits.",
+      "Hydrater la gélatine dans l'eau froide, l'essorer, puis l'incorporer chaude à la compotée hors du feu en mélangeant bien jusqu'à dissolution complète.",
+      "Couler la préparation dans un moule de 16 cm de diamètre pour l'insert du grand entremets, puis répartir le reste dans 6 moules de 5 cm pour les entremets individuels. Congeler au moins 4 heures, idéalement toute une nuit.",
+      "Préparer le financier : faire fondre le beurre jusqu'à ce qu'il prenne une légère couleur noisette, puis le laisser tiédir.",
       "Dans un bol, mélanger la poudre de noisette, la farine, le sucre glace et la pincée de sel.",
-      "Ajouter les blancs d'œufs et la vanille au mélange de poudres.",
-      "Incorporer le beurre noisette encore tiède et bien mélanger jusqu'à obtenir une pâte homogène.",
-      "Verser la pâte sur une plaque recouverte de papier cuisson, dans un cercle de 20 cm et dans des cercles de 6 cm.",
-      "Cuire à 170°C pendant 18 à 20 minutes, jusqu'à ce que les financiers soient dorés. Laisser refroidir puis découper : un disque de 20 cm et six disques de 6 cm.",
-      "CROUSTILLANT AMANDE-CHOCOLAT : faire fondre le chocolat noir au bain-marie ou au micro-ondes.",
-      "Ajouter les amandes torréfiées concassées, les boudoirs écrasés et, si désiré, la noix de coco râpée, puis bien mélanger.",
-      "Étaler cette pâte en couche fine de 2 à 3 mm sur les disques de financier refroidis, puis découper aux mêmes dimensions : un cercle de 20 cm et six cercles de 6 cm. Réserver au frais.",
-      "MOUSSE MASCARPONE VANILLE : chauffer les 50 g de lait, puis ajouter 1,5 g d'agar-agar en pluie.",
-      "Porter cette base à ébullition pendant 1 minute complète, puis laisser redescendre à 35–40°C.",
-      "Pendant ce temps, fouetter le mascarpone avec le sucre glace et la vanille.",
-      "Monter la crème liquide bien froide en une texture souple, sans la fouetter trop ferme.",
-      "Mélanger délicatement la crème montée et le mascarpone préparé.",
-      "Verser le lait gélifié tiède en filet dans cet appareil, mélanger rapidement, puis utiliser la mousse immédiatement car elle prend vite.",
-      "MONTAGE DE L'ENTREMETS 20 CM : chemiser un cercle de 20 cm avec du rhodoïd, puis déposer le disque financier-croustillant de 20 cm au fond.",
-      "Ajouter une fine couche de mousse mascarpone, démouler l'insert congelé de 16 cm et le centrer par-dessus.",
-      "Compléter avec le reste de mousse jusqu'en haut du cercle, lisser la surface à la spatule, puis congeler.",
-      "MONTAGE DES 6 ENTREMETS INDIVIDUELS 6 CM : chemiser chaque cercle de 6 cm avec du rhodoïd et déposer un disque financier-croustillant de 6 cm au fond.",
-      "Ajouter une couche de mousse, démouler un insert congelé de 5 cm et le centrer, puis compléter avec le reste de mousse, lisser et congeler.",
-      "GLAÇAGE LAIT VANILLE (opaque, effet vitrine) : faire tremper les feuilles de gélatine dans un grand bol d'eau froide pendant 10 minutes pour les hydrater.",
-      "Dans une casserole, chauffer le lait entier, le sucre et la vanille jusqu'au frémissement, sans laisser bouillir fortement.",
-      "Retirer du feu, essorer la gélatine hydratée et l'incorporer au lait chaud, en mélangeant jusqu'à dissolution complète.",
-      "Ajouter les 100 g de chocolat blanc fondu pour un rendu plus opaque et vitrine, puis mixer au mixeur plongeant pour parfaitement lisser le glaçage.",
-      "Laisser refroidir le glaçage jusqu'à 28–32°C : il doit avoir une texture nappante épaisse, type crème fluide. S'il est trop liquide, attendre encore quelques minutes ; s'il est trop épais, le réchauffer légèrement.",
-      "Démouler les entremets congelés, les poser sur une grille, puis verser le glaçage au centre en laissant couler naturellement sur les bords. Ne jamais glacer un entremets qui n'est pas congelé.",
+      "Ajouter les blancs d'œufs et la vanille aux poudres, mélanger jusqu'à obtenir une pâte homogène, puis incorporer le beurre fondu tiède.",
+      "Verser la pâte dans un cercle de 20 cm et dans des cercles de 6 cm posés sur une plaque recouverte de papier cuisson.",
+      "Cuire à 170°C pendant 18 à 20 minutes, jusqu'à ce que les financiers soient dorés et moelleux. Laisser refroidir puis démouler.",
+      "Préparer le croustillant : faire fondre le chocolat noir au bain-marie ou au micro-ondes.",
+      "Ajouter les amandes torréfiées concassées, les boudoirs écrasés et la noix de coco râpée si utilisée, puis mélanger jusqu'à obtenir une pâte grumeleuse homogène.",
+      "Étaler cette pâte en couche fine de 2 à 3 mm sur les disques de financier refroidis (un disque de 20 cm et six disques de 6 cm), puis réserver au frais pour qu'elle durcisse.",
+      "Préparer la mousse mascarpone : faire ramollir la gélatine dans l'eau froide.",
+      "Chauffer le lait puis y dissoudre la gélatine essorée, en veillant à ne pas dépasser 30 à 35°C.",
+      "Dans un grand bol, monter au fouet le mascarpone, la crème liquide bien froide, le sucre glace et la vanille jusqu'à obtenir une texture souple mais qui tient bien.",
+      "Incorporer délicatement le lait gélifié tiède à la fin, en mélangeant rapidement pour que la mousse reste homogène et lisse.",
+      "Montage du grand entremets (20 cm) : chemiser un cercle de 20 cm avec du rhodoïd, déposer le disque financier-croustillant au fond, puis ajouter une fine couche de mousse.",
+      "Démouler l'insert congelé de 16 cm et le centrer sur la mousse, puis compléter avec le reste de mousse jusqu'en haut du cercle. Lisser la surface à la spatule et congeler au moins 4 heures.",
+      "Montage des 6 entremets individuels (6 cm) : répéter la même opération avec les cercles de 6 cm, les disques financier-croustillant de 6 cm, les inserts de 5 cm et la mousse. Lisser et congeler.",
+      "Préparer le glaçage neutre : porter l'eau et le sucre à ébullition pour former un sirop, puis retirer du feu et incorporer la gélatine préalablement hydratée et essorée jusqu'à dissolution complète.",
+      "Laisser refroidir le glaçage jusqu'à 28-30°C, puis le couler sur les entremets encore congelés, démoulés et posés sur une grille, pour obtenir un rendu brillant type pâtisserie de boutique.",
       "Décorer chaque entremets avec des cubes de pêche fraîche, des quartiers d'abricot nappés et des amandes effilées torréfiées.",
+      "Ajouter, si désiré, quelques petits points de crème mascarpone pochés à la poche à douille et un voile très léger de sucre glace pour la finition.",
       "Réserver au réfrigérateur 4 à 5 heures après le glaçage pour permettre une décongélation lente et homogène avant de servir."
     ]
   },
@@ -22882,90 +22877,6 @@ const recettes = [
       "Ajouter le sucre glace et la vanille. Mélanger jusqu'à ce que le mélange soit homogène.",
       "Laisser refroidir (pas trop sinon ce sera dur).",
       "Étaler la crème entre 2 biscuits de même taille refroidis."
-    ]
-  },
-  {
-    "titre": "h",
-    "temps": "df",
-    "personnes": "4",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "dffd",
-        "valeur": 1,
-        "unite": null,
-        "reste": "dffd"
-      },
-      {
-        "texte": "df",
-        "valeur": 1,
-        "unite": null,
-        "reste": "df"
-      }
-    ],
-    "etapes": [
-      "dfx",
-      "fg"
-    ]
-  },
-  {
-    "titre": "Alissia",
-    "photo": "photos/alissia-1786123945256.png",
-    "temps": "e",
-    "personnes": "4",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "3g farine",
-        "valeur": 3,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "4g sucre",
-        "valeur": 4,
-        "unite": "g",
-        "reste": "sucre"
-      }
-    ],
-    "etapes": [
-      "caca",
-      "caca"
-    ]
-  },
-  {
-    "titre": "Teste",
-    "photo": "photos/teste-1786124566914.jpg",
-    "temps": "Caca",
-    "personnes": "4",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "Jsjsks",
-        "valeur": 1,
-        "unite": null,
-        "reste": "Jsjsks"
-      }
-    ],
-    "etapes": [
-      "Aaaaa"
-    ]
-  },
-  {
-    "titre": "Alicaca",
-    "temps": "Alicaca",
-    "personnes": "4",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "Alicaca",
-        "valeur": 1,
-        "unite": null,
-        "reste": "Alicaca"
-      }
-    ],
-    "etapes": [
-      "Alicaca"
     ]
   }
 ];
