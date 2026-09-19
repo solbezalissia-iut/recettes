@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Alissia (la propriétaire du site) peut tout modifier / tout supprimer,
+    // y compris les recettes d'origine et celles ajoutées par les autres.
+    function isAdmin() {
+      return request.auth != null
+             && request.auth.token.email == 'solbezrigaudalissia@gmail.com';
+    }
+
+    match /recipes/{recipeId} {
+      // Tout le monde peut lire les recettes ajoutées (pas besoin de compte pour consulter).
+      allow read: if true;
+
+      // Il faut être connecté pour créer une recette, et elle doit t'appartenir.
+      allow create: if request.auth != null
+                    && request.resource.data.ownerId == request.auth.uid
+                    && request.resource.data.titre is string
+                    && request.resource.data.titre.size() > 0;
+
+      // On peut modifier / supprimer une recette dont on est déjà propriétaire
+      // (sans pouvoir en changer le propriétaire), ou bien être Alissia (isAdmin()).
+      allow update: if isAdmin()
+                    || (request.auth != null
+                        && resource.data.ownerId == request.auth.uid
+                        && request.resource.data.ownerId == resource.data.ownerId);
+      allow delete: if isAdmin()
+                    || (request.auth != null
+                        && resource.data.ownerId == request.auth.uid);
+    }
+
+    // Liste des recettes d'origine (du fichier recettes-data.js) qu'Alissia a
+    // choisi de masquer ou de remplacer. Réservé à Alissia.
+    match /hidden_static_recipes/{staticId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

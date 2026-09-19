@@ -33,6 +33,7 @@ import {
   updateDoc,
   deleteDoc,
   doc,
+  setDoc,
   onSnapshot,
   serverTimestamp,
   query,
@@ -40,6 +41,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 const RECIPES_COLLECTION = 'recipes';
+const HIDDEN_STATIC_COLLECTION = 'hidden_static_recipes';
 
 function configLooksEmpty(cfg) {
   return !cfg || !cfg.apiKey || cfg.apiKey.includes('COLLE_ICI');
@@ -54,6 +56,7 @@ if (configLooksEmpty(window.FIREBASE_CONFIG)) {
   // pour que le site fonctionne normalement en lecture seule avec les recettes d'origine.
   if (typeof window.onAuthStateChanged === 'function') window.onAuthStateChanged(null);
   if (typeof window.onLiveRecipesUpdate === 'function') window.onLiveRecipesUpdate([]);
+  if (typeof window.onHiddenStaticUpdate === 'function') window.onHiddenStaticUpdate([]);
 } else {
   const app = initializeApp(window.FIREBASE_CONFIG);
   const auth = getAuth(app);
@@ -91,6 +94,16 @@ if (configLooksEmpty(window.FIREBASE_CONFIG)) {
     }
   }, (err) => {
     console.error('[cloud.js] Erreur de synchronisation Firestore :', err);
+  });
+
+  // Recettes d'origine qu'Alissia a choisi de masquer (elle en a le droit, personne d'autre).
+  onSnapshot(collection(db, HIDDEN_STATIC_COLLECTION), (snapshot) => {
+    const ids = snapshot.docs.map(d => d.id);
+    if (typeof window.onHiddenStaticUpdate === 'function') {
+      window.onHiddenStaticUpdate(ids);
+    }
+  }, (err) => {
+    console.error('[cloud.js] Erreur de synchronisation (recettes masquées) :', err);
   });
 
   window.CloudRecipes = {
@@ -132,6 +145,15 @@ if (configLooksEmpty(window.FIREBASE_CONFIG)) {
     async deleteRecipe(docId) {
       if (!currentUser) throw new Error("Il faut être connecté pour supprimer une recette.");
       await deleteDoc(doc(db, RECIPES_COLLECTION, docId));
+    },
+
+    // Réservé à Alissia (voir firestore.rules) : masque une recette d'origine du site.
+    async hideStaticRecipe(staticId) {
+      if (!currentUser) throw new Error("Il faut être connecté pour supprimer une recette.");
+      await setDoc(doc(db, HIDDEN_STATIC_COLLECTION, staticId), {
+        hiddenBy: currentUser.uid,
+        hiddenAt: serverTimestamp()
+      });
     }
   };
 }

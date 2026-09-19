@@ -20,23 +20,37 @@ function findSubstitution(ingredientName) {
 }
 
 // ── Recettes d'origine (fichier statique) + recettes ajoutées en ligne (Firestore) ──
-// Les recettes d'origine (recettes-data.js) ne sont JAMAIS modifiables depuis le site :
-// c'est ce qui garantit que personne ne peut toucher aux recettes d'Alissia.
-// Les recettes ajoutées par les utilisateurs vivent dans Firestore et ne sont
-// modifiables/supprimables que par la personne qui les a créées.
-const STATIC_RECETTES = (typeof recettes !== 'undefined' ? recettes : []).map(r => ({
+// Les recettes d'origine (recettes-data.js) ne sont modifiables/supprimables par PERSONNE
+// depuis le site, sauf le compte d'Alissia (ADMIN_EMAIL). Les recettes ajoutées par les
+// utilisateurs vivent dans Firestore et ne sont modifiables/supprimables que par leur
+// auteur — ou par Alissia, qui peut tout gérer.
+const ADMIN_EMAIL = 'solbezrigaudalissia@gmail.com';
+
+function isAdmin() {
+  return !!(currentUser && currentUser.email === ADMIN_EMAIL);
+}
+
+const STATIC_RECETTES = (typeof recettes !== 'undefined' ? recettes : []).map((r, idx) => ({
   ...r,
   _isStatic: true,
+  _staticId: 'static-' + idx,
   _ownerId: null,
   _ownerName: null,
 }));
 
 let liveRecettes = [];
+let hiddenStaticIds = new Set();
 let allRecettes = STATIC_RECETTES.slice();
 let currentUser = null;
 
 function refreshRecettes() {
-  allRecettes = STATIC_RECETTES.concat(liveRecettes);
+  // Une recette d'origine modifiée par Alissia devient une recette "live" qui la remplace
+  // (elle porte replacesStaticId) ; une recette d'origine supprimée par Alissia est masquée.
+  const replacedStaticIds = new Set(liveRecettes.filter(r => r.replacesStaticId).map(r => r.replacesStaticId));
+  const visibleStatic = STATIC_RECETTES.filter(r =>
+    !hiddenStaticIds.has(r._staticId) && !replacedStaticIds.has(r._staticId)
+  );
+  allRecettes = visibleStatic.concat(liveRecettes);
   allIngredients = getAllIngredients();
   renderFilters();
   buildGrids();
@@ -46,6 +60,12 @@ function refreshRecettes() {
 // Appelée par cloud.js à chaque changement des recettes ajoutées en ligne.
 window.onLiveRecipesUpdate = function (live) {
   liveRecettes = live;
+  refreshRecettes();
+};
+
+// Appelée par cloud.js à chaque changement des recettes d'origine masquées par Alissia.
+window.onHiddenStaticUpdate = function (ids) {
+  hiddenStaticIds = new Set(ids);
   refreshRecettes();
 };
 
@@ -345,6 +365,17 @@ function selectVariant(vIdx) {
 }
 
 // ── Permissions : qui a le droit de modifier/supprimer la recette ouverte ──
+// Chacun gère ses propres recettes ajoutées ; Alissia (ADMIN_EMAIL) peut tout gérer,
+// y compris les recettes d'origine du site.
+function canDeleteRecipe(r) {
+  if (!currentUser) return false;
+  if (isAdmin()) return true;
+  return !r._isStatic && r._ownerId === currentUser.uid;
+}
+function canEditRecipe(r) {
+  return canDeleteRecipe(r) && !r.variantes;
+}
+
 function updateModalPermissions() {
   if (currentRecetteIdx === null) return;
   const r = allRecettes[currentRecetteIdx];
@@ -352,9 +383,8 @@ function updateModalPermissions() {
   const deleteBtn = document.getElementById('modal-delete');
   const ownerNote = document.getElementById('modal-owner-note');
 
-  const canEdit = !r._isStatic && !r.variantes && currentUser && r._ownerId === currentUser.uid;
-  editBtn.style.display = canEdit ? 'flex' : 'none';
-  deleteBtn.style.display = canEdit ? 'flex' : 'none';
+  editBtn.style.display = canEditRecipe(r) ? 'flex' : 'none';
+  deleteBtn.style.display = canDeleteRecipe(r) ? 'flex' : 'none';
 
   if (ownerNote) {
     ownerNote.textContent = r._isStatic ? '' : `Ajoutée par ${r._ownerName || 'quelqu\'un'}`;
@@ -406,17 +436,16 @@ function closeModal() {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-// ── Suppression d'une recette depuis la fiche recette (uniquement son auteur) ──
+// ── Suppression d'une recette depuis la fiche recette ──
+// (son auteur, ou Alissia qui peut tout supprimer, y compris les recettes d'origine)
 document.getElementById('modal-delete').addEventListener('click', async () => {
   if (currentRecetteIdx === null) return;
   const recipe = allRecettes[currentRecetteIdx];
 
-  if (recipe._isStatic) {
-    alert("Cette recette fait partie des recettes d'origine du site : elle ne peut pas être supprimée depuis ici.");
-    return;
-  }
-  if (!currentUser || recipe._ownerId !== currentUser.uid) {
-    alert("Seule la personne qui a ajouté cette recette peut la supprimer.");
+  if (!canDeleteRecipe(recipe)) {
+    alert(recipe._isStatic
+      ? "Cette recette fait partie des recettes d'origine du site : elle ne peut pas être supprimée depuis ici."
+      : "Seule la personne qui a ajouté cette recette peut la supprimer.");
     return;
   }
 
@@ -426,7 +455,11 @@ document.getElementById('modal-delete').addEventListener('click', async () => {
   const deleteBtn = document.getElementById('modal-delete');
   deleteBtn.disabled = true;
   try {
-    await window.CloudRecipes.deleteRecipe(recipe._docId);
+    if (recipe._isStatic) {
+      await window.CloudRecipes.hideStaticRecipe(recipe._staticId);
+    } else {
+      await window.CloudRecipes.deleteRecipe(recipe._docId);
+    }
     closeModal();
   } catch (err) {
     console.error(err);
@@ -548,6 +581,7 @@ const newPhotoInput = document.getElementById('new-photo');
 const newPhotoPreview = document.getElementById('new-photo-preview');
 let newPhotoDataUrl = '';
 let editingDocId = null;
+let editingStaticId = null; // rempli quand Alissia modifie une recette d'origine
 
 // Réduit une image côté navigateur avant envoi (Firestore limite un document à 1 Mo).
 function compressImage(file, maxDim = 900, quality = 0.72) {
@@ -587,6 +621,7 @@ function closeAddModal() {
   statusEl.classList.remove('visible', 'info', 'error');
   statusEl.textContent = '';
   editingDocId = null;
+  editingStaticId = null;
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
 }
@@ -595,6 +630,7 @@ document.getElementById('add-recipe-btn').addEventListener('click', async () => 
   const ok = await ensureSignedIn();
   if (!ok) return;
   editingDocId = null;
+  editingStaticId = null;
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   openAddModal();
@@ -614,21 +650,25 @@ newPhotoInput.addEventListener('change', () => {
   reader.readAsDataURL(file);
 });
 
-// ── Modifier une recette existante (uniquement si on en est l'auteur) ──
+// ── Modifier une recette existante ──
+// (son auteur, ou Alissia qui peut tout modifier, y compris les recettes d'origine)
 document.getElementById('modal-edit').addEventListener('click', () => {
   if (currentRecetteIdx === null) return;
   const r = allRecettes[currentRecetteIdx];
 
-  if (r._isStatic) {
-    alert("Cette recette fait partie des recettes d'origine du site : elle ne peut pas être modifiée depuis ici.");
-    return;
-  }
-  if (!currentUser || r._ownerId !== currentUser.uid) {
-    alert("Seule la personne qui a ajouté cette recette peut la modifier.");
+  if (!canEditRecipe(r)) {
+    if (r.variantes) {
+      alert("La modification n'est pas encore prise en charge pour les recettes à plusieurs versions.");
+    } else if (r._isStatic) {
+      alert("Cette recette fait partie des recettes d'origine du site : elle ne peut pas être modifiée depuis ici.");
+    } else {
+      alert("Seule la personne qui a ajouté cette recette peut la modifier.");
+    }
     return;
   }
 
-  editingDocId = r._docId;
+  editingDocId = r._isStatic ? null : r._docId;
+  editingStaticId = r._isStatic ? r._staticId : null;
 
   document.getElementById('add-modal-title').textContent = 'Modifier la recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer les modifications';
@@ -702,6 +742,11 @@ addForm.addEventListener('submit', async e => {
 
     if (editingDocId) {
       await window.CloudRecipes.updateRecipe(editingDocId, recipeData);
+      statusEl.textContent = 'Modifications enregistrées !';
+    } else if (editingStaticId) {
+      // Alissia modifie une recette d'origine : on crée une version "live" qui la remplace.
+      recipeData.replacesStaticId = editingStaticId;
+      await window.CloudRecipes.addRecipe(recipeData);
       statusEl.textContent = 'Modifications enregistrées !';
     } else {
       await window.CloudRecipes.addRecipe(recipeData);
