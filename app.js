@@ -582,6 +582,7 @@ const newPhotoPreview = document.getElementById('new-photo-preview');
 let newPhotoDataUrl = '';
 let editingDocId = null;
 let editingStaticId = null; // rempli quand Alissia modifie une recette d'origine
+let editingOriginalPhoto = ''; // photo actuelle de la recette en cours de modification, gardée si on ne la change pas
 
 // Réduit une image côté navigateur avant envoi (Firestore limite un document à 1 Mo).
 function compressImage(file, maxDim = 900, quality = 0.72) {
@@ -622,8 +623,10 @@ function closeAddModal() {
   statusEl.textContent = '';
   editingDocId = null;
   editingStaticId = null;
+  editingOriginalPhoto = '';
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
+  document.getElementById('new-photo-label').textContent = 'Photo (optionnelle)';
 }
 
 document.getElementById('add-recipe-btn').addEventListener('click', async () => {
@@ -631,6 +634,7 @@ document.getElementById('add-recipe-btn').addEventListener('click', async () => 
   if (!ok) return;
   editingDocId = null;
   editingStaticId = null;
+  editingOriginalPhoto = '';
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   openAddModal();
@@ -669,9 +673,11 @@ document.getElementById('modal-edit').addEventListener('click', () => {
 
   editingDocId = r._isStatic ? null : r._docId;
   editingStaticId = r._isStatic ? r._staticId : null;
+  editingOriginalPhoto = r.photo || '';
 
   document.getElementById('add-modal-title').textContent = 'Modifier la recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer les modifications';
+  document.getElementById('new-photo-label').textContent = 'Changer la photo (optionnelle)';
 
   document.getElementById('new-titre').value = r.titre;
   document.getElementById('new-cat').value = r.cat;
@@ -731,6 +737,11 @@ addForm.addEventListener('submit', async e => {
     if (photoFile) {
       statusEl.textContent = 'Compression et envoi de la photo…';
       photo = await compressImage(photoFile);
+    }
+    // Si on modifie une recette sans changer sa photo, on garde l'ancienne
+    // (essentiel pour les recettes d'origine : sinon la version modifiée perdrait sa photo).
+    if (!photo && editingOriginalPhoto) {
+      photo = editingOriginalPhoto;
     }
 
     const recipeData = {
