@@ -4,14 +4,10 @@ const catLabels = {
 };
 
 // Photo de secours utilisée quand une recette n'a pas encore sa propre photo.
-// Chaque recette a son propre champ "photo" dans recettes-data.js — il suffit
-// de changer cette ligne (ex: "photos/tarte-citron.jpg") pour lui donner sa
-// vraie photo plus tard, sans toucher au reste du code.
 const SITE_PHOTO = 'photos/enattente.png';
 
 // Alternatives pour les ingrédients qu'Alissia n'aime pas — affichées automatiquement
 // à côté de l'ingrédient concerné dans la fiche recette, sans avoir à modifier chaque recette.
-// Pour ajouter/retirer un ingrédient : éditer cette liste (clé = mot à repérer, valeur = suggestion affichée).
 const SUBSTITUTIONS = [
   { match: /\bsaumon\b/i, suggestion: "truite fumée ou thon" },
   { match: /\boignons?\b/i, suggestion: "échalote ou blanc de poireau" },
@@ -23,226 +19,83 @@ function findSubstitution(ingredientName) {
   return found ? found.suggestion : null;
 }
 
-// ── Publication / modification / suppression directe sur GitHub (dépôt GitHub Pages du site) ──
-const GITHUB_OWNER = 'solbezalissia-iut';
-const GITHUB_REPO = 'recettes';
-const GITHUB_BRANCH = 'main';
-const GITHUB_DATA_PATH = 'recettes-data.js';
-const GITHUB_API_ROOT = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents`;
+// ── Recettes d'origine (fichier statique) + recettes ajoutées en ligne (Firestore) ──
+// Les recettes d'origine (recettes-data.js) ne sont JAMAIS modifiables depuis le site :
+// c'est ce qui garantit que personne ne peut toucher aux recettes d'Alissia.
+// Les recettes ajoutées par les utilisateurs vivent dans Firestore et ne sont
+// modifiables/supprimables que par la personne qui les a créées.
+const STATIC_RECETTES = (typeof recettes !== 'undefined' ? recettes : []).map(r => ({
+  ...r,
+  _isStatic: true,
+  _ownerId: null,
+  _ownerName: null,
+}));
 
-let githubToken = localStorage.getItem('githubToken') || '';
+let liveRecettes = [];
+let allRecettes = STATIC_RECETTES.slice();
+let currentUser = null;
 
-function slugify(str) {
-  return str
-    .toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .slice(0, 60) || 'recette';
+function refreshRecettes() {
+  allRecettes = STATIC_RECETTES.concat(liveRecettes);
+  allIngredients = getAllIngredients();
+  renderFilters();
+  buildGrids();
+  if (currentRecetteIdx !== null) updateModalPermissions();
 }
 
-// Encode une chaîne texte (UTF-8, accents compris) en base64, comme l'exige l'API GitHub.
-function utf8ToBase64(str) {
-  return btoa(unescape(encodeURIComponent(str)));
-}
-function base64ToUtf8(b64) {
-  return decodeURIComponent(escape(atob(b64)));
-}
+// Appelée par cloud.js à chaque changement des recettes ajoutées en ligne.
+window.onLiveRecipesUpdate = function (live) {
+  liveRecettes = live;
+  refreshRecettes();
+};
 
-async function githubGetFile(path) {
-  const res = await fetch(`${GITHUB_API_ROOT}/${path}?ref=${GITHUB_BRANCH}`, {
-    headers: {
-      Authorization: `Bearer ${githubToken}`,
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28'
-    }
-  });
-  if (!res.ok) {
-    if (res.status === 404) return null;
-    throw new Error(`Lecture GitHub échouée (${res.status})`);
-  }
-  return res.json();
-}
+// ── Authentification (appelée par cloud.js) ──
+window.onAuthStateChanged = function (user) {
+  currentUser = user;
+  renderAuthZone();
+  if (currentRecetteIdx !== null) updateModalPermissions();
+};
 
-async function githubPutFile(path, base64Content, message, sha) {
-  const body = {
-    message,
-    content: base64Content,
-    branch: GITHUB_BRANCH
-  };
-  if (sha) body.sha = sha;
-  const res = await fetch(`${GITHUB_API_ROOT}/${path}`, {
-    method: 'PUT',
-    headers: {
-      Authorization: `Bearer ${githubToken}`,
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(body)
-  });
-  if (!res.ok) {
-    const errBody = await res.json().catch(() => ({}));
-    throw new Error(errBody.message || `Écriture GitHub échouée (${res.status})`);
-  }
-  return res.json();
-}
-
-// Formate un objet recette en JSON indenté à 2 espaces, aligné pour s'insérer
-// proprement dans le tableau `recettes` du fichier recettes-data.js.
-function formatRecipeForFile(recipe) {
-  const { isUserAdded, publishedToGithub, ...clean } = recipe;
-  if (clean.photo && clean.photo.startsWith('data:')) delete clean.photo;
-  const json = JSON.stringify(clean, null, 2);
-  return json.split('\n').map(line => '  ' + line).join('\n');
-}
-
-function insertRecipeIntoSource(source, recipe) {
-  const block = formatRecipeForFile(recipe);
-  const trimmed = source.replace(/\s+$/, '');
-  if (!trimmed.endsWith('];')) {
-    throw new Error("Structure de recettes-data.js non reconnue, insertion impossible.");
-  }
-  // Retire le "];" final, puis tout espace/retour à la ligne restant après le "}" du dernier objet.
-  const withoutClosing = trimmed.slice(0, -2).replace(/\s+$/, '');
-  if (!withoutClosing.endsWith('}')) {
-    throw new Error("Fin de fichier inattendue, insertion impossible.");
-  }
-  return `${withoutClosing},\n${block}\n];\n`;
-}
-
-// Exécute le fichier de données (comme le fait la page elle-même via la balise <script>)
-// pour en extraire le vrai tableau `recettes`, utile pour modifier/retirer une recette avec certitude.
-function parseRecettesSource(source) {
-  const fn = new Function(source + '\nreturn recettes;');
-  return fn();
-}
-
-function serializeRecettesSource(recipesArray) {
-  const body = recipesArray.map(r => formatRecipeForFile(r)).join(',\n');
-  return `const recettes = [\n${body}\n];\n`;
-}
-
-async function publishRecipeToGithub(recipe, photoFile) {
-  const statusEl = document.getElementById('publish-status');
-  statusEl.className = 'publish-status visible info';
-
-  let photoPath = null;
-  if (photoFile) {
-    statusEl.textContent = 'Envoi de la photo vers GitHub…';
-    const ext = (photoFile.type.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
-    photoPath = `photos/${slugify(recipe.titre)}-${Date.now()}.${ext}`;
-    const dataUrl = await new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(photoFile);
+function renderAuthZone() {
+  const zone = document.getElementById('auth-zone');
+  if (!zone) return;
+  if (currentUser) {
+    zone.innerHTML = `
+      <div class="auth-user">
+        ${currentUser.photoURL ? `<img class="auth-avatar" src="${currentUser.photoURL}" alt="">` : `<span class="auth-avatar auth-avatar--fallback">${(currentUser.displayName || '?')[0]}</span>`}
+        <span class="auth-name">${currentUser.displayName || 'Vous'}</span>
+        <button class="auth-btn auth-btn--ghost" id="auth-signout-btn">Se déconnecter</button>
+      </div>`;
+    document.getElementById('auth-signout-btn').addEventListener('click', async () => {
+      try { await window.CloudRecipes.signOutUser(); }
+      catch (e) { console.error(e); }
     });
-    const base64 = dataUrl.split(',')[1];
-    await githubPutFile(photoPath, base64, `Ajout photo : ${recipe.titre}`);
-  }
-
-  statusEl.textContent = 'Mise à jour de la liste des recettes sur GitHub…';
-  const recipeForFile = { ...recipe };
-  if (photoPath) recipeForFile.photo = photoPath;
-  else delete recipeForFile.photo;
-
-  const current = await githubGetFile(GITHUB_DATA_PATH);
-  if (!current) throw new Error(`Fichier ${GITHUB_DATA_PATH} introuvable sur le dépôt.`);
-  const currentSource = base64ToUtf8(current.content.replace(/\n/g, ''));
-  const updatedSource = insertRecipeIntoSource(currentSource, recipeForFile);
-
-  await githubPutFile(
-    GITHUB_DATA_PATH,
-    utf8ToBase64(updatedSource),
-    `Ajout de la recette : ${recipe.titre}`,
-    current.sha
-  );
-
-  return photoPath;
-}
-
-async function deleteRecipeFromGithub(recipe) {
-  const current = await githubGetFile(GITHUB_DATA_PATH);
-  if (!current) throw new Error(`Fichier ${GITHUB_DATA_PATH} introuvable sur le dépôt.`);
-  const currentSource = base64ToUtf8(current.content.replace(/\n/g, ''));
-  const parsed = parseRecettesSource(currentSource);
-  const idx = parsed.findIndex(r => r.titre === recipe.titre);
-  if (idx === -1) {
-    throw new Error(`Recette introuvable dans le fichier en ligne (elle a peut-être déjà été supprimée, ou pas encore publiée).`);
-  }
-  parsed.splice(idx, 1);
-  const updatedSource = serializeRecettesSource(parsed);
-  await githubPutFile(
-    GITHUB_DATA_PATH,
-    utf8ToBase64(updatedSource),
-    `Suppression de la recette : ${recipe.titre}`,
-    current.sha
-  );
-}
-
-// Modifie une recette existante sur GitHub (ou l'ajoute si elle n'y était pas encore).
-// originalTitre sert à la retrouver dans le fichier même si le titre a été changé.
-async function updateRecipeOnGithub(originalTitre, updatedRecipe, photoFile) {
-  const statusEl = document.getElementById('publish-status');
-  statusEl.className = 'publish-status visible info';
-
-  let photoPath = null;
-  if (photoFile) {
-    statusEl.textContent = 'Envoi de la nouvelle photo vers GitHub…';
-    const ext = (photoFile.type.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
-    photoPath = `photos/${slugify(updatedRecipe.titre)}-${Date.now()}.${ext}`;
-    const dataUrl = await new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(photoFile);
-    });
-    const base64 = dataUrl.split(',')[1];
-    await githubPutFile(photoPath, base64, `Mise à jour photo : ${updatedRecipe.titre}`);
-  }
-
-  statusEl.textContent = 'Mise à jour de la recette sur GitHub…';
-  const recipeForFile = { ...updatedRecipe };
-  if (photoPath) recipeForFile.photo = photoPath;
-
-  const current = await githubGetFile(GITHUB_DATA_PATH);
-  if (!current) throw new Error(`Fichier ${GITHUB_DATA_PATH} introuvable sur le dépôt.`);
-  const currentSource = base64ToUtf8(current.content.replace(/\n/g, ''));
-  const parsed = parseRecettesSource(currentSource);
-  const idx = parsed.findIndex(r => r.titre === originalTitre);
-  if (idx === -1) {
-    parsed.push(recipeForFile);
   } else {
-    parsed[idx] = recipeForFile;
+    zone.innerHTML = `<button class="auth-btn" id="auth-signin-btn">Se connecter avec Google</button>`;
+    document.getElementById('auth-signin-btn').addEventListener('click', async () => {
+      try { await window.CloudRecipes.signInWithGoogle(); }
+      catch (e) {
+        console.error(e);
+        alert("La connexion a échoué : " + (e.message || e));
+      }
+    });
   }
-  const updatedSource = serializeRecettesSource(parsed);
-
-  await githubPutFile(
-    GITHUB_DATA_PATH,
-    utf8ToBase64(updatedSource),
-    `Modification de la recette : ${updatedRecipe.titre}`,
-    current.sha
-  );
-
-  return photoPath;
 }
 
-// ── Recettes ajoutées par l'utilisateur (stockées dans le navigateur) ──
-(function loadUserRecipes() {
-  try {
-    const saved = JSON.parse(localStorage.getItem('userRecipes') || '[]');
-    saved.forEach(r => recettes.push(r));
-  } catch (e) {
-    console.error('Erreur au chargement des recettes ajoutées :', e);
+async function ensureSignedIn() {
+  if (currentUser) return true;
+  if (!window.CloudRecipes) {
+    alert("Le service de comptes est en cours de chargement, réessayez dans un instant.");
+    return false;
   }
-})();
-
-function saveUserRecipes() {
-  // Une fois publiée sur GitHub, une recette est présente dans recettes-data.js
-  // du dépôt : on ne la garde plus en local pour éviter un doublon au prochain chargement.
-  const userRecipes = recettes.filter(r => r.isUserAdded && !r.publishedToGithub);
-  localStorage.setItem('userRecipes', JSON.stringify(userRecipes));
+  try {
+    await window.CloudRecipes.signInWithGoogle();
+    return true;
+  } catch (e) {
+    console.error(e);
+    alert("La connexion a échoué : " + (e.message || e));
+    return false;
+  }
 }
 
 let activeFilters = [];
@@ -312,10 +165,10 @@ function cardMatchesFilters(r) {
 }
 
 function getSortedIndices() {
-  const indices = recettes.map((_, idx) => idx);
+  const indices = allRecettes.map((_, idx) => idx);
   if (sortMode === 'default') return indices;
   indices.sort((a, b) => {
-    const ra = recettes[a], rb = recettes[b];
+    const ra = allRecettes[a], rb = allRecettes[b];
     if (sortMode === 'az') return ra.titre.localeCompare(rb.titre, 'fr');
     if (sortMode === 'za') return rb.titre.localeCompare(ra.titre, 'fr');
     if (sortMode === 'time-asc' || sortMode === 'time-desc') {
@@ -337,7 +190,7 @@ function buildGrids() {
   const counts = { all: 0, apero: 0, entree: 0, plat: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0 };
 
   getSortedIndices().forEach(idx => {
-    const r = recettes[idx];
+    const r = allRecettes[idx];
     const matched = cardMatchesFilters(r);
     const preview = previewVariant(r);
     const variants = getVariants(r);
@@ -359,6 +212,9 @@ function buildGrids() {
       const variantBadge = variants.length > 1
         ? `<span class="variant-badge">${variants.length} versions</span>`
         : '';
+      const ownerBadge = !r._isStatic
+        ? `<span class="owner-badge">👤 ${r._ownerName || 'Quelqu\'un'}</span>`
+        : '';
 
       card.innerHTML = `
         ${photoHtml}
@@ -370,6 +226,7 @@ function buildGrids() {
             <span>👥 ${preview.personnes} pers.</span>
           </div>
           <div class="card-ingredients">${pills}</div>
+          ${ownerBadge}
         </div>
       `;
 
@@ -387,7 +244,7 @@ function buildGrids() {
 
   cats.forEach(cat => {
     const count = counts[cat] || 0;
-    const total = recettes.filter(r => r.cat === cat).length;
+    const total = allRecettes.filter(r => r.cat === cat).length;
     const countEl = document.getElementById('count-' + cat);
     if (countEl) countEl.textContent = count;
     const emptyEl = document.getElementById('empty-' + cat);
@@ -399,7 +256,7 @@ function buildGrids() {
   });
 
   document.getElementById('count-all').textContent = counts.all;
-  const totalAll = recettes.length;
+  const totalAll = allRecettes.length;
   document.getElementById('empty-all').classList.toggle('visible', counts.all === 0);
   document.getElementById('info-all').innerHTML = activeFilters.length || searchQuery || timeFilter
     ? `<strong>${counts.all}</strong> recette${counts.all !== 1 ? 's' : ''} sur ${totalAll} correspondent à votre recherche`
@@ -426,7 +283,7 @@ function formatQty(valeur, unite, ratio) {
 }
 
 function currentVariant() {
-  const r = recettes[currentRecetteIdx];
+  const r = allRecettes[currentRecetteIdx];
   return getVariants(r)[currentVariantIdx];
 }
 
@@ -456,7 +313,7 @@ function updateServingDisplay() {
 }
 
 function renderVariantTabs() {
-  const r = recettes[currentRecetteIdx];
+  const r = allRecettes[currentRecetteIdx];
   const wrap = document.getElementById('variant-tabs');
   const variants = getVariants(r);
   if (variants.length <= 1) {
@@ -487,9 +344,26 @@ function selectVariant(vIdx) {
   renderSteps();
 }
 
+// ── Permissions : qui a le droit de modifier/supprimer la recette ouverte ──
+function updateModalPermissions() {
+  if (currentRecetteIdx === null) return;
+  const r = allRecettes[currentRecetteIdx];
+  const editBtn = document.getElementById('modal-edit');
+  const deleteBtn = document.getElementById('modal-delete');
+  const ownerNote = document.getElementById('modal-owner-note');
+
+  const canEdit = !r._isStatic && !r.variantes && currentUser && r._ownerId === currentUser.uid;
+  editBtn.style.display = canEdit ? 'flex' : 'none';
+  deleteBtn.style.display = canEdit ? 'flex' : 'none';
+
+  if (ownerNote) {
+    ownerNote.textContent = r._isStatic ? '' : `Ajoutée par ${r._ownerName || 'quelqu\'un'}`;
+  }
+}
+
 // ── Modal ──
 function openModal(idx) {
-  const r = recettes[idx];
+  const r = allRecettes[idx];
   currentRecetteIdx = idx;
   currentVariantIdx = 0;
 
@@ -507,6 +381,7 @@ function openModal(idx) {
   document.getElementById('modal-title').textContent = r.titre;
 
   selectVariant(0);
+  updateModalPermissions();
 
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -531,48 +406,28 @@ function closeModal() {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-// ── Suppression d'une recette depuis la fiche recette ──
+// ── Suppression d'une recette depuis la fiche recette (uniquement son auteur) ──
 document.getElementById('modal-delete').addEventListener('click', async () => {
   if (currentRecetteIdx === null) return;
-  const idx = currentRecetteIdx;
-  const recipe = recettes[idx];
+  const recipe = allRecettes[currentRecetteIdx];
 
-  const confirmed = confirm(`Supprimer définitivement "${recipe.titre}" ?\n\nCette action ne peut pas être annulée facilement.`);
+  if (recipe._isStatic) {
+    alert("Cette recette fait partie des recettes d'origine du site : elle ne peut pas être supprimée depuis ici.");
+    return;
+  }
+  if (!currentUser || recipe._ownerId !== currentUser.uid) {
+    alert("Seule la personne qui a ajouté cette recette peut la supprimer.");
+    return;
+  }
+
+  const confirmed = confirm(`Supprimer définitivement "${recipe.titre}" ?\n\nCette action ne peut pas être annulée.`);
   if (!confirmed) return;
 
   const deleteBtn = document.getElementById('modal-delete');
   deleteBtn.disabled = true;
-
-  // Cas simple : recette ajoutée localement et jamais publiée → suppression locale uniquement, immédiate.
-  if (recipe.isUserAdded && !recipe.publishedToGithub) {
-    recettes.splice(idx, 1);
-    saveUserRecipes();
-    allIngredients = getAllIngredients();
-    renderFilters();
-    buildGrids();
-    closeModal();
-    deleteBtn.disabled = false;
-    return;
-  }
-
-  // Sinon la recette existe dans le fichier en ligne (recette d'origine ou déjà publiée) :
-  // il faut un jeton GitHub pour la retirer réellement du dépôt.
-  let token = githubToken;
-  if (!token) {
-    token = prompt('Collez votre jeton GitHub (avec accès en écriture au dépôt "recettes") pour confirmer la suppression en ligne :', '');
-    if (!token) { deleteBtn.disabled = false; return; }
-    localStorage.setItem('githubToken', token);
-  }
-  githubToken = token;
-
   try {
-    await deleteRecipeFromGithub(recipe);
-    recettes.splice(idx, 1);
-    allIngredients = getAllIngredients();
-    renderFilters();
-    buildGrids();
+    await window.CloudRecipes.deleteRecipe(recipe._docId);
     closeModal();
-    alert('Recette supprimée du dépôt GitHub. Elle disparaîtra du site en ligne après la republication automatique de GitHub Pages (une à dix minutes selon le cache).');
   } catch (err) {
     console.error(err);
     alert(`La suppression a échoué : ${err.message}`);
@@ -584,7 +439,7 @@ document.getElementById('modal-delete').addEventListener('click', async () => {
 // ── Filters & search ──
 function getAllIngredients() {
   const set = new Set();
-  recettes.forEach(r => getVariants(r).forEach(v => v.ingredients.forEach(i => {
+  allRecettes.forEach(r => getVariants(r).forEach(v => v.ingredients.forEach(i => {
     const label = ingLabel(i);
     const clean = label.replace(/^\d+[\d.,\s]*(g|ml|kg|l|c\..*?\.\s*[a-z]\.?|cl|dl|mm|cm)?\s*(de |d')?/i, '').trim();
     if (clean.length > 2) set.add(clean);
@@ -686,19 +541,40 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   });
 });
 
-// ── Ajout / modification de recette ──
+// ── Ajout / modification de recette (Google + Firestore) ──
 const addModalOverlay = document.getElementById('add-modal-overlay');
 const addForm = document.getElementById('add-recipe-form');
 const newPhotoInput = document.getElementById('new-photo');
 const newPhotoPreview = document.getElementById('new-photo-preview');
 let newPhotoDataUrl = '';
-let editingRecetteIdx = null;
-let editingOriginalTitre = null;
+let editingDocId = null;
+
+// Réduit une image côté navigateur avant envoi (Firestore limite un document à 1 Mo).
+function compressImage(file, maxDim = 900, quality = 0.72) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        let { width, height } = img;
+        if (width > height && width > maxDim) { height = Math.round(height * maxDim / width); width = maxDim; }
+        else if (height > maxDim) { width = Math.round(width * maxDim / height); height = maxDim; }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+        resolve(canvas.toDataURL('image/jpeg', quality));
+      };
+      img.onerror = reject;
+      img.src = reader.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
 
 function openAddModal() {
   addModalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
-  if (githubToken) document.getElementById('github-token').value = githubToken;
 }
 function closeAddModal() {
   addModalOverlay.classList.remove('open');
@@ -710,15 +586,15 @@ function closeAddModal() {
   const statusEl = document.getElementById('publish-status');
   statusEl.classList.remove('visible', 'info', 'error');
   statusEl.textContent = '';
-  editingRecetteIdx = null;
-  editingOriginalTitre = null;
+  editingDocId = null;
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
 }
 
-document.getElementById('add-recipe-btn').addEventListener('click', () => {
-  editingRecetteIdx = null;
-  editingOriginalTitre = null;
+document.getElementById('add-recipe-btn').addEventListener('click', async () => {
+  const ok = await ensureSignedIn();
+  if (!ok) return;
+  editingDocId = null;
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   openAddModal();
@@ -738,18 +614,21 @@ newPhotoInput.addEventListener('change', () => {
   reader.readAsDataURL(file);
 });
 
-// ── Modifier une recette existante : ouvre le même formulaire, pré-rempli ──
+// ── Modifier une recette existante (uniquement si on en est l'auteur) ──
 document.getElementById('modal-edit').addEventListener('click', () => {
   if (currentRecetteIdx === null) return;
-  const r = recettes[currentRecetteIdx];
+  const r = allRecettes[currentRecetteIdx];
 
-  if (r.variantes) {
-    alert("La modification n'est pas encore prise en charge pour les recettes à plusieurs versions. Tu peux la supprimer et la recréer si besoin.");
+  if (r._isStatic) {
+    alert("Cette recette fait partie des recettes d'origine du site : elle ne peut pas être modifiée depuis ici.");
+    return;
+  }
+  if (!currentUser || r._ownerId !== currentUser.uid) {
+    alert("Seule la personne qui a ajouté cette recette peut la modifier.");
     return;
   }
 
-  editingRecetteIdx = currentRecetteIdx;
-  editingOriginalTitre = r.titre;
+  editingDocId = r._docId;
 
   document.getElementById('add-modal-title').textContent = 'Modifier la recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer les modifications';
@@ -767,7 +646,6 @@ document.getElementById('modal-edit').addEventListener('click', () => {
   closeModal();
   addModalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
-  if (githubToken) document.getElementById('github-token').value = githubToken;
 });
 
 // Essaie d'extraire quantité / unité / reste d'une ligne d'ingrédient libre,
@@ -789,111 +667,56 @@ function parseIngredientLine(line) {
 addForm.addEventListener('submit', async e => {
   e.preventDefault();
 
+  const ok = await ensureSignedIn();
+  if (!ok) return;
+
   const titre = document.getElementById('new-titre').value.trim();
   const cat = document.getElementById('new-cat').value;
   const temps = document.getElementById('new-temps').value.trim();
   const personnes = document.getElementById('new-personnes').value.trim();
   const ingredientsLines = document.getElementById('new-ingredients').value.split('\n').map(l => l.trim()).filter(Boolean);
   const etapesLines = document.getElementById('new-etapes').value.split('\n').map(l => l.trim()).filter(Boolean);
-  const tokenInput = document.getElementById('github-token').value.trim();
   const photoFile = newPhotoInput.files[0] || null;
   const submitBtn = document.getElementById('add-form-submit');
   const statusEl = document.getElementById('publish-status');
 
   if (!titre || !ingredientsLines.length || !etapesLines.length) return;
 
-  const isEditing = editingRecetteIdx !== null;
+  submitBtn.disabled = true;
+  statusEl.className = 'publish-status visible info';
+  statusEl.textContent = 'Enregistrement en ligne…';
 
-  if (isEditing) {
-    const existing = recettes[editingRecetteIdx];
-    const updatedRecipe = {
-      ...existing,
+  try {
+    let photo = newPhotoDataUrl;
+    if (photoFile) {
+      statusEl.textContent = 'Compression et envoi de la photo…';
+      photo = await compressImage(photoFile);
+    }
+
+    const recipeData = {
       titre, cat, temps, personnes,
       ingredients: ingredientsLines.map(parseIngredientLine),
-      etapes: etapesLines
+      etapes: etapesLines,
     };
-    if (newPhotoDataUrl) updatedRecipe.photo = newPhotoDataUrl;
+    if (photo) recipeData.photo = photo;
 
-    recettes[editingRecetteIdx] = updatedRecipe;
-    if (updatedRecipe.isUserAdded && !updatedRecipe.publishedToGithub) {
-      saveUserRecipes();
-    }
-    allIngredients = getAllIngredients();
-    renderFilters();
-    buildGrids();
-
-    if (tokenInput) {
-      githubToken = tokenInput;
-      localStorage.setItem('githubToken', tokenInput);
-      submitBtn.disabled = true;
-      try {
-        const publishedPhotoPath = await updateRecipeOnGithub(editingOriginalTitre, updatedRecipe, photoFile);
-        if (publishedPhotoPath) updatedRecipe.photo = publishedPhotoPath;
-        updatedRecipe.publishedToGithub = true;
-        recettes[editingRecetteIdx] = updatedRecipe;
-        saveUserRecipes();
-        statusEl.className = 'publish-status visible info';
-        statusEl.textContent = 'Modifications publiées sur GitHub ! Elles apparaîtront en ligne pour tout le monde dans quelques minutes, le temps que GitHub Pages republie le site.';
-        document.getElementById('add-form-success').classList.add('visible');
-        setTimeout(() => { closeAddModal(); }, 2200);
-      } catch (err) {
-        console.error(err);
-        statusEl.className = 'publish-status visible error';
-        statusEl.textContent = `Les modifications sont enregistrées dans ce navigateur, mais la publication sur GitHub a échoué : ${err.message}.`;
-      } finally {
-        submitBtn.disabled = false;
-      }
+    if (editingDocId) {
+      await window.CloudRecipes.updateRecipe(editingDocId, recipeData);
+      statusEl.textContent = 'Modifications enregistrées !';
     } else {
-      document.getElementById('add-form-success').classList.add('visible');
-      setTimeout(() => { closeAddModal(); }, 900);
+      await window.CloudRecipes.addRecipe(recipeData);
+      statusEl.textContent = 'Recette publiée ! Elle est visible par tout le monde immédiatement.';
     }
-    return;
-  }
-
-  // ── Ajout d'une nouvelle recette ──
-  const newRecipe = {
-    titre,
-    photo: newPhotoDataUrl || undefined,
-    temps,
-    personnes,
-    cat,
-    ingredients: ingredientsLines.map(parseIngredientLine),
-    etapes: etapesLines,
-    isUserAdded: true
-  };
-
-  // Toujours garder une copie locale immédiate, pour que la recette soit
-  // visible sans attendre la publication (et en secours si elle échoue).
-  recettes.push(newRecipe);
-  saveUserRecipes();
-  allIngredients = getAllIngredients();
-  renderFilters();
-  buildGrids();
-
-  if (tokenInput) {
-    githubToken = tokenInput;
-    localStorage.setItem('githubToken', tokenInput);
-    submitBtn.disabled = true;
-    try {
-      const publishedPhotoPath = await publishRecipeToGithub(newRecipe, photoFile);
-      if (publishedPhotoPath) newRecipe.photo = publishedPhotoPath;
-      newRecipe.publishedToGithub = true;
-      saveUserRecipes();
-      statusEl.className = 'publish-status visible info';
-      statusEl.textContent = 'Recette publiée sur GitHub ! Elle apparaîtra en ligne pour tout le monde dans quelques minutes, le temps que GitHub Pages republie le site.';
-      document.getElementById('add-form-success').classList.add('visible');
-      setTimeout(() => { closeAddModal(); }, 2200);
-    } catch (err) {
-      console.error(err);
-      statusEl.className = 'publish-status visible error';
-      statusEl.textContent = `La recette est enregistrée dans ce navigateur, mais la publication sur GitHub a échoué : ${err.message}. Vérifiez que le jeton a bien les droits d'écriture sur le dépôt "${GITHUB_REPO}".`;
-    } finally {
-      submitBtn.disabled = false;
-    }
-  } else {
     document.getElementById('add-form-success').classList.add('visible');
-    setTimeout(() => { closeAddModal(); }, 900);
+    setTimeout(() => { closeAddModal(); }, 1500);
+  } catch (err) {
+    console.error(err);
+    statusEl.className = 'publish-status visible error';
+    statusEl.textContent = `L'enregistrement a échoué : ${err.message}`;
+  } finally {
+    submitBtn.disabled = false;
   }
 });
 
+renderAuthZone();
 buildGrids();

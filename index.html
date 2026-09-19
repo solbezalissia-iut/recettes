@@ -22,6 +22,7 @@
         <h1>Les recettes <em>d'Alissia</em></h1>
         <p>Mon carnet de cuisine personnel · <span class="header-count" id="header-count"></span></p>
       </div>
+      <div class="auth-zone" id="auth-zone"></div>
     </div>
   </div>
 </header>
@@ -131,6 +132,7 @@
         <div class="modal-cat" id="modal-cat"></div>
         <div class="modal-title" id="modal-title"></div>
         <div class="modal-meta" id="modal-meta"></div>
+        <div class="modal-owner-note" id="modal-owner-note"></div>
         <!-- Variant selector (only shown for recipes with several versions) -->
         <div class="variant-tabs" id="variant-tabs"></div>
         <!-- Serving adjuster -->
@@ -165,7 +167,7 @@
   <div class="add-modal" id="add-modal">
     <div class="add-modal-header">
       <h2 id="add-modal-title">Ajouter une recette</h2>
-      <p>Publiez-la en ligne sur votre dépôt GitHub, ou enregistrez-la seulement dans ce navigateur.</p>
+      <p>Elle sera visible en ligne par tout le monde immédiatement. Vous seul·e pourrez la modifier ou la supprimer ensuite.</p>
       <button class="modal-close" id="add-modal-close" aria-label="Fermer">✕</button>
     </div>
     <div class="add-modal-body">
@@ -216,16 +218,6 @@
             <label for="new-etapes">Préparation (une étape par ligne)</label>
             <textarea id="new-etapes" rows="5" required placeholder="Préchauffer le four à 180°C.&#10;Mélanger les ingrédients secs.&#10;..."></textarea>
           </div>
-          <div class="form-field full github-publish-block">
-            <label for="github-token">Publier en ligne sur GitHub (optionnel)</label>
-            <input type="password" id="github-token" placeholder="Collez ici votre jeton d'accès personnel GitHub (ghp_…)">
-            <span class="hint">
-              Sans jeton, la recette reste enregistrée uniquement dans ce navigateur. Avec un jeton, elle est publiée directement sur
-              <strong>solbezalissia-iut/recettes</strong> (branche <strong>main</strong>) et apparaîtra en ligne pour tout le monde après la republication automatique de GitHub Pages (souvent 1 à 10 minutes).
-              <br>Pour en créer un : GitHub → photo de profil → Settings → Developer settings → Personal access tokens → Fine-grained tokens → New token → limitez-le au dépôt <strong>recettes</strong> avec la permission <strong>Contents: Read and write</strong>.
-              Le jeton est mémorisé uniquement sur cet appareil, dans ce navigateur.
-            </span>
-          </div>
         </div>
         <div class="form-success" id="add-form-success">Recette enregistrée avec succès !</div>
         <div class="publish-status" id="publish-status"></div>
@@ -246,5 +238,7 @@
 
 <script src="recettes-data.js"></script>
 <script src="app.js"></script>
+<script src="firebase-config.js"></script>
+<script type="module" src="cloud.js"></script>
 </body>
 </html>

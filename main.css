@@ -87,6 +87,33 @@ header p {
   position: relative;
 }
 
+/* ── AUTH (connexion Google) ── */
+.auth-zone { position: relative; margin-left: auto; flex-shrink: 0; }
+@media (max-width: 560px) { .auth-zone { margin: 0.75rem auto 0; } }
+.auth-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  border: 1px solid rgba(250,247,242,0.35);
+  background: rgba(250,247,242,0.08);
+  color: var(--cream);
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+.auth-btn:hover { background: rgba(250,247,242,0.16); border-color: rgba(250,247,242,0.6); }
+.auth-btn--ghost { background: transparent; padding: 0.35rem 0.7rem; font-size: 0.76rem; }
+.auth-user { display: flex; align-items: center; gap: 0.6rem; }
+.auth-avatar { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid rgba(250,247,242,0.4); }
+.auth-avatar--fallback {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--caramel); color: white; font-weight: 600; font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.auth-name { color: var(--cream); font-size: 0.85rem; font-weight: 500; white-space: nowrap; }
+
 /* ── LAYOUT ── */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 
@@ -368,6 +395,7 @@ header p {
 .card-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 400; line-height: 1.35; color: var(--espresso); margin-bottom: 0.7rem; }
 .card-meta { display: flex; gap: 1rem; font-size: 0.78rem; color: var(--muted); }
 .card-meta span { display: flex; align-items: center; gap: 4px; }
+.owner-badge { display: block; margin-top: 0.7rem; font-size: 0.7rem; color: var(--sage); font-weight: 500; }
 .card-ingredients { margin-top: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.3rem; }
 .ing-pill { font-size: 0.7rem; padding: 2px 8px; background: var(--cream); border: 1px solid var(--border); border-radius: 99px; color: var(--muted); transition: all 0.1s; }
 .ing-pill.matched { background: rgba(196,123,58,0.12); border-color: var(--caramel); color: var(--mocha); font-weight: 500; }
@@ -468,6 +496,7 @@ header p {
 .modal-cat { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--caramel); font-weight: 500; margin-bottom: 0.4rem; }
 .modal-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; line-height: 1.25; }
 .modal-meta { margin-top: 0.6rem; display: flex; gap: 1.5rem; font-size: 0.82rem; color: rgba(250,247,242,0.6); }
+.modal-owner-note { margin-top: 0.4rem; font-size: 0.76rem; color: var(--sage); font-style: italic; }
 
 /* Variant selector tabs */
 .variant-tabs {
