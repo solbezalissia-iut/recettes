@@ -477,6 +477,44 @@ header p {
   object-fit: cover;
   display: block;
 }
+
+/* ── Modal "Rogner la photo" ── */
+.btn-recrop {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+}
+.crop-modal {
+  background: var(--warm-white);
+  max-width: 640px;
+  width: 100%;
+  border-radius: 6px;
+  margin: auto;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.crop-modal-header {
+  background: var(--espresso);
+  color: var(--cream);
+  padding: 1.25rem 1.75rem;
+}
+.crop-modal-header h3 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 1.2rem; }
+.crop-modal-header p { font-size: 0.8rem; color: rgba(250,247,242,0.6); margin-top: 0.3rem; }
+.crop-image-wrap {
+  width: 100%;
+  height: 60vh;
+  max-height: 420px;
+  background: #111;
+}
+.crop-image-wrap img {
+  display: block;
+  max-width: 100%;
+}
+.crop-modal-actions {
+  padding: 1.25rem 1.75rem;
+  margin-top: 0;
+}
 #modal-photo-placeholder {
   width: 100%;
   height: 100%;

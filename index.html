@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
+<script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
 <body>
 
@@ -206,7 +208,8 @@
           <div class="form-field full">
             <div class="form-photo-row">
               <div class="form-photo-preview" id="new-photo-preview">Aperçu</div>
-              <span class="hint">Une photo au format paysage (comme un plat vu de dessus ou de trois-quarts) s'affichera le mieux en pleine largeur.</span>
+              <button type="button" class="btn-secondary btn-recrop" id="new-photo-recrop" style="display:none;">Rogner la photo</button>
+              <span class="hint">Une photo au format paysage (comme un plat vu de dessus ou de trois-quarts) s'affichera le mieux en pleine largeur. Vous pouvez rogner l'image après l'avoir choisie.</span>
             </div>
           </div>
           <div class="form-field full">
@@ -226,6 +229,23 @@
           <button type="submit" class="btn-primary" id="add-form-submit">Enregistrer la recette</button>
         </div>
       </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL ROGNAGE PHOTO -->
+<div class="modal-overlay" id="crop-modal-overlay">
+  <div class="crop-modal">
+    <div class="crop-modal-header">
+      <h3>Cadrer la photo</h3>
+      <p>Déplacez et redimensionnez le cadre pour choisir la partie de l'image à garder.</p>
+    </div>
+    <div class="crop-image-wrap">
+      <img id="crop-image" src="" alt="Photo à rogner">
+    </div>
+    <div class="form-actions crop-modal-actions">
+      <button type="button" class="btn-secondary" id="crop-cancel">Annuler</button>
+      <button type="button" class="btn-primary" id="crop-confirm">Valider le cadrage</button>
     </div>
   </div>
 </div>

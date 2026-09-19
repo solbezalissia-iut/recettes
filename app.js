@@ -584,28 +584,86 @@ let editingDocId = null;
 let editingStaticId = null; // rempli quand Alissia modifie une recette d'origine
 let editingOriginalPhoto = ''; // photo actuelle de la recette en cours de modification, gardée si on ne la change pas
 
-// Réduit une image côté navigateur avant envoi (Firestore limite un document à 1 Mo).
-function compressImage(file, maxDim = 900, quality = 0.72) {
+// Réduit une image (depuis un fichier ou une image déjà rognée) avant envoi
+// (Firestore limite un document à 1 Mo).
+function resizeDataUrl(src, maxDim = 900, quality = 0.72) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => {
+      let { width, height } = img;
+      if (width > height && width > maxDim) { height = Math.round(height * maxDim / width); width = maxDim; }
+      else if (height > maxDim) { width = Math.round(width * maxDim / height); height = maxDim; }
+      const canvas = document.createElement('canvas');
+      canvas.width = width; canvas.height = height;
+      canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+      resolve(canvas.toDataURL('image/jpeg', quality));
+    };
+    img.onerror = reject;
+    img.src = src;
+  });
+}
+function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.onload = () => {
-      const img = new Image();
-      img.onload = () => {
-        let { width, height } = img;
-        if (width > height && width > maxDim) { height = Math.round(height * maxDim / width); width = maxDim; }
-        else if (height > maxDim) { width = Math.round(width * maxDim / height); height = maxDim; }
-        const canvas = document.createElement('canvas');
-        canvas.width = width; canvas.height = height;
-        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
-        resolve(canvas.toDataURL('image/jpeg', quality));
-      };
-      img.onerror = reject;
-      img.src = reader.result;
-    };
+    reader.onload = () => resolve(reader.result);
     reader.onerror = reject;
     reader.readAsDataURL(file);
   });
 }
+
+// ── Rognage de la photo (avant enregistrement) ──
+const cropModalOverlay = document.getElementById('crop-modal-overlay');
+const cropImage = document.getElementById('crop-image');
+const newPhotoRecropBtn = document.getElementById('new-photo-recrop');
+let cropper = null;
+let cropSourceDataUrl = ''; // image (non rognée) sur laquelle on rouvre le cadrage avec "Rogner la photo"
+
+function updateRecropButton() {
+  newPhotoRecropBtn.style.display = (newPhotoDataUrl || editingOriginalPhoto) ? 'inline-block' : 'none';
+}
+
+function openCropper(src) {
+  cropSourceDataUrl = src;
+  cropImage.src = src;
+  cropModalOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (cropper) { cropper.destroy(); cropper = null; }
+  // Cropper a besoin que l'image soit chargée dans le DOM avant de s'initialiser.
+  const init = () => {
+    cropper = new Cropper(cropImage, {
+      aspectRatio: 4 / 3,
+      viewMode: 1,
+      autoCropArea: 1,
+      background: false
+    });
+  };
+  if (cropImage.complete) init(); else cropImage.onload = init;
+}
+
+function closeCropper() {
+  cropModalOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+  if (cropper) { cropper.destroy(); cropper = null; }
+}
+
+document.getElementById('crop-cancel').addEventListener('click', closeCropper);
+cropModalOverlay.addEventListener('click', e => { if (e.target === cropModalOverlay) closeCropper(); });
+
+document.getElementById('crop-confirm').addEventListener('click', async () => {
+  if (!cropper) return;
+  const canvas = cropper.getCroppedCanvas({ maxWidth: 1400, maxHeight: 1400 });
+  const rawDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+  newPhotoDataUrl = await resizeDataUrl(rawDataUrl, 900, 0.72);
+  newPhotoPreview.innerHTML = `<img src="${newPhotoDataUrl}" alt="Aperçu">`;
+  updateRecropButton();
+  closeCropper();
+});
+
+newPhotoRecropBtn.addEventListener('click', () => {
+  const source = newPhotoDataUrl || editingOriginalPhoto;
+  if (!source) return;
+  openCropper(source);
+});
 
 function openAddModal() {
   addModalOverlay.classList.add('open');
@@ -627,6 +685,7 @@ function closeAddModal() {
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   document.getElementById('new-photo-label').textContent = 'Photo (optionnelle)';
+  updateRecropButton();
 }
 
 document.getElementById('add-recipe-btn').addEventListener('click', async () => {
@@ -643,15 +702,13 @@ document.getElementById('add-modal-close').addEventListener('click', closeAddMod
 document.getElementById('add-form-cancel').addEventListener('click', closeAddModal);
 addModalOverlay.addEventListener('click', e => { if (e.target === addModalOverlay) closeAddModal(); });
 
-newPhotoInput.addEventListener('change', () => {
+newPhotoInput.addEventListener('change', async () => {
   const file = newPhotoInput.files[0];
   if (!file) return;
-  const reader = new FileReader();
-  reader.onload = () => {
-    newPhotoDataUrl = reader.result;
-    newPhotoPreview.innerHTML = `<img src="${newPhotoDataUrl}" alt="Aperçu">`;
-  };
-  reader.readAsDataURL(file);
+  // On ouvre directement le cadrage sur la photo choisie : c'est la version rognée
+  // qui sera utilisée comme photo de la recette (et à la bonne taille pour Firestore).
+  const dataUrl = await readFileAsDataUrl(file);
+  openCropper(dataUrl);
 });
 
 // ── Modifier une recette existante ──
@@ -688,6 +745,7 @@ document.getElementById('modal-edit').addEventListener('click', () => {
 
   newPhotoDataUrl = '';
   newPhotoPreview.innerHTML = r.photo ? `<img src="${r.photo}" alt="Aperçu">` : 'Aperçu';
+  updateRecropButton();
 
   closeModal();
   addModalOverlay.classList.add('open');
@@ -722,7 +780,6 @@ addForm.addEventListener('submit', async e => {
   const personnes = document.getElementById('new-personnes').value.trim();
   const ingredientsLines = document.getElementById('new-ingredients').value.split('\n').map(l => l.trim()).filter(Boolean);
   const etapesLines = document.getElementById('new-etapes').value.split('\n').map(l => l.trim()).filter(Boolean);
-  const photoFile = newPhotoInput.files[0] || null;
   const submitBtn = document.getElementById('add-form-submit');
   const statusEl = document.getElementById('publish-status');
 
@@ -733,16 +790,10 @@ addForm.addEventListener('submit', async e => {
   statusEl.textContent = 'Enregistrement en ligne…';
 
   try {
-    let photo = newPhotoDataUrl;
-    if (photoFile) {
-      statusEl.textContent = 'Compression et envoi de la photo…';
-      photo = await compressImage(photoFile);
-    }
+    // La photo a déjà été rognée et redimensionnée par le cadrage (newPhotoDataUrl).
     // Si on modifie une recette sans changer sa photo, on garde l'ancienne
     // (essentiel pour les recettes d'origine : sinon la version modifiée perdrait sa photo).
-    if (!photo && editingOriginalPhoto) {
-      photo = editingOriginalPhoto;
-    }
+    const photo = newPhotoDataUrl || editingOriginalPhoto || '';
 
     const recipeData = {
       titre, cat, temps, personnes,
