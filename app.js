@@ -122,7 +122,6 @@ let activeFilters = [];
 let searchQuery = '';
 let currentTab = 'all';
 let timeFilter = '';
-let vegeOnly = false;
 let sortMode = 'default';
 
 // ── Serving adjuster state ──
@@ -146,6 +145,34 @@ function isVegeVariant(v) {
 function isVege(r) {
   return getVariants(r).some(isVegeVariant);
 }
+
+// ── Autres filtres rapides (détectés automatiquement à partir des ingrédients ou des étapes) ──
+const ingText = v => v.ingredients.map(i => normalize(ingLabel(i))).join(' ; ');
+const stepText = v => normalize((v.etapes || []).join(' '));
+// gluten : on retire d'abord les farines et produits sans gluten
+const GLUTEN_OK = /farine (de )?(riz|mais|sarrasin|tapioca|coco|pois chiches?|chataigne|riz gluant)|farine mochiko|nouilles de riz|pate a tartiner|pate de (noisette|praline|pistache|vanille|cacahuete|curry)/g;
+const GLUTEN = /\b(farine|pates?|pain|pains|chapelure|panko|biscuits?|semoule|floraline|boulgour|couscous|tortillas?|brioche|baguette|croissants?|bieres?|sauce soja|spaghetti|tagliatelles|fusilli|lasagnes?|cannellonis|gnocchis?|nouilles|ble|orge|seigle|epeautre|avoine|speculoos|lotus|biscoff|oreo|boudoirs|genoise|corn ?flakes|petales de mais|cereales|petits? beurre|naans?|pitas?|crackers|tuc|cookies?|kinder|bueno|feuilles? de brick|feuilles a (gyozas|samoussas)|feuilles pour samoussas|bagels?|macaronis?|crepes? dentelles|croutons|shokobons|mikado|twix|doritos|tulipes)\b/;
+const LACTOSE_OK = /sucre glace|glace pilee|lait de coco|lait vegetal|boisson vegetale|lait d'amande|lait de soja|creme vegetale|creme de coco|beurre de cacahuete|beurre de cacao|beurre d'amande|creme de marron|creme de balsamique|creme de thon|yaourt de soja|noix de coco|pate de cacahuete/g;
+const LACTOSE = /\b(lait|beurre|creme|fromages?|yaourts?|mascarpone|mozzarella|parmesan|emmental|gruyere|comte|cheddar|feta|chevre|brie|camembert|reblochon|raclette|ricotta|burrata|stracciatella|gorgonzola|skyr|saint mo[r]et|caprice des dieux|boursin|philadelphia|pecorino|gouda|ficello|kinder|bueno|nutella|chantilly|glace|ganache|babeurre|petits? suisses?|toblerone|nocciolata|m&m's|twix|magnum)\b/;
+const OEUFS = /(œufs?|oeufs?|\bjaunes?\b|mayonnaise|meringues?|genoise|boudoirs|biscuits? (a la )?cuilleres?)/;
+const FOUR = /\b(four|enfourn\w*)\b/;
+// une étape « au four » même sans le mot : température ≥ 100 °C qui ne concerne pas l'huile, un sirop ou l'air fryer
+const TEMP_FOUR = /\b(1\d\d|2\d\d) ?°c/;
+const PAS_FOUR = /huile|friture|frire|friteuse|sirop|caramel|air ?fryer|thermometre|°c au thermometre/;
+const OVEN_INGR = /genoise|pate a choux|biscuit genoise/;
+const usesOven = v => OVEN_INGR.test(ingText(v)) || (v.etapes || []).some(e => { const t = normalize(e); return FOUR.test(t) || (TEMP_FOUR.test(t) && !PAS_FOUR.test(t)); });
+const CUISSON = /\b(four|enfourn\w*|cuire|cuisson|cuit|cuits|poele|casserole|frire|friture|frit|bouillir|ebullition|fremissement|fremissante|micro-?ondes|bain-marie|chauffer|chauffe|fondre|griller|grill|saisir|mijoter|dorer|revenir|wok|gaufrier|friteuse|air fryer|toaster|caramel)\b/;
+
+const DIETS = {
+  vege:     { label: '🌱 Végétarien',   test: isVegeVariant },
+  gluten:   { label: '🌾 Sans gluten',  test: v => !GLUTEN.test(ingText(v).replace(GLUTEN_OK, '')) },
+  lactose:  { label: '🥛 Sans lactose', test: v => !LACTOSE.test(ingText(v).replace(LACTOSE_OK, '')) },
+  oeufs:    { label: '🥚 Sans œufs',    test: v => !OEUFS.test(ingText(v)) },
+  sansfour: { label: '🍳 Sans four',    test: v => !usesOven(v) },
+  cru:      { label: '❄️ Sans cuisson', test: v => !usesOven(v) && !CUISSON.test(stepText(v)) },
+};
+let activeDiets = new Set();
+const variantMatchesDiets = v => [...activeDiets].every(d => DIETS[d].test(v));
 
 function ingLabel(ing) {
   return typeof ing === 'string' ? ing : ing.texte;
@@ -182,7 +209,7 @@ function parseTempsMinutes(temps) {
 
 function cardMatchesFilters(r) {
   if (searchQuery && !normalize(r.titre).includes(normalize(searchQuery))) return false;
-  if (vegeOnly && !isVege(r)) return false;
+  if (activeDiets.size && !getVariants(r).some(variantMatchesDiets)) return false;
   if (timeFilter) {
     const max = parseInt(timeFilter, 10);
     const mins = parseTempsMinutes(previewVariant(r).temps);
@@ -284,7 +311,7 @@ function buildGrids() {
     const emptyEl = document.getElementById('empty-' + cat);
     if (emptyEl) emptyEl.classList.toggle('visible', count === 0);
     const infoEl = document.getElementById('info-' + cat);
-    if (infoEl) infoEl.innerHTML = activeFilters.length || searchQuery || timeFilter || vegeOnly
+    if (infoEl) infoEl.innerHTML = activeFilters.length || searchQuery || timeFilter || activeDiets.size
       ? `<strong>${count}</strong> recette${count !== 1 ? 's' : ''} sur ${total} correspondent à votre recherche`
       : `${total} recette${total !== 1 ? 's' : ''}`;
   });
@@ -292,7 +319,7 @@ function buildGrids() {
   document.getElementById('count-all').textContent = counts.all;
   const totalAll = allRecettes.length;
   document.getElementById('empty-all').classList.toggle('visible', counts.all === 0);
-  document.getElementById('info-all').innerHTML = activeFilters.length || searchQuery || timeFilter || vegeOnly
+  document.getElementById('info-all').innerHTML = activeFilters.length || searchQuery || timeFilter || activeDiets.size
     ? `<strong>${counts.all}</strong> recette${counts.all !== 1 ? 's' : ''} sur ${totalAll} correspondent à votre recherche`
     : `${totalAll} recettes au total`;
 
@@ -427,8 +454,8 @@ function openModal(idx) {
   document.getElementById('modal-cat').textContent = catLabels[r.cat];
   document.getElementById('modal-title').textContent = r.titre;
 
-  const firstVege = vegeOnly ? getVariants(r).findIndex(isVegeVariant) : 0;
-  selectVariant(firstVege > 0 ? firstVege : 0);
+  const firstMatch = activeDiets.size ? getVariants(r).findIndex(variantMatchesDiets) : 0;
+  selectVariant(firstMatch > 0 ? firstMatch : 0);
   updateModalPermissions();
 
   document.getElementById('modal-overlay').classList.add('open');
@@ -550,10 +577,21 @@ document.getElementById('time-filter').addEventListener('change', e => {
   buildGrids();
 });
 
-document.getElementById('vege-filter').addEventListener('change', e => {
-  vegeOnly = e.target.value === 'vege';
+// Boutons des filtres rapides (cumulables)
+const dietWrap = document.getElementById('diet-filters');
+function renderDiets() {
+  dietWrap.innerHTML = Object.entries(DIETS).map(([k, d]) =>
+    `<button type="button" class="diet-chip${activeDiets.has(k) ? ' active' : ''}" data-diet="${k}" aria-pressed="${activeDiets.has(k)}">${d.label}</button>`).join('');
+}
+dietWrap.addEventListener('click', e => {
+  const btn = e.target.closest('.diet-chip');
+  if (!btn) return;
+  const k = btn.dataset.diet;
+  activeDiets.has(k) ? activeDiets.delete(k) : activeDiets.add(k);
+  renderDiets();
   buildGrids();
 });
+renderDiets();
 
 document.getElementById('sort-select').addEventListener('change', e => {
   sortMode = e.target.value;
@@ -564,8 +602,8 @@ document.getElementById('reset-btn').addEventListener('click', () => {
   activeFilters = [];
   searchQuery = '';
   timeFilter = '';
-  vegeOnly = false;
-  document.getElementById('vege-filter').value = '';
+  activeDiets = new Set();
+  renderDiets();
   sortMode = 'default';
   document.getElementById('search-input').value = '';
   document.getElementById('time-filter').value = '';
