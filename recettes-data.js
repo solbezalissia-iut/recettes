@@ -30718,6 +30718,107 @@ const recettes = [
     ]
   },
   {
+    "id": "static-672",
+    "titre": "Pommes de terre fourrées au gruyère râpé",
+    "photo": "photos/enattente.png",
+    "cat": "accompagnement",
+    "variantes": [
+      {
+        "nom": "Au gruyère",
+        "temps": "80 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "4 grosses pommes de terre (env. 250 g chacune, bintje ou à chair farineuse)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "grosses pommes de terre (env. 250 g chacune, bintje ou à chair farineuse)"
+          },
+          {
+            "texte": "120 g de gruyère râpé",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "gruyère râpé"
+          },
+          {
+            "texte": "100 g de crème fraîche épaisse",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "crème fraîche épaisse"
+          },
+          {
+            "texte": "20 g de beurre",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          "sel",
+          "poivre",
+          "1 pincée de muscade",
+          "ciboulette fraîche (facultatif)"
+        ],
+        "etapes": [
+          "Préchauffez le four à 200 °C. Lavez et séchez les pommes de terre sans les éplucher, piquez-les plusieurs fois à la fourchette.",
+          "Enfournez-les entières sur une plaque 50 à 60 min, jusqu'à ce qu'une lame de couteau s'y enfonce sans résistance. (Pour aller plus vite : 10 à 12 min au micro-ondes à pleine puissance, puis 10 min au four.)",
+          "Laissez tiédir 5 min, puis coupez un chapeau sur le dessus de chaque pomme de terre. Avec une petite cuillère, videz-les en gardant environ 5 mm de chair contre la peau pour qu'elles se tiennent.",
+          "Écrasez la chair à la fourchette avec le beurre et la crème fraîche, ajoutez la moitié du gruyère, la ciboulette ciselée, du sel (selon votre goût), du poivre et la muscade.",
+          "Remplissez les pommes de terre de cette farce en formant un petit dôme, puis parsemez du reste de gruyère.",
+          "Montez le four à 220 °C et faites gratiner 10 à 15 min, jusqu'à ce que le fromage soit bien doré. Servez chaud, avec une salade verte."
+        ]
+      },
+      {
+        "nom": "Gruyère et lardons",
+        "temps": "80 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "4 grosses pommes de terre (env. 250 g chacune, bintje ou à chair farineuse)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "grosses pommes de terre (env. 250 g chacune, bintje ou à chair farineuse)"
+          },
+          {
+            "texte": "120 g de gruyère râpé",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "gruyère râpé"
+          },
+          {
+            "texte": "100 g de crème fraîche épaisse",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "crème fraîche épaisse"
+          },
+          {
+            "texte": "20 g de beurre",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "150 g de lardons fumés",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "lardons fumés"
+          },
+          "sel",
+          "poivre",
+          "1 pincée de muscade",
+          "ciboulette fraîche (facultatif)"
+        ],
+        "etapes": [
+          "Préchauffez le four à 200 °C. Lavez et séchez les pommes de terre sans les éplucher, piquez-les plusieurs fois à la fourchette.",
+          "Enfournez-les entières sur une plaque 50 à 60 min, jusqu'à ce qu'une lame de couteau s'y enfonce sans résistance. (Pour aller plus vite : 10 à 12 min au micro-ondes à pleine puissance, puis 10 min au four.)",
+          "Laissez tiédir 5 min, puis coupez un chapeau sur le dessus de chaque pomme de terre. Avec une petite cuillère, videz-les en gardant environ 5 mm de chair contre la peau pour qu'elles se tiennent.",
+          "Pendant ce temps, faites dorer les lardons à sec dans une poêle 5 min, puis égouttez-les sur du papier absorbant.",
+          "Écrasez la chair à la fourchette avec le beurre et la crème fraîche, ajoutez la moitié du gruyère, les lardons, la ciboulette ciselée, du sel (peu, les lardons sont déjà salés), du poivre et la muscade.",
+          "Remplissez les pommes de terre de cette farce en formant un petit dôme, puis parsemez du reste de gruyère.",
+          "Montez le four à 220 °C et faites gratiner 10 à 15 min, jusqu'à ce que le fromage soit bien doré. Servez chaud, avec une salade verte."
+        ]
+      }
+    ]
+  },
+  {
     "id": "static-293",
     "titre": "Pommes de terre Hasselback au vinaigre",
     "photo": "photos/enattente.png",
