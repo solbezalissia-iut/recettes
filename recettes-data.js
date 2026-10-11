@@ -10595,6 +10595,86 @@ const recettes = [
     ]
   },
   {
+    "id": "static-400",
+    "titre": "Ganache maison",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "variantes": [
+      {
+        "nom": "Chocolat blanc",
+        "temps": "10 min (+ 8 h au frais)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "200 g de chocolat blanc",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat blanc"
+          },
+          {
+            "texte": "100 ml de crème liquide entière",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          }
+        ],
+        "etapes": [
+          "Faire chauffer la crème sans la porter à ébullition, puis la verser sur le chocolat haché.",
+          "Bien mélanger jusqu'à obtenir une ganache lisse, puis placer au réfrigérateur pendant 8 heures pour laisser la préparation se stabiliser.",
+          "Sortir la ganache du réfrigérateur et, selon l'envie, la fouetter (ganache montée) ou l'utiliser directement."
+        ]
+      },
+      {
+        "nom": "Chocolat au lait",
+        "temps": "10 min (+ 8 h au frais)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "200 g de chocolat au lait",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat au lait"
+          },
+          {
+            "texte": "100 ml de crème liquide entière",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          }
+        ],
+        "etapes": [
+          "Faire chauffer la crème sans la porter à ébullition, puis la verser sur le chocolat haché.",
+          "Bien mélanger jusqu'à obtenir une ganache lisse, puis placer au réfrigérateur pendant 8 heures pour laisser la préparation se stabiliser.",
+          "Sortir la ganache du réfrigérateur et, selon l'envie, la fouetter (ganache montée) ou l'utiliser directement."
+        ]
+      },
+      {
+        "nom": "Chocolat noir 70 %",
+        "temps": "10 min (+ 8 h au frais)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "200 g de chocolat noir 70 %",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat noir 70 %"
+          },
+          {
+            "texte": "150 ml de crème liquide entière",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          }
+        ],
+        "etapes": [
+          "Faire chauffer la crème sans la porter à ébullition, puis la verser sur le chocolat haché.",
+          "Bien mélanger jusqu'à obtenir une ganache lisse, puis placer au réfrigérateur pendant 8 heures pour laisser la préparation se stabiliser.",
+          "Sortir la ganache du réfrigérateur et, selon l'envie, la fouetter (ganache montée) ou l'utiliser directement."
+        ]
+      }
+    ]
+  },
+  {
     "id": "static-148",
     "titre": "Gâteau au chocolat fondant ou moelleux",
     "photo": "photos/enattente.png",
