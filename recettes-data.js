@@ -82,6 +82,54 @@ const recettes = [
     ]
   },
   {
+    "id": "static-509",
+    "titre": "Aubergines à la parmigiana",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 15",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "3 aubergines",
+        "valeur": 3,
+        "unite": null,
+        "reste": "aubergines"
+      },
+      {
+        "texte": "700 ml de sauce tomate",
+        "valeur": 700,
+        "unite": "ml",
+        "reste": "sauce tomate"
+      },
+      {
+        "texte": "250 g de mozzarella",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "mozzarella"
+      },
+      {
+        "texte": "80 g de parmesan râpé",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "basilic frais",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper les aubergines en tranches de 1 cm dans la longueur, les badigeonner d’huile et les rôtir 20 minutes à 200 °C.",
+      "Dans un plat, alterner sauce tomate, aubergines, mozzarella en tranches, basilic et parmesan, sur 3 couches.",
+      "Terminer par la sauce, la mozzarella et le parmesan.",
+      "Cuire 35 minutes à 180 °C. Laisser reposer 10 minutes avant de servir."
+    ]
+  },
+  {
     "id": "static-2",
     "titre": "Avocado toast personnalisable",
     "photo": "photos/avocadotoast.png",
@@ -489,6 +537,65 @@ const recettes = [
       "Écraser les bananes à la fourchette, puis ajouter les œufs, le sucre et le beurre fondu.",
       "Incorporer la farine, la levure, le bicarbonate, la cannelle et le sel sans trop mélanger.",
       "Ajouter les noix ou les pépites, verser dans le moule et cuire 50 à 55 minutes."
+    ]
+  },
+  {
+    "id": "static-515",
+    "titre": "Barres de céréales maison",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min (+ 1 h au frais)",
+    "personnes": "12 barres",
+    "ingredients": [
+      {
+        "texte": "200 g de flocons d'avoine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "flocons d'avoine"
+      },
+      {
+        "texte": "80 g de miel",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "miel"
+      },
+      {
+        "texte": "60 g de beurre de cacahuète (ou purée d’amande)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "beurre de cacahuète (ou purée d’amande)"
+      },
+      {
+        "texte": "40 g de beurre",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "60 g de fruits secs (raisins, abricots)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "fruits secs (raisins, abricots)"
+      },
+      {
+        "texte": "50 g de pépites de chocolat",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "pépites de chocolat"
+      },
+      {
+        "texte": "30 g de graines ou noix concassées",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "graines ou noix concassées"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 170 °C et chemiser un moule carré.",
+      "Faire fondre le miel, le beurre de cacahuète et le beurre ensemble.",
+      "Verser sur les flocons, les fruits secs et les graines, puis bien mélanger.",
+      "Tasser fortement dans le moule et cuire 20 minutes.",
+      "Laisser refroidir, parsemer de pépites de chocolat fondues ou non, réfrigérer 1 heure puis couper en barres."
     ]
   },
   {
@@ -3573,6 +3680,58 @@ const recettes = [
     ]
   },
   {
+    "id": "static-523",
+    "titre": "Brochettes de fruits et chocolat fondu",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 banane",
+        "valeur": 1,
+        "unite": null,
+        "reste": "banane"
+      },
+      {
+        "texte": "250 g de fraises",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      {
+        "texte": "1 kiwi",
+        "valeur": 1,
+        "unite": null,
+        "reste": "kiwi"
+      },
+      {
+        "texte": "1 pomme",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pomme"
+      },
+      {
+        "texte": "100 g de chocolat au lait",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat au lait"
+      },
+      {
+        "texte": "2 c. à soupe de lait",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "lait"
+      },
+      "piques en bois"
+    ],
+    "etapes": [
+      "Couper les fruits en morceaux et les enfiler sur les piques en alternant les couleurs.",
+      "Faire fondre le chocolat avec le lait au micro-ondes par tranches de 30 secondes.",
+      "Napper les brochettes de chocolat ou servir le chocolat à part pour tremper."
+    ]
+  },
+  {
     "id": "static-47",
     "titre": "Brookies au chocolat",
     "photo": "photos/enattente.png",
@@ -4364,6 +4523,85 @@ const recettes = [
     ]
   },
   {
+    "id": "static-508",
+    "titre": "Buddha bowl végétarien",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "120 g de quinoa",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "quinoa"
+      },
+      {
+        "texte": "1 patate douce",
+        "valeur": 1,
+        "unite": null,
+        "reste": "patate douce"
+      },
+      {
+        "texte": "200 g de pois chiches cuits",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "pois chiches cuits"
+      },
+      {
+        "texte": "1 avocat",
+        "valeur": 1,
+        "unite": null,
+        "reste": "avocat"
+      },
+      {
+        "texte": "100 g de chou rouge",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chou rouge"
+      },
+      {
+        "texte": "1 carotte",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "2 c. à soupe de tahini",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "tahini"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      "graines de sésame",
+      "sel"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Couper la patate douce en cubes, la mélanger avec les pois chiches, l’huile, le paprika et du sel, puis rôtir 25 minutes.",
+      "Cuire le quinoa rincé dans 2 fois son volume d’eau salée 12 minutes.",
+      "Râper la carotte, émincer le chou rouge et trancher l’avocat.",
+      "Sauce : mélanger le tahini, le jus du citron et 3 cuillères à soupe d’eau.",
+      "Répartir tous les éléments en sections dans deux bols, napper de sauce et parsemer de sésame."
+    ]
+  },
+  {
     "id": "static-56",
     "titre": "Buns cappuccino à croûte craquante",
     "photo": "photos/enattente.png",
@@ -4670,6 +4908,80 @@ const recettes = [
       "Former des boules ou des pains plats avec la pâte, puis déposer une cuillère de garniture au centre et refermer légèrement.",
       "Cuire au four préchauffé à 180°C pendant environ 12 à 15 minutes, jusqu'à ce que les buns soient dorés et cuits à cœur.",
       "Laisser légèrement tiédir avant de servir ; accompagner éventuellement d'une salade et d'une sauce légère."
+    ]
+  },
+  {
+    "id": "static-510",
+    "titre": "Burgers végétariens aux haricots noirs",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g d'haricots noirs cuits",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "haricots noirs cuits"
+      },
+      {
+        "texte": "50 g de chapelure",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "chapelure"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de paprika fumé",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika fumé"
+      },
+      {
+        "texte": "4 pains à burger",
+        "valeur": 4,
+        "unite": null,
+        "reste": "pains à burger"
+      },
+      {
+        "texte": "4 tranches de cheddar",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tranches de cheddar"
+      },
+      "salade, tomate, oignon rouge",
+      "sauce au choix",
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Écraser grossièrement les haricots à la fourchette (garder des morceaux).",
+      "Ajouter l’oignon finement haché, l’œuf, la chapelure, les épices, du sel et du poivre. Former 4 galettes.",
+      "Réserver 15 minutes au frais pour qu’elles se tiennent.",
+      "Cuire 4 minutes par face dans l’huile, en posant le cheddar la dernière minute.",
+      "Monter les burgers avec la salade, la tomate, l’oignon et la sauce."
     ]
   },
   {
@@ -5425,6 +5737,78 @@ const recettes = [
       "Remettre sur feu doux et ajouter le beurre en morceaux, la vanille et la fleur de sel. Mélanger jusqu'à parfaite émulsion.",
       "Ajouter le chocolat blanc coupé en morceaux et mélanger jusqu'à ce qu'il soit entièrement fondu et lisse.",
       "Mixer au mixeur plongeant pour obtenir un caramel parfaitement lisse et brillant, puis laisser refroidir légèrement ou placer au frais selon l'usage."
+    ]
+  },
+  {
+    "id": "static-526",
+    "titre": "Carbonade flamande",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "3 h",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1,5 kg de bœuf à braiser",
+        "valeur": 1.5,
+        "unite": "kg",
+        "reste": "bœuf à braiser"
+      },
+      {
+        "texte": "75 cl de bière brune",
+        "valeur": 75,
+        "unite": "cl",
+        "reste": "bière brune"
+      },
+      {
+        "texte": "3 oignons",
+        "valeur": 3,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "3 tranches de pain d’épices",
+        "valeur": 3,
+        "unite": null,
+        "reste": "tranches de pain d’épices"
+      },
+      {
+        "texte": "2 c. à soupe de moutarde",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "moutarde"
+      },
+      {
+        "texte": "1 c. à soupe de cassonade",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "1 c. à soupe de vinaigre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "vinaigre"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire dorer la viande en cubes dans le beurre, puis réserver.",
+      "Faire fondre les oignons émincés 10 minutes dans la même cocotte, ajouter la cassonade et le vinaigre.",
+      "Remettre la viande, verser la bière, ajouter le bouquet garni, saler et poivrer.",
+      "Tartiner le pain d’épices de moutarde et le poser sur le dessus.",
+      "Couvrir et mijoter 2 h 30 à feu doux : le pain d’épices fond et lie la sauce. Servir avec des frites ou des pommes de terre. Meilleure réchauffée."
     ]
   },
   {
@@ -6527,6 +6911,95 @@ const recettes = [
       "Verser les tomates et le concentré, saler, poivrer, puis laisser mijoter 40 minutes à feu doux.",
       "Ajouter les haricots rouges et poursuivre 15 minutes.",
       "Servir avec du riz, de la crème fraîche ou des tortillas."
+    ]
+  },
+  {
+    "id": "static-507",
+    "titre": "Chili sin carne",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "45 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g d'haricots rouges cuits",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "haricots rouges cuits"
+      },
+      {
+        "texte": "150 g de lentilles corail",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lentilles corail"
+      },
+      {
+        "texte": "1 poivron rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron rouge"
+      },
+      {
+        "texte": "150 g de maïs",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "maïs"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "800 g de tomates concassées",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "300 ml d'eau",
+        "valeur": 300,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de paprika fumé",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika fumé"
+      },
+      {
+        "texte": "0,5 c. à café de piment",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "piment"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "sel"
+    ],
+    "etapes": [
+      "Faire revenir l’oignon, l’ail et le poivron dans l’huile 5 minutes, puis ajouter les épices.",
+      "Ajouter les lentilles corail rincées, les tomates et l’eau. Laisser mijoter 20 minutes : les lentilles remplacent la viande hachée.",
+      "Ajouter les haricots rouges et le maïs égouttés, puis cuire 10 minutes de plus. Saler.",
+      "Servir avec du riz, de la crème fraîche et de la coriandre."
     ]
   },
   {
@@ -9187,6 +9660,52 @@ const recettes = [
     ]
   },
   {
+    "id": "static-521",
+    "titre": "Crème dessert au chocolat (façon Danette)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min (+ 2 h au frais)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "500 ml de lait entier",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "100 g de chocolat noir ou au lait",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat noir ou au lait"
+      },
+      {
+        "texte": "40 g de sucre",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "30 g de maïzena",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "1 c. à soupe de cacao (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "cacao (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Délayer la maïzena, le sucre et le cacao dans un peu de lait froid.",
+      "Chauffer le reste du lait, ajouter le chocolat haché et mélanger jusqu’à ce qu’il fonde.",
+      "Ajouter le mélange à la maïzena et cuire en fouettant sans arrêt jusqu’à épaississement (2 minutes après les premiers bouillons).",
+      "Répartir dans des pots et réfrigérer au moins 2 heures."
+    ]
+  },
+  {
     "id": "static-402",
     "titre": "Crème pâtissière",
     "photo": "photos/enattente.png",
@@ -10407,6 +10926,91 @@ const recettes = [
     ]
   },
   {
+    "id": "static-505",
+    "titre": "Curry de légumes et pois chiches (végétarien)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de pois chiches cuits",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "pois chiches cuits"
+      },
+      {
+        "texte": "1 patate douce",
+        "valeur": 1,
+        "unite": null,
+        "reste": "patate douce"
+      },
+      {
+        "texte": "200 g d'épinards frais",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "épinards frais"
+      },
+      {
+        "texte": "400 ml de lait de coco",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "lait de coco"
+      },
+      {
+        "texte": "400 g de tomates concassées",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 c. à soupe de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "2 c. à soupe de curry en poudre",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "curry en poudre"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à soupe d'huile",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "coriandre",
+      "sel"
+    ],
+    "etapes": [
+      "Faire revenir l’oignon, l’ail et le gingembre dans l’huile 3 minutes, puis ajouter les épices 1 minute.",
+      "Ajouter la patate douce en cubes, les tomates et le lait de coco. Laisser mijoter 20 minutes.",
+      "Ajouter les pois chiches égouttés et cuire encore 5 minutes.",
+      "Incorporer les épinards hors du feu : ils fondent en 1 minute. Saler.",
+      "Servir avec du riz et de la coriandre."
+    ]
+  },
+  {
     "id": "static-475",
     "titre": "Curry vert thaï au poulet",
     "photo": "photos/enattente.png",
@@ -10555,6 +11159,90 @@ const recettes = [
       "Ajouter les lentilles, les tomates, le lait de coco et l’eau.",
       "Laisser mijoter 20 minutes en remuant, jusqu’à ce que les lentilles se défassent. Saler.",
       "Servir avec du riz ou des naans et de la coriandre."
+    ]
+  },
+  {
+    "id": "static-525",
+    "titre": "Daube provençale",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "3 h 30 (+ 12 h de marinade)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1,5 kg de bœuf à braiser (paleron, joue)",
+        "valeur": 1.5,
+        "unite": "kg",
+        "reste": "bœuf à braiser (paleron, joue)"
+      },
+      {
+        "texte": "75 cl de vin rouge",
+        "valeur": 75,
+        "unite": "cl",
+        "reste": "vin rouge"
+      },
+      {
+        "texte": "150 g de lardons",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lardons"
+      },
+      {
+        "texte": "3 carottes",
+        "valeur": 3,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "2 oignons",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "3 gousses d'ail",
+        "valeur": 3,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 zeste d’orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "zeste d’orange"
+      },
+      {
+        "texte": "100 g d'olives noires",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "olives noires"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      {
+        "texte": "2 c. à soupe de farine",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "farine"
+      },
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "La veille, mariner la viande en cubes avec le vin, les carottes, les oignons, l’ail, le zeste et le bouquet garni.",
+      "Égoutter la viande (garder la marinade) et la faire dorer dans l’huile avec les lardons. Saupoudrer de farine.",
+      "Verser la marinade et ses légumes, saler, poivrer, porter à ébullition.",
+      "Couvrir et laisser mijoter 3 heures à feu très doux. Ajouter les olives 30 minutes avant la fin.",
+      "Encore meilleure réchauffée le lendemain. Se congèle très bien. Servir avec des pâtes ou une polenta."
     ]
   },
   {
@@ -18150,6 +18838,85 @@ const recettes = [
     ]
   },
   {
+    "id": "static-506",
+    "titre": "Lasagnes végétariennes épinards et ricotta",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 15",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "12 plaques de lasagnes",
+        "valeur": 12,
+        "unite": null,
+        "reste": "plaques de lasagnes"
+      },
+      {
+        "texte": "500 g d'épinards (frais ou surgelés)",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "épinards (frais ou surgelés)"
+      },
+      {
+        "texte": "250 g de ricotta",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "ricotta"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "500 ml de sauce tomate",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "sauce tomate"
+      },
+      {
+        "texte": "200 g de mozzarella",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "mozzarella"
+      },
+      {
+        "texte": "60 g de parmesan râpé",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire fondre les épinards avec l’ail dans l’huile, puis bien les presser pour retirer l’eau.",
+      "Mélanger les épinards avec la ricotta, l’œuf, la moitié du parmesan, la muscade, du sel et du poivre.",
+      "Préchauffer le four à 180 °C.",
+      "Dans un plat, alterner sauce tomate, plaques de lasagnes et mélange ricotta-épinards, sur 3 couches.",
+      "Terminer par de la sauce tomate, la mozzarella en tranches et le reste de parmesan.",
+      "Cuire 40 minutes, jusqu’à ce que le dessus soit doré. Laisser reposer 10 minutes avant de couper."
+    ]
+  },
+  {
     "id": "static-205",
     "titre": "Layer cake chantilly-Nutella en couches",
     "photo": "photos/enattente.png",
@@ -20483,6 +21250,76 @@ const recettes = [
     ]
   },
   {
+    "id": "static-522",
+    "titre": "Muffins au chocolat",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "35 min",
+    "personnes": "12 muffins",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "30 g de cacao non sucré",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "cacao non sucré"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "200 ml de lait",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g de beurre fondu",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "100 g de pépites de chocolat",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pépites de chocolat"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 190 °C et garnir un moule à muffins de caissettes.",
+      "Mélanger la farine, le cacao, le sucre, la levure et le sel.",
+      "Fouetter les œufs, le lait et le beurre fondu, puis verser sur les poudres et mélanger rapidement (la pâte reste grumeleuse).",
+      "Ajouter les pépites, remplir les caissettes aux trois quarts et cuire 20 minutes."
+    ]
+  },
+  {
     "id": "static-442",
     "titre": "Muffins aux myrtilles",
     "photo": "photos/enattente.png",
@@ -20545,6 +21382,125 @@ const recettes = [
       "Dans un autre bol, fouetter les œufs, le lait et le beurre fondu.",
       "Verser les liquides sur les poudres et mélanger rapidement : la pâte doit rester grumeleuse.",
       "Incorporer les myrtilles, remplir les caissettes aux trois quarts et cuire 20 minutes."
+    ]
+  },
+  {
+    "id": "static-532",
+    "titre": "Muffins salés légumes et feta",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "35 min",
+    "personnes": "12 muffins",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "150 ml de lait",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "80 ml d'huile d'olive",
+        "valeur": 80,
+        "unite": "ml",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 courgette râpée et pressée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "courgette râpée et pressée"
+      },
+      {
+        "texte": "1 poivron en petits dés",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron en petits dés"
+      },
+      {
+        "texte": "150 g de feta",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "feta"
+      },
+      {
+        "texte": "50 g de parmesan râpé",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      "herbes fraîches",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et préparer un moule à muffins.",
+      "Mélanger la farine et la levure, puis ajouter les œufs, le lait et l’huile.",
+      "Incorporer la courgette, le poivron, la feta émiettée, le parmesan, les herbes, peu de sel et du poivre.",
+      "Remplir les moules aux trois quarts et cuire 25 minutes.",
+      "Se gardent 3 jours au réfrigérateur ou se congèlent : idéal pour les pique-niques et les boîtes repas."
+    ]
+  },
+  {
+    "id": "static-520",
+    "titre": "Mug cake au chocolat",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "40 g de chocolat noir",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "25 g de sucre",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "25 g de farine",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "farine"
+      }
+    ],
+    "etapes": [
+      "Faire fondre le chocolat et le beurre dans un grand mug au micro-ondes 30 à 40 secondes.",
+      "Ajouter l’œuf et le sucre, mélanger à la fourchette, puis la farine.",
+      "Cuire 1 minute à 1 minute 15 au micro-ondes (800 W) : le centre doit rester légèrement fondant.",
+      "Laisser tiédir 1 minute avant de déguster."
     ]
   },
   {
@@ -20825,6 +21781,95 @@ const recettes = [
       "Transvaser le nappage dans un récipient assez haut et étroit et mixer au mixeur plongeant jusqu'à disparition des petites bulles.",
       "Filmer au contact et laisser refroidir jusqu'à atteindre environ 35 °C.",
       "Utiliser immédiatement pour faire briller les gâteaux ; si excès, filtrer et conserver au frais jusqu'à trois semaines pour d'autres utilisations."
+    ]
+  },
+  {
+    "id": "static-527",
+    "titre": "Navarin d’agneau",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "2 h",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1,2 kg d'épaule d’agneau en morceaux",
+        "valeur": 1.2,
+        "unite": "kg",
+        "reste": "épaule d’agneau en morceaux"
+      },
+      {
+        "texte": "4 carottes",
+        "valeur": 4,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "4 navets",
+        "valeur": 4,
+        "unite": null,
+        "reste": "navets"
+      },
+      {
+        "texte": "500 g de petites pommes de terre",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "petites pommes de terre"
+      },
+      {
+        "texte": "200 g de petits pois",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "petits pois"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "2 c. à soupe de concentré de tomate",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "concentré de tomate"
+      },
+      {
+        "texte": "1 c. à soupe de farine",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "farine"
+      },
+      {
+        "texte": "500 ml de bouillon",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "bouillon"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire dorer l’agneau dans l’huile, ajouter l’oignon et l’ail, puis saupoudrer de farine.",
+      "Ajouter le concentré de tomate, le bouillon et le bouquet garni. Couvrir et mijoter 1 heure.",
+      "Ajouter les carottes, les navets et les pommes de terre, puis cuire 40 minutes.",
+      "Ajouter les petits pois 10 minutes avant la fin. Se garde 3 jours au réfrigérateur."
     ]
   },
   {
@@ -21760,6 +22805,53 @@ const recettes = [
     ]
   },
   {
+    "id": "static-530",
+    "titre": "Overnight oats (porridge de la veille)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min (+ 1 nuit au frais)",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "50 g de flocons d'avoine",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "flocons d'avoine"
+      },
+      {
+        "texte": "150 ml de lait ou boisson végétale",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "lait ou boisson végétale"
+      },
+      {
+        "texte": "80 g d'yaourt nature",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "yaourt nature"
+      },
+      {
+        "texte": "1 c. à café de miel",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "miel"
+      },
+      {
+        "texte": "1 c. à soupe de graines de chia (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "graines de chia (facultatif)"
+      },
+      "fruits frais",
+      "une pincée de cannelle"
+    ],
+    "etapes": [
+      "Dans un bocal, mélanger les flocons, le lait, le yaourt, le miel, les graines de chia et la cannelle.",
+      "Fermer et laisser une nuit au réfrigérateur.",
+      "Le matin, ajouter les fruits frais. Se garde 3 jours : on peut en préparer plusieurs à l’avance."
+    ]
+  },
+  {
     "id": "static-476",
     "titre": "Pad thaï aux crevettes",
     "photo": "photos/enattente.png",
@@ -22595,6 +23687,119 @@ const recettes = [
     ]
   },
   {
+    "id": "static-518",
+    "titre": "Pains au lait",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "40 min (+ 2 h de pousse)",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "500 g de farine",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "250 ml de lait tiède",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "10 g de levure de boulanger sèche",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "levure de boulanger sèche"
+      },
+      {
+        "texte": "50 g de sucre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "80 g de beurre mou",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "1 c. à café de sel",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      },
+      "sucre perlé (facultatif)"
+    ],
+    "etapes": [
+      "Délayer la levure dans le lait tiède avec une pincée de sucre.",
+      "Mélanger la farine, le sucre et le sel, ajouter l’œuf et le lait, puis pétrir 8 minutes.",
+      "Ajouter le beurre mou et pétrir encore 5 minutes jusqu’à obtenir une pâte souple. Laisser lever 1 h 30.",
+      "Diviser en 12 boules, les allonger en petits pains et les poser sur une plaque. Laisser lever encore 45 minutes.",
+      "Dorer au jaune d’œuf, parsemer de sucre perlé et cuire 15 minutes à 180 °C."
+    ]
+  },
+  {
+    "id": "static-519",
+    "titre": "Palets bretons",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min (+ 1 h au frais)",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "200 g de beurre demi-sel mou",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "beurre demi-sel mou"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "3 jaunes d'œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      }
+    ],
+    "etapes": [
+      "Fouetter les jaunes avec le sucre jusqu’à blanchiment, puis ajouter le beurre mou.",
+      "Incorporer la farine et la levure sans trop travailler.",
+      "Former un boudin de 5 cm de diamètre, filmer et réfrigérer 1 heure.",
+      "Préchauffer le four à 180 °C. Couper des tranches de 1 cm et les placer dans des cercles ou des moules à muffins.",
+      "Cuire 15 à 18 minutes, jusqu’à ce qu’ils soient bien dorés."
+    ]
+  },
+  {
     "id": "static-264",
     "titre": "Palmiers feuilletés à la pâte à tartiner",
     "photo": "photos/enattente.png",
@@ -22941,6 +24146,84 @@ const recettes = [
       "Répartir dans des verrines ou ramequins et laisser prendre au réfrigérateur au moins 4 heures.",
       "Mixer les fruits rouges avec le sucre pour obtenir un coulis, filtrer si besoin.",
       "Napper les panna cotta de coulis au moment de servir."
+    ]
+  },
+  {
+    "id": "static-513",
+    "titre": "Parmentier de lentilles et patate douce",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "250 g de lentilles vertes",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "lentilles vertes"
+      },
+      {
+        "texte": "800 g de patates douces",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "patates douces"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "200 g de tomates concassées",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "100 ml de lait",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "60 g de fromage râpé",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "fromage râpé"
+      },
+      {
+        "texte": "1 c. à café de thym",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "thym"
+      },
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Cuire les lentilles 25 minutes dans l’eau non salée, puis égoutter.",
+      "Cuire les patates douces épluchées 20 minutes à l’eau salée, puis les écraser avec le beurre et le lait.",
+      "Faire revenir l’oignon et les carottes en petits dés dans l’huile, ajouter les tomates, le thym et les lentilles. Saler, poivrer, mijoter 10 minutes.",
+      "Préchauffer le four à 200 °C. Étaler les lentilles dans un plat, recouvrir de purée et de fromage râpé.",
+      "Cuire 20 minutes, jusqu’à ce que ce soit gratiné."
     ]
   },
   {
@@ -25384,6 +26667,73 @@ const recettes = [
     ]
   },
   {
+    "id": "static-528",
+    "titre": "Porc au caramel",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 15",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "800 g d'échine de porc",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "échine de porc"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "3 c. à soupe de sauce nuoc-mâm",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "sauce nuoc-mâm"
+      },
+      {
+        "texte": "2 c. à soupe de sauce soja",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "2 échalotes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "échalotes"
+      },
+      {
+        "texte": "3 gousses d'ail",
+        "valeur": 3,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "200 ml d'eau",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 c. à soupe d'huile",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "poivre",
+      "oignons nouveaux"
+    ],
+    "etapes": [
+      "Couper le porc en cubes.",
+      "Faire un caramel à sec avec le sucre, puis ajouter prudemment l’eau pour le décuire.",
+      "Faire dorer le porc dans l’huile avec les échalotes et l’ail, puis verser le caramel, le nuoc-mâm et la sauce soja.",
+      "Couvrir et mijoter 45 minutes, puis découvrir et laisser réduire jusqu’à ce que la sauce soit sirupeuse.",
+      "Poivrer, parsemer d’oignons nouveaux et servir avec du riz. Se réchauffe très bien."
+    ]
+  },
+  {
     "id": "static-468",
     "titre": "Porridge",
     "photo": "photos/enattente.png",
@@ -25933,6 +27283,90 @@ const recettes = [
     ]
   },
   {
+    "id": "static-529",
+    "titre": "Poulet teriyaki et riz (boîtes repas)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4 boîtes",
+    "ingredients": [
+      {
+        "texte": "600 g de blancs ou hauts de cuisses de poulet",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "blancs ou hauts de cuisses de poulet"
+      },
+      {
+        "texte": "4 c. à soupe de sauce soja",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "2 c. à soupe de miel",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "miel"
+      },
+      {
+        "texte": "2 c. à soupe de mirin ou vinaigre de riz",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "mirin ou vinaigre de riz"
+      },
+      {
+        "texte": "1 c. à café de maïzena",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "1 c. à café de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "250 g de riz",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "riz"
+      },
+      {
+        "texte": "1 brocoli",
+        "valeur": 1,
+        "unite": null,
+        "reste": "brocoli"
+      },
+      {
+        "texte": "1 carotte",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte"
+      },
+      {
+        "texte": "1 c. à soupe d'huile",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "graines de sésame"
+    ],
+    "etapes": [
+      "Cuire le riz. Cuire le brocoli en bouquets et la carotte en rondelles 5 minutes à la vapeur (ils doivent rester croquants).",
+      "Mélanger la sauce soja, le miel, le mirin, le gingembre, l’ail et la maïzena délayée dans 2 cuillères d’eau.",
+      "Faire dorer le poulet en morceaux dans l’huile 8 minutes, puis verser la sauce et laisser épaissir 2 minutes.",
+      "Répartir riz, légumes et poulet dans 4 boîtes, parsemer de sésame.",
+      "Se garde 3 jours au réfrigérateur. Réchauffer 2 minutes au micro-ondes."
+    ]
+  },
+  {
     "id": "static-437",
     "titre": "Profiteroles au chocolat",
     "photo": "photos/enattente.png",
@@ -26181,6 +27615,66 @@ const recettes = [
       "Fouetter les œufs avec la crème, le lait, le sel, le poivre et la muscade.",
       "Verser l'appareil sur la garniture.",
       "Enfourner 35 à 40 minutes jusqu'à ce que la quiche soit dorée et prise."
+    ]
+  },
+  {
+    "id": "static-512",
+    "titre": "Quiche épinards et chèvre",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "55 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1 pâte brisée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte brisée"
+      },
+      {
+        "texte": "300 g d'épinards",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "épinards"
+      },
+      {
+        "texte": "150 g de bûche de chèvre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "bûche de chèvre"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "200 ml de crème liquide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "100 ml de lait",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C. Foncer un moule avec la pâte et la piquer.",
+      "Faire fondre les épinards à la poêle, puis bien les presser.",
+      "Répartir les épinards sur la pâte et disposer les rondelles de chèvre.",
+      "Battre les œufs avec la crème, le lait, la muscade, du sel et du poivre, puis verser sur la garniture.",
+      "Cuire 35 à 40 minutes, jusqu’à ce que la quiche soit dorée et prise."
     ]
   },
   {
@@ -27055,6 +28549,86 @@ const recettes = [
       "Ajouter le riz cuit et mélanger pour enrober les grains avec les œufs et les aromates.",
       "Verser la sauce soja, assaisonner avec le poivre et mélanger délicatement jusqu'à ce que tout soit bien chaud et homogène.",
       "Goûter et ajuster le sel si nécessaire, puis servir aussitôt."
+    ]
+  },
+  {
+    "id": "static-517",
+    "titre": "Rochers à la noix de coco",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "25 min",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "200 g de noix de coco râpée",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "noix de coco râpée"
+      },
+      {
+        "texte": "120 g de sucre",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "3 blancs d'œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C.",
+      "Mélanger la noix de coco, le sucre, les blancs d’œufs non battus et le sel.",
+      "Former des petites pyramides avec les doigts mouillés sur une plaque recouverte de papier cuisson.",
+      "Cuire 12 à 15 minutes, jusqu’à ce que les pointes soient dorées."
+    ]
+  },
+  {
+    "id": "static-516",
+    "titre": "Roses des sables",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "20 min (+ 1 h au frais)",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat au lait ou noir",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat au lait ou noir"
+      },
+      {
+        "texte": "100 g de pétales de maïs (corn flakes nature)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pétales de maïs (corn flakes nature)"
+      },
+      {
+        "texte": "50 g de beurre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "30 g de sucre glace",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "sucre glace"
+      }
+    ],
+    "etapes": [
+      "Faire fondre le chocolat avec le beurre au bain-marie, puis ajouter le sucre glace.",
+      "Hors du feu, incorporer délicatement les corn flakes sans les briser.",
+      "Déposer des petits tas dans des caissettes en papier.",
+      "Laisser durcir au réfrigérateur au moins 1 heure."
     ]
   },
   {
@@ -28078,6 +29652,73 @@ const recettes = [
       "Préparer une vinaigrette avec la moutarde, le vinaigre, l’huile, du sel et du poivre.",
       "Mélanger les lentilles tièdes avec la vinaigrette, l’échalote ciselée et le persil.",
       "Ajouter les lardons dorés ou la feta émiettée. Servir tiède ou froid."
+    ]
+  },
+  {
+    "id": "static-531",
+    "titre": "Salade de quinoa en bocal",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "25 min",
+    "personnes": "4 bocaux",
+    "ingredients": [
+      {
+        "texte": "200 g de quinoa",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "quinoa"
+      },
+      {
+        "texte": "1 concombre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "concombre"
+      },
+      {
+        "texte": "250 g de tomates cerises",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "tomates cerises"
+      },
+      {
+        "texte": "200 g de pois chiches cuits",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "pois chiches cuits"
+      },
+      {
+        "texte": "150 g de feta",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "feta"
+      },
+      {
+        "texte": "1 poivron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron"
+      },
+      "persil et menthe",
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 citron (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron (jus)"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Cuire le quinoa rincé 12 minutes dans 2 fois son volume d’eau salée, puis laisser refroidir.",
+      "Préparer la vinaigrette avec l’huile, le jus de citron, du sel et du poivre.",
+      "Couper les légumes en dés et émietter la feta.",
+      "Dans chaque bocal, mettre la vinaigrette au fond, puis les légumes durs (poivron, concombre, pois chiches), le quinoa, les tomates, la feta et les herbes.",
+      "Fermer : se garde 3 jours au frais. Secouer ou verser dans une assiette au moment de manger."
     ]
   },
   {
@@ -30007,6 +31648,83 @@ const recettes = [
     ]
   },
   {
+    "id": "static-524",
+    "titre": "Tarte au sucre",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "45 min (+ 2 h de pousse)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "5 g de levure de boulanger sèche",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "levure de boulanger sèche"
+      },
+      {
+        "texte": "100 ml de lait tiède",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "30 g de sucre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "50 g de beurre mou",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "80 g de cassonade (garniture)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "cassonade (garniture)"
+      },
+      {
+        "texte": "40 g de beurre (garniture)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre (garniture)"
+      },
+      {
+        "texte": "1 œuf battu avec 2 c. à soupe de crème (garniture)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf battu avec 2 c. à soupe de crème (garniture)"
+      }
+    ],
+    "etapes": [
+      "Délayer la levure dans le lait tiède. Mélanger avec la farine, le sucre, le sel et l’œuf, puis pétrir en ajoutant le beurre mou.",
+      "Laisser lever 1 h 30.",
+      "Étaler la pâte dans un moule à tarte et laisser lever encore 30 minutes. Préchauffer le four à 200 °C.",
+      "Parsemer de cassonade et de noisettes de beurre, puis napper du mélange œuf-crème.",
+      "Cuire 15 à 20 minutes : le sucre doit être caramélisé."
+    ]
+  },
+  {
     "id": "static-348",
     "titre": "Tarte aux 3 chocolats",
     "photo": "photos/enattente.png",
@@ -30322,6 +32040,67 @@ const recettes = [
       "Étaler la crème d’amandes sur la pâte.",
       "Égoutter les poires, les émincer en lamelles sans les séparer et les disposer en rosace sur la crème.",
       "Parsemer d’amandes effilées et cuire 35 à 40 minutes. Servir tiède ou froid."
+    ]
+  },
+  {
+    "id": "static-514",
+    "titre": "Tarte fine aux légumes du soleil",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "50 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 pâte feuilletée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte feuilletée"
+      },
+      {
+        "texte": "1 courgette",
+        "valeur": 1,
+        "unite": null,
+        "reste": "courgette"
+      },
+      {
+        "texte": "1 aubergine",
+        "valeur": 1,
+        "unite": null,
+        "reste": "aubergine"
+      },
+      {
+        "texte": "3 tomates",
+        "valeur": 3,
+        "unite": null,
+        "reste": "tomates"
+      },
+      {
+        "texte": "3 c. à soupe de pesto",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "pesto"
+      },
+      {
+        "texte": "100 g de feta ou chèvre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "feta ou chèvre"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "herbes de Provence",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Étaler la pâte sur une plaque et la piquer.",
+      "Étaler le pesto en laissant 2 cm de bord.",
+      "Trancher finement les légumes et les disposer en rosace en les alternant.",
+      "Arroser d’huile, parsemer d’herbes, saler et poivrer.",
+      "Cuire 30 minutes, puis émietter la feta dessus à la sortie du four."
     ]
   },
   {
@@ -31552,6 +33331,84 @@ const recettes = [
       "Mélanger le fromage frais avec le zeste du citron, un peu d’aneth ciselé et du poivre.",
       "Tartiner les toasts.",
       "Ajouter une lanière de saumon fumé roulée en rose, une goutte de jus de citron et un brin d’aneth."
+    ]
+  },
+  {
+    "id": "static-511",
+    "titre": "Tofu sauté aux légumes et sauce soja",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "400 g de tofu ferme",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "tofu ferme"
+      },
+      {
+        "texte": "2 c. à soupe de maïzena",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "1 brocoli",
+        "valeur": 1,
+        "unite": null,
+        "reste": "brocoli"
+      },
+      {
+        "texte": "1 poivron rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron rouge"
+      },
+      {
+        "texte": "1 carotte",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte"
+      },
+      {
+        "texte": "3 c. à soupe de sauce soja",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "1 c. à soupe de miel ou sirop d’érable",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "miel ou sirop d’érable"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "1 c. à café de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "3 c. à soupe d'huile",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "graines de sésame"
+    ],
+    "etapes": [
+      "Presser le tofu dans un torchon 10 minutes, le couper en cubes et l’enrober de maïzena.",
+      "Le faire dorer dans 2 cuillères d’huile très chaude 8 minutes, puis réserver.",
+      "Faire sauter les légumes coupés finement dans le reste d’huile 5 minutes, avec l’ail et le gingembre.",
+      "Ajouter la sauce soja, le miel et le tofu, mélanger 1 minute pour laquer.",
+      "Parsemer de sésame et servir avec du riz."
     ]
   },
   {
