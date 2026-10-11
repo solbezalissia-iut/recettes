@@ -10356,7 +10356,7 @@ const recettes = [
   {
     "id": "static-397",
     "titre": "Cookies mangue, chocolat blanc et noix, nappage mangue",
-    "photo": "photos/enattente.png",
+    "photo": "photos/cookiesmangue.jpg",
     "temps": "2 h",
     "personnes": "12",
     "cat": "dessert",
