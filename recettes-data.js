@@ -27919,7 +27919,7 @@ const recettes = [
   {
     "id": "static-271",
     "titre": "Pâte à cookies crue (sans cuisson)",
-    "photo": "photos/enattente.png",
+    "photo": "photos/bouleschocookie.jpg",
     "cat": "dessert",
     "variantes": [
       {
@@ -28040,6 +28040,65 @@ const recettes = [
           "Tamiser la farine blanche avec le sel, puis l'incorporer lentement au mélange humide.",
           "Ajouter les pépites de chocolat blanc et les morceaux de chocolat Kinder dans la pâte.",
           "Conserver au réfrigérateur ou former des boules et les stocker au congélateur."
+        ]
+      },
+      {
+        "nom": "Bouchées fourrées au chocolat fondu",
+        "temps": "35 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "60 g de beurre pommade",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "beurre pommade"
+          },
+          {
+            "texte": "120 g de vergeoise",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "vergeoise"
+          },
+          {
+            "texte": "1 c. à café d'arôme vanille",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "arôme vanille"
+          },
+          {
+            "texte": "1 œuf très frais",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf très frais"
+          },
+          {
+            "texte": "80 g de farine",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "120 g de pépites de chocolat noir ou au lait",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "pépites de chocolat noir ou au lait"
+          },
+          {
+            "texte": "100 g de chocolat noir à faire fondre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "chocolat noir à faire fondre"
+          }
+        ],
+        "etapes": [
+          "Faire fondre le chocolat noir et réserver.",
+          "Travailler le beurre pommade avec la vergeoise jusqu'à obtenir une texture homogène, puis ajouter la vanille.",
+          "Incorporer l'œuf en mélangeant bien pour éviter les grumeaux.",
+          "Chauffer la farine au micro-ondes environ 1 minute (cela la rend propre à la consommation crue), la laisser tiédir puis l'incorporer.",
+          "Ajouter les pépites de chocolat et mélanger délicatement.",
+          "Remplir à moitié des moules en demi-sphères avec la pâte, déposer un peu de chocolat fondu au centre et refermer avec le reste de pâte.",
+          "Réfrigérer 20 minutes, démouler et tremper la moitié de chaque bouchée dans le reste de chocolat fondu.",
+          "Réserver au frais. L'œuf étant cru, utiliser un œuf très frais et consommer dans les 24 heures."
         ]
       }
     ]
@@ -30793,6 +30852,104 @@ const recettes = [
       "Saupoudrer de sel, poivre, ail en poudre et paprika dans les interstices et sur les surfaces exposées.",
       "Enfourner pendant environ 25 à 35 minutes, en les retournant à mi-cuisson, jusqu'à ce que les bords soient dorés et que l'intérieur soit tendre.",
       "Sortir du four et laisser reposer 2 minutes avant de servir."
+    ]
+  },
+  {
+    "id": "static-658",
+    "titre": "Potatoes de butternut au parmesan, sauce yaourt fumée",
+    "photo": "photos/potatoesbutternut.jpg",
+    "cat": "plat",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 courge butternut",
+        "valeur": 1,
+        "unite": null,
+        "reste": "courge butternut"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "2 pincée de sel",
+        "valeur": 2,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 c. à soupe de paprika fumé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "paprika fumé"
+      },
+      {
+        "texte": "1 c. à soupe d'origan",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "origan"
+      },
+      {
+        "texte": "1 c. à soupe de poudre d'oignon",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "poudre d'oignon"
+      },
+      {
+        "texte": "60 g de parmesan râpé",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      {
+        "texte": "4 c. à soupe d'yaourt grec épais (sauce)",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "yaourt grec épais (sauce)"
+      },
+      {
+        "texte": "2 c. à soupe de mayonnaise (sauce)",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "mayonnaise (sauce)"
+      },
+      {
+        "texte": "1 c. à café de paprika fumé (sauce)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika fumé (sauce)"
+      },
+      {
+        "texte": "1 c. à café de poudre d'oignon (sauce)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "poudre d'oignon (sauce)"
+      },
+      {
+        "texte": "1 pincée de sel (sauce)",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel (sauce)"
+      },
+      {
+        "texte": "1 c. à soupe de jus de citron vert",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "jus de citron vert"
+      },
+      "ciboulette"
+    ],
+    "etapes": [
+      "Couper la butternut en deux, retirer les graines, puis éplucher les moitiés.",
+      "Tailler la courge en bâtonnets d'épaisseur moyenne, comme des frites.",
+      "Dans un grand bol, mélanger l'huile d'olive, le sel, le paprika fumé, l'origan et la poudre d'oignon. Ajouter les bâtonnets et bien les enrober.",
+      "Mettre le parmesan dans une assiette et y rouler chaque bâtonnet pour le recouvrir sur toutes les faces.",
+      "Disposer sur une plaque recouverte de papier cuisson et cuire au four à 200 °C pendant 20 minutes. Retourner les potatoes, ajouter un peu de parmesan si désiré et remettre 5 à 10 minutes, jusqu'à ce qu'elles soient dorées.",
+      "Sauce : mélanger le yaourt grec, la mayonnaise, le paprika fumé, la poudre d'oignon, le sel, le jus de citron vert et la ciboulette ciselée. Goûter et ajuster.",
+      "Servir les potatoes chaudes et croustillantes avec la sauce."
     ]
   },
   {
