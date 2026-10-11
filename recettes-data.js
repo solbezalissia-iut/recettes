@@ -822,6 +822,41 @@ const recettes = [
     ]
   },
   {
+    "id": "static-655",
+    "titre": "Bananes fantômes et clémentines citrouilles",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "3 bananes",
+        "valeur": 3,
+        "unite": null,
+        "reste": "bananes"
+      },
+      {
+        "texte": "6 clémentines",
+        "valeur": 6,
+        "unite": null,
+        "reste": "clémentines"
+      },
+      {
+        "texte": "1 branche de céleri",
+        "valeur": 1,
+        "unite": null,
+        "reste": "branche de céleri"
+      },
+      "mini pépites de chocolat"
+    ],
+    "etapes": [
+      "Couper les bananes en deux et planter des pépites de chocolat pour faire les yeux et la bouche des fantômes.",
+      "Éplucher les clémentines en gardant les quartiers ensemble.",
+      "Planter un petit bâtonnet de céleri au sommet de chaque clémentine : c’est la tige de la citrouille.",
+      "Servir ensemble sur un plat : un goûter d’Halloween sans sucre ajouté."
+    ]
+  },
+  {
     "id": "static-515",
     "titre": "Barres de céréales maison",
     "photo": "photos/enattente.png",
@@ -3091,6 +3126,78 @@ const recettes = [
     ]
   },
   {
+    "id": "static-641",
+    "titre": "Bonshommes en pain d’épices",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "45 min (+ 1 h au frais)",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "350 g de farine",
+        "valeur": 350,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "100 g de beurre mou",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de cassonade",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "100 g de miel",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "miel"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "2 c. à café de gingembre en poudre",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "gingembre en poudre"
+      },
+      {
+        "texte": "2 c. à café de cannelle",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "0,5 c. à café de muscade",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "muscade"
+      },
+      {
+        "texte": "1 c. à café de bicarbonate",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "bicarbonate"
+      },
+      "glaçage royal pour décorer"
+    ],
+    "etapes": [
+      "Mélanger le beurre mou, la cassonade et le miel, puis ajouter l’œuf.",
+      "Incorporer la farine, les épices et le bicarbonate. Former une boule, filmer et réfrigérer 1 heure.",
+      "Préchauffer le four à 180 °C. Étaler la pâte sur 5 mm et découper des bonshommes à l’emporte-pièce.",
+      "Cuire 8 à 10 minutes sur une plaque recouverte de papier cuisson. Laisser refroidir.",
+      "Décorer au glaçage royal (yeux, sourire, boutons)."
+    ]
+  },
+  {
     "id": "static-469",
     "titre": "Bouillon de volaille maison",
     "photo": "photos/enattente.png",
@@ -4186,6 +4293,37 @@ const recettes = [
     ]
   },
   {
+    "id": "static-644",
+    "titre": "Brochettes Père Noël (fraises et banane)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "16 fraises",
+        "valeur": 16,
+        "unite": null,
+        "reste": "fraises"
+      },
+      {
+        "texte": "2 bananes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bananes"
+      },
+      "chantilly en bombe ou maison",
+      "mini pépites de chocolat",
+      "piques en bois"
+    ],
+    "etapes": [
+      "Couper la pointe des fraises (le bonnet) et garder le bas.",
+      "Couper les bananes en rondelles de 1,5 cm.",
+      "Sur chaque pique : un bas de fraise, une rondelle de banane (le visage), puis la pointe de fraise (le bonnet).",
+      "Ajouter un point de chantilly au sommet du bonnet et deux mini pépites pour les yeux. Servir aussitôt."
+    ]
+  },
+  {
     "id": "static-47",
     "titre": "Brookies au chocolat",
     "photo": "photos/enattente.png",
@@ -4295,6 +4433,67 @@ const recettes = [
           "Versez la préparation dans un moule et enfournez pendant 25 minutes."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-654",
+    "titre": "Brownies cimetière",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "50 min",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat noir",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "150 g de beurre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "200 g de sucre",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de farine",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "8 biscuits Oreo",
+        "valeur": 8,
+        "unite": null,
+        "reste": "biscuits Oreo"
+      },
+      {
+        "texte": "12 biscuits boudoirs ou petits-beurre",
+        "valeur": 12,
+        "unite": null,
+        "reste": "biscuits boudoirs ou petits-beurre"
+      },
+      "glaçage blanc ou chocolat blanc fondu",
+      "bonbons vers de terre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C. Faire fondre le chocolat et le beurre, ajouter le sucre, les œufs puis la farine.",
+      "Cuire 25 minutes dans un moule carré, puis laisser refroidir.",
+      "Écraser les Oreo en miettes et les répandre dessus : c’est la terre.",
+      "Écrire « RIP » au glaçage blanc sur les biscuits et les planter comme des pierres tombales.",
+      "Ajouter les bonbons vers de terre qui sortent de la terre. Couper en carrés."
     ]
   },
   {
@@ -4778,6 +4977,54 @@ const recettes = [
     ]
   },
   {
+    "id": "static-637",
+    "titre": "Bûche glacée vanille et fruits rouges",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min (+ 8 h de congélation)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "1 l de glace vanille",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "glace vanille"
+      },
+      {
+        "texte": "500 ml de sorbet framboise",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "sorbet framboise"
+      },
+      {
+        "texte": "150 g de biscuits sablés ou spéculoos",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "biscuits sablés ou spéculoos"
+      },
+      {
+        "texte": "50 g de beurre fondu",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "150 g de fruits rouges",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "fruits rouges"
+      },
+      "chantilly et meringues pour décorer"
+    ],
+    "etapes": [
+      "Sortir la glace et le sorbet 10 minutes pour les ramollir. Chemiser un moule à cake de film alimentaire.",
+      "Étaler la glace vanille au fond et sur les bords du moule en laissant un creux au centre. Congeler 30 minutes.",
+      "Remplir le creux de sorbet framboise et de quelques fruits rouges. Lisser.",
+      "Couvrir d’une couche de biscuits écrasés mélangés au beurre fondu et tasser : ce sera la base.",
+      "Congeler au moins 8 heures. Démouler sur le plat de service, décorer de chantilly, de meringues et de fruits rouges juste avant de servir."
+    ]
+  },
+  {
     "id": "static-54",
     "titre": "Bûche marron-vanille au croustillant de tuiles",
     "photo": "photos/enattente.png",
@@ -4914,6 +5161,151 @@ const recettes = [
     ]
   },
   {
+    "id": "static-635",
+    "titre": "Bûche praliné et croustillant",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h 15 (+ 4 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de farine",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "150 g de praliné noisette",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "praliné noisette"
+      },
+      {
+        "texte": "80 g de chocolat au lait",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chocolat au lait"
+      },
+      {
+        "texte": "60 g de crêpes dentelles émiettées",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "crêpes dentelles émiettées"
+      },
+      {
+        "texte": "400 ml de crème liquide entière bien froide",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "100 g de chocolat noir (glaçage)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat noir (glaçage)"
+      },
+      {
+        "texte": "100 ml de crème liquide (glaçage)",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "crème liquide (glaçage)"
+      }
+    ],
+    "etapes": [
+      "Préparer un biscuit roulé : fouetter les œufs et le sucre 10 minutes, incorporer la farine, étaler et cuire 8 à 10 minutes à 200 °C. Rouler dans un torchon humide et laisser refroidir.",
+      "Croustillant : faire fondre le chocolat au lait, ajouter 50 g de praliné et les crêpes dentelles.",
+      "Mousse : fouetter la crème froide en chantilly et incorporer le reste du praliné.",
+      "Dérouler le biscuit, étaler le croustillant puis la moitié de la mousse, rouler serré.",
+      "Couvrir du reste de mousse et réfrigérer 3 heures.",
+      "Glaçage : verser la crème chaude sur le chocolat noir, laisser tiédir et napper la bûche. Réfrigérer encore 1 heure."
+    ]
+  },
+  {
+    "id": "static-634",
+    "titre": "Bûche roulée au chocolat (classique)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h (+ 2 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "80 g de farine",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "20 g de cacao",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "cacao"
+      },
+      {
+        "texte": "200 g de chocolat noir",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "200 ml de crème liquide entière (ganache)",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide entière (ganache)"
+      },
+      {
+        "texte": "50 g de beurre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "250 ml de crème liquide entière bien froide (garniture)",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide (garniture)"
+      },
+      {
+        "texte": "30 g de sucre glace",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      "décorations de Noël"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Fouetter les œufs et le sucre 10 minutes jusqu’à ce que le mélange triple de volume.",
+      "Incorporer délicatement la farine et le cacao tamisés, étaler sur une plaque recouverte de papier cuisson et cuire 8 à 10 minutes.",
+      "Retourner aussitôt le biscuit sur un torchon humide, retirer le papier et le rouler dans le torchon. Laisser refroidir.",
+      "Ganache : verser la crème chaude sur le chocolat haché, mélanger, ajouter le beurre. Laisser épaissir.",
+      "Fouetter la crème froide avec le sucre glace en chantilly. Dérouler le biscuit, l’étaler de chantilly et rouler serré.",
+      "Couvrir de ganache, dessiner des stries à la fourchette pour imiter l’écorce, couper les extrémités en biais et réfrigérer 2 heures. Décorer."
+    ]
+  },
+  {
     "id": "static-55",
     "titre": "Bûche roulée aux spéculoos et crème au caprice des dieux",
     "photo": "photos/enattente.png",
@@ -4974,6 +5366,66 @@ const recettes = [
       "Une fois la base légèrement refroidie, badigeonner de crème et rouler délicatement en formant une bûche.",
       "Étaler le reste de crème sur la bûche et rayer légèrement la surface avec une fourchette.",
       "Faire fondre le chocolat et le répartir en filet sur la surface de la bûche."
+    ]
+  },
+  {
+    "id": "static-636",
+    "titre": "Bûche tiramisu",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min (+ 6 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "500 g de mascarpone",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "30 biscuits à la cuillère",
+        "valeur": 30,
+        "unite": null,
+        "reste": "biscuits à la cuillère"
+      },
+      {
+        "texte": "300 ml de café fort refroidi",
+        "valeur": 300,
+        "unite": "ml",
+        "reste": "café fort refroidi"
+      },
+      {
+        "texte": "3 cl d'amaretto (facultatif)",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "amaretto (facultatif)"
+      },
+      "cacao en poudre",
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Chemiser un moule à cake ou à bûche de film alimentaire en le laissant dépasser.",
+      "Séparer les œufs. Fouetter les jaunes avec le sucre, puis ajouter le mascarpone.",
+      "Monter les blancs en neige avec le sel et les incorporer délicatement.",
+      "Tremper rapidement les biscuits dans le café (et l’amaretto), et alterner couches de biscuits et de crème dans le moule, en finissant par des biscuits.",
+      "Réfrigérer au moins 6 heures, démouler sur le plat, couvrir de crème restante, saupoudrer de cacao et dessiner des stries à la fourchette."
     ]
   },
   {
@@ -6513,6 +6965,85 @@ const recettes = [
     ]
   },
   {
+    "id": "static-626",
+    "titre": "Cassoulet",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "4 h (+ 12 h de trempage)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "800 g d'haricots lingots secs",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "haricots lingots secs"
+      },
+      {
+        "texte": "4 cuisses de canard confites",
+        "valeur": 4,
+        "unite": null,
+        "reste": "cuisses de canard confites"
+      },
+      {
+        "texte": "4 saucisses de Toulouse",
+        "valeur": 4,
+        "unite": null,
+        "reste": "saucisses de Toulouse"
+      },
+      {
+        "texte": "400 g de poitrine de porc",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "poitrine de porc"
+      },
+      {
+        "texte": "2 oignons",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "4 gousses d'ail",
+        "valeur": 4,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "3 c. à soupe de concentré de tomate",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "concentré de tomate"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      {
+        "texte": "1,5 l de bouillon de volaille",
+        "valeur": 1.5,
+        "unite": "l",
+        "reste": "bouillon de volaille"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "La veille, faire tremper les haricots dans l’eau froide.",
+      "Les égoutter, les couvrir d’eau froide, porter à ébullition 10 minutes, puis égoutter.",
+      "Faire dorer la poitrine en morceaux et les saucisses dans un peu de graisse de canard. Ajouter les oignons, l’ail et les carottes.",
+      "Ajouter les haricots, le concentré, le bouquet garni et le bouillon. Mijoter 1 h 30.",
+      "Préchauffer le four à 150 °C. Mettre le tout dans une cassole, enfouir les cuisses de canard et les saucisses coupées.",
+      "Cuire 2 heures au four en cassant la croûte qui se forme et en la renfonçant 3 fois. Ajouter un peu de bouillon si ça sèche."
+    ]
+  },
+  {
     "id": "static-536",
     "titre": "Céleri rémoulade",
     "photo": "photos/enattente.png",
@@ -7975,6 +8506,90 @@ const recettes = [
       "Hors du feu, ajouter le chocolat haché et fouetter jusqu’à ce qu’il soit fondu.",
       "Remettre 1 à 2 minutes sur feu doux en fouettant pour le rendre mousseux.",
       "Servir aussitôt, avec de la chantilly si désiré."
+    ]
+  },
+  {
+    "id": "static-627",
+    "titre": "Choucroute garnie",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "2 h 30",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1,5 kg de choucroute crue",
+        "valeur": 1.5,
+        "unite": "kg",
+        "reste": "choucroute crue"
+      },
+      {
+        "texte": "6 saucisses de Strasbourg",
+        "valeur": 6,
+        "unite": null,
+        "reste": "saucisses de Strasbourg"
+      },
+      {
+        "texte": "2 saucisses de Montbéliard",
+        "valeur": 2,
+        "unite": null,
+        "reste": "saucisses de Montbéliard"
+      },
+      {
+        "texte": "600 g de palette ou échine fumée",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "palette ou échine fumée"
+      },
+      {
+        "texte": "400 g de lard fumé",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "lard fumé"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "50 g de saindoux ou graisse d’oie",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "saindoux ou graisse d’oie"
+      },
+      {
+        "texte": "50 cl de vin blanc d’Alsace (riesling)",
+        "valeur": 50,
+        "unite": "cl",
+        "reste": "vin blanc d’Alsace (riesling)"
+      },
+      {
+        "texte": "10 baies de genièvre",
+        "valeur": 10,
+        "unite": null,
+        "reste": "baies de genièvre"
+      },
+      {
+        "texte": "2 feuilles de laurier",
+        "valeur": 2,
+        "unite": null,
+        "reste": "feuilles de laurier"
+      },
+      {
+        "texte": "6 pommes de terre",
+        "valeur": 6,
+        "unite": null,
+        "reste": "pommes de terre"
+      }
+    ],
+    "etapes": [
+      "Rincer la choucroute à l’eau froide et bien l’essorer.",
+      "Faire fondre l’oignon émincé dans la graisse au fond d’une grande cocotte.",
+      "Ajouter la moitié de la choucroute, la palette et le lard, puis le reste de choucroute, le genièvre et le laurier. Verser le vin.",
+      "Couvrir et laisser mijoter 1 h 30 à feu doux.",
+      "Ajouter les pommes de terre épluchées et les saucisses de Montbéliard, cuire 30 minutes. Réchauffer les Strasbourg 10 minutes dans l’eau frémissante à part.",
+      "Servir la choucroute entourée des viandes tranchées et des pommes de terre, avec de la moutarde."
     ]
   },
   {
@@ -10165,6 +10780,49 @@ const recettes = [
     ]
   },
   {
+    "id": "static-640",
+    "titre": "Couronne de Noël caprese",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "15 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "250 g de tomates cerises",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "tomates cerises"
+      },
+      {
+        "texte": "250 g de billes de mozzarella",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "billes de mozzarella"
+      },
+      "feuilles de basilic",
+      "quelques brins de romarin",
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à soupe de crème de balsamique",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "crème de balsamique"
+      },
+      "fleur de sel"
+    ],
+    "etapes": [
+      "Sur un grand plat rond, disposer les brins de romarin et le basilic en cercle pour former la couronne.",
+      "Répartir dessus les tomates cerises et les billes de mozzarella en alternant.",
+      "Arroser d’huile d’olive et de crème de balsamique, parsemer de fleur de sel.",
+      "Ajouter un nœud en lanière de poivron rouge pour la décoration."
+    ]
+  },
+  {
     "id": "static-104",
     "titre": "Couronne feuilletée au chèvre, miel et lard",
     "photo": "photos/enattente.png",
@@ -11173,6 +11831,60 @@ const recettes = [
     ]
   },
   {
+    "id": "static-629",
+    "titre": "Croziflette",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "45 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de crozets de Savoie",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "crozets de Savoie"
+      },
+      {
+        "texte": "1 reblochon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "reblochon"
+      },
+      {
+        "texte": "200 g de lardons",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "lardons"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "20 cl de crème fraîche",
+        "valeur": 20,
+        "unite": "cl",
+        "reste": "crème fraîche"
+      },
+      {
+        "texte": "10 cl de vin blanc",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "vin blanc"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Cuire les crozets 15 à 20 minutes dans l’eau bouillante salée, puis les égoutter.",
+      "Faire revenir l’oignon émincé et les lardons, puis déglacer au vin blanc.",
+      "Préchauffer le four à 200 °C. Mélanger les crozets, les lardons et la crème. Poivrer.",
+      "Verser dans un plat, couvrir du reblochon coupé en deux dans l’épaisseur, croûte vers le haut.",
+      "Cuire 20 minutes, jusqu’à ce que le fromage soit fondu et doré."
+    ]
+  },
+  {
     "id": "static-118",
     "titre": "Cruffins à la crème diplomate vanillée",
     "photo": "photos/enattente.png",
@@ -11731,6 +12443,79 @@ const recettes = [
       "Saisir le steak sans le piquer. Temps par face pour 2 cm d’épaisseur : bleu 1 min, saignant 2 min, à point 3 min, bien cuit 4 à 5 min.",
       "Retourner une seule fois avec une pince.",
       "Laisser reposer 2 à 3 minutes sur une assiette chaude, puis saler à la fleur de sel et poivrer."
+    ]
+  },
+  {
+    "id": "static-645",
+    "titre": "Cupcakes sapins de Noël",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "45 min",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "200 g de farine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "120 g de beurre fondu",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "120 ml de lait",
+        "valeur": 120,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "250 g de mascarpone",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "200 ml de crème liquide entière bien froide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "80 g de sucre glace",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      "colorant alimentaire vert",
+      "perles de sucre et étoiles en sucre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C. Mélanger les œufs et le sucre, puis le beurre, le lait, la farine et la levure.",
+      "Remplir 12 caissettes aux deux tiers et cuire 20 minutes. Laisser refroidir complètement.",
+      "Fouetter le mascarpone, la crème et le sucre glace en chantilly ferme, puis la colorer en vert.",
+      "Avec une douille étoilée, pocher la crème en spirale de plus en plus étroite pour former un sapin.",
+      "Décorer de perles de sucre (les boules) et d’une étoile au sommet."
     ]
   },
   {
@@ -12561,6 +13346,64 @@ const recettes = [
       "Ciseler finement l’échalote et les herbes, écraser l’ail.",
       "Mélanger avec le fromage blanc et le jus de citron. Saler et poivrer.",
       "Réserver 30 minutes au frais et servir avec des bâtonnets de carottes, concombre, poivron et radis."
+    ]
+  },
+  {
+    "id": "static-647",
+    "titre": "Doigts de sorcière",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "40 min (+ 30 min au frais)",
+    "personnes": "25",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "125 g de beurre mou",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de sucre glace",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "25 amandes entières émondées",
+        "valeur": 25,
+        "unite": null,
+        "reste": "amandes entières émondées"
+      },
+      {
+        "texte": "2 c. à soupe de confiture de framboise",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "confiture de framboise"
+      }
+    ],
+    "etapes": [
+      "Mélanger le beurre, le sucre glace, l’œuf et la vanille, puis la farine. Réfrigérer 30 minutes.",
+      "Préchauffer le four à 170 °C. Rouler des boudins de la taille d’un doigt.",
+      "Appuyer une amande au bout pour l’ongle, et marquer les articulations avec la lame d’un couteau.",
+      "Cuire 15 minutes. Retirer les amandes, mettre une goutte de confiture et les recoller : ça ressemble à du sang."
     ]
   },
   {
@@ -13432,6 +14275,53 @@ const recettes = [
     ]
   },
   {
+    "id": "static-642",
+    "titre": "Étoiles à la cannelle (Zimtsterne)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "40 min (+ 1 h de repos)",
+    "personnes": "30",
+    "ingredients": [
+      {
+        "texte": "250 g de poudre d'amandes",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "poudre d'amandes"
+      },
+      {
+        "texte": "200 g de sucre glace",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "2 blancs d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      },
+      {
+        "texte": "2 c. à café de cannelle",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 c. à café de jus de citron",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron"
+      }
+    ],
+    "etapes": [
+      "Monter les blancs en neige ferme, puis ajouter le sucre glace et le jus de citron pour obtenir une meringue brillante. En réserver 4 cuillères à soupe.",
+      "Incorporer la poudre d’amandes et la cannelle au reste pour obtenir une pâte.",
+      "Étaler sur 1 cm entre deux feuilles de papier cuisson saupoudrées de sucre glace et découper des étoiles.",
+      "Napper chaque étoile d’un peu de meringue réservée et laisser sécher 1 heure.",
+      "Cuire 10 minutes à 150 °C : le dessus doit rester blanc."
+    ]
+  },
+  {
     "id": "static-480",
     "titre": "Fajitas au poulet",
     "photo": "photos/enattente.png",
@@ -14097,6 +14987,78 @@ const recettes = [
       "Foncer le moule avec la pâte, piquer le fond à la fourchette et réfrigérer 15 minutes (la pâte se rétracte moins).",
       "Recouvrir de papier cuisson et le remplir de billes ou de légumes secs.",
       "Cuire 15 minutes à 180 °C, retirer le papier et les billes, puis cuire encore 5 à 10 minutes jusqu’à ce que le fond soit doré."
+    ]
+  },
+  {
+    "id": "static-623",
+    "titre": "Fondue savoyarde",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "300 g de beaufort",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "beaufort"
+      },
+      {
+        "texte": "300 g de comté",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "comté"
+      },
+      {
+        "texte": "300 g d'emmental de Savoie",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "emmental de Savoie"
+      },
+      {
+        "texte": "40 cl de vin blanc sec de Savoie",
+        "valeur": 40,
+        "unite": "cl",
+        "reste": "vin blanc sec de Savoie"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "1 c. à café de maïzena",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "2 cl de kirsch (facultatif)",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "kirsch (facultatif)"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "poivre",
+      {
+        "texte": "1 grosse baguette de la veille (en cubes)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "grosse baguette de la veille (en cubes)"
+      }
+    ],
+    "etapes": [
+      "Couper le pain en cubes avec un morceau de croûte chacun. Râper ou couper les fromages en petits dés.",
+      "Frotter l’intérieur du caquelon avec la gousse d’ail coupée en deux.",
+      "Faire chauffer le vin à feu moyen, puis ajouter les fromages petit à petit en remuant en forme de 8 avec une cuillère en bois.",
+      "Délayer la maïzena dans le kirsch, l’ajouter quand la fondue est lisse et laisser épaissir 1 minute. Poivrer et ajouter la muscade.",
+      "Placer le caquelon sur le réchaud à table et tremper les cubes de pain en remuant toujours."
     ]
   },
   {
@@ -16594,6 +17556,72 @@ const recettes = [
       "Verser la pâte dans le moule et lisser la surface.",
       "Cuire au four pendant environ 20 à 25 minutes, jusqu'à ce que le dessus soit doré et qu'un cure-dent ressorte propre.",
       "Laisser refroidir avant de démouler et couper en parts."
+    ]
+  },
+  {
+    "id": "static-653",
+    "titre": "Gâteau toile d’araignée",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat noir",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "150 g de beurre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "80 g de farine",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "150 g de chocolat noir (glaçage)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat noir (glaçage)"
+      },
+      {
+        "texte": "150 ml de crème liquide (glaçage)",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "crème liquide (glaçage)"
+      },
+      {
+        "texte": "50 g de chocolat blanc",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "chocolat blanc"
+      },
+      "une araignée en bonbon (décor)"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C. Faire fondre le chocolat et le beurre, ajouter le sucre, les œufs puis la farine.",
+      "Cuire 25 minutes dans un moule rond beurré, puis laisser refroidir.",
+      "Glaçage : verser la crème chaude sur le chocolat noir, mélanger et napper le gâteau.",
+      "Tant que le glaçage est mou, tracer une spirale de chocolat blanc fondu au cornet, puis tirer des traits du centre vers l’extérieur avec la pointe d’un couteau : la toile apparaît.",
+      "Poser l’araignée et laisser prendre au frais."
     ]
   },
   {
@@ -22165,6 +23193,77 @@ const recettes = [
     ]
   },
   {
+    "id": "static-646",
+    "titre": "Meringues bonshommes de neige",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "20 min (+ 1 h 30 de cuisson)",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "3 blancs d'œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "75 g de sucre glace",
+        "valeur": 75,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      "mini pépites de chocolat",
+      "bonbons orange (pour le nez)"
+    ],
+    "etapes": [
+      "Préchauffer le four à 100 °C. Monter les blancs en neige en ajoutant le sucre petit à petit, puis incorporer le sucre glace.",
+      "À la poche à douille lisse, pocher une grosse boule puis une plus petite au-dessus pour chaque bonhomme.",
+      "Planter des mini pépites pour les yeux et les boutons.",
+      "Cuire 1 h 30 et laisser refroidir dans le four entrouvert. Coller un petit morceau de bonbon orange pour le nez."
+    ]
+  },
+  {
+    "id": "static-652",
+    "titre": "Meringues fantômes",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "20 min (+ 1 h 30 de cuisson)",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "3 blancs d'œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "75 g de sucre glace",
+        "valeur": 75,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      "mini pépites de chocolat"
+    ],
+    "etapes": [
+      "Préchauffer le four à 100 °C. Monter les blancs en neige en ajoutant le sucre petit à petit, puis le sucre glace.",
+      "À la poche à douille lisse, pocher des fantômes en tirant vers le haut pour faire une pointe.",
+      "Planter deux pépites pour les yeux (et une pour la bouche).",
+      "Cuire 1 h 30 et laisser refroidir dans le four."
+    ]
+  },
+  {
     "id": "static-221",
     "titre": "Meringues maison",
     "photo": "photos/enattente.png",
@@ -22883,6 +23982,84 @@ const recettes = [
       "Écraser au pilon les fraises coupées, le citron vert en quartiers, la menthe et le sucre au fond d’un verre.",
       "Remplir de glace pilée et verser le rhum.",
       "Compléter d’eau gazeuse et mélanger."
+    ]
+  },
+  {
+    "id": "static-648",
+    "titre": "Momies saucisses feuilletées",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "30 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "12 knacks ou petites saucisses",
+        "valeur": 12,
+        "unite": null,
+        "reste": "knacks ou petites saucisses"
+      },
+      {
+        "texte": "1 pâte feuilletée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte feuilletée"
+      },
+      {
+        "texte": "1 jaune d'œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf"
+      },
+      "moutarde ou ketchup pour les yeux"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Couper la pâte en fines lanières de 5 mm.",
+      "Enrouler les lanières autour de chaque saucisse en les croisant comme des bandelettes, en laissant un espace pour le visage.",
+      "Dorer au jaune d’œuf et cuire 15 minutes.",
+      "Dessiner deux yeux avec de la moutarde ou du ketchup."
+    ]
+  },
+  {
+    "id": "static-625",
+    "titre": "Mont-d’or chaud au four",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 Mont-d’or (boîte de 500 g)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "Mont-d’or (boîte de 500 g)"
+      },
+      {
+        "texte": "5 cl de vin blanc du Jura",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "vin blanc du Jura"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "800 g de pommes de terre",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "pommes de terre"
+      },
+      "charcuterie et salade pour servir",
+      "poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Cuire les pommes de terre à l’eau avec la peau.",
+      "Retirer le couvercle du Mont-d’or, emballer la boîte en bois dans du papier aluminium.",
+      "Creuser un petit trou au centre, y glisser l’ail émincé et verser le vin blanc.",
+      "Cuire 20 à 25 minutes, jusqu’à ce que le fromage soit coulant.",
+      "Servir aussitôt en trempant les pommes de terre dans le fromage, avec la charcuterie."
     ]
   },
   {
@@ -24669,6 +25846,52 @@ const recettes = [
     ]
   },
   {
+    "id": "static-651",
+    "titre": "Œufs mimosa yeux de monstre",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "30 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "6 œufs",
+        "valeur": 6,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "3 c. à soupe de mayonnaise",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "mayonnaise"
+      },
+      {
+        "texte": "1 c. à café de moutarde",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "moutarde"
+      },
+      {
+        "texte": "6 olives noires",
+        "valeur": 6,
+        "unite": null,
+        "reste": "olives noires"
+      },
+      {
+        "texte": "1 c. à soupe de ketchup",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "ketchup"
+      }
+    ],
+    "etapes": [
+      "Cuire les œufs durs 10 minutes, les refroidir, les écaler et les couper en deux.",
+      "Écraser les jaunes avec la mayonnaise et la moutarde, puis regarnir les blancs.",
+      "Poser une rondelle d’olive au centre : c’est la pupille.",
+      "Dessiner des petites veines rouges autour avec un cure-dent trempé dans le ketchup."
+    ]
+  },
+  {
     "id": "static-252",
     "titre": "Œufs nuages au four",
     "photo": "photos/enattente.png",
@@ -24746,6 +25969,46 @@ const recettes = [
       "Peler les oranges à vif et les couper en fines rondelles.",
       "Les disposer sur un plat et arroser de fleur d’oranger.",
       "Saupoudrer de cannelle et de sucre glace, puis parsemer de menthe ciselée."
+    ]
+  },
+  {
+    "id": "static-643",
+    "titre": "Orangettes",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h 30 (+ 1 nuit de séchage)",
+    "personnes": "30",
+    "ingredients": [
+      {
+        "texte": "3 oranges non traitées",
+        "valeur": 3,
+        "unite": null,
+        "reste": "oranges non traitées"
+      },
+      {
+        "texte": "300 g de sucre",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "300 ml d'eau",
+        "valeur": 300,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "150 g de chocolat noir",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat noir"
+      }
+    ],
+    "etapes": [
+      "Prélever l’écorce des oranges en larges bandes et la couper en bâtonnets de 5 mm.",
+      "Les blanchir 3 fois : départ eau froide, porter à ébullition, égoutter.",
+      "Confire les écorces 1 heure dans le sirop d’eau et de sucre à frémissement, puis les égoutter sur une grille et laisser sécher une nuit.",
+      "Faire fondre le chocolat et y tremper les écorces aux deux tiers. Laisser durcir sur du papier cuisson."
     ]
   },
   {
@@ -28354,6 +29617,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-649",
+    "titre": "Pizza momie",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 pâte à pizza",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte à pizza"
+      },
+      {
+        "texte": "200 g de sauce tomate",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sauce tomate"
+      },
+      {
+        "texte": "250 g de mozzarella",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "mozzarella"
+      },
+      {
+        "texte": "8 rondelles d’olives noires",
+        "valeur": 8,
+        "unite": null,
+        "reste": "rondelles d’olives noires"
+      },
+      "origan"
+    ],
+    "etapes": [
+      "Préchauffer le four à 250 °C. Étaler la pâte, napper de sauce tomate et parsemer d’origan.",
+      "Couper la mozzarella en lanières et les disposer en travers, comme des bandelettes de momie.",
+      "Ajouter des paires de rondelles d’olives pour les yeux dans les espaces.",
+      "Cuire 12 à 15 minutes."
+    ]
+  },
+  {
     "id": "static-290",
     "titre": "Pizza sur pain maison garnie et gratinée",
     "photo": "photos/enattente.png",
@@ -28470,6 +29774,65 @@ const recettes = [
     ]
   },
   {
+    "id": "static-632",
+    "titre": "Poires pochées au vin rouge",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "45 min (+ 2 h de repos)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 poires fermes",
+        "valeur": 4,
+        "unite": null,
+        "reste": "poires fermes"
+      },
+      {
+        "texte": "75 cl de vin rouge",
+        "valeur": 75,
+        "unite": "cl",
+        "reste": "vin rouge"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 bâton de cannelle",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bâton de cannelle"
+      },
+      {
+        "texte": "2 étoiles de badiane",
+        "valeur": 2,
+        "unite": null,
+        "reste": "étoiles de badiane"
+      },
+      {
+        "texte": "1 zeste d’orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "zeste d’orange"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille"
+      }
+    ],
+    "etapes": [
+      "Porter le vin, le sucre et les épices à ébullition.",
+      "Éplucher les poires en gardant la queue et les plonger dans le vin.",
+      "Cuire 25 minutes à frémissement en les retournant pour qu’elles se colorent uniformément.",
+      "Laisser refroidir dans le sirop au moins 2 heures.",
+      "Faire réduire le sirop pour qu’il devienne nappant et servir les poires avec, tièdes ou froides."
+    ]
+  },
+  {
     "id": "static-291",
     "titre": "Poke bowl personnalisable",
     "photo": "photos/poke.png",
@@ -28539,6 +29902,100 @@ const recettes = [
       "Émincer le concombre ou les radis en fines rondelles, et râper la carotte.",
       "Répartir le riz au fond de chaque bol, puis disposer harmonieusement l'avocat, la protéine, le fromage choisi, les légumes et la mangue ou la grenade par-dessus.",
       "Napper d'un filet de sauce soja sucrée et parsemer de cacahuètes concassées avant de servir."
+    ]
+  },
+  {
+    "id": "static-633",
+    "titre": "Pommes au four",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "45 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 pommes (reinette ou boskoop)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "pommes (reinette ou boskoop)"
+      },
+      {
+        "texte": "40 g de beurre",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "40 g de cassonade",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "30 g de raisins secs ou noix (facultatif)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "raisins secs ou noix (facultatif)"
+      },
+      {
+        "texte": "5 cl d'eau",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "eau"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C.",
+      "Évider les pommes avec un vide-pomme et inciser légèrement la peau tout autour à mi-hauteur.",
+      "Remplir le centre de cassonade, de cannelle, de raisins et d’une noisette de beurre.",
+      "Mettre l’eau au fond du plat et cuire 35 à 40 minutes. Servir tiède avec une boule de glace vanille."
+    ]
+  },
+  {
+    "id": "static-656",
+    "titre": "Pommes d’amour noires",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "6 petites pommes",
+        "valeur": 6,
+        "unite": null,
+        "reste": "petites pommes"
+      },
+      {
+        "texte": "300 g de sucre",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 ml d'eau",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "50 g de sirop de glucose",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "sirop de glucose"
+      },
+      "colorant alimentaire noir (gel)",
+      "6 bâtonnets en bois"
+    ],
+    "etapes": [
+      "Laver et bien sécher les pommes, retirer la queue et planter un bâtonnet.",
+      "Cuire le sucre, l’eau et le glucose sans remuer jusqu’à 150 °C au thermomètre, puis ajouter le colorant.",
+      "Tremper chaque pomme en la faisant tourner pour bien l’enrober, laisser égoutter.",
+      "Poser sur du papier cuisson huilé et laisser durcir."
     ]
   },
   {
@@ -29339,6 +30796,77 @@ const recettes = [
     ]
   },
   {
+    "id": "static-628",
+    "titre": "Potée auvergnate",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "3 h",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1 chou vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "chou vert"
+      },
+      {
+        "texte": "800 g de palette demi-sel",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "palette demi-sel"
+      },
+      {
+        "texte": "400 g de lard demi-sel",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "lard demi-sel"
+      },
+      {
+        "texte": "4 saucisses fumées",
+        "valeur": 4,
+        "unite": null,
+        "reste": "saucisses fumées"
+      },
+      {
+        "texte": "6 carottes",
+        "valeur": 6,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "4 navets",
+        "valeur": 4,
+        "unite": null,
+        "reste": "navets"
+      },
+      {
+        "texte": "6 pommes de terre",
+        "valeur": 6,
+        "unite": null,
+        "reste": "pommes de terre"
+      },
+      {
+        "texte": "1 oignon piqué de clous de girofle",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon piqué de clous de girofle"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Faire dessaler la palette et le lard 2 heures dans l’eau froide.",
+      "Les mettre dans une grande marmite d’eau froide avec l’oignon et le bouquet garni. Porter à ébullition, écumer et cuire 1 heure.",
+      "Blanchir le chou coupé en quartiers 5 minutes dans l’eau bouillante, puis l’ajouter avec les carottes et les navets. Cuire 45 minutes.",
+      "Ajouter les pommes de terre et les saucisses, puis cuire encore 30 minutes. Poivrer (ne pas saler, la viande l’est déjà)."
+    ]
+  },
+  {
     "id": "static-450",
     "titre": "Poulet à la crème et aux champignons",
     "photo": "photos/enattente.png",
@@ -29989,6 +31517,48 @@ const recettes = [
       "Mélanger tous les ingrédients dans un pichet (multiplier les doses pour un grand saladier).",
       "Laisser reposer au moins 2 heures au réfrigérateur pour que les épices infusent.",
       "Servir sur des glaçons avec des morceaux de fruits."
+    ]
+  },
+  {
+    "id": "static-657",
+    "titre": "Punch sanglant (sans alcool)",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "10 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "1 l de jus de cranberry",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "jus de cranberry"
+      },
+      {
+        "texte": "50 cl de jus d'orange sanguine",
+        "valeur": 50,
+        "unite": "cl",
+        "reste": "jus d'orange sanguine"
+      },
+      {
+        "texte": "50 cl de limonade",
+        "valeur": 50,
+        "unite": "cl",
+        "reste": "limonade"
+      },
+      {
+        "texte": "5 cl de sirop de grenadine",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "sirop de grenadine"
+      },
+      "gants en latex neufs (pour la main glacée)",
+      "bonbons yeux ou litchis farcis d’une myrtille"
+    ],
+    "etapes": [
+      "La veille, remplir un gant en latex neuf et propre d’eau colorée de quelques gouttes de grenadine, le nouer et le congeler.",
+      "Mélanger les jus et la grenadine dans un grand saladier.",
+      "Ajouter la limonade au dernier moment, puis la main glacée (démoulée du gant) qui flotte.",
+      "Ajouter les « yeux » : litchis dénoyautés garnis d’une myrtille."
     ]
   },
   {
@@ -33103,6 +34673,83 @@ const recettes = [
     ]
   },
   {
+    "id": "static-639",
+    "titre": "Sapin feuilleté apéritif au pesto",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "35 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "2 pâtes feuilletées rondes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "pâtes feuilletées rondes"
+      },
+      {
+        "texte": "4 c. à soupe de pesto",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "pesto"
+      },
+      {
+        "texte": "50 g de parmesan râpé",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      {
+        "texte": "1 jaune d'œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf"
+      },
+      "tomates cerises pour décorer"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Étaler le pesto sur une pâte et parsemer de parmesan.",
+      "Recouvrir de la seconde pâte et découper un grand sapin.",
+      "Couper des bandes de chaque côté du tronc central et les torsader.",
+      "Dorer au jaune d’œuf et cuire 20 minutes. Décorer de demi-tomates cerises comme des boules de Noël."
+    ]
+  },
+  {
+    "id": "static-638",
+    "titre": "Sapin feuilleté au Nutella",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "35 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "2 pâtes feuilletées rondes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "pâtes feuilletées rondes"
+      },
+      {
+        "texte": "200 g de Nutella",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "Nutella"
+      },
+      {
+        "texte": "1 jaune d'œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf"
+      },
+      "sucre glace"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Dérouler une pâte sur une plaque et y dessiner un grand triangle (le sapin) avec un tronc.",
+      "Étaler le Nutella sur ce triangle, recouvrir de la seconde pâte et découper le sapin en suivant la forme.",
+      "Couper des bandes horizontales de 2 cm de chaque côté en laissant un tronc central de 3 cm, puis torsader chaque bande : ce sont les branches.",
+      "Dorer au jaune d’œuf et cuire 20 minutes.",
+      "Saupoudrer de sucre glace pour faire la neige."
+    ]
+  },
+  {
     "id": "static-332",
     "titre": "Sauce ail citron dorée",
     "photo": "photos/enattente.png",
@@ -33892,6 +35539,44 @@ const recettes = [
     ]
   },
   {
+    "id": "static-624",
+    "titre": "Soirée raclette",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 kg de fromage à raclette (environ 200 g par personne)",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "fromage à raclette (environ 200 g par personne)"
+      },
+      {
+        "texte": "1,2 kg de pommes de terre à chair ferme",
+        "valeur": 1.2,
+        "unite": "kg",
+        "reste": "pommes de terre à chair ferme"
+      },
+      {
+        "texte": "400 g de charcuterie (jambon cru, coppa, rosette, viande des Grisons)",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "charcuterie (jambon cru, coppa, rosette, viande des Grisons)"
+      },
+      "cornichons, petits oignons au vinaigre",
+      "salade verte",
+      "poivre"
+    ],
+    "etapes": [
+      "Cuire les pommes de terre avec la peau 20 à 25 minutes à l’eau salée ou à la vapeur. Les garder au chaud dans un torchon ou un panier.",
+      "Disposer le fromage en tranches, la charcuterie, les cornichons et les oignons sur des plats.",
+      "Allumer l’appareil à raclette 10 minutes avant de passer à table.",
+      "Chacun fait fondre son fromage dans son poêlon et le verse sur ses pommes de terre. Poivrer.",
+      "Servir avec une salade verte vinaigrette pour alléger."
+    ]
+  },
+  {
     "id": "static-614",
     "titre": "Sorbet citron",
     "photo": "photos/enattente.png",
@@ -34079,6 +35764,61 @@ const recettes = [
     ]
   },
   {
+    "id": "static-650",
+    "titre": "Soupe de citrouille servie dans sa citrouille",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "1 h",
+    "personnes": "6",
+    "ingredients": [
+      "une belle citrouille pour servir",
+      {
+        "texte": "1 kg de chair de citrouille ou de potiron",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "chair de citrouille ou de potiron"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 pomme de terre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pomme de terre"
+      },
+      {
+        "texte": "1 l de bouillon de légumes",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "bouillon de légumes"
+      },
+      {
+        "texte": "150 ml de crème liquide",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "graines de courge grillées",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper le chapeau de la citrouille de service et l’évider à la cuillère en gardant 2 cm de chair.",
+      "Faire revenir l’oignon, ajouter la chair de citrouille et la pomme de terre en cubes, puis le bouillon. Cuire 25 minutes.",
+      "Mixer avec la crème, la muscade, du sel et du poivre.",
+      "Verser la soupe dans la citrouille creusée, dessiner une toile d’araignée avec un filet de crème et parsemer de graines."
+    ]
+  },
+  {
     "id": "static-420",
     "titre": "Soupe de légumes maison",
     "photo": "photos/enattente.png",
@@ -34143,6 +35883,60 @@ const recettes = [
       "Ajouter les autres légumes, l’eau et le cube de bouillon.",
       "Porter à ébullition puis laisser mijoter 30 minutes à couvert.",
       "Mixer, rectifier l’assaisonnement et servir avec une cuillère de crème fraîche."
+    ]
+  },
+  {
+    "id": "static-631",
+    "titre": "Soupe de pois cassés",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "1 h 15",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "400 g de pois cassés",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "pois cassés"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "150 g de lardons ou dés de jambon (facultatif)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lardons ou dés de jambon (facultatif)"
+      },
+      {
+        "texte": "1,5 l d'eau ou bouillon",
+        "valeur": 1.5,
+        "unite": "l",
+        "reste": "eau ou bouillon"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      "croûtons",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Rincer les pois cassés.",
+      "Faire revenir l’oignon, les carottes et les lardons dans une cocotte.",
+      "Ajouter les pois cassés, l’eau et le bouquet garni. Cuire 1 heure à feu doux en remuant de temps en temps (saler en fin de cuisson).",
+      "Retirer le bouquet garni, mixer et servir avec des croûtons."
     ]
   },
   {
@@ -37145,6 +38939,66 @@ const recettes = [
       "Ajouter la pomme de terre en dés et le bouillon. Laisser mijoter 20 minutes.",
       "Mixer finement, ajouter la crème et rectifier l’assaisonnement.",
       "Servir avec un peu de persil ciselé."
+    ]
+  },
+  {
+    "id": "static-630",
+    "titre": "Velouté de potimarron et châtaignes",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 potimarron (environ 1 kg)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "potimarron (environ 1 kg)"
+      },
+      {
+        "texte": "200 g de châtaignes cuites",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "châtaignes cuites"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "750 ml de bouillon de volaille ou de légumes",
+        "valeur": 750,
+        "unite": "ml",
+        "reste": "bouillon de volaille ou de légumes"
+      },
+      {
+        "texte": "100 ml de crème liquide",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Laver le potimarron (inutile de l’éplucher), retirer les graines et le couper en cubes.",
+      "Faire revenir l’oignon dans le beurre, ajouter le potimarron et les trois quarts des châtaignes.",
+      "Couvrir de bouillon et cuire 25 minutes.",
+      "Mixer avec la crème, assaisonner de sel, de poivre et de muscade.",
+      "Servir avec le reste des châtaignes émiettées et grillées à la poêle."
     ]
   },
   {
