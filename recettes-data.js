@@ -1,5 +1,45 @@
 const recettes = [
   {
+    "id": "static-561",
+    "titre": "Aperol Spritz classique",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "6 cl d'Aperol",
+        "valeur": 6,
+        "unite": "cl",
+        "reste": "Aperol"
+      },
+      {
+        "texte": "9 cl de Prosecco",
+        "valeur": 9,
+        "unite": "cl",
+        "reste": "Prosecco"
+      },
+      {
+        "texte": "3 cl d'eau gazeuse",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "eau gazeuse"
+      },
+      {
+        "texte": "1 rondelle d'orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "rondelle d'orange"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un grand verre à vin de glaçons.",
+      "Verser le Prosecco, puis l’Aperol, puis l’eau gazeuse (règle 3-2-1).",
+      "Mélanger doucement et décorer d’une rondelle d’orange."
+    ]
+  },
+  {
     "id": "static-0",
     "titre": "Aperol Spritz glacé aux cerises",
     "photo": "photos/aperolcerises.png",
@@ -1459,6 +1499,33 @@ const recettes = [
     ]
   },
   {
+    "id": "static-579",
+    "titre": "Bellini",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de purée de pêche blanche",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "purée de pêche blanche"
+      },
+      {
+        "texte": "10 cl de Prosecco bien frais",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "Prosecco bien frais"
+      }
+    ],
+    "etapes": [
+      "Verser la purée de pêche au fond d’une flûte.",
+      "Compléter doucement avec le Prosecco.",
+      "Mélanger délicatement une seule fois."
+    ]
+  },
+  {
     "id": "static-19",
     "titre": "Beurre maison",
     "photo": "photos/enattente.png",
@@ -2376,6 +2443,59 @@ const recettes = [
       "Verser la préparation dans un moule de 25x25 cm préalablement beurré.",
       "Cuire au four préchauffé à 170°C pendant 15 à 20 minutes.",
       "Laisser refroidir et réserver au frais pendant 1 heure avant de couper en carrés."
+    ]
+  },
+  {
+    "id": "static-585",
+    "titre": "Bloody Mary",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4,5 cl de vodka",
+        "valeur": 4.5,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "9 cl de jus de tomate",
+        "valeur": 9,
+        "unite": "cl",
+        "reste": "jus de tomate"
+      },
+      {
+        "texte": "1,5 cl de jus de citron",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "jus de citron"
+      },
+      {
+        "texte": "3 gouttes de sauce Worcestershire",
+        "valeur": 3,
+        "unite": null,
+        "reste": "gouttes de sauce Worcestershire"
+      },
+      {
+        "texte": "2 gouttes de Tabasco",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gouttes de Tabasco"
+      },
+      "sel de céleri, poivre",
+      {
+        "texte": "1 branche de céleri",
+        "valeur": 1,
+        "unite": null,
+        "reste": "branche de céleri"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Verser tous les ingrédients dans un verre haut rempli de glaçons.",
+      "Mélanger délicatement en transvasant 2 ou 3 fois d’un verre à l’autre.",
+      "Décorer d’une branche de céleri."
     ]
   },
   {
@@ -5340,6 +5460,40 @@ const recettes = [
       "Disposer les dos de cabillaud dans un plat, saler et poivrer.",
       "Mélanger l’huile, le zeste et le jus du citron, l’ail haché et les herbes ciselées, puis en napper le poisson.",
       "Cuire 12 à 15 minutes : la chair doit être nacrée et se détacher en lamelles."
+    ]
+  },
+  {
+    "id": "static-565",
+    "titre": "Caïpirinha",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de cachaça",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "cachaça"
+      },
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      {
+        "texte": "2 c. à café de sucre de canne en poudre",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "sucre de canne en poudre"
+      },
+      "glace pilée"
+    ],
+    "etapes": [
+      "Couper le citron vert en 8 quartiers et les mettre dans un verre bas avec le sucre.",
+      "Écraser au pilon pour extraire le jus.",
+      "Remplir de glace pilée, verser la cachaça et mélanger."
     ]
   },
   {
@@ -9341,6 +9495,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-568",
+    "titre": "Cosmopolitan",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de vodka citron",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "vodka citron"
+      },
+      {
+        "texte": "1,5 cl de triple sec (Cointreau)",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "triple sec (Cointreau)"
+      },
+      {
+        "texte": "3 cl de jus de cranberry",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "jus de cranberry"
+      },
+      {
+        "texte": "1 cl de jus de citron vert",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      "zeste d’orange",
+      "glaçons"
+    ],
+    "etapes": [
+      "Mettre tous les ingrédients dans un shaker avec des glaçons.",
+      "Secouer énergiquement 10 secondes.",
+      "Filtrer dans un verre à martini rafraîchi et décorer d’un zeste d’orange."
+    ]
+  },
+  {
     "id": "static-138",
     "titre": "Coulants au chocolat",
     "photo": "photos/enattente.png",
@@ -10918,6 +11113,40 @@ const recettes = [
     ]
   },
   {
+    "id": "static-572",
+    "titre": "Cuba libre",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de rhum ambré",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "rhum ambré"
+      },
+      {
+        "texte": "12 cl de cola",
+        "valeur": 12,
+        "unite": "cl",
+        "reste": "cola"
+      },
+      {
+        "texte": "0,5 citron vert",
+        "valeur": 0.5,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Presser le demi-citron vert dans un verre haut et y laisser le quartier.",
+      "Ajouter les glaçons et le rhum, puis compléter de cola.",
+      "Mélanger doucement."
+    ]
+  },
+  {
     "id": "static-400",
     "titre": "Cuisson des œufs (coque, mollet, dur, poché, au plat, brouillés, omelette)",
     "photo": "photos/enattente.png",
@@ -11476,6 +11705,46 @@ const recettes = [
       "Ajouter le reste du lait de coco, la courgette en dés et les haricots coupés en tronçons. Laisser mijoter 12 minutes.",
       "Assaisonner avec le nuoc-mâm, le sucre et le jus de citron vert.",
       "Parsemer de basilic et servir avec du riz jasmin."
+    ]
+  },
+  {
+    "id": "static-567",
+    "titre": "Daïquiri à la fraise",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de rhum blanc",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "2 cl de jus de citron vert",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "1,5 cl de sirop de sucre de canne",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "sirop de sucre de canne"
+      },
+      {
+        "texte": "150 g de fraises",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Mixer les fraises, le rhum, le jus de citron vert, le sirop et une poignée de glaçons.",
+      "Verser dans un verre à cocktail rafraîchi.",
+      "Décorer d’une fraise sur le bord du verre."
     ]
   },
   {
@@ -12789,6 +13058,52 @@ const recettes = [
       "Passer chaque escalope dans la farine, puis dans l’œuf, puis dans la chapelure en appuyant.",
       "Cuire dans l’huile et le beurre chauds 3 minutes par face, jusqu’à ce qu’elles soient bien dorées.",
       "Égoutter sur du papier absorbant et servir avec des quartiers de citron."
+    ]
+  },
+  {
+    "id": "static-574",
+    "titre": "Espresso martini",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de vodka",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "3 cl d'expresso fraîchement préparé et refroidi",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "expresso fraîchement préparé et refroidi"
+      },
+      {
+        "texte": "2 cl de liqueur de café (Kahlúa)",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "liqueur de café (Kahlúa)"
+      },
+      {
+        "texte": "1 cl de sirop de sucre",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "sirop de sucre"
+      },
+      {
+        "texte": "3 grains de café (décor)",
+        "valeur": 3,
+        "unite": null,
+        "reste": "grains de café (décor)"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Mettre tous les ingrédients dans un shaker rempli de glaçons.",
+      "Secouer très énergiquement 15 secondes pour obtenir une belle mousse.",
+      "Filtrer dans un verre à martini rafraîchi et déposer 3 grains de café sur la mousse."
     ]
   },
   {
@@ -16567,6 +16882,35 @@ const recettes = [
     ]
   },
   {
+    "id": "static-570",
+    "titre": "Gin tonic",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de gin",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "gin"
+      },
+      {
+        "texte": "15 cl de tonic bien froid",
+        "valeur": 15,
+        "unite": "cl",
+        "reste": "tonic bien froid"
+      },
+      "rondelle de citron vert ou concombre, baies de genièvre",
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un grand verre ballon de glaçons.",
+      "Verser le gin, puis le tonic en le faisant couler le long d’une cuillère pour garder les bulles.",
+      "Ajouter la garniture choisie et mélanger une seule fois."
+    ]
+  },
+  {
     "id": "static-173",
     "titre": "Glaçage au sucre glace",
     "photo": "photos/enattente.png",
@@ -18413,6 +18757,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-562",
+    "titre": "Hugo Spritz",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "2 cl de sirop ou liqueur de fleur de sureau (Saint-Germain)",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "sirop ou liqueur de fleur de sureau (Saint-Germain)"
+      },
+      {
+        "texte": "12 cl de Prosecco",
+        "valeur": 12,
+        "unite": "cl",
+        "reste": "Prosecco"
+      },
+      {
+        "texte": "3 cl d'eau gazeuse",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "eau gazeuse"
+      },
+      "quelques feuilles de menthe",
+      {
+        "texte": "1 rondelle de citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "rondelle de citron vert"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Froisser légèrement la menthe et la mettre dans un verre à vin avec la liqueur de sureau.",
+      "Ajouter les glaçons, le Prosecco et l’eau gazeuse.",
+      "Mélanger délicatement et décorer de citron vert."
+    ]
+  },
+  {
     "id": "static-388",
     "titre": "Ice tea léger aux pêches et infusion",
     "photo": "photos/enattente.png",
@@ -18951,6 +19336,32 @@ const recettes = [
       "Ajouter le reste de la crème de fromage par-dessus et laisser reposer au réfrigérateur pendant au moins 4 à 5 heures.",
       "Faire fondre le reste du chocolat avec un peu de lait et le verser sur le dessus du cheesecake.",
       "Placer le cheesecake au congélateur pendant 30 minutes, démouler et servir."
+    ]
+  },
+  {
+    "id": "static-580",
+    "titre": "Kir royal",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "2 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "1 cl de crème de cassis",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "crème de cassis"
+      },
+      {
+        "texte": "9 cl de champagne bien frais",
+        "valeur": 9,
+        "unite": "cl",
+        "reste": "champagne bien frais"
+      }
+    ],
+    "etapes": [
+      "Verser la crème de cassis au fond d’une flûte.",
+      "Compléter avec le champagne et servir aussitôt. (Avec du vin blanc sec, c’est un kir classique.)"
     ]
   },
   {
@@ -19691,6 +20102,111 @@ const recettes = [
     ]
   },
   {
+    "id": "static-563",
+    "titre": "Limoncello Spritz",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de limoncello",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "limoncello"
+      },
+      {
+        "texte": "9 cl de Prosecco",
+        "valeur": 9,
+        "unite": "cl",
+        "reste": "Prosecco"
+      },
+      {
+        "texte": "3 cl d'eau gazeuse",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "eau gazeuse"
+      },
+      "menthe, rondelle de citron",
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un verre à vin de glaçons.",
+      "Verser le Prosecco, le limoncello puis l’eau gazeuse.",
+      "Mélanger doucement, décorer de menthe et d’une rondelle de citron."
+    ]
+  },
+  {
+    "id": "static-575",
+    "titre": "Long Island iced tea",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "1,5 cl de vodka",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "1,5 cl de gin",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "gin"
+      },
+      {
+        "texte": "1,5 cl de rhum blanc",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "1,5 cl de tequila",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "tequila"
+      },
+      {
+        "texte": "1,5 cl de triple sec",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "triple sec"
+      },
+      {
+        "texte": "2,5 cl de jus de citron",
+        "valeur": 2.5,
+        "unite": "cl",
+        "reste": "jus de citron"
+      },
+      {
+        "texte": "3 cl de sirop de sucre",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "sirop de sucre"
+      },
+      {
+        "texte": "5 cl de cola",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "cola"
+      },
+      "glaçons",
+      {
+        "texte": "1 rondelle de citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "rondelle de citron"
+      }
+    ],
+    "etapes": [
+      "Remplir un verre haut de glaçons.",
+      "Verser les cinq alcools, le jus de citron et le sirop, puis mélanger.",
+      "Compléter de cola : la couleur doit rappeler celle d’un thé glacé. Décorer de citron. (Cocktail très fort, à boire avec modération.)"
+    ]
+  },
+  {
     "id": "static-206",
     "titre": "Mac and cheese poulet rôti maison",
     "photo": "photos/enattente.png",
@@ -20335,6 +20851,53 @@ const recettes = [
     ]
   },
   {
+    "id": "static-576",
+    "titre": "Mai tai",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de rhum ambré",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "rhum ambré"
+      },
+      {
+        "texte": "2 cl de rhum blanc",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "1,5 cl de curaçao orange",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "curaçao orange"
+      },
+      {
+        "texte": "1,5 cl de sirop d'orgeat",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "sirop d'orgeat"
+      },
+      {
+        "texte": "1 cl de jus de citron vert",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      "menthe, morceau d’ananas",
+      "glace pilée"
+    ],
+    "etapes": [
+      "Secouer le rhum blanc, le curaçao, l’orgeat et le jus de citron vert au shaker avec des glaçons.",
+      "Verser sur de la glace pilée dans un verre bas.",
+      "Faire flotter le rhum ambré sur le dessus et décorer de menthe et d’ananas."
+    ]
+  },
+  {
     "id": "static-215",
     "titre": "Maki apéro jambon et cookies salés parmesan",
     "photo": "photos/enattente.png",
@@ -20513,6 +21076,41 @@ const recettes = [
       "Ajouter des lamelles d'avocat, de poivron, un peu de thon égoutté et de carotte râpée.",
       "Couper les concombres garnis en tranches d'environ 1 cm d'épaisseur.",
       "Servir avec de la sauce soja, du wasabi ou de la mayonnaise épicée."
+    ]
+  },
+  {
+    "id": "static-566",
+    "titre": "Margarita",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de tequila",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "tequila"
+      },
+      {
+        "texte": "3 cl de triple sec (Cointreau)",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "triple sec (Cointreau)"
+      },
+      {
+        "texte": "2 cl de jus de citron vert frais",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "jus de citron vert frais"
+      },
+      "sel fin pour le givrage",
+      "glaçons"
+    ],
+    "etapes": [
+      "Givrer le bord d’un verre à margarita : le frotter avec un quartier de citron vert puis le tremper dans le sel.",
+      "Secouer la tequila, le triple sec et le jus de citron vert au shaker avec des glaçons.",
+      "Filtrer dans le verre givré."
     ]
   },
   {
@@ -20936,6 +21534,32 @@ const recettes = [
       "Ajouter le Nutella et les morceaux de Kinder Bueno dans le blender.",
       "Mixer à puissance élevée jusqu'à obtenir une texture lisse et crémeuse.",
       "Verser le milkshake dans un grand verre, ajouter une cuillère de sauce chocolatée en décor et garnir avec les morceaux de Kinder Bueno réservés."
+    ]
+  },
+  {
+    "id": "static-581",
+    "titre": "Mimosa",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "2 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "7,5 cl de jus d'orange pressé",
+        "valeur": 7.5,
+        "unite": "cl",
+        "reste": "jus d'orange pressé"
+      },
+      {
+        "texte": "7,5 cl de champagne ou crémant bien frais",
+        "valeur": 7.5,
+        "unite": "cl",
+        "reste": "champagne ou crémant bien frais"
+      }
+    ],
+    "etapes": [
+      "Verser le jus d’orange bien froid dans une flûte.",
+      "Compléter doucement avec le champagne. Idéal pour un brunch."
     ]
   },
   {
@@ -21393,6 +22017,47 @@ const recettes = [
       "Ajouter le rhum blanc et mélanger.",
       "Remplir le verre de glace pilée.",
       "Compléter avec de l'eau gazeuse et mélanger délicatement avant de déguster."
+    ]
+  },
+  {
+    "id": "static-569",
+    "titre": "Moscow mule",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de vodka",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "12 cl de ginger beer",
+        "valeur": 12,
+        "unite": "cl",
+        "reste": "ginger beer"
+      },
+      {
+        "texte": "1 cl de jus de citron vert",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "1 quartier de citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "quartier de citron vert"
+      },
+      "menthe",
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un mug en cuivre (ou un verre) de glaçons.",
+      "Verser la vodka et le jus de citron vert, puis compléter de ginger beer.",
+      "Mélanger et décorer de citron vert et de menthe."
     ]
   },
   {
@@ -22468,6 +23133,41 @@ const recettes = [
       "Ajouter le concentré de tomate, le bouillon et le bouquet garni. Couvrir et mijoter 1 heure.",
       "Ajouter les carottes, les navets et les pommes de terre, puis cuire 40 minutes.",
       "Ajouter les petits pois 10 minutes avant la fin. Se garde 3 jours au réfrigérateur."
+    ]
+  },
+  {
+    "id": "static-582",
+    "titre": "Negroni",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "3 cl de gin",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "gin"
+      },
+      {
+        "texte": "3 cl de Campari",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "Campari"
+      },
+      {
+        "texte": "3 cl de vermouth rouge",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "vermouth rouge"
+      },
+      "zeste d’orange",
+      "glaçons"
+    ],
+    "etapes": [
+      "Verser le gin, le Campari et le vermouth dans un verre bas rempli de glaçons.",
+      "Mélanger à la cuillère 20 secondes.",
+      "Décorer d’un zeste ou d’une demi-rondelle d’orange."
     ]
   },
   {
@@ -24476,6 +25176,41 @@ const recettes = [
     ]
   },
   {
+    "id": "static-586",
+    "titre": "Paloma",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de tequila",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "tequila"
+      },
+      {
+        "texte": "1,5 cl de jus de citron vert",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "12 cl de soda au pamplemousse",
+        "valeur": 12,
+        "unite": "cl",
+        "reste": "soda au pamplemousse"
+      },
+      "sel pour le givrage",
+      "glaçons"
+    ],
+    "etapes": [
+      "Givrer le bord d’un verre haut avec du sel (facultatif).",
+      "Remplir de glaçons, verser la tequila et le jus de citron vert.",
+      "Compléter de soda au pamplemousse et mélanger."
+    ]
+  },
+  {
     "id": "static-268",
     "titre": "Pancakes maison",
     "photo": "photos/enattente.png",
@@ -26302,6 +27037,46 @@ const recettes = [
     ]
   },
   {
+    "id": "static-564",
+    "titre": "Piña colada",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de rhum blanc",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "10 cl de jus d'ananas",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "jus d'ananas"
+      },
+      {
+        "texte": "5 cl de crème de coco (ou lait de coco)",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "crème de coco (ou lait de coco)"
+      },
+      "glaçons",
+      {
+        "texte": "1 morceau d'ananas (décor)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "morceau d'ananas (décor)"
+      }
+    ],
+    "etapes": [
+      "Mettre le rhum, le jus d’ananas, la crème de coco et une poignée de glaçons dans un blender (ou un shaker).",
+      "Mixer jusqu’à obtenir une texture onctueuse et mousseuse.",
+      "Verser dans un grand verre et décorer d’un morceau d’ananas."
+    ]
+  },
+  {
     "id": "static-288",
     "titre": "Pita à l'herbe avec œufs turcs et dip au yaourt",
     "photo": "photos/enattente.png",
@@ -27372,6 +28147,64 @@ const recettes = [
     ]
   },
   {
+    "id": "static-573",
+    "titre": "Pornstar martini",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de vodka vanille",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "vodka vanille"
+      },
+      {
+        "texte": "1,5 cl de liqueur de fruit de la passion (Passoã)",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "liqueur de fruit de la passion (Passoã)"
+      },
+      {
+        "texte": "3 cl de purée ou jus de fruit de la passion",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "purée ou jus de fruit de la passion"
+      },
+      {
+        "texte": "1 cl de sirop de vanille",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "sirop de vanille"
+      },
+      {
+        "texte": "1 cl de jus de citron vert",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "6 cl de Prosecco (servi à part)",
+        "valeur": 6,
+        "unite": "cl",
+        "reste": "Prosecco (servi à part)"
+      },
+      {
+        "texte": "0,5 fruit de la passion (décor)",
+        "valeur": 0.5,
+        "unite": null,
+        "reste": "fruit de la passion (décor)"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Secouer tous les ingrédients sauf le Prosecco au shaker avec des glaçons.",
+      "Filtrer dans un verre à cocktail et poser le demi fruit de la passion à la surface.",
+      "Servir avec un petit verre de Prosecco à côté, à boire en alternance."
+    ]
+  },
+  {
     "id": "static-468",
     "titre": "Porridge",
     "photo": "photos/enattente.png",
@@ -28085,6 +28918,64 @@ const recettes = [
       "Attendre 10 minutes, puis mélanger à nouveau pour éviter les grumeaux.",
       "Réserver au moins 4 heures (ou une nuit) au réfrigérateur : les graines gonflent et forment un pudding.",
       "Servir avec des fruits frais."
+    ]
+  },
+  {
+    "id": "static-577",
+    "titre": "Punch planteur",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "10 min (+ 2 h au frais)",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de rhum ambré",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "rhum ambré"
+      },
+      {
+        "texte": "4 cl de jus d'orange",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "4 cl de jus d'ananas",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "jus d'ananas"
+      },
+      {
+        "texte": "3 cl de jus de goyave ou de mangue",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "jus de goyave ou de mangue"
+      },
+      {
+        "texte": "1 cl de sirop de canne",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "sirop de canne"
+      },
+      {
+        "texte": "1 pincée de cannelle",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Mélanger tous les ingrédients dans un pichet (multiplier les doses pour un grand saladier).",
+      "Laisser reposer au moins 2 heures au réfrigérateur pour que les épices infusent.",
+      "Servir sur des glaçons avec des morceaux de fruits."
     ]
   },
   {
@@ -31666,6 +32557,40 @@ const recettes = [
     ]
   },
   {
+    "id": "static-588",
+    "titre": "Shirley Temple",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "15 cl de limonade ou ginger ale",
+        "valeur": 15,
+        "unite": "cl",
+        "reste": "limonade ou ginger ale"
+      },
+      {
+        "texte": "2 cl de sirop de grenadine",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "sirop de grenadine"
+      },
+      {
+        "texte": "1 cerise confite",
+        "valeur": 1,
+        "unite": null,
+        "reste": "cerise confite"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un verre de glaçons et verser la limonade.",
+      "Ajouter la grenadine qui tombe au fond.",
+      "Décorer d’une cerise confite."
+    ]
+  },
+  {
     "id": "static-336",
     "titre": "Sirop d'imbibage pour layer cake",
     "photo": "photos/enattente.png",
@@ -32129,6 +33054,46 @@ const recettes = [
       "Ajouter l'Aperol puis le prosecco en versant lentement pour garder les bulles.",
       "Compléter avec l'eau pétillante et mélanger légèrement à l'aide d'une cuillère longue.",
       "Décorer avec une tranche de pastèque ou une feuille de menthe et servir aussitôt."
+    ]
+  },
+  {
+    "id": "static-589",
+    "titre": "Spritz sans alcool",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "6 cl d'apéritif sans alcool à l’orange amère (type Crodino ou Aperol 0,0)",
+        "valeur": 6,
+        "unite": "cl",
+        "reste": "apéritif sans alcool à l’orange amère (type Crodino ou Aperol 0,0)"
+      },
+      {
+        "texte": "9 cl d'eau gazeuse ou tonic",
+        "valeur": 9,
+        "unite": "cl",
+        "reste": "eau gazeuse ou tonic"
+      },
+      {
+        "texte": "3 cl de jus d'orange",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "1 rondelle d'orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "rondelle d'orange"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un verre à vin de glaçons.",
+      "Verser l’apéritif sans alcool, le jus d’orange puis l’eau gazeuse.",
+      "Mélanger doucement et décorer d’une rondelle d’orange."
     ]
   },
   {
@@ -33926,6 +34891,46 @@ const recettes = [
     ]
   },
   {
+    "id": "static-571",
+    "titre": "Tequila sunrise",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4,5 cl de tequila",
+        "valeur": 4.5,
+        "unite": "cl",
+        "reste": "tequila"
+      },
+      {
+        "texte": "9 cl de jus d'orange",
+        "valeur": 9,
+        "unite": "cl",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "1,5 cl de sirop de grenadine",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "sirop de grenadine"
+      },
+      "glaçons",
+      {
+        "texte": "1 rondelle d'orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "rondelle d'orange"
+      }
+    ],
+    "etapes": [
+      "Remplir un verre haut de glaçons et verser la tequila et le jus d’orange. Mélanger.",
+      "Verser doucement la grenadine : elle tombe au fond et crée le dégradé « lever de soleil ».",
+      "Décorer d’une rondelle d’orange, sans mélanger."
+    ]
+  },
+  {
     "id": "static-559",
     "titre": "Thé glacé infusé à froid",
     "photo": "photos/enattente.png",
@@ -33964,6 +34969,39 @@ const recettes = [
       "Mettre les sachets dans l’eau froide et laisser infuser 8 heures au réfrigérateur : l’infusion à froid donne un thé doux, sans amertume.",
       "Retirer les sachets, ajouter le jus du citron et le miel, puis mélanger.",
       "Servir sur des glaçons avec des feuilles de menthe et des rondelles de citron."
+    ]
+  },
+  {
+    "id": "static-578",
+    "titre": "Ti-punch",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de rhum agricole blanc",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "rhum agricole blanc"
+      },
+      {
+        "texte": "1 quartier de citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "quartier de citron vert"
+      },
+      {
+        "texte": "1 c. à café de sucre de canne ou sirop de canne",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sucre de canne ou sirop de canne"
+      }
+    ],
+    "etapes": [
+      "Mettre le sucre et presser le quartier de citron vert dans un petit verre.",
+      "Mélanger avec une cuillère (le « bois lélé ») pour dissoudre le sucre.",
+      "Ajouter le rhum, mélanger et servir sans glace, comme le veut la tradition."
     ]
   },
   {
@@ -35150,6 +36188,39 @@ const recettes = [
     ]
   },
   {
+    "id": "static-587",
+    "titre": "Virgin colada (piña colada sans alcool)",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "12 cl de jus d'ananas",
+        "valeur": 12,
+        "unite": "cl",
+        "reste": "jus d'ananas"
+      },
+      {
+        "texte": "5 cl de crème de coco",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "crème de coco"
+      },
+      {
+        "texte": "2 cl de jus de citron vert",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Mixer tous les ingrédients avec une poignée de glaçons.",
+      "Verser dans un grand verre et décorer d’un morceau d’ananas."
+    ]
+  },
+  {
     "id": "static-560",
     "titre": "Virgin mojito",
     "photo": "photos/enattente.png",
@@ -35182,6 +36253,80 @@ const recettes = [
       "Couper le citron vert en quartiers et le mettre dans un verre avec la menthe et le sucre.",
       "Écraser doucement avec un pilon pour libérer le jus et les arômes.",
       "Remplir de glace pilée, compléter avec l’eau gazeuse et mélanger."
+    ]
+  },
+  {
+    "id": "static-584",
+    "titre": "Whisky sour",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de bourbon",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "bourbon"
+      },
+      {
+        "texte": "2,5 cl de jus de citron frais",
+        "valeur": 2.5,
+        "unite": "cl",
+        "reste": "jus de citron frais"
+      },
+      {
+        "texte": "1,5 cl de sirop de sucre",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "sirop de sucre"
+      },
+      {
+        "texte": "1 blanc d'œuf (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc d'œuf (facultatif)"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Secouer tous les ingrédients au shaker sans glace 10 secondes (pour faire mousser le blanc).",
+      "Ajouter des glaçons et secouer à nouveau.",
+      "Filtrer dans un verre bas sur un gros glaçon et décorer d’un zeste de citron."
+    ]
+  },
+  {
+    "id": "static-583",
+    "titre": "White Russian",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de vodka",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "2 cl de liqueur de café (Kahlúa)",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "liqueur de café (Kahlúa)"
+      },
+      {
+        "texte": "3 cl de crème liquide",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "crème liquide"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Verser la vodka et la liqueur de café dans un verre bas rempli de glaçons.",
+      "Faire couler doucement la crème sur le dessus.",
+      "Servir tel quel ou mélanger légèrement."
     ]
   },
   {
