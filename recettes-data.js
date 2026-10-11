@@ -29703,50 +29703,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-287",
-    "titre": "Petits pains fourrés pomme de terre-fromage",
-    "photo": "photos/enattente.png",
-    "temps": "40 min",
-    "personnes": "6",
-    "cat": "apero",
-    "ingredients": [
-      {
-        "texte": "450 g de pommes de terre",
-        "valeur": 450,
-        "unite": "g",
-        "reste": "pommes de terre"
-      },
-      {
-        "texte": "240 g de farine",
-        "valeur": 240,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1,5 g de sel (une pincée généreuse)",
-        "valeur": 1.5,
-        "unite": "g",
-        "reste": "sel"
-      },
-      {
-        "texte": "225 g de fromage (gouda, mozzarella, cheddar…)",
-        "valeur": 225,
-        "unite": "g",
-        "reste": "fromage (gouda, mozzarella, cheddar…)"
-      }
-    ],
-    "etapes": [
-      "Cuire les pommes de terre à l'eau jusqu'à tendreté, puis laisser tiédir.",
-      "Écraser en purée grossière.",
-      "Ajouter le sel et la farine, mélanger jusqu'à obtenir une pâte homogène et légèrement collante.",
-      "Diviser en portions, former des boules.",
-      "Insérer une couche de fromage au centre de chaque boule.",
-      "Refermer, aplatir en forme de petit pain.",
-      "Cuire à la poêle avec un filet d'huile d'olive, à feu moyen, en retournant.",
-      "Couvrir et poursuivre la cuisson jusqu'à ce que l'extérieur soit doré et l'intérieur fondant."
-    ]
-  },
-  {
     "id": "static-564",
     "titre": "Piña colada",
     "photo": "photos/enattente.png",
@@ -30718,13 +30674,56 @@ const recettes = [
     ]
   },
   {
-    "id": "static-672",
+    "id": "static-287",
     "titre": "Pommes de terre fourrées au gruyère râpé",
-    "photo": "photos/enattente.png",
+    "photo": "photos/pdtfourreesgruyere.jpg",
     "cat": "accompagnement",
     "variantes": [
       {
-        "nom": "Au gruyère",
+        "nom": "À la poêle (galettes fourrées)",
+        "temps": "40 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "450 g de pommes de terre",
+            "valeur": 450,
+            "unite": "g",
+            "reste": "pommes de terre"
+          },
+          {
+            "texte": "240 g de farine",
+            "valeur": 240,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1,5 g de sel (une pincée généreuse)",
+            "valeur": 1.5,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "225 g de gruyère râpé",
+            "valeur": 225,
+            "unite": "g",
+            "reste": "gruyère râpé"
+          },
+          "huile d'olive (pour la poêle)",
+          "poivre"
+        ],
+        "etapes": [
+          "Cuire les pommes de terre à l'eau jusqu'à tendreté, puis laisser tiédir.",
+          "Écraser en purée grossière.",
+          "Ajouter le sel et la farine, mélanger jusqu'à obtenir une pâte homogène et légèrement collante.",
+          "Diviser en portions, former des boules.",
+          "Insérer une bonne poignée de gruyère râpé au centre de chaque boule.",
+          "Refermer, aplatir en forme de petit pain.",
+          "Cuire à la poêle avec un filet d'huile d'olive, à feu moyen, en retournant.",
+          "Couvrir et poursuivre la cuisson jusqu'à ce que l'extérieur soit doré et l'intérieur fondant."
+        ]
+      },
+      {
+        "nom": "Au four, en coque",
         "temps": "80 min",
         "personnes": "4",
         "ingredients": [
@@ -30767,7 +30766,7 @@ const recettes = [
         ]
       },
       {
-        "nom": "Gruyère et lardons",
+        "nom": "Au four, gruyère et lardons",
         "temps": "80 min",
         "personnes": "4",
         "ingredients": [
@@ -40382,7 +40381,7 @@ const recettes = [
   {
     "id": "static-376",
     "titre": "Whoopies au chocolat",
-    "photo": "photos/enattente.png",
+    "photo": "photos/whoopieschocolat.jpg",
     "cat": "dessert",
     "variantes": [
       {
