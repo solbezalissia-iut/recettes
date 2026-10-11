@@ -4592,6 +4592,41 @@ const recettes = [
     ]
   },
   {
+    "id": "static-412",
+    "titre": "Caramel au beurre salé",
+    "photo": "photos/enattente.png",
+    "cat": "sauce",
+    "temps": "15 min",
+    "personnes": "1 pot",
+    "ingredients": [
+      {
+        "texte": "200 g de sucre",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de beurre demi-sel",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre demi-sel"
+      },
+      {
+        "texte": "200 ml de crème liquide entière",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide entière"
+      }
+    ],
+    "etapes": [
+      "Faire chauffer la crème sans la faire bouillir et couper le beurre en morceaux.",
+      "Faire fondre le sucre à sec dans une casserole à fond épais, à feu moyen, sans remuer (juste en penchant la casserole).",
+      "Quand le caramel est ambré, retirer du feu et ajouter le beurre en fouettant (attention aux projections).",
+      "Verser la crème chaude petit à petit en fouettant, puis remettre 1 minute sur le feu pour lisser.",
+      "Verser dans un pot : le caramel épaissit en refroidissant. Il se conserve 2 semaines au réfrigérateur."
+    ]
+  },
+  {
     "id": "static-64",
     "titre": "Caramel au chocolat blanc et beurre salé",
     "photo": "photos/enattente.png",
@@ -5879,6 +5914,65 @@ const recettes = [
       "Disposer les morceaux dans un moule et couvrir. Laisser pousser à température ambiante pendant une heure ou à 40°C pendant 30 à 40 minutes sous un torchon.",
       "Préparer le glaçage : mélanger le beurre pommade avec le sucre glace, la demi-gousse de vanille et la crème liquide jusqu'à obtenir une texture lisse et crémeuse.",
       "Cuire à 170°C pendant 25 à 30 minutes jusqu'à dorure et cuisson complète, puis napper de glaçage."
+    ]
+  },
+  {
+    "id": "static-414",
+    "titre": "Clafoutis aux cerises",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "50 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 g de cerises",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "cerises"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "80 g de farine",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "300 ml de lait entier",
+        "valeur": 300,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "20 g de beurre (pour le moule)",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre (pour le moule)"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C. Beurrer un plat et y répartir les cerises lavées (traditionnellement non dénoyautées).",
+      "Fouetter les œufs avec le sucre et le sel, puis ajouter la farine.",
+      "Verser le lait petit à petit en fouettant pour obtenir une pâte lisse.",
+      "Verser sur les cerises et cuire 35 à 40 minutes, jusqu’à ce que le clafoutis soit doré et pris.",
+      "Servir tiède ou froid, saupoudré de sucre."
     ]
   },
   {
@@ -7685,6 +7779,48 @@ const recettes = [
     ]
   },
   {
+    "id": "static-401",
+    "titre": "Crème anglaise",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "20 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 ml de lait entier",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "5 jaunes d'œufs",
+        "valeur": 5,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille"
+      }
+    ],
+    "etapes": [
+      "Fendre la gousse de vanille, gratter les graines et les mettre avec la gousse dans le lait. Porter à frémissement, puis laisser infuser 10 minutes hors du feu.",
+      "Fouetter les jaunes avec le sucre jusqu’à ce que le mélange blanchisse.",
+      "Retirer la gousse et verser le lait chaud sur les jaunes en fouettant.",
+      "Reverser dans la casserole et cuire à feu doux en remuant sans arrêt à la spatule, sans jamais faire bouillir (82-83 °C au thermomètre).",
+      "La crème est prête quand elle nappe la spatule : un trait tracé au doigt reste net.",
+      "Verser aussitôt dans un bol froid pour stopper la cuisson, filmer au contact et réfrigérer."
+    ]
+  },
+  {
     "id": "static-107",
     "titre": "Crème brûlée à la vanille",
     "photo": "photos/enattente.png",
@@ -7788,6 +7924,60 @@ const recettes = [
       "Ajouter la mayonnaise maison, le ketchup, le jus de citron, le sel, le poivre et le persil ciselé.",
       "Incorporer le concombre et le poivron.",
       "Mélanger jusqu'à obtenir une crème homogène et réserver au frais."
+    ]
+  },
+  {
+    "id": "static-402",
+    "titre": "Crème pâtissière",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "15 min (+ 1 h au frais)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 ml de lait entier",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "4 jaunes d'œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "40 g de maïzena",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille"
+      },
+      {
+        "texte": "30 g de beurre (facultatif)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Chauffer le lait avec la gousse de vanille fendue et grattée jusqu’à frémissement.",
+      "Fouetter les jaunes avec le sucre jusqu’à blanchiment, puis ajouter la maïzena.",
+      "Retirer la gousse et verser le lait chaud sur le mélange en fouettant.",
+      "Reverser dans la casserole et cuire à feu moyen en fouettant sans arrêt. Dès que la crème épaissit, compter encore 1 minute d’ébullition.",
+      "Hors du feu, incorporer le beurre.",
+      "Verser dans un plat, filmer au contact et laisser refroidir au réfrigérateur au moins 1 heure. Fouetter avant utilisation."
     ]
   },
   {
@@ -8502,6 +8692,303 @@ const recettes = [
       "Émietter le reste de la pâte par-dessus en gros morceaux.",
       "Enfourner à 180°C pendant 25 minutes jusqu'à ce que le dessus soit doré et croustillant.",
       "Laisser refroidir le crumble environ 30 minutes avant de déguster."
+    ]
+  },
+  {
+    "id": "static-400",
+    "titre": "Cuisson des œufs (coque, mollet, dur, poché, au plat, brouillés, omelette)",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "variantes": [
+      {
+        "nom": "À la coque – 3 min",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "2 œufs à température ambiante",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs à température ambiante"
+          },
+          "sel",
+          "mouillettes de pain beurré"
+        ],
+        "etapes": [
+          "Porter une casserole d’eau à ébullition.",
+          "Déposer délicatement les œufs avec une cuillère et cuire exactement 3 minutes (3 min 30 pour des gros œufs).",
+          "Égoutter, placer dans des coquetiers, décalotter et servir aussitôt avec les mouillettes."
+        ]
+      },
+      {
+        "nom": "Mollets – 6 min",
+        "temps": "10 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "2 œufs à température ambiante",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs à température ambiante"
+          }
+        ],
+        "etapes": [
+          "Porter une casserole d’eau à ébullition.",
+          "Plonger les œufs délicatement et cuire 6 minutes : le blanc est pris, le jaune reste coulant.",
+          "Les plonger aussitôt dans de l’eau glacée 2 minutes pour stopper la cuisson, puis écaler délicatement."
+        ]
+      },
+      {
+        "nom": "Durs – 9 à 10 min",
+        "temps": "15 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          }
+        ],
+        "etapes": [
+          "Porter une casserole d’eau à ébullition.",
+          "Plonger les œufs délicatement et cuire 9 à 10 minutes (pas plus, sinon le jaune verdit).",
+          "Refroidir dans de l’eau glacée 5 minutes, puis écaler en commençant par le côté le plus large."
+        ]
+      },
+      {
+        "nom": "Pochés – 3 min",
+        "temps": "10 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "2 œufs très frais",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs très frais"
+          },
+          {
+            "texte": "2 c. à soupe de vinaigre blanc",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "vinaigre blanc"
+          }
+        ],
+        "etapes": [
+          "Porter une casserole d’eau à frémissement (sans gros bouillons) et ajouter le vinaigre, sans saler.",
+          "Casser chaque œuf dans une tasse.",
+          "Créer un tourbillon dans l’eau avec une cuillère et y faire glisser l’œuf au centre.",
+          "Cuire 3 minutes, puis retirer à l’écumoire et déposer sur du papier absorbant."
+        ]
+      },
+      {
+        "nom": "Au plat",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "10 g de beurre",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Faire fondre le beurre dans une poêle à feu moyen.",
+          "Casser les œufs dans la poêle sans crever les jaunes.",
+          "Cuire 2 à 3 minutes, jusqu’à ce que le blanc soit pris et le jaune encore coulant. Saler le blanc seulement et poivrer."
+        ]
+      },
+      {
+        "nom": "Brouillés",
+        "temps": "10 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "10 g de beurre",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "1 c. à soupe de crème fraîche (facultatif)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "crème fraîche (facultatif)"
+          },
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Battre les œufs avec une pincée de sel et de poivre.",
+          "Faire fondre le beurre dans une petite casserole à feu doux.",
+          "Verser les œufs et remuer sans arrêt avec une spatule jusqu’à ce qu’ils soient crémeux, 3 à 4 minutes.",
+          "Retirer du feu juste avant qu’ils soient totalement pris (ils continuent à cuire) et ajouter la crème."
+        ]
+      },
+      {
+        "nom": "Omelette nature",
+        "temps": "10 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "3 œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "10 g de beurre",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Battre les œufs à la fourchette avec le sel et le poivre, sans les faire mousser.",
+          "Faire fondre le beurre dans une poêle à feu moyen-vif jusqu’à ce qu’il mousse.",
+          "Verser les œufs et ramener les bords vers le centre avec une spatule pendant 1 à 2 minutes.",
+          "Quand le dessus est encore baveux, plier l’omelette en deux et la faire glisser sur l’assiette."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "static-408",
+    "titre": "Cuisson du riz et des pâtes",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "variantes": [
+      {
+        "nom": "Riz basmati (par absorption)",
+        "temps": "20 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "250 g de riz basmati",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "riz basmati"
+          },
+          {
+            "texte": "375 ml d'eau",
+            "valeur": 375,
+            "unite": "ml",
+            "reste": "eau"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Rincer le riz à l’eau froide jusqu’à ce que l’eau soit claire.",
+          "Mettre le riz, l’eau (1,5 fois le volume de riz) et le sel dans une casserole. Porter à ébullition.",
+          "Couvrir, baisser à feu très doux et cuire 10 à 12 minutes sans soulever le couvercle.",
+          "Laisser reposer 5 minutes hors du feu, couvert, puis égrener à la fourchette."
+        ]
+      },
+      {
+        "nom": "Riz blanc (méthode créole)",
+        "temps": "20 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "250 g de riz long",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "riz long"
+          },
+          "grande casserole d’eau salée"
+        ],
+        "etapes": [
+          "Porter un grand volume d’eau salée à ébullition.",
+          "Verser le riz et cuire à découvert selon le paquet (11 à 15 minutes en moyenne).",
+          "Goûter : le grain doit être tendre sans être collant. Égoutter et rincer rapidement si le riz doit être servi froid."
+        ]
+      },
+      {
+        "nom": "Pâtes sèches",
+        "temps": "15 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "400 g de pâtes",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "pâtes"
+          },
+          {
+            "texte": "4 l d'eau",
+            "valeur": 4,
+            "unite": "l",
+            "reste": "eau"
+          },
+          {
+            "texte": "40 g de gros sel",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "gros sel"
+          }
+        ],
+        "etapes": [
+          "Compter 1 litre d’eau et 10 g de gros sel pour 100 g de pâtes. Porter l’eau à grande ébullition, puis saler.",
+          "Verser les pâtes et remuer la première minute pour qu’elles ne collent pas (inutile d’ajouter de l’huile).",
+          "Cuire à découvert le temps indiqué sur le paquet, en goûtant 1 minute avant pour les avoir al dente.",
+          "Garder une louche d’eau de cuisson pour lier la sauce, puis égoutter sans rincer."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "static-418",
+    "titre": "Cuisson du steak (bleu, saignant, à point)",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "10 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "1 steak de bœuf (2 cm d’épaisseur)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "steak de bœuf (2 cm d’épaisseur)"
+      },
+      {
+        "texte": "10 g de beurre",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 c. à café d'huile",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "huile"
+      },
+      "fleur de sel, poivre"
+    ],
+    "etapes": [
+      "Sortir la viande du réfrigérateur 20 minutes avant la cuisson.",
+      "Chauffer l’huile dans une poêle à feu vif jusqu’à ce qu’elle soit très chaude, puis ajouter le beurre.",
+      "Saisir le steak sans le piquer. Temps par face pour 2 cm d’épaisseur : bleu 1 min, saignant 2 min, à point 3 min, bien cuit 4 à 5 min.",
+      "Retourner une seule fois avec une pince.",
+      "Laisser reposer 2 à 3 minutes sur une assiette chaude, puis saler à la fleur de sel et poivrer."
     ]
   },
   {
@@ -13797,6 +14284,79 @@ const recettes = [
     ]
   },
   {
+    "id": "static-416",
+    "titre": "Hachis parmentier",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 10",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1 kg de pommes de terre",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "pommes de terre"
+      },
+      {
+        "texte": "500 g de bœuf haché",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "bœuf haché"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "200 ml de lait",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "50 g de beurre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "80 g de fromage râpé",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "fromage râpé"
+      },
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "persil",
+      "sel, poivre",
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      }
+    ],
+    "etapes": [
+      "Cuire les pommes de terre épluchées dans l’eau salée 20 à 25 minutes, puis les écraser avec le beurre, le lait chaud, la muscade, du sel et du poivre.",
+      "Faire revenir l’oignon et l’ail hachés dans l’huile, ajouter la viande et la faire dorer 8 minutes. Saler, poivrer, ajouter le persil.",
+      "Préchauffer le four à 200 °C.",
+      "Étaler la viande au fond d’un plat à gratin, recouvrir de purée et lisser à la fourchette.",
+      "Parsemer de fromage râpé et cuire 20 minutes, jusqu’à ce que le dessus soit gratiné."
+    ]
+  },
+  {
     "id": "static-191",
     "titre": "Hash browns croustillants à l'ail et au parmesan",
     "photo": "photos/enattente.png",
@@ -18502,6 +19062,65 @@ const recettes = [
     ]
   },
   {
+    "id": "static-419",
+    "titre": "Pain perdu classique",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 tranches de pain rassis (brioche ou baguette)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tranches de pain rassis (brioche ou baguette)"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "250 ml de lait",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "40 g de sucre",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 sachet de sucre vanillé",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "sucre vanillé"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 pincée de cannelle",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "cannelle"
+      }
+    ],
+    "etapes": [
+      "Fouetter les œufs avec le lait, le sucre, le sucre vanillé et la cannelle dans une assiette creuse.",
+      "Tremper chaque tranche de pain quelques secondes de chaque côté.",
+      "Faire fondre le beurre dans une poêle à feu moyen.",
+      "Cuire les tranches 2 à 3 minutes par face, jusqu’à ce qu’elles soient bien dorées.",
+      "Servir chaud, saupoudré de sucre ou avec du sirop d’érable."
+    ]
+  },
+  {
     "id": "static-261",
     "titre": "Pain perdu fourré au Nutella façon chausson",
     "photo": "photos/enattente.png",
@@ -19056,6 +19675,67 @@ const recettes = [
     ]
   },
   {
+    "id": "static-406",
+    "titre": "Pâte à choux",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "50 min",
+    "personnes": "30 choux",
+    "ingredients": [
+      {
+        "texte": "125 ml d'eau",
+        "valeur": 125,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "125 ml de lait",
+        "valeur": 125,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g de beurre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 c. à café de sucre",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "150 g de farine",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C (chaleur statique).",
+      "Porter à ébullition l’eau, le lait, le beurre coupé en morceaux, le sucre et le sel.",
+      "Hors du feu, verser la farine d’un coup et mélanger vivement jusqu’à obtenir une boule.",
+      "Remettre sur feu doux 1 à 2 minutes en remuant pour dessécher la pâte : une fine pellicule se forme au fond.",
+      "Transférer dans un saladier, laisser tiédir 5 minutes, puis incorporer les œufs un à un. La pâte doit être lisse et former un « V » qui tombe de la spatule.",
+      "Dresser des petits tas à la poche à douille sur une plaque recouverte de papier cuisson.",
+      "Cuire 25 à 30 minutes sans ouvrir le four, jusqu’à ce que les choux soient bien dorés. Laisser refroidir sur une grille avant de garnir."
+    ]
+  },
+  {
     "id": "static-271",
     "titre": "Pâte à cookies crue (sans cuisson)",
     "photo": "photos/enattente.png",
@@ -19265,6 +19945,60 @@ const recettes = [
     ]
   },
   {
+    "id": "static-403",
+    "titre": "Pâte à pizza maison",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "20 min (+ 1 h 30 de pousse)",
+    "personnes": "2 pizzas",
+    "ingredients": [
+      {
+        "texte": "500 g de farine (T45 ou T55)",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine (T45 ou T55)"
+      },
+      {
+        "texte": "300 ml d'eau tiède",
+        "valeur": 300,
+        "unite": "ml",
+        "reste": "eau tiède"
+      },
+      {
+        "texte": "7 g de levure de boulanger sèche (ou 20 g de levure fraîche)",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure de boulanger sèche (ou 20 g de levure fraîche)"
+      },
+      {
+        "texte": "10 g de sel",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à café de sucre",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sucre"
+      }
+    ],
+    "etapes": [
+      "Délayer la levure et le sucre dans l’eau tiède et laisser reposer 5 minutes.",
+      "Dans un grand saladier, mélanger la farine et le sel, puis verser l’eau à la levure et l’huile.",
+      "Pétrir 10 minutes à la main (5 minutes au robot) jusqu’à obtenir une pâte lisse et souple qui ne colle plus.",
+      "Couvrir d’un torchon et laisser lever 1 h 30 dans un endroit tiède : la pâte doit doubler de volume.",
+      "Dégazer, diviser en 2 boules et étaler chacune sur un plan fariné en disque de 30 cm, en gardant les bords un peu plus épais.",
+      "Garnir selon la recette choisie et cuire dans un four très chaud (250 °C) 10 à 15 minutes."
+    ]
+  },
+  {
     "id": "static-273",
     "titre": "Pâte brisée maison",
     "photo": "photos/enattente.png",
@@ -19420,6 +20154,55 @@ const recettes = [
       "Incorporer la farine en une fois et mélanger rapidement, juste assez pour amalgamer la pâte sans la pétrir.",
       "Former une boule, l'aplatir en disque, filmer et réfrigérer au moins 30 minutes.",
       "Étaler la pâte sur un plan de travail fariné et foncer le moule choisi. Cuire à blanc à 170-180°C pendant 15 à 18 minutes selon la garniture prévue."
+    ]
+  },
+  {
+    "id": "static-415",
+    "titre": "Pâtes à la carbonara (recette italienne)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "20 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de spaghetti",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "spaghetti"
+      },
+      {
+        "texte": "150 g de guanciale ou pancetta",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "guanciale ou pancetta"
+      },
+      {
+        "texte": "4 jaunes d'œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "1 œuf entier",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf entier"
+      },
+      {
+        "texte": "80 g de pecorino romano râpé (ou parmesan)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "pecorino romano râpé (ou parmesan)"
+      },
+      "poivre noir du moulin"
+    ],
+    "etapes": [
+      "Cuire les spaghetti dans une grande casserole d’eau salée.",
+      "Pendant ce temps, couper le guanciale en lardons et le faire dorer à sec dans une grande poêle. Couper le feu.",
+      "Fouetter les jaunes, l’œuf entier et le pecorino avec beaucoup de poivre.",
+      "Égoutter les pâtes en gardant une louche d’eau de cuisson, puis les verser dans la poêle avec le guanciale.",
+      "Hors du feu, ajouter le mélange œufs-fromage et un peu d’eau de cuisson en remuant vivement : la sauce doit être crémeuse, pas en œufs brouillés.",
+      "Servir aussitôt avec du pecorino et du poivre. (Pas de crème dans la vraie carbonara.)"
     ]
   },
   {
@@ -20065,6 +20848,58 @@ const recettes = [
     ]
   },
   {
+    "id": "static-411",
+    "titre": "Pesto maison au basilic",
+    "photo": "photos/enattente.png",
+    "cat": "sauce",
+    "temps": "10 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "50 g de basilic frais (feuilles)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "basilic frais (feuilles)"
+      },
+      {
+        "texte": "50 g de parmesan râpé",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      {
+        "texte": "30 g de pignons de pin",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "pignons de pin"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "100 ml d'huile d'olive",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Faire griller les pignons à sec dans une poêle 2 minutes, puis les laisser refroidir.",
+      "Mixer le basilic, les pignons, l’ail et le sel en versant l’huile petit à petit.",
+      "Ajouter le parmesan et mixer brièvement.",
+      "Conserver au réfrigérateur dans un pot couvert d’un filet d’huile, jusqu’à 5 jours."
+    ]
+  },
+  {
     "id": "static-287",
     "titre": "Petits pains fourrés pomme de terre-fromage",
     "photo": "photos/enattente.png",
@@ -20248,6 +21083,63 @@ const recettes = [
     ]
   },
   {
+    "id": "static-404",
+    "titre": "Pizza chèvre, miel et lardons (base crème fraîche)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "2",
+    "ingredients": [
+      "la moitié de la pâte à pizza maison (environ 400 g)",
+      {
+        "texte": "100 g de crème fraîche épaisse",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "crème fraîche épaisse"
+      },
+      {
+        "texte": "150 g de bûche de chèvre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "bûche de chèvre"
+      },
+      {
+        "texte": "150 g de lardons",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lardons"
+      },
+      {
+        "texte": "1 oignon rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      {
+        "texte": "100 g de mozzarella râpée",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "mozzarella râpée"
+      },
+      {
+        "texte": "2 c. à soupe de miel liquide",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "miel liquide"
+      },
+      "thym",
+      "poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 250 °C avec une plaque à l’intérieur.",
+      "Faire revenir les lardons à sec dans une poêle 5 minutes, puis les égoutter. Émincer l’oignon rouge en fines lamelles.",
+      "Étaler la pâte sur un papier cuisson et la recouvrir de crème fraîche en laissant 2 cm de bord. Poivrer.",
+      "Parsemer de mozzarella, de lardons et d’oignon, puis disposer les rondelles de chèvre.",
+      "Arroser de miel et parsemer de thym.",
+      "Glisser sur la plaque chaude et cuire 12 à 15 minutes, jusqu’à ce que la pâte soit dorée et le chèvre gratiné. Ajouter un filet de miel à la sortie si désiré."
+    ]
+  },
+  {
     "id": "static-289",
     "titre": "Pizza chips Doritos",
     "photo": "photos/enattente.png",
@@ -20319,6 +21211,51 @@ const recettes = [
       "Répartir la tomate concassée sur toute la surface.",
       "Ajouter le reste de mozzarella râpée, puis disposer les rondelles de pepperoni.",
       "Préchauffer le four à 210°C et enfourner 15 à 20 minutes, jusqu'à ce que la croûte soit dorée et le fromage fondu."
+    ]
+  },
+  {
+    "id": "static-405",
+    "titre": "Pizza margherita",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "2",
+    "ingredients": [
+      "la moitié de la pâte à pizza maison (environ 400 g)",
+      {
+        "texte": "200 g de coulis de tomate (passata)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "coulis de tomate (passata)"
+      },
+      {
+        "texte": "125 g de mozzarella",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "mozzarella"
+      },
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 pincée d'origan",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "origan"
+      },
+      "quelques feuilles de basilic frais",
+      "sel"
+    ],
+    "etapes": [
+      "Préchauffer le four à 250 °C avec une plaque à l’intérieur.",
+      "Assaisonner le coulis de tomate avec le sel, l’origan et la moitié de l’huile.",
+      "Étaler la pâte, puis la napper de sauce tomate en laissant 2 cm de bord.",
+      "Répartir la mozzarella égouttée et coupée en morceaux.",
+      "Cuire 10 à 12 minutes sur la plaque chaude.",
+      "À la sortie, ajouter le basilic frais et le reste d’huile d’olive."
     ]
   },
   {
@@ -21201,6 +22138,152 @@ const recettes = [
       "Faire frire les cubes dans un peu d'huile.",
       "Préparer la sauce dans une petite casserole : faire fondre le beurre maison, ajouter le miel, la sauce soja et le sucre. Mélanger et chauffer à feu moyen.",
       "Ajouter le poulet frit à la sauce et mélanger pour bien l'enrober."
+    ]
+  },
+  {
+    "id": "static-417",
+    "titre": "Poulet rôti au four",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 30",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 poulet fermier (1,5 kg)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poulet fermier (1,5 kg)"
+      },
+      {
+        "texte": "30 g de beurre mou",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "4 gousses d'ail",
+        "valeur": 4,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      "quelques branches de thym",
+      {
+        "texte": "100 ml d'eau",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Sortir le poulet du réfrigérateur 30 minutes avant. Préchauffer le four à 200 °C.",
+      "Mettre dans le poulet le citron coupé en deux, l’ail en chemise et le thym. Saler et poivrer l’intérieur.",
+      "Badigeonner la peau de beurre, saler et poivrer, puis poser le poulet dans un plat sur le côté.",
+      "Verser l’eau dans le plat et enfourner. Cuire 1 h 15 (compter 45 minutes par kilo + 15 minutes), en le retournant sur l’autre côté à mi-cuisson puis sur le dos les 20 dernières minutes, et en l’arrosant de jus régulièrement.",
+      "Vérifier la cuisson : le jus qui s’écoule de la cuisse piquée doit être clair.",
+      "Laisser reposer 10 minutes sous une feuille d’aluminium avant de découper."
+    ]
+  },
+  {
+    "id": "static-407",
+    "titre": "Purée de pommes de terre maison",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 kg de pommes de terre à chair farineuse (bintje)",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "pommes de terre à chair farineuse (bintje)"
+      },
+      {
+        "texte": "250 ml de lait entier",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "80 g de beurre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Éplucher les pommes de terre, les couper en morceaux égaux et les mettre dans une casserole d’eau froide salée.",
+      "Porter à ébullition et cuire 20 à 25 minutes, jusqu’à ce que la pointe d’un couteau s’enfonce sans résistance.",
+      "Égoutter, puis remettre quelques instants sur feu doux pour évaporer l’eau.",
+      "Écraser au presse-purée ou au moulin à légumes (jamais au mixeur, la purée deviendrait élastique).",
+      "Incorporer le beurre en morceaux, puis le lait chaud petit à petit jusqu’à la consistance voulue.",
+      "Assaisonner de sel, de poivre et de muscade."
+    ]
+  },
+  {
+    "id": "static-413",
+    "titre": "Quatre-quarts",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "55 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "3 œufs (environ 180 g)",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs (environ 180 g)"
+      },
+      {
+        "texte": "180 g de beurre mou",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "180 g de sucre",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "180 g de farine",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "0,5 sachet de levure chimique",
+        "valeur": 0.5,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et beurrer un moule à cake. Peser les œufs : il faut le même poids de beurre, de sucre et de farine.",
+      "Fouetter le beurre mou avec le sucre jusqu’à obtenir un mélange crémeux.",
+      "Ajouter les œufs un à un en fouettant entre chaque.",
+      "Incorporer la farine, la levure et le sel.",
+      "Verser dans le moule et cuire 40 à 45 minutes, jusqu’à ce que la lame d’un couteau ressorte sèche."
     ]
   },
   {
@@ -23383,6 +24466,85 @@ const recettes = [
     ]
   },
   {
+    "id": "static-409",
+    "titre": "Sauce bolognaise",
+    "photo": "photos/enattente.png",
+    "cat": "sauce",
+    "temps": "1 h 30",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 g de bœuf haché",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "bœuf haché"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 carotte",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte"
+      },
+      {
+        "texte": "1 branche de céleri",
+        "valeur": 1,
+        "unite": null,
+        "reste": "branche de céleri"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "800 g de tomates concassées",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "2 c. à soupe de concentré de tomate",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "concentré de tomate"
+      },
+      {
+        "texte": "100 ml de vin rouge (facultatif)",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "vin rouge (facultatif)"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à café d'origan",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "origan"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Hacher finement l’oignon, la carotte, le céleri et l’ail.",
+      "Les faire revenir 5 minutes dans l’huile d’olive à feu moyen.",
+      "Ajouter la viande et la faire dorer en l’émiettant.",
+      "Déglacer avec le vin rouge et laisser évaporer 2 minutes.",
+      "Ajouter les tomates, le concentré, l’origan, du sel et du poivre.",
+      "Couvrir partiellement et laisser mijoter à feu doux au moins 1 heure en remuant de temps en temps. Plus elle mijote, meilleure elle est."
+    ]
+  },
+  {
     "id": "static-334",
     "titre": "Sauce moutarde crémeuse",
     "photo": "photos/enattente.png",
@@ -23485,6 +24647,48 @@ const recettes = [
       "Verser les tomates pelées concassées et l'eau. Mélanger et laisser mijoter 6 à 8 minutes. Saler et poivrer.",
       "Ajouter le basilic ciselé et couvrir quelques instants pour parfumer.",
       "Servir chaud, saupoudrer de parmesan râpé."
+    ]
+  },
+  {
+    "id": "static-410",
+    "titre": "Sauce tomate maison",
+    "photo": "photos/enattente.png",
+    "cat": "sauce",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "800 g de tomates pelées en conserve",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "tomates pelées en conserve"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 pincée de sucre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sucre"
+      },
+      "quelques feuilles de basilic",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire chauffer l’huile à feu doux et y faire dorer légèrement l’ail émincé.",
+      "Ajouter les tomates en les écrasant à la cuillère, puis le sucre (il corrige l’acidité), le sel et le poivre.",
+      "Laisser mijoter 20 minutes à découvert, jusqu’à ce que la sauce épaississe.",
+      "Ajouter le basilic ciselé hors du feu. Mixer si vous la voulez lisse."
     ]
   },
   {
@@ -23697,6 +24901,73 @@ const recettes = [
       "Préchauffer le four en position grill.",
       "Répartir la soupe dans des bols allant au four, déposer une tranche de pain sur chaque bol et couvrir de gruyère râpé.",
       "Passer sous le grill quelques minutes jusqu'à ce que le fromage soit gratiné et doré."
+    ]
+  },
+  {
+    "id": "static-420",
+    "titre": "Soupe de légumes maison",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "45 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "2 poireaux",
+        "valeur": 2,
+        "unite": null,
+        "reste": "poireaux"
+      },
+      {
+        "texte": "3 carottes",
+        "valeur": 3,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "2 pommes de terre",
+        "valeur": 2,
+        "unite": null,
+        "reste": "pommes de terre"
+      },
+      {
+        "texte": "1 navet",
+        "valeur": 1,
+        "unite": null,
+        "reste": "navet"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1,5 l d'eau",
+        "valeur": 1.5,
+        "unite": "l",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 cube de bouillon de légumes",
+        "valeur": 1,
+        "unite": null,
+        "reste": "cube de bouillon de légumes"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      "crème fraîche (facultatif)",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Éplucher et couper tous les légumes en morceaux. Bien laver les poireaux.",
+      "Faire revenir l’oignon et les poireaux dans le beurre 5 minutes.",
+      "Ajouter les autres légumes, l’eau et le cube de bouillon.",
+      "Porter à ébullition puis laisser mijoter 30 minutes à couvert.",
+      "Mixer, rectifier l’assaisonnement et servir avec une cuillère de crème fraîche."
     ]
   },
   {
