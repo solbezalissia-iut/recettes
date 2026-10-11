@@ -33,7 +33,7 @@ function isAdmin() {
 const STATIC_RECETTES = (typeof recettes !== 'undefined' ? recettes : []).map((r, idx) => ({
   ...r,
   _isStatic: true,
-  _staticId: 'static-' + idx,
+  _staticId: r.id || ('static-' + idx), // id stable : ne change pas si on supprime ou fusionne des recettes
   _ownerId: null,
   _ownerName: null,
 }));
@@ -296,6 +296,9 @@ function formatQty(valeur, unite, ratio) {
     str = Math.round(qty).toString();
   } else if (Math.abs(qty * 2 - Math.round(qty * 2)) < 0.05) {
     str = (Math.round(qty * 2) / 2).toString().replace('.', ',');
+  } else if (Math.abs(qty * 4 - Math.round(qty * 4)) < 0.05) {
+    // quarts (0,25 / 0,75) : évite d'afficher « 0,3 c. à café »
+    str = (Math.round(qty * 4) / 4).toString().replace('.', ',');
   } else {
     str = qty.toFixed(1).replace('.', ',');
   }
