@@ -416,6 +416,82 @@ const recettes = [
     ]
   },
   {
+    "id": "static-441",
+    "titre": "Banana bread",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h 10",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "3 bananes très mûres",
+        "valeur": 3,
+        "unite": null,
+        "reste": "bananes très mûres"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre roux",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre roux"
+      },
+      {
+        "texte": "80 g de beurre fondu",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "200 g de farine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 c. à café de levure chimique",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "0,5 c. à café de bicarbonate",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "bicarbonate"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "80 g de noix ou pépites de chocolat (facultatif)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "noix ou pépites de chocolat (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et chemiser un moule à cake.",
+      "Écraser les bananes à la fourchette, puis ajouter les œufs, le sucre et le beurre fondu.",
+      "Incorporer la farine, la levure, le bicarbonate, la cannelle et le sel sans trop mélanger.",
+      "Ajouter les noix ou les pépites, verser dans le moule et cuire 50 à 55 minutes."
+    ]
+  },
+  {
     "id": "static-8",
     "titre": "Barres glacées façon Mars maison",
     "photo": "photos/enattente.png",
@@ -3126,6 +3202,72 @@ const recettes = [
     ]
   },
   {
+    "id": "static-440",
+    "titre": "Brioche maison",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "45 min (+ 3 h de pousse)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "500 g de farine T45",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine T45"
+      },
+      {
+        "texte": "10 g de levure de boulanger sèche",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "levure de boulanger sèche"
+      },
+      {
+        "texte": "60 g de sucre",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "10 g de sel",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 ml de lait tiède",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "200 g de beurre mou",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      }
+    ],
+    "etapes": [
+      "Délayer la levure dans le lait tiède.",
+      "Mélanger la farine, le sucre et le sel, puis ajouter les œufs et le lait. Pétrir 10 minutes jusqu’à ce que la pâte se décolle.",
+      "Ajouter le beurre mou en morceaux et pétrir encore 10 minutes jusqu’à ce que la pâte soit lisse et élastique.",
+      "Laisser lever 2 heures (ou une nuit au réfrigérateur).",
+      "Dégazer, façonner en tresse ou en boules dans un moule à cake et laisser lever encore 1 heure.",
+      "Dorer au jaune d’œuf et cuire 30 minutes à 180 °C."
+    ]
+  },
+  {
     "id": "static-45",
     "titre": "Brioche roulée moelleuse au chocolat et vanille",
     "photo": "photos/enattente.png",
@@ -4380,6 +4522,71 @@ const recettes = [
     ]
   },
   {
+    "id": "static-432",
+    "titre": "Cake salé jambon-olives",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "1 h",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "150 g de farine",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "100 ml d'huile",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "huile"
+      },
+      {
+        "texte": "125 ml de lait",
+        "valeur": 125,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g de gruyère râpé",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "gruyère râpé"
+      },
+      {
+        "texte": "200 g de dés de jambon",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "dés de jambon"
+      },
+      {
+        "texte": "100 g d'olives vertes dénoyautées",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "olives vertes dénoyautées"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et beurrer un moule à cake.",
+      "Fouetter les œufs avec la farine et la levure, puis ajouter l’huile et le lait tiède petit à petit.",
+      "Incorporer le gruyère, le jambon et les olives coupées en rondelles. Saler peu (olives et jambon sont salés), poivrer.",
+      "Verser dans le moule et cuire 45 minutes, jusqu’à ce que la lame d’un couteau ressorte sèche."
+    ]
+  },
+  {
     "id": "static-61",
     "titre": "Camembert pané rapide",
     "photo": "photos/enattente.png",
@@ -5491,6 +5698,91 @@ const recettes = [
       "Dans un bol, mélanger l'huile d'olive, le vinaigre balsamique, le sel et le poivre pour la vinaigrette.",
       "Mélanger la salade avec la vinaigrette et dresser dans les assiettes.",
       "Sortir l'assiette de chèvre du four et servir immédiatement sur le lit de salade."
+    ]
+  },
+  {
+    "id": "static-422",
+    "titre": "Chili con carne",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 15",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 g de bœuf haché",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "bœuf haché"
+      },
+      {
+        "texte": "2 oignons",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 poivron rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron rouge"
+      },
+      {
+        "texte": "800 g de tomates concassées",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "400 g d'haricots rouges cuits (égouttés)",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "haricots rouges cuits (égouttés)"
+      },
+      {
+        "texte": "2 c. à soupe de concentré de tomate",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "concentré de tomate"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "0,5 c. à café de piment en poudre",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "piment en poudre"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire revenir les oignons, l’ail et le poivron émincés dans l’huile 5 minutes.",
+      "Ajouter la viande et la faire dorer en l’émiettant.",
+      "Ajouter les épices et mélanger 1 minute.",
+      "Verser les tomates et le concentré, saler, poivrer, puis laisser mijoter 40 minutes à feu doux.",
+      "Ajouter les haricots rouges et poursuivre 15 minutes.",
+      "Servir avec du riz, de la crème fraîche ou des tortillas."
     ]
   },
   {
@@ -7871,6 +8163,60 @@ const recettes = [
     ]
   },
   {
+    "id": "static-438",
+    "titre": "Crème caramel",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h (+ 4 h au frais)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 ml de lait entier",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre (crème)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre (crème)"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille"
+      },
+      {
+        "texte": "100 g de sucre (caramel)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre (caramel)"
+      },
+      {
+        "texte": "2 c. à soupe d'eau",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "eau"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 150 °C.",
+      "Faire un caramel avec le sucre et l’eau, puis le verser aussitôt au fond de 6 ramequins.",
+      "Chauffer le lait avec la vanille fendue. Fouetter les œufs avec le sucre sans faire mousser, puis verser le lait chaud dessus.",
+      "Filtrer et répartir dans les ramequins.",
+      "Cuire 40 minutes au bain-marie : la crème doit être prise mais encore tremblotante.",
+      "Laisser refroidir puis réfrigérer 4 heures. Démouler en passant une lame sur le bord."
+    ]
+  },
+  {
     "id": "static-108",
     "titre": "Crème de thon aux légumes frais",
     "photo": "photos/enattente.png",
@@ -9588,6 +9934,66 @@ const recettes = [
     ]
   },
   {
+    "id": "static-424",
+    "titre": "Endives au jambon",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "8 endives",
+        "valeur": 8,
+        "unite": null,
+        "reste": "endives"
+      },
+      {
+        "texte": "8 tranches de jambon blanc",
+        "valeur": 8,
+        "unite": null,
+        "reste": "tranches de jambon blanc"
+      },
+      {
+        "texte": "50 g de beurre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "50 g de farine",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "500 ml de lait",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g d'emmental râpé",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "emmental râpé"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Retirer le cône amer à la base des endives et les cuire 20 minutes à l’eau salée (ou 10 minutes à l’autocuiseur). Bien les égoutter en les pressant.",
+      "Préparer la béchamel : faire fondre le beurre, ajouter la farine, puis le lait petit à petit en fouettant jusqu’à épaississement. Ajouter la moitié du fromage, la muscade, sel et poivre.",
+      "Préchauffer le four à 200 °C.",
+      "Enrouler chaque endive dans une tranche de jambon et les placer dans un plat beurré.",
+      "Napper de béchamel, parsemer du reste de fromage et cuire 25 minutes jusqu’à ce que ce soit gratiné."
+    ]
+  },
+  {
     "id": "static-131",
     "titre": "Entremets pêche-abricot façon vitrine pâtissière (grand + minis)",
     "photo": "photos/enattente.png",
@@ -10158,6 +10564,106 @@ const recettes = [
     ]
   },
   {
+    "id": "static-443",
+    "titre": "Financiers",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "100 g de beurre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "4 blancs d'œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      },
+      {
+        "texte": "130 g de sucre glace",
+        "valeur": 130,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "50 g de poudre d'amandes",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "poudre d'amandes"
+      },
+      {
+        "texte": "40 g de farine",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "farine"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Faire cuire le beurre jusqu’à ce qu’il soit noisette (couleur dorée, odeur de noisette), puis le laisser tiédir.",
+      "Mélanger le sucre glace, la poudre d’amandes et la farine.",
+      "Ajouter les blancs non battus, puis le beurre noisette tiède.",
+      "Remplir des moules à financiers beurrés et cuire 12 à 15 minutes, jusqu’à ce que les bords soient dorés."
+    ]
+  },
+  {
+    "id": "static-439",
+    "titre": "Flan pâtissier",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h 15 (+ 4 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "1 pâte brisée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte brisée"
+      },
+      {
+        "texte": "1 l de lait entier",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "180 g de sucre",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "90 g de maïzena",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C. Foncer un moule à bords hauts (22 cm) avec la pâte et la piquer.",
+      "Chauffer 750 ml de lait avec la vanille fendue.",
+      "Fouetter les œufs avec le sucre, puis la maïzena délayée dans les 250 ml de lait froid restants.",
+      "Verser le lait chaud dessus, remettre dans la casserole et cuire en fouettant jusqu’à ce que la crème épaississe.",
+      "Verser sur la pâte et cuire 45 minutes, jusqu’à ce que le dessus soit bien doré.",
+      "Laisser refroidir puis réfrigérer au moins 4 heures avant de couper."
+    ]
+  },
+  {
     "id": "static-136",
     "titre": "Focaccia au romarin et gros sel",
     "photo": "photos/enattente.png",
@@ -10271,6 +10777,29 @@ const recettes = [
       "Étaler la pâte sur une plaque huilée et garnir selon votre choix.",
       "Laisser à nouveau lever pendant environ 30 minutes.",
       "Préchauffer le four à 175 °C et cuire la focaccia 20 à 25 minutes, jusqu’à ce qu’elle soit dorée."
+    ]
+  },
+  {
+    "id": "static-445",
+    "titre": "Fond de tarte : cuisson à blanc",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "30 min",
+    "personnes": "1 fond de tarte",
+    "ingredients": [
+      {
+        "texte": "1 pâte brisée ou sablée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte brisée ou sablée"
+      },
+      "papier cuisson",
+      "billes de cuisson ou légumes secs (pois chiches, haricots)"
+    ],
+    "etapes": [
+      "Foncer le moule avec la pâte, piquer le fond à la fourchette et réfrigérer 15 minutes (la pâte se rétracte moins).",
+      "Recouvrir de papier cuisson et le remplir de billes ou de légumes secs.",
+      "Cuire 15 minutes à 180 °C, retirer le papier et les billes, puis cuire encore 5 à 10 minutes jusqu’à ce que le fond soit doré."
     ]
   },
   {
@@ -10795,6 +11324,130 @@ const recettes = [
       "Verser le mélange dans un plat allant au four et ajouter la mozzarella coupée en dés sur le dessus.",
       "Enfourner pendant environ 25 minutes, ou jusqu'à ce que la frittata soit bien cuite et dorée.",
       "Avant de servir, ajouter quelques feuilles de basilic frais."
+    ]
+  },
+  {
+    "id": "static-444",
+    "titre": "Galette des rois frangipane",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "2 pâtes feuilletées",
+        "valeur": 2,
+        "unite": null,
+        "reste": "pâtes feuilletées"
+      },
+      {
+        "texte": "100 g de beurre mou",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de poudre d'amandes",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "poudre d'amandes"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "1 c. à soupe de rhum (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "rhum (facultatif)"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      },
+      {
+        "texte": "1 fève",
+        "valeur": 1,
+        "unite": null,
+        "reste": "fève"
+      }
+    ],
+    "etapes": [
+      "Mélanger le beurre mou et le sucre, puis la poudre d’amandes, les œufs et le rhum : c’est la frangipane.",
+      "Étaler une pâte sur une plaque, garnir de frangipane en laissant 3 cm de bord et y cacher la fève (près du bord).",
+      "Humidifier le bord, recouvrir de la seconde pâte et souder en appuyant.",
+      "Dorer au jaune d’œuf, dessiner des motifs avec la pointe d’un couteau et percer une petite cheminée.",
+      "Réfrigérer 20 minutes puis cuire 30 à 35 minutes à 200 °C."
+    ]
+  },
+  {
+    "id": "static-431",
+    "titre": "Galettes bretonnes complètes",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "20 min (+ 1 h de repos)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "250 g de farine de sarrasin",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine de sarrasin"
+      },
+      {
+        "texte": "1 œuf (pâte)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf (pâte)"
+      },
+      {
+        "texte": "600 ml d'eau froide",
+        "valeur": 600,
+        "unite": "ml",
+        "reste": "eau froide"
+      },
+      {
+        "texte": "5 g de sel",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "6 tranches de jambon",
+        "valeur": 6,
+        "unite": null,
+        "reste": "tranches de jambon"
+      },
+      {
+        "texte": "150 g d'emmental râpé",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "emmental râpé"
+      },
+      {
+        "texte": "6 œufs (garniture)",
+        "valeur": 6,
+        "unite": null,
+        "reste": "œufs (garniture)"
+      },
+      "beurre"
+    ],
+    "etapes": [
+      "Mélanger la farine de sarrasin et le sel, ajouter l’œuf puis l’eau petit à petit en fouettant. Laisser reposer 1 heure au frais.",
+      "Chauffer une grande poêle beurrée, verser une louche de pâte et l’étaler finement.",
+      "Quand la galette se décolle, la retourner, puis garnir le centre de fromage, de jambon et casser un œuf au milieu.",
+      "Replier les bords en carré en laissant le jaune visible et cuire jusqu’à ce que le blanc soit pris."
     ]
   },
   {
@@ -14357,6 +15010,61 @@ const recettes = [
     ]
   },
   {
+    "id": "static-430",
+    "titre": "Hamburger maison",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 pains à burger",
+        "valeur": 4,
+        "unite": null,
+        "reste": "pains à burger"
+      },
+      {
+        "texte": "600 g de bœuf haché (15 % de matière grasse)",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "bœuf haché (15 % de matière grasse)"
+      },
+      {
+        "texte": "4 tranches de cheddar",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tranches de cheddar"
+      },
+      {
+        "texte": "1 tomate",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tomate"
+      },
+      {
+        "texte": "1 oignon rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      "feuilles de salade",
+      {
+        "texte": "4 cornichons",
+        "valeur": 4,
+        "unite": null,
+        "reste": "cornichons"
+      },
+      "ketchup, moutarde, mayonnaise",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Former 4 steaks de 150 g un peu plus larges que les pains, sans trop tasser la viande. Faire un léger creux au centre.",
+      "Saler et poivrer, puis cuire 3 minutes par face dans une poêle très chaude. Poser le cheddar la dernière minute et couvrir.",
+      "Toaster les pains coupés en deux.",
+      "Monter les burgers : sauce, salade, steak au cheddar, tomate, oignon, cornichons, puis le chapeau."
+    ]
+  },
+  {
     "id": "static-191",
     "titre": "Hash browns croustillants à l'ail et au parmesan",
     "photo": "photos/enattente.png",
@@ -15618,6 +16326,60 @@ const recettes = [
       "Incorporer délicatement le Nutella légèrement fondu pour obtenir une chantilly chocolatée.",
       "Couper la génoise en 2 ou 3 couches. Étaler une couche de Nutella, puis une couche de chantilly. Répéter pour les couches suivantes. Terminer par une couche de chantilly.",
       "Saupoudrer de cacao en poudre sur le dessus."
+    ]
+  },
+  {
+    "id": "static-427",
+    "titre": "Lentilles aux saucisses",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "50 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "300 g de lentilles vertes",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "lentilles vertes"
+      },
+      {
+        "texte": "4 saucisses de Toulouse (ou de Morteau)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "saucisses de Toulouse (ou de Morteau)"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "150 g de lardons",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lardons"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Rincer les lentilles.",
+      "Faire revenir les lardons, l’oignon émincé et les carottes en rondelles dans une cocotte.",
+      "Ajouter les lentilles, le bouquet garni et couvrir d’eau froide (2 fois leur volume). Ne pas saler.",
+      "Porter à ébullition puis cuire 25 minutes à feu doux.",
+      "Piquer les saucisses, les ajouter et poursuivre 15 minutes. Saler en fin de cuisson."
     ]
   },
   {
@@ -17351,6 +18113,96 @@ const recettes = [
     ]
   },
   {
+    "id": "static-425",
+    "titre": "Moussaka",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 45",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "3 aubergines",
+        "valeur": 3,
+        "unite": null,
+        "reste": "aubergines"
+      },
+      {
+        "texte": "500 g d'agneau ou bœuf haché",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "agneau ou bœuf haché"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "400 g de tomates concassées",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "50 g de beurre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "50 g de farine",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "500 ml de lait",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "60 g de parmesan râpé",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper les aubergines en tranches de 1 cm, les badigeonner d’huile et les rôtir 20 minutes à 200 °C.",
+      "Faire revenir l’oignon et l’ail, ajouter la viande, puis les tomates, la cannelle, du sel et du poivre. Mijoter 20 minutes.",
+      "Préparer la béchamel avec le beurre, la farine et le lait. Hors du feu, ajouter l’œuf battu et la moitié du parmesan.",
+      "Dans un plat, alterner aubergines et viande, puis terminer par la béchamel et le reste de parmesan.",
+      "Cuire 40 minutes à 180 °C et laisser reposer 15 minutes avant de couper."
+    ]
+  },
+  {
     "id": "static-235",
     "titre": "Mousse au chocolat",
     "photo": "photos/enattente.png",
@@ -17661,6 +18513,71 @@ const recettes = [
       "Plier un côté puis l'autre et rabattre les quatre bords pour former un carré.",
       "Étaler délicatement le carré obtenu et cuire des deux côtés sur une plaque chaude (tajine ou poêle) jusqu'à dorure.",
       "Servir chaud, éventuellement avec du miel ou de la confiture."
+    ]
+  },
+  {
+    "id": "static-442",
+    "titre": "Muffins aux myrtilles",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "35 min",
+    "personnes": "12 muffins",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "200 ml de lait",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g de beurre fondu",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "150 g de myrtilles",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "myrtilles"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 190 °C et garnir un moule à muffins de caissettes.",
+      "Mélanger la farine, le sucre, la levure et le sel.",
+      "Dans un autre bol, fouetter les œufs, le lait et le beurre fondu.",
+      "Verser les liquides sur les poudres et mélanger rapidement : la pâte doit rester grumeleuse.",
+      "Incorporer les myrtilles, remplir les caissettes aux trois quarts et cuire 20 minutes."
     ]
   },
   {
@@ -18431,6 +19348,42 @@ const recettes = [
       "Paner les œufs en les passant dans la farine, puis dans l’œuf battu, puis dans la chapelure.",
       "Arroser d'un filet d'huile d'olive.",
       "Cuire à 180°C pendant 12 minutes en air fryer, ou au four pendant 15 minutes."
+    ]
+  },
+  {
+    "id": "static-433",
+    "titre": "Œufs mimosa",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "25 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "6 œufs",
+        "valeur": 6,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "3 c. à soupe de mayonnaise",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "mayonnaise"
+      },
+      {
+        "texte": "1 c. à café de moutarde",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "moutarde"
+      },
+      "ciboulette",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Cuire les œufs 10 minutes dans l’eau bouillante, les refroidir dans l’eau glacée et les écaler.",
+      "Les couper en deux dans la longueur et retirer les jaunes.",
+      "Écraser les jaunes (en garder 1 pour le décor) avec la mayonnaise, la moutarde, du sel et du poivre.",
+      "Garnir les blancs à la cuillère ou à la poche, émietter le jaune réservé dessus et parsemer de ciboulette."
     ]
   },
   {
@@ -21887,6 +22840,83 @@ const recettes = [
     ]
   },
   {
+    "id": "static-426",
+    "titre": "Pot-au-feu",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "3 h 30",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1,5 kg de viande de bœuf (paleron, gîte, plat de côtes)",
+        "valeur": 1.5,
+        "unite": "kg",
+        "reste": "viande de bœuf (paleron, gîte, plat de côtes)"
+      },
+      {
+        "texte": "2 os à moelle",
+        "valeur": 2,
+        "unite": null,
+        "reste": "os à moelle"
+      },
+      {
+        "texte": "6 carottes",
+        "valeur": 6,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "3 poireaux",
+        "valeur": 3,
+        "unite": null,
+        "reste": "poireaux"
+      },
+      {
+        "texte": "3 navets",
+        "valeur": 3,
+        "unite": null,
+        "reste": "navets"
+      },
+      {
+        "texte": "6 pommes de terre",
+        "valeur": 6,
+        "unite": null,
+        "reste": "pommes de terre"
+      },
+      {
+        "texte": "1 oignon piqué de 3 clous de girofle",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon piqué de 3 clous de girofle"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      {
+        "texte": "1 c. à soupe de gros sel",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gros sel"
+      },
+      {
+        "texte": "10 grains de poivre",
+        "valeur": 10,
+        "unite": null,
+        "reste": "grains de poivre"
+      }
+    ],
+    "etapes": [
+      "Mettre la viande dans une grande marmite, couvrir largement d’eau froide et porter à ébullition. Écumer.",
+      "Ajouter l’oignon, le bouquet garni, le gros sel et le poivre. Laisser frémir 2 heures à couvert.",
+      "Ajouter les carottes, les poireaux ficelés et les navets épluchés. Poursuivre 45 minutes.",
+      "Cuire les pommes de terre à part dans un peu de bouillon, et ajouter les os à moelle 20 minutes avant la fin.",
+      "Servir la viande et les légumes avec du gros sel, de la moutarde et des cornichons. Le bouillon se boit en entrée."
+    ]
+  },
+  {
     "id": "static-298",
     "titre": "Potatoes au four accordéon",
     "photo": "photos/enattente.png",
@@ -22013,6 +23043,73 @@ const recettes = [
       "Déglacer avec le vin blanc et laisser réduire 2 minutes.",
       "Remettre le poulet dans la cocotte, couvrir et laisser mijoter 35 à 40 minutes à feu doux.",
       "Rectifier l'assaisonnement et servir bien chaud."
+    ]
+  },
+  {
+    "id": "static-423",
+    "titre": "Poulet curry coco",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "600 g de blancs de poulet",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "blancs de poulet"
+      },
+      {
+        "texte": "400 ml de lait de coco",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "lait de coco"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 c. à soupe de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "2 c. à soupe de curry en poudre",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "curry en poudre"
+      },
+      {
+        "texte": "200 g de tomates concassées",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "coriandre fraîche",
+      "sel"
+    ],
+    "etapes": [
+      "Couper le poulet en morceaux.",
+      "Faire revenir l’oignon, l’ail et le gingembre dans l’huile 3 minutes.",
+      "Ajouter le curry, mélanger 1 minute, puis ajouter le poulet et le faire dorer.",
+      "Verser les tomates et le lait de coco, saler et laisser mijoter 20 minutes à feu doux.",
+      "Parsemer de coriandre et servir avec du riz basmati."
     ]
   },
   {
@@ -22188,6 +23285,48 @@ const recettes = [
       "Verser l’eau dans le plat et enfourner. Cuire 1 h 15 (compter 45 minutes par kilo + 15 minutes), en le retournant sur l’autre côté à mi-cuisson puis sur le dos les 20 dernières minutes, et en l’arrosant de jus régulièrement.",
       "Vérifier la cuisson : le jus qui s’écoule de la cuisse piquée doit être clair.",
       "Laisser reposer 10 minutes sous une feuille d’aluminium avant de découper."
+    ]
+  },
+  {
+    "id": "static-437",
+    "titre": "Profiteroles au chocolat",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h",
+    "personnes": "6",
+    "ingredients": [
+      "pâte à choux maison (voir recette), environ 24 choux",
+      {
+        "texte": "500 ml de glace à la vanille",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "glace à la vanille"
+      },
+      {
+        "texte": "150 g de chocolat noir",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "150 ml de crème liquide",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      "amandes effilées grillées (facultatif)"
+    ],
+    "etapes": [
+      "Préparer et cuire les choux, puis les laisser refroidir complètement.",
+      "Sauce : faire chauffer la crème, la verser sur le chocolat haché, mélanger puis ajouter le beurre.",
+      "Ouvrir les choux en deux et les garnir d’une petite boule de glace vanille.",
+      "Napper de sauce chocolat chaude au moment de servir et parsemer d’amandes."
     ]
   },
   {
@@ -23027,6 +24166,64 @@ const recettes = [
       "Laisser cuire à feu très doux pendant 30 à 35 minutes en remuant régulièrement pour éviter que le riz n'attache, jusqu'à ce qu'il soit crémeux et fondant.",
       "Ajouter le sucre en fin de cuisson et mélanger jusqu'à dissolution complète.",
       "Retirer la gousse de vanille, répartir le riz au lait dans des ramequins et servir tiède ou froid, selon les goûts."
+    ]
+  },
+  {
+    "id": "static-429",
+    "titre": "Riz cantonais",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "25 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "300 g de riz cuit froid (de la veille idéalement)",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "riz cuit froid (de la veille idéalement)"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "150 g de dés de jambon",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "dés de jambon"
+      },
+      {
+        "texte": "150 g de petits pois",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "petits pois"
+      },
+      {
+        "texte": "2 oignons nouveaux",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons nouveaux"
+      },
+      {
+        "texte": "3 c. à soupe de sauce soja",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      }
+    ],
+    "etapes": [
+      "Battre les œufs et les cuire en omelette fine dans un peu d’huile. La couper en lanières.",
+      "Faire sauter les oignons émincés et les petits pois 3 minutes dans l’huile restante à feu vif.",
+      "Ajouter le riz et le faire sauter 5 minutes en remuant.",
+      "Ajouter le jambon, l’omelette et la sauce soja, mélanger 2 minutes et servir."
     ]
   },
   {
@@ -24266,6 +25463,78 @@ const recettes = [
     ]
   },
   {
+    "id": "static-434",
+    "titre": "Salade niçoise",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "25 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "4 tomates",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tomates"
+      },
+      {
+        "texte": "1 poivron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron vert"
+      },
+      {
+        "texte": "200 g de thon au naturel",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "thon au naturel"
+      },
+      {
+        "texte": "8 filets d'anchois",
+        "valeur": 8,
+        "unite": null,
+        "reste": "filets d'anchois"
+      },
+      {
+        "texte": "50 g d'olives noires de Nice",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "olives noires de Nice"
+      },
+      {
+        "texte": "1 oignon rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      "quelques feuilles de salade",
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à soupe de vinaigre de vin",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "vinaigre de vin"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Cuire les œufs durs 10 minutes, les refroidir et les couper en quartiers.",
+      "Couper les tomates en quartiers, le poivron et l’oignon en fines lamelles.",
+      "Disposer la salade, les légumes, le thon émietté, les œufs, les anchois et les olives.",
+      "Arroser d’une vinaigrette huile d’olive-vinaigre, saler légèrement et poivrer."
+    ]
+  },
+  {
     "id": "static-329",
     "titre": "Salade pomme, pesto, noix et feta",
     "photo": "photos/saladepomme.png",
@@ -24689,6 +25958,49 @@ const recettes = [
       "Ajouter les tomates en les écrasant à la cuillère, puis le sucre (il corrige l’acidité), le sel et le poivre.",
       "Laisser mijoter 20 minutes à découvert, jusqu’à ce que la sauce épaississe.",
       "Ajouter le basilic ciselé hors du feu. Mixer si vous la voulez lisse."
+    ]
+  },
+  {
+    "id": "static-428",
+    "titre": "Saumon en papillote",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 pavés de saumon",
+        "valeur": 4,
+        "unite": null,
+        "reste": "pavés de saumon"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "2 courgettes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "courgettes"
+      },
+      {
+        "texte": "4 c. à café d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à café",
+        "reste": "huile d'olive"
+      },
+      "aneth",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C.",
+      "Couper les courgettes en fines rondelles et le citron en tranches.",
+      "Sur 4 feuilles de papier cuisson, disposer les courgettes, un pavé de saumon, 2 tranches de citron et de l’aneth. Saler, poivrer et arroser d’huile.",
+      "Refermer les papillotes hermétiquement et cuire 15 à 18 minutes.",
+      "Servir dans la papillote, avec du riz."
     ]
   },
   {
@@ -25226,6 +26538,66 @@ const recettes = [
     ]
   },
   {
+    "id": "static-435",
+    "titre": "Taboulé libanais",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "30 min (+ 1 h au frais)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 bottes de persil plat",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bottes de persil plat"
+      },
+      {
+        "texte": "1 botte de menthe",
+        "valeur": 1,
+        "unite": null,
+        "reste": "botte de menthe"
+      },
+      {
+        "texte": "50 g de boulgour fin",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "boulgour fin"
+      },
+      {
+        "texte": "4 tomates",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tomates"
+      },
+      {
+        "texte": "1 oignon nouveau",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon nouveau"
+      },
+      {
+        "texte": "2 citrons (jus)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "citrons (jus)"
+      },
+      {
+        "texte": "5 c. à soupe d'huile d'olive",
+        "valeur": 5,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Rincer le boulgour et le laisser gonfler 15 minutes dans le jus des citrons.",
+      "Ciseler très finement le persil et la menthe (sans les tiges).",
+      "Couper les tomates en petits dés et émincer l’oignon.",
+      "Mélanger le tout avec l’huile d’olive, du sel et du poivre.",
+      "Réserver 1 heure au frais. Le vrai taboulé est surtout du persil, avec peu de boulgour."
+    ]
+  },
+  {
     "id": "static-346",
     "titre": "Tacos maison à la sauce fromagère",
     "photo": "photos/enattente.png",
@@ -25425,6 +26797,37 @@ const recettes = [
       "Faites fondre chaque type de chocolat séparément avec 100 ml de crème liquide.",
       "Versez les ganaches successivement dans la pâte cuite, en laissant chaque couche prendre avant d'ajouter la suivante.",
       "Réfrigérez la tarte pendant au moins 4 heures avant de servir."
+    ]
+  },
+  {
+    "id": "static-436",
+    "titre": "Tarte aux fraises",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h (+ 1 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      "pâte sablée maison (voir recette) ou 1 pâte sablée du commerce",
+      "crème pâtissière maison (voir recette), pour 500 ml de lait",
+      {
+        "texte": "500 g de fraises",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      {
+        "texte": "2 c. à soupe de confiture de fraises ou nappage (facultatif)",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "confiture de fraises ou nappage (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Foncer un moule avec la pâte sablée, piquer le fond et cuire à blanc 20 minutes à 180 °C. Laisser refroidir.",
+      "Préparer la crème pâtissière et la laisser refroidir complètement.",
+      "Laver, équeuter et couper les fraises en deux.",
+      "Fouetter la crème, l’étaler sur le fond de tarte, puis disposer les fraises serrées.",
+      "Napper de confiture tiède au pinceau pour faire briller. Réserver au frais jusqu’au service."
     ]
   },
   {
@@ -26256,6 +27659,67 @@ const recettes = [
       "Couper 1 pomme en fines tranches puis la poêler avec 20 g de beurre et 20 g de cassonade pendant 2 à 3 min.",
       "Déposer la compotée dans les fonds, puis disposer les pommes en rosace.",
       "Ajouter une finition avec confiture d'abricot maison chauffée avec un peu d'eau puis badigeonner les tartelettes."
+    ]
+  },
+  {
+    "id": "static-421",
+    "titre": "Tartiflette",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 kg de pommes de terre à chair ferme",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "pommes de terre à chair ferme"
+      },
+      {
+        "texte": "1 reblochon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "reblochon"
+      },
+      {
+        "texte": "200 g de lardons fumés",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "lardons fumés"
+      },
+      {
+        "texte": "2 oignons",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "100 ml de vin blanc sec",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "vin blanc sec"
+      },
+      {
+        "texte": "100 g de crème fraîche épaisse",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "crème fraîche épaisse"
+      },
+      {
+        "texte": "10 g de beurre",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Cuire les pommes de terre avec la peau 20 minutes à l’eau salée, puis les éplucher et les couper en rondelles.",
+      "Faire revenir les oignons émincés et les lardons dans le beurre 10 minutes, puis déglacer avec le vin blanc.",
+      "Préchauffer le four à 200 °C.",
+      "Dans un plat beurré, alterner pommes de terre et mélange lardons-oignons. Poivrer et napper de crème fraîche.",
+      "Couper le reblochon en deux dans l’épaisseur et le poser sur le dessus, croûte vers le haut.",
+      "Cuire 20 à 25 minutes, jusqu’à ce que le reblochon soit fondu et doré."
     ]
   },
   {
