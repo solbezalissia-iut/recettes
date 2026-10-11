@@ -25885,7 +25885,7 @@ const recettes = [
     "id": "static-248",
     "titre": "Nuggets de poulet maison",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "variantes": [
       {
         "nom": "Panure cornflakes au four",
@@ -32911,7 +32911,7 @@ const recettes = [
     "id": "static-307",
     "titre": "Ratatouille",
     "photo": "photos/enattente.png",
-    "cat": "accompagnement",
+    "cat": "plat",
     "variantes": [
       {
         "nom": "Mijotée en cocotte",
