@@ -36,7 +36,7 @@ const recettes = [
     "id": "static-659",
     "titre": "Alloco (bananes plantain frites)",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "20 min",
     "personnes": "4",
     "ingredients": [
@@ -467,7 +467,7 @@ const recettes = [
     "photo": "photos/bagelthoncaprice.png",
     "temps": "10 min",
     "personnes": "1",
-    "cat": "entree",
+    "cat": "plat",
     "ingredients": [
       {
         "texte": "1 bagel maison (voir recette bagels maison)",
@@ -520,7 +520,7 @@ const recettes = [
     "photo": "photos/bagel.png",
     "temps": "55 min",
     "personnes": "6",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "230 ml de lait",
@@ -593,7 +593,7 @@ const recettes = [
     "photo": "photos/baguette.png",
     "temps": "70 min",
     "personnes": "4",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "500 g de farine",
@@ -957,7 +957,7 @@ const recettes = [
     "id": "static-660",
     "titre": "Bananes plantain rôties au four",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "35 min",
     "personnes": "4",
     "ingredients": [
@@ -3405,7 +3405,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "3 h (dont pousses)",
     "personnes": "12",
-    "cat": "plat",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "500 g de farine T45",
@@ -4122,7 +4122,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "22 min",
     "personnes": "2",
-    "cat": "entree",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "200 g de brie",
@@ -4286,7 +4286,7 @@ const recettes = [
     "id": "static-440",
     "titre": "Brioche maison",
     "photo": "photos/enattente.png",
-    "cat": "dessert",
+    "cat": "base-culinaire",
     "temps": "45 min (+ 3 h de pousse)",
     "personnes": "8",
     "ingredients": [
@@ -4852,7 +4852,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "20 min",
     "personnes": "4",
-    "cat": "entree",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "4 tomates Roma",
@@ -5824,7 +5824,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "60 min",
     "personnes": "4",
-    "cat": "plat",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "300 g de viande hachée",
@@ -5883,7 +5883,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "50 min (+ 2h de repos)",
     "personnes": "5",
-    "cat": "plat",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "300 g de farine",
@@ -5971,7 +5971,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "25 min",
     "personnes": "2",
-    "cat": "plat",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "25 g de mozzarella râpée",
@@ -12823,7 +12823,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "40 min",
     "personnes": "4",
-    "cat": "entree",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "240 g de riz à sushi",
@@ -14822,7 +14822,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "135 min (+ 5h de repos)",
     "personnes": "4",
-    "cat": "entree",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "1 mini pastèque",
@@ -15108,7 +15108,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "90 min",
     "personnes": "6",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "500 g de farine",
@@ -15804,7 +15804,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "45 min",
     "personnes": "4",
-    "cat": "apero",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "700 g de pommes de terre",
@@ -16147,7 +16147,7 @@ const recettes = [
     "id": "static-145",
     "titre": "Galettes de courgettes",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "variantes": [
       {
         "nom": "Dorées à la poêle, pâte aux œufs",
@@ -16247,7 +16247,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "35 min",
     "personnes": "4",
-    "cat": "plat",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "600 g de pommes de terre",
@@ -18050,7 +18050,7 @@ const recettes = [
     "photo": "photos/gaufrespdtbrunch.jpg",
     "temps": "30 min",
     "personnes": "2",
-    "cat": "plat",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "300 g de pommes de terre cuites",
@@ -18433,7 +18433,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "25 min",
     "personnes": "2-4",
-    "cat": "plat",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "1 pâte feuilletée maison rectangulaire (voir recette pâte à croissants)",
@@ -18474,7 +18474,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "25 min",
     "personnes": "6",
-    "cat": "plat",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "130 g de farine",
@@ -19427,7 +19427,7 @@ const recettes = [
     "id": "static-183",
     "titre": "Gnocchis de pommes de terre maison",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "variantes": [
       {
         "nom": "Au beurre et parmesan",
@@ -20048,7 +20048,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "90 min",
     "personnes": "6",
-    "cat": "plat",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "1,2 kg de pommes de terre à chair ferme",
@@ -20120,7 +20120,7 @@ const recettes = [
     "id": "static-668",
     "titre": "Gratin de banane plantain au fromage",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "45 min",
     "personnes": "4",
     "ingredients": [
@@ -20173,7 +20173,7 @@ const recettes = [
     "id": "static-447",
     "titre": "Gratin de chou-fleur",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "50 min",
     "personnes": "4",
     "ingredients": [
@@ -20227,7 +20227,7 @@ const recettes = [
     "id": "static-446",
     "titre": "Gratin de courgettes",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "50 min",
     "personnes": "4",
     "ingredients": [
@@ -20688,7 +20688,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "40 min",
     "personnes": "4",
-    "cat": "plat",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "600 g de pommes de terre",
@@ -21877,7 +21877,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "40 min",
     "personnes": "4",
-    "cat": "entree",
+    "cat": "plat",
     "ingredients": [
       {
         "texte": "3 plaques de pâtes à lasagne",
@@ -24309,7 +24309,7 @@ const recettes = [
     "id": "static-666",
     "titre": "Mofongo (purée de plantain à l’ail et au lard)",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "40 min",
     "personnes": "4",
     "ingredients": [
@@ -24953,7 +24953,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "40 min (+ 1h de repos)",
     "personnes": "8",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "500 g de semoule extra fine",
@@ -25712,7 +25712,7 @@ const recettes = [
     "id": "static-245",
     "titre": "Nems au poulet maison",
     "photo": "photos/enattente.png",
-    "cat": "entree",
+    "cat": "apero",
     "variantes": [
       {
         "nom": "Frits",
@@ -27062,7 +27062,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "140 min (+ pousse et cuisson)",
     "personnes": "8",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "26 g de sel",
@@ -27114,7 +27114,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "80 min",
     "personnes": "7 pains",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "125 ml de lait tiède",
@@ -27652,7 +27652,7 @@ const recettes = [
     "id": "static-518",
     "titre": "Pains au lait",
     "photo": "photos/enattente.png",
-    "cat": "dessert",
+    "cat": "base-culinaire",
     "temps": "40 min (+ 2 h de pousse)",
     "personnes": "12",
     "ingredients": [
@@ -29312,7 +29312,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "15 min",
     "personnes": "2",
-    "cat": "plat",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "200 g de brocolis",
@@ -30231,7 +30231,7 @@ const recettes = [
     "id": "static-663",
     "titre": "Plantain braisé au barbecue (boli)",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "30 min",
     "personnes": "4",
     "ingredients": [
@@ -30327,7 +30327,7 @@ const recettes = [
     "id": "static-502",
     "titre": "Poêlée de légumes",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "25 min",
     "personnes": "4",
     "ingredients": [
@@ -30661,7 +30661,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "40 min",
     "personnes": "4",
-    "cat": "plat",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "600 g de pommes de terre",
@@ -30721,7 +30721,7 @@ const recettes = [
     "id": "static-293",
     "titre": "Pommes de terre Hasselback au vinaigre",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "variantes": [
       {
         "nom": "Aux herbes",
@@ -30813,7 +30813,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "40 min",
     "personnes": "4",
-    "cat": "plat",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "600 g de pommes de terre",
@@ -31356,7 +31356,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "40 min",
     "personnes": "4",
-    "cat": "plat",
+    "cat": "accompagnement",
     "ingredients": [
       {
         "texte": "4 pommes de terre",
@@ -31409,7 +31409,7 @@ const recettes = [
     "id": "static-658",
     "titre": "Potatoes de butternut au parmesan, sauce yaourt fumée",
     "photo": "photos/potatoesbutternut.jpg",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "40 min",
     "personnes": "4",
     "ingredients": [
@@ -32359,7 +32359,7 @@ const recettes = [
     "id": "static-407",
     "titre": "Purée de pommes de terre maison",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "temps": "35 min",
     "personnes": "4",
     "ingredients": [
@@ -32505,7 +32505,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "1h",
     "personnes": "6",
-    "cat": "entree",
+    "cat": "plat",
     "ingredients": [
       {
         "texte": "1 pâte brisée",
@@ -32911,7 +32911,7 @@ const recettes = [
     "id": "static-307",
     "titre": "Ratatouille",
     "photo": "photos/enattente.png",
-    "cat": "plat",
+    "cat": "accompagnement",
     "variantes": [
       {
         "nom": "Mijotée en cocotte",
@@ -36278,7 +36278,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "20 min",
     "personnes": "3",
-    "cat": "plat",
+    "cat": "apero",
     "ingredients": [
       {
         "texte": "6 tranches pain de mie maison",
@@ -36932,7 +36932,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "temps": "5 min",
     "personnes": "2",
-    "cat": "entree",
+    "cat": "base-culinaire",
     "ingredients": [
       {
         "texte": "125 g de mozzarella maison",

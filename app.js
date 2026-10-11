@@ -1,5 +1,5 @@
 const catLabels = {
-  apero: "Apéro", entree: "Entrée", plat: "Plat",
+  apero: "Apéro", entree: "Entrée", plat: "Plat", accompagnement: "Accompagnement",
   dessert: "Dessert", boisson: "Boisson", sauce: "Sauce", "base-culinaire": "Base culinaire"
 };
 
@@ -243,12 +243,12 @@ function getSortedIndices() {
 }
 
 function buildGrids() {
-  const cats = ['apero', 'entree', 'plat', 'dessert', 'boisson', 'sauce', 'base-culinaire'];
+  const cats = ['apero', 'entree', 'plat', 'accompagnement', 'dessert', 'boisson', 'sauce', 'base-culinaire'];
   const allGrid = document.getElementById('grid-all');
   allGrid.innerHTML = '';
   cats.forEach(cat => { document.getElementById('grid-' + cat).innerHTML = ''; });
 
-  const counts = { all: 0, apero: 0, entree: 0, plat: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0 };
+  const counts = { all: 0, apero: 0, entree: 0, plat: 0, accompagnement: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0 };
 
   getSortedIndices().forEach(idx => {
     const r = allRecettes[idx];
