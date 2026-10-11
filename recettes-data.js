@@ -26137,5 +26137,1457 @@ const recettes = [
       "Laisser refroidir (pas trop sinon ce sera dur).",
       "Étaler la crème entre 2 biscuits de même taille refroidis."
     ]
+  },
+  {
+    "titre": "Tarte aux noix de pécan",
+    "photo": "photos/tartepecan.jpg",
+    "temps": "60 min",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "1 pâte brisée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte brisée"
+      },
+      {
+        "texte": "250 g de noix de pécan (+ quelques-unes pour le décor)",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "noix de pécan (+ quelques-unes pour le décor)"
+      },
+      {
+        "texte": "120 g de sucre roux",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "sucre roux"
+      },
+      {
+        "texte": "150 ml de sirop d'érable",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "sirop d'érable"
+      },
+      {
+        "texte": "60 g de margarine",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "margarine"
+      },
+      {
+        "texte": "30 g de fécule",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "fécule"
+      },
+      {
+        "texte": "20 cl de crème végétale",
+        "valeur": 20,
+        "unite": "cl",
+        "reste": "crème végétale"
+      },
+      {
+        "texte": "1 c. à café d'arôme vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "arôme vanille"
+      }
+    ],
+    "etapes": [
+      "Faire griller les noix de pécan quelques minutes à sec dans une poêle.",
+      "Mélanger la fécule et le sucre roux dans un bol.",
+      "Incorporer la crème végétale au mélange pour former une pâte lisse et épaisse.",
+      "Ajouter le sirop d'érable et l'arôme vanille, puis chauffer sur feu moyen en remuant constamment jusqu'à épaississement.",
+      "Retirer du feu et incorporer la margarine en morceaux jusqu'à obtenir une texture lisse et brillante.",
+      "Ajouter les noix de pécan toastées et mélanger pour les enrober.",
+      "Verser la préparation sur la pâte brisée déposée dans un moule et étaler pour former une couche uniforme.",
+      "Disposer quelques noix de pécan entières sur le dessus pour la décoration.",
+      "Enfourner à 170 °C pendant 35 à 40 minutes, jusqu'à ce que les bords soient dorés et la garniture bien prise."
+    ]
+  },
+  {
+    "titre": "Kangoo maison – biscuits feuilletés au chocolat",
+    "photo": "photos/kangoo.jpg",
+    "temps": "45 min (+ 30 min au frais)",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "230 g de farine",
+        "valeur": 230,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "20 g de poudre d'amandes",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "poudre d'amandes"
+      },
+      {
+        "texte": "120 g de beurre mou",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "80 g de sucre glace",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      "Nutella (1 cuillère par biscuit)"
+    ],
+    "etapes": [
+      "Dans le bol du robot, déposer la farine, la poudre d'amandes, le sucre glace et le sel.",
+      "Ajouter l'œuf et laisser le robot tourner pour mélanger légèrement.",
+      "Ajouter le beurre mou progressivement afin d'obtenir une pâte homogène.",
+      "Former une boule, filmer et placer au réfrigérateur au moins 30 minutes.",
+      "Fariner légèrement le plan de travail et abaisser la pâte à environ 4 mm.",
+      "Découper des rectangles et déposer une cuillère de Nutella au centre de chacun.",
+      "Rabattre les bords des rectangles en laissant une petite ouverture pour apercevoir le chocolat.",
+      "Enfourner à 180 °C pendant 15 minutes, jusqu'à ce que les biscuits soient légèrement dorés.",
+      "Laisser refroidir complètement et conserver dans une boîte hermétique."
+    ]
+  },
+  {
+    "titre": "Œufs cocotte au chou-fleur et curry",
+    "photo": "photos/enattente.png",
+    "temps": "30 min",
+    "personnes": "4",
+    "cat": "entree",
+    "ingredients": [
+      {
+        "texte": "1 chou-fleur",
+        "valeur": 1,
+        "unite": null,
+        "reste": "chou-fleur"
+      },
+      {
+        "texte": "1 c. à soupe de curry en poudre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "curry en poudre"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 c. à soupe de crème liquide",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "crème liquide"
+      },
+      "persil frais",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper le chou-fleur en fleurettes et le faire bouillir dans de l'eau salée jusqu'à ce qu'il soit tendre ; réserver l'eau de cuisson.",
+      "Dans un bol, déposer le chou-fleur cuit, ajouter le curry, la crème, le beurre et un filet d'eau de cuisson ; mixer jusqu'à obtenir une purée lisse.",
+      "Tapisser le fond des ramequins avec une couche de crème au chou-fleur.",
+      "Casser un œuf dans chaque ramequin.",
+      "Cuire au four au bain-marie pendant 10 à 15 minutes à 180 °C, jusqu'à ce que les blancs soient pris.",
+      "Parsemer de persil, saler et poivrer ; servir immédiatement."
+    ]
+  },
+  {
+    "titre": "Mini biscuits de Noël façon Twix",
+    "photo": "photos/twixnoel.jpg",
+    "temps": "54 min",
+    "personnes": "24",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "300 g de pâte sablée sucrée",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "pâte sablée sucrée"
+      },
+      {
+        "texte": "250 g de caramel doux",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "caramel doux"
+      },
+      {
+        "texte": "60 ml de crème fraîche",
+        "valeur": 60,
+        "unite": "ml",
+        "reste": "crème fraîche"
+      },
+      {
+        "texte": "200 g de chocolat au lait",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat au lait"
+      },
+      {
+        "texte": "1 c. à soupe d'huile végétale",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile végétale"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C. Abaisser la pâte sablée et découper des formes festives à l'emporte-pièce, puis les disposer sur une plaque recouverte de papier cuisson.",
+      "Cuire 12 à 14 minutes, jusqu'à ce que les bords dorent légèrement. Laisser refroidir complètement.",
+      "Chauffer le caramel doux avec la crème fraîche dans une petite casserole à feu doux, en mélangeant, jusqu'à obtenir une texture lisse et crémeuse. Retirer du feu.",
+      "Étaler une fine couche de caramel sur la face plate de la moitié des biscuits, puis recouvrir avec l'autre moitié pour former des mini sandwichs.",
+      "Faire fondre le chocolat au lait avec l'huile au bain-marie ou au micro-ondes (en remuant toutes les 30 secondes) jusqu'à obtenir un mélange lisse.",
+      "Tremper chaque biscuit dans le chocolat pour l'enrober entièrement, à l'aide d'une fourchette, en faisant glisser le surplus sur le bord du bol.",
+      "Déposer sur du papier cuisson et laisser prendre 20 à 30 minutes à température ambiante ou au réfrigérateur."
+    ]
+  },
+  {
+    "titre": "Biscuits au glaçage royal (recette de base)",
+    "photo": "photos/enattente.png",
+    "temps": "75 min",
+    "personnes": "12",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "125 g de beurre doux",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "beurre doux"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "2 cl d'eau froide",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "eau froide"
+      },
+      {
+        "texte": "200 g de sucre glace",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "2 blancs d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      },
+      {
+        "texte": "1 c. à café de jus de citron",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron"
+      }
+    ],
+    "etapes": [
+      "Dans un bol, mélanger la farine, le sucre et le beurre coupé en morceaux jusqu'à obtenir une texture sableuse.",
+      "Ajouter l'œuf et l'extrait de vanille, puis incorporer progressivement l'eau froide pour former une pâte souple.",
+      "Pétrir légèrement sur le plan de travail fariné, filmer et laisser reposer 30 minutes au réfrigérateur.",
+      "Abaisser la pâte sur 5 mm d'épaisseur et découper des formes au choix.",
+      "Cuire au four préchauffé à 180 °C pendant 12 à 15 minutes, jusqu'à ce que les bords colorent légèrement.",
+      "Glaçage royal : fouetter les blancs d'œufs avec le sucre glace jusqu'à obtenir une consistance ferme et brillante.",
+      "Ajouter le jus de citron et fouetter encore 1 à 2 minutes pour lisser le glaçage.",
+      "Une fois les biscuits refroidis, les recouvrir de glaçage à la spatule ou à la poche à douille.",
+      "Laisser sécher complètement avant de manipuler ou de décorer."
+    ]
+  },
+  {
+    "titre": "Roulé crispy jambon fromage",
+    "photo": "photos/enattente.png",
+    "temps": "40 min",
+    "personnes": "4",
+    "cat": "apero",
+    "ingredients": [
+      {
+        "texte": "2 tranche de jambon",
+        "valeur": 2,
+        "unite": "tranche",
+        "reste": "jambon"
+      },
+      {
+        "texte": "2 tranche de fromage à raclette",
+        "valeur": 2,
+        "unite": "tranche",
+        "reste": "fromage à raclette"
+      },
+      {
+        "texte": "120 g de farine",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "250 g de skyr",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "skyr"
+      },
+      {
+        "texte": "200 ml de lait",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g de cornflakes",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "cornflakes"
+      },
+      {
+        "texte": "500 ml d'huile pour friture",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "huile pour friture"
+      }
+    ],
+    "etapes": [
+      "Mélanger la farine et le skyr dans un saladier jusqu'à obtenir une pâte homogène.",
+      "Séparer la pâte en deux et l'étaler sur un plan fariné en formant deux rectangles.",
+      "Déposer une tranche de jambon et une tranche de fromage sur chaque rectangle, puis enrouler pour former deux rouleaux serrés.",
+      "Appuyer sur les bords avec une fourchette pour bien sceller.",
+      "Préparer deux bols : l'un avec le lait, l'autre avec les cornflakes finement écrasés.",
+      "Couper les rouleaux si besoin, puis les tremper dans le lait puis dans les cornflakes pour bien les enrober.",
+      "Chauffer l'huile à environ 170 °C et faire frire les roulés jusqu'à ce qu'ils soient dorés et croustillants.",
+      "Égoutter sur du papier absorbant et servir chaud."
+    ]
+  },
+  {
+    "titre": "Pâtes rosées à la betterave, feta et pistache",
+    "photo": "photos/patesbetteravefeta.jpg",
+    "temps": "35 min",
+    "personnes": "4",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "320 g de pâtes",
+        "valeur": 320,
+        "unite": "g",
+        "reste": "pâtes"
+      },
+      {
+        "texte": "200 g de betterave cuite",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "betterave cuite"
+      },
+      {
+        "texte": "120 g de feta",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "feta"
+      },
+      {
+        "texte": "3 g d'ail (1 petite gousse)",
+        "valeur": 3,
+        "unite": "g",
+        "reste": "ail (1 petite gousse)"
+      },
+      {
+        "texte": "30 ml d'huile d'olive",
+        "valeur": 30,
+        "unite": "ml",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "60 ml d'eau de cuisson des pâtes",
+        "valeur": 60,
+        "unite": "ml",
+        "reste": "eau de cuisson des pâtes"
+      },
+      {
+        "texte": "40 g de pistaches décortiquées",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "pistaches décortiquées"
+      },
+      {
+        "texte": "8 g de menthe",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "menthe"
+      },
+      {
+        "texte": "1 g de piment d'Espelette",
+        "valeur": 1,
+        "unite": "g",
+        "reste": "piment d'Espelette"
+      }
+    ],
+    "etapes": [
+      "Cuire les pâtes dans une grande casserole d'eau salée bouillante jusqu'à ce qu'elles soient al dente.",
+      "Pendant ce temps, mixer la betterave cuite avec la feta, l'ail finement haché et l'huile d'olive jusqu'à obtenir une sauce crémeuse.",
+      "Égoutter les pâtes en réservant environ 60 ml d'eau de cuisson.",
+      "Détendre la sauce avec l'eau de cuisson petit à petit, puis assaisonner avec le piment d'Espelette.",
+      "Mélanger les pâtes chaudes avec la sauce jusqu'à ce qu'elles soient bien nappées.",
+      "Parsemer de pistaches grossièrement hachées et de menthe ciselée.",
+      "Rectifier l'assaisonnement et servir aussitôt, avec un peu de feta émiettée en plus si désiré."
+    ]
+  },
+  {
+    "titre": "Gaufres de pomme de terre pour le brunch",
+    "photo": "photos/gaufrespdtbrunch.jpg",
+    "temps": "30 min",
+    "personnes": "2",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "300 g de pommes de terre cuites",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "pommes de terre cuites"
+      },
+      {
+        "texte": "1 œuf (pour la pâte)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf (pour la pâte)"
+      },
+      {
+        "texte": "25 g de farine",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 pincée de paprika fumé",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "paprika fumé"
+      },
+      "huile",
+      {
+        "texte": "2 œufs (à pocher)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs (à pocher)"
+      },
+      {
+        "texte": "1 avocat",
+        "valeur": 1,
+        "unite": null,
+        "reste": "avocat"
+      },
+      {
+        "texte": "2 tranche de saumon fumé",
+        "valeur": 2,
+        "unite": "tranche",
+        "reste": "saumon fumé"
+      },
+      "sauce mayo sriracha",
+      "ciboulette",
+      "vinaigre blanc"
+    ],
+    "etapes": [
+      "Éplucher et écraser les pommes de terre dans un saladier.",
+      "Ajouter l'œuf et bien mélanger.",
+      "Ajouter la farine, le sel et le paprika fumé, puis mélanger à nouveau.",
+      "Faire chauffer le gaufrier et le huiler si nécessaire.",
+      "Déposer une belle cuillère de préparation dans chaque empreinte et cuire 7 à 8 minutes, jusqu'à ce que les gaufres soient dorées et croustillantes.",
+      "Pendant ce temps, porter une casserole d'eau à frémissement avec un peu de vinaigre blanc.",
+      "Y faire glisser les œufs et les cuire 2 min 30 à 3 min maximum, puis les plonger dans un saladier d'eau froide avec des glaçons.",
+      "Ouvrir l'avocat et le tailler en tranches.",
+      "Dresser chaque assiette avec deux gaufres, un demi-avocat, une tranche de saumon et un œuf poché.",
+      "Napper de sauce mayo sriracha et parsemer de ciboulette."
+    ]
+  },
+  {
+    "titre": "Gâteau sans farine au riz et chocolat",
+    "photo": "photos/gateauriz.jpg",
+    "temps": "60 min",
+    "personnes": "6",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "300 g de riz cuit",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "riz cuit"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "90 g de compote de pomme",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "compote de pomme"
+      },
+      {
+        "texte": "50 g de beurre fondu",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "1 pincée de vanille en poudre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "vanille en poudre"
+      },
+      {
+        "texte": "1 pincée de bicarbonate de sodium",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "bicarbonate de sodium"
+      },
+      {
+        "texte": "2 c. à soupe de sucre",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de pépites de chocolat",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pépites de chocolat"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C (th. 6).",
+      "Mixer le riz cuit avec les œufs jusqu'à obtenir un mélange lisse.",
+      "Ajouter la compote de pomme et le beurre fondu, puis mélanger jusqu'à homogénéité.",
+      "Incorporer la vanille, le bicarbonate et le sucre.",
+      "Ajouter les pépites de chocolat en les répartissant délicatement.",
+      "Verser dans un moule beurré ou recouvert de papier cuisson et lisser la surface.",
+      "Cuire environ 45 minutes, jusqu'à ce que le dessus soit doré et que la pointe d'un couteau ressorte propre.",
+      "Démouler une fois tiède et laisser refroidir légèrement avant de couper."
+    ]
+  },
+  {
+    "titre": "Gaufres de Liège",
+    "photo": "photos/gaufresliege.jpg",
+    "temps": "40 min (+ 1 h de pousse)",
+    "personnes": "4",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "100 ml de lait tiède (ou lait végétal)",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait tiède (ou lait végétal)"
+      },
+      {
+        "texte": "7 g de levure sèche de boulanger",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure sèche de boulanger"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "15 g de sucre",
+        "valeur": 15,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "145 g de beurre mou (ou margarine)",
+        "valeur": 145,
+        "unite": "g",
+        "reste": "beurre mou (ou margarine)"
+      },
+      {
+        "texte": "100 g de sucre perlé",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre perlé"
+      }
+    ],
+    "etapes": [
+      "Mélanger le lait tiède avec la levure.",
+      "Ajouter l'œuf, le sucre, la farine et le sel.",
+      "Incorporer le beurre mou puis pétrir jusqu'à obtenir une pâte homogène.",
+      "Ajouter le sucre perlé.",
+      "Laisser lever la pâte pendant 1 heure.",
+      "Former des petites boules de pâte.",
+      "Cuire dans le gaufrier jusqu'à ce que les gaufres soient bien dorées."
+    ]
+  },
+  {
+    "titre": "Wrap raclette gourmand",
+    "photo": "photos/wrapraclette.jpg",
+    "temps": "25 min",
+    "personnes": "2",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "1 grande tortilla",
+        "valeur": 1,
+        "unite": null,
+        "reste": "grande tortilla"
+      },
+      {
+        "texte": "1 c. à café de crème fraîche",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "crème fraîche"
+      },
+      {
+        "texte": "2 tranche de fromage à raclette",
+        "valeur": 2,
+        "unite": "tranche",
+        "reste": "fromage à raclette"
+      },
+      {
+        "texte": "2 pommes de terre",
+        "valeur": 2,
+        "unite": null,
+        "reste": "pommes de terre"
+      },
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      },
+      {
+        "texte": "1 verre d'eau",
+        "valeur": 1,
+        "unite": "verre",
+        "reste": "eau"
+      },
+      {
+        "texte": "100 g de lardons ou dés de jambon",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "lardons ou dés de jambon"
+      },
+      {
+        "texte": "2 c. à soupe de crème liquide",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "2 c. à soupe de mozzarella ou emmental râpé",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "mozzarella ou emmental râpé"
+      }
+    ],
+    "etapes": [
+      "Étaler la crème fraîche sur la tortilla et déposer les tranches de fromage à raclette dessus. Réserver.",
+      "Peler les pommes de terre et les couper en fines lamelles.",
+      "Chauffer un filet d'huile d'olive dans une poêle et y déposer les lamelles en une seule couche. Laisser dorer quelques minutes, puis saler et poivrer.",
+      "Ajouter un verre d'eau et cuire 5 à 6 minutes, jusqu'à ce que les pommes de terre soient tendres.",
+      "Ajouter les lardons ou le jambon et la crème liquide, puis laisser réduire jusqu'à épaississement.",
+      "Verser la préparation chaude sur le fromage, puis parsemer de fromage râpé.",
+      "Rabattre les deux côtés de la tortilla vers le centre, puis replier le haut vers le bas pour bien fermer le wrap.",
+      "Cuire le wrap à la poêle avec un filet d'huile d'olive 2 à 3 minutes de chaque côté, jusqu'à ce que la tortilla soit dorée et le fromage fondu.",
+      "Couper en deux et déguster chaud."
+    ]
+  },
+  {
+    "titre": "Ice tea léger aux pêches et infusion",
+    "photo": "photos/enattente.png",
+    "temps": "20 min (+ 30 min au frais)",
+    "personnes": "4",
+    "cat": "boisson",
+    "ingredients": [
+      {
+        "texte": "3 pêches ou nectarines",
+        "valeur": 3,
+        "unite": null,
+        "reste": "pêches ou nectarines"
+      },
+      {
+        "texte": "100 g de compote sans sucre ajouté",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "compote sans sucre ajouté"
+      },
+      {
+        "texte": "3 c. à café de sirop d'agave",
+        "valeur": 3,
+        "unite": "c. à café",
+        "reste": "sirop d'agave"
+      },
+      {
+        "texte": "1 gousse de vanille (ou 1 c. à café de vanille liquide)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille (ou 1 c. à café de vanille liquide)"
+      },
+      {
+        "texte": "2 sachets d'infusion au choix",
+        "valeur": 2,
+        "unite": null,
+        "reste": "sachets d'infusion au choix"
+      },
+      {
+        "texte": "500 ml d'eau",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      "glaçons",
+      "quelques feuilles de menthe"
+    ],
+    "etapes": [
+      "Couper les pêches ou nectarines en morceaux et les réserver.",
+      "Mélanger la compote avec le sirop d'agave et la vanille pour obtenir une base légèrement sucrée et parfumée.",
+      "Porter l'eau à ébullition et y faire infuser les sachets 5 à 7 minutes. Laisser tiédir.",
+      "Verser l'infusion sur le mélange compote-vanille dans un grand pichet, ajouter les morceaux de pêche et mélanger.",
+      "Ajouter le jus de citron, quelques branches de menthe et les glaçons.",
+      "Réfrigérer au moins 30 minutes pour que les saveurs se mélangent.",
+      "Servir bien frais avec des feuilles de menthe et des rondelles de citron."
+    ]
+  },
+  {
+    "titre": "Gelée de fruits à l'agar-agar",
+    "photo": "photos/geleeagar.jpg",
+    "temps": "12 min (+ 2 h au frais)",
+    "personnes": "4",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "250 g de fruits mélangés",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "fruits mélangés"
+      },
+      {
+        "texte": "1 sachet d'agar-agar",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "agar-agar"
+      },
+      {
+        "texte": "1 sachet de sucre vanillé (facultatif)",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "sucre vanillé (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Laver et préparer les fruits, puis les mixer jusqu'à obtenir une purée homogène.",
+      "Verser la purée dans une casserole, ajouter l'agar-agar et bien mélanger.",
+      "Ajouter le sucre vanillé si désiré et chauffer à feu moyen en remuant jusqu'à ébullition.",
+      "Laisser bouillir 2 minutes en remuant constamment pour activer l'agar-agar.",
+      "Retirer du feu et verser rapidement dans des moules (oursons, ramequins…).",
+      "Laisser prendre au réfrigérateur au moins 2 heures.",
+      "Démouler et servir frais. Se conserve 3 à 4 jours au réfrigérateur."
+    ]
+  },
+  {
+    "titre": "Langues de chat au beurre et vanille",
+    "photo": "photos/languesdechat.jpg",
+    "temps": "20 min",
+    "personnes": "4",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "60 g de beurre mou",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "60 g de sucre (ou sucre glace pour une texture plus fine)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre (ou sucre glace pour une texture plus fine)"
+      },
+      {
+        "texte": "60 g de farine tamisée",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "farine tamisée"
+      },
+      {
+        "texte": "2 blancs d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      "vanille (extrait ou sucre vanillé)"
+    ],
+    "etapes": [
+      "Mélanger le beurre pommade avec le sucre jusqu'à obtenir une texture crémeuse.",
+      "Ajouter les blancs d'œufs un à un en mélangeant bien entre chaque ajout.",
+      "Incorporer la farine tamisée petit à petit, puis la vanille et le sel.",
+      "À la poche à douille (ou avec un sac congélation au coin coupé), former des bandes fines et régulières sur une plaque recouverte de papier cuisson.",
+      "Enfourner à 180 °C pendant 8 à 10 minutes, jusqu'à ce que les bords soient dorés.",
+      "Laisser refroidir sur une grille avant de déguster."
+    ]
+  },
+  {
+    "titre": "Rillettes de poulet à l'ail confit",
+    "photo": "photos/enattente.png",
+    "temps": "3 h (+ 24 h au frais)",
+    "personnes": "10",
+    "cat": "apero",
+    "ingredients": [
+      {
+        "texte": "2,5 kg de cuisses de poulet avec la peau",
+        "valeur": 2.5,
+        "unite": "kg",
+        "reste": "cuisses de poulet avec la peau"
+      },
+      {
+        "texte": "1 tête d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tête d'ail"
+      },
+      {
+        "texte": "10 branches de thym",
+        "valeur": 10,
+        "unite": null,
+        "reste": "branches de thym"
+      },
+      {
+        "texte": "2 feuille de laurier",
+        "valeur": 2,
+        "unite": "feuille",
+        "reste": "laurier"
+      },
+      {
+        "texte": "500 ml d'eau",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "500 ml de bouillon de volaille",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "bouillon de volaille"
+      },
+      {
+        "texte": "320 g de graisse de canard (ou 60 g de beurre clarifié)",
+        "valeur": 320,
+        "unite": "g",
+        "reste": "graisse de canard (ou 60 g de beurre clarifié)"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire dorer les cuisses de poulet côté peau dans une cocotte pour bien caraméliser la peau.",
+      "Ajouter la tête d'ail entière, le thym et le laurier autour du poulet.",
+      "Verser l'eau et le bouillon de volaille pour couvrir en partie.",
+      "Couvrir et laisser mijoter à petits frémissements pendant 1 heure.",
+      "Filtrer le bouillon, retirer la peau et les os, effilocher la chair et y incorporer l'ail confit pressé.",
+      "Faire réduire le bouillon jusqu'à ce qu'il soit sirupeux, puis l'incorporer à la chair en émiettant bien à la fourchette.",
+      "Saler, poivrer, ajouter la graisse de canard puis remettre 1 heure à cuire doucement à couvert.",
+      "Mettre en pots, laisser refroidir puis réserver au moins 24 heures au réfrigérateur.",
+      "Servir sur du pain grillé, avec des cornichons."
+    ]
+  },
+  {
+    "titre": "Bonbons rubans maison à deux ingrédients",
+    "photo": "photos/enattente.png",
+    "temps": "3 h 15",
+    "personnes": "4",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "400 g de compote de fruits ou fruits mixés",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "compote de fruits ou fruits mixés"
+      },
+      {
+        "texte": "200 g de sucre (+ un peu pour enrober)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre (+ un peu pour enrober)"
+      },
+      {
+        "texte": "2 g d'acide citrique (facultatif, version acidulée)",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "acide citrique (facultatif, version acidulée)"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 80 °C et recouvrir une plaque de papier cuisson.",
+      "Mélanger la purée de fruits avec le sucre jusqu'à ce que le mélange soit bien uniforme.",
+      "Étaler en une couche fine et régulière sur la plaque.",
+      "Faire sécher au four environ 3 heures, jusqu'à ce que la plaque soit souple et se décolle.",
+      "Pour une version acidulée, saupoudrer d'acide citrique.",
+      "Découper des bandes régulières et les rouler dans un peu de sucre.",
+      "Laisser refroidir complètement, puis conserver dans une boîte hermétique au sec."
+    ]
+  },
+  {
+    "titre": "Boules fondantes enrobées de caramel croquant",
+    "photo": "photos/boulescaramel.jpg",
+    "temps": "30 min",
+    "personnes": "8",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "397 g de lait concentré sucré (1 boîte)",
+        "valeur": 397,
+        "unite": "g",
+        "reste": "lait concentré sucré (1 boîte)"
+      },
+      {
+        "texte": "75 g de poudre d'amandes",
+        "valeur": 75,
+        "unite": "g",
+        "reste": "poudre d'amandes"
+      },
+      {
+        "texte": "75 g de poudre de noisettes",
+        "valeur": 75,
+        "unite": "g",
+        "reste": "poudre de noisettes"
+      },
+      {
+        "texte": "1 c. à soupe de beurre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "beurre"
+      },
+      {
+        "texte": "300 g de sucre",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "120 ml d'eau",
+        "valeur": 120,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "2 c. à soupe de vinaigre blanc",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "vinaigre blanc"
+      }
+    ],
+    "etapes": [
+      "Dans une casserole, mélanger le lait concentré sucré, les poudres d'amandes et de noisettes et le beurre. Cuire à feu doux en remuant sans cesse jusqu'à ce que la pâte se détache du fond.",
+      "Laisser refroidir, puis former de petites boules.",
+      "Préparer le caramel : chauffer le sucre, l'eau et le vinaigre sans mélanger jusqu'à obtenir une couleur dorée.",
+      "Tremper chaque boule dans le caramel et la déposer sur du papier cuisson pour la laisser figer.",
+      "Réfrigérer brièvement pour que le caramel durcisse bien, puis servir frais ou à température ambiante."
+    ]
+  },
+  {
+    "titre": "Gnocchis géants brocoli et mozzarella",
+    "photo": "photos/gnocchisbrocoli.jpg",
+    "temps": "26 min",
+    "personnes": "8",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "350 g de pommes de terre",
+        "valeur": 350,
+        "unite": "g",
+        "reste": "pommes de terre"
+      },
+      {
+        "texte": "200 g de brocoli",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "brocoli"
+      },
+      {
+        "texte": "90 g de fécule de pomme de terre",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "fécule de pomme de terre"
+      },
+      {
+        "texte": "40 g de parmesan râpé",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      {
+        "texte": "120 g de mozzarella spéciale cuisson",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "mozzarella spéciale cuisson"
+      },
+      {
+        "texte": "0,5 c. à café d'ail en poudre",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "ail en poudre"
+      },
+      {
+        "texte": "1 pincée de noix de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "noix de muscade"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      },
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      }
+    ],
+    "etapes": [
+      "Cuire les pommes de terre et le brocoli à l'eau ou à la vapeur jusqu'à ce qu'ils soient bien fondants : environ 20 minutes pour les pommes de terre, 10 minutes pour le brocoli.",
+      "Égoutter et laisser refroidir.",
+      "Éplucher les pommes de terre, puis les écraser avec le brocoli pour obtenir une purée grossière.",
+      "Ajouter la fécule, le parmesan, l'ail, la muscade, le sel et le poivre, puis mélanger jusqu'à obtenir une pâte homogène.",
+      "Former 8 galettes en glissant un morceau de mozzarella au centre de chacune. Bien refermer pour que la mozzarella ne s'échappe pas.",
+      "Faire dorer dans un filet d'huile d'olive environ 3 minutes de chaque côté à feu moyen.",
+      "Ajouter un petit fond d'eau et le laisser s'évaporer complètement.",
+      "Déguster chaud, avec une salade verte."
+    ]
+  },
+  {
+    "titre": "Whoopie cakes chocolat & Chamallow",
+    "photo": "photos/enattente.png",
+    "temps": "35 min",
+    "personnes": "10",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "100 g de beurre mou",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "120 g de sucre (cassonade de préférence)",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "sucre (cassonade de préférence)"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "200 g de farine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "30 g de cacao en poudre non sucré",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "cacao en poudre non sucré"
+      },
+      {
+        "texte": "1 c. à café de levure chimique",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "100 ml de lait",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "10 Chamallow",
+        "valeur": 10,
+        "unite": null,
+        "reste": "Chamallow"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et couvrir deux plaques de papier cuisson.",
+      "Fouetter le beurre mou avec le sucre jusqu'à obtenir une crème, puis ajouter l'œuf.",
+      "Mélanger la farine, le cacao, la levure et le sel. Les incorporer en deux fois en alternant avec le lait. La pâte doit être épaisse.",
+      "Déposer 20 petits tas de pâte (environ 1 cuillère à soupe bombée chacun), bien espacés, et les aplatir légèrement.",
+      "Enfourner environ 10 minutes, jusqu'à ce que les disques soient gonflés et reviennent quand on appuie dessus.",
+      "Retourner 10 disques et poser 1 Chamallow sur chacun. Remettre au four 1 à 2 minutes pour faire ramollir les Chamallow.",
+      "Couvrir aussitôt chaque Chamallow avec un second disque et appuyer doucement pour l'étaler jusqu'aux bords.",
+      "Laisser refroidir pour que le Chamallow se fige un peu avant de déguster.",
+      "Astuce : des disques bien réguliers s'emboîtent mieux (poche à douille ou cuillère à glace). Se conservent 2 jours dans une boîte hermétique."
+    ]
+  },
+  {
+    "titre": "Gaufres salées fromage-jambon",
+    "photo": "photos/enattente.png",
+    "temps": "25 min",
+    "personnes": "6",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "130 g de farine",
+        "valeur": 130,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 c. à café de levure chimique",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "0,5 c. à café de sel",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "260 ml de lait",
+        "valeur": 260,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "50 g de beurre demi-sel fondu",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre demi-sel fondu"
+      },
+      {
+        "texte": "80 g de fromage râpé (emmental, comté…)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "fromage râpé (emmental, comté…)"
+      },
+      {
+        "texte": "100 g de jambon en dés",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "jambon en dés"
+      },
+      {
+        "texte": "1 c. à soupe de ciboulette ciselée",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "ciboulette ciselée"
+      }
+    ],
+    "etapes": [
+      "Dans un saladier, mélanger la farine, la levure, le sel et le poivre. Ajouter les œufs et fouetter.",
+      "Verser le lait petit à petit en fouettant jusqu'à obtenir une pâte lisse, puis incorporer le beurre fondu.",
+      "Ajouter le fromage râpé, le jambon et la ciboulette.",
+      "Préchauffer le gaufrier et le graisser légèrement.",
+      "Verser une louche de pâte par empreinte, refermer et cuire 4 à 5 minutes, jusqu'à ce que les gaufres soient bien dorées et se détachent facilement. Servir chaud.",
+      "Astuce : remplacer le jambon par des lardons cuits, du saumon fumé ou 150 g de courgette râpée bien essorée. Le fromage fait dorer plus vite, surveiller dès 3 minutes."
+    ]
+  },
+  {
+    "titre": "Cookies mangue, chocolat blanc et noix, nappage mangue",
+    "photo": "photos/enattente.png",
+    "temps": "2 h",
+    "personnes": "12",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "200 g de mangue en dés (pour les cookies)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "mangue en dés (pour les cookies)"
+      },
+      {
+        "texte": "115 g de beurre demi-sel mou",
+        "valeur": 115,
+        "unite": "g",
+        "reste": "beurre demi-sel mou"
+      },
+      {
+        "texte": "100 g de cassonade",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "50 g de sucre blanc",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "sucre blanc"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille (facultatif)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille (facultatif)"
+      },
+      {
+        "texte": "200 g de farine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "0,5 c. à café de bicarbonate (ou 1 sachet de levure chimique)",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "bicarbonate (ou 1 sachet de levure chimique)"
+      },
+      {
+        "texte": "150 g de chocolat blanc en gros éclats",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat blanc en gros éclats"
+      },
+      {
+        "texte": "50 g de noix cassées en morceaux",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "noix cassées en morceaux"
+      },
+      {
+        "texte": "1 c. à café de zeste de citron vert (facultatif)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "zeste de citron vert (facultatif)"
+      },
+      {
+        "texte": "130 g de mangue en dés (pour le coulis)",
+        "valeur": 130,
+        "unite": "g",
+        "reste": "mangue en dés (pour le coulis)"
+      },
+      {
+        "texte": "15 g de sucre (pour le coulis)",
+        "valeur": 15,
+        "unite": "g",
+        "reste": "sucre (pour le coulis)"
+      },
+      {
+        "texte": "1 c. à café de jus de citron (facultatif)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Sécher la mangue : préchauffer le four à 110 °C. Couper la mangue des cookies en dés de 1,5 à 2 cm, les étaler sur une plaque recouverte de papier cuisson sans qu'ils se touchent, et les faire sécher jusqu'à ce qu'ils soient fripés et légèrement collants. Laisser refroidir.",
+      "Pendant les 10 dernières minutes de séchage, ajouter les noix sur un coin de la plaque pour les torréfier.",
+      "Fouetter le beurre avec la cassonade et le sucre blanc jusqu'à obtenir un mélange crémeux et plus clair.",
+      "Incorporer l'œuf, la vanille et le zeste de citron vert, puis bien mélanger.",
+      "Ajouter la farine et le bicarbonate, et mélanger juste assez pour que la farine disparaisse.",
+      "Mettre de côté une petite poignée de chocolat, de noix et de mangue pour le dessus. Ajouter le reste à la pâte en 2 ou 3 tours de spatule.",
+      "Couvrir la pâte et la placer au réfrigérateur. Monter le four à 180 °C.",
+      "Coulis : mixer la mangue du coulis avec le sucre et le jus de citron, puis cuire à feu moyen en remuant jusqu'à ce que le mélange épaississe comme une confiture légère. Laisser refroidir complètement.",
+      "Former des boules d'environ 2 cuillères à soupe, les espacer sur une plaque recouverte de papier cuisson et enfoncer les morceaux mis de côté sur le dessus. Cuire jusqu'à ce que les bords soient dorés et que le centre paraisse encore un peu mou.",
+      "Laisser 10 minutes sur la plaque, puis sur une grille jusqu'à refroidissement complet. Juste avant de servir, déposer un peu de coulis au centre de chaque cookie.",
+      "Astuce : le coulis doit être épais et froid, sinon il ramollit les cookies. Il se garde 3 jours au frigo ; les cookies non nappés quelques jours dans une boîte fermée."
+    ]
+  },
+  {
+    "titre": "Boules briochées farcies jambon, moutarde et gruyère",
+    "photo": "photos/enattente.png",
+    "temps": "3 h (dont pousses)",
+    "personnes": "12",
+    "cat": "plat",
+    "ingredients": [
+      {
+        "texte": "500 g de farine T45",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine T45"
+      },
+      {
+        "texte": "2 c. à café de sel",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 c. à soupe de sucre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sucre"
+      },
+      {
+        "texte": "7 g de levure boulangère sèche",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure boulangère sèche"
+      },
+      {
+        "texte": "100 ml de lait tiède",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "150 g de beurre mou en dés",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre mou en dés"
+      },
+      {
+        "texte": "200 g de jambon blanc en petits dés",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "jambon blanc en petits dés"
+      },
+      {
+        "texte": "150 g de gruyère râpé (+ un peu pour le dessus)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "gruyère râpé (+ un peu pour le dessus)"
+      },
+      {
+        "texte": "3 c. à soupe de moutarde à l'ancienne",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "moutarde à l'ancienne"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      },
+      {
+        "texte": "0,5 c. à café de poivre",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "poivre"
+      }
+    ],
+    "etapes": [
+      "Délayer la levure et le sucre dans le lait tiède. Laisser reposer jusqu'à ce que ça mousse légèrement.",
+      "Dans un grand bol (ou un robot avec crochet), mélanger la farine, le sel et le poivre. Ajouter le mélange lait-levure et les œufs. Pétrir jusqu'à obtenir une pâte lisse et élastique.",
+      "Ajouter le beurre petit à petit en continuant de pétrir, jusqu'à ce que la pâte se décolle des parois. Elle doit être souple et légèrement collante.",
+      "Couvrir d'un torchon et laisser lever dans un endroit tiède jusqu'à ce que la pâte double de volume (une nuit au frigo la rend plus facile à façonner).",
+      "Mélanger le jambon, le gruyère et la moutarde dans un bol.",
+      "Dégazer la pâte et la diviser en 12 pâtons d'environ 75 g. Aplatir chaque pâton, déposer une cuillère de farce au centre, refermer en pinçant bien, puis rouler en boule, soudure en dessous.",
+      "Disposer les boules sur une plaque avec papier cuisson (ou serrées dans un moule rond pour une brioche à partager). Couvrir et laisser lever. Préchauffer le four à 180 °C en fin de pousse.",
+      "Badigeonner de jaune d'œuf délayé avec un peu d'eau, parsemer d'un peu de gruyère et enfourner jusqu'à ce que les boules soient bien dorées.",
+      "Laisser tiédir quelques minutes sur une grille avant de servir."
+    ]
   }
 ];
