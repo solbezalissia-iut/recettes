@@ -1334,6 +1334,97 @@ const recettes = [
     ]
   },
   {
+    "id": "static-484",
+    "titre": "Bibimbap",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "45 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "200 g de riz rond cuit",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "riz rond cuit"
+      },
+      {
+        "texte": "200 g de bœuf émincé",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "bœuf émincé"
+      },
+      {
+        "texte": "1 carotte",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte"
+      },
+      {
+        "texte": "1 courgette",
+        "valeur": 1,
+        "unite": null,
+        "reste": "courgette"
+      },
+      {
+        "texte": "100 g d'épinards",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "épinards"
+      },
+      {
+        "texte": "100 g de pousses de soja",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pousses de soja"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "2 c. à soupe de sauce soja",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "1 c. à soupe de sucre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 c. à soupe de gochujang (pâte de piment coréenne)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gochujang (pâte de piment coréenne)"
+      },
+      {
+        "texte": "2 c. à café d'huile de sésame",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "huile de sésame"
+      },
+      "graines de sésame",
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      }
+    ],
+    "etapes": [
+      "Mariner le bœuf 15 minutes avec la sauce soja, le sucre et 1 cuillère à café d’huile de sésame.",
+      "Faire sauter séparément la carotte et la courgette en julienne, les épinards et les pousses de soja dans un peu d’huile.",
+      "Faire sauter le bœuf à feu vif 2 minutes.",
+      "Cuire les œufs au plat.",
+      "Répartir le riz dans des bols, disposer les légumes et le bœuf en sections, puis l’œuf au centre.",
+      "Servir avec le gochujang, le reste d’huile de sésame et les graines de sésame, et mélanger au moment de manger."
+    ]
+  },
+  {
     "id": "static-20",
     "titre": "Big Mac Tacos",
     "photo": "photos/enattente.png",
@@ -4640,6 +4731,164 @@ const recettes = [
     ]
   },
   {
+    "id": "static-481",
+    "titre": "Burritos bœuf et haricots",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 grandes tortillas",
+        "valeur": 4,
+        "unite": null,
+        "reste": "grandes tortillas"
+      },
+      {
+        "texte": "400 g de bœuf haché",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "bœuf haché"
+      },
+      {
+        "texte": "400 g d'haricots rouges cuits",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "haricots rouges cuits"
+      },
+      {
+        "texte": "150 g de riz cuit",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "riz cuit"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "200 g de tomates concassées",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "100 g de cheddar râpé",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "cheddar râpé"
+      },
+      "crème fraîche",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire revenir l’oignon, ajouter la viande et la dorer, puis les épices, les tomates et les haricots. Mijoter 10 minutes.",
+      "Réchauffer les tortillas.",
+      "Garnir chaque tortilla de riz, de viande, de cheddar et d’une cuillère de crème.",
+      "Replier les côtés puis rouler serré.",
+      "Faire dorer les burritos 2 minutes par face dans une poêle chaude, soudure dessous en premier."
+    ]
+  },
+  {
+    "id": "static-477",
+    "titre": "Butter chicken",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "45 min (+ 1 h de marinade)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "600 g de blancs ou hauts de cuisses de poulet",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "blancs ou hauts de cuisses de poulet"
+      },
+      {
+        "texte": "150 g d'yaourt nature",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "yaourt nature"
+      },
+      {
+        "texte": "2 c. à café de garam masala",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "garam masala"
+      },
+      {
+        "texte": "1 c. à café de curcuma",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "curcuma"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "40 g de beurre",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "3 gousses d'ail",
+        "valeur": 3,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 c. à soupe de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "400 g de coulis de tomate",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "coulis de tomate"
+      },
+      {
+        "texte": "150 ml de crème liquide",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      "coriandre",
+      "sel"
+    ],
+    "etapes": [
+      "Mariner le poulet en morceaux avec le yaourt, la moitié des épices et du sel pendant au moins 1 heure.",
+      "Faire dorer le poulet égoutté dans la moitié du beurre, puis réserver.",
+      "Faire revenir l’oignon, l’ail et le gingembre dans le reste du beurre, ajouter le reste des épices puis le coulis de tomate. Mijoter 10 minutes.",
+      "Mixer la sauce si on la veut lisse, ajouter la crème et le poulet, puis laisser mijoter 15 minutes.",
+      "Parsemer de coriandre et servir avec du riz basmati et des naans."
+    ]
+  },
+  {
     "id": "static-453",
     "titre": "Cabillaud au four, citron et herbes",
     "photo": "photos/enattente.png",
@@ -5463,6 +5712,62 @@ const recettes = [
           "Décorer avec les framboises supplémentaires et une rosace de chantilly sur le dessus."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-492",
+    "titre": "Chapon ou volaille de fête rôtie aux marrons",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "3 h 30",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "1 chapon (3,5 kg)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "chapon (3,5 kg)"
+      },
+      {
+        "texte": "400 g de marrons cuits sous vide",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "marrons cuits sous vide"
+      },
+      {
+        "texte": "250 g de chair à saucisse",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "chair à saucisse"
+      },
+      {
+        "texte": "1 échalote",
+        "valeur": 1,
+        "unite": null,
+        "reste": "échalote"
+      },
+      {
+        "texte": "50 g de beurre mou",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "200 ml de bouillon de volaille",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "bouillon de volaille"
+      },
+      "thym",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Sortir la volaille 1 heure avant. Préchauffer le four à 180 °C.",
+      "Farce : mélanger la chair à saucisse, l’échalote hachée, la moitié des marrons écrasés, le thym, du sel et du poivre. En garnir la volaille et la ficeler.",
+      "Badigeonner de beurre, saler, poivrer et placer dans un plat avec le bouillon.",
+      "Cuire 3 heures (environ 50 minutes par kilo), en arrosant toutes les 20 minutes. Couvrir d’aluminium si la peau colore trop.",
+      "Ajouter le reste des marrons dans le plat 30 minutes avant la fin.",
+      "Laisser reposer 15 minutes avant de découper."
     ]
   },
   {
@@ -6748,6 +7053,59 @@ const recettes = [
     ]
   },
   {
+    "id": "static-501",
+    "titre": "Club sandwich poulet-bacon",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "15 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "6 tranches de pain de mie",
+        "valeur": 6,
+        "unite": null,
+        "reste": "tranches de pain de mie"
+      },
+      {
+        "texte": "1 blanc de poulet cuit",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc de poulet cuit"
+      },
+      {
+        "texte": "4 tranches de bacon",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tranches de bacon"
+      },
+      {
+        "texte": "1 tomate",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tomate"
+      },
+      {
+        "texte": "2 œufs durs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs durs"
+      },
+      "quelques feuilles de salade",
+      {
+        "texte": "2 c. à soupe de mayonnaise",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "mayonnaise"
+      }
+    ],
+    "etapes": [
+      "Faire griller le pain et cuire le bacon à la poêle jusqu’à ce qu’il soit croustillant.",
+      "Tartiner les tranches de mayonnaise.",
+      "Sur une tranche, poser salade, poulet et tomate. Couvrir d’une tranche, puis ajouter bacon, œuf dur en rondelles et salade. Fermer avec la troisième tranche.",
+      "Maintenir avec des piques, couper en deux triangles et servir."
+    ]
+  },
+  {
     "id": "static-83",
     "titre": "Clusters glacés yaourt-fraises enrobés de chocolat",
     "photo": "photos/enattente.png",
@@ -7938,6 +8296,48 @@ const recettes = [
     ]
   },
   {
+    "id": "static-491",
+    "titre": "Coquilles Saint-Jacques snackées",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "12 noix de Saint-Jacques",
+        "valeur": 12,
+        "unite": null,
+        "reste": "noix de Saint-Jacques"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 c. à soupe d'huile",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      "fleur de sel, poivre",
+      "persil ou ciboulette"
+    ],
+    "etapes": [
+      "Sortir les noix 15 minutes avant et les sécher sur du papier absorbant.",
+      "Chauffer l’huile dans une poêle à feu vif jusqu’à ce qu’elle fume légèrement.",
+      "Saisir les noix 1 minute 30 sans les toucher, puis les retourner, ajouter le beurre et cuire 1 minute en les arrosant.",
+      "Servir aussitôt avec un trait de citron, la fleur de sel, le poivre et les herbes. Le centre doit rester nacré."
+    ]
+  },
+  {
     "id": "static-98",
     "titre": "Cordon bleu de poulet au jambon et fromage maison",
     "photo": "photos/enattente.png",
@@ -9086,6 +9486,54 @@ const recettes = [
     ]
   },
   {
+    "id": "static-504",
+    "titre": "Croque-monsieur au four",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "20 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "8 tranches de pain de mie",
+        "valeur": 8,
+        "unite": null,
+        "reste": "tranches de pain de mie"
+      },
+      {
+        "texte": "4 tranches de jambon",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tranches de jambon"
+      },
+      {
+        "texte": "150 g d'emmental râpé",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "emmental râpé"
+      },
+      {
+        "texte": "30 g de beurre mou",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "4 c. à soupe de crème fraîche ou béchamel",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "crème fraîche ou béchamel"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 220 °C (ou en position grill).",
+      "Beurrer légèrement les tranches de pain sur une face.",
+      "Sur la face non beurrée de 4 tranches, poser une tranche de jambon et un peu de fromage. Refermer, face beurrée vers l’extérieur.",
+      "Napper le dessus de crème fraîche, parsemer du reste de fromage et poivrer.",
+      "Cuire 10 minutes, jusqu’à ce que le dessus soit gratiné. Ajouter un œuf au plat dessus pour un croque-madame."
+    ]
+  },
+  {
     "id": "static-114",
     "titre": "Croques jambon, fromage et mozzarella",
     "photo": "photos/enattente.png",
@@ -9959,6 +10407,157 @@ const recettes = [
     ]
   },
   {
+    "id": "static-475",
+    "titre": "Curry vert thaï au poulet",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "500 g de blancs de poulet",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "blancs de poulet"
+      },
+      {
+        "texte": "400 ml de lait de coco",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "lait de coco"
+      },
+      {
+        "texte": "2 c. à soupe de pâte de curry vert",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "pâte de curry vert"
+      },
+      {
+        "texte": "1 courgette",
+        "valeur": 1,
+        "unite": null,
+        "reste": "courgette"
+      },
+      {
+        "texte": "150 g d'haricots verts",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "haricots verts"
+      },
+      {
+        "texte": "1 c. à soupe de sauce nuoc-mâm",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sauce nuoc-mâm"
+      },
+      {
+        "texte": "1 c. à café de sucre",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 c. à soupe d'huile",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "basilic thaï ou coriandre",
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      }
+    ],
+    "etapes": [
+      "Faire chauffer l’huile et y faire revenir la pâte de curry 1 minute pour libérer les arômes.",
+      "Ajouter la moitié du lait de coco et cuire 2 minutes, puis le poulet coupé en lamelles.",
+      "Ajouter le reste du lait de coco, la courgette en dés et les haricots coupés en tronçons. Laisser mijoter 12 minutes.",
+      "Assaisonner avec le nuoc-mâm, le sucre et le jus de citron vert.",
+      "Parsemer de basilic et servir avec du riz jasmin."
+    ]
+  },
+  {
+    "id": "static-479",
+    "titre": "Dal de lentilles corail",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "250 g de lentilles corail",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "lentilles corail"
+      },
+      {
+        "texte": "400 ml de lait de coco",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "lait de coco"
+      },
+      {
+        "texte": "400 ml d'eau",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 c. à soupe de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "2 c. à café de curry",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "curry"
+      },
+      {
+        "texte": "1 c. à café de curcuma",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "curcuma"
+      },
+      {
+        "texte": "200 g de tomates concassées",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "1 c. à soupe d'huile",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "coriandre",
+      "sel"
+    ],
+    "etapes": [
+      "Rincer les lentilles.",
+      "Faire revenir l’oignon, l’ail et le gingembre dans l’huile, puis ajouter les épices 1 minute.",
+      "Ajouter les lentilles, les tomates, le lait de coco et l’eau.",
+      "Laisser mijoter 20 minutes en remuant, jusqu’à ce que les lentilles se défassent. Saler.",
+      "Servir avec du riz ou des naans et de la coriandre."
+    ]
+  },
+  {
     "id": "static-124",
     "titre": "Dessert express aux Oreos prêt en 15 minutes",
     "photo": "photos/enattente.png",
@@ -10448,6 +11047,96 @@ const recettes = [
     ]
   },
   {
+    "id": "static-487",
+    "titre": "Empanadas à la viande",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "1 h 15",
+    "personnes": "12 empanadas",
+    "ingredients": [
+      {
+        "texte": "400 g de farine",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "120 g de beurre froid",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "beurre froid"
+      },
+      {
+        "texte": "150 ml d'eau froide",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "eau froide"
+      },
+      {
+        "texte": "1 c. à café de sel",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sel"
+      },
+      {
+        "texte": "400 g de bœuf haché",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "bœuf haché"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 poivron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron"
+      },
+      {
+        "texte": "2 œufs durs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs durs"
+      },
+      {
+        "texte": "50 g d'olives vertes",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "olives vertes"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Pâte : sabler la farine, le sel et le beurre froid, puis ajouter l’eau et former une boule. Réserver 30 minutes au frais.",
+      "Farce : faire revenir l’oignon et le poivron, ajouter la viande et les épices, cuire 10 minutes. Laisser refroidir puis ajouter les œufs durs et les olives hachés.",
+      "Préchauffer le four à 200 °C. Étaler la pâte et découper des disques de 12 cm.",
+      "Garnir chaque disque, replier en demi-lune et souder les bords en les torsadant.",
+      "Dorer au jaune d’œuf et cuire 20 à 25 minutes."
+    ]
+  },
+  {
     "id": "static-424",
     "titre": "Endives au jambon",
     "photo": "photos/enattente.png",
@@ -10894,6 +11583,141 @@ const recettes = [
       "Passer chaque escalope dans la farine, puis dans l’œuf, puis dans la chapelure en appuyant.",
       "Cuire dans l’huile et le beurre chauds 3 minutes par face, jusqu’à ce qu’elles soient bien dorées.",
       "Égoutter sur du papier absorbant et servir avec des quartiers de citron."
+    ]
+  },
+  {
+    "id": "static-480",
+    "titre": "Fajitas au poulet",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "8 tortillas de blé",
+        "valeur": 8,
+        "unite": null,
+        "reste": "tortillas de blé"
+      },
+      {
+        "texte": "500 g de blancs de poulet",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "blancs de poulet"
+      },
+      {
+        "texte": "2 poivrons (rouge et vert)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "poivrons (rouge et vert)"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de paprika fumé",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika fumé"
+      },
+      {
+        "texte": "0,5 c. à café de piment",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "piment"
+      },
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "guacamole, crème fraîche, salsa et fromage râpé pour servir",
+      "sel"
+    ],
+    "etapes": [
+      "Couper le poulet, les poivrons et l’oignon en lanières.",
+      "Mélanger le poulet avec les épices, le jus du citron vert, du sel et 1 cuillère d’huile.",
+      "Faire sauter le poulet à feu vif 5 minutes, puis ajouter les légumes et cuire encore 5 minutes : ils doivent rester croquants.",
+      "Réchauffer les tortillas à la poêle.",
+      "Garnir chaque tortilla de poulet et légumes, avec guacamole, crème, salsa et fromage."
+    ]
+  },
+  {
+    "id": "static-485",
+    "titre": "Falafels maison",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "30 min (+ 12 h de trempage)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "250 g de pois chiches secs (non cuits)",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "pois chiches secs (non cuits)"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "3 gousses d'ail",
+        "valeur": 3,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      "un bouquet de persil et de coriandre",
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de coriandre moulue",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "coriandre moulue"
+      },
+      {
+        "texte": "1 c. à café de sel",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 c. à café de bicarbonate",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "bicarbonate"
+      },
+      "huile pour friture",
+      "sauce : yaourt, tahini, citron"
+    ],
+    "etapes": [
+      "Faire tremper les pois chiches secs 12 heures dans l’eau froide (ne surtout pas utiliser de pois chiches cuits, les falafels se désagrégeraient).",
+      "Égoutter et mixer avec l’oignon, l’ail, les herbes, les épices et le sel jusqu’à obtenir une semoule humide.",
+      "Ajouter le bicarbonate et réserver 30 minutes au frais.",
+      "Former des boulettes légèrement aplaties.",
+      "Frire 3 à 4 minutes à 175 °C, jusqu’à ce qu’elles soient bien dorées. Servir avec la sauce, en pita ou en salade."
     ]
   },
   {
@@ -11357,6 +12181,53 @@ const recettes = [
       "Étaler la pâte sur une plaque huilée et garnir selon votre choix.",
       "Laisser à nouveau lever pendant environ 30 minutes.",
       "Préchauffer le four à 175 °C et cuire la focaccia 20 à 25 minutes, jusqu’à ce qu’elle soit dorée."
+    ]
+  },
+  {
+    "id": "static-489",
+    "titre": "Foie gras mi-cuit au torchon",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "30 min (+ 48 h de repos)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "1 lobe de foie gras cru déveiné (500 g)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "lobe de foie gras cru déveiné (500 g)"
+      },
+      {
+        "texte": "7 g de sel fin",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "sel fin"
+      },
+      {
+        "texte": "2 g de poivre blanc",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "poivre blanc"
+      },
+      {
+        "texte": "1 pincée de sucre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sucre"
+      },
+      {
+        "texte": "2 c. à soupe de cognac ou porto (facultatif)",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "cognac ou porto (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Laisser le foie 1 heure à température ambiante, puis retirer les veines s’il ne l’est pas.",
+      "L’assaisonner avec le sel, le poivre, le sucre et l’alcool.",
+      "Le rouler serré en boudin dans du film alimentaire, puis dans un torchon propre, en ficelant les extrémités.",
+      "Le plonger 4 minutes dans une casserole d’eau frémissante (environ 80 °C), puis immédiatement dans de l’eau glacée.",
+      "Réserver 48 heures au réfrigérateur avant de trancher. Servir avec du pain d’épices ou un chutney de figues."
     ]
   },
   {
@@ -15821,6 +16692,158 @@ const recettes = [
     ]
   },
   {
+    "id": "static-483",
+    "titre": "Gyozas au porc",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "1 h",
+    "personnes": "30 gyozas",
+    "ingredients": [
+      {
+        "texte": "30 feuilles à gyozas",
+        "valeur": 30,
+        "unite": null,
+        "reste": "feuilles à gyozas"
+      },
+      {
+        "texte": "300 g de porc haché",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "porc haché"
+      },
+      {
+        "texte": "150 g de chou chinois",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chou chinois"
+      },
+      {
+        "texte": "2 oignons nouveaux",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons nouveaux"
+      },
+      {
+        "texte": "1 c. à soupe de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "2 c. à soupe de sauce soja",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "1 c. à café d'huile de sésame",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "huile de sésame"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      {
+        "texte": "100 ml d'eau",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      "sauce : sauce soja et vinaigre de riz à parts égales"
+    ],
+    "etapes": [
+      "Hacher finement le chou, le saler légèrement, attendre 10 minutes puis le presser pour retirer l’eau.",
+      "Mélanger le porc, le chou, les oignons nouveaux, le gingembre, l’ail, la sauce soja et l’huile de sésame.",
+      "Déposer une cuillère à café de farce au centre de chaque feuille, mouiller le bord et refermer en formant des plis.",
+      "Faire dorer les gyozas à plat 2 minutes dans l’huile chaude.",
+      "Verser l’eau, couvrir aussitôt et cuire 6 minutes à la vapeur, puis découvrir jusqu’à évaporation complète.",
+      "Servir avec la sauce soja-vinaigre."
+    ]
+  },
+  {
+    "id": "static-486",
+    "titre": "Gyros de poulet et pitas",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min (+ 1 h de marinade)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "600 g d'hauts de cuisses de poulet désossés",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "hauts de cuisses de poulet désossés"
+      },
+      {
+        "texte": "100 g d'yaourt grec",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "yaourt grec"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "1 c. à café d'origan",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "origan"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "4 pains pitas",
+        "valeur": 4,
+        "unite": null,
+        "reste": "pains pitas"
+      },
+      {
+        "texte": "1 tomate",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tomate"
+      },
+      {
+        "texte": "1 oignon rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      "sauce tzatziki",
+      "frites (facultatif)",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Mariner le poulet avec le yaourt, l’ail, le jus du citron, l’origan, le paprika, du sel et du poivre pendant au moins 1 heure.",
+      "Cuire le poulet à la poêle à feu vif ou au four à 220 °C 20 minutes, puis le trancher finement.",
+      "Réchauffer les pitas.",
+      "Garnir de poulet, de tzatziki, de tomate, d’oignon rouge et éventuellement de quelques frites. Rouler et servir."
+    ]
+  },
+  {
     "id": "static-416",
     "titre": "Hachis parmentier",
     "photo": "photos/enattente.png",
@@ -18331,6 +19354,30 @@ const recettes = [
     ]
   },
   {
+    "id": "static-496",
+    "titre": "Mendiants au chocolat",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat noir ou au lait",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir ou au lait"
+      },
+      "amandes, noisettes, pistaches",
+      "raisins secs, écorces d’orange confites, cranberries"
+    ],
+    "etapes": [
+      "Faire fondre le chocolat au bain-marie (idéalement le tempérer pour qu’il reste brillant).",
+      "Déposer des petits disques de chocolat à la cuillère sur du papier cuisson.",
+      "Avant qu’ils ne durcissent, disposer les fruits secs et confits dessus.",
+      "Laisser figer à température ambiante ou 15 minutes au frais."
+    ]
+  },
+  {
     "id": "static-221",
     "titre": "Meringues maison",
     "photo": "photos/enattente.png",
@@ -19570,6 +20617,72 @@ const recettes = [
     ]
   },
   {
+    "id": "static-478",
+    "titre": "Naans maison",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "30 min (+ 1 h de pousse)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "300 g de farine",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "5 g de levure de boulanger sèche",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "levure de boulanger sèche"
+      },
+      {
+        "texte": "125 g d'yaourt nature",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "yaourt nature"
+      },
+      {
+        "texte": "100 ml d'eau tiède",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "eau tiède"
+      },
+      {
+        "texte": "1 c. à café de sucre",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 c. à café de sel",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sel"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      {
+        "texte": "30 g de beurre fondu (ou à l’ail)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre fondu (ou à l’ail)"
+      }
+    ],
+    "etapes": [
+      "Délayer la levure et le sucre dans l’eau tiède.",
+      "Ajouter la farine, le sel, le yaourt et l’huile, puis pétrir 5 minutes jusqu’à obtenir une pâte souple.",
+      "Laisser lever 1 heure à couvert.",
+      "Diviser en 6 boules et les étaler en ovales fins.",
+      "Cuire dans une poêle très chaude sans matière grasse 1 à 2 minutes par face : des bulles se forment.",
+      "Badigeonner de beurre fondu à la sortie."
+    ]
+  },
+  {
     "id": "static-243",
     "titre": "Napolitain maison meilleur que le commerce",
     "photo": "photos/enattente.png",
@@ -20647,6 +21760,103 @@ const recettes = [
     ]
   },
   {
+    "id": "static-476",
+    "titre": "Pad thaï aux crevettes",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "250 g de nouilles de riz plates",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "nouilles de riz plates"
+      },
+      {
+        "texte": "300 g de crevettes décortiquées",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "crevettes décortiquées"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "150 g de pousses de soja",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "pousses de soja"
+      },
+      {
+        "texte": "3 oignons nouveaux",
+        "valeur": 3,
+        "unite": null,
+        "reste": "oignons nouveaux"
+      },
+      {
+        "texte": "50 g de cacahuètes concassées",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "cacahuètes concassées"
+      },
+      {
+        "texte": "3 c. à soupe de sauce nuoc-mâm",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "sauce nuoc-mâm"
+      },
+      {
+        "texte": "2 c. à soupe de sucre roux",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sucre roux"
+      },
+      {
+        "texte": "2 c. à soupe de jus de citron vert",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "1 c. à soupe de sauce soja",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "coriandre fraîche",
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      }
+    ],
+    "etapes": [
+      "Faire tremper les nouilles 10 minutes dans de l’eau chaude, puis les égoutter.",
+      "Mélanger le nuoc-mâm, le sucre, le jus de citron vert et la sauce soja.",
+      "Dans un wok très chaud avec l’huile, faire sauter l’ail et les crevettes 2 minutes, puis les pousser sur le côté.",
+      "Casser les œufs dans le wok et les brouiller rapidement.",
+      "Ajouter les nouilles et la sauce, mélanger 2 minutes, puis les pousses de soja et les oignons nouveaux.",
+      "Servir avec les cacahuètes, la coriandre et des quartiers de citron vert."
+    ]
+  },
+  {
     "id": "static-449",
     "titre": "Paella",
     "photo": "photos/enattente.png",
@@ -20925,6 +22135,83 @@ const recettes = [
       "Préchauffer le four à 180°C.",
       "Badigeonner les pains avec l'œuf battu mélangé au lait et saupoudrer de graines de sésame.",
       "Cuire pendant environ 20 minutes à 180°C jusqu'à dorure légère."
+    ]
+  },
+  {
+    "id": "static-494",
+    "titre": "Pain d’épices",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h 15",
+    "personnes": "10",
+    "ingredients": [
+      {
+        "texte": "250 g de miel",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "miel"
+      },
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "100 g de sucre roux",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre roux"
+      },
+      {
+        "texte": "150 ml de lait",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "2 c. à café de mélange 4 épices pour pain d’épices",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "mélange 4 épices pour pain d’épices"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 zeste d’orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "zeste d’orange"
+      },
+      {
+        "texte": "50 g de beurre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 160 °C et beurrer un moule à cake.",
+      "Faire tiédir le lait avec le miel, le sucre et le beurre jusqu’à ce que tout soit fondu.",
+      "Mélanger la farine, la levure, les épices et le zeste, puis verser le mélange tiède.",
+      "Ajouter les œufs et mélanger jusqu’à obtenir une pâte lisse.",
+      "Cuire 50 à 60 minutes. Il est meilleur le lendemain, emballé dans du film."
     ]
   },
   {
@@ -21657,6 +22944,66 @@ const recettes = [
     ]
   },
   {
+    "id": "static-488",
+    "titre": "Pastéis de nata",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "1 pâte feuilletée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte feuilletée"
+      },
+      {
+        "texte": "400 ml de lait entier",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "4 jaunes d'œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "120 g de sucre",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "30 g de maïzena",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "1 bâton de cannelle",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bâton de cannelle"
+      },
+      {
+        "texte": "1 zeste de citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "zeste de citron"
+      },
+      "cannelle en poudre pour servir"
+    ],
+    "etapes": [
+      "Préchauffer le four au maximum (250 à 280 °C).",
+      "Rouler la pâte feuilletée en boudin serré, le couper en 12 tronçons et les écraser au pouce dans un moule à muffins beurré, en remontant sur les bords.",
+      "Chauffer le lait avec la cannelle et le zeste. Fouetter les jaunes, le sucre et la maïzena, verser le lait chaud dessus puis épaissir à feu doux en fouettant.",
+      "Retirer cannelle et zeste, puis remplir les fonds aux trois quarts.",
+      "Cuire 12 à 15 minutes, jusqu’à ce que le dessus soit caramélisé par endroits. Saupoudrer de cannelle."
+    ]
+  },
+  {
     "id": "static-406",
     "titre": "Pâte à choux",
     "photo": "photos/enattente.png",
@@ -22364,6 +23711,60 @@ const recettes = [
     ]
   },
   {
+    "id": "static-499",
+    "titre": "Pâtes au saumon et à la crème",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "20 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de tagliatelles",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "tagliatelles"
+      },
+      {
+        "texte": "200 g de saumon fumé ou 2 pavés cuits",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "saumon fumé ou 2 pavés cuits"
+      },
+      {
+        "texte": "200 ml de crème fraîche",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème fraîche"
+      },
+      {
+        "texte": "1 échalote",
+        "valeur": 1,
+        "unite": null,
+        "reste": "échalote"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "10 g de beurre",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      "aneth ou ciboulette",
+      "poivre"
+    ],
+    "etapes": [
+      "Cuire les pâtes dans l’eau bouillante salée.",
+      "Faire revenir l’échalote ciselée dans le beurre, ajouter la crème et le zeste du citron, puis laisser frémir 3 minutes.",
+      "Ajouter le saumon coupé en lanières hors du feu.",
+      "Mélanger avec les pâtes égouttées, poivrer et parsemer d’herbes."
+    ]
+  },
+  {
     "id": "static-280",
     "titre": "Pâtes crémeuses à l'ail et parmesan avec herbes",
     "photo": "photos/enattente.png",
@@ -22827,6 +24228,60 @@ const recettes = [
           "Rectifier l'assaisonnement et servir aussitôt, avec un peu de feta émiettée en plus si désiré."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-498",
+    "titre": "Pâtes thon-tomate express",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de pâtes",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "pâtes"
+      },
+      {
+        "texte": "2 boîtes de thon au naturel",
+        "valeur": 2,
+        "unite": null,
+        "reste": "boîtes de thon au naturel"
+      },
+      {
+        "texte": "400 g de tomates concassées",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à soupe de câpres (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "câpres (facultatif)"
+      },
+      "basilic ou origan",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Cuire les pâtes dans l’eau bouillante salée.",
+      "Pendant ce temps, faire revenir l’ail dans l’huile, ajouter les tomates et laisser réduire 8 minutes.",
+      "Ajouter le thon émietté, les câpres, du sel et du poivre.",
+      "Mélanger avec les pâtes égouttées et parsemer de basilic."
     ]
   },
   {
@@ -23294,6 +24749,66 @@ const recettes = [
       "Battre l'œuf et badigeonner les bords pour sceller et obtenir une couleur dorée.",
       "Enfourner 12 à 15 minutes jusqu'à ce que la croûte soit dorée et le fromage fondu.",
       "Parsemer de basilic frais et couper en portions."
+    ]
+  },
+  {
+    "id": "static-502",
+    "titre": "Poêlée de légumes",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "25 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 courgettes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "courgettes"
+      },
+      {
+        "texte": "1 poivron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "200 g de champignons",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "champignons"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "herbes de Provence",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper tous les légumes en morceaux de taille similaire, les carottes plus finement (elles cuisent plus lentement).",
+      "Faire revenir l’oignon et les carottes 5 minutes dans l’huile à feu vif.",
+      "Ajouter le poivron, les courgettes et les champignons, puis cuire 10 minutes en remuant.",
+      "Ajouter l’ail et les herbes en fin de cuisson. Saler, poivrer. Les légumes doivent rester légèrement croquants."
     ]
   },
   {
@@ -24868,6 +26383,90 @@ const recettes = [
     ]
   },
   {
+    "id": "static-482",
+    "titre": "Ramen maison au poulet",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "45 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "200 g de nouilles à ramen",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "nouilles à ramen"
+      },
+      {
+        "texte": "1 l de bouillon de volaille",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "bouillon de volaille"
+      },
+      {
+        "texte": "2 c. à soupe de sauce soja",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "1 c. à soupe de miso (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "miso (facultatif)"
+      },
+      {
+        "texte": "1 c. à soupe de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 blanc de poulet",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc de poulet"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "2 oignons nouveaux",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons nouveaux"
+      },
+      {
+        "texte": "100 g de champignons",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "champignons"
+      },
+      "feuilles de nori, graines de sésame",
+      {
+        "texte": "1 c. à café d'huile de sésame",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "huile de sésame"
+      }
+    ],
+    "etapes": [
+      "Cuire les œufs 6 minutes 30, les refroidir dans l’eau glacée, les écaler et les faire mariner dans 1 cuillère de sauce soja.",
+      "Faire frémir le bouillon avec l’ail, le gingembre, le reste de sauce soja et le miso. Y pocher le blanc de poulet 12 minutes, puis le trancher.",
+      "Ajouter les champignons émincés au bouillon 3 minutes.",
+      "Cuire les nouilles à part selon le paquet et les répartir dans deux grands bols.",
+      "Verser le bouillon chaud, ajouter le poulet, les œufs coupés en deux, les oignons nouveaux, la nori, le sésame et l’huile de sésame."
+    ]
+  },
+  {
     "id": "static-307",
     "titre": "Ratatouille",
     "photo": "photos/enattente.png",
@@ -26422,6 +28021,66 @@ const recettes = [
     ]
   },
   {
+    "id": "static-503",
+    "titre": "Salade de lentilles",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "250 g de lentilles vertes",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "lentilles vertes"
+      },
+      {
+        "texte": "1 échalote",
+        "valeur": 1,
+        "unite": null,
+        "reste": "échalote"
+      },
+      {
+        "texte": "1 carotte",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte"
+      },
+      {
+        "texte": "100 g de lardons ou feta (facultatif)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "lardons ou feta (facultatif)"
+      },
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à soupe de vinaigre de vin",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "vinaigre de vin"
+      },
+      {
+        "texte": "1 c. à café de moutarde",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "moutarde"
+      },
+      "persil",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Cuire les lentilles 20 à 25 minutes dans l’eau non salée avec la carotte coupée en dés, puis égoutter et saler.",
+      "Préparer une vinaigrette avec la moutarde, le vinaigre, l’huile, du sel et du poivre.",
+      "Mélanger les lentilles tièdes avec la vinaigrette, l’échalote ciselée et le persil.",
+      "Ajouter les lardons dorés ou la feta émiettée. Servir tiède ou froid."
+    ]
+  },
+  {
     "id": "static-326",
     "titre": "Salade estivale rafraîchissante à la burrata et jambon cru",
     "photo": "photos/enattente.png",
@@ -27346,6 +29005,58 @@ const recettes = [
       "Sur 4 feuilles de papier cuisson, disposer les courgettes, un pavé de saumon, 2 tranches de citron et de l’aneth. Saler, poivrer et arroser d’huile.",
       "Refermer les papillotes hermétiquement et cuire 15 à 18 minutes.",
       "Servir dans la papillote, avec du riz."
+    ]
+  },
+  {
+    "id": "static-490",
+    "titre": "Saumon gravlax",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min (+ 48 h de marinade)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "800 g de filet de saumon très frais avec la peau",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "filet de saumon très frais avec la peau"
+      },
+      {
+        "texte": "100 g de gros sel",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "gros sel"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 bouquet d’aneth",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet d’aneth"
+      },
+      {
+        "texte": "1 c. à soupe de baies roses ou poivre concassé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "baies roses ou poivre concassé"
+      },
+      {
+        "texte": "1 zeste de citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "zeste de citron"
+      }
+    ],
+    "etapes": [
+      "Vérifier qu’il ne reste pas d’arêtes. Mélanger le sel, le sucre, le poivre et le zeste.",
+      "Dans un plat, étaler la moitié du mélange, poser le saumon côté peau, puis couvrir du reste et de l’aneth haché.",
+      "Filmer, poser un poids et réfrigérer 48 heures en retournant le filet toutes les 12 heures.",
+      "Rincer, sécher et trancher finement en biais. Servir avec une sauce moutarde-aneth."
     ]
   },
   {
@@ -29803,6 +31514,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-497",
+    "titre": "Toasts de fête au saumon fumé",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "15 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "12 toasts ou blinis",
+        "valeur": 12,
+        "unite": null,
+        "reste": "toasts ou blinis"
+      },
+      {
+        "texte": "150 g de saumon fumé",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "saumon fumé"
+      },
+      {
+        "texte": "100 g de fromage frais (type Saint Môret)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "fromage frais (type Saint Môret)"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      "aneth",
+      "poivre"
+    ],
+    "etapes": [
+      "Mélanger le fromage frais avec le zeste du citron, un peu d’aneth ciselé et du poivre.",
+      "Tartiner les toasts.",
+      "Ajouter une lanière de saumon fumé roulée en rose, une goutte de jus de citron et un brin d’aneth."
+    ]
+  },
+  {
     "id": "static-368",
     "titre": "Tomates farcies au steak haché",
     "photo": "photos/tomatesfarcis.png",
@@ -29864,6 +31616,46 @@ const recettes = [
       "Préchauffer le four à 180°C. Ajouter la chapelure à la farce pour la lier légèrement.",
       "Garnir les tomates évidées avec la farce, parsemer de fromage râpé, puis les disposer dans un plat allant au four.",
       "Enfourner 25 à 30 minutes, jusqu'à ce que les tomates soient tendres et le dessus gratiné."
+    ]
+  },
+  {
+    "id": "static-495",
+    "titre": "Truffes au chocolat",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min (+ 3 h au frais)",
+    "personnes": "30 truffes",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat noir",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "100 ml de crème liquide",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "40 g de cacao en poudre",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "cacao en poudre"
+      }
+    ],
+    "etapes": [
+      "Faire chauffer la crème, la verser sur le chocolat haché et mélanger jusqu’à obtenir une ganache lisse. Ajouter le beurre.",
+      "Laisser prendre au réfrigérateur au moins 3 heures.",
+      "Prélever des petites portions à la cuillère, les rouler rapidement entre les mains.",
+      "Les rouler dans le cacao et conserver au frais dans une boîte."
     ]
   },
   {
@@ -30187,6 +31979,63 @@ const recettes = [
     ]
   },
   {
+    "id": "static-493",
+    "titre": "Vin chaud",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "20 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "75 cl de vin rouge",
+        "valeur": 75,
+        "unite": "cl",
+        "reste": "vin rouge"
+      },
+      {
+        "texte": "1 orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "orange"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "2 bâtons de cannelle",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bâtons de cannelle"
+      },
+      {
+        "texte": "3 clous de girofle",
+        "valeur": 3,
+        "unite": null,
+        "reste": "clous de girofle"
+      },
+      {
+        "texte": "2 étoiles de badiane",
+        "valeur": 2,
+        "unite": null,
+        "reste": "étoiles de badiane"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      }
+    ],
+    "etapes": [
+      "Verser le vin dans une casserole avec le sucre, l’orange coupée en rondelles et les épices.",
+      "Faire chauffer à feu doux 15 minutes sans jamais laisser bouillir.",
+      "Filtrer et servir bien chaud dans des tasses."
+    ]
+  },
+  {
     "id": "static-375",
     "titre": "Vinaigrette maison à la moutarde",
     "photo": "photos/enattente.png",
@@ -30401,6 +32250,60 @@ const recettes = [
           "Astuce : des disques bien réguliers s'emboîtent mieux (poche à douille ou cuillère à glace). Se conservent 2 jours dans une boîte hermétique."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-500",
+    "titre": "Wrap poulet-crudités",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "15 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "2 grandes tortillas",
+        "valeur": 2,
+        "unite": null,
+        "reste": "grandes tortillas"
+      },
+      {
+        "texte": "1 blanc de poulet cuit",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc de poulet cuit"
+      },
+      {
+        "texte": "1 tomate",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tomate"
+      },
+      "quelques feuilles de salade",
+      {
+        "texte": "0,5 avocat",
+        "valeur": 0.5,
+        "unite": null,
+        "reste": "avocat"
+      },
+      {
+        "texte": "2 c. à soupe de fromage frais ou sauce blanche",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "fromage frais ou sauce blanche"
+      },
+      {
+        "texte": "30 g de cheddar ou emmental râpé",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "cheddar ou emmental râpé"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Trancher le poulet, la tomate et l’avocat.",
+      "Tartiner les tortillas de fromage frais.",
+      "Garnir de salade, de poulet, de tomate, d’avocat et de fromage. Saler et poivrer.",
+      "Replier le bas, puis rouler serré. Couper en deux en biais."
     ]
   },
   {
