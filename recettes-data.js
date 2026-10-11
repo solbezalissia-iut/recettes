@@ -1,5 +1,78 @@
 const recettes = [
   {
+    "id": "static-621",
+    "titre": "Affogato",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "1 expresso bien chaud",
+        "valeur": 1,
+        "unite": null,
+        "reste": "expresso bien chaud"
+      },
+      {
+        "texte": "1 boule de glace vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "boule de glace vanille"
+      },
+      {
+        "texte": "1 cl d'amaretto (facultatif)",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "amaretto (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Mettre la boule de glace dans une petite tasse ou un verre.",
+      "Verser l’expresso brûlant dessus au moment de servir (et l’amaretto si désiré).",
+      "Déguster aussitôt, pendant que la glace fond."
+    ]
+  },
+  {
+    "id": "static-598",
+    "titre": "Amaretto sour",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4,5 cl d'amaretto",
+        "valeur": 4.5,
+        "unite": "cl",
+        "reste": "amaretto"
+      },
+      {
+        "texte": "3 cl de jus de citron",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "jus de citron"
+      },
+      {
+        "texte": "1 cl de sirop de sucre",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "sirop de sucre"
+      },
+      {
+        "texte": "1 blanc d'œuf (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc d'œuf (facultatif)"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Secouer tous les ingrédients sans glace 10 secondes pour faire mousser le blanc.",
+      "Ajouter des glaçons et secouer à nouveau.",
+      "Filtrer dans un verre bas sur des glaçons et décorer d’une cerise."
+    ]
+  },
+  {
     "id": "static-561",
     "titre": "Aperol Spritz classique",
     "photo": "photos/enattente.png",
@@ -516,6 +589,91 @@ const recettes = [
     ]
   },
   {
+    "id": "static-593",
+    "titre": "Bahama Mama",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "3 cl de rhum ambré",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "rhum ambré"
+      },
+      {
+        "texte": "2 cl de Malibu",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "Malibu"
+      },
+      {
+        "texte": "1 cl de liqueur de café",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "liqueur de café"
+      },
+      {
+        "texte": "6 cl de jus d'ananas",
+        "valeur": 6,
+        "unite": "cl",
+        "reste": "jus d'ananas"
+      },
+      {
+        "texte": "3 cl de jus d'orange",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "1 cl de grenadine",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "grenadine"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Secouer tous les ingrédients sauf la grenadine au shaker avec des glaçons.",
+      "Verser dans un verre haut rempli de glaçons.",
+      "Faire couler la grenadine qui tombe au fond."
+    ]
+  },
+  {
+    "id": "static-600",
+    "titre": "Baileys milkshake",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de Baileys",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "Baileys"
+      },
+      {
+        "texte": "2 boules de glace vanille",
+        "valeur": 2,
+        "unite": null,
+        "reste": "boules de glace vanille"
+      },
+      {
+        "texte": "10 cl de lait froid",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "lait froid"
+      },
+      "chantilly et copeaux de chocolat"
+    ],
+    "etapes": [
+      "Mixer le Baileys, la glace et le lait.",
+      "Verser dans un grand verre et couvrir de chantilly et de copeaux de chocolat."
+    ]
+  },
+  {
     "id": "static-7",
     "titre": "Balles au fromage",
     "photo": "photos/enattente.png",
@@ -625,6 +783,42 @@ const recettes = [
       "Écraser les bananes à la fourchette, puis ajouter les œufs, le sucre et le beurre fondu.",
       "Incorporer la farine, la levure, le bicarbonate, la cannelle et le sel sans trop mélanger.",
       "Ajouter les noix ou les pépites, verser dans le moule et cuire 50 à 55 minutes."
+    ]
+  },
+  {
+    "id": "static-620",
+    "titre": "Banana split",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "2 bananes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bananes"
+      },
+      {
+        "texte": "6 boules de glace (vanille, chocolat, fraise)",
+        "valeur": 6,
+        "unite": null,
+        "reste": "boules de glace (vanille, chocolat, fraise)"
+      },
+      "sauce chocolat",
+      "chantilly",
+      "cacahuètes ou amandes concassées",
+      {
+        "texte": "2 cerises confites",
+        "valeur": 2,
+        "unite": null,
+        "reste": "cerises confites"
+      }
+    ],
+    "etapes": [
+      "Couper les bananes en deux dans la longueur et les placer dans deux coupes allongées.",
+      "Disposer 3 boules de glace entre les moitiés de banane.",
+      "Napper de sauce chocolat, ajouter la chantilly, les fruits secs et une cerise."
     ]
   },
   {
@@ -2496,6 +2690,46 @@ const recettes = [
       "Verser tous les ingrédients dans un verre haut rempli de glaçons.",
       "Mélanger délicatement en transvasant 2 ou 3 fois d’un verre à l’autre.",
       "Décorer d’une branche de céleri."
+    ]
+  },
+  {
+    "id": "static-592",
+    "titre": "Blue Hawaiian",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "3 cl de rhum blanc",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "2 cl de curaçao bleu",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "curaçao bleu"
+      },
+      {
+        "texte": "3 cl de crème de coco",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "crème de coco"
+      },
+      {
+        "texte": "9 cl de jus d'ananas",
+        "valeur": 9,
+        "unite": "cl",
+        "reste": "jus d'ananas"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Mettre tous les ingrédients dans un shaker (ou un blender) avec des glaçons.",
+      "Secouer ou mixer jusqu’à obtenir un mélange mousseux.",
+      "Verser dans un grand verre et décorer d’ananas et d’une cerise."
     ]
   },
   {
@@ -5460,6 +5694,35 @@ const recettes = [
       "Disposer les dos de cabillaud dans un plat, saler et poivrer.",
       "Mélanger l’huile, le zeste et le jus du citron, l’ail haché et les herbes ciselées, puis en napper le poisson.",
       "Cuire 12 à 15 minutes : la chair doit être nacrée et se détacher en lamelles."
+    ]
+  },
+  {
+    "id": "static-618",
+    "titre": "Café liégeois",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "2 expressos refroidis",
+        "valeur": 2,
+        "unite": null,
+        "reste": "expressos refroidis"
+      },
+      {
+        "texte": "4 boules de glace café ou vanille",
+        "valeur": 4,
+        "unite": null,
+        "reste": "boules de glace café ou vanille"
+      },
+      "chantilly",
+      "grains de café enrobés de chocolat"
+    ],
+    "etapes": [
+      "Mettre 2 boules de glace dans chaque grand verre.",
+      "Verser l’expresso froid par-dessus.",
+      "Couvrir de chantilly et décorer de grains de café. (Version chocolat liégeois : remplacer le café par du chocolat chaud refroidi et la glace par de la glace chocolat.)"
     ]
   },
   {
@@ -8442,6 +8705,33 @@ const recettes = [
       "Mélanger la mayonnaise, le yaourt, le vinaigre, le sucre, du sel et du poivre.",
       "Mélanger la sauce avec les légumes.",
       "Réserver 1 heure au frais avant de servir, idéal avec des burgers."
+    ]
+  },
+  {
+    "id": "static-622",
+    "titre": "Colonel (sorbet citron et vodka)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "8 boules de sorbet citron",
+        "valeur": 8,
+        "unite": null,
+        "reste": "boules de sorbet citron"
+      },
+      {
+        "texte": "8 cl de vodka bien froide",
+        "valeur": 8,
+        "unite": "cl",
+        "reste": "vodka bien froide"
+      }
+    ],
+    "etapes": [
+      "Disposer 2 boules de sorbet citron dans chaque coupe ou verre.",
+      "Arroser chaque coupe de 2 cl de vodka sortie du congélateur.",
+      "Servir aussitôt avec une petite cuillère."
     ]
   },
   {
@@ -11827,6 +12117,41 @@ const recettes = [
     ]
   },
   {
+    "id": "static-619",
+    "titre": "Dame blanche",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "8 boules de glace vanille",
+        "valeur": 8,
+        "unite": null,
+        "reste": "boules de glace vanille"
+      },
+      {
+        "texte": "100 g de chocolat noir",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "100 ml de crème liquide",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      "chantilly",
+      "amandes effilées grillées"
+    ],
+    "etapes": [
+      "Faire chauffer la crème, la verser sur le chocolat haché et mélanger pour obtenir une sauce chocolat.",
+      "Disposer 2 boules de glace vanille dans chaque coupe.",
+      "Napper de sauce chocolat chaude, ajouter la chantilly et les amandes."
+    ]
+  },
+  {
     "id": "static-556",
     "titre": "Dattes fourrées",
     "photo": "photos/enattente.png",
@@ -14179,6 +14504,40 @@ const recettes = [
     ]
   },
   {
+    "id": "static-595",
+    "titre": "French martini",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de vodka",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "1,5 cl de liqueur de framboise (Chambord)",
+        "valeur": 1.5,
+        "unite": "cl",
+        "reste": "liqueur de framboise (Chambord)"
+      },
+      {
+        "texte": "4 cl de jus d'ananas",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "jus d'ananas"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Secouer énergiquement tous les ingrédients au shaker avec des glaçons : le jus d’ananas forme une jolie mousse.",
+      "Filtrer dans un verre à martini rafraîchi.",
+      "Décorer d’une framboise."
+    ]
+  },
+  {
     "id": "static-143",
     "titre": "Frites croustillantes maison au four",
     "photo": "photos/enattente.png",
@@ -14296,6 +14655,53 @@ const recettes = [
       "Verser le mélange dans un plat allant au four et ajouter la mozzarella coupée en dés sur le dessus.",
       "Enfourner pendant environ 25 minutes, ou jusqu'à ce que la frittata soit bien cuite et dorée.",
       "Avant de servir, ajouter quelques feuilles de basilic frais."
+    ]
+  },
+  {
+    "id": "static-603",
+    "titre": "Frozen margarita à la fraise",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de tequila",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "tequila"
+      },
+      {
+        "texte": "2 cl de triple sec",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "triple sec"
+      },
+      {
+        "texte": "2 cl de jus de citron vert",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "150 g de fraises surgelées",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "fraises surgelées"
+      },
+      {
+        "texte": "1 cl de sirop de sucre",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "sirop de sucre"
+      },
+      "une poignée de glaçons",
+      "sucre pour le givrage"
+    ],
+    "etapes": [
+      "Givrer le bord du verre avec du citron vert et du sucre.",
+      "Mixer tous les ingrédients jusqu’à obtenir une texture de granité.",
+      "Verser dans le verre et servir aussitôt."
     ]
   },
   {
@@ -16947,6 +17353,125 @@ const recettes = [
     ]
   },
   {
+    "id": "static-612",
+    "titre": "Glace à la noix de coco",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min (+ 6 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "400 ml de lait de coco",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "lait de coco"
+      },
+      {
+        "texte": "200 ml de crème liquide entière bien froide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "150 g de lait concentré sucré",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lait concentré sucré"
+      },
+      {
+        "texte": "50 g de noix de coco râpée",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "noix de coco râpée"
+      }
+    ],
+    "etapes": [
+      "Mélanger le lait de coco, le lait concentré et la noix de coco râpée.",
+      "Fouetter la crème en chantilly et l’incorporer délicatement.",
+      "Congeler 6 heures en mélangeant à la fourchette deux fois pendant les 2 premières heures."
+    ]
+  },
+  {
+    "id": "static-609",
+    "titre": "Glace à la pistache",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "20 min (+ 6 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "100 g de pâte de pistache",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pâte de pistache"
+      },
+      {
+        "texte": "400 ml de crème liquide entière bien froide",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "200 g de lait concentré sucré",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "lait concentré sucré"
+      },
+      {
+        "texte": "50 g de pistaches concassées",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "pistaches concassées"
+      }
+    ],
+    "etapes": [
+      "Mélanger la pâte de pistache avec le lait concentré sucré jusqu’à ce que ce soit lisse.",
+      "Fouetter la crème bien froide en chantilly ferme.",
+      "Incorporer délicatement la chantilly, puis les pistaches concassées.",
+      "Congeler au moins 6 heures dans un bac hermétique."
+    ]
+  },
+  {
+    "id": "static-608",
+    "titre": "Glace au chocolat (sans sorbetière)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min (+ 6 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "150 g de chocolat noir",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "400 ml de crème liquide entière bien froide",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "200 g de lait concentré sucré",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "lait concentré sucré"
+      },
+      {
+        "texte": "2 c. à soupe de cacao non sucré",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "cacao non sucré"
+      }
+    ],
+    "etapes": [
+      "Faire fondre le chocolat au bain-marie, puis le mélanger avec le lait concentré et le cacao. Laisser tiédir.",
+      "Fouetter la crème bien froide en chantilly ferme.",
+      "Incorporer délicatement la chantilly au mélange chocolaté en deux fois.",
+      "Verser dans un bac et congeler au moins 6 heures, sans remuer."
+    ]
+  },
+  {
     "id": "static-175",
     "titre": "Glace au cookie dough express",
     "photo": "photos/enattente.png",
@@ -17018,6 +17543,46 @@ const recettes = [
       "Incorporer délicatement la moitié du cookie dough dans la glace juste avant la mise en pot, puis mélanger légèrement pour créer des stries chocolatées.",
       "Verser le mélange dans un contenant et ajouter le reste du cookie dough en morceaux, en appuyant légèrement pour le répartir.",
       "Conserver au congélateur au moins 2 heures avant dégustation pour une texture ferme et fondante."
+    ]
+  },
+  {
+    "id": "static-610",
+    "titre": "Glace caramel beurre salé",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "25 min (+ 6 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "150 g de caramel au beurre salé (maison ou du commerce)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "caramel au beurre salé (maison ou du commerce)"
+      },
+      {
+        "texte": "400 ml de crème liquide entière bien froide",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "150 g de lait concentré sucré",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lait concentré sucré"
+      },
+      {
+        "texte": "1 pincée de fleur de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "fleur de sel"
+      }
+    ],
+    "etapes": [
+      "Mélanger 100 g de caramel froid avec le lait concentré et la fleur de sel.",
+      "Fouetter la crème bien froide en chantilly ferme, puis l’incorporer délicatement.",
+      "Verser la moitié dans un bac, napper avec la moitié du caramel restant, puis recommencer pour faire des marbrures.",
+      "Congeler au moins 6 heures."
     ]
   },
   {
@@ -17175,6 +17740,134 @@ const recettes = [
           "Sortir la glace 5 à 10 minutes avant de servir pour faciliter le service à la cuillère."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-611",
+    "titre": "Glace stracciatella",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min (+ 6 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "400 ml de crème liquide entière bien froide",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "200 g de lait concentré sucré",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "lait concentré sucré"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "80 g de chocolat noir",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chocolat noir"
+      }
+    ],
+    "etapes": [
+      "Fouetter la crème en chantilly ferme, puis incorporer le lait concentré et la vanille.",
+      "Faire fondre le chocolat et le laisser tiédir.",
+      "Verser la glace dans un bac et faire couler le chocolat en filet fin tout en mélangeant : il durcit en paillettes.",
+      "Congeler au moins 6 heures."
+    ]
+  },
+  {
+    "id": "static-607",
+    "titre": "Glace vanille",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "20 min (+ 6 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 g de crème fraîche",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "crème fraîche"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "3 œufs (blancs et jaunes séparés)",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs (blancs et jaunes séparés)"
+      },
+      {
+        "texte": "1 gousse de vanille (ou 1 c. à café d’extrait)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille (ou 1 c. à café d’extrait)"
+      }
+    ],
+    "etapes": [
+      "Séparer les blancs des jaunes d’œufs.",
+      "Fouetter les jaunes avec le sucre et les graines de vanille jusqu’à ce que le mélange blanchisse.",
+      "Fouetter la crème fraîche bien froide jusqu’à ce qu’elle épaississe, puis l’incorporer au mélange jaunes-sucre.",
+      "Monter les blancs en neige ferme et les incorporer délicatement à la spatule, sans les casser.",
+      "Verser dans un bac hermétique et placer au congélateur au moins 6 heures. Pas besoin de sorbetière ni de remuer : les blancs en neige rendent la glace légère.",
+      "Sortir la glace 10 minutes avant de servir. (Les œufs étant crus, utiliser des œufs très frais.)"
+    ]
+  },
+  {
+    "id": "static-613",
+    "titre": "Glace vanille à la sorbetière (crème anglaise)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min (+ 4 h de repos et turbinage)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 ml de lait entier",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "250 ml de crème liquide entière",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "crème liquide entière"
+      },
+      {
+        "texte": "6 jaunes d'œufs",
+        "valeur": 6,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille"
+      }
+    ],
+    "etapes": [
+      "Chauffer le lait et la crème avec la vanille fendue et grattée, puis laisser infuser 15 minutes.",
+      "Fouetter les jaunes avec le sucre, verser le lait chaud dessus, puis cuire à feu doux en remuant jusqu’à ce que la crème nappe la spatule (sans bouillir).",
+      "Filtrer, laisser refroidir puis réfrigérer au moins 4 heures.",
+      "Turbiner dans la sorbetière 20 à 30 minutes, puis placer au congélateur 1 heure avant de servir."
     ]
   },
   {
@@ -18798,6 +19491,57 @@ const recettes = [
     ]
   },
   {
+    "id": "static-594",
+    "titre": "Hurricane",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de rhum blanc",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "4 cl de rhum ambré",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "rhum ambré"
+      },
+      {
+        "texte": "4 cl de jus de fruit de la passion",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "jus de fruit de la passion"
+      },
+      {
+        "texte": "4 cl de jus d'orange",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "1 cl de jus de citron vert",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "1 cl de grenadine",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "grenadine"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Secouer tous les ingrédients au shaker avec des glaçons.",
+      "Verser dans un grand verre rempli de glace et décorer d’une rondelle d’orange et d’une cerise."
+    ]
+  },
+  {
     "id": "static-388",
     "titre": "Ice tea léger aux pêches et infusion",
     "photo": "photos/enattente.png",
@@ -20207,6 +20951,52 @@ const recettes = [
     ]
   },
   {
+    "id": "static-596",
+    "titre": "Lychee martini",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de vodka",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "2 cl de liqueur de litchi",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "liqueur de litchi"
+      },
+      {
+        "texte": "3 cl de sirop de litchis en conserve",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "sirop de litchis en conserve"
+      },
+      {
+        "texte": "1 cl de jus de citron vert",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "jus de citron vert"
+      },
+      {
+        "texte": "2 litchis (décor)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "litchis (décor)"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Secouer tous les ingrédients au shaker avec des glaçons.",
+      "Filtrer dans un verre à martini.",
+      "Décorer de litchis piqués sur une brochette."
+    ]
+  },
+  {
     "id": "static-206",
     "titre": "Mac and cheese poulet rôti maison",
     "photo": "photos/enattente.png",
@@ -21076,6 +21866,40 @@ const recettes = [
       "Ajouter des lamelles d'avocat, de poivron, un peu de thon égoutté et de carotte râpée.",
       "Couper les concombres garnis en tranches d'environ 1 cm d'épaisseur.",
       "Servir avec de la sauce soja, du wasabi ou de la mayonnaise épicée."
+    ]
+  },
+  {
+    "id": "static-590",
+    "titre": "Malibu ananas",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "2 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de Malibu",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "Malibu"
+      },
+      {
+        "texte": "12 cl de jus d'ananas",
+        "valeur": 12,
+        "unite": "cl",
+        "reste": "jus d'ananas"
+      },
+      "glaçons",
+      {
+        "texte": "1 morceau d'ananas",
+        "valeur": 1,
+        "unite": null,
+        "reste": "morceau d'ananas"
+      }
+    ],
+    "etapes": [
+      "Remplir un verre haut de glaçons.",
+      "Verser le Malibu puis le jus d’ananas et mélanger.",
+      "Décorer d’un morceau d’ananas."
     ]
   },
   {
@@ -22020,6 +22844,48 @@ const recettes = [
     ]
   },
   {
+    "id": "static-601",
+    "titre": "Mojito à la fraise",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de rhum blanc",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "4 fraises",
+        "valeur": 4,
+        "unite": null,
+        "reste": "fraises"
+      },
+      {
+        "texte": "0,5 citron vert",
+        "valeur": 0.5,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      "une dizaine de feuilles de menthe",
+      {
+        "texte": "2 c. à café de sucre de canne",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "sucre de canne"
+      },
+      "eau gazeuse",
+      "glace pilée"
+    ],
+    "etapes": [
+      "Écraser au pilon les fraises coupées, le citron vert en quartiers, la menthe et le sucre au fond d’un verre.",
+      "Remplir de glace pilée et verser le rhum.",
+      "Compléter d’eau gazeuse et mélanger."
+    ]
+  },
+  {
     "id": "static-569",
     "titre": "Moscow mule",
     "photo": "photos/enattente.png",
@@ -22510,6 +23376,46 @@ const recettes = [
       "Plier un côté puis l'autre et rabattre les quatre bords pour former un carré.",
       "Étaler délicatement le carré obtenu et cuire des deux côtés sur une plaque chaude (tajine ou poêle) jusqu'à dorure.",
       "Servir chaud, éventuellement avec du miel ou de la confiture."
+    ]
+  },
+  {
+    "id": "static-599",
+    "titre": "Mudslide",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "3 cl de vodka",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "3 cl de liqueur de café",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "liqueur de café"
+      },
+      {
+        "texte": "3 cl de Baileys",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "Baileys"
+      },
+      {
+        "texte": "2 boules de glace vanille",
+        "valeur": 2,
+        "unite": null,
+        "reste": "boules de glace vanille"
+      },
+      "sauce chocolat"
+    ],
+    "etapes": [
+      "Décorer l’intérieur d’un verre de traits de sauce chocolat.",
+      "Mixer la vodka, la liqueur de café, le Baileys et la glace jusqu’à obtenir un milkshake épais.",
+      "Verser dans le verre et servir aussitôt avec une paille."
     ]
   },
   {
@@ -25600,6 +26506,33 @@ const recettes = [
     ]
   },
   {
+    "id": "static-597",
+    "titre": "Passoã orange",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "2 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de Passoã",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "Passoã"
+      },
+      {
+        "texte": "12 cl de jus d'orange",
+        "valeur": 12,
+        "unite": "cl",
+        "reste": "jus d'orange"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un verre de glaçons.",
+      "Verser le Passoã puis le jus d’orange et mélanger. Simple et très fruité."
+    ]
+  },
+  {
     "id": "static-488",
     "titre": "Pastéis de nata",
     "photo": "photos/enattente.png",
@@ -27074,6 +28007,35 @@ const recettes = [
       "Mettre le rhum, le jus d’ananas, la crème de coco et une poignée de glaçons dans un blender (ou un shaker).",
       "Mixer jusqu’à obtenir une texture onctueuse et mousseuse.",
       "Verser dans un grand verre et décorer d’un morceau d’ananas."
+    ]
+  },
+  {
+    "id": "static-602",
+    "titre": "Pink gin tonic",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "5 cl de gin rose (à la fraise ou à la framboise)",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "gin rose (à la fraise ou à la framboise)"
+      },
+      {
+        "texte": "15 cl de tonic",
+        "valeur": 15,
+        "unite": "cl",
+        "reste": "tonic"
+      },
+      "quelques fraises ou framboises",
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un verre ballon de glaçons et de fruits rouges coupés.",
+      "Verser le gin puis le tonic le long d’une cuillère.",
+      "Mélanger une seule fois."
     ]
   },
   {
@@ -28918,6 +29880,57 @@ const recettes = [
       "Attendre 10 minutes, puis mélanger à nouveau pour éviter les grumeaux.",
       "Réserver au moins 4 heures (ou une nuit) au réfrigérateur : les graines gonflent et forment un pudding.",
       "Servir avec des fruits frais."
+    ]
+  },
+  {
+    "id": "static-605",
+    "titre": "Punch coco",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "10 min (+ 2 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "25 cl de rhum blanc",
+        "valeur": 25,
+        "unite": "cl",
+        "reste": "rhum blanc"
+      },
+      {
+        "texte": "40 cl de lait de coco",
+        "valeur": 40,
+        "unite": "cl",
+        "reste": "lait de coco"
+      },
+      {
+        "texte": "30 cl de lait concentré sucré",
+        "valeur": 30,
+        "unite": "cl",
+        "reste": "lait concentré sucré"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      {
+        "texte": "1 pincée de cannelle",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "cannelle"
+      }
+    ],
+    "etapes": [
+      "Mixer tous les ingrédients jusqu’à obtenir un mélange bien lisse.",
+      "Verser en bouteille et réserver au moins 2 heures au réfrigérateur.",
+      "Agiter avant de servir bien frais, dans des petits verres."
     ]
   },
   {
@@ -32024,6 +33037,72 @@ const recettes = [
     ]
   },
   {
+    "id": "static-604",
+    "titre": "Sangria blanche",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "10 min (+ 3 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "75 cl de vin blanc sec",
+        "valeur": 75,
+        "unite": "cl",
+        "reste": "vin blanc sec"
+      },
+      {
+        "texte": "10 cl de liqueur de pêche ou triple sec",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "liqueur de pêche ou triple sec"
+      },
+      {
+        "texte": "60 g de sucre",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 pêche",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pêche"
+      },
+      {
+        "texte": "1 orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "orange"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "150 g de raisin blanc",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "raisin blanc"
+      },
+      {
+        "texte": "50 cl de limonade",
+        "valeur": 50,
+        "unite": "cl",
+        "reste": "limonade"
+      },
+      "menthe",
+      "glaçons"
+    ],
+    "etapes": [
+      "Couper les fruits en morceaux.",
+      "Mélanger dans une carafe le vin, la liqueur, le sucre et les fruits.",
+      "Laisser macérer 3 heures au réfrigérateur.",
+      "Ajouter la limonade, la menthe et les glaçons au moment de servir."
+    ]
+  },
+  {
     "id": "static-332",
     "titre": "Sauce ail citron dorée",
     "photo": "photos/enattente.png",
@@ -32490,6 +33569,46 @@ const recettes = [
     ]
   },
   {
+    "id": "static-606",
+    "titre": "Sex on the Beach sans alcool",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "8 cl de jus d'orange",
+        "valeur": 8,
+        "unite": "cl",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "8 cl de jus de cranberry",
+        "valeur": 8,
+        "unite": "cl",
+        "reste": "jus de cranberry"
+      },
+      {
+        "texte": "4 cl de jus de pêche",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "jus de pêche"
+      },
+      {
+        "texte": "1 cl de grenadine",
+        "valeur": 1,
+        "unite": "cl",
+        "reste": "grenadine"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Remplir un verre haut de glaçons.",
+      "Verser le jus d’orange et le jus de pêche, puis le jus de cranberry pour créer un dégradé.",
+      "Ajouter la grenadine et servir avec une paille."
+    ]
+  },
+  {
     "id": "static-454",
     "titre": "Shakshuka",
     "photo": "photos/enattente.png",
@@ -32770,6 +33889,129 @@ const recettes = [
       "Tremper chaque sofficini dans le mélange d'œuf puis les enrober de cornflakes écrasés.",
       "Disposer les sofficini sur une plaque de cuisson recouverte de papier sulfurisé.",
       "Enfourner pendant 15 minutes ou jusqu'à ce qu'ils soient dorés et croustillants."
+    ]
+  },
+  {
+    "id": "static-614",
+    "titre": "Sorbet citron",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min (+ 4 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "250 ml de jus de citron frais (environ 6 citrons)",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "jus de citron frais (environ 6 citrons)"
+      },
+      {
+        "texte": "1 zeste de citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "zeste de citron"
+      },
+      {
+        "texte": "200 g de sucre",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "400 ml d'eau",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 blanc d'œuf (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc d'œuf (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Porter l’eau et le sucre à ébullition 2 minutes pour faire un sirop, puis laisser refroidir.",
+      "Ajouter le jus et le zeste de citron.",
+      "Avec sorbetière : turbiner 25 minutes. Sans sorbetière : congeler dans un bac en mélangeant à la fourchette toutes les 30 minutes pendant 3 heures.",
+      "Pour un sorbet plus onctueux, incorporer le blanc d’œuf battu en neige à mi-prise."
+    ]
+  },
+  {
+    "id": "static-615",
+    "titre": "Sorbet fraise",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min (+ 4 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 g de fraises",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "150 ml d'eau",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 citron (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron (jus)"
+      }
+    ],
+    "etapes": [
+      "Porter l’eau et le sucre à ébullition 2 minutes, puis laisser refroidir.",
+      "Mixer les fraises avec le jus de citron, puis ajouter le sirop.",
+      "Turbiner en sorbetière, ou congeler en mélangeant toutes les 30 minutes pendant 3 heures."
+    ]
+  },
+  {
+    "id": "static-616",
+    "titre": "Sorbet mangue express",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "500 g de mangue surgelée en morceaux",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "mangue surgelée en morceaux"
+      },
+      {
+        "texte": "3 c. à soupe de miel ou sirop d’agave",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "miel ou sirop d’agave"
+      },
+      {
+        "texte": "1 citron vert (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert (jus)"
+      },
+      {
+        "texte": "3 c. à soupe d'eau",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "eau"
+      }
+    ],
+    "etapes": [
+      "Mixer la mangue encore congelée avec le miel, le jus de citron vert et l’eau, en raclant les parois.",
+      "Servir aussitôt façon sorbet, ou remettre 30 minutes au congélateur."
     ]
   },
   {
@@ -33131,6 +34373,39 @@ const recettes = [
       "Ajouter une pincée de gros sel selon votre goût.",
       "Mélanger délicatement le tout jusqu'à obtenir une texture homogène.",
       "Verser un filet d'huile d'olive sur le mélange avant de servir."
+    ]
+  },
+  {
+    "id": "static-617",
+    "titre": "Sucettes glacées aux fruits",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min (+ 6 h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "400 g de fruits (fraises, mangue, pêche…)",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "fruits (fraises, mangue, pêche…)"
+      },
+      {
+        "texte": "150 ml de jus d'orange",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "jus d'orange"
+      },
+      {
+        "texte": "2 c. à soupe de miel",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "miel"
+      }
+    ],
+    "etapes": [
+      "Mixer les fruits avec le jus d’orange et le miel.",
+      "Verser dans des moules à glaces, planter les bâtonnets.",
+      "Congeler au moins 6 heures. Passer le moule sous l’eau chaude quelques secondes pour démouler."
     ]
   },
   {
@@ -36497,6 +37772,46 @@ const recettes = [
           "Astuce : des disques bien réguliers s'emboîtent mieux (poche à douille ou cuillère à glace). Se conservent 2 jours dans une boîte hermétique."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-591",
+    "titre": "Woo Woo",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "3 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "4 cl de vodka",
+        "valeur": 4,
+        "unite": "cl",
+        "reste": "vodka"
+      },
+      {
+        "texte": "2 cl de liqueur de pêche",
+        "valeur": 2,
+        "unite": "cl",
+        "reste": "liqueur de pêche"
+      },
+      {
+        "texte": "10 cl de jus de cranberry",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "jus de cranberry"
+      },
+      "glaçons",
+      {
+        "texte": "1 quartier de citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "quartier de citron vert"
+      }
+    ],
+    "etapes": [
+      "Secouer la vodka, la liqueur de pêche et le jus de cranberry au shaker avec des glaçons.",
+      "Verser dans un verre haut rempli de glaçons.",
+      "Décorer d’un quartier de citron vert."
     ]
   },
   {
