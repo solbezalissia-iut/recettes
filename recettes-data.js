@@ -1954,6 +1954,59 @@ const recettes = [
     ]
   },
   {
+    "id": "static-459",
+    "titre": "Blinis maison",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "30 min (+ 1 h de repos)",
+    "personnes": "20 blinis",
+    "ingredients": [
+      {
+        "texte": "125 g de farine",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 c. à café de levure chimique",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "150 ml de lait",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "15 g de beurre fondu",
+        "valeur": 15,
+        "unite": "g",
+        "reste": "beurre fondu"
+      }
+    ],
+    "etapes": [
+      "Mélanger la farine, la levure et le sel. Ajouter l’œuf, puis le lait petit à petit, et enfin le beurre fondu.",
+      "Laisser reposer 1 heure.",
+      "Dans une poêle légèrement beurrée, déposer des cuillères à soupe de pâte.",
+      "Retourner quand des bulles apparaissent et cuire encore 30 secondes.",
+      "Garnir de crème fraîche, de saumon fumé ou de tarama."
+    ]
+  },
+  {
     "id": "static-28",
     "titre": "Blondies au chocolat blanc, Nutella et Kinder",
     "photo": "photos/enattente.png",
@@ -2383,6 +2436,71 @@ const recettes = [
           "Découper en fines bandes et les rouler."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-469",
+    "titre": "Bouillon de volaille maison",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "2 h 30",
+    "personnes": "2 litres",
+    "ingredients": [
+      {
+        "texte": "1 carcasse de poulet (ou 4 ailes)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carcasse de poulet (ou 4 ailes)"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "1 poireau",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poireau"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 branche de céleri",
+        "valeur": 1,
+        "unite": null,
+        "reste": "branche de céleri"
+      },
+      {
+        "texte": "1 bouquet garni",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bouquet garni"
+      },
+      {
+        "texte": "2,5 l d'eau froide",
+        "valeur": 2.5,
+        "unite": "l",
+        "reste": "eau froide"
+      },
+      {
+        "texte": "10 grains de poivre",
+        "valeur": 10,
+        "unite": null,
+        "reste": "grains de poivre"
+      },
+      "sel"
+    ],
+    "etapes": [
+      "Mettre la carcasse dans une grande marmite et couvrir d’eau froide. Porter à ébullition et écumer.",
+      "Ajouter les légumes coupés en gros morceaux, le bouquet garni et le poivre.",
+      "Laisser frémir 2 heures sans couvrir complètement.",
+      "Filtrer, saler légèrement. Se conserve 3 jours au réfrigérateur ou se congèle en portions."
     ]
   },
   {
@@ -4522,6 +4640,113 @@ const recettes = [
     ]
   },
   {
+    "id": "static-453",
+    "titre": "Cabillaud au four, citron et herbes",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "25 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 dos de cabillaud",
+        "valeur": 4,
+        "unite": null,
+        "reste": "dos de cabillaud"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      "persil et ciboulette",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C.",
+      "Disposer les dos de cabillaud dans un plat, saler et poivrer.",
+      "Mélanger l’huile, le zeste et le jus du citron, l’ail haché et les herbes ciselées, puis en napper le poisson.",
+      "Cuire 12 à 15 minutes : la chair doit être nacrée et se détacher en lamelles."
+    ]
+  },
+  {
+    "id": "static-463",
+    "titre": "Cake au citron",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "2 citrons non traités (zeste et jus)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "citrons non traités (zeste et jus)"
+      },
+      {
+        "texte": "100 g de beurre fondu",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "80 ml de crème liquide",
+        "valeur": 80,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "200 g de farine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "100 g de sucre glace (glaçage)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre glace (glaçage)"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 170 °C et chemiser un moule à cake.",
+      "Fouetter les œufs et le sucre jusqu’à blanchiment, puis ajouter les zestes, le jus d’un citron, le beurre fondu et la crème.",
+      "Incorporer la farine et la levure.",
+      "Verser dans le moule et cuire 45 minutes.",
+      "Glaçage : mélanger le sucre glace avec le jus du second citron et en napper le cake refroidi."
+    ]
+  },
+  {
     "id": "static-432",
     "titre": "Cake salé jambon-olives",
     "photo": "photos/enattente.png",
@@ -4647,6 +4872,72 @@ const recettes = [
       "Plonger les portions panées dans l'huile chaude et cuire jusqu'à ce que la croûte soit dorée et croustillante, environ 2 à 3 minutes par face.",
       "Égoutter sur du papier absorbant et saupoudrer légèrement de sel si nécessaire.",
       "Servir immédiatement avec une sauce légère ou une salade verte pour équilibrer le plat."
+    ]
+  },
+  {
+    "id": "static-464",
+    "titre": "Cannelés bordelais",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h 15 (+ 24 h de repos)",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "500 ml de lait entier",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille"
+      },
+      {
+        "texte": "50 g de beurre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "250 g de sucre",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de farine",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "2 jaunes d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "5 cl de rhum",
+        "valeur": 5,
+        "unite": "cl",
+        "reste": "rhum"
+      }
+    ],
+    "etapes": [
+      "Faire bouillir le lait avec la vanille fendue et le beurre, puis laisser tiédir.",
+      "Mélanger le sucre et la farine, ajouter les œufs et les jaunes, puis verser le lait tiède en mélangeant doucement (sans fouetter).",
+      "Ajouter le rhum, filtrer et réserver 24 heures au réfrigérateur.",
+      "Préchauffer le four à 250 °C. Beurrer généreusement les moules à cannelés.",
+      "Mélanger la pâte, remplir les moules aux trois quarts et cuire 10 minutes à 250 °C, puis 50 minutes à 180 °C : la croûte doit être brun foncé.",
+      "Démouler encore chauds."
     ]
   },
   {
@@ -4888,6 +5179,95 @@ const recettes = [
     ]
   },
   {
+    "id": "static-462",
+    "titre": "Carrot cake",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h 15",
+    "personnes": "10",
+    "ingredients": [
+      {
+        "texte": "300 g de carottes râpées",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "carottes râpées"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "150 g de sucre roux",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre roux"
+      },
+      {
+        "texte": "150 ml d'huile neutre",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "huile neutre"
+      },
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "2 c. à café de cannelle",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "100 g de noix concassées",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "noix concassées"
+      },
+      {
+        "texte": "200 g de fromage frais type Philadelphia",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "fromage frais type Philadelphia"
+      },
+      {
+        "texte": "50 g de beurre mou",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de sucre glace",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre glace"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et chemiser un moule rond de 22 cm.",
+      "Fouetter les œufs et le sucre roux, puis ajouter l’huile.",
+      "Incorporer la farine, la levure, la cannelle et le sel, puis les carottes et les noix.",
+      "Verser dans le moule et cuire 45 à 50 minutes. Laisser refroidir complètement.",
+      "Glaçage : fouetter le fromage frais, le beurre mou et le sucre glace, puis l’étaler sur le gâteau froid."
+    ]
+  },
+  {
     "id": "static-65",
     "titre": "Chantilly maison",
     "photo": "photos/enattente.png",
@@ -5083,6 +5463,65 @@ const recettes = [
           "Décorer avec les framboises supplémentaires et une rosace de chantilly sur le dessus."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-461",
+    "titre": "Charlotte aux fraises",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "30 min (+ 6 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "30 biscuits à la cuillère",
+        "valeur": 30,
+        "unite": null,
+        "reste": "biscuits à la cuillère"
+      },
+      {
+        "texte": "500 g de fraises",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      {
+        "texte": "250 g de mascarpone",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "250 ml de crème liquide entière bien froide",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "80 g de sucre glace",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "150 ml de sirop (eau + 2 c. à soupe de sucre) ou jus de fraise",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "sirop (eau + 2 c. à soupe de sucre) ou jus de fraise"
+      }
+    ],
+    "etapes": [
+      "Tremper rapidement les biscuits dans le sirop et en tapisser le fond et les bords d’un moule à charlotte, côté bombé vers l’extérieur.",
+      "Fouetter le mascarpone, la crème froide, le sucre glace et la vanille en chantilly ferme.",
+      "Couper les fraises en morceaux (en garder quelques-unes pour le décor).",
+      "Alterner couches de crème, de fraises et de biscuits imbibés, en terminant par des biscuits.",
+      "Couvrir d’une assiette avec un poids et réfrigérer au moins 6 heures. Démouler et décorer de fraises."
     ]
   },
   {
@@ -5966,6 +6405,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-473",
+    "titre": "Chocolat chaud à l’ancienne",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "10 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "500 ml de lait entier",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "100 g de chocolat noir",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "1 c. à soupe de sucre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 pincée de cannelle (facultatif)",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "cannelle (facultatif)"
+      },
+      "chantilly (facultatif)"
+    ],
+    "etapes": [
+      "Faire chauffer le lait avec le sucre sans le faire bouillir.",
+      "Hors du feu, ajouter le chocolat haché et fouetter jusqu’à ce qu’il soit fondu.",
+      "Remettre 1 à 2 minutes sur feu doux en fouettant pour le rendre mousseux.",
+      "Servir aussitôt, avec de la chantilly si désiré."
+    ]
+  },
+  {
     "id": "static-80",
     "titre": "Chouquettes maison au sucre perlé",
     "photo": "photos/enattente.png",
@@ -6634,6 +7114,40 @@ const recettes = [
       "Ajouter l'eau et le jus de citron, puis saupoudrer de cannelle en poudre.",
       "Couvrir et laisser mijoter pendant 10 à 15 minutes, en remuant de temps en temps jusqu'à ce que les pommes soient tendres.",
       "Retirer du feu et écraser légèrement les morceaux pour obtenir une texture légèrement veloutée ; ajuster la cannelle selon le goût."
+    ]
+  },
+  {
+    "id": "static-466",
+    "titre": "Confiture de fraises",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "40 min (+ 1 nuit de macération)",
+    "personnes": "4 pots",
+    "ingredients": [
+      {
+        "texte": "1 kg de fraises",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "fraises"
+      },
+      {
+        "texte": "700 g de sucre",
+        "valeur": 700,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 citron (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron (jus)"
+      }
+    ],
+    "etapes": [
+      "Laver, équeuter et couper les fraises. Les mélanger avec le sucre et le jus de citron, puis laisser macérer une nuit.",
+      "Porter à ébullition dans une grande casserole et cuire 20 à 25 minutes à feu vif en écumant.",
+      "Vérifier la cuisson : une goutte déposée sur une assiette froide doit se figer.",
+      "Verser bouillant dans des pots ébouillantés, fermer et retourner les pots jusqu’à refroidissement."
     ]
   },
   {
@@ -10317,6 +10831,72 @@ const recettes = [
     ]
   },
   {
+    "id": "static-451",
+    "titre": "Escalopes milanaises",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "25 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 escalopes de veau ou de poulet",
+        "valeur": 4,
+        "unite": null,
+        "reste": "escalopes de veau ou de poulet"
+      },
+      {
+        "texte": "50 g de farine",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de chapelure",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chapelure"
+      },
+      {
+        "texte": "30 g de parmesan râpé",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "parmesan râpé"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Aplatir les escalopes entre deux feuilles de papier cuisson pour qu’elles soient fines.",
+      "Préparer trois assiettes : farine, œufs battus salés et poivrés, chapelure mélangée au parmesan.",
+      "Passer chaque escalope dans la farine, puis dans l’œuf, puis dans la chapelure en appuyant.",
+      "Cuire dans l’huile et le beurre chauds 3 minutes par face, jusqu’à ce qu’elles soient bien dorées.",
+      "Égoutter sur du papier absorbant et servir avec des quartiers de citron."
+    ]
+  },
+  {
     "id": "static-133",
     "titre": "Far breton aux pruneaux",
     "photo": "photos/enattente.png",
@@ -11729,6 +12309,65 @@ const recettes = [
           "Sortir la ganache du réfrigérateur et, selon l'envie, la fouetter (ganache montée) ou l'utiliser directement."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-455",
+    "titre": "Gaspacho",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min (+ 2 h au frais)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 kg de tomates bien mûres",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "tomates bien mûres"
+      },
+      {
+        "texte": "1 concombre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "concombre"
+      },
+      {
+        "texte": "1 poivron rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron rouge"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "50 g de pain rassis (facultatif)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "pain rassis (facultatif)"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "2 c. à soupe de vinaigre de Xérès",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "vinaigre de Xérès"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper grossièrement les tomates, le concombre épluché, le poivron épépiné et l’ail.",
+      "Mixer avec le pain, l’huile, le vinaigre, du sel et du poivre jusqu’à obtenir une soupe lisse.",
+      "Filtrer si on la veut très fine, puis réfrigérer au moins 2 heures.",
+      "Servir bien frais avec des petits dés de concombre et un filet d’huile d’olive."
     ]
   },
   {
@@ -14651,6 +15290,72 @@ const recettes = [
     ]
   },
   {
+    "id": "static-458",
+    "titre": "Gougères au fromage",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "45 min",
+    "personnes": "30 gougères",
+    "ingredients": [
+      {
+        "texte": "125 ml d'eau",
+        "valeur": 125,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "125 ml de lait",
+        "valeur": 125,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g de beurre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "150 g de farine",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "120 g de comté ou gruyère râpé",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "comté ou gruyère râpé"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C.",
+      "Porter à ébullition l’eau, le lait, le beurre et le sel. Hors du feu, ajouter la farine d’un coup et mélanger vivement.",
+      "Dessécher la pâte 1 minute sur feu doux, puis incorporer les œufs un à un.",
+      "Ajouter 100 g de fromage, la muscade et le poivre.",
+      "Dresser des petits tas sur une plaque, parsemer du reste de fromage et cuire 20 à 25 minutes sans ouvrir le four."
+    ]
+  },
+  {
     "id": "static-186",
     "titre": "Granita maison",
     "photo": "photos/enattente.png",
@@ -14744,6 +15449,71 @@ const recettes = [
     ]
   },
   {
+    "id": "static-467",
+    "titre": "Granola maison",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "35 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "300 g de flocons d'avoine",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "flocons d'avoine"
+      },
+      {
+        "texte": "100 g d'amandes ou noisettes concassées",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "amandes ou noisettes concassées"
+      },
+      {
+        "texte": "50 g de graines (courge, tournesol)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "graines (courge, tournesol)"
+      },
+      {
+        "texte": "80 ml de miel ou sirop d’érable",
+        "valeur": 80,
+        "unite": "ml",
+        "reste": "miel ou sirop d’érable"
+      },
+      {
+        "texte": "50 ml d'huile de coco ou neutre",
+        "valeur": 50,
+        "unite": "ml",
+        "reste": "huile de coco ou neutre"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "80 g de fruits secs ou pépites de chocolat",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "fruits secs ou pépites de chocolat"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 160 °C.",
+      "Mélanger les flocons, les fruits secs à coque, les graines, la cannelle et le sel.",
+      "Faire tiédir le miel avec l’huile, verser sur le mélange et bien enrober.",
+      "Étaler sur une plaque recouverte de papier cuisson et cuire 20 à 25 minutes en remuant à mi-cuisson.",
+      "Laisser refroidir (il durcit en refroidissant), ajouter les fruits secs ou le chocolat et conserver dans un bocal."
+    ]
+  },
+  {
     "id": "static-188",
     "titre": "Gratin dauphinois",
     "photo": "photos/enattente.png",
@@ -14815,6 +15585,120 @@ const recettes = [
       "Parsemer de fromage râpé si désiré.",
       "Enfourner 1h15 à 1h30, jusqu'à ce que le dessus soit doré et que la pointe d'un couteau s'enfonce facilement dans les pommes de terre.",
       "Laisser reposer 10 minutes avant de servir pour que le gratin se tienne mieux."
+    ]
+  },
+  {
+    "id": "static-447",
+    "titre": "Gratin de chou-fleur",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "50 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 chou-fleur",
+        "valeur": 1,
+        "unite": null,
+        "reste": "chou-fleur"
+      },
+      {
+        "texte": "40 g de beurre",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "40 g de farine",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "500 ml de lait",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "100 g d'emmental râpé",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "emmental râpé"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Détailler le chou-fleur en bouquets et les cuire 10 minutes à l’eau bouillante salée : ils doivent rester un peu fermes. Bien égoutter.",
+      "Préparer une béchamel : faire fondre le beurre, ajouter la farine, puis le lait petit à petit en fouettant jusqu’à épaississement. Ajouter la muscade, du sel, du poivre et la moitié du fromage.",
+      "Préchauffer le four à 200 °C.",
+      "Disposer le chou-fleur dans un plat beurré, napper de béchamel et parsemer du reste de fromage.",
+      "Cuire 20 à 25 minutes, jusqu’à ce que le dessus soit gratiné."
+    ]
+  },
+  {
+    "id": "static-446",
+    "titre": "Gratin de courgettes",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "50 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 kg de courgettes",
+        "valeur": 1,
+        "unite": "kg",
+        "reste": "courgettes"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "200 ml de crème liquide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "80 g de gruyère râpé",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "gruyère râpé"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "sel, poivre",
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      }
+    ],
+    "etapes": [
+      "Couper les courgettes en rondelles et les faire revenir 10 minutes à la poêle dans l’huile avec l’ail émincé, pour qu’elles rendent leur eau.",
+      "Préchauffer le four à 180 °C.",
+      "Battre les œufs avec la crème, la moitié du fromage, la muscade, du sel et du poivre.",
+      "Disposer les courgettes égouttées dans un plat, verser l’appareil et parsemer du reste de fromage.",
+      "Cuire 30 minutes, jusqu’à ce que le gratin soit pris et doré."
     ]
   },
   {
@@ -16380,6 +17264,42 @@ const recettes = [
       "Ajouter les lentilles, le bouquet garni et couvrir d’eau froide (2 fois leur volume). Ne pas saler.",
       "Porter à ébullition puis cuire 25 minutes à feu doux.",
       "Piquer les saucisses, les ajouter et poursuivre 15 minutes. Saler en fin de cuisson."
+    ]
+  },
+  {
+    "id": "static-472",
+    "titre": "Limonade maison",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "10 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "4 citrons",
+        "valeur": 4,
+        "unite": null,
+        "reste": "citrons"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 l d'eau pétillante bien froide",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "eau pétillante bien froide"
+      },
+      "feuilles de menthe",
+      "glaçons"
+    ],
+    "etapes": [
+      "Presser les citrons.",
+      "Dissoudre le sucre dans le jus de citron avec 100 ml d’eau tiède.",
+      "Verser dans une carafe, ajouter l’eau pétillante, la menthe et les glaçons.",
+      "Goûter et ajuster en sucre ou en citron."
     ]
   },
   {
@@ -19727,6 +20647,115 @@ const recettes = [
     ]
   },
   {
+    "id": "static-449",
+    "titre": "Paella",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "400 g de riz rond (bomba ou à paella)",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "riz rond (bomba ou à paella)"
+      },
+      {
+        "texte": "6 hauts de cuisses de poulet",
+        "valeur": 6,
+        "unite": null,
+        "reste": "hauts de cuisses de poulet"
+      },
+      {
+        "texte": "200 g de chorizo",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chorizo"
+      },
+      {
+        "texte": "300 g de crevettes",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "crevettes"
+      },
+      {
+        "texte": "500 g de moules",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "moules"
+      },
+      {
+        "texte": "1 poivron rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron rouge"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "200 g de tomates concassées",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "150 g de petits pois",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "petits pois"
+      },
+      {
+        "texte": "1 l de bouillon de volaille chaud",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "bouillon de volaille chaud"
+      },
+      {
+        "texte": "1 dose de safran",
+        "valeur": 1,
+        "unite": "dose",
+        "reste": "safran"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      "sel"
+    ],
+    "etapes": [
+      "Dans une grande poêle à paella, faire dorer le poulet dans l’huile, puis le chorizo en rondelles. Réserver.",
+      "Faire revenir l’oignon, l’ail et le poivron émincés 5 minutes, puis ajouter les tomates et le paprika.",
+      "Verser le riz et le faire nacrer 2 minutes en remuant.",
+      "Ajouter le bouillon chaud et le safran, remettre le poulet et le chorizo. Saler. Ne plus remuer à partir de maintenant.",
+      "Cuire 15 minutes à feu moyen, puis répartir les crevettes, les moules et les petits pois sur le dessus.",
+      "Poursuivre 10 minutes, jusqu’à ce que le riz ait absorbé le bouillon et que les moules soient ouvertes. Couvrir d’un torchon 5 minutes et servir avec des quartiers de citron."
+    ]
+  },
+  {
     "id": "static-256",
     "titre": "Pain à l'ail et au persil maison",
     "photo": "photos/enattente.png",
@@ -22840,6 +23869,46 @@ const recettes = [
     ]
   },
   {
+    "id": "static-468",
+    "titre": "Porridge",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "50 g de flocons d'avoine",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "flocons d'avoine"
+      },
+      {
+        "texte": "250 ml de lait (ou boisson végétale)",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "lait (ou boisson végétale)"
+      },
+      {
+        "texte": "1 c. à café de miel",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "miel"
+      },
+      {
+        "texte": "1 pincée de cannelle",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "cannelle"
+      },
+      "fruits frais pour servir"
+    ],
+    "etapes": [
+      "Mettre les flocons et le lait dans une casserole.",
+      "Cuire 5 minutes à feu doux en remuant, jusqu’à ce que le mélange soit crémeux.",
+      "Ajouter la cannelle et le miel, puis servir avec des fruits frais."
+    ]
+  },
+  {
     "id": "static-426",
     "titre": "Pot-au-feu",
     "photo": "photos/enattente.png",
@@ -22969,6 +24038,67 @@ const recettes = [
       "Saupoudrer de sel, poivre, ail en poudre et paprika dans les interstices et sur les surfaces exposées.",
       "Enfourner pendant environ 25 à 35 minutes, en les retournant à mi-cuisson, jusqu'à ce que les bords soient dorés et que l'intérieur soit tendre.",
       "Sortir du four et laisser reposer 2 minutes avant de servir."
+    ]
+  },
+  {
+    "id": "static-450",
+    "titre": "Poulet à la crème et aux champignons",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 blancs de poulet",
+        "valeur": 4,
+        "unite": null,
+        "reste": "blancs de poulet"
+      },
+      {
+        "texte": "250 g de champignons de Paris",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "champignons de Paris"
+      },
+      {
+        "texte": "1 échalote",
+        "valeur": 1,
+        "unite": null,
+        "reste": "échalote"
+      },
+      {
+        "texte": "200 ml de crème fraîche",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème fraîche"
+      },
+      {
+        "texte": "100 ml de vin blanc ou bouillon",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "vin blanc ou bouillon"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 c. à soupe d'huile",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "persil",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper le poulet en morceaux et le faire dorer dans l’huile et le beurre. Saler, poivrer, réserver.",
+      "Dans la même poêle, faire revenir l’échalote ciselée et les champignons émincés jusqu’à ce que leur eau soit évaporée.",
+      "Déglacer avec le vin blanc et laisser réduire de moitié.",
+      "Ajouter la crème et le poulet, laisser mijoter 10 minutes à feu doux.",
+      "Parsemer de persil et servir avec du riz, des pâtes ou une purée."
     ]
   },
   {
@@ -24326,6 +25456,56 @@ const recettes = [
       "Ajouter le riz cuit et mélanger pour enrober les grains avec les œufs et les aromates.",
       "Verser la sauce soja, assaisonner avec le poivre et mélanger délicatement jusqu'à ce que tout soit bien chaud et homogène.",
       "Goûter et ajuster le sel si nécessaire, puis servir aussitôt."
+    ]
+  },
+  {
+    "id": "static-452",
+    "titre": "Rôti de porc au four",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 30",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1,2 kg de rôti de porc (échine ou filet)",
+        "valeur": 1.2,
+        "unite": "kg",
+        "reste": "rôti de porc (échine ou filet)"
+      },
+      {
+        "texte": "4 gousses d'ail",
+        "valeur": 4,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "3 oignons",
+        "valeur": 3,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "200 ml d'eau ou bouillon",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "eau ou bouillon"
+      },
+      "thym, laurier",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Sortir le rôti 30 minutes avant. Préchauffer le four à 180 °C.",
+      "Piquer le rôti de gousses d’ail coupées en deux, saler et poivrer.",
+      "Le faire dorer sur toutes les faces dans le beurre, dans un plat allant au four.",
+      "Ajouter les oignons en quartiers, le thym, le laurier et l’eau.",
+      "Cuire 1 h 10 environ (compter 1 heure par kilo), en arrosant toutes les 20 minutes.",
+      "Laisser reposer 10 minutes sous une feuille d’aluminium avant de trancher. Servir avec le jus."
     ]
   },
   {
@@ -25690,6 +26870,71 @@ const recettes = [
     ]
   },
   {
+    "id": "static-474",
+    "titre": "Sangria",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "15 min (+ 4 h de macération)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "75 cl de vin rouge",
+        "valeur": 75,
+        "unite": "cl",
+        "reste": "vin rouge"
+      },
+      {
+        "texte": "1 orange",
+        "valeur": 1,
+        "unite": null,
+        "reste": "orange"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "1 pomme",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pomme"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "10 cl de triple sec ou liqueur d’orange",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "triple sec ou liqueur d’orange"
+      },
+      {
+        "texte": "1 bâton de cannelle",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bâton de cannelle"
+      },
+      {
+        "texte": "50 cl de limonade ou eau gazeuse",
+        "valeur": 50,
+        "unite": "cl",
+        "reste": "limonade ou eau gazeuse"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Couper l’orange, le citron et la pomme en petits morceaux.",
+      "Dans une grande carafe, mélanger le vin, le sucre, la liqueur, la cannelle et les fruits.",
+      "Laisser macérer au moins 4 heures au réfrigérateur.",
+      "Au moment de servir, ajouter la limonade et les glaçons."
+    ]
+  },
+  {
     "id": "static-332",
     "titre": "Sauce ail citron dorée",
     "photo": "photos/enattente.png",
@@ -25732,6 +26977,106 @@ const recettes = [
       "Égoutter l’ail (garder l’huile parfumée pour une autre recette) et le placer dans un bol étroit avec le jus de citron et quelques brins de persil.",
       "Ajouter le lait, la moutarde, saler et mixer avec un mixeur plongeant jusqu'à obtenir une sauce lisse.",
       "Utiliser immédiatement sur du pain grillé avec du caprice des dieux fondu, ou conserver au frais."
+    ]
+  },
+  {
+    "id": "static-471",
+    "titre": "Sauce au poivre",
+    "photo": "photos/enattente.png",
+    "cat": "sauce",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 échalote",
+        "valeur": 1,
+        "unite": null,
+        "reste": "échalote"
+      },
+      {
+        "texte": "1 c. à soupe de poivre noir concassé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "poivre noir concassé"
+      },
+      {
+        "texte": "3 cl de cognac (facultatif)",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "cognac (facultatif)"
+      },
+      {
+        "texte": "100 ml de fond de veau ou bouillon",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "fond de veau ou bouillon"
+      },
+      {
+        "texte": "200 ml de crème liquide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "10 g de beurre",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      "sel"
+    ],
+    "etapes": [
+      "Faire revenir l’échalote ciselée dans le beurre (idéalement dans la poêle de cuisson de la viande).",
+      "Ajouter le poivre concassé, puis déglacer au cognac.",
+      "Verser le fond de veau et laisser réduire de moitié.",
+      "Ajouter la crème et laisser épaissir 3 à 4 minutes. Saler et servir avec un steak."
+    ]
+  },
+  {
+    "id": "static-470",
+    "titre": "Sauce béarnaise",
+    "photo": "photos/enattente.png",
+    "cat": "sauce",
+    "temps": "25 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 échalotes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "échalotes"
+      },
+      {
+        "texte": "10 cl de vinaigre de vin blanc",
+        "valeur": 10,
+        "unite": "cl",
+        "reste": "vinaigre de vin blanc"
+      },
+      {
+        "texte": "3 c. à soupe d'estragon haché",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "estragon haché"
+      },
+      {
+        "texte": "3 jaunes d'œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "150 g de beurre clarifié ou fondu",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre clarifié ou fondu"
+      },
+      "sel, poivre concassé"
+    ],
+    "etapes": [
+      "Faire réduire les échalotes ciselées, le vinaigre, la moitié de l’estragon et le poivre jusqu’à ce qu’il ne reste presque plus de liquide. Laisser tiédir.",
+      "Ajouter les jaunes et 2 cuillères à soupe d’eau, puis fouetter au bain-marie à feu très doux jusqu’à obtenir une mousse épaisse (le fouet laisse des traces).",
+      "Hors du feu, incorporer le beurre tiède en filet en fouettant sans arrêt.",
+      "Filtrer si désiré, saler et ajouter le reste d’estragon. Servir tiède avec une viande grillée."
     ]
   },
   {
@@ -26001,6 +27346,73 @@ const recettes = [
       "Sur 4 feuilles de papier cuisson, disposer les courgettes, un pavé de saumon, 2 tranches de citron et de l’aneth. Saler, poivrer et arroser d’huile.",
       "Refermer les papillotes hermétiquement et cuire 15 à 18 minutes.",
       "Servir dans la papillote, avec du riz."
+    ]
+  },
+  {
+    "id": "static-454",
+    "titre": "Shakshuka",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "400 g de tomates concassées",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "tomates concassées"
+      },
+      {
+        "texte": "1 poivron rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron rouge"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "1 c. à café de paprika",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "paprika"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "coriandre ou persil",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire revenir l’oignon, l’ail et le poivron émincés dans l’huile 8 minutes.",
+      "Ajouter les épices, puis les tomates. Saler, poivrer et laisser mijoter 10 minutes.",
+      "Creuser 4 puits dans la sauce et y casser les œufs.",
+      "Couvrir et cuire 5 à 7 minutes à feu doux, jusqu’à ce que les blancs soient pris et les jaunes encore coulants.",
+      "Parsemer d’herbes et servir dans la poêle avec du pain."
     ]
   },
   {
@@ -26683,6 +28095,138 @@ const recettes = [
     ]
   },
   {
+    "id": "static-448",
+    "titre": "Tajine de poulet aux citrons confits et olives",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 15",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 cuisses de poulet",
+        "valeur": 4,
+        "unite": null,
+        "reste": "cuisses de poulet"
+      },
+      {
+        "texte": "2 oignons",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "2 citrons confits",
+        "valeur": 2,
+        "unite": null,
+        "reste": "citrons confits"
+      },
+      {
+        "texte": "100 g d'olives vertes",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "olives vertes"
+      },
+      {
+        "texte": "1 c. à café de gingembre en poudre",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "gingembre en poudre"
+      },
+      {
+        "texte": "1 c. à café de curcuma",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "curcuma"
+      },
+      {
+        "texte": "1 pincée de safran (facultatif)",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "safran (facultatif)"
+      },
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "200 ml d'eau",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      "coriandre et persil frais",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire dorer les cuisses de poulet dans l’huile au fond d’un tajine ou d’une cocotte, puis réserver.",
+      "Faire revenir les oignons émincés et l’ail avec les épices 5 minutes.",
+      "Remettre le poulet, ajouter l’eau, saler peu (les citrons et olives sont salés) et poivrer. Couvrir et laisser mijoter 40 minutes à feu doux.",
+      "Ajouter les citrons confits coupés en quartiers et les olives, puis poursuivre 15 minutes.",
+      "Parsemer d’herbes fraîches et servir avec de la semoule ou du pain."
+    ]
+  },
+  {
+    "id": "static-457",
+    "titre": "Tapenade",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "10 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "200 g d'olives noires dénoyautées",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "olives noires dénoyautées"
+      },
+      {
+        "texte": "1 c. à soupe de câpres",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "câpres"
+      },
+      {
+        "texte": "4 filets d'anchois",
+        "valeur": 4,
+        "unite": null,
+        "reste": "filets d'anchois"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à café de jus de citron",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron"
+      },
+      "thym",
+      "poivre"
+    ],
+    "etapes": [
+      "Mixer les olives, les câpres, les anchois, l’ail et le thym.",
+      "Ajouter l’huile d’olive en filet et le jus de citron, puis mixer jusqu’à obtenir une pâte. Poivrer.",
+      "Servir sur des toasts. Se conserve 1 semaine au réfrigérateur sous un filet d’huile."
+    ]
+  },
+  {
     "id": "static-347",
     "titre": "Tarte au citron meringuée",
     "photo": "photos/enattente.png",
@@ -27007,6 +28551,66 @@ const recettes = [
           "Cuire au micro-ondes à puissance moyenne pendant 8 à 10 minutes jusqu'à ce que la pâte soit cuite et les pommes tendres."
         ]
       }
+    ]
+  },
+  {
+    "id": "static-460",
+    "titre": "Tarte Bourdaloue (poires et amandes)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "1 pâte sablée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte sablée"
+      },
+      {
+        "texte": "1 grande boîte de poires au sirop (environ 6 demi-poires)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "grande boîte de poires au sirop (environ 6 demi-poires)"
+      },
+      {
+        "texte": "100 g de beurre mou",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de poudre d'amandes",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "poudre d'amandes"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "20 g de farine",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "farine"
+      },
+      "amandes effilées"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et foncer un moule avec la pâte sablée.",
+      "Préparer la crème d’amandes : mélanger le beurre mou et le sucre, puis la poudre d’amandes, les œufs et la farine.",
+      "Étaler la crème d’amandes sur la pâte.",
+      "Égoutter les poires, les émincer en lamelles sans les séparer et les disposer en rosace sur la crème.",
+      "Parsemer d’amandes effilées et cuire 35 à 40 minutes. Servir tiède ou froid."
     ]
   },
   {
@@ -28418,6 +30022,60 @@ const recettes = [
     ]
   },
   {
+    "id": "static-456",
+    "titre": "Velouté de champignons",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "500 g de champignons de Paris",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "champignons de Paris"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 pomme de terre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pomme de terre"
+      },
+      {
+        "texte": "750 ml de bouillon de volaille",
+        "valeur": 750,
+        "unite": "ml",
+        "reste": "bouillon de volaille"
+      },
+      {
+        "texte": "100 ml de crème liquide",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      "persil",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Faire revenir l’oignon émincé dans le beurre, puis les champignons coupés en morceaux pendant 5 minutes.",
+      "Ajouter la pomme de terre en dés et le bouillon. Laisser mijoter 20 minutes.",
+      "Mixer finement, ajouter la crème et rectifier l’assaisonnement.",
+      "Servir avec un peu de persil ciselé."
+    ]
+  },
+  {
     "id": "static-373",
     "titre": "Velouté de potiron",
     "photo": "photos/enattente.png",
@@ -28830,6 +30488,41 @@ const recettes = [
       "Rabattre les deux côtés de la tortilla vers le centre, puis replier le haut vers le bas pour bien fermer le wrap.",
       "Cuire le wrap à la poêle avec un filet d'huile d'olive 2 à 3 minutes de chaque côté, jusqu'à ce que la tortilla soit dorée et le fromage fondu.",
       "Couper en deux et déguster chaud."
+    ]
+  },
+  {
+    "id": "static-465",
+    "titre": "Yaourts maison",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min (+ 10 h de fermentation)",
+    "personnes": "8 pots",
+    "ingredients": [
+      {
+        "texte": "1 l de lait entier",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "1 yaourt nature (comme ferment)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "yaourt nature (comme ferment)"
+      },
+      {
+        "texte": "1 c. à soupe de lait en poudre (facultatif, pour plus de fermeté)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "lait en poudre (facultatif, pour plus de fermeté)"
+      }
+    ],
+    "etapes": [
+      "Faire tiédir le lait à environ 40 °C (chaud au doigt mais pas brûlant).",
+      "Fouetter le yaourt nature avec un peu de lait tiède, puis avec le reste du lait et le lait en poudre.",
+      "Répartir dans 8 pots.",
+      "Faire fermenter 8 à 10 heures en yaourtière (ou au four éteint, lampe allumée, à environ 40 °C).",
+      "Fermer les pots et réfrigérer au moins 4 heures. Garder un yaourt pour la prochaine fournée."
     ]
   }
 ];
