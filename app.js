@@ -122,6 +122,7 @@ let activeFilters = [];
 let searchQuery = '';
 let currentTab = 'all';
 let timeFilter = '';
+let vegeOnly = false;
 let sortMode = 'default';
 
 // ── Serving adjuster state ──
@@ -132,6 +133,18 @@ let currentVariantIdx = 0;
 
 function normalize(str) {
   return str.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+
+// ── Végétarien ──
+// Une recette (ou une variante) est végétarienne si aucun de ses ingrédients ne contient
+// de viande, de poisson, de fruits de mer ou de gélatine. Calculé automatiquement, donc
+// valable aussi pour les recettes ajoutées depuis le site.
+const NON_VEGE = /\b(poulet|boeuf|bœuf|hachee?s?|veau|porc|agneau|mouton|jambon|jambons|lardons?|lard|bacon|chorizo|saucisses?|saucisson|merguez|steaks?|viandes?|hache|dinde|canard|magret|foie gras|chapon|volailles?|pancetta|guanciale|pepperoni|serrano|bayonne|parme|chair a saucisse|escalopes?|cuisses?|blancs? de poulet|carcasse|os a moelle|fond de veau|thon|saumon|cabillaud|poissons?|crevettes?|moules|anchois|saint-jacques|nuoc-?mam|fish sauce|sauce poisson|gelatine|guimauves?|chamallow|graisse de canard|rillettes)\b/;
+function isVegeVariant(v) {
+  return v.ingredients.every(ing => !NON_VEGE.test(normalize(ingLabel(ing))));
+}
+function isVege(r) {
+  return getVariants(r).some(isVegeVariant);
 }
 
 function ingLabel(ing) {
@@ -169,6 +182,7 @@ function parseTempsMinutes(temps) {
 
 function cardMatchesFilters(r) {
   if (searchQuery && !normalize(r.titre).includes(normalize(searchQuery))) return false;
+  if (vegeOnly && !isVege(r)) return false;
   if (timeFilter) {
     const max = parseInt(timeFilter, 10);
     const mins = parseTempsMinutes(previewVariant(r).temps);
@@ -239,7 +253,7 @@ function buildGrids() {
       card.innerHTML = `
         ${photoHtml}
         <div class="card-body">
-          <div class="card-cat">${catLabels[r.cat]}${variantBadge}</div>
+          <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
           <div class="card-title">${r.titre}</div>
           <div class="card-meta">
             <span>⏱ ${preview.temps}</span>
@@ -270,7 +284,7 @@ function buildGrids() {
     const emptyEl = document.getElementById('empty-' + cat);
     if (emptyEl) emptyEl.classList.toggle('visible', count === 0);
     const infoEl = document.getElementById('info-' + cat);
-    if (infoEl) infoEl.innerHTML = activeFilters.length || searchQuery || timeFilter
+    if (infoEl) infoEl.innerHTML = activeFilters.length || searchQuery || timeFilter || vegeOnly
       ? `<strong>${count}</strong> recette${count !== 1 ? 's' : ''} sur ${total} correspondent à votre recherche`
       : `${total} recette${total !== 1 ? 's' : ''}`;
   });
@@ -278,7 +292,7 @@ function buildGrids() {
   document.getElementById('count-all').textContent = counts.all;
   const totalAll = allRecettes.length;
   document.getElementById('empty-all').classList.toggle('visible', counts.all === 0);
-  document.getElementById('info-all').innerHTML = activeFilters.length || searchQuery || timeFilter
+  document.getElementById('info-all').innerHTML = activeFilters.length || searchQuery || timeFilter || vegeOnly
     ? `<strong>${counts.all}</strong> recette${counts.all !== 1 ? 's' : ''} sur ${totalAll} correspondent à votre recherche`
     : `${totalAll} recettes au total`;
 
@@ -413,7 +427,8 @@ function openModal(idx) {
   document.getElementById('modal-cat').textContent = catLabels[r.cat];
   document.getElementById('modal-title').textContent = r.titre;
 
-  selectVariant(0);
+  const firstVege = vegeOnly ? getVariants(r).findIndex(isVegeVariant) : 0;
+  selectVariant(firstVege > 0 ? firstVege : 0);
   updateModalPermissions();
 
   document.getElementById('modal-overlay').classList.add('open');
@@ -535,6 +550,11 @@ document.getElementById('time-filter').addEventListener('change', e => {
   buildGrids();
 });
 
+document.getElementById('vege-filter').addEventListener('change', e => {
+  vegeOnly = e.target.value === 'vege';
+  buildGrids();
+});
+
 document.getElementById('sort-select').addEventListener('change', e => {
   sortMode = e.target.value;
   buildGrids();
@@ -544,6 +564,8 @@ document.getElementById('reset-btn').addEventListener('click', () => {
   activeFilters = [];
   searchQuery = '';
   timeFilter = '';
+  vegeOnly = false;
+  document.getElementById('vege-filter').value = '';
   sortMode = 'default';
   document.getElementById('search-input').value = '';
   document.getElementById('time-filter').value = '';

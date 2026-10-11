@@ -715,3 +715,6 @@ header p {
   font-weight: 600;
   padding-top: 0.05rem;
 }
+
+/* Badge végétarien sur les cartes */
+.vege-badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; background: #e3efd9; color: #3f6b2a; font-size: 0.68rem; letter-spacing: 0; text-transform: none; font-weight: 600; vertical-align: 1px; }
