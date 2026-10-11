@@ -33,6 +33,55 @@ const recettes = [
     ]
   },
   {
+    "id": "static-659",
+    "titre": "Alloco (bananes plantain frites)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "20 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 bananes plantain bien mûres (peau jaune tachée de noir)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "bananes plantain bien mûres (peau jaune tachée de noir)"
+      },
+      "huile pour friture",
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 oignon (pour la sauce)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon (pour la sauce)"
+      },
+      {
+        "texte": "2 tomates (pour la sauce)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "tomates (pour la sauce)"
+      },
+      {
+        "texte": "1 piment (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "piment (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Couper les extrémités des bananes, inciser la peau sur la longueur et la retirer.",
+      "Couper les bananes en rondelles épaisses ou en biais (1,5 cm).",
+      "Chauffer l’huile à 170 °C et frire les morceaux 4 à 5 minutes, jusqu’à ce qu’ils soient bien dorés et caramélisés.",
+      "Égoutter sur du papier absorbant et saler légèrement.",
+      "Sauce : mixer ou hacher l’oignon, les tomates et le piment avec un filet d’huile et du sel. Servir l’alloco avec la sauce, du poisson grillé ou un œuf.",
+      "Astuce : une banane plantain bien mûre a la peau presque noire, elle est sucrée et fondante ; une plantain verte ou jaune est ferme et plus salée, idéale pour les chips et les tostones."
+    ]
+  },
+  {
     "id": "static-598",
     "titre": "Amaretto sour",
     "photo": "photos/enattente.png",
@@ -822,6 +871,54 @@ const recettes = [
     ]
   },
   {
+    "id": "static-670",
+    "titre": "Banane plantain caramélisée (dessert)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 bananes plantain très mûres",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bananes plantain très mûres"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "40 g de cassonade",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "1 pincée de cannelle",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "3 cl de rhum (facultatif)",
+        "valeur": 3,
+        "unite": "cl",
+        "reste": "rhum (facultatif)"
+      },
+      "glace vanille ou noix de coco râpée pour servir"
+    ],
+    "etapes": [
+      "Éplucher les bananes et les couper en deux puis en long.",
+      "Les faire dorer dans le beurre 3 minutes par face.",
+      "Saupoudrer de cassonade et de cannelle et laisser caraméliser 2 minutes.",
+      "Flamber au rhum si désiré (hotte éteinte, avec prudence).",
+      "Servir aussitôt avec une boule de glace vanille ou de la noix de coco râpée."
+    ]
+  },
+  {
     "id": "static-655",
     "titre": "Bananes fantômes et clémentines citrouilles",
     "photo": "photos/enattente.png",
@@ -854,6 +951,46 @@ const recettes = [
       "Éplucher les clémentines en gardant les quartiers ensemble.",
       "Planter un petit bâtonnet de céleri au sommet de chaque clémentine : c’est la tige de la citrouille.",
       "Servir ensemble sur un plat : un goûter d’Halloween sans sucre ajouté."
+    ]
+  },
+  {
+    "id": "static-660",
+    "titre": "Bananes plantain rôties au four",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "3 bananes plantain mûres",
+        "valeur": 3,
+        "unite": null,
+        "reste": "bananes plantain mûres"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 pincée de piment doux ou paprika",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "piment doux ou paprika"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C.",
+      "Éplucher les bananes et les couper en biais en tranches de 1,5 cm.",
+      "Les mélanger avec l’huile, le sel et le paprika, puis les étaler sur une plaque recouverte de papier cuisson.",
+      "Cuire 20 à 25 minutes en les retournant à mi-cuisson, jusqu’à ce qu’elles soient dorées. Une version plus légère que la friture."
     ]
   },
   {
@@ -3802,6 +3939,73 @@ const recettes = [
     ]
   },
   {
+    "id": "static-669",
+    "titre": "Bowl végétarien plantain, haricots noirs et avocat",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "2 bananes plantain mûres",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bananes plantain mûres"
+      },
+      {
+        "texte": "400 g d'haricots noirs cuits",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "haricots noirs cuits"
+      },
+      {
+        "texte": "150 g de riz",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "riz"
+      },
+      {
+        "texte": "1 avocat",
+        "valeur": 1,
+        "unite": null,
+        "reste": "avocat"
+      },
+      {
+        "texte": "1 oignon rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "coriandre",
+      "sel"
+    ],
+    "etapes": [
+      "Cuire le riz.",
+      "Éplucher les plantains, les couper en biais et les faire dorer à la poêle dans l’huile 3 minutes par face.",
+      "Réchauffer les haricots noirs avec le cumin et une pincée de sel.",
+      "Écraser l’avocat avec le jus du citron vert.",
+      "Composer les bols : riz, haricots, plantains, avocat, oignon rouge émincé et coriandre."
+    ]
+  },
+  {
     "id": "static-40",
     "titre": "Bricks au thon et pommes de terre épicées",
     "photo": "photos/enattente.png",
@@ -6277,6 +6481,77 @@ const recettes = [
     ]
   },
   {
+    "id": "static-671",
+    "titre": "Cake moelleux à la banane plantain",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "1 h",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "2 bananes plantain très mûres (peau noire)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bananes plantain très mûres (peau noire)"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre roux",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre roux"
+      },
+      {
+        "texte": "100 g de beurre fondu",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "200 g de farine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 sachet de levure chimique",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "50 g de noix de coco râpée (facultatif)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "noix de coco râpée (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et chemiser un moule à cake.",
+      "Écraser les plantains en purée (ou les mixer : elles sont plus fermes que des bananes douces).",
+      "Fouetter les œufs et le sucre, puis ajouter le beurre fondu, la purée de plantain et la vanille.",
+      "Incorporer la farine, la levure, la cannelle et la noix de coco.",
+      "Cuire 45 minutes, jusqu’à ce que la lame d’un couteau ressorte sèche."
+    ]
+  },
+  {
     "id": "static-432",
     "titre": "Cake salé jambon-olives",
     "photo": "photos/enattente.png",
@@ -8285,6 +8560,30 @@ const recettes = [
       "Ajouter les lentilles corail rincées, les tomates et l’eau. Laisser mijoter 20 minutes : les lentilles remplacent la viande hachée.",
       "Ajouter les haricots rouges et le maïs égouttés, puis cuire 10 minutes de plus. Saler.",
       "Servir avec du riz, de la crème fraîche et de la coriandre."
+    ]
+  },
+  {
+    "id": "static-662",
+    "titre": "Chips de banane plantain",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "20 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 bananes plantain vertes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "bananes plantain vertes"
+      },
+      "huile pour friture",
+      "sel",
+      "paprika ou piment (facultatif)"
+    ],
+    "etapes": [
+      "Éplucher les bananes et les trancher très finement à la mandoline, en long ou en rondelles.",
+      "Les plonger par petites quantités dans l’huile chauffée à 175 °C et frire 2 à 3 minutes jusqu’à ce qu’elles soient dorées.",
+      "Égoutter sur du papier absorbant, saler et épicer aussitôt. Elles deviennent croustillantes en refroidissant."
     ]
   },
   {
@@ -15791,6 +16090,60 @@ const recettes = [
     ]
   },
   {
+    "id": "static-667",
+    "titre": "Galettes de banane plantain (kaklo)",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "3 bananes plantain très mûres (peau noire)",
+        "valeur": 3,
+        "unite": null,
+        "reste": "bananes plantain très mûres (peau noire)"
+      },
+      {
+        "texte": "80 g de farine",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 c. à café de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "1 piment (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "piment (facultatif)"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      "huile pour friture"
+    ],
+    "etapes": [
+      "Écraser les bananes à la fourchette en purée.",
+      "Ajouter l’oignon finement haché, le gingembre, le piment, le sel et la farine. La pâte doit être épaisse.",
+      "Faire chauffer 2 cm d’huile dans une poêle.",
+      "Déposer des cuillères de pâte et frire 2 à 3 minutes de chaque côté jusqu’à ce qu’elles soient dorées.",
+      "Égoutter et servir chaud. Spécialité d’Afrique de l’Ouest (Ghana, Togo)."
+    ]
+  },
+  {
     "id": "static-145",
     "titre": "Galettes de courgettes",
     "photo": "photos/enattente.png",
@@ -19761,6 +20114,59 @@ const recettes = [
       "Parsemer de fromage râpé si désiré.",
       "Enfourner 1h15 à 1h30, jusqu'à ce que le dessus soit doré et que la pointe d'un couteau s'enfonce facilement dans les pommes de terre.",
       "Laisser reposer 10 minutes avant de servir pour que le gratin se tienne mieux."
+    ]
+  },
+  {
+    "id": "static-668",
+    "titre": "Gratin de banane plantain au fromage",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "45 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 bananes plantain mûres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "bananes plantain mûres"
+      },
+      {
+        "texte": "200 ml de crème liquide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide"
+      },
+      {
+        "texte": "100 g d'emmental râpé",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "emmental râpé"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et beurrer un plat frotté à l’ail.",
+      "Éplucher les bananes et les couper en rondelles de 1 cm.",
+      "Les disposer dans le plat, napper de crème assaisonnée de muscade, de sel et de poivre.",
+      "Parsemer de fromage et cuire 30 minutes, jusqu’à ce que le dessus soit gratiné. Délicieux avec une viande grillée."
     ]
   },
   {
@@ -23897,6 +24303,55 @@ const recettes = [
       "Ajouter le sucre et remuer jusqu'à dissolution.",
       "Verser l'eau gazeuse dans le mélange et remuer délicatement.",
       "Garnir de feuilles de menthe fraîche."
+    ]
+  },
+  {
+    "id": "static-666",
+    "titre": "Mofongo (purée de plantain à l’ail et au lard)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 bananes plantain vertes",
+        "valeur": 4,
+        "unite": null,
+        "reste": "bananes plantain vertes"
+      },
+      {
+        "texte": "150 g de lardons ou chicharrón",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "lardons ou chicharrón"
+      },
+      {
+        "texte": "4 gousses d'ail",
+        "valeur": 4,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "100 ml de bouillon de volaille chaud",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "bouillon de volaille chaud"
+      },
+      "huile pour friture",
+      "sel"
+    ],
+    "etapes": [
+      "Éplucher les plantains, les couper en tronçons de 2 cm et les frire 8 à 10 minutes à 160 °C jusqu’à ce qu’ils soient tendres et dorés.",
+      "Faire dorer les lardons à la poêle.",
+      "Écraser l’ail avec une pincée de sel et l’huile d’olive dans un mortier (ou un grand bol).",
+      "Ajouter les plantains chauds et les lardons par petites quantités et écraser au pilon en ajoutant un peu de bouillon pour lier.",
+      "Façonner en dômes avec un bol et servir aussitôt avec une viande en sauce ou des crevettes à l’ail. Spécialité de Porto Rico."
     ]
   },
   {
@@ -29773,6 +30228,102 @@ const recettes = [
     ]
   },
   {
+    "id": "static-663",
+    "titre": "Plantain braisé au barbecue (boli)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 bananes plantain mûres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "bananes plantain mûres"
+      },
+      "sauce : 1 tomate, 1 oignon rouge, 1 piment, persil, huile, jus de citron, sel"
+    ],
+    "etapes": [
+      "Allumer le barbecue ou chauffer une poêle-gril.",
+      "Éplucher les bananes et les poser entières sur la grille.",
+      "Les cuire 20 à 25 minutes en les retournant régulièrement, jusqu’à ce qu’elles soient tendres et marquées.",
+      "Pendant ce temps, hacher finement la tomate, l’oignon, le piment et le persil, puis assaisonner d’huile, de citron et de sel.",
+      "Servir le plantain braisé avec la sauce, et éventuellement du poisson ou de l’arachide grillée."
+    ]
+  },
+  {
+    "id": "static-665",
+    "titre": "Plantains farcis à la viande hachée (canoas)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "50 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 bananes plantain très mûres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "bananes plantain très mûres"
+      },
+      {
+        "texte": "400 g de bœuf haché",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "bœuf haché"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 poivron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "200 g de coulis de tomate",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "coulis de tomate"
+      },
+      {
+        "texte": "1 c. à café de cumin",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cumin"
+      },
+      {
+        "texte": "100 g de mozzarella ou cheddar râpé",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "mozzarella ou cheddar râpé"
+      },
+      {
+        "texte": "2 c. à soupe d'huile",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile"
+      },
+      "coriandre",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Éplucher les bananes, les badigeonner d’huile et les cuire 15 minutes au four.",
+      "Pendant ce temps, faire revenir l’oignon, le poivron et l’ail, ajouter la viande et la dorer, puis le coulis et le cumin. Saler, poivrer, mijoter 10 minutes.",
+      "Fendre les bananes sur la longueur sans les couper complètement et les ouvrir en forme de barque.",
+      "Garnir de viande, parsemer de fromage et remettre 10 minutes au four. Parsemer de coriandre."
+    ]
+  },
+  {
     "id": "static-502",
     "titre": "Poêlée de légumes",
     "photo": "photos/enattente.png",
@@ -31223,6 +31774,92 @@ const recettes = [
       "Ajouter le curry, mélanger 1 minute, puis ajouter le poulet et le faire dorer.",
       "Verser les tomates et le lait de coco, saler et laisser mijoter 20 minutes à feu doux.",
       "Parsemer de coriandre et servir avec du riz basmati."
+    ]
+  },
+  {
+    "id": "static-664",
+    "titre": "Poulet DG (poulet directeur général)",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 15",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1,5 kg de poulet en morceaux",
+        "valeur": 1.5,
+        "unite": "kg",
+        "reste": "poulet en morceaux"
+      },
+      {
+        "texte": "4 bananes plantain mûres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "bananes plantain mûres"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "150 g d'haricots verts",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "haricots verts"
+      },
+      {
+        "texte": "2 poivrons (rouge et vert)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "poivrons (rouge et vert)"
+      },
+      {
+        "texte": "2 oignons",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oignons"
+      },
+      {
+        "texte": "3 tomates",
+        "valeur": 3,
+        "unite": null,
+        "reste": "tomates"
+      },
+      {
+        "texte": "3 gousses d'ail",
+        "valeur": 3,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "1 c. à soupe de gingembre râpé",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "gingembre râpé"
+      },
+      {
+        "texte": "200 ml de bouillon de volaille",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "bouillon de volaille"
+      },
+      "persil, céleri",
+      "huile pour friture",
+      {
+        "texte": "1 piment (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "piment (facultatif)"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Mariner le poulet avec l’ail, le gingembre, du sel et du poivre pendant 20 minutes, puis le faire dorer à la poêle ou le frire. Réserver.",
+      "Éplucher les plantains, les couper en rondelles épaisses et les frire jusqu’à ce qu’ils soient dorés. Réserver.",
+      "Dans une grande cocotte, faire revenir les oignons, puis les carottes et les haricots verts coupés, les poivrons et les tomates en dés.",
+      "Ajouter le bouillon, le persil, le céleri et le piment, puis le poulet. Laisser mijoter 25 minutes.",
+      "Ajouter les plantains frits 5 minutes avant la fin et mélanger délicatement. C’est un grand classique de la cuisine camerounaise."
     ]
   },
   {
@@ -38847,6 +39484,32 @@ const recettes = [
       "Trancher les tomates et la mozzarella en rondelles.",
       "Les disposer en alternance sur un plat avec les feuilles de basilic.",
       "Arroser d’huile d’olive et de crème de balsamique, puis assaisonner de fleur de sel et de poivre."
+    ]
+  },
+  {
+    "id": "static-661",
+    "titre": "Tostones (plantain verte écrasée et frite)",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "3 bananes plantain vertes",
+        "valeur": 3,
+        "unite": null,
+        "reste": "bananes plantain vertes"
+      },
+      "huile pour friture",
+      "sel",
+      "sauce à l’ail : mayonnaise, ail écrasé, jus de citron vert"
+    ],
+    "etapes": [
+      "Éplucher les bananes vertes (inciser la peau et la décoller avec le pouce) et les couper en tronçons de 3 cm.",
+      "Les frire 4 minutes à 160 °C : ils doivent être tendres mais pas encore dorés. Égoutter.",
+      "Écraser chaque tronçon avec le fond d’un verre pour former une galette de 1 cm.",
+      "Les frire une seconde fois 2 à 3 minutes à 180 °C jusqu’à ce qu’ils soient croustillants.",
+      "Saler aussitôt et servir avec la sauce à l’ail."
     ]
   },
   {
