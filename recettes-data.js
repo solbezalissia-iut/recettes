@@ -205,6 +205,54 @@ const recettes = [
     ]
   },
   {
+    "id": "static-543",
+    "titre": "Avocats aux crevettes",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 avocats",
+        "valeur": 2,
+        "unite": null,
+        "reste": "avocats"
+      },
+      {
+        "texte": "200 g de crevettes décortiquées (déjà cuites)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "crevettes décortiquées (déjà cuites)"
+      },
+      {
+        "texte": "3 c. à soupe de mayonnaise",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "mayonnaise"
+      },
+      {
+        "texte": "1 c. à soupe de ketchup",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "ketchup"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      "ciboulette",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Mélanger la mayonnaise, le ketchup et quelques gouttes de citron : c’est la sauce cocktail.",
+      "Ajouter les crevettes et mélanger.",
+      "Couper les avocats en deux, retirer le noyau et arroser de citron.",
+      "Garnir chaque demi-avocat de crevettes et parsemer de ciboulette."
+    ]
+  },
+  {
     "id": "static-3",
     "titre": "Avocats farcis au thon et caprice des dieux",
     "photo": "photos/avocatsthoncaprice.png",
@@ -1632,6 +1680,58 @@ const recettes = [
       "Assembler les tacos en plaçant un steak sur chaque tortilla, puis ajouter une tranche de cheddar, quelques morceaux de cornichons, de la salade et des rondelles d'oignon.",
       "Terminer en ajoutant une cuillère de sauce sur le dessus de chaque taco.",
       "Servir immédiatement et déguster!"
+    ]
+  },
+  {
+    "id": "static-553",
+    "titre": "Bircher muesli",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min (+ 1 nuit au frais)",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "80 g de flocons d'avoine",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "flocons d'avoine"
+      },
+      {
+        "texte": "150 ml de jus de pomme",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "jus de pomme"
+      },
+      {
+        "texte": "100 g d'yaourt nature",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "yaourt nature"
+      },
+      {
+        "texte": "1 pomme",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pomme"
+      },
+      {
+        "texte": "20 g de noisettes concassées",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "noisettes concassées"
+      },
+      {
+        "texte": "1 c. à café de miel",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "miel"
+      },
+      "une pincée de cannelle"
+    ],
+    "etapes": [
+      "La veille, mélanger les flocons avec le jus de pomme et réserver au frais.",
+      "Le matin, râper la pomme avec la peau et l’ajouter avec le yaourt, le miel et la cannelle.",
+      "Servir parsemé de noisettes."
     ]
   },
   {
@@ -5812,6 +5912,101 @@ const recettes = [
     ]
   },
   {
+    "id": "static-535",
+    "titre": "Carottes râpées à la vinaigrette",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "10 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "500 g de carottes",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "carottes"
+      },
+      {
+        "texte": "1 citron (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron (jus)"
+      },
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à café de moutarde",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "moutarde"
+      },
+      "persil",
+      "sel, poivre",
+      {
+        "texte": "30 g de raisins secs (facultatif)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "raisins secs (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Éplucher et râper finement les carottes.",
+      "Mélanger la moutarde, le jus de citron, l’huile, du sel et du poivre.",
+      "Mélanger avec les carottes, ajouter le persil ciselé et les raisins secs.",
+      "Réserver au frais 15 minutes avant de servir."
+    ]
+  },
+  {
+    "id": "static-542",
+    "titre": "Carpaccio de bœuf au parmesan",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de filet de bœuf",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "filet de bœuf"
+      },
+      {
+        "texte": "50 g de parmesan en copeaux",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "parmesan en copeaux"
+      },
+      {
+        "texte": "50 g de roquette",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "roquette"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "fleur de sel, poivre"
+    ],
+    "etapes": [
+      "Placer le filet 1 heure au congélateur pour pouvoir le trancher très finement.",
+      "Couper des tranches les plus fines possible et les disposer sur des assiettes froides.",
+      "Arroser d’huile d’olive et de jus de citron.",
+      "Ajouter la roquette, les copeaux de parmesan, la fleur de sel et le poivre."
+    ]
+  },
+  {
     "id": "static-462",
     "titre": "Carrot cake",
     "photo": "photos/enattente.png",
@@ -5898,6 +6093,95 @@ const recettes = [
       "Incorporer la farine, la levure, la cannelle et le sel, puis les carottes et les noix.",
       "Verser dans le moule et cuire 45 à 50 minutes. Laisser refroidir complètement.",
       "Glaçage : fouetter le fromage frais, le beurre mou et le sucre glace, puis l’étaler sur le gâteau froid."
+    ]
+  },
+  {
+    "id": "static-536",
+    "titre": "Céleri rémoulade",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 céleri-rave (environ 600 g)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "céleri-rave (environ 600 g)"
+      },
+      {
+        "texte": "1 citron (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron (jus)"
+      },
+      {
+        "texte": "4 c. à soupe de mayonnaise",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "mayonnaise"
+      },
+      {
+        "texte": "1 c. à soupe de moutarde",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "moutarde"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Éplucher le céleri-rave et le râper finement.",
+      "L’arroser aussitôt de jus de citron pour qu’il ne noircisse pas.",
+      "Mélanger la mayonnaise et la moutarde, puis les incorporer au céleri. Saler et poivrer.",
+      "Réserver au moins 30 minutes au frais : le céleri s’attendrit."
+    ]
+  },
+  {
+    "id": "static-541",
+    "titre": "Ceviche de poisson blanc",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "20 min (+ 20 min de marinade)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "500 g de poisson blanc extra-frais (daurade, bar, cabillaud)",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "poisson blanc extra-frais (daurade, bar, cabillaud)"
+      },
+      {
+        "texte": "4 citrons verts",
+        "valeur": 4,
+        "unite": null,
+        "reste": "citrons verts"
+      },
+      {
+        "texte": "1 oignon rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      {
+        "texte": "1 piment (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "piment (facultatif)"
+      },
+      "coriandre fraîche",
+      {
+        "texte": "1 avocat",
+        "valeur": 1,
+        "unite": null,
+        "reste": "avocat"
+      },
+      "sel"
+    ],
+    "etapes": [
+      "Couper le poisson en cubes de 1,5 cm.",
+      "Le recouvrir du jus des citrons verts et saler : l’acidité du citron rend le poisson opaque, comme s’il était saisi.",
+      "Ajouter l’oignon rouge en fines lamelles et le piment émincé. Laisser mariner 15 à 20 minutes au frais.",
+      "Ajouter la coriandre et l’avocat en dés juste avant de servir."
     ]
   },
   {
@@ -6309,6 +6593,59 @@ const recettes = [
       "Badigeonner le dessus des cœurs avec le reste de l'œuf battu.",
       "Enfourner pendant environ 10 minutes ou jusqu'à ce qu'ils soient dorés.",
       "Sortir du four, laisser refroidir légèrement, puis saupoudrer de sucre glace."
+    ]
+  },
+  {
+    "id": "static-548",
+    "titre": "Cheesecake au citron sans cuisson",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "20 min (+ 6 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "200 g de biscuits sablés (type petits-beurre)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "biscuits sablés (type petits-beurre)"
+      },
+      {
+        "texte": "80 g de beurre mou",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "400 g de fromage frais type Philadelphia",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "fromage frais type Philadelphia"
+      },
+      {
+        "texte": "200 ml de crème liquide entière bien froide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "100 g de sucre glace",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "2 citrons non traités (zeste et jus)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "citrons non traités (zeste et jus)"
+      }
+    ],
+    "etapes": [
+      "Écraser les biscuits en miettes et les mélanger avec le beurre mou jusqu’à obtenir un sable humide.",
+      "Tasser au fond d’un moule à charnière et réserver au frais.",
+      "Fouetter la crème bien froide en chantilly.",
+      "Fouetter le fromage frais avec le sucre glace, le zeste et le jus des citrons, puis incorporer délicatement la chantilly.",
+      "Verser sur la base, lisser et réfrigérer au moins 6 heures avant de démouler."
     ]
   },
   {
@@ -7892,6 +8229,65 @@ const recettes = [
       "Ajouter le rhum blanc dans chaque verre.",
       "Compléter avec l'eau pétillante et remuer délicatement pour ne pas faire perdre les bulles.",
       "Décorer avec le zeste de citron et servir aussitôt."
+    ]
+  },
+  {
+    "id": "static-537",
+    "titre": "Coleslaw (salade de chou crémeuse)",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "0,5 chou blanc",
+        "valeur": 0.5,
+        "unite": null,
+        "reste": "chou blanc"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "0,5 oignon rouge",
+        "valeur": 0.5,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      {
+        "texte": "4 c. à soupe de mayonnaise",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "mayonnaise"
+      },
+      {
+        "texte": "2 c. à soupe d'yaourt nature",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "yaourt nature"
+      },
+      {
+        "texte": "1 c. à soupe de vinaigre de cidre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "vinaigre de cidre"
+      },
+      {
+        "texte": "1 c. à café de sucre",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "sucre"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Émincer très finement le chou, râper les carottes et ciseler l’oignon.",
+      "Mélanger la mayonnaise, le yaourt, le vinaigre, le sucre, du sel et du poivre.",
+      "Mélanger la sauce avec les légumes.",
+      "Réserver 1 heure au frais avant de servir, idéal avec des burgers."
     ]
   },
   {
@@ -11162,6 +11558,39 @@ const recettes = [
     ]
   },
   {
+    "id": "static-556",
+    "titre": "Dattes fourrées",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "20 dattes Medjool",
+        "valeur": 20,
+        "unite": null,
+        "reste": "dattes Medjool"
+      },
+      {
+        "texte": "100 g de pâte d'amande",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pâte d'amande"
+      },
+      {
+        "texte": "20 cerneaux de noix (facultatif)",
+        "valeur": 20,
+        "unite": null,
+        "reste": "cerneaux de noix (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Ouvrir les dattes sur la longueur et retirer le noyau.",
+      "Rouler la pâte d’amande en petits boudins et en glisser un dans chaque datte.",
+      "Décorer d’un cerneau de noix. Servir avec le café ou le thé."
+    ]
+  },
+  {
     "id": "static-525",
     "titre": "Daube provençale",
     "photo": "photos/enattente.png",
@@ -11496,6 +11925,48 @@ const recettes = [
       "Couvrir généreusement avec les M&M's.",
       "Réfrigérer pendant au moins 30 minutes.",
       "Avant de servir, ajouter quelques M&M's supplémentaires et un voile de cacao."
+    ]
+  },
+  {
+    "id": "static-545",
+    "titre": "Dip fromage blanc aux herbes",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "10 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "300 g de fromage blanc",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "fromage blanc"
+      },
+      {
+        "texte": "1 échalote",
+        "valeur": 1,
+        "unite": null,
+        "reste": "échalote"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      "ciboulette, persil, aneth",
+      {
+        "texte": "1 c. à soupe de jus de citron",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "jus de citron"
+      },
+      "sel, poivre",
+      "bâtonnets de légumes crus pour servir"
+    ],
+    "etapes": [
+      "Ciseler finement l’échalote et les herbes, écraser l’ail.",
+      "Mélanger avec le fromage blanc et le jus de citron. Saler et poivrer.",
+      "Réserver 30 minutes au frais et servir avec des bâtonnets de carottes, concombre, poivron et radis."
     ]
   },
   {
@@ -11882,6 +12353,53 @@ const recettes = [
       "Préchauffer le four à 200 °C.",
       "Enrouler chaque endive dans une tranche de jambon et les placer dans un plat beurré.",
       "Napper de béchamel, parsemer du reste de fromage et cuire 25 minutes jusqu’à ce que ce soit gratiné."
+    ]
+  },
+  {
+    "id": "static-549",
+    "titre": "Energy balls dattes et cacao",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "15 boules",
+    "ingredients": [
+      {
+        "texte": "200 g de dattes dénoyautées",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "dattes dénoyautées"
+      },
+      {
+        "texte": "100 g d'amandes ou noix de cajou",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "amandes ou noix de cajou"
+      },
+      {
+        "texte": "2 c. à soupe de cacao non sucré",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "cacao non sucré"
+      },
+      {
+        "texte": "2 c. à soupe de beurre de cacahuète",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "beurre de cacahuète"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      "noix de coco râpée pour enrober"
+    ],
+    "etapes": [
+      "Si les dattes sont sèches, les faire tremper 10 minutes dans de l’eau tiède puis les égoutter.",
+      "Mixer les amandes en poudre grossière, puis ajouter les dattes, le cacao, le beurre de cacahuète et le sel. Mixer jusqu’à obtenir une pâte collante.",
+      "Former des boules de la taille d’une noix.",
+      "Les rouler dans la noix de coco et conserver au réfrigérateur (1 semaine)."
     ]
   },
   {
@@ -16159,6 +16677,40 @@ const recettes = [
     ]
   },
   {
+    "id": "static-550",
+    "titre": "Glace express à la banane (nice cream)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min (+ 1 nuit au congélateur)",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "3 bananes bien mûres",
+        "valeur": 3,
+        "unite": null,
+        "reste": "bananes bien mûres"
+      },
+      {
+        "texte": "2 c. à soupe de lait",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 c. à soupe de cacao ou beurre de cacahuète (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "cacao ou beurre de cacahuète (facultatif)"
+      }
+    ],
+    "etapes": [
+      "La veille, éplucher les bananes, les couper en rondelles et les congeler.",
+      "Mixer les rondelles congelées avec le lait, en raclant les parois, jusqu’à obtenir une texture de glace onctueuse.",
+      "Ajouter le cacao ou le beurre de cacahuète et mixer encore quelques secondes.",
+      "Déguster aussitôt façon glace italienne, ou remettre 1 heure au congélateur pour une texture plus ferme."
+    ]
+  },
+  {
     "id": "static-177",
     "titre": "Glace maison sans sorbetière",
     "photo": "photos/enattente.png",
@@ -18914,6 +19466,52 @@ const recettes = [
       "Dans un plat, alterner sauce tomate, plaques de lasagnes et mélange ricotta-épinards, sur 3 couches.",
       "Terminer par de la sauce tomate, la mozzarella en tranches et le reste de parmesan.",
       "Cuire 40 minutes, jusqu’à ce que le dessus soit doré. Laisser reposer 10 minutes avant de couper."
+    ]
+  },
+  {
+    "id": "static-557",
+    "titre": "Lassi à la mangue",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "1 mangue bien mûre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "mangue bien mûre"
+      },
+      {
+        "texte": "250 g d'yaourt nature",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "yaourt nature"
+      },
+      {
+        "texte": "150 ml de lait froid",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "lait froid"
+      },
+      {
+        "texte": "1 c. à soupe de miel",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "miel"
+      },
+      {
+        "texte": "1 pincée de cardamome",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "cardamome"
+      },
+      "glaçons"
+    ],
+    "etapes": [
+      "Éplucher la mangue et la couper en morceaux.",
+      "Mixer avec le yaourt, le lait, le miel et la cardamome jusqu’à obtenir une boisson lisse.",
+      "Servir aussitôt sur des glaçons."
     ]
   },
   {
@@ -22502,6 +23100,46 @@ const recettes = [
       "Former un trou au centre de chaque cuillère de blanc d'œuf et y glisser un jaune d'œuf.",
       "Ajouter le caprice des dieux râpé, puis recouvrir d'une cuillère de blanc d'œuf pour sceller le tout.",
       "Enfourner le moule pour 7 à 8 minutes jusqu'à ce que les blancs soient dorés."
+    ]
+  },
+  {
+    "id": "static-555",
+    "titre": "Oranges à la cannelle",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 oranges",
+        "valeur": 4,
+        "unite": null,
+        "reste": "oranges"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 c. à soupe d'eau de fleur d’oranger",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "eau de fleur d’oranger"
+      },
+      {
+        "texte": "1 c. à soupe de sucre glace",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sucre glace"
+      },
+      "quelques feuilles de menthe"
+    ],
+    "etapes": [
+      "Peler les oranges à vif et les couper en fines rondelles.",
+      "Les disposer sur un plat et arroser de fleur d’oranger.",
+      "Saupoudrer de cannelle et de sucre glace, puis parsemer de menthe ciselée."
     ]
   },
   {
@@ -27409,6 +28047,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-552",
+    "titre": "Pudding de chia à la vanille",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min (+ 4 h au frais)",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "40 g de graines de chia",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "graines de chia"
+      },
+      {
+        "texte": "250 ml de lait ou lait de coco",
+        "valeur": 250,
+        "unite": "ml",
+        "reste": "lait ou lait de coco"
+      },
+      {
+        "texte": "1 c. à soupe de sirop d’érable ou miel",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sirop d’érable ou miel"
+      },
+      {
+        "texte": "0,5 c. à café d'extrait de vanille",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      "fruits frais pour servir"
+    ],
+    "etapes": [
+      "Mélanger les graines de chia, le lait, le sirop et la vanille.",
+      "Attendre 10 minutes, puis mélanger à nouveau pour éviter les grumeaux.",
+      "Réserver au moins 4 heures (ou une nuit) au réfrigérateur : les graines gonflent et forment un pudding.",
+      "Servir avec des fruits frais."
+    ]
+  },
+  {
     "id": "static-407",
     "titre": "Purée de pommes de terre maison",
     "photo": "photos/enattente.png",
@@ -29489,6 +30168,112 @@ const recettes = [
     ]
   },
   {
+    "id": "static-538",
+    "titre": "Salade de concombre à la crème et à la menthe",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "10 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 concombres",
+        "valeur": 2,
+        "unite": null,
+        "reste": "concombres"
+      },
+      {
+        "texte": "150 g d'yaourt grec",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "yaourt grec"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse d'ail"
+      },
+      "menthe et aneth",
+      {
+        "texte": "1 c. à soupe d'huile d'olive",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper les concombres en fines rondelles, les saler et les laisser dégorger 10 minutes dans une passoire.",
+      "Mélanger le yaourt avec l’ail écrasé, les herbes ciselées et l’huile.",
+      "Égoutter les concombres, les mélanger à la sauce et poivrer."
+    ]
+  },
+  {
+    "id": "static-547",
+    "titre": "Salade de fruits frais",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "2 oranges",
+        "valeur": 2,
+        "unite": null,
+        "reste": "oranges"
+      },
+      {
+        "texte": "2 kiwis",
+        "valeur": 2,
+        "unite": null,
+        "reste": "kiwis"
+      },
+      {
+        "texte": "250 g de fraises",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      {
+        "texte": "1 mangue",
+        "valeur": 1,
+        "unite": null,
+        "reste": "mangue"
+      },
+      {
+        "texte": "1 banane",
+        "valeur": 1,
+        "unite": null,
+        "reste": "banane"
+      },
+      {
+        "texte": "1 pomme",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pomme"
+      },
+      {
+        "texte": "1 citron (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron (jus)"
+      },
+      {
+        "texte": "2 c. à soupe de sucre ou miel",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sucre ou miel"
+      },
+      "quelques feuilles de menthe"
+    ],
+    "etapes": [
+      "Peler les oranges à vif et récupérer le jus qui s’écoule.",
+      "Couper tous les fruits en morceaux de même taille.",
+      "Mélanger le jus d’orange, le jus de citron et le sucre, puis verser sur les fruits.",
+      "Ajouter la menthe ciselée et réserver au frais 30 minutes."
+    ]
+  },
+  {
     "id": "static-325",
     "titre": "Salade de gnocchis dorés au pesto",
     "photo": "photos/gnoccipesto.png",
@@ -29875,6 +30660,77 @@ const recettes = [
     ]
   },
   {
+    "id": "static-533",
+    "titre": "Salade grecque",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 tomates",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tomates"
+      },
+      {
+        "texte": "1 concombre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "concombre"
+      },
+      {
+        "texte": "1 poivron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "poivron vert"
+      },
+      {
+        "texte": "1 oignon rouge",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon rouge"
+      },
+      {
+        "texte": "200 g de feta",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "feta"
+      },
+      {
+        "texte": "80 g d'olives noires (kalamata)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "olives noires (kalamata)"
+      },
+      {
+        "texte": "4 c. à soupe d'huile d'olive",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à soupe de vinaigre de vin rouge",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "vinaigre de vin rouge"
+      },
+      {
+        "texte": "1 c. à café d'origan séché",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "origan séché"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper les tomates en quartiers, le concombre en demi-rondelles, le poivron et l’oignon en fines lamelles.",
+      "Disposer les légumes dans un saladier avec les olives.",
+      "Poser la feta en bloc ou en gros morceaux sur le dessus.",
+      "Arroser d’huile d’olive et de vinaigre, parsemer d’origan, saler légèrement et poivrer."
+    ]
+  },
+  {
     "id": "static-328",
     "titre": "Salade jambon cru, mozzarella et pâtes",
     "photo": "photos/enattente.png",
@@ -30012,6 +30868,48 @@ const recettes = [
       "Couper les tomates en quartiers, le poivron et l’oignon en fines lamelles.",
       "Disposer la salade, les légumes, le thon émietté, les œufs, les anchois et les olives.",
       "Arroser d’une vinaigrette huile d’olive-vinaigre, saler légèrement et poivrer."
+    ]
+  },
+  {
+    "id": "static-534",
+    "titre": "Salade pastèque, feta et menthe",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "10 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "800 g de pastèque",
+        "valeur": 800,
+        "unite": "g",
+        "reste": "pastèque"
+      },
+      {
+        "texte": "150 g de feta",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "feta"
+      },
+      "une dizaine de feuilles de menthe",
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Retirer l’écorce et les pépins de la pastèque, puis la couper en cubes.",
+      "Émietter la feta et ciseler la menthe.",
+      "Mélanger délicatement avec le jus du citron vert et l’huile d’olive. Poivrer.",
+      "Servir bien frais."
     ]
   },
   {
@@ -30809,6 +31707,40 @@ const recettes = [
     ]
   },
   {
+    "id": "static-558",
+    "titre": "Smoothie bowl aux fruits rouges",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "10 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "150 g de fruits rouges surgelés",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "fruits rouges surgelés"
+      },
+      {
+        "texte": "1 banane congelée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "banane congelée"
+      },
+      {
+        "texte": "100 ml de lait",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      "granola, fruits frais, graines pour la garniture"
+    ],
+    "etapes": [
+      "Mixer les fruits congelés et la banane avec le lait jusqu’à obtenir une texture épaisse (ajouter un peu de lait si besoin).",
+      "Verser dans un bol.",
+      "Garnir de granola, de fruits frais tranchés et de graines."
+    ]
+  },
+  {
     "id": "static-337",
     "titre": "Smoothie fraise-banane",
     "photo": "photos/enattente.png",
@@ -31044,6 +31976,54 @@ const recettes = [
       "Ajouter les autres légumes, l’eau et le cube de bouillon.",
       "Porter à ébullition puis laisser mijoter 30 minutes à couvert.",
       "Mixer, rectifier l’assaisonnement et servir avec une cuillère de crème fraîche."
+    ]
+  },
+  {
+    "id": "static-539",
+    "titre": "Soupe froide de concombre et avocat",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "10 min (+ 1 h au frais)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "2 concombres",
+        "valeur": 2,
+        "unite": null,
+        "reste": "concombres"
+      },
+      {
+        "texte": "1 avocat",
+        "valeur": 1,
+        "unite": null,
+        "reste": "avocat"
+      },
+      {
+        "texte": "200 g d'yaourt nature",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "yaourt nature"
+      },
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      "menthe ou coriandre",
+      {
+        "texte": "200 ml d'eau froide",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "eau froide"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Éplucher grossièrement les concombres et les couper en morceaux.",
+      "Mixer avec l’avocat, le yaourt, le jus du citron vert, les herbes et l’eau jusqu’à obtenir un velouté lisse.",
+      "Saler, poivrer et réserver au moins 1 heure au réfrigérateur.",
+      "Servir bien frais avec un filet d’huile d’olive."
     ]
   },
   {
@@ -31576,6 +32556,54 @@ const recettes = [
       "Mixer les olives, les câpres, les anchois, l’ail et le thym.",
       "Ajouter l’huile d’olive en filet et le jus de citron, puis mixer jusqu’à obtenir une pâte. Poivrer.",
       "Servir sur des toasts. Se conserve 1 semaine au réfrigérateur sous un filet d’huile."
+    ]
+  },
+  {
+    "id": "static-540",
+    "titre": "Tartare de saumon à l’avocat",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "20 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de saumon extra-frais sans peau",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "saumon extra-frais sans peau"
+      },
+      {
+        "texte": "1 avocat",
+        "valeur": 1,
+        "unite": null,
+        "reste": "avocat"
+      },
+      {
+        "texte": "1 échalote",
+        "valeur": 1,
+        "unite": null,
+        "reste": "échalote"
+      },
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      "aneth ou ciboulette",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Couper le saumon en petits dés au couteau (le poisson doit être très frais, idéalement congelé 24 h avant à -18 °C par sécurité).",
+      "Ajouter l’échalote ciselée, les herbes, l’huile, le jus du citron vert, du sel et du poivre.",
+      "Couper l’avocat en dés et l’arroser d’un peu de citron.",
+      "Dresser à l’aide d’un emporte-pièce : une couche d’avocat, puis le saumon. Servir aussitôt."
     ]
   },
   {
@@ -32898,6 +33926,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-559",
+    "titre": "Thé glacé infusé à froid",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min (+ 8 h d’infusion)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "1 l d'eau froide",
+        "valeur": 1,
+        "unite": "l",
+        "reste": "eau froide"
+      },
+      {
+        "texte": "4 sachets de thé noir ou vert",
+        "valeur": 4,
+        "unite": null,
+        "reste": "sachets de thé noir ou vert"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "2 c. à soupe de miel ou sirop d’agave",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "miel ou sirop d’agave"
+      },
+      "menthe",
+      "glaçons"
+    ],
+    "etapes": [
+      "Mettre les sachets dans l’eau froide et laisser infuser 8 heures au réfrigérateur : l’infusion à froid donne un thé doux, sans amertume.",
+      "Retirer les sachets, ajouter le jus du citron et le miel, puis mélanger.",
+      "Servir sur des glaçons avec des feuilles de menthe et des rondelles de citron."
+    ]
+  },
+  {
     "id": "static-367",
     "titre": "Tiramisu",
     "photo": "photos/enattente.png",
@@ -33476,6 +34545,47 @@ const recettes = [
     ]
   },
   {
+    "id": "static-544",
+    "titre": "Tomates mozzarella (salade caprese)",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "temps": "10 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "4 tomates bien mûres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tomates bien mûres"
+      },
+      {
+        "texte": "250 g de mozzarella di bufala",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "mozzarella di bufala"
+      },
+      "feuilles de basilic",
+      {
+        "texte": "3 c. à soupe d'huile d'olive",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "1 c. à soupe de crème de balsamique (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "crème de balsamique (facultatif)"
+      },
+      "fleur de sel, poivre"
+    ],
+    "etapes": [
+      "Trancher les tomates et la mozzarella en rondelles.",
+      "Les disposer en alternance sur un plat avec les feuilles de basilic.",
+      "Arroser d’huile d’olive et de crème de balsamique, puis assaisonner de fleur de sel et de poivre."
+    ]
+  },
+  {
     "id": "static-495",
     "titre": "Truffes au chocolat",
     "photo": "photos/enattente.png",
@@ -33782,6 +34892,54 @@ const recettes = [
     ]
   },
   {
+    "id": "static-546",
+    "titre": "Verrines avocat, crevettes et pamplemousse",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "20 min",
+    "personnes": "6 verrines",
+    "ingredients": [
+      {
+        "texte": "2 avocats",
+        "valeur": 2,
+        "unite": null,
+        "reste": "avocats"
+      },
+      {
+        "texte": "150 g de crevettes décortiquées (déjà cuites)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "crevettes décortiquées (déjà cuites)"
+      },
+      {
+        "texte": "1 pamplemousse rose",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pamplemousse rose"
+      },
+      {
+        "texte": "100 g de fromage frais",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "fromage frais"
+      },
+      {
+        "texte": "1 citron vert",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      "aneth",
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Écraser les avocats avec le jus du citron vert, du sel et du poivre.",
+      "Peler le pamplemousse à vif et détacher les suprêmes.",
+      "Dans les verrines, alterner avocat, fromage frais et suprêmes de pamplemousse.",
+      "Terminer par les crevettes et un brin d’aneth. Servir frais."
+    ]
+  },
+  {
     "id": "static-374",
     "titre": "Verrines croustillantes au Kinder Country et chantilly",
     "photo": "photos/enattente.png",
@@ -33833,6 +34991,58 @@ const recettes = [
       "Monter la crème chantilly maison et l'ajouter délicatement sur la base solidifiée.",
       "Saupoudrer le dessus avec le cacao en poudre, quelques copeaux de chocolat et des grains de cacao croustillants.",
       "Entreposer au frais pendant 5 à 10 minutes avant de servir."
+    ]
+  },
+  {
+    "id": "static-554",
+    "titre": "Verrines fraises, mascarpone et biscuits",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "250 g de fraises",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "fraises"
+      },
+      {
+        "texte": "150 g de mascarpone",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mascarpone"
+      },
+      {
+        "texte": "100 ml de crème liquide entière bien froide",
+        "valeur": 100,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "40 g de sucre glace",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "6 biscuits sablés ou spéculoos",
+        "valeur": 6,
+        "unite": null,
+        "reste": "biscuits sablés ou spéculoos"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      }
+    ],
+    "etapes": [
+      "Fouetter le mascarpone, la crème froide, le sucre glace et la vanille en chantilly ferme.",
+      "Couper les fraises en morceaux et émietter les biscuits.",
+      "Dans des verrines, alterner biscuits, crème et fraises.",
+      "Réserver au frais jusqu’au service."
     ]
   },
   {
@@ -33937,6 +35147,41 @@ const recettes = [
       "Ajouter l'huile d'olive petit à petit en fouettant (ou en secouant le pot fermé) jusqu'à ce que la vinaigrette soit bien émulsionnée.",
       "Goûter et rectifier l'assaisonnement si besoin.",
       "Se conserve quelques jours au réfrigérateur ; secouer à nouveau avant chaque utilisation."
+    ]
+  },
+  {
+    "id": "static-560",
+    "titre": "Virgin mojito",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "temps": "5 min",
+    "personnes": "1",
+    "ingredients": [
+      {
+        "texte": "0,5 citron vert",
+        "valeur": 0.5,
+        "unite": null,
+        "reste": "citron vert"
+      },
+      "une dizaine de feuilles de menthe",
+      {
+        "texte": "2 c. à café de sucre de canne",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "sucre de canne"
+      },
+      {
+        "texte": "150 ml d'eau gazeuse ou limonade",
+        "valeur": 150,
+        "unite": "ml",
+        "reste": "eau gazeuse ou limonade"
+      },
+      "glace pilée"
+    ],
+    "etapes": [
+      "Couper le citron vert en quartiers et le mettre dans un verre avec la menthe et le sucre.",
+      "Écraser doucement avec un pilon pour libérer le jus et les arômes.",
+      "Remplir de glace pilée, compléter avec l’eau gazeuse et mélanger."
     ]
   },
   {
@@ -34248,6 +35493,39 @@ const recettes = [
       "Rabattre les deux côtés de la tortilla vers le centre, puis replier le haut vers le bas pour bien fermer le wrap.",
       "Cuire le wrap à la poêle avec un filet d'huile d'olive 2 à 3 minutes de chaque côté, jusqu'à ce que la tortilla soit dorée et le fromage fondu.",
       "Couper en deux et déguster chaud."
+    ]
+  },
+  {
+    "id": "static-551",
+    "titre": "Yaourt glacé aux fruits rouges",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "5 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "300 g de fruits rouges surgelés",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "fruits rouges surgelés"
+      },
+      {
+        "texte": "150 g d'yaourt grec",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "yaourt grec"
+      },
+      {
+        "texte": "2 c. à soupe de miel",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "miel"
+      }
+    ],
+    "etapes": [
+      "Mettre les fruits rouges encore congelés, le yaourt et le miel dans un mixeur.",
+      "Mixer par à-coups jusqu’à obtenir une texture de glace.",
+      "Servir aussitôt."
     ]
   },
   {
