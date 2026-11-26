@@ -42,6 +42,7 @@ import {
 
 const RECIPES_COLLECTION = 'recipes';
 const HIDDEN_STATIC_COLLECTION = 'hidden_static_recipes';
+const PLANNING_COLLECTION = 'planning';
 
 function configLooksEmpty(cfg) {
   return !cfg || !cfg.apiKey || cfg.apiKey.includes('COLLE_ICI');
@@ -64,6 +65,20 @@ if (configLooksEmpty(window.FIREBASE_CONFIG)) {
   const provider = new GoogleAuthProvider();
 
   let currentUser = null;
+
+  // Planning de la semaine + liste de courses : un document privé par compte (planning/{uid}).
+  // Utilisé par planning.js. Défini AVANT l'écoute de la connexion pour être prêt dès le login.
+  window.CloudPlanning = {
+    subscribe(uid, onData, onError) {
+      return onSnapshot(doc(db, PLANNING_COLLECTION, uid), (snap) => {
+        if (snap.metadata.hasPendingWrites) return; // nos propres enregistrements, déjà affichés
+        onData(snap.exists() ? snap.data() : null);
+      }, onError);
+    },
+    async save(uid, data) {
+      await setDoc(doc(db, PLANNING_COLLECTION, uid), { ...data, updatedAt: serverTimestamp() });
+    }
+  };
 
   onAuthStateChanged(auth, (user) => {
     currentUser = user;
