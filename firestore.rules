@@ -54,10 +54,10 @@ service cloud.firestore {
       allow create, delete: if isOwner();
 
       // Le propriétaire modifie tout ; une personne invitée modifie seulement
-      // les semaines (repas + courses), ou se retire elle-même du partage.
+      // les semaines (repas + courses) et le frigo, ou se retire elle-même du partage.
       allow update: if isOwner()
                     || (isGuest()
-                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['weeks', 'updatedAt']))
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['weeks', 'frigo', 'updatedAt']))
                     || (isGuest()
                         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['sharedWith'])
                         && request.resource.data.sharedWith == resource.data.sharedWith.removeAll([myEmail()]));

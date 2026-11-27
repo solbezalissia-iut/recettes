@@ -15,3 +15,12 @@ window.FIREBASE_CONFIG = {
   messagingSenderId: "730150791284",
   appId: "1:730150791284:web:2da84dfa80600e432f8921"
 };
+
+// ────────────────────────────────────────────────────────────────────────
+// Recettes inventées par l'IA (onglet « Frigo »).
+// Laisser vide tant que Firebase AI Logic et App Check ne sont pas activés
+// dans la console Firebase. Ensuite, coller ici la clé de site reCAPTCHA
+// Enterprise enregistrée dans App Check (elle n'est pas secrète non plus).
+// ────────────────────────────────────────────────────────────────────────
+window.APP_CHECK_SITE_KEY = "";
+window.AI_MODEL = "gemini-3.8-flash";

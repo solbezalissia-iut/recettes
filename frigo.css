@@ -1,0 +1,58 @@
+/* ── Onglet Frigo ── */
+.frigo-head {
+  position: relative; background: #fff; border: 1px solid var(--border); border-radius: 22px;
+  padding: 1.6rem 1.4rem 1.4rem; box-shadow: 0 6px 22px rgba(110,46,27,.10); overflow: hidden;
+}
+.frigo-deco { position: absolute; right: -14px; top: -14px; width: 86px; transform: rotate(12deg); pointer-events: none; }
+.frigo-head h2 { font-family: 'Ultra', 'Playfair Display', serif; font-weight: 400; font-size: 1.9rem; color: var(--espresso); line-height: 1.1; }
+.frigo-head > p { color: var(--muted); font-size: 0.92rem; margin: 0.3rem 3.5rem 1rem 0; line-height: 1.45; }
+.frigo-add { display: flex; gap: 0.5rem; }
+.frigo-add input { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 1.5px solid var(--border); border-radius: 999px; font: inherit; font-size: 16px; background: var(--warm-white); }
+.frigo-add input:focus { outline: none; border-color: var(--caramel); box-shadow: 0 0 0 4px rgba(229,154,23,.18); }
+.frigo-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.frigo-chips--list { margin-top: 0.9rem; }
+.fchip { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.3rem 0.75rem; border-radius: 999px; background: #FFF3C4; color: var(--espresso); font-size: 0.85rem; font-weight: 500; }
+.fchip button { border: none; background: none; color: var(--muted); font-size: 0.8rem; cursor: pointer; padding: 0 0 0 0.1rem; }
+.fchip--used { background: #E5F0DC; color: #3F6B2E; text-decoration: line-through; text-decoration-color: rgba(63,107,46,.5); }
+.fchip--ok { background: #E5F0DC; color: #3F6B2E; }
+.fchip--buy { background: #fff; border: 1px dashed rgba(110,46,27,.3); color: var(--muted); font-weight: 400; }
+.frigo-headbtns { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.1rem; }
+.frigo-go { flex: 1; min-width: 200px; padding: 0.85rem 1rem !important; font-size: 1rem !important; }
+.frigo-small { color: var(--muted); font-size: 0.8rem; line-height: 1.45; }
+.frigo-left { margin: 1.2rem 0.3rem 0; font-size: 0.88rem; color: var(--muted); }
+.frigo-left b { color: var(--espresso); font-weight: 500; }
+.frigo-prop { margin-top: 1rem; scroll-margin-top: 1rem; }
+
+.frigo-card { background: #fff; border-radius: 22px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(110,46,27,.14); animation: frigoIn .3s ease; }
+@keyframes frigoIn { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
+.frigo-card-photo { position: relative; aspect-ratio: 16/9; background: var(--cream); }
+.frigo-card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.frigo-ia-badge { position: absolute; left: 0.8rem; top: 0.8rem; background: var(--espresso); color: #FFF8DA; border-radius: 999px; padding: 0.3rem 0.8rem; font-size: 0.8rem; }
+.frigo-card-body { padding: 1.1rem 1.2rem 1.2rem; }
+.frigo-card-title { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 1.45rem; color: var(--espresso); line-height: 1.2; margin: 0.15rem 0 0.3rem; }
+.frigo-meta { color: var(--muted); font-size: 0.85rem; }
+.frigo-lbl { margin-top: 0.9rem; font-size: 0.7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--caramel); font-weight: 600; }
+.frigo-lbl--ok { color: #3F6B2E; letter-spacing: 0; text-transform: none; font-size: 0.88rem; }
+.frigo-link { margin-top: 0.9rem; background: none; border: none; color: var(--mocha); text-decoration: underline; font: inherit; font-size: 0.9rem; cursor: pointer; padding: 0; }
+.frigo-details { margin-top: 0.9rem; font-size: 0.9rem; }
+.frigo-details summary { cursor: pointer; color: var(--mocha); text-decoration: underline; }
+.frigo-details ul { margin: 0.6rem 0 0 1.1rem; line-height: 1.55; }
+.frigo-steps { list-style: '→  '; }
+.frigo-actions { display: flex; gap: 0.6rem; margin-top: 1.2rem; }
+.frigo-actions button { flex: 1; padding: 0.85rem 0.5rem !important; font-size: 1rem !important; }
+
+.frigo-empty, .frigo-done { background: #fff; border: 1px dashed rgba(229,154,23,.6); border-radius: 20px; padding: 1.4rem; text-align: center; }
+.frigo-empty p { margin-bottom: 0.9rem; line-height: 1.5; }
+.frigo-done { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--espresso); }
+.frigo-spin { width: 34px; height: 34px; margin: 0.2rem auto 0.8rem; border-radius: 50%; border: 3px solid #FFE9A8; border-top-color: var(--caramel); animation: frigoSpin .8s linear infinite; }
+@keyframes frigoSpin { to { transform: rotate(360deg); } }
+
+.frigo-kept { margin-top: 1.4rem; background: #fff; border-radius: 22px; border: 1px solid var(--border); padding: 1.2rem; box-shadow: 0 6px 22px rgba(110,46,27,.10); }
+.frigo-kept h3 { font-family: 'Playfair Display', serif; font-weight: 600; color: var(--espresso); font-size: 1.2rem; }
+.frigo-kept h3 span { background: var(--caramel); color: #fff; border-radius: 999px; font-family: 'Inter', sans-serif; font-size: 0.75rem; padding: 0.1rem 0.55rem; vertical-align: middle; }
+.frigo-kept ul { list-style: none; margin: 0.6rem 0 1rem; }
+.frigo-kept li { display: flex; align-items: center; gap: 0.5rem; padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+.frigo-kept li span { flex: 1; line-height: 1.3; }
+.frigo-kept li small { display: block; color: var(--muted); font-size: 0.75rem; }
+.frigo-kept li button { border: none; background: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; }
+.frigo-plan { width: 100%; padding: 0.85rem !important; margin-bottom: 0.5rem; }

@@ -64,6 +64,7 @@
   let sharedList = [];           // plannings que d'autres ont partagés avec moi
   let unsubShared = null;
   const dirty = new Set();       // semaines modifiées pas encore envoyées
+  let frigo = [];                // aliments du frigo (onglet Frigo, voir frigo.js)
   const isMine = () => !!user && activeUid === user.uid;
   const myEmail = () => (user && user.email || '').toLowerCase();
   const firstName = n => String(n || '').trim().split(/\s+/)[0] || '';
@@ -121,7 +122,7 @@
   const basePers = v => (typeof v.personnes === 'number' ? v.personnes : parseInt(v.personnes, 10)) || 1;
 
   // ── Navigation entre les 3 vues ──
-  const VIEWS = ['recettes', 'semaine', 'courses'];
+  const VIEWS = ['recettes', 'semaine', 'courses', 'frigo'];
   function show(view) {
     VIEWS.forEach(v => {
       const el = document.getElementById('view-' + v);
@@ -129,6 +130,7 @@
     });
     document.querySelectorAll('.view-nav button').forEach(b => b.classList.toggle('active', b.dataset.view === view));
     if (view !== 'recettes') renderAll();
+    if (view === 'frigo' && typeof window.renderFrigo === 'function') window.renderFrigo();
     window.scrollTo({ top: 0 });
     try { localStorage.setItem('recettes-vue', view); } catch (e) { /* stockage indisponible */ }
   }
@@ -525,13 +527,59 @@
     clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('on'), 1800);
   }
 
-  function renderAll() { renderShareBars(); renderWeek(); renderCourses(); updateBadges(); }
+  function renderAll() {
+    renderShareBars(); renderWeek(); renderCourses(); updateBadges();
+    if (typeof window.renderFrigo === 'function') window.renderFrigo();
+  }
+
+  // ── Accès pour frigo.js ──
+  // Range des recettes dans la semaine : chaque plat va au prochain repas libre (soir puis midi,
+  // à partir d'aujourd'hui) ; entrées, apéros, desserts… rejoignent le repas du plat précédent.
+  function addMeals(list) {
+    const w = W();
+    const cur = isCurrentWeek();
+    const start = cur ? (new Date().getDay() + 6) % 7 : 0;
+    const order = [];
+    for (let d = start; d < 7; d++) order.push(`${d}-soir`);
+    for (let d = start; d < 7; d++) order.push(`${d}-midi`);
+    const used = new Set(Object.keys(w.plan).filter(k => (w.plan[k] || []).length));
+    let placed = 0, overflow = 0;
+    const mains = ['plat'];
+    const sorted = [...list].sort((a, b) => (mains.includes(a.cat) ? 0 : 1) - (mains.includes(b.cat) ? 0 : 1));
+    const mainSlots = [];
+    const catsIn = {}; // services déjà ajoutés dans chaque repas pendant ce rangement
+    sorted.forEach(x => {
+      // Un plat prend un repas libre ; une entrée / un dessert… rejoint un plat qui n'en a pas encore
+      let slot = !mains.includes(x.cat) ? mainSlots.find(k => !(catsIn[k] || []).includes(x.cat)) : null;
+      if (!slot) { slot = order.find(k => !used.has(k)); if (slot) { used.add(slot); if (mains.includes(x.cat)) mainSlots.push(slot); } }
+      if (slot) (catsIn[slot] = catsIn[slot] || []).push(x.cat);
+      if (!slot) { overflow++; return; }
+      (w.plan[slot] = w.plan[slot] || []).push({ rid: x.rid, v: x.v || 0, p: x.p });
+      placed++;
+    });
+    if (placed) { save(); renderAll(); }
+    return { placed, overflow, weekLabel: weekLabel() };
+  }
+  window.PlanningAPI = {
+    get user() { return user; },
+    get loaded() { return loaded; },
+    get frigo() { return frigo; },
+    isMine,
+    ownerName: () => activeOwnerName(),
+    async saveFrigo(list) {
+      frigo = list;
+      if (!user || !activeUid || !window.CloudPlanning || !window.CloudPlanning.saveFrigo) return;
+      try { await window.CloudPlanning.saveFrigo(activeUid, list); }
+      catch (e) { console.error('[frigo] enregistrement', e); toast(e.code === 'permission-denied' ? 'Règles Firestore à mettre à jour' : 'Frigo non enregistré'); }
+    },
+    addMeals, findRecipe, ridOf, basePers, variantOf, toast, show
+  };
 
   // ── Planning affiché (le mien ou un planning partagé) ──
   function openPlanning(uid) {
     if (unsub) { unsub(); unsub = null; }
     if (dirty.size) { clearTimeout(saveTimer); flush(); }
-    activeUid = uid; loaded = false; state = { weeks: {} }; sharing = { sharedWith: [], ownerName: '' };
+    activeUid = uid; loaded = false; state = { weeks: {} }; sharing = { sharedWith: [], ownerName: '' }; frigo = [];
     try { localStorage.setItem('planning-actif', uid === user.uid ? '' : uid); } catch (e) { /* rien */ }
     setSync('Chargement…');
     unsub = window.CloudPlanning.subscribe(uid, data => {
@@ -540,6 +588,7 @@
       dirty.forEach(k => { if (state.weeks[k]) remote[k] = state.weeks[k]; });
       state = { weeks: remote };
       sharing = { sharedWith: (data && data.sharedWith) || [], ownerName: (data && data.ownerName) || '' };
+      frigo = (data && Array.isArray(data.frigo)) ? data.frigo : [];
       loaded = true;
       setSync(isMine() ? (sharing.sharedWith.length ? '✓ Synchronisé · partagé' : '✓ Synchronisé avec ton compte') : '✓ Synchronisé · planning de ' + activeOwnerName(), 'ok');
       renderAll();
