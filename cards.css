@@ -124,4 +124,32 @@
   .modal-plate { width: 160px; }
   .modal-plate .vis-emo { font-size: 4.4rem; }
 }
-@media (max-width: 780px) { 
+/* ── Pas de texte « N ingrédients » : juste la mention Monsieur Cuisine ── */
+.card-hook { margin-top: 0.6rem; }
+.card-hook b { display: none; }
+.card-hook span { margin-top: 0; font-family: 'Inter', sans-serif; }
+
+/* ── Sans fond : rien autour de l'objet (pas de forme, pas de cadre) ── */
+.free .vis-wait { opacity: 0; }
+.free .vis-cut { transition: opacity 0.3s ease; }
+.free .vis-photo { -webkit-mask-image: none; mask-image: none; border-radius: 0; object-fit: contain; width: 100%; height: 100%; }
+
+/* ── Cadrage de la photo : l'assiette ou le bol autour du rond gardé ── */
+.crop--plate .cropper-view-box, .crop--plate .cropper-face,
+.crop--bowl .cropper-view-box, .crop--bowl .cropper-face { border-radius: 50%; }
+.crop--plate .cropper-view-box, .crop--bowl .cropper-view-box { outline: none; box-shadow: none; }
+.crop--plate .cropper-crop-box::after, .crop--bowl .cropper-crop-box::after {
+  content: ''; position: absolute; pointer-events: none;
+  background: url(deco/assiette-anneau.svg) center / contain no-repeat;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35));
+  left: -19%; top: -19%; width: 138%; height: 138%;
+}
+.crop--bowl .cropper-crop-box::after { background-image: url(deco/bol-anneau.svg); left: -9.75%; top: -9.75%; width: 119.5%; height: 119.5%; }
+.crop--plate .cropper-dashed, .crop--bowl .cropper-dashed, .crop--plate .cropper-line, .crop--bowl .cropper-line { display: none; }
+.crop-image-wrap { overflow: hidden; }
+
+/* Aperçu de la photo dans le formulaire */
+.photo-preview--plate img, .photo-preview--bowl img { border-radius: 50%; aspect-ratio: 1; object-fit: cover; max-width: 220px; }
+.photo-preview--free img { max-height: 240px; width: auto; object-fit: contain;
+  background: repeating-conic-gradient(#eee 0% 25%, #fff 0% 50%) 50% / 16px 16px; border-radius: 12px; }
+.detour-wait { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }

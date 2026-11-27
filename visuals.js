@@ -108,10 +108,16 @@
   const baseName = p => String(p).split('/').pop().replace(/\.[a-z0-9]+$/i, '');
   const cutout = r => hasPhoto(r) && /^photos\//.test(r.photo) && DETOURE.includes(baseName(r.photo)) ? 'photos/detoure/' + baseName(r.photo) + '.webp' : null;
 
-  // Contenu d'un visuel : photo détourée, sinon photo entière, sinon illustration
-  function visualInner(r) {
+  // Contenu d'un visuel : photo détourée, sinon photo entière, sinon illustration.
+  // free = catégorie « sans fond » : une photo pas encore détourée l'est dans le navigateur (detour.js).
+  function visualInner(r, free) {
     const emo = `<span class="vis-emo" aria-hidden="true">${emojiFor(r)}</span>`;
+    if (hasPhoto(r) && r.photoDetouree) return `<img class="vis-cut" src="${esc(r.photo)}" alt="" loading="lazy">`;
     const c = cutout(r);
+    if (!c && free && hasPhoto(r)) {
+      const key = r._docId ? 'live:' + r._docId : (r._staticId || r.titre);
+      return `<img class="vis-cut vis-wait" data-detour="${esc(key)}" data-src="${esc(r.photo)}" alt="">`;
+    }
     if (c) return `<img class="vis-cut" src="${esc(c)}" alt="" loading="lazy" onerror="this.outerHTML='${emo.replace(/"/g, '&quot;')}'">`;
     if (hasPhoto(r)) return `<img class="vis-photo" src="${esc(r.photo)}" alt="" loading="lazy" onerror="this.outerHTML='${emo.replace(/"/g, '&quot;')}'">`;
     return emo;
@@ -124,7 +130,7 @@
   const styleOf = r => PLATE_CATS.includes(r.cat) ? 'plate' : (r.cat === 'sauce' ? 'bowl' : 'free');
   function plateHtml(r, cls) {
     const st = styleOf(r);
-    if (st === 'free') return `<div class="free ${cls || ''}" aria-hidden="true">${visualInner(r)}</div>`;
+    if (st === 'free') return `<div class="free ${cls || ''}" aria-hidden="true">${visualInner(r, true)}</div>`;
     // Assiette ou bol dessinés d'après le croquis (deco/assiette.svg, deco/bol-sauce.svg), sans fond coloré
     return `<div class="${st} ${cls || ''}" aria-hidden="true"><div class="plate-in">${visualInner(r)}</div></div>`;
   }
@@ -133,5 +139,21 @@
     return `<div class="vis-thumb ${cls || ''}" style="background:${TINT[r.cat] || '#EFE4D4'}" aria-hidden="true">${visualInner(r)}</div>`;
   }
 
-  window.RecipeVisual = { emojiFor, hasPhoto, plateHtml, thumbHtml, styleOf, tint: r => TINT[r.cat] || '#EFE4D4' };
+  // Détourage à la volée des photos « sans fond » pas encore détourées
+  function hydrate(root) {
+    (root || document).querySelectorAll('img.vis-wait:not([data-busy])').forEach(img => {
+      img.dataset.busy = '1';
+      const src = img.dataset.src;
+      const fallback = () => { img.src = src; img.classList.remove('vis-wait', 'vis-cut'); img.classList.add('vis-photo'); };
+      if (!window.Detour) return fallback();
+      window.Detour.cached(img.dataset.detour, src)
+        .then(u => { img.src = u; img.classList.remove('vis-wait'); })
+        .catch(e => { console.warn('[détourage]', e); fallback(); });
+    });
+  }
+  new MutationObserver(muts => {
+    if (muts.some(m => [...m.addedNodes].some(n => n.nodeType === 1 && (n.matches('img.vis-wait') || n.querySelector('img.vis-wait'))))) hydrate();
+  }).observe(document.documentElement, { childList: true, subtree: true });
+
+  window.RecipeVisual = { emojiFor, hasPhoto, plateHtml, thumbHtml, styleOf, hydrate, tint: r => TINT[r.cat] || '#EFE4D4' };
 })();

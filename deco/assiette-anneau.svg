@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="rim" cx="38%" cy="32%" r="75%">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#f6f6f5"/>
+      <stop offset="0.85" stop-color="#e4e3e1"/><stop offset="1" stop-color="#cfcdca"/>
+    </radialGradient>
+    <linearGradient id="bevel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfcdca"/><stop offset="0.5" stop-color="#eeedeb"/><stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#rim)" fill-rule="evenodd" d="M100 2a98 98 0 1 0 0.001 0zM100 29a71 71 0 1 1 -0.001 0z"/>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#c9c7c3" stroke-opacity="0.55" stroke-width="1"/>
+  <path d="M 40 160 A 85 85 0 0 0 175 125" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="100" cy="100" r="72.5" fill="none" stroke="url(#bevel)" stroke-width="3"/>
+</svg>

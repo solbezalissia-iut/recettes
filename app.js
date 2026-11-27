@@ -280,8 +280,7 @@ function buildGrids() {
 
       // Visuel dans une assiette (photo ou illustration, voir visuals.js)
       const plate = window.RecipeVisual ? RecipeVisual.plateHtml(r, 'card-plate') : '';
-      const nIng = preview.ingredients.length;
-      const hook = `<div class="card-hook"><b>${nIng} ingrédient${nIng > 1 ? 's' : ''}</b>${variants.some(v => v.mc && v.mc.length) ? '<span>Version Monsieur Cuisine</span>' : ''}</div>`;
+      const hook = variants.some(v => v.mc && v.mc.length) ? '<div class="card-hook"><span>Version Monsieur Cuisine</span></div>' : '';
 
       const variantBadge = variants.length > 1
         ? `<span class="variant-badge">${variants.length} versions</span>`
@@ -729,6 +728,8 @@ let newPhotoDataUrl = '';
 let editingDocId = null;
 let editingStaticId = null; // rempli quand Alissia modifie une recette d'origine
 let editingOriginalPhoto = ''; // photo actuelle de la recette en cours de modification, gardée si on ne la change pas
+let editingOriginalDetouree = false;
+let newPhotoCut = false; // la nouvelle photo a déjà son arrière-plan enlevé
 
 // Réduit une image (depuis un fichier ou une image déjà rognée) avant envoi
 // (Firestore limite un document à 1 Mo).
@@ -768,16 +769,28 @@ function updateRecropButton() {
   newPhotoRecropBtn.style.display = (newPhotoDataUrl || editingOriginalPhoto) ? 'inline-block' : 'none';
 }
 
+// Forme du cadrage selon la catégorie : assiette (plats, entrées, desserts), bol (sauces),
+// ou libre pour le reste (l'arrière-plan sera enlevé à l'enregistrement).
+function cropStyle() {
+  const cat = document.getElementById('new-cat').value;
+  return window.RecipeVisual ? RecipeVisual.styleOf({ cat }) : 'plate';
+}
 function openCropper(src) {
   cropSourceDataUrl = src;
   cropImage.src = src;
+  const st = cropStyle();
+  cropModalOverlay.classList.remove('crop--plate', 'crop--bowl', 'crop--free');
+  cropModalOverlay.classList.add('crop--' + st);
+  document.getElementById('crop-help').textContent = st === 'free'
+    ? "Cadre l'objet (le verre, la bouchée…) : l'arrière-plan sera enlevé automatiquement."
+    : (st === 'bowl' ? 'Place la sauce dans le bol : seul le rond sera gardé.' : "Place le plat dans l'assiette : seul le rond sera gardé.");
   cropModalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
   if (cropper) { cropper.destroy(); cropper = null; }
   // Cropper a besoin que l'image soit chargée dans le DOM avant de s'initialiser.
   const init = () => {
     cropper = new Cropper(cropImage, {
-      aspectRatio: 4 / 3,
+      aspectRatio: cropStyle() === 'free' ? NaN : 1,
       viewMode: 1,
       autoCropArea: 1,
       background: false
@@ -799,11 +812,33 @@ document.getElementById('crop-confirm').addEventListener('click', async () => {
   if (!cropper) return;
   const canvas = cropper.getCroppedCanvas({ maxWidth: 1400, maxHeight: 1400 });
   const rawDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+  const st = cropStyle();
+  closeCropper();
   newPhotoDataUrl = await resizeDataUrl(rawDataUrl, 900, 0.72);
+  newPhotoCut = false;
+  newPhotoPreview.className = 'form-photo-preview photo-preview--' + st;
   newPhotoPreview.innerHTML = `<img src="${newPhotoDataUrl}" alt="Aperçu">`;
   updateRecropButton();
-  closeCropper();
+  if (st === 'free') await cutNewPhoto();
 });
+
+// Détourage de la photo choisie (catégories « sans fond »)
+async function cutNewPhoto() {
+  if (!newPhotoDataUrl || newPhotoCut || !window.Detour) return;
+  const keep = newPhotoDataUrl;
+  newPhotoPreview.insertAdjacentHTML('beforeend', '<div class="detour-wait">Je retire l\'arrière-plan…</div>');
+  try {
+    let url = await window.Detour.cut(keep, 640);
+    if (url.length > 800000) url = await window.Detour.cut(keep, 420); // limite Firestore (1 Mo)
+    if (newPhotoDataUrl !== keep) return; // une autre photo a été choisie entre-temps
+    newPhotoDataUrl = url; newPhotoCut = true;
+    newPhotoPreview.innerHTML = `<img src="${url}" alt="Aperçu sans arrière-plan">`;
+  } catch (e) {
+    console.warn('[détourage]', e);
+    const w = newPhotoPreview.querySelector('.detour-wait');
+    if (w) w.textContent = "Arrière-plan pas enlevé (la photo sera gardée telle quelle).";
+  }
+}
 
 newPhotoRecropBtn.addEventListener('click', () => {
   const source = newPhotoDataUrl || editingOriginalPhoto;
@@ -827,7 +862,7 @@ function closeAddModal() {
   statusEl.textContent = '';
   editingDocId = null;
   editingStaticId = null;
-  editingOriginalPhoto = '';
+  editingOriginalPhoto = ''; editingOriginalDetouree = false; newPhotoCut = false;
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   document.getElementById('new-photo-label').textContent = 'Photo (optionnelle)';
@@ -839,7 +874,7 @@ document.getElementById('add-recipe-btn').addEventListener('click', async () => 
   if (!ok) return;
   editingDocId = null;
   editingStaticId = null;
-  editingOriginalPhoto = '';
+  editingOriginalPhoto = ''; editingOriginalDetouree = false; newPhotoCut = false;
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   openAddModal();
@@ -876,7 +911,7 @@ document.getElementById('modal-edit').addEventListener('click', () => {
 
   editingDocId = r._isStatic ? null : r._docId;
   editingStaticId = r._isStatic ? r._staticId : null;
-  editingOriginalPhoto = r.photo || '';
+  editingOriginalPhoto = r.photo || ''; editingOriginalDetouree = !!r.photoDetouree;
 
   document.getElementById('add-modal-title').textContent = 'Modifier la recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer les modifications';
@@ -939,6 +974,12 @@ addForm.addEventListener('submit', async e => {
     // La photo a déjà été rognée et redimensionnée par le cadrage (newPhotoDataUrl).
     // Si on modifie une recette sans changer sa photo, on garde l'ancienne
     // (essentiel pour les recettes d'origine : sinon la version modifiée perdrait sa photo).
+    // Catégorie « sans fond » : on enlève l'arrière-plan de la nouvelle photo si ce n'est pas déjà fait
+    if (newPhotoDataUrl && !newPhotoCut && window.RecipeVisual && RecipeVisual.styleOf({ cat }) === 'free') {
+      statusEl.textContent = "Je retire l'arrière-plan de la photo…";
+      await cutNewPhoto();
+      statusEl.textContent = 'Enregistrement en ligne…';
+    }
     const photo = newPhotoDataUrl || editingOriginalPhoto || '';
 
     const recipeData = {
@@ -947,6 +988,8 @@ addForm.addEventListener('submit', async e => {
       etapes: etapesLines,
     };
     if (photo) recipeData.photo = photo;
+    if (newPhotoDataUrl) recipeData.photoDetouree = newPhotoCut;
+    else if (editingOriginalDetouree) recipeData.photoDetouree = true;
 
     if (editingDocId) {
       await window.CloudRecipes.updateRecipe(editingDocId, recipeData);
