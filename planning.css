@@ -415,7 +415,7 @@
 .plan-course { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: var(--mocha); margin: 0.55rem 0 0.25rem; }
 .plan-course:first-of-type { margin-top: 0.1rem; }
 .plan-hint--block { display: block; margin: 0 0 0.8rem; font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
-.plan-pick.on { border-color: var(--caramel); background: #fbf1e6; }
+.plan-pick.on { border-color: var(--caramel); background: #F3E6D6; }
 .plan-pick.on b { color: #fff; background: var(--caramel); border-radius: 50%; width: 1.6rem; height: 1.6rem; display: grid; place-items: center; font-size: 0.9rem; font-weight: 600; }
 .plan-pick-foot {
   position: sticky; bottom: 0; z-index: 2;
