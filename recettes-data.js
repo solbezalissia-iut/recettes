@@ -1312,6 +1312,72 @@ const recettes = [
     ]
   },
   {
+    "id": "static-688",
+    "photo": "photos/brunsli.jpg",
+    "titre": "Basler Brunsli (bruns de Bâle)",
+    "cat": "dessert",
+    "temps": "35 min (+ 3 h de séchage)",
+    "personnes": "40 biscuits",
+    "ingredients": [
+      {
+        "texte": "250 g de poudre d'amandes",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "poudre d'amandes"
+      },
+      {
+        "texte": "250 g de sucre (+ un peu pour étaler)",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "sucre (+ un peu pour étaler)"
+      },
+      {
+        "texte": "2 c. à soupe de farine",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 c. à café de cannelle",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "150 g de chocolat noir",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "2 blancs d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "blancs d'œufs"
+      }
+    ],
+    "etapes": [
+      "Faire fondre le chocolat noir au bain-marie et le laisser tiédir.",
+      "Mélanger la poudre d'amandes, le sucre, la farine, la cannelle et le sel.",
+      "Monter les blancs en neige, puis les incorporer au mélange avec le chocolat fondu jusqu'à obtenir une pâte homogène.",
+      "Saupoudrer le plan de travail de sucre et étaler la pâte sur 1 cm. Découper des fleurs, des cœurs ou des étoiles.",
+      "Poser les biscuits sur une plaque recouverte de papier cuisson et les laisser sécher 3 à 6 heures à température ambiante.",
+      "Cuire 4 à 6 minutes au milieu du four préchauffé à 250 °C : ils doivent rester tendres à l'intérieur. Laisser refroidir sur la plaque."
+    ],
+    "mc": [
+      "Mettre le chocolat en morceaux dans le bol. Hacher <b>10 s / vitesse 7</b>, puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. Réserver.",
+      "Bol propre et sec, insérer le fouet. Mettre les blancs et le sel, fouetter <b>3 min / vitesse 4</b> jusqu'à des blancs fermes. Retirer le fouet et réserver les blancs.",
+      "Mettre la poudre d'amandes, le sucre, la farine et la cannelle dans le bol. Ajouter le chocolat fondu et les blancs, mélanger <b>30 s / sens inverse / vitesse 3</b> jusqu'à une pâte homogène.",
+      "Étaler sur 1 cm sur du sucre, découper, laisser sécher 3 à 6 heures, puis cuire 4 à 6 minutes à 250 °C."
+    ]
+  },
+  {
     "id": "static-10",
     "titre": "Bâtonnet de glace",
     "photo": "photos/enattente.png",
@@ -3005,6 +3071,13 @@ const recettes = [
       "Badigeonner les biscuits de lait au pinceau et piquer légèrement la pâte avec un pic en bois.",
       "Enfourner à 200°C pendant 13 minutes.",
       "Étaler du Nutella sur la partie pleine de chaque biscuit et refermer avec la face 'visage' pour former le sandwich."
+    ],
+    "mc": [
+      "Mettre le beurre dans le bol et faire fondre <b>2 min / 60 °C / vitesse 2</b>.",
+      "Ajouter le sucre et le sucre glace, mélanger <b>10 s / vitesse 3</b>.",
+      "Ajouter la farine, la maïzena, la levure, le lait et la vanille. Pétrir <b>40 s / mode pétrin</b>. Filmer et réfrigérer 1 heure.",
+      "Étaler sur 3 mm, découper des ovales, faire les yeux et la bouche sur la moitié, badigeonner de lait et piquer.",
+      "Cuire 13 minutes à 200 °C, puis garnir de Nutella et refermer."
     ]
   },
   {
@@ -3079,6 +3152,13 @@ const recettes = [
       "Disposer les sablés sur une plaque recouverte de papier cuisson et les piquer avec une fourchette ou un bâtonnet pour faire les petits trous.",
       "Cuire 12 minutes à 180 °C, jusqu'à légère coloration. Laisser refroidir.",
       "Garnir la moitié des sablés de ganache à la poche à douille et refermer avec un second sablé."
+    ],
+    "mc": [
+      "Ganache : mettre les chocolats en morceaux dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et faire fondre <b>3 min / 50 °C / vitesse 2</b>. Réserver.",
+      "Pâte : bol rincé, mettre la farine, le beurre froid en dés, le sucre, la poudre de noisettes et la vanille. Sabler <b>15 s / vitesse 5</b>.",
+      "Ajouter l'œuf et pétrir <b>30 s / mode pétrin</b>. Placer 1 heure au frais.",
+      "Étaler sur 2 mm, découper, placer 10 minutes au congélateur, piquer et cuire 12 minutes à 180 °C.",
+      "Garnir les sablés refroidis de ganache et refermer."
     ]
   },
   {
@@ -3142,6 +3222,12 @@ const recettes = [
       "Faire fondre le chocolat et tremper une face de chaque biscuit dedans.",
       "Réaliser une petite décoration sur le dessus des biscuits à l'aide d'un cure-dent.",
       "Laisser sécher les biscuits avant de déguster."
+    ],
+    "mc": [
+      "Mettre les flocons d'avoine dans le bol et mixer <b>10 s / vitesse 8</b>.",
+      "Ajouter la farine, le sucre, la levure, le beurre mou et l'eau. Pétrir <b>40 s / mode pétrin</b>.",
+      "Étaler sur 4 mm, découper et cuire 15 minutes à 180 °C.",
+      "Chocolat : bol propre, hacher le chocolat <b>10 s / vitesse 7</b> puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. Tremper une face de chaque biscuit, décorer au cure-dent et laisser sécher."
     ]
   },
   {
@@ -3236,6 +3322,14 @@ const recettes = [
       "Faire revenir les champignons émincés quelques minutes.",
       "Hors du feu, ajouter la crème fraîche, le jaune d'œuf et le jus de citron à la sauce, bien mélanger.",
       "Remettre la viande, les carottes et les champignons dans la sauce, réchauffer doucement sans faire bouillir et servir avec du riz."
+    ],
+    "mc": [
+      "Mettre les carottes et les oignons en morceaux dans le bol. Hacher <b>4 s / vitesse 5</b> (ou garder les carottes en rondelles pour la présentation).",
+      "Ajouter le veau, le poireau, le bouquet garni, les clous de girofle, du sel et de l'eau juste à hauteur (sans dépasser le repère maxi). Cuire <b>75 min / 98 °C / sens inverse / vitesse 1</b>.",
+      "Égoutter la viande et les légumes au panier, en gardant 500 ml de bouillon.",
+      "Mettre le beurre, la farine et le bouillon réservé dans le bol. Cuire <b>6 min / 90 °C / vitesse 4</b>.",
+      "Pendant ce temps, faire revenir les champignons à la poêle.",
+      "Ajouter la crème, le jaune d'œuf et le jus de citron à la sauce et mélanger <b>20 s / vitesse 3</b> (sans chauffer). Verser sur la viande et les légumes et servir avec du riz."
     ]
   },
   {
@@ -3288,6 +3382,12 @@ const recettes = [
       "Laisser reposer 1 heure.",
       "Dans une poêle légèrement beurrée, déposer des cuillères à soupe de pâte.",
       "Retourner quand des bulles apparaissent et cuire encore 30 secondes.",
+      "Garnir de crème fraîche, de saumon fumé ou de tarama."
+    ],
+    "mc": [
+      "Mettre la farine, la levure, le sel, l'œuf, le lait et le beurre fondu dans le bol. Mélanger <b>20 s / vitesse 4</b>.",
+      "Laisser reposer 1 heure.",
+      "Cuire des cuillerées de pâte dans une poêle beurrée, retourner quand des bulles apparaissent.",
       "Garnir de crème fraîche, de saumon fumé ou de tarama."
     ]
   },
@@ -3363,6 +3463,13 @@ const recettes = [
       "Verser la préparation dans un moule de 25x25 cm préalablement beurré.",
       "Cuire au four préchauffé à 170°C pendant 15 à 20 minutes.",
       "Laisser refroidir et réserver au frais pendant 1 heure avant de couper en carrés."
+    ],
+    "mc": [
+      "Mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+      "Ajouter les œufs, le sucre et la vanille. Mélanger <b>20 s / vitesse 4</b>.",
+      "Ajouter la farine et mélanger <b>15 s / vitesse 4</b>. Ajouter les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+      "Verser dans un moule de 25 cm, ajouter le Nutella en points et les Kinder en morceaux.",
+      "Cuire 15 à 20 minutes à 170 °C et réserver 1 heure au frais avant de couper."
     ]
   },
   {
@@ -3416,6 +3523,9 @@ const recettes = [
       "Verser tous les ingrédients dans un verre haut rempli de glaçons.",
       "Mélanger délicatement en transvasant 2 ou 3 fois d’un verre à l’autre.",
       "Décorer d’une branche de céleri."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -3456,6 +3566,11 @@ const recettes = [
       "Mettre tous les ingrédients dans un shaker (ou un blender) avec des glaçons.",
       "Secouer ou mixer jusqu’à obtenir un mélange mousseux.",
       "Verser dans un grand verre et décorer d’ananas et d’une cerise."
+    ],
+    "mc": [
+      "Mettre le rhum, le curaçao, la crème de coco, le jus d'ananas et 4 glaçons dans le bol.",
+      "Mixer <b>15 s / vitesse 8</b> jusqu'à obtenir un mélange mousseux.",
+      "Verser dans un grand verre et décorer d'ananas et d'une cerise."
     ]
   },
   {
@@ -3510,6 +3625,10 @@ const recettes = [
       "Filtrer le mélange dans un verre haut préalablement refroidi.",
       "Compléter avec un peu de glace pilée si nécessaire et disposer une tranche d'ananas sur le rebord du verre pour la garniture.",
       "Servir frais et déguster aussitôt, idéal pour une ambiance club ou bar tropical."
+    ],
+    "mc": [
+      "Mettre la vodka, le curaçao, le jus d'ananas, le jus de citron vert et le sirop dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
+      "Verser dans un verre haut rempli de glace pilée et décorer d'une tranche d'ananas."
     ]
   },
   {
@@ -3570,6 +3689,13 @@ const recettes = [
       "Couper le concombre en bâtonnets, l'avocat en tranches, et râper la carotte.",
       "Répartir le vermicelle dans des bols, puis disposer le poulet laqué, le concombre, la carotte et l'avocat par-dessus.",
       "Parsemer de cacahuètes ou de noix concassées et servir avec un peu de sauce soja sucrée supplémentaire à part."
+    ],
+    "mc": [
+      "Mariner le poulet 15 minutes dans la moitié de la sauce soja sucrée.",
+      "Mettre la carotte en morceaux dans le bol et râper <b>4 s / vitesse 5</b>. Réserver.",
+      "Mettre 1 L d'eau dans le bol et chauffer <b>8 min / 100 °C / vitesse 1</b>. Verser sur le vermicelle et laisser tremper selon le paquet, puis rincer à l'eau froide.",
+      "Cuire le poulet à la poêle à feu vif et le laquer avec le reste de sauce soja.",
+      "Composer les bols : vermicelle, poulet, concombre, carotte, avocat, cacahuètes."
     ]
   },
   {
@@ -3621,6 +3747,13 @@ const recettes = [
       "Faire bouillir les boules de boba dans une casserole d'eau bouillante pendant 20 minutes.",
       "Rincer les boba à l'eau froide et les mélanger avec l'édulcorant de votre choix.",
       "Ajouter les boba dans un verre et compléter avec votre thé préféré."
+    ],
+    "mc": [
+      "Mettre la mangue, le sucre et l'eau dans le bol. Cuire <b>5 min / 100 °C / vitesse 1</b>, puis mixer <b>20 s / vitesse 8</b>.",
+      "Ajouter 2 c. à soupe de tapioca et mélanger <b>2 min / 80 °C / vitesse 3</b> jusqu'à consistance de gel.",
+      "Ajouter le reste du tapioca et pétrir <b>30 s / mode pétrin</b>.",
+      "Former de petites boules et les cuire 20 minutes dans une casserole d'eau bouillante.",
+      "Rincer à l'eau froide, mélanger avec l'édulcorant et servir dans un thé."
     ]
   },
   {
@@ -3703,6 +3836,13 @@ const recettes = [
       "Couvrir et laisser mijoter à feu doux 2h à 2h30.",
       "Ajouter les champignons 20 minutes avant la fin de cuisson.",
       "Servir avec des pommes de terre vapeur ou des tagliatelles fraîches."
+    ],
+    "mc": [
+      "Faire mariner la viande dans le vin 2 heures (facultatif). Égoutter en gardant le vin.",
+      "Mettre les oignons, les carottes et l'ail dans le bol. Hacher <b>4 s / vitesse 5</b>. Ajouter l'huile et les lardons, rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la viande et la farine, rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b> (sans le gobelet).",
+      "Ajouter le vin de la marinade, le bouquet garni, sel et poivre. Cuire <b>90 min / 98 °C / sens inverse / vitesse 1</b>, en laissant le gobelet de côté.",
+      "Ajouter les champignons et cuire encore <b>20 min / 98 °C / sens inverse / vitesse 1</b>. Servir avec des pommes de terre vapeur ou des tagliatelles."
     ]
   },
   {
@@ -3746,6 +3886,10 @@ const recettes = [
       "Faire fondre le chocolat blanc de la même manière.",
       "Ajouter le chocolat blanc fondu par-dessus.",
       "Réserver au réfrigérateur pendant au moins 20 minutes pour que le chocolat se solidifie."
+    ],
+    "mc": [
+      "Mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b> puis faire fondre <b>3 min / 50 °C / vitesse 2</b>. Faire de même avec le chocolat blanc.",
+      "Mélanger le yaourt et l'épeautre soufflé dans un bol, verser les deux chocolats et réserver 20 minutes au frais."
     ]
   },
   {
@@ -3786,6 +3930,12 @@ const recettes = [
           "Pour une version acidulée, saupoudrer d'acide citrique.",
           "Découper des bandes régulières et les rouler dans un peu de sucre.",
           "Laisser refroidir complètement, puis conserver dans une boîte hermétique au sec."
+        ],
+        "mc": [
+          "Préchauffer le four à 80 °C.",
+          "Mettre la compote et le sucre dans le bol. Mélanger <b>20 s / vitesse 4</b>, puis cuire <b>10 min / 100 °C / vitesse 2</b> pour bien dissoudre le sucre.",
+          "Étaler finement sur une plaque et faire sécher 3 heures au four.",
+          "Saupoudrer d'acide citrique si désiré, découper des bandes, les rouler dans le sucre et conserver au sec."
         ]
       },
       {
@@ -3812,6 +3962,12 @@ const recettes = [
           "Étaler la purée en couche fine et régulière sur la plaque.",
           "Faire sécher au four environ 3 heures, jusqu’à ce que la plaque ne colle plus.",
           "Découper en fines bandes et les rouler."
+        ],
+        "mc": [
+          "Préchauffer le four à 70 °C.",
+          "Mettre les fruits et la banane dans le bol. Mixer <b>30 s / vitesse 8</b> jusqu'à une purée lisse.",
+          "Étaler finement sur une plaque et faire sécher environ 3 heures.",
+          "Découper en bandes et les rouler."
         ]
       }
     ]
@@ -3879,6 +4035,12 @@ const recettes = [
       "Ajouter les légumes coupés en gros morceaux, le bouquet garni et le poivre.",
       "Laisser frémir 2 heures sans couvrir complètement.",
       "Filtrer, saler légèrement. Se conserve 3 jours au réfrigérateur ou se congèle en portions."
+    ],
+    "mc": [
+      "Mettre les légumes en gros morceaux dans le bol et hacher <b>3 s / vitesse 5</b>.",
+      "Ajouter la carcasse (ou les ailes), le bouquet garni, le poivre et de l'eau jusqu'au repère maxi (environ 2 L).",
+      "Cuire <b>60 min / 98 °C / sens inverse / vitesse 1</b>.",
+      "Filtrer et saler légèrement. Se garde 3 jours au réfrigérateur ou se congèle en portions."
     ]
   },
   {
@@ -3972,6 +4134,14 @@ const recettes = [
       "Disposer les boules sur une plaque avec papier cuisson (ou serrées dans un moule rond pour une brioche à partager). Couvrir et laisser lever. Préchauffer le four à 180 °C en fin de pousse.",
       "Badigeonner de jaune d'œuf délayé avec un peu d'eau, parsemer d'un peu de gruyère et enfourner jusqu'à ce que les boules soient bien dorées.",
       "Laisser tiédir quelques minutes sur une grille avant de servir."
+    ],
+    "mc": [
+      "Mettre le lait, le sucre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le sel, le poivre et les œufs. Pétrir <b>3 min / mode pétrin</b>.",
+      "Ajouter le beurre en dés et pétrir encore <b>3 min / mode pétrin</b>, jusqu'à une pâte souple qui se décolle.",
+      "Laisser lever jusqu'à ce que la pâte double (ou une nuit au réfrigérateur).",
+      "Farce : mettre le gruyère en morceaux dans le bol propre et râper <b>8 s / vitesse 6</b>. Ajouter le jambon et la moutarde, mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+      "Façonner 12 boules farcies, laisser lever, dorer au jaune d'œuf, parsemer de gruyère et cuire à 180 °C jusqu'à ce qu'elles soient bien dorées."
     ]
   },
   {
@@ -4025,6 +4195,13 @@ const recettes = [
           "Faire fondre le chocolat blanc pour le glaçage et tremper chaque boule.",
           "Retirer les cure-dents et décorer chaque boule avec un peu de pâte de Lotus fondue et des miettes de biscuits.",
           "Conserver les boules au réfrigérateur jusqu'au moment de servir."
+        ],
+        "mc": [
+          "Mettre les biscuits Lotus dans le bol. Mixer <b>15 s / vitesse 8</b>.",
+          "Mettre le chocolat blanc (100 g) dans un autre récipient, ou faire fondre d'abord dans le bol : hacher <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter le caprice des dieux, la pâte de Lotus et les biscuits mixés au chocolat fondu. Mélanger <b>20 s / vitesse 4</b>.",
+          "Former des boules, piquer un cure-dent et congeler 1 heure.",
+          "Faire fondre les 200 g de chocolat blanc de la même façon, enrober les boules, décorer et conserver au réfrigérateur."
         ]
       },
       {
@@ -4074,6 +4251,13 @@ const recettes = [
           "Faire fondre le chocolat blanc pour le glaçage.",
           "Tremper chaque boule dans le chocolat blanc fondu pour les enrober.",
           "Retirer le cure-dent, ajouter un peu de pâte de Lotus fondue et parsemer de miettes de biscuits Lotus."
+        ],
+        "mc": [
+          "Mettre les biscuits Lotus dans le bol. Mixer <b>15 s / vitesse 8</b>. Réserver.",
+          "Mettre 100 g de chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b> puis faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter les biscuits mixés, le fromage à la crème et la pâte de Lotus. Mélanger <b>20 s / vitesse 4</b>.",
+          "Former 9 boules, piquer un cure-dent et congeler 1 heure.",
+          "Faire fondre les 200 g de chocolat blanc de la même façon, enrober, décorer de pâte de Lotus et de miettes."
         ]
       }
     ]
@@ -4135,6 +4319,12 @@ const recettes = [
       "Préparer le caramel : chauffer le sucre, l'eau et le vinaigre sans mélanger jusqu'à obtenir une couleur dorée.",
       "Tremper chaque boule dans le caramel et la déposer sur du papier cuisson pour la laisser figer.",
       "Réfrigérer brièvement pour que le caramel durcisse bien, puis servir frais ou à température ambiante."
+    ],
+    "mc": [
+      "Mettre le lait concentré, les poudres d'amandes et de noisettes et le beurre dans le bol. Cuire <b>12 min / 100 °C / vitesse 3</b>, sans le gobelet, jusqu'à ce que la pâte s'épaississe bien.",
+      "Laisser refroidir et former de petites boules.",
+      "Caramel : le faire à la casserole (sucre, eau et vinaigre sans remuer jusqu'à coloration dorée) : la température du caramel dépasse ce que fait le Monsieur Cuisine.",
+      "Tremper les boules dans le caramel, les poser sur du papier cuisson et réfrigérer brièvement."
     ]
   },
   {
@@ -4260,6 +4450,14 @@ const recettes = [
       "Ajouter la crème, la moutarde et le persil, mélanger et laisser mijoter jusqu'à ce que la sauce épaississe légèrement.",
       "Remettre les boulettes dans la sauce et laisser mijoter encore 10 minutes à couvert, jusqu'à ce qu'elles soient bien cuites à cœur.",
       "Servir chaud, avec des pâtes, du riz ou une purée."
+    ],
+    "mc": [
+      "Mettre l'ail dans le bol et hacher <b>3 s / vitesse 7</b>. Ajouter la viande, la chapelure, les épices, l'œuf, sel et poivre. Mélanger <b>20 s / sens inverse / vitesse 3</b>.",
+      "Former les boulettes et les dorer à la poêle dans un peu de beurre. Réserver.",
+      "Mettre les échalotes dans le bol propre, hacher <b>3 s / vitesse 5</b>. Ajouter le beurre restant et rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les champignons et rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter la farine, le bouillon (avec le cube), la crème et la moutarde. Cuire <b>8 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Verser la sauce sur les boulettes dans la poêle, laisser mijoter 10 minutes à couvert et parsemer de persil."
     ]
   },
   {
@@ -4310,6 +4508,12 @@ const recettes = [
       "Dans un plat à four, mélanger la purée de tomates avec des épices à salade.",
       "Disposer les boulettes dans le plat.",
       "Mettre au four à 180°C pendant 25 à 30 min."
+    ],
+    "mc": [
+      "Mettre le caprice des dieux bien froid dans le bol et râper <b>5 s / vitesse 5</b>.",
+      "Ajouter la viande, l'œuf, un filet d'huile, sel, poivre et épices. Mélanger <b>20 s / sens inverse / vitesse 3</b>.",
+      "Former 7 boulettes et les poser dans un plat sur la purée de tomates assaisonnée.",
+      "Cuire 25 à 30 minutes au four à 180 °C."
     ]
   },
   {
@@ -4376,6 +4580,12 @@ const recettes = [
       "Ajouter le poulet coupé en morceaux et l'ail émincé ; faire sauter 5 à 7 minutes jusqu'à cuisson complète et légèrement doré.",
       "Ajouter le poivron et poursuivre la cuisson 3 minutes, puis arroser avec la sauce soja et mélanger pour enrober les ingrédients.",
       "Dresser le riz dans un bol, disposer le mélange de poulet et légumes par-dessus et servir immédiatement."
+    ],
+    "mc": [
+      "Mettre l'oignon et l'ail dans le bol, hacher <b>3 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le poulet en morceaux et le poivron en lamelles. Cuire <b>6 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter la sauce soja et 300 ml d'eau. Mettre le riz rincé dans le panier de cuisson, l'insérer dans le bol et cuire <b>15 min / 100 °C / vitesse 1</b> (le poulet mijote dessous, le riz cuit dans la vapeur et l'eau).",
+      "Vérifier que le poulet est cuit, puis servir le riz surmonté du poulet aux légumes."
     ]
   },
   {
@@ -4418,6 +4628,10 @@ const recettes = [
       "Découper les fruits frais en morceaux et les disposer sur la crème chantilly.",
       "Terminer en ajoutant les moitiés de Kinderjoy sur le dessus.",
       "Servir immédiatement et déguster."
+    ],
+    "mc": [
+      "Chantilly maison : insérer le fouet, mettre la crème bien froide et un peu de sucre glace, fouetter <b>vitesse 4</b> en surveillant (1 à 2 min).",
+      "Monter le bol : céréales, chantilly, fruits coupés et moitiés de Kinderjoy. Servir aussitôt."
     ]
   },
   {
@@ -4485,6 +4699,12 @@ const recettes = [
       "Réchauffer les haricots noirs avec le cumin et une pincée de sel.",
       "Écraser l’avocat avec le jus du citron vert.",
       "Composer les bols : riz, haricots, plantains, avocat, oignon rouge émincé et coriandre."
+    ],
+    "mc": [
+      "Mettre le riz rincé dans le panier de cuisson, 1 L d'eau salée dans le bol, et cuire <b>15 min / 100 °C / vitesse 1</b>.",
+      "Pendant ce temps, dorer les plantains à la poêle 3 minutes par face.",
+      "Réchauffer les haricots noirs avec le cumin (dans le bol vidé : <b>4 min / 90 °C / sens inverse / vitesse 1</b>).",
+      "Écraser l'avocat avec le citron vert, puis composer les bols avec l'oignon rouge et la coriandre."
     ]
   },
   {
@@ -4536,6 +4756,12 @@ const recettes = [
       "Ajouter l'ail émincé et le persil ciselé.",
       "Prendre une feuille de brick, y déposer une cuillerée de farce, plier et façonner en forme de brick.",
       "Faire frire les bricks jusqu'à ce qu'elles soient dorées des deux côtés. Égoutter sur du papier absorbant."
+    ],
+    "mc": [
+      "Mettre l'ail et le persil dans le bol, hacher <b>3 s / vitesse 7</b>. Réserver.",
+      "Mettre 500 ml d'eau dans le bol, les pommes de terre en dés dans le panier, et cuire <b>20 min / 100 °C / vitesse 1</b>.",
+      "Vider l'eau, mettre les pommes de terre dans le bol avec le thon, le caprice des dieux râpé, l'ail, le persil et les épices. Mélanger <b>15 s / vitesse 3</b>.",
+      "Garnir les feuilles de brick, les plier et les frire jusqu'à ce qu'elles soient dorées."
     ]
   },
   {
@@ -15450,7 +15676,7 @@ const recettes = [
   {
     "id": "static-642",
     "titre": "Étoiles à la cannelle (Zimtsterne)",
-    "photo": "photos/enattente.png",
+    "photo": "photos/zimtsterne.jpg",
     "cat": "dessert",
     "temps": "40 min (+ 1 h de repos)",
     "personnes": "30",
@@ -15491,6 +15717,13 @@ const recettes = [
       "Incorporer la poudre d’amandes et la cannelle au reste pour obtenir une pâte.",
       "Étaler sur 1 cm entre deux feuilles de papier cuisson saupoudrées de sucre glace et découper des étoiles.",
       "Napper chaque étoile d’un peu de meringue réservée et laisser sécher 1 heure.",
+      "Cuire 10 minutes à 150 °C : le dessus doit rester blanc."
+    ],
+    "mc": [
+      "Bol propre et sec, insérer le fouet. Mettre les blancs d'œufs et fouetter <b>3 min / vitesse 4</b> jusqu'à des blancs fermes.",
+      "Ajouter le sucre glace petit à petit puis le jus de citron, en fouettant <b>2 min / vitesse 4</b> jusqu'à une meringue brillante. Retirer le fouet et réserver 4 cuillères à soupe de meringue.",
+      "Ajouter la poudre d'amandes et la cannelle dans le bol. Mélanger <b>20 s / sens inverse / vitesse 3</b> jusqu'à obtenir une pâte.",
+      "Étaler sur 1 cm entre deux feuilles saupoudrées de sucre glace, découper les étoiles, les napper de meringue et laisser sécher 1 heure.",
       "Cuire 10 minutes à 150 °C : le dessus doit rester blanc."
     ]
   },
@@ -24151,6 +24384,80 @@ const recettes = [
       "Secouer le rhum blanc, le curaçao, l’orgeat et le jus de citron vert au shaker avec des glaçons.",
       "Verser sur de la glace pilée dans un verre bas.",
       "Faire flotter le rhum ambré sur le dessus et décorer de menthe et d’ananas."
+    ]
+  },
+  {
+    "id": "static-687",
+    "photo": "photos/mailanderli.jpg",
+    "titre": "Mailänderli (biscuits de Milan)",
+    "cat": "dessert",
+    "temps": "40 min (+ 2 h au frais)",
+    "personnes": "40 biscuits",
+    "ingredients": [
+      {
+        "texte": "250 g de beurre mou",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "225 g de sucre",
+        "valeur": 225,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "1 citron bio (zeste)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron bio (zeste)"
+      },
+      {
+        "texte": "500 g de farine",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      },
+      {
+        "texte": "50 g de chocolat noir (facultatif, version chocolat)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "chocolat noir (facultatif, version chocolat)"
+      }
+    ],
+    "etapes": [
+      "Travailler le beurre mou avec le sucre et le sel jusqu'à ce que le mélange blanchisse.",
+      "Ajouter les œufs un à un, puis le zeste de citron.",
+      "Incorporer la farine et rassembler la pâte sans trop la travailler. Pour une version chocolat, ajouter le chocolat fondu et tiédi à une partie de la pâte.",
+      "Aplatir la pâte, la filmer et la réfrigérer au moins 2 heures.",
+      "Préchauffer le four à 200 °C. Étaler la pâte sur 7 mm et découper des formes (cœurs, étoiles, fleurs).",
+      "Poser les biscuits sur une plaque recouverte de papier cuisson et les badigeonner de jaune d'œuf délayé avec un peu d'eau.",
+      "Cuire 8 à 10 minutes au milieu du four, jusqu'à ce qu'ils soient dorés. Laisser refroidir sur une grille."
+    ],
+    "mc": [
+      "Mettre le zeste de citron (prélevé au zesteur, sans le blanc) et le sucre dans le bol. Mixer <b>15 s / vitesse 9</b>.",
+      "Ajouter le beurre mou et le sel. Mélanger <b>30 s / vitesse 4</b>.",
+      "Ajouter les œufs et mélanger <b>15 s / vitesse 4</b>.",
+      "Ajouter la farine et pétrir <b>40 s / mode pétrin</b>. Version chocolat : faire fondre le chocolat avant (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>) et l'incorporer à une partie de la pâte.",
+      "Filmer et réfrigérer 2 heures, étaler sur 7 mm, découper, dorer au jaune d'œuf et cuire 8 à 10 minutes à 200 °C."
     ]
   },
   {
@@ -38619,6 +38926,75 @@ const recettes = [
       "Couper les tomates cerises en deux et les mélanger avec l'huile d'olive, le jus de citron, l'ail émincé, le sel, le poivre et le basilic ciselé.",
       "Mélanger les spaghetti refroidis avec la sauce burrata et les légumes assaisonnés.",
       "Répartir dans des assiettes et ajouter des morceaux de burrata supplémentaires sur le dessus."
+    ]
+  },
+  {
+    "id": "static-689",
+    "photo": "photos/spitzbuebe.jpg",
+    "titre": "Spitzbuebe (sablés suisses à la gelée de framboise)",
+    "cat": "dessert",
+    "temps": "45 min (+ 1 h au frais)",
+    "personnes": "25 biscuits",
+    "ingredients": [
+      {
+        "texte": "250 g de beurre mou",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "125 g de sucre",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 sachet de sucre vanillé",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "sucre vanillé"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 blanc d'œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc d'œuf"
+      },
+      {
+        "texte": "350 g de farine",
+        "valeur": 350,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "200 g de gelée de framboise",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "gelée de framboise"
+      },
+      "sucre glace"
+    ],
+    "etapes": [
+      "Travailler le beurre mou avec le sucre, le sucre vanillé et le sel jusqu'à ce que le mélange blanchisse.",
+      "Ajouter le blanc d'œuf, puis la farine, et rassembler la pâte sans trop la travailler.",
+      "Aplatir la pâte, la filmer et la réfrigérer 1 heure.",
+      "Préchauffer le four à 180 °C. Étaler la pâte sur 2 à 3 mm et découper des ronds dentelés. Évider le centre de la moitié des ronds avec un petit emporte-pièce.",
+      "Cuire 8 à 10 minutes sur une plaque recouverte de papier cuisson : les biscuits doivent rester clairs. Laisser refroidir.",
+      "Saupoudrer de sucre glace les biscuits évidés.",
+      "Chauffer légèrement la gelée de framboise, en étaler sur les biscuits pleins et poser dessus les biscuits évidés."
+    ],
+    "mc": [
+      "Mettre le beurre mou, le sucre, le sucre vanillé et le sel dans le bol. Mélanger <b>30 s / vitesse 4</b>.",
+      "Ajouter le blanc d'œuf et la farine. Pétrir <b>40 s / mode pétrin</b>. Filmer et réfrigérer 1 heure.",
+      "Étaler sur 2 à 3 mm, découper, évider la moitié des ronds et cuire 8 à 10 minutes à 180 °C.",
+      "Mettre la gelée de framboise dans le bol propre et chauffer <b>2 min / 50 °C / vitesse 2</b>.",
+      "Saupoudrer de sucre glace les biscuits évidés, garnir les biscuits pleins de gelée et les assembler."
     ]
   },
   {

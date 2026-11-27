@@ -2,13 +2,15 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2C1A0E">
 <title>Les recettes d'Alissia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="planning.css">
+<link rel="stylesheet" href="mobile.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
 <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
@@ -39,12 +41,19 @@
 <div id="view-recettes">
 <div class="filter-bar">
   <div class="container">
-    <div class="filter-inner">
-      <span class="filter-label">Chercher</span>
+    <div class="filter-top">
       <div class="search-wrap">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input type="text" id="search-input" placeholder="Nom de la recette…">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" id="search-input" placeholder="Chercher une recette…" autocomplete="off" enterkeyhint="search">
+        <button type="button" class="search-clear" id="search-clear" aria-label="Effacer la recherche" hidden>✕</button>
       </div>
+      <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filter-more">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+        <span>Filtres</span><i class="filters-count" id="filters-count" hidden></i>
+      </button>
+    </div>
+    <div class="filter-more" id="filter-more">
+    <div class="filter-inner">
       <span class="filter-label">Filtrer par ingrédient</span>
       <div class="ing-input-wrap">
         <input type="text" id="ing-input" placeholder="Ex : fraises, thon…">
@@ -71,25 +80,26 @@
       <button class="add-recipe-btn" id="add-recipe-btn">+ Ajouter une recette</button>
     </div>
     <div class="diet-row">
-      <span class="filter-label">Filtres</span>
+      <span class="filter-label">Régimes</span>
       <div class="diet-filters" id="diet-filters"></div>
+    </div>
+    </div>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Catégories">
+      <button class="tab-btn active" data-cat="all"><span class="tab-ic" aria-hidden="true">🍽️</span>Toutes <span class="tab-count" id="count-all">0</span></button>
+      <button class="tab-btn" data-cat="apero"><span class="tab-ic" aria-hidden="true">🥂</span>Apéro <span class="tab-count" id="count-apero">0</span></button>
+      <button class="tab-btn" data-cat="entree"><span class="tab-ic" aria-hidden="true">🥗</span>Entrée <span class="tab-count" id="count-entree">0</span></button>
+      <button class="tab-btn" data-cat="plat"><span class="tab-ic" aria-hidden="true">🍲</span>Plat <span class="tab-count" id="count-plat">0</span></button>
+      <button class="tab-btn" data-cat="accompagnement"><span class="tab-ic" aria-hidden="true">🥔</span>Accompagnement <span class="tab-count" id="count-accompagnement">0</span></button>
+      <button class="tab-btn" data-cat="dessert"><span class="tab-ic" aria-hidden="true">🍰</span>Dessert <span class="tab-count" id="count-dessert">0</span></button>
+      <button class="tab-btn" data-cat="boisson"><span class="tab-ic" aria-hidden="true">🍹</span>Boisson <span class="tab-count" id="count-boisson">0</span></button>
+      <button class="tab-btn" data-cat="sauce"><span class="tab-ic" aria-hidden="true">🥫</span>Sauce <span class="tab-count" id="count-sauce">0</span></button>
+      <button class="tab-btn" data-cat="base-culinaire"><span class="tab-ic" aria-hidden="true">🧂</span>Base culinaire <span class="tab-count" id="count-base-culinaire">0</span></button>
+      <button class="tab-btn" data-cat="maison"><span class="tab-ic" aria-hidden="true">🧺</span>Maison <span class="tab-count" id="count-maison">0</span></button>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="tabs" id="tabs">
-    <button class="tab-btn active" data-cat="all">Toutes <span class="tab-count" id="count-all">0</span></button>
-    <button class="tab-btn" data-cat="apero">Apéro <span class="tab-count" id="count-apero">0</span></button>
-    <button class="tab-btn" data-cat="entree">Entrée <span class="tab-count" id="count-entree">0</span></button>
-    <button class="tab-btn" data-cat="plat">Plat <span class="tab-count" id="count-plat">0</span></button>
-    <button class="tab-btn" data-cat="accompagnement">Accompagnement <span class="tab-count" id="count-accompagnement">0</span></button>
-    <button class="tab-btn" data-cat="dessert">Dessert <span class="tab-count" id="count-dessert">0</span></button>
-    <button class="tab-btn" data-cat="boisson">Boisson <span class="tab-count" id="count-boisson">0</span></button>
-    <button class="tab-btn" data-cat="sauce">Sauce <span class="tab-count" id="count-sauce">0</span></button>
-    <button class="tab-btn" data-cat="base-culinaire">Base culinaire <span class="tab-count" id="count-base-culinaire">0</span></button>
-    <button class="tab-btn" data-cat="maison">Maison <span class="tab-count" id="count-maison">0</span></button>
-  </div>
 
   <div class="section visible" id="section-all">
     <div class="results-info" id="info-all"></div>
@@ -325,6 +335,9 @@
   </div>
 </div>
 
+<!-- Bouton flottant « Ajouter une recette » (téléphone) -->
+<button type="button" class="add-fab" id="add-fab" aria-label="Ajouter une recette">+</button>
+
 <!-- Fenêtre de choix (jour / recette) pour le planning -->
 <div class="plan-overlay" id="plan-overlay"><div class="plan-sheet" id="plan-sheet"></div></div>
 <div class="plan-toast" id="plan-toast" role="status"></div>
@@ -338,6 +351,7 @@
 <script src="recettes-data.js"></script>
 <script src="app.js"></script>
 <script src="planning.js"></script>
+<script src="nav.js"></script>
 <script src="firebase-config.js"></script>
 <script type="module" src="cloud.js"></script>
 </body>
