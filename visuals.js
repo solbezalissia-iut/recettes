@@ -127,7 +127,9 @@
   //  • bol à sauce pour les sauces
   //  • l'aliment seul, sans fond, pour tout le reste (verre de cocktail, apéro…)
   const PLATE_CATS = ['plat', 'entree', 'dessert'];
-  const styleOf = r => PLATE_CATS.includes(r.cat) ? 'plate' : (r.cat === 'sauce' ? 'bowl' : 'free');
+  // r.presentation (choisie dans le formulaire) passe avant la catégorie
+  const catStyle = cat => PLATE_CATS.includes(cat) ? 'plate' : (cat === 'sauce' ? 'bowl' : 'free');
+  const styleOf = r => ['plate', 'bowl', 'free'].includes(r.presentation) ? r.presentation : catStyle(r.cat);
   function plateHtml(r, cls) {
     const st = styleOf(r);
     if (st === 'free') return `<div class="free ${cls || ''}" aria-hidden="true">${visualInner(r, true)}</div>`;
@@ -155,5 +157,5 @@
     if (muts.some(m => [...m.addedNodes].some(n => n.nodeType === 1 && (n.matches('img.vis-wait') || n.querySelector('img.vis-wait'))))) hydrate();
   }).observe(document.documentElement, { childList: true, subtree: true });
 
-  window.RecipeVisual = { emojiFor, hasPhoto, plateHtml, thumbHtml, styleOf, hydrate, tint: r => TINT[r.cat] || '#EFE4D4' };
+  window.RecipeVisual = { catStyle, emojiFor, hasPhoto, plateHtml, thumbHtml, styleOf, hydrate, tint: r => TINT[r.cat] || '#EFE4D4' };
 })();
