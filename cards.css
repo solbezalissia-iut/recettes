@@ -376,3 +376,7 @@
 }
 .bowl .plate-in { width: 80% !important; height: 80% !important; }
 .plate-in .vis-photo { display: block; }
+
+/* Nombre de personnes + ce qu'il compte (pers., muffins…) */
+.pers-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+.pers-row input { min-width: 0; }

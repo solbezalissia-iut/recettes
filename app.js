@@ -55,7 +55,7 @@ function refreshRecettes() {
   // reste à sa place dans la liste (avant, elle partait tout à la fin).
   const keyOf = r => r ? (r._docId ? 'live:' + r._docId : r._staticId) : null;
   const openKey = currentRecetteIdx !== null ? keyOf(allRecettes[currentRecetteIdx]) : null;
-  allRecettes = removeDuplicates(mergeVersionDuplicates(visibleStatic.concat(dedupeLive(liveRecettes))))
+  allRecettes = removeDuplicates(mergeVersionDuplicates(mergeAliasedLive(visibleStatic.concat(dedupeLive(liveRecettes)))))
     .sort((a, b) => String(a.titre || '').localeCompare(String(b.titre || ''), 'fr', { sensitivity: 'base' }));
   if (openKey) {
     // La fiche ouverte garde la bonne recette même si sa position a changé
@@ -66,6 +66,29 @@ function refreshRecettes() {
   renderFilters();
   buildGrids();
   if (currentRecetteIdx !== null) updateModalPermissions();
+}
+
+// Une recette en ligne qui modifiait une recette d'origine fusionnée depuis dans une autre
+// (ex. « Banane plantain caramélisée ») : son contenu va dans la bonne version de la recette fusionnée.
+function mergeAliasedLive(list) {
+  const AL = typeof recettesFusionnees !== 'undefined' ? recettesFusionnees : {};
+  const drop = new Set(), copies = new Map();
+  list.forEach(o => {
+    const al = o.replacesStaticId && AL[o.replacesStaticId]; if (!al) return;
+    const t = list.find(r => r !== o && (r._staticId === al[0] || r.replacesStaticId === al[0]) && r.variantes);
+    if (!t) return;
+    const copy = copies.get(t) || { ...t, variantes: t.variantes.map(v => ({ ...v })), _mergedFrom: [...(t._mergedFrom || [])] };
+    getVariants(o).forEach((ov, i) => {
+      const vi = al[1] + i; if (!copy.variantes[vi]) return;
+      const nv = { ...copy.variantes[vi], temps: ov.temps, personnes: ov.personnes, ingredients: ov.ingredients, etapes: ov.etapes };
+      if (ov.mc && ov.mc.length) nv.mc = ov.mc;
+      const ph = ov.photo || (getVariants(o).length === 1 ? o.photo : null);
+      if (ph && !/enattente/i.test(ph)) { nv.photo = ph; nv.photoDetouree = !!(ov.photo ? ov.photoDetouree : o.photoDetouree); }
+      copy.variantes[vi] = nv;
+    });
+    copy._mergedFrom.push(o); copies.set(t, copy); drop.add(o);
+  });
+  return list.filter(r => !drop.has(r)).map(r => copies.get(r) || r);
 }
 
 // ── Aucun doublon ──
@@ -258,8 +281,10 @@ function ingLabel(ing) {
 // simple recipe or a grouped one with a `variantes` array.
 function getVariants(r) {
   if (r.variantes) return r.variantes;
-  return [{ nom: null, temps: r.temps, personnes: r.personnes, ingredients: r.ingredients, etapes: r.etapes, mc: r.mc }];
+  return [{ nom: null, temps: r.temps, personnes: r.personnes, portion: r.portion, ingredients: r.ingredients, etapes: r.etapes, mc: r.mc }];
 }
+// Ce que compte le nombre : « pers. » ou ce que la recette donne (« muffins », « pots »…)
+function portionOf(v) { return (v && v.portion) || 'pers.'; }
 
 function previewVariant(r) {
   return getVariants(r)[0];
@@ -354,7 +379,7 @@ function renderCard(card, r, idx, vi) {
         </div>
         <div class="card-foot">
           <span>⏱ ${formatTemps(v.temps)}</span>
-          <span>👥 ${v.personnes} pers.</span>
+          <span>👥 ${v.personnes} ${portionOf(v)}</span>
           ${mc ? '<span class="foot-mc">Monsieur Cuisine</span>' : ''}
           ${ownerBadge}
         </div>
@@ -565,6 +590,7 @@ function selectVariant(vIdx) {
   currentServings = baseServings;
   document.getElementById('modal-meta').innerHTML = `<span>⏱ ${formatTemps(v.temps)}</span>`;
   document.getElementById('serving-count').textContent = currentServings;
+  const su = document.querySelector('.serving-unit'); if (su) su.textContent = portionOf(v);
   renderVariantTabs();
   renderIngredients();
   renderSteps();
@@ -1140,6 +1166,7 @@ function loadVariantInForm(i) {
   document.getElementById('variant-pick').value = String(i);
   document.getElementById('new-temps').value = v.temps || '';
   document.getElementById('new-personnes').value = v.personnes || '';
+  document.getElementById('new-portion').value = v.portion || '';
   v._ingText = (v.ingredients || []).map(ingLabel).join('\n');
   v._etText = (v.etapes || []).join('\n');
   document.getElementById('new-ingredients').value = v._ingText;
@@ -1161,6 +1188,7 @@ function saveVariantFromForm() {
   const v = editingVariants[editingVariantIdx];
   v.temps = document.getElementById('new-temps').value.trim();
   const p = document.getElementById('new-personnes').value.trim(); v.personnes = isNaN(+p) || p === '' ? p : +p;
+  const po = document.getElementById('new-portion').value.trim(); if (po && po !== 'pers.') v.portion = po; else delete v.portion;
   const ing = document.getElementById('new-ingredients').value, et = document.getElementById('new-etapes').value;
   if (ing !== v._ingText) v.ingredients = ing.split('\n').map(l => l.trim()).filter(Boolean).map(parseIngredientLine);
   if (et !== v._etText) v.etapes = et.split('\n').map(l => l.trim()).filter(Boolean);
@@ -1212,6 +1240,7 @@ document.getElementById('modal-edit').addEventListener('click', () => {
     document.getElementById('variant-pick-field').style.display = 'none';
     document.getElementById('new-temps').value = r.temps || '';
     document.getElementById('new-personnes').value = r.personnes || '';
+    document.getElementById('new-portion').value = r.portion || '';
     document.getElementById('new-ingredients').value = (r.ingredients || []).map(ingLabel).join('\n');
     ingRowsFromText(document.getElementById('new-ingredients').value);
     document.getElementById('new-etapes').value = (r.etapes || []).join('\n');
@@ -1400,6 +1429,8 @@ addForm.addEventListener('submit', async e => {
       etapes: etapesLines,
     };
     recipeData.presentation = cropStyle();
+    const portion = document.getElementById('new-portion').value.trim();
+    if (!editingVariants) recipeData.portion = portion && portion !== 'pers.' ? portion : '';
     if (photo) recipeData.photo = photo;
     if (editingVariants) {
       saveVariantFromForm();

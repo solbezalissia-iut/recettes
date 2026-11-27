@@ -249,7 +249,7 @@
       <div class="frigo-card-body">
         <div class="card-cat">${esc(catLabels[r.cat] || '')}${v.nom ? ' · ' + esc(v.nom) : ''}</div>
         <h3 class="frigo-card-title">${esc(r.titre)}</h3>
-        <div class="frigo-meta">⏱ ${esc(formatTemps(v.temps))} · 👥 ${esc(v.personnes)} pers.</div>
+        <div class="frigo-meta">⏱ ${esc(formatTemps(v.temps))} · 👥 ${esc(v.personnes)} ${esc(v.portion || 'pers.')}</div>
         <div class="frigo-lbl">Avec ce que tu as</div>
         <div class="frigo-chips">${c.uses.map(a => {
           const d = c.detail && c.detail[a];

@@ -15,13 +15,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Ultra&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css?v=20261127k">
-<link rel="stylesheet" href="planning.css?v=20261127k">
-<link rel="stylesheet" href="mobile.css?v=20261127k">
+<link rel="stylesheet" href="main.css?v=20261127m">
+<link rel="stylesheet" href="planning.css?v=20261127m">
+<link rel="stylesheet" href="mobile.css?v=20261127m">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
-<link rel="stylesheet" href="frigo.css?v=20261127k">
-<link rel="stylesheet" href="cards.css?v=20261127k">
-<link rel="stylesheet" href="theme.css?v=20261127k">
+<link rel="stylesheet" href="frigo.css?v=20261127m">
+<link rel="stylesheet" href="cards.css?v=20261127m">
+<link rel="stylesheet" href="theme.css?v=20261127m">
 <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
 <body>
@@ -314,7 +314,9 @@
           </div>
           <div class="form-field">
             <label for="new-personnes">Nombre de personnes</label>
-            <input type="number" id="new-personnes" min="1" value="4" required>
+            <div class="pers-row"><input type="number" id="new-personnes" min="1" value="4" required>
+              <input type="text" id="new-portion" list="portion-list" placeholder="pers." maxlength="20" aria-label="Ce que compte le nombre (pers., muffins, pots…)"></div>
+            <datalist id="portion-list"><option value="pers."><option value="parts"><option value="biscuits"><option value="muffins"><option value="pots"><option value="pièces"><option value="verrines"><option value="litres"></datalist>
           </div>
           <div class="form-field">
             <label for="new-photo" id="new-photo-label">Photo (optionnelle)</label>
@@ -416,15 +418,15 @@
   </div>
 </footer>
 
-<script src="recettes-data.js?v=20261127k"></script>
-<script src="detour.js?v=20261127k"></script>
-<script src="visuals.js?v=20261127k"></script>
-<script src="app.js?v=20261127k"></script>
-<script src="planning.js?v=20261127k"></script>
-<script src="frigo.js?v=20261127k"></script>
-<script src="timers.js?v=20261127k"></script>
-<script src="nav.js?v=20261127k"></script>
-<script src="firebase-config.js?v=20261127k"></script>
-<script type="module" src="cloud.js?v=20261127k"></script>
+<script src="recettes-data.js?v=20261127m"></script>
+<script src="detour.js?v=20261127m"></script>
+<script src="visuals.js?v=20261127m"></script>
+<script src="app.js?v=20261127m"></script>
+<script src="planning.js?v=20261127m"></script>
+<script src="frigo.js?v=20261127m"></script>
+<script src="timers.js?v=20261127m"></script>
+<script src="nav.js?v=20261127m"></script>
+<script src="firebase-config.js?v=20261127m"></script>
+<script type="module" src="cloud.js?v=20261127m"></script>
 </body>
 </html>
