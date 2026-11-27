@@ -31,9 +31,36 @@ service cloud.firestore {
     }
 
     // Planning de la semaine + liste de courses : chaque compte Google a son
-    // propre document (planning/{uid}), que lui seul peut lire et modifier.
+    // propre document (planning/{uid}). Le propriétaire peut le partager avec
+    // d'autres comptes (champ sharedWith = adresses e-mail en minuscules).
     match /planning/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+      function isOwner() {
+        return request.auth != null && request.auth.uid == uid;
+      }
+      function myEmail() {
+        return request.auth.token.email.lower();
+      }
+      function isGuest() {
+        return request.auth != null
+               && request.auth.token.email != null
+               && request.auth.token.email_verified == true
+               && myEmail() in resource.data.get('sharedWith', []);
+      }
+
+      // Le propriétaire et les personnes invitées peuvent lire.
+      allow read: if isOwner() || isGuest();
+
+      // Seul le propriétaire crée / supprime son planning et choisit avec qui il est partagé.
+      allow create, delete: if isOwner();
+
+      // Le propriétaire modifie tout ; une personne invitée modifie seulement
+      // les semaines (repas + courses) et le frigo, ou se retire elle-même du partage.
+      allow update: if isOwner()
+                    || (isGuest()
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['weeks', 'frigo', 'updatedAt']))
+                    || (isGuest()
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['sharedWith'])
+                        && request.resource.data.sharedWith == resource.data.sharedWith.removeAll([myEmail()]));
     }
 
     // Liste des recettes d'origine (du fichier recettes-data.js) qu'Alissia a

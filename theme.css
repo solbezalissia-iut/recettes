@@ -1,0 +1,165 @@
+/* ════════════════════════════════════════════════════════════════════════
+   theme.css — habillage inspiré de l'affiche jaune « Recettes ALISSIA »
+   (fond crème-jaune, titre chocolat à contour clair, illustrations gourmandes).
+   Chargé en dernier : il ne fait que repeindre, la mise en page reste celle
+   de main.css / planning.css / mobile.css.
+   ════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --cream: #FFF8DA;        /* fond de l'affiche */
+  --warm-white: #FFFDF5;
+  --espresso: #6E2E1B;     /* chocolat du titre */
+  --mocha: #8B3A1F;
+  --caramel: #E59A17;      /* jaune d'œuf */
+  --sand: #F3DFA2;
+  --sage: #6E9B5E;
+  --blush: #D9633F;
+  --text: #4A1F10;
+  --muted: #8C6550;
+  --border: rgba(110, 46, 27, 0.14);
+  --radius: 14px;
+  --shadow: 0 6px 22px rgba(110, 46, 27, 0.10);
+}
+
+body {
+  background-color: var(--cream);
+  background-image: radial-gradient(rgba(229, 154, 23, 0.10) 1.2px, transparent 1.4px);
+  background-size: 22px 22px;
+  color: var(--text);
+}
+
+/* ── En-tête façon affiche ── */
+header {
+  background: var(--cream);
+  color: var(--espresso);
+  padding: 2.6rem 2rem 2.2rem;
+  border-bottom: 2px dashed rgba(110, 46, 27, 0.18);
+}
+header::before { display: none; }
+header .container { position: relative; z-index: 2; }
+
+.logo {
+  display: flex; flex-direction: column; align-items: flex-start;
+  line-height: 0.9; letter-spacing: 0 !important;
+}
+.logo-a {
+  font-family: 'Playfair Display', serif; font-style: italic; font-weight: 800;
+  font-size: clamp(1.9rem, 4.2vw, 3.1rem);
+  color: var(--espresso);
+  paint-order: stroke fill; -webkit-text-stroke: 6px #FFFDF5;
+  margin-left: 0.35em; margin-bottom: -0.12em; position: relative; z-index: 1;
+}
+.logo-b {
+  font-family: 'Ultra', 'Playfair Display', serif; font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(2.8rem, 7vw, 5.2rem);
+  color: var(--espresso);
+  paint-order: stroke fill; -webkit-text-stroke: 9px #FFFDF5;
+  filter: drop-shadow(0 3px 0 rgba(110, 46, 27, 0.12));
+}
+header h1 em { color: var(--caramel); }
+header p { color: var(--muted); letter-spacing: 0.14em; }
+.header-count { color: var(--mocha); font-weight: 500; }
+
+.header-photo, .monogram { border: 3px solid #fff; box-shadow: 0 6px 18px rgba(110, 46, 27, 0.18); }
+.monogram { background: linear-gradient(145deg, #FFD15C, var(--caramel)); color: var(--espresso); }
+
+/* Boutons de connexion sur fond clair */
+.auth-btn { border-color: rgba(110, 46, 27, 0.35); background: #fff; color: var(--espresso); }
+.auth-btn:hover { background: var(--sand); border-color: var(--espresso); }
+.auth-avatar { border-color: rgba(110, 46, 27, 0.25); }
+.auth-name { color: var(--espresso) !important; }
+
+/* Illustrations découpées de l'affiche */
+.deco-layer { position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
+.deco { position: absolute; height: auto; filter: drop-shadow(0 4px 6px rgba(110, 46, 27, 0.12)); }
+.deco-oeuf { width: 120px; left: -16px; top: -18px; transform: rotate(-8deg); }
+.deco-sushis { width: 130px; left: 7%; bottom: 10px; transform: rotate(-8deg); }
+.deco-tarte { width: 104px; left: 19%; top: 22px; transform: rotate(6deg); }
+.deco-brioche { width: 118px; right: 19%; bottom: -14px; transform: rotate(10deg); }
+.deco-bubbletea { width: 62px; right: 5%; bottom: 8px; transform: rotate(8deg); }
+.deco-macarons { display: none; }
+
+/* Sur ordinateur : titre centré comme sur l'affiche */
+@media (min-width: 781px) {
+  header { padding: 2.4rem 2rem 2.2rem; }
+  .header-inner { flex-direction: column; gap: 0.5rem; }
+  .header-photo { display: none; }
+  .header-text, .header-text h1 { text-align: center; }
+  .logo { align-items: center; }
+  .logo-a { margin-left: -2.2em; }
+  .auth-zone { position: absolute; right: 0; top: -1rem; margin: 0; }
+}
+@media (max-width: 1150px) { .deco-tarte, .deco-sushis { left: 3%; } .deco-tarte { display: none; } .deco-brioche { right: 3%; bottom: -18px; width: 100px; } .deco-bubbletea { display: none; } }
+@media (max-width: 780px) { .deco-layer { display: none; } }
+
+/* En-tête compact sur téléphone */
+@media (max-width: 780px) {
+  header { padding: 0.7rem 0 0.8rem !important; border-bottom-width: 1px; }
+  .logo { flex-direction: row; align-items: baseline; gap: 0.3rem; }
+  .logo-a { font-size: 1.15rem !important; -webkit-text-stroke: 0; margin: 0; }
+  .logo-b { font-size: 1.45rem !important; -webkit-text-stroke: 0; filter: none; }
+  header h1.logo { white-space: nowrap; overflow: hidden; }
+  .auth-btn { background: #fff; }
+}
+
+/* ── Barre de recherche et catégories ── */
+.filter-bar { background: rgba(255, 248, 218, 0.94) !important; backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+.search-wrap input, #search-input { background: #fff !important; border-radius: 999px !important; border: 1.5px solid var(--border) !important; }
+.search-wrap input:focus, #search-input:focus { border-color: var(--caramel) !important; box-shadow: 0 0 0 4px rgba(229, 154, 23, 0.18); }
+.tab-btn { background: #fff !important; border: 1.5px solid var(--border) !important; color: var(--espresso) !important; font-weight: 500; }
+.tab-btn.active { background: var(--espresso) !important; color: #FFF8DA !important; border-color: var(--espresso) !important; }
+.tab-btn.active .tab-count { background: var(--caramel) !important; color: #fff !important; }
+
+/* ── Cartes de recettes ── */
+.recipe-card {
+  background: #fff; border-radius: 18px !important; border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow); overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.recipe-card:hover { transform: translateY(-3px) rotate(-0.3deg); box-shadow: 0 12px 30px rgba(110, 46, 27, 0.16); }
+.card-title { font-family: 'Playfair Display', serif; font-weight: 600; color: var(--espresso); }
+.card-cat { color: var(--mocha) !important; }
+
+/* Boutons */
+.btn-primary { background: var(--espresso) !important; color: #FFF8DA !important; border-radius: 999px !important; border: none; }
+.btn-primary:hover { background: var(--mocha) !important; }
+.btn-primary[disabled] { opacity: 0.45; }
+.btn-secondary { border-radius: 999px !important; border: 1.5px solid var(--espresso) !important; color: var(--espresso) !important; background: #fff !important; }
+.add-fab { background: var(--caramel) !important; color: #fff !important; box-shadow: 0 8px 22px rgba(229, 154, 23, 0.45) !important; }
+
+/* ── Fiche recette ── */
+.modal { border-radius: 22px; }
+.modal-title { font-family: 'Playfair Display', serif; }
+.modal-cat { color: #FFC94A !important; }
+.modal-section-title { color: var(--caramel) !important; }
+.mode-switch { background: #FFF3C4 !important; }
+.mode-switch button.active { background: var(--espresso) !important; color: #FFF8DA !important; }
+.mc-note { background: #FFF3C4 !important; border-left-color: var(--caramel) !important; }
+
+/* ── Ma semaine / Courses ── */
+.plan-weekbar, .plan-day, .shop-group, .plan-login {
+  background: #fff !important; border-radius: 20px !important; border: 1px solid var(--border) !important; box-shadow: var(--shadow);
+}
+.plan-day-head { background: #FFF3C4 !important; }
+.plan-day--today .plan-day-head { background: #FFD966 !important; }
+.plan-day-head span { font-family: 'Playfair Display', serif; color: var(--espresso); }
+.plan-recipe { background: #FFFBEA !important; border-radius: 14px !important; }
+.plan-add-slot { border-color: rgba(229, 154, 23, 0.6) !important; color: var(--mocha) !important; border-radius: 14px !important; }
+.plan-add-slot:hover { background: #FFF3C4 !important; }
+.plan-chip.on, .share-switch button.on { background: var(--espresso) !important; border-color: var(--espresso) !important; color: #FFF8DA !important; }
+.plan-sheet-head { background: var(--espresso) !important; }
+.plan-sheet-head .modal-cat { color: #FFC94A !important; }
+.shop-progress i { background: var(--caramel) !important; }
+
+/* Barre du bas (téléphone) */
+.view-nav { background: rgba(255, 253, 245, 0.97) !important; border-top: 1px solid var(--border) !important; }
+.view-nav button.active { color: var(--espresso) !important; }
+.view-nav button.active::after { background: var(--caramel) !important; }
+.view-badge { background: var(--caramel) !important; }
+
+/* Pied de page décoré */
+.deco-foot { display: flex; justify-content: center; gap: 1.2rem; align-items: flex-end; padding: 2.5rem 1rem 6.5rem; opacity: 0.9; }
+.deco-foot img { width: 70px; height: auto; }
+.deco-foot img:nth-child(2) { width: 90px; }
+@media (min-width: 781px) { .deco-foot { padding-bottom: 2.5rem; } }

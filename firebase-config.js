@@ -15,3 +15,12 @@ window.FIREBASE_CONFIG = {
   messagingSenderId: "730150791284",
   appId: "1:730150791284:web:2da84dfa80600e432f8921"
 };
+
+// ────────────────────────────────────────────────────────────────────────
+// Recettes inventées par l'IA directement dans le site (onglet « Frigo »).
+// DÉSACTIVÉ (laisser vide) : ça demanderait le forfait payant Blaze de Firebase.
+// Tant que c'est vide, le bouton du Frigo ouvre Claude (gratuit) avec les
+// aliments restants déjà écrits.
+// ────────────────────────────────────────────────────────────────────────
+window.APP_CHECK_SITE_KEY = "";
+window.AI_MODEL = "gemini-3.8-flash";
