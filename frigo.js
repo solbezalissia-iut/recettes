@@ -436,5 +436,5 @@
     P().saveFrigo(items); render();
   }
   const labelOf = r => r.nom + (r.used != null ? ' (' + (base(r.used, r.unite) ? fmtBase(base(r.used, r.unite)) : r.used + ' ' + (r.unite || '')) + ')' : '');
-  window.FrigoAPI = { consumeMeal, restoreMeal, labelOf };
+  window.FrigoAPI = { consumeMeal, restoreMeal, labelOf, known: () => { knownCache = null; return known(); }, defaultUnit, cleanName, sameName: (a, b) => key(a) === key(b) };
 })();

@@ -55,7 +55,7 @@ function refreshRecettes() {
   // reste à sa place dans la liste (avant, elle partait tout à la fin).
   const keyOf = r => r ? (r._docId ? 'live:' + r._docId : r._staticId) : null;
   const openKey = currentRecetteIdx !== null ? keyOf(allRecettes[currentRecetteIdx]) : null;
-  allRecettes = mergeVersionDuplicates(visibleStatic.concat(liveRecettes))
+  allRecettes = removeDuplicates(mergeVersionDuplicates(visibleStatic.concat(dedupeLive(liveRecettes))))
     .sort((a, b) => String(a.titre || '').localeCompare(String(b.titre || ''), 'fr', { sensitivity: 'base' }));
   if (openKey) {
     // La fiche ouverte garde la bonne recette même si sa position a changé
@@ -66,6 +66,39 @@ function refreshRecettes() {
   renderFilters();
   buildGrids();
   if (currentRecetteIdx !== null) updateModalPermissions();
+}
+
+// ── Aucun doublon ──
+const timeOf = r => { const t = r.updatedAt || r.createdAt; return t && t.toMillis ? t.toMillis() : (t && t.seconds ? t.seconds * 1000 : 0); };
+const titleKey = r => normalize(String(r.titre || '')).replace(/[^a-z0-9]+/g, ' ').trim();
+// Deux versions en ligne qui remplacent la même recette d'origine : on garde la plus récente
+// (et si Alissia est connectée, l'ancienne est supprimée pour de bon)
+function dedupeLive(live) {
+  const best = new Map(), extra = [];
+  live.forEach(r => {
+    if (!r.replacesStaticId) return;
+    const cur = best.get(r.replacesStaticId);
+    if (!cur) best.set(r.replacesStaticId, r);
+    else if (timeOf(r) > timeOf(cur)) { extra.push(cur); best.set(r.replacesStaticId, r); }
+    else extra.push(r);
+  });
+  if (extra.length && isAdmin() && window.CloudRecipes) {
+    extra.forEach(r => { if (!cleanedIds.has(r._docId)) { cleanedIds.add(r._docId); window.CloudRecipes.deleteRecipe(r._docId).catch(e => console.warn('[doublon]', e)); } });
+  }
+  return live.filter(r => !extra.includes(r));
+}
+const cleanedIds = new Set();
+// Même titre : on n'affiche qu'une recette (celle en ligne la plus récente, sinon celle d'origine)
+function removeDuplicates(list) {
+  const keep = new Map();
+  list.forEach(r => {
+    const k = titleKey(r); const cur = keep.get(k);
+    if (!cur) return keep.set(k, r);
+    const score = x => (x._isStatic ? 0 : 1e13) + timeOf(x) + (x.variantes ? 1 : 0);
+    if (score(r) > score(cur)) keep.set(k, r);
+  });
+  const kept = new Set(keep.values());
+  return list.filter(r => kept.has(r));
 }
 
 // Une recette seule qui est en fait une version d'une recette à plusieurs versions
@@ -96,7 +129,13 @@ function mergeVersionDuplicates(list) {
 
 // Appelée par cloud.js à chaque changement des recettes ajoutées en ligne.
 window.onLiveRecipesUpdate = function (live) {
-  liveRecettes = live;
+  const fix = ings => Array.isArray(ings) ? ings.map(i => (i && typeof i === 'object' && i.texte) ? { ...i, ...parseIngredientLine(i.texte) } : i) : ings;
+  liveRecettes = live.map(r => {
+    const o = { ...r };
+    if (o.ingredients) o.ingredients = fix(o.ingredients);
+    if (o.variantes) o.variantes = o.variantes.map(v => ({ ...v, ingredients: fix(v.ingredients) }));
+    return o;
+  });
   refreshRecettes();
 };
 
@@ -921,7 +960,7 @@ newPhotoRecropBtn.addEventListener('click', () => {
 });
 
 function openAddModal() {
-  if (!editingDocId && !editingStaticId) resetPresentation();
+  if (!editingDocId && !editingStaticId) { resetPresentation(); ingRowsFromText(''); }
   addModalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -1099,6 +1138,7 @@ function loadVariantInForm(i) {
   v._ingText = (v.ingredients || []).map(ingLabel).join('\n');
   v._etText = (v.etapes || []).join('\n');
   document.getElementById('new-ingredients').value = v._ingText;
+  ingRowsFromText(v._ingText);
   document.getElementById('new-etapes').value = v._etText;
   // Photo propre à cette version (sinon celle de la recette)
   newPhotoDataUrl = ''; newPhotoCut = false;
@@ -1168,6 +1208,7 @@ document.getElementById('modal-edit').addEventListener('click', () => {
     document.getElementById('new-temps').value = r.temps || '';
     document.getElementById('new-personnes').value = r.personnes || '';
     document.getElementById('new-ingredients').value = (r.ingredients || []).map(ingLabel).join('\n');
+    ingRowsFromText(document.getElementById('new-ingredients').value);
     document.getElementById('new-etapes').value = (r.etapes || []).join('\n');
   }
 
@@ -1183,19 +1224,123 @@ document.getElementById('modal-edit').addEventListener('click', () => {
 // Essaie d'extraire quantité / unité / reste d'une ligne d'ingrédient libre,
 // pour que l'adaptation des portions fonctionne aussi sur les recettes ajoutées.
 function parseIngredientLine(line) {
-  const trimmed = line.trim();
-  const m = trimmed.match(/^(\d+(?:[.,]\d+)?)\s*(kg|g|mg|ml|cl|dl|l|c\.\s?à\s?s\.?|c\.\s?à\s?c\.?|cuillères?\s+à\s+soupe|cuillères?\s+à\s+café|pincées?|tranches?|gousses?|feuilles?)?\s*(?:de |d')?(.*)$/i);
+  const trimmed = String(line).trim();
+  const UNIT_RE = '(kg|mg|g|ml|cl|dl|l|litres?|c\\.\\s?à\\s?(?:soupe|café)|c\\.\\s?à\\s?s\\.?|c\\.\\s?à\\s?c\\.?|cuillères?\\s+à\\s+(?:soupe|café)|càs|càc|pincées?|pièces?|pièce\\(s\\)|sachets?|pots?|boîtes?|briques?|tranches?|bottes?|gousses?|feuilles?|verres?|poignées?|tasses?)';
+  const m = trimmed.match(new RegExp('^(\\d+(?:[.,]\\d+)?)\\s*(?:' + UNIT_RE + '(?=\\s|$))?\\s*(?:de |d\'|d’)?(.*)$', 'i'));
   if (m && m[1]) {
+    let unite = m[2] ? m[2].trim() : null;
+    if (unite && /^pi[eè]ce/i.test(unite)) unite = null; // « 2 pièces d'œufs » = 2 œufs
     return {
       texte: trimmed,
       valeur: parseFloat(m[1].replace(',', '.')),
-      unite: m[2] ? m[2].trim() : null,
+      unite,
       reste: (m[3] || trimmed).trim() || trimmed
     };
   }
   return { texte: trimmed, valeur: 1, unite: null, reste: trimmed };
 }
 
+// ── Saisie des ingrédients comme dans le frigo : nom (proposé), quantité, unité ──
+const ING_UNITS = ['g', 'kg', 'ml', 'cl', 'L', 'pièce(s)', 'c. à soupe', 'c. à café', 'pincée', 'sachet', 'pot', 'boîte', 'brique', 'tranche', 'botte', 'gousse', 'feuille', 'verre'];
+const ingRowsBox = document.getElementById('ing-rows');
+const ingHidden = document.getElementById('new-ingredients');
+function ingRowHtml(it) {
+  const u = it.unite || '';
+  const opts = ['<option value="">unité</option>'].concat(ING_UNITS.map(x => `<option${x === u ? ' selected' : ''}>${x}</option>`));
+  if (u && !ING_UNITS.includes(u)) opts.push(`<option selected>${escapeHtml(u)}</option>`);
+  return `<div class="ing-row">
+    <input class="ing-nom" list="ing-known" placeholder="Ingrédient (ex : farine)" value="${escapeHtml(it.nom || '')}" autocomplete="off" aria-label="Ingrédient">
+    <input class="ing-qte" type="number" inputmode="decimal" min="0" step="any" placeholder="Qté" value="${it.qte ?? ''}" aria-label="Quantité">
+    <select class="ing-unite" aria-label="Unité">${opts.join('')}</select>
+    <button type="button" class="ing-rm" aria-label="Retirer cet ingrédient">✕</button>
+  </div>`;
+}
+// Une ligne de texte → { nom, qte, unite }
+function ingFromLine(line) {
+  const p = parseIngredientLine(line);
+  const hasQty = /^\d/.test(String(line).trim());
+  let unite = p.unite;
+  if (unite) {
+    const lu = unite.toLowerCase();
+    unite = lu === 'l' || /^litre/.test(lu) ? 'L' : /soupe|^c\.\s?à\s?s|càs/.test(lu) ? 'c. à soupe' : /café|^c\.\s?à\s?c|càc/.test(lu) ? 'c. à café'
+      : (ING_UNITS.find(x => lu.replace(/s$/, '') === x.toLowerCase()) || unite);
+  }
+  const nom = hasQty ? p.reste : String(line).trim();
+  return { nom: nom.charAt(0).toUpperCase() + nom.slice(1), qte: hasQty ? p.valeur : null, unite: hasQty ? unite : null };
+}
+// { nom, qte, unite } → ligne de texte enregistrée (« 200 g de farine »)
+function ingToLine(it) {
+  const nom = String(it.nom || '').trim(); if (!nom) return '';
+  if (it.qte == null || it.qte === '') return nom;
+  const q = String(it.qte).replace('.', ',');
+  if (!it.unite || /^pi[eè]ce/i.test(it.unite)) return `${q} ${nom.charAt(0).toLowerCase() + nom.slice(1)}`;
+  const n = nom.charAt(0).toLowerCase() + nom.slice(1);
+  return `${q} ${it.unite} ${/^[aeiouyhéèêâîôœ]/i.test(n) ? "d'" : 'de '}${n}`;
+}
+function syncIngHidden() {
+  ingHidden.value = [...ingRowsBox.querySelectorAll('.ing-row')].map(row => ingToLine({
+    nom: row.querySelector('.ing-nom').value, qte: row.querySelector('.ing-qte').value, unite: row.querySelector('.ing-unite').value
+  })).filter(Boolean).join('\n');
+}
+// À appeler quand le texte des ingrédients est rempli par le code (modification d'une recette, changement de version…)
+function ingRowsFromText(text) {
+  const lines = String(text || '').split('\n').map(l => l.trim()).filter(Boolean);
+  ingRowsBox.innerHTML = (lines.length ? lines.map(ingFromLine) : [{}]).map(ingRowHtml).join('');
+  ingHidden.value = String(text || '');
+  const dl = document.getElementById('ing-known');
+  if (dl && !dl.childElementCount && window.FrigoAPI) dl.innerHTML = FrigoAPI.known().slice(0, 800).map(e => `<option value="${escapeHtml(e.nom)}">`).join('');
+}
+function addIngRow(it, focus) {
+  ingRowsBox.insertAdjacentHTML('beforeend', ingRowHtml(it || {}));
+  if (focus) ingRowsBox.lastElementChild.querySelector('.ing-nom').focus();
+}
+document.getElementById('ing-add').addEventListener('click', () => addIngRow({}, true));
+ingRowsBox.addEventListener('click', e => {
+  const b = e.target.closest('.ing-rm'); if (!b) return;
+  b.closest('.ing-row').remove();
+  if (!ingRowsBox.childElementCount) addIngRow({});
+  syncIngHidden();
+});
+ingRowsBox.addEventListener('input', syncIngHidden);
+ingRowsBox.addEventListener('change', e => {
+  const row = e.target.closest('.ing-row'); if (!row) return;
+  if (e.target.classList.contains('ing-nom')) {
+    const nomIn = e.target, v = nomIn.value.trim();
+    // « 200 g de farine » tapé d'un coup : on range quantité et unité
+    if (/^\d/.test(v)) {
+      const it = ingFromLine(v);
+      row.outerHTML = ingRowHtml(it);
+    } else if (window.FrigoAPI) {
+      // même nom que l'ingrédient déjà enregistré + unité habituelle
+      const kn = FrigoAPI.known().find(x => FrigoAPI.sameName(x.nom, v));
+      if (kn) nomIn.value = kn.nom;
+      const u = row.querySelector('.ing-unite');
+      if (!u.value) { const d = FrigoAPI.defaultUnit(nomIn.value); if (d && ![...u.options].some(o => o.value === d)) u.insertAdjacentHTML('beforeend', `<option>${d}</option>`); if (d) u.value = d; }
+    }
+  }
+  syncIngHidden();
+});
+// Coller une liste entière (une ligne par ingrédient) dans un champ « Ingrédient »
+ingRowsBox.addEventListener('paste', e => {
+  if (!e.target.classList.contains('ing-nom')) return;
+  const txt = (e.clipboardData || window.clipboardData).getData('text');
+  if (!txt || !/\n/.test(txt.trim())) return;
+  e.preventDefault();
+  const row = e.target.closest('.ing-row');
+  const lines = txt.split('\n').map(l => l.replace(/^[\s•\-–*]+/, '').trim()).filter(Boolean);
+  row.insertAdjacentHTML('afterend', lines.map(l => ingRowHtml(ingFromLine(l))).join(''));
+  if (!row.querySelector('.ing-nom').value.trim()) row.remove();
+  syncIngHidden();
+});
+// Entrée dans un champ : nouvel ingrédient au lieu d'envoyer le formulaire
+ingRowsBox.addEventListener('keydown', e => {
+  if (e.key !== 'Enter' || !e.target.matches('input')) return;
+  e.preventDefault();
+  const row = e.target.closest('.ing-row');
+  if (row === ingRowsBox.lastElementChild) addIngRow({}, true); else row.nextElementSibling.querySelector('.ing-nom').focus();
+});
+
+let submitting = false; // évite d'enregistrer deux fois sur un double clic
 addForm.addEventListener('submit', async e => {
   e.preventDefault();
 
@@ -1211,7 +1356,15 @@ addForm.addEventListener('submit', async e => {
   const submitBtn = document.getElementById('add-form-submit');
   const statusEl = document.getElementById('publish-status');
 
-  if (!titre || !ingredientsLines.length || !etapesLines.length) return;
+  if (!titre || !etapesLines.length) return;
+  if (!ingredientsLines.length) { alert('Ajoute au moins un ingrédient.'); return; }
+  if (submitting) return;
+  // Pas de doublon : une autre recette porte déjà ce nom
+  const editingKey = editingDocId ? 'live:' + editingDocId : editingStaticId;
+  const same = allRecettes.find(o => titleKey(o) === titleKey({ titre }) && (o._docId ? 'live:' + o._docId : o._staticId) !== editingKey
+    && !(editingStaticId && o.replacesStaticId === editingStaticId));
+  if (same) { alert(`La recette « ${same.titre} » existe déjà. Ouvre-la et modifie-la avec le crayon ✏️ plutôt que d'en créer une deuxième.`); return; }
+  submitting = true;
 
   submitBtn.disabled = true;
   statusEl.className = 'publish-status visible info';
@@ -1266,9 +1419,12 @@ addForm.addEventListener('submit', async e => {
       await window.CloudRecipes.updateRecipe(editingDocId, recipeData);
       statusEl.textContent = 'Modifications enregistrées !';
     } else if (editingStaticId) {
-      // Alissia modifie une recette d'origine : on crée une version "live" qui la remplace.
+      // Alissia modifie une recette d'origine : on crée une version "live" qui la remplace
+      // (ou on met à jour celle qui existe déjà, pour ne jamais en avoir deux)
       recipeData.replacesStaticId = editingStaticId;
-      await window.CloudRecipes.addRecipe(recipeData);
+      const existing = liveRecettes.find(o => o.replacesStaticId === editingStaticId);
+      if (existing) await window.CloudRecipes.updateRecipe(existing._docId, recipeData);
+      else await window.CloudRecipes.addRecipe(recipeData);
       statusEl.textContent = 'Modifications enregistrées !';
     } else {
       await window.CloudRecipes.addRecipe(recipeData);
@@ -1289,6 +1445,7 @@ addForm.addEventListener('submit', async e => {
     statusEl.className = 'publish-status visible error';
     statusEl.textContent = `L'enregistrement a échoué : ${err.message}`;
   } finally {
+    submitting = false;
     submitBtn.disabled = false;
   }
 });
