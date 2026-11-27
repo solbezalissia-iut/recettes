@@ -366,3 +366,13 @@
 @media (max-width: 400px) {
   header h1 { font-size: 1.1rem !important; }
 }
+
+/* Contenu de l'assiette / du bol toujours centré (Safari iPhone le décalait en haut à gauche) */
+.plate, .bowl { display: block !important; }
+.plate-in {
+  position: absolute !important; left: 50% !important; top: 50% !important;
+  width: 70% !important; height: 70% !important; transform: translate(-50%, -50%);
+  margin: 0 !important; display: flex !important; align-items: center; justify-content: center;
+}
+.bowl .plate-in { width: 80% !important; height: 80% !important; }
+.plate-in .vis-photo { display: block; }
