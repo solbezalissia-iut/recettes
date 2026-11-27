@@ -1108,7 +1108,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "temps": "30 min (+ 1 h au frais)",
-    "personnes": "12 barres",
+    "personnes": "12",
     "ingredients": [
       {
         "texte": "200 g de flocons d'avoine",
@@ -1166,7 +1166,8 @@ const recettes = [
       "Ajouter les flocons d'avoine, les fruits secs et les graines. Mélanger <b>30 s / sens inverse / vitesse 2</b>, en aidant avec la spatule.",
       "Tasser fortement dans le moule et cuire 20 minutes.",
       "Laisser refroidir, ajouter les pépites de chocolat, réfrigérer 1 heure puis couper en barres."
-    ]
+    ],
+    "portion": "barres"
   },
   {
     "id": "static-8",
@@ -1319,7 +1320,7 @@ const recettes = [
     "titre": "Basler Brunsli (bruns de Bâle)",
     "cat": "dessert",
     "temps": "35 min (+ 3 h de séchage)",
-    "personnes": "40 biscuits",
+    "personnes": "40",
     "ingredients": [
       {
         "texte": "250 g de poudre d'amandes",
@@ -1377,7 +1378,8 @@ const recettes = [
       "Bol propre et sec, insérer le fouet. Mettre les blancs et le sel, fouetter <b>3 min / vitesse 4</b> jusqu'à des blancs fermes. Retirer le fouet et réserver les blancs.",
       "Mettre la poudre d'amandes, le sucre, la farine et la cannelle dans le bol. Ajouter le chocolat fondu et les blancs, mélanger <b>30 s / sens inverse / vitesse 3</b> jusqu'à une pâte homogène.",
       "Étaler sur 1 cm sur du sucre, découper, laisser sécher 3 à 6 heures, puis cuire 4 à 6 minutes à 250 °C."
-    ]
+    ],
+    "portion": "biscuits"
   },
   {
     "id": "static-10",
@@ -1477,7 +1479,7 @@ const recettes = [
     "titre": "Béchamel maison",
     "photo": "photos/enattente.png",
     "temps": "15 min",
-    "personnes": "4 (base pour gratin ou lasagnes)",
+    "personnes": "4",
     "cat": "base-culinaire",
     "ingredients": [
       {
@@ -1531,406 +1533,13 @@ const recettes = [
     ]
   },
   {
-    "id": "static-13",
-    "titre": "Beignets au chocolat cuits à l’air fryer",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "variantes": [
-      {
-        "nom": "Pâte au chocolat noir fondu",
-        "temps": "25 min",
-        "personnes": "4",
-        "ingredients": [
-          {
-            "texte": "250 g de farine",
-            "valeur": 250,
-            "unite": "g",
-            "reste": "farine"
-          },
-          {
-            "texte": "100 g de sucre",
-            "valeur": 100,
-            "unite": "g",
-            "reste": "sucre"
-          },
-          {
-            "texte": "150 g de chocolat noir",
-            "valeur": 150,
-            "unite": "g",
-            "reste": "chocolat noir"
-          },
-          {
-            "texte": "1 c. à café de levure chimique",
-            "valeur": 1,
-            "unite": "c. à café",
-            "reste": "levure chimique"
-          },
-          {
-            "texte": "150 ml de lait",
-            "valeur": 150,
-            "unite": "ml",
-            "reste": "lait"
-          },
-          {
-            "texte": "2 œufs",
-            "valeur": 2,
-            "unite": null,
-            "reste": "œufs"
-          },
-          {
-            "texte": "50 g de beurre maison",
-            "valeur": 50,
-            "unite": "g",
-            "reste": "beurre maison"
-          }
-        ],
-        "etapes": [
-          "Dans un grand bol, mélanger la farine, le sucre et la levure chimique.",
-          "Faire fondre le chocolat avec le beurre au micro-ondes ou au bain-marie.",
-          "Battre les œufs, ajouter le lait puis le mélange chocolat-beurre.",
-          "Verser le mélange liquide dans le bol avec les ingrédients secs et mélanger.",
-          "Préchauffer la friteuse à air à 180°C.",
-          "Verser des cuillerées de pâte dans le panier de la friteuse.",
-          "Cuire les beignets pendant environ 10 minutes, ou jusqu'à ce qu'ils soient dorés.",
-          "Laisser refroidir légèrement avant de déguster."
-        ],
-        "mc": [
-          "Mettre le chocolat en morceaux dans le bol. Hacher <b>10 s / vitesse 7</b>.",
-          "Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
-          "Ajouter les œufs et le lait, mélanger <b>10 s / vitesse 3</b>.",
-          "Ajouter la farine, le sucre et la levure. Mélanger <b>20 s / vitesse 4</b>.",
-          "Déposer des cuillerées de pâte dans le panier de l'air fryer préchauffé à 180 °C et cuire environ 10 minutes."
-        ]
-      },
-      {
-        "nom": "Pâte au cacao et pépites de chocolat",
-        "temps": "35 min",
-        "personnes": "4",
-        "ingredients": [
-          {
-            "texte": "180 g de farine tout usage",
-            "valeur": 180,
-            "unite": "g",
-            "reste": "farine tout usage"
-          },
-          {
-            "texte": "40 g de sucre",
-            "valeur": 40,
-            "unite": "g",
-            "reste": "sucre"
-          },
-          {
-            "texte": "25 g de cacao en poudre non sucré",
-            "valeur": 25,
-            "unite": "g",
-            "reste": "cacao en poudre non sucré"
-          },
-          {
-            "texte": "5 g de levure chimique",
-            "valeur": 5,
-            "unite": "g",
-            "reste": "levure chimique"
-          },
-          {
-            "texte": "1 g de sel",
-            "valeur": 1,
-            "unite": "g",
-            "reste": "sel"
-          },
-          {
-            "texte": "180 ml de lait",
-            "valeur": 180,
-            "unite": "ml",
-            "reste": "lait"
-          },
-          {
-            "texte": "2 œufs",
-            "valeur": 2,
-            "unite": null,
-            "reste": "œufs"
-          },
-          {
-            "texte": "15 ml d'huile végétale",
-            "valeur": 15,
-            "unite": "ml",
-            "reste": "huile végétale"
-          },
-          {
-            "texte": "100 g de pépites de chocolat",
-            "valeur": 100,
-            "unite": "g",
-            "reste": "pépites de chocolat"
-          },
-          {
-            "texte": "15 g de beurre fondu",
-            "valeur": 15,
-            "unite": "g",
-            "reste": "beurre fondu"
-          },
-          {
-            "texte": "10 g de sucre glace",
-            "valeur": 10,
-            "unite": "g",
-            "reste": "sucre glace"
-          }
-        ],
-        "etapes": [
-          "Dans un saladier, tamiser la farine, le cacao en poudre, la levure et le sel.",
-          "Ajouter le sucre et mélanger brièvement pour répartir les ingrédients secs.",
-          "Dans un autre bol, battre les œufs puis incorporer le lait et l'huile végétale.",
-          "Verser progressivement le mélange liquide dans les ingrédients secs tout en mélangeant jusqu'à obtenir une pâte homogène et légèrement épaisse.",
-          "Incorporer les pépites de chocolat à la pâte et mélanger délicatement pour les répartir sans les écraser.",
-          "Laisser reposer la pâte 5 à 10 minutes pendant que le air fryer préchauffe à 180°C.",
-          "Répartir des portions de pâte en boules ou en forme de beignet sur le panier du air fryer en veillant à laisser de l'espace entre elles.",
-          "Cuire au air fryer à 180°C pendant 8 à 10 minutes jusqu'à ce que les beignets soient fermes et légèrement dorés.",
-          "À la sortie, badigeonner de beurre fondu et saupoudrer de sucre glace pour la finition.",
-          "Laisser tiédir 2 minutes avant de servir pour éviter les brûlures et apprécier l'intérieur moelleux."
-        ],
-        "mc": [
-          "Mettre les œufs, le lait et l'huile dans le bol. Mélanger <b>10 s / vitesse 3</b>.",
-          "Ajouter la farine, le cacao, la levure, le sel et le sucre. Mélanger <b>20 s / vitesse 4</b>.",
-          "Ajouter les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>. Laisser reposer 5 à 10 minutes.",
-          "Cuire des boules de pâte 8 à 10 minutes à l'air fryer à 180 °C.",
-          "Badigeonner de beurre fondu et saupoudrer de sucre glace. Laisser tiédir 2 minutes."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "static-14",
-    "titre": "Beignets au four",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "variantes": [
-      {
-        "nom": "À la fleur d’oranger",
-        "temps": "150 min",
-        "personnes": "12",
-        "ingredients": [
-          {
-            "texte": "320 g de farine de blé",
-            "valeur": 320,
-            "unite": "g",
-            "reste": "farine de blé"
-          },
-          {
-            "texte": "150 ml de lait",
-            "valeur": 150,
-            "unite": "ml",
-            "reste": "lait"
-          },
-          {
-            "texte": "40 g de sucre",
-            "valeur": 40,
-            "unite": "g",
-            "reste": "sucre"
-          },
-          {
-            "texte": "40 g de beurre maison",
-            "valeur": 40,
-            "unite": "g",
-            "reste": "beurre maison"
-          },
-          {
-            "texte": "1 œuf",
-            "valeur": 1,
-            "unite": null,
-            "reste": "œuf"
-          },
-          {
-            "texte": "7 g de levure boulangère sèche",
-            "valeur": 7,
-            "unite": "g",
-            "reste": "levure boulangère sèche"
-          },
-          {
-            "texte": "2 c. à soupe de fleur d'oranger",
-            "valeur": 2,
-            "unite": "c. à soupe",
-            "reste": "fleur d'oranger"
-          },
-          "sel",
-          "beurre maison fondu pour badigeonner",
-          "sucre pour rouler"
-        ],
-        "etapes": [
-          "Faire chauffer le lait jusqu'à ce qu'il soit tiède, puis y délayer la levure. Laisser poser pendant 5 minutes.",
-          "Disposer dans la cuve du robot le sel, la farine et le sucre.",
-          "Ajouter l'œuf, le mélange lait-levure et la fleur d'oranger, puis pétrir à vitesse moyenne pendant 5 minutes.",
-          "Incorporer le beurre mou à la pâte et pétrir encore 5 minutes.",
-          "Laisser pousser la pâte dans un endroit chaud pendant 2 heures.",
-          "Dégazer la pâte et former des boules d'environ 50 g.",
-          "Placer les boules sur une plaque recouverte de papier sulfurisé et laisser reposer pendant 1 à 1h30 à couvert.",
-          "Préchauffer le four à 180°C et enfourner les beignets pendant 10 minutes.",
-          "Faire fondre le beurre maison dans un bol et mettre du sucre dans un autre.",
-          "Badigeonner les beignets de beurre fondu et les rouler dans le sucre pour les enrober."
-        ],
-        "mc": [
-          "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
-          "Ajouter la farine, le sucre, le sel, l'œuf et la fleur d'oranger. Pétrir <b>3 min / mode pétrin</b>.",
-          "Ajouter le beurre en morceaux et pétrir encore <b>2 min / mode pétrin</b>.",
-          "Laisser pousser 2 heures dans un endroit chaud.",
-          "Former des boules de 50 g, les laisser lever 1 h à 1 h 30 sur une plaque, puis cuire 10 minutes à 180 °C.",
-          "Faire fondre du beurre (<b>2 min / 60 °C / vitesse 1</b>), badigeonner les beignets et les rouler dans le sucre."
-        ]
-      },
-      {
-        "nom": "Garnis de pâte à tartiner",
-        "temps": "100 min",
-        "personnes": "6",
-        "ingredients": [
-          {
-            "texte": "340 g de farine",
-            "valeur": 340,
-            "unite": "g",
-            "reste": "farine"
-          },
-          {
-            "texte": "240 ml de lait tiède",
-            "valeur": 240,
-            "unite": "ml",
-            "reste": "lait tiède"
-          },
-          {
-            "texte": "5 g de levure boulangère",
-            "valeur": 5,
-            "unite": "g",
-            "reste": "levure boulangère"
-          },
-          {
-            "texte": "45 g de sucre blanc",
-            "valeur": 45,
-            "unite": "g",
-            "reste": "sucre blanc"
-          },
-          {
-            "texte": "1 sachet sucre vanillé",
-            "valeur": 1,
-            "unite": null,
-            "reste": "sachet sucre vanillé"
-          },
-          {
-            "texte": "40 g de beurre",
-            "valeur": 40,
-            "unite": "g",
-            "reste": "beurre"
-          },
-          {
-            "texte": "200 g de pâte à tartiner",
-            "valeur": 200,
-            "unite": "g",
-            "reste": "pâte à tartiner"
-          }
-        ],
-        "etapes": [
-          "Dans un grand bol, mélanger la farine, le sucre blanc, le sucre vanillé et la levure boulangère.",
-          "Faire fondre le beurre et l'ajouter au mélange sec.",
-          "Verser le lait tiède progressivement tout en mélangeant jusqu'à obtenir une pâte homogène.",
-          "Pétrir la pâte pendant environ 5 minutes jusqu'à ce qu'elle soit lisse et élastique.",
-          "Laisser la pâte reposer dans un endroit chaud pendant 1 heure, recouverte d'un torchon.",
-          "Préchauffer le four à 180°C.",
-          "Une fois la pâte levée, former des boules et les placer sur une plaque de cuisson recouverte de papier sulfurisé.",
-          "Enfourner pendant 15 à 20 minutes jusqu'à ce que les beignets soient dorés.",
-          "Laisser refroidir légèrement avant de les garnir de pâte à tartiner."
-        ],
-        "mc": [
-          "Mettre le lait, le beurre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
-          "Ajouter la farine, le sucre et le sucre vanillé. Pétrir <b>3 min / mode pétrin</b>.",
-          "Laisser lever 1 heure dans un endroit chaud.",
-          "Former des boules, les poser sur une plaque et cuire 15 à 20 minutes à 180 °C.",
-          "Laisser tiédir et garnir de pâte à tartiner."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "static-15",
-    "titre": "Beignets fourrés au Nutella",
-    "photo": "photos/enattente.png",
-    "temps": "90 min (+ pousse)",
-    "personnes": "8",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "300 g de farine",
-        "valeur": 300,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "30 g de sucre",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "7 g de levure boulangère sèche",
-        "valeur": 7,
-        "unite": "g",
-        "reste": "levure boulangère sèche"
-      },
-      {
-        "texte": "150 ml de lait tiède",
-        "valeur": 150,
-        "unite": "ml",
-        "reste": "lait tiède"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "30 g de beurre mou",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "beurre mou"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      },
-      {
-        "texte": "200 g de Nutella",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "Nutella"
-      },
-      "huile de friture",
-      "sucre pour enrober"
-    ],
-    "etapes": [
-      "Dans un bol, délayer la levure dans le lait tiède avec une pincée de sucre, laisser reposer 10 minutes.",
-      "Dans un saladier, mélanger la farine, le sucre et le sel. Ajouter l'œuf et le mélange lait-levure, pétrir jusqu'à obtenir une pâte homogène.",
-      "Incorporer le beurre mou et pétrir 5 à 8 minutes, jusqu'à ce que la pâte soit lisse et élastique.",
-      "Couvrir et laisser lever 1 heure dans un endroit chaud, jusqu'à ce que la pâte double de volume.",
-      "Dégazer la pâte, l'étaler sur 1 cm d'épaisseur et découper des cercles à l'aide d'un emporte-pièce.",
-      "Déposer une petite cuillère de Nutella congelé (préalablement formé en petites boules et congelé 30 minutes) au centre de la moitié des cercles.",
-      "Humidifier les bords à l'eau, recouvrir avec un second cercle de pâte et souder fermement les bords.",
-      "Laisser lever à nouveau 30 minutes sur une plaque farinée, recouverts d'un torchon.",
-      "Chauffer l'huile à 170°C et faire frire les beignets 2 à 3 minutes de chaque côté, jusqu'à coloration dorée.",
-      "Égoutter sur du papier absorbant et rouler immédiatement dans le sucre."
-    ],
-    "mc": [
-      "La veille ou 30 minutes avant : former de petites boules de Nutella et les congeler.",
-      "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
-      "Ajouter la farine, le sucre, le sel et l'œuf. Pétrir <b>2 min / mode pétrin</b>. Ajouter le beurre mou et pétrir encore <b>2 min / mode pétrin</b>.",
-      "Laisser lever 1 heure, puis étaler sur 1 cm et découper des cercles.",
-      "Garnir la moitié des cercles d'une boule de Nutella, recouvrir et souder. Laisser lever 30 minutes.",
-      "Frire 2 à 3 minutes par face dans l'huile à 170 °C, égoutter et rouler dans le sucre."
-    ]
-  },
-  {
     "id": "static-18",
-    "titre": "Beignets frits sucrés",
+    "titre": "Beignets",
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "variantes": [
       {
-        "nom": "Disques de boulangerie",
+        "nom": "Frits – Disques de boulangerie",
         "temps": "55 min",
         "personnes": "6",
         "ingredients": [
@@ -2021,7 +1630,7 @@ const recettes = [
         ]
       },
       {
-        "nom": "Petites boules moelleuses",
+        "nom": "Frits – Petites boules moelleuses",
         "temps": "105 min",
         "personnes": "15",
         "ingredients": [
@@ -2096,7 +1705,7 @@ const recettes = [
         ]
       },
       {
-        "nom": "Au miel et sucre glace",
+        "nom": "Frits – Au miel et sucre glace",
         "temps": "120 min",
         "personnes": "6",
         "ingredients": [
@@ -2170,6 +1779,380 @@ const recettes = [
           "Laisser reposer 2 heures.",
           "Étaler la pâte à un doigt d'épaisseur, couper des rectangles et frire 2 à 3 minutes par face à 170 °C.",
           "Égoutter, napper de miel et saupoudrer de sucre glace."
+        ]
+      },
+      {
+        "nom": "Au four – À la fleur d’oranger",
+        "temps": "150 min",
+        "personnes": "12",
+        "ingredients": [
+          {
+            "texte": "320 g de farine de blé",
+            "valeur": 320,
+            "unite": "g",
+            "reste": "farine de blé"
+          },
+          {
+            "texte": "150 ml de lait",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "40 g de sucre",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "40 g de beurre maison",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "beurre maison"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "7 g de levure boulangère sèche",
+            "valeur": 7,
+            "unite": "g",
+            "reste": "levure boulangère sèche"
+          },
+          {
+            "texte": "2 c. à soupe de fleur d'oranger",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "fleur d'oranger"
+          },
+          "sel",
+          "beurre maison fondu pour badigeonner",
+          "sucre pour rouler"
+        ],
+        "etapes": [
+          "Faire chauffer le lait jusqu'à ce qu'il soit tiède, puis y délayer la levure. Laisser poser pendant 5 minutes.",
+          "Disposer dans la cuve du robot le sel, la farine et le sucre.",
+          "Ajouter l'œuf, le mélange lait-levure et la fleur d'oranger, puis pétrir à vitesse moyenne pendant 5 minutes.",
+          "Incorporer le beurre mou à la pâte et pétrir encore 5 minutes.",
+          "Laisser pousser la pâte dans un endroit chaud pendant 2 heures.",
+          "Dégazer la pâte et former des boules d'environ 50 g.",
+          "Placer les boules sur une plaque recouverte de papier sulfurisé et laisser reposer pendant 1 à 1h30 à couvert.",
+          "Préchauffer le four à 180°C et enfourner les beignets pendant 10 minutes.",
+          "Faire fondre le beurre maison dans un bol et mettre du sucre dans un autre.",
+          "Badigeonner les beignets de beurre fondu et les rouler dans le sucre pour les enrober."
+        ],
+        "mc": [
+          "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sucre, le sel, l'œuf et la fleur d'oranger. Pétrir <b>3 min / mode pétrin</b>.",
+          "Ajouter le beurre en morceaux et pétrir encore <b>2 min / mode pétrin</b>.",
+          "Laisser pousser 2 heures dans un endroit chaud.",
+          "Former des boules de 50 g, les laisser lever 1 h à 1 h 30 sur une plaque, puis cuire 10 minutes à 180 °C.",
+          "Faire fondre du beurre (<b>2 min / 60 °C / vitesse 1</b>), badigeonner les beignets et les rouler dans le sucre."
+        ]
+      },
+      {
+        "nom": "Au four – Garnis de pâte à tartiner",
+        "temps": "100 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "340 g de farine",
+            "valeur": 340,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "240 ml de lait tiède",
+            "valeur": 240,
+            "unite": "ml",
+            "reste": "lait tiède"
+          },
+          {
+            "texte": "5 g de levure boulangère",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "levure boulangère"
+          },
+          {
+            "texte": "45 g de sucre blanc",
+            "valeur": 45,
+            "unite": "g",
+            "reste": "sucre blanc"
+          },
+          {
+            "texte": "1 sachet sucre vanillé",
+            "valeur": 1,
+            "unite": null,
+            "reste": "sachet sucre vanillé"
+          },
+          {
+            "texte": "40 g de beurre",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "200 g de pâte à tartiner",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "pâte à tartiner"
+          }
+        ],
+        "etapes": [
+          "Dans un grand bol, mélanger la farine, le sucre blanc, le sucre vanillé et la levure boulangère.",
+          "Faire fondre le beurre et l'ajouter au mélange sec.",
+          "Verser le lait tiède progressivement tout en mélangeant jusqu'à obtenir une pâte homogène.",
+          "Pétrir la pâte pendant environ 5 minutes jusqu'à ce qu'elle soit lisse et élastique.",
+          "Laisser la pâte reposer dans un endroit chaud pendant 1 heure, recouverte d'un torchon.",
+          "Préchauffer le four à 180°C.",
+          "Une fois la pâte levée, former des boules et les placer sur une plaque de cuisson recouverte de papier sulfurisé.",
+          "Enfourner pendant 15 à 20 minutes jusqu'à ce que les beignets soient dorés.",
+          "Laisser refroidir légèrement avant de les garnir de pâte à tartiner."
+        ],
+        "mc": [
+          "Mettre le lait, le beurre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sucre et le sucre vanillé. Pétrir <b>3 min / mode pétrin</b>.",
+          "Laisser lever 1 heure dans un endroit chaud.",
+          "Former des boules, les poser sur une plaque et cuire 15 à 20 minutes à 180 °C.",
+          "Laisser tiédir et garnir de pâte à tartiner."
+        ]
+      },
+      {
+        "nom": "Air fryer – Pâte au chocolat noir fondu",
+        "temps": "25 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "250 g de farine",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de sucre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "150 g de chocolat noir",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat noir"
+          },
+          {
+            "texte": "1 c. à café de levure chimique",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "150 ml de lait",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "50 g de beurre maison",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "beurre maison"
+          }
+        ],
+        "etapes": [
+          "Dans un grand bol, mélanger la farine, le sucre et la levure chimique.",
+          "Faire fondre le chocolat avec le beurre au micro-ondes ou au bain-marie.",
+          "Battre les œufs, ajouter le lait puis le mélange chocolat-beurre.",
+          "Verser le mélange liquide dans le bol avec les ingrédients secs et mélanger.",
+          "Préchauffer la friteuse à air à 180°C.",
+          "Verser des cuillerées de pâte dans le panier de la friteuse.",
+          "Cuire les beignets pendant environ 10 minutes, ou jusqu'à ce qu'ils soient dorés.",
+          "Laisser refroidir légèrement avant de déguster."
+        ],
+        "mc": [
+          "Mettre le chocolat en morceaux dans le bol. Hacher <b>10 s / vitesse 7</b>.",
+          "Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter les œufs et le lait, mélanger <b>10 s / vitesse 3</b>.",
+          "Ajouter la farine, le sucre et la levure. Mélanger <b>20 s / vitesse 4</b>.",
+          "Déposer des cuillerées de pâte dans le panier de l'air fryer préchauffé à 180 °C et cuire environ 10 minutes."
+        ]
+      },
+      {
+        "nom": "Air fryer – Pâte au cacao et pépites de chocolat",
+        "temps": "35 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "180 g de farine tout usage",
+            "valeur": 180,
+            "unite": "g",
+            "reste": "farine tout usage"
+          },
+          {
+            "texte": "40 g de sucre",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "25 g de cacao en poudre non sucré",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "cacao en poudre non sucré"
+          },
+          {
+            "texte": "5 g de levure chimique",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 g de sel",
+            "valeur": 1,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "180 ml de lait",
+            "valeur": 180,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "15 ml d'huile végétale",
+            "valeur": 15,
+            "unite": "ml",
+            "reste": "huile végétale"
+          },
+          {
+            "texte": "100 g de pépites de chocolat",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "pépites de chocolat"
+          },
+          {
+            "texte": "15 g de beurre fondu",
+            "valeur": 15,
+            "unite": "g",
+            "reste": "beurre fondu"
+          },
+          {
+            "texte": "10 g de sucre glace",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "sucre glace"
+          }
+        ],
+        "etapes": [
+          "Dans un saladier, tamiser la farine, le cacao en poudre, la levure et le sel.",
+          "Ajouter le sucre et mélanger brièvement pour répartir les ingrédients secs.",
+          "Dans un autre bol, battre les œufs puis incorporer le lait et l'huile végétale.",
+          "Verser progressivement le mélange liquide dans les ingrédients secs tout en mélangeant jusqu'à obtenir une pâte homogène et légèrement épaisse.",
+          "Incorporer les pépites de chocolat à la pâte et mélanger délicatement pour les répartir sans les écraser.",
+          "Laisser reposer la pâte 5 à 10 minutes pendant que le air fryer préchauffe à 180°C.",
+          "Répartir des portions de pâte en boules ou en forme de beignet sur le panier du air fryer en veillant à laisser de l'espace entre elles.",
+          "Cuire au air fryer à 180°C pendant 8 à 10 minutes jusqu'à ce que les beignets soient fermes et légèrement dorés.",
+          "À la sortie, badigeonner de beurre fondu et saupoudrer de sucre glace pour la finition.",
+          "Laisser tiédir 2 minutes avant de servir pour éviter les brûlures et apprécier l'intérieur moelleux."
+        ],
+        "mc": [
+          "Mettre les œufs, le lait et l'huile dans le bol. Mélanger <b>10 s / vitesse 3</b>.",
+          "Ajouter la farine, le cacao, la levure, le sel et le sucre. Mélanger <b>20 s / vitesse 4</b>.",
+          "Ajouter les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>. Laisser reposer 5 à 10 minutes.",
+          "Cuire des boules de pâte 8 à 10 minutes à l'air fryer à 180 °C.",
+          "Badigeonner de beurre fondu et saupoudrer de sucre glace. Laisser tiédir 2 minutes."
+        ]
+      },
+      {
+        "nom": "Fourrés au Nutella",
+        "temps": "90 min (+ pousse)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "300 g de farine",
+            "valeur": 300,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "30 g de sucre",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "7 g de levure boulangère sèche",
+            "valeur": 7,
+            "unite": "g",
+            "reste": "levure boulangère sèche"
+          },
+          {
+            "texte": "150 ml de lait tiède",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "lait tiède"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "30 g de beurre mou",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre mou"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          },
+          {
+            "texte": "200 g de Nutella",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "Nutella"
+          },
+          "huile de friture",
+          "sucre pour enrober"
+        ],
+        "etapes": [
+          "Dans un bol, délayer la levure dans le lait tiède avec une pincée de sucre, laisser reposer 10 minutes.",
+          "Dans un saladier, mélanger la farine, le sucre et le sel. Ajouter l'œuf et le mélange lait-levure, pétrir jusqu'à obtenir une pâte homogène.",
+          "Incorporer le beurre mou et pétrir 5 à 8 minutes, jusqu'à ce que la pâte soit lisse et élastique.",
+          "Couvrir et laisser lever 1 heure dans un endroit chaud, jusqu'à ce que la pâte double de volume.",
+          "Dégazer la pâte, l'étaler sur 1 cm d'épaisseur et découper des cercles à l'aide d'un emporte-pièce.",
+          "Déposer une petite cuillère de Nutella congelé (préalablement formé en petites boules et congelé 30 minutes) au centre de la moitié des cercles.",
+          "Humidifier les bords à l'eau, recouvrir avec un second cercle de pâte et souder fermement les bords.",
+          "Laisser lever à nouveau 30 minutes sur une plaque farinée, recouverts d'un torchon.",
+          "Chauffer l'huile à 170°C et faire frire les beignets 2 à 3 minutes de chaque côté, jusqu'à coloration dorée.",
+          "Égoutter sur du papier absorbant et rouler immédiatement dans le sucre."
+        ],
+        "mc": [
+          "La veille ou 30 minutes avant : former de petites boules de Nutella et les congeler.",
+          "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sucre, le sel et l'œuf. Pétrir <b>2 min / mode pétrin</b>. Ajouter le beurre mou et pétrir encore <b>2 min / mode pétrin</b>.",
+          "Laisser lever 1 heure, puis étaler sur 1 cm et découper des cercles.",
+          "Garnir la moitié des cercles d'une boule de Nutella, recouvrir et souder. Laisser lever 30 minutes.",
+          "Frire 2 à 3 minutes par face dans l'huile à 170 °C, égoutter et rouler dans le sucre."
         ]
       }
     ]
@@ -2805,10 +2788,10 @@ const recettes = [
             "reste": "poudre de meringue"
           },
           {
-            "texte": "4 à 6 c. à soupe d'eau froide",
-            "valeur": 4,
-            "unite": null,
-            "reste": "à 6 c. à soupe d'eau froide"
+            "texte": "5 c. à soupe d'eau froide (4 à 6 selon la pâte)",
+            "valeur": 5,
+            "unite": "c. à soupe",
+            "reste": "eau froide (4 à 6 selon la pâte)"
           },
           {
             "texte": "100 g de petits bonbons (type Smarties)",
@@ -3340,7 +3323,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "apero",
     "temps": "30 min (+ 1 h de repos)",
-    "personnes": "20 blinis",
+    "personnes": "20",
     "ingredients": [
       {
         "texte": "125 g de farine",
@@ -3391,7 +3374,8 @@ const recettes = [
       "Laisser reposer 1 heure.",
       "Cuire des cuillerées de pâte dans une poêle beurrée, retourner quand des bulles apparaissent.",
       "Garnir de crème fraîche, de saumon fumé ou de tarama."
-    ]
+    ],
+    "portion": "blinis"
   },
   {
     "id": "static-28",
@@ -3980,7 +3964,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "base-culinaire",
     "temps": "2 h 30",
-    "personnes": "2 litres",
+    "personnes": "2",
     "ingredients": [
       {
         "texte": "1 carcasse de poulet (ou 4 ailes)",
@@ -4043,7 +4027,8 @@ const recettes = [
       "Ajouter la carcasse (ou les ailes), le bouquet garni, le poivre et de l'eau jusqu'au repère maxi (environ 2 L).",
       "Cuire <b>60 min / 98 °C / sens inverse / vitesse 1</b>.",
       "Filtrer et saler légèrement. Se garde 3 jours au réfrigérateur ou se congèle en portions."
-    ]
+    ],
+    "portion": "litres"
   },
   {
     "id": "static-398",
@@ -5475,76 +5460,8 @@ const recettes = [
     ]
   },
   {
-    "id": "static-654",
-    "titre": "Brownies cimetière",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "50 min",
-    "personnes": "12",
-    "ingredients": [
-      {
-        "texte": "200 g de chocolat noir",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chocolat noir"
-      },
-      {
-        "texte": "150 g de beurre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "200 g de sucre",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "3 œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "100 g de farine",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "8 biscuits Oreo",
-        "valeur": 8,
-        "unite": null,
-        "reste": "biscuits Oreo"
-      },
-      {
-        "texte": "12 biscuits boudoirs ou petits-beurre",
-        "valeur": 12,
-        "unite": null,
-        "reste": "biscuits boudoirs ou petits-beurre"
-      },
-      "glaçage blanc ou chocolat blanc fondu",
-      "bonbons vers de terre"
-    ],
-    "etapes": [
-      "Préchauffer le four à 180 °C. Faire fondre le chocolat et le beurre, ajouter le sucre, les œufs puis la farine.",
-      "Cuire 25 minutes dans un moule carré, puis laisser refroidir.",
-      "Écraser les Oreo en miettes et les répandre dessus : c’est la terre.",
-      "Écrire « RIP » au glaçage blanc sur les biscuits et les planter comme des pierres tombales.",
-      "Ajouter les bonbons vers de terre qui sortent de la terre. Couper en carrés."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C.",
-      "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
-      "Ajouter le sucre et les œufs, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine, <b>15 s / vitesse 4</b>. Cuire 25 minutes dans un moule carré.",
-      "Bol propre : mettre les Oreo et mixer <b>5 s / vitesse 6</b> pour faire « la terre ».",
-      "Décorer avec la terre, les pierres tombales en biscuits (RIP au glaçage) et les bonbons vers de terre."
-    ]
-  },
-  {
     "id": "static-49",
-    "titre": "Brownies fondants",
+    "titre": "Brownies",
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "variantes": [
@@ -5698,6 +5615,71 @@ const recettes = [
           "Verser dans un cadre de 20 cm et cuire 15 à 20 minutes à 165 °C.",
           "Laisser refroidir, puis ajouter le caramel et les noix."
         ]
+      },
+      {
+        "nom": "Cimetière d’Halloween",
+        "temps": "50 min",
+        "personnes": "12",
+        "ingredients": [
+          {
+            "texte": "200 g de chocolat noir",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat noir"
+          },
+          {
+            "texte": "150 g de beurre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "200 g de sucre",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "3 œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "100 g de farine",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "8 biscuits Oreo",
+            "valeur": 8,
+            "unite": null,
+            "reste": "biscuits Oreo"
+          },
+          {
+            "texte": "12 biscuits boudoirs ou petits-beurre",
+            "valeur": 12,
+            "unite": null,
+            "reste": "biscuits boudoirs ou petits-beurre"
+          },
+          "glaçage blanc ou chocolat blanc fondu",
+          "bonbons vers de terre"
+        ],
+        "etapes": [
+          "Préchauffer le four à 180 °C. Faire fondre le chocolat et le beurre, ajouter le sucre, les œufs puis la farine.",
+          "Cuire 25 minutes dans un moule carré, puis laisser refroidir.",
+          "Écraser les Oreo en miettes et les répandre dessus : c’est la terre.",
+          "Écrire « RIP » au glaçage blanc sur les biscuits et les planter comme des pierres tombales.",
+          "Ajouter les bonbons vers de terre qui sortent de la terre. Couper en carrés."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter le sucre et les œufs, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine, <b>15 s / vitesse 4</b>. Cuire 25 minutes dans un moule carré.",
+          "Bol propre : mettre les Oreo et mixer <b>5 s / vitesse 6</b> pour faire « la terre ».",
+          "Décorer avec la terre, les pierres tombales en biscuits (RIP au glaçage) et les bonbons vers de terre."
+        ]
       }
     ]
   },
@@ -5749,7 +5731,7 @@ const recettes = [
     "titre": "Bûche caramel beurre salé et spéculoos",
     "photo": "photos/enattente.png",
     "temps": "12 h (dont 7h de congélation cumulée)",
-    "personnes": "8-10",
+    "personnes": "8",
     "cat": "dessert",
     "ingredients": [
       {
@@ -5873,7 +5855,7 @@ const recettes = [
     "titre": "Bûche chocolat-framboise avec croustillant praliné",
     "photo": "photos/enattente.png",
     "temps": "12 h (dont 8h de congélation cumulée)",
-    "personnes": "8-10",
+    "personnes": "8",
     "cat": "dessert",
     "ingredients": [
       {
@@ -6223,7 +6205,7 @@ const recettes = [
     "titre": "Bûche marron-vanille au croustillant de tuiles",
     "photo": "photos/enattente.png",
     "temps": "12 h (dont 7h de congélation cumulée)",
-    "personnes": "8-10",
+    "personnes": "8",
     "cat": "dessert",
     "ingredients": [
       {
@@ -7979,99 +7961,102 @@ const recettes = [
     "titre": "Caramel au beurre salé",
     "photo": "photos/enattente.png",
     "cat": "sauce",
-    "temps": "15 min",
-    "personnes": "1 pot",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "200 g de sucre",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "sucre"
+        "nom": "Classique",
+        "temps": "15 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "200 g de sucre",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "100 g de beurre demi-sel",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "beurre demi-sel"
+          },
+          {
+            "texte": "200 ml de crème liquide entière",
+            "valeur": 200,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          }
+        ],
+        "etapes": [
+          "Faire chauffer la crème sans la faire bouillir et couper le beurre en morceaux.",
+          "Faire fondre le sucre à sec dans une casserole à fond épais, à feu moyen, sans remuer (juste en penchant la casserole).",
+          "Quand le caramel est ambré, retirer du feu et ajouter le beurre en fouettant (attention aux projections).",
+          "Verser la crème chaude petit à petit en fouettant, puis remettre 1 minute sur le feu pour lisser.",
+          "Verser dans un pot : le caramel épaissit en refroidissant. Il se conserve 2 semaines au réfrigérateur."
+        ],
+        "mc": [
+          "Le caramel à sec se fait à la casserole (il dépasse la température du Monsieur Cuisine). Suivre les étapes 2 et 3 de la version classique.",
+          "Pendant ce temps, chauffer la crème dans le bol : <b>3 min / 90 °C / vitesse 1</b>.",
+          "Verser le caramel ambré avec le beurre dans le bol, ajouter la crème chaude et mélanger <b>2 min / 90 °C / vitesse 3</b> jusqu'à une sauce lisse. Verser en pot."
+        ],
+        "portion": "pot"
       },
       {
-        "texte": "100 g de beurre demi-sel",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "beurre demi-sel"
-      },
-      {
-        "texte": "200 ml de crème liquide entière",
-        "valeur": 200,
-        "unite": "ml",
-        "reste": "crème liquide entière"
+        "nom": "Au chocolat blanc",
+        "temps": "30 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "490 g de sucre blanc",
+            "valeur": 490,
+            "unite": "g",
+            "reste": "sucre blanc"
+          },
+          {
+            "texte": "350 g de beurre doux",
+            "valeur": 350,
+            "unite": "g",
+            "reste": "beurre doux"
+          },
+          {
+            "texte": "385 g de crème liquide",
+            "valeur": 385,
+            "unite": "g",
+            "reste": "crème liquide"
+          },
+          {
+            "texte": "175 g de chocolat blanc",
+            "valeur": 175,
+            "unite": "g",
+            "reste": "chocolat blanc"
+          },
+          {
+            "texte": "10,5 g de fleur de sel",
+            "valeur": 10.5,
+            "unite": "g",
+            "reste": "fleur de sel"
+          },
+          {
+            "texte": "1 g de vanille en poudre",
+            "valeur": 1,
+            "unite": "g",
+            "reste": "vanille en poudre"
+          }
+        ],
+        "etapes": [
+          "Réaliser un caramel à sec en faisant chauffer le sucre dans une casserole jusqu'à une coloration ambrée remarquable.",
+          "Chauffer la crème liquide séparément jusqu'à ébullition légère.",
+          "Retirer la casserole du feu et verser progressivement la crème chaude sur le caramel en mélangeant avec précaution jusqu'à obtenir une texture lisse.",
+          "Remettre sur feu doux et ajouter le beurre en morceaux, la vanille et la fleur de sel. Mélanger jusqu'à parfaite émulsion.",
+          "Ajouter le chocolat blanc coupé en morceaux et mélanger jusqu'à ce qu'il soit entièrement fondu et lisse.",
+          "Mixer au mixeur plongeant pour obtenir un caramel parfaitement lisse et brillant, puis laisser refroidir légèrement ou placer au frais selon l'usage."
+        ],
+        "mc": [
+          "Faire le caramel à sec à la casserole (il dépasse la température du Monsieur Cuisine).",
+          "Pendant ce temps, mettre la crème dans le bol et chauffer <b>4 min / 90 °C / vitesse 1</b>.",
+          "Verser le caramel dans le bol avec la crème chaude, ajouter le beurre, la vanille et la fleur de sel. Mélanger <b>3 min / 90 °C / vitesse 3</b>.",
+          "Ajouter le chocolat blanc en morceaux et mélanger <b>1 min / vitesse 3</b> jusqu'à ce qu'il soit fondu. Mettre en pots."
+        ]
       }
-    ],
-    "etapes": [
-      "Faire chauffer la crème sans la faire bouillir et couper le beurre en morceaux.",
-      "Faire fondre le sucre à sec dans une casserole à fond épais, à feu moyen, sans remuer (juste en penchant la casserole).",
-      "Quand le caramel est ambré, retirer du feu et ajouter le beurre en fouettant (attention aux projections).",
-      "Verser la crème chaude petit à petit en fouettant, puis remettre 1 minute sur le feu pour lisser.",
-      "Verser dans un pot : le caramel épaissit en refroidissant. Il se conserve 2 semaines au réfrigérateur."
-    ],
-    "mc": [
-      "Le caramel à sec se fait à la casserole (il dépasse la température du Monsieur Cuisine). Suivre les étapes 2 et 3 de la version classique.",
-      "Pendant ce temps, chauffer la crème dans le bol : <b>3 min / 90 °C / vitesse 1</b>.",
-      "Verser le caramel ambré avec le beurre dans le bol, ajouter la crème chaude et mélanger <b>2 min / 90 °C / vitesse 3</b> jusqu'à une sauce lisse. Verser en pot."
-    ]
-  },
-  {
-    "id": "static-64",
-    "titre": "Caramel au chocolat blanc et beurre salé",
-    "photo": "photos/enattente.png",
-    "temps": "30 min",
-    "personnes": "6",
-    "cat": "sauce",
-    "ingredients": [
-      {
-        "texte": "490 g de sucre blanc",
-        "valeur": 490,
-        "unite": "g",
-        "reste": "sucre blanc"
-      },
-      {
-        "texte": "350 g de beurre doux",
-        "valeur": 350,
-        "unite": "g",
-        "reste": "beurre doux"
-      },
-      {
-        "texte": "385 g de crème liquide",
-        "valeur": 385,
-        "unite": "g",
-        "reste": "crème liquide"
-      },
-      {
-        "texte": "175 g de chocolat blanc",
-        "valeur": 175,
-        "unite": "g",
-        "reste": "chocolat blanc"
-      },
-      {
-        "texte": "10,5 g de fleur de sel",
-        "valeur": 10.5,
-        "unite": "g",
-        "reste": "fleur de sel"
-      },
-      {
-        "texte": "1 g de vanille en poudre",
-        "valeur": 1,
-        "unite": "g",
-        "reste": "vanille en poudre"
-      }
-    ],
-    "etapes": [
-      "Réaliser un caramel à sec en faisant chauffer le sucre dans une casserole jusqu'à une coloration ambrée remarquable.",
-      "Chauffer la crème liquide séparément jusqu'à ébullition légère.",
-      "Retirer la casserole du feu et verser progressivement la crème chaude sur le caramel en mélangeant avec précaution jusqu'à obtenir une texture lisse.",
-      "Remettre sur feu doux et ajouter le beurre en morceaux, la vanille et la fleur de sel. Mélanger jusqu'à parfaite émulsion.",
-      "Ajouter le chocolat blanc coupé en morceaux et mélanger jusqu'à ce qu'il soit entièrement fondu et lisse.",
-      "Mixer au mixeur plongeant pour obtenir un caramel parfaitement lisse et brillant, puis laisser refroidir légèrement ou placer au frais selon l'usage."
-    ],
-    "mc": [
-      "Faire le caramel à sec à la casserole (il dépasse la température du Monsieur Cuisine).",
-      "Pendant ce temps, mettre la crème dans le bol et chauffer <b>4 min / 90 °C / vitesse 1</b>.",
-      "Verser le caramel dans le bol avec la crème chaude, ajouter le beurre, la vanille et la fleur de sel. Mélanger <b>3 min / 90 °C / vitesse 3</b>.",
-      "Ajouter le chocolat blanc en morceaux et mélanger <b>1 min / vitesse 3</b> jusqu'à ce qu'il soit fondu. Mettre en pots."
     ]
   },
   {
@@ -10026,7 +10011,7 @@ const recettes = [
       {
         "nom": "Épicées au four",
         "temps": "35 min",
-        "personnes": "2-3",
+        "personnes": "2",
         "ingredients": [
           {
             "texte": "1 pomme de terre",
@@ -10596,7 +10581,7 @@ const recettes = [
     "titre": "Cinnamon rolls",
     "photo": "photos/enattente.png",
     "temps": "65 min (+ 2 h 15 de repos)",
-    "personnes": "6-8",
+    "personnes": "6",
     "cat": "dessert",
     "ingredients": [
       {
@@ -11338,7 +11323,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "temps": "40 min (+ 1 nuit de macération)",
-    "personnes": "4 pots",
+    "personnes": "4",
     "ingredients": [
       {
         "texte": "1 kg de fraises",
@@ -11369,7 +11354,8 @@ const recettes = [
       "Mettre les fraises coupées, le sucre et le jus de citron dans le bol (500 g de fraises maximum par fournée pour éviter que ça déborde). Laisser macérer une nuit si possible.",
       "Cuire <b>25 min / 100 °C / vitesse 2</b>, sans le gobelet (poser le panier de cuisson sur le couvercle pour éviter les projections).",
       "Vérifier la prise sur une assiette froide, recuire 5 minutes si besoin, puis verser bouillant dans des pots ébouillantés et les retourner."
-    ]
+    ],
+    "portion": "pots"
   },
   {
     "id": "static-89",
@@ -13667,104 +13653,106 @@ const recettes = [
   },
   {
     "id": "static-504",
-    "titre": "Croque-monsieur au four",
+    "titre": "Croque-monsieur",
     "photo": "photos/enattente.png",
     "cat": "plat",
-    "temps": "20 min",
-    "personnes": "4",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "8 tranches de pain de mie",
-        "valeur": 8,
-        "unite": null,
-        "reste": "tranches de pain de mie"
+        "nom": "Classique au four",
+        "temps": "20 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "8 tranches de pain de mie",
+            "valeur": 8,
+            "unite": null,
+            "reste": "tranches de pain de mie"
+          },
+          {
+            "texte": "4 tranches de jambon",
+            "valeur": 4,
+            "unite": null,
+            "reste": "tranches de jambon"
+          },
+          {
+            "texte": "150 g d'emmental râpé",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "emmental râpé"
+          },
+          {
+            "texte": "30 g de beurre mou",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre mou"
+          },
+          {
+            "texte": "4 c. à soupe de crème fraîche ou béchamel",
+            "valeur": 4,
+            "unite": "c. à soupe",
+            "reste": "crème fraîche ou béchamel"
+          },
+          "poivre"
+        ],
+        "etapes": [
+          "Préchauffer le four à 220 °C (ou en position grill).",
+          "Beurrer légèrement les tranches de pain sur une face.",
+          "Sur la face non beurrée de 4 tranches, poser une tranche de jambon et un peu de fromage. Refermer, face beurrée vers l’extérieur.",
+          "Napper le dessus de crème fraîche, parsemer du reste de fromage et poivrer.",
+          "Cuire 10 minutes, jusqu’à ce que le dessus soit gratiné. Ajouter un œuf au plat dessus pour un croque-madame."
+        ],
+        "mc": [
+          "Béchamel express (si besoin) : mettre 20 g de beurre, 20 g de farine et 250 ml de lait dans le bol, cuire <b>6 min / 90 °C / vitesse 4</b>.",
+          "Monter les croques, napper de crème ou de béchamel, parsemer de fromage et cuire 10 minutes à 220 °C."
+        ]
       },
       {
-        "texte": "4 tranches de jambon",
-        "valeur": 4,
-        "unite": null,
-        "reste": "tranches de jambon"
-      },
-      {
-        "texte": "150 g d'emmental râpé",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "emmental râpé"
-      },
-      {
-        "texte": "30 g de beurre mou",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "beurre mou"
-      },
-      {
-        "texte": "4 c. à soupe de crème fraîche ou béchamel",
-        "valeur": 4,
-        "unite": "c. à soupe",
-        "reste": "crème fraîche ou béchamel"
-      },
-      "poivre"
-    ],
-    "etapes": [
-      "Préchauffer le four à 220 °C (ou en position grill).",
-      "Beurrer légèrement les tranches de pain sur une face.",
-      "Sur la face non beurrée de 4 tranches, poser une tranche de jambon et un peu de fromage. Refermer, face beurrée vers l’extérieur.",
-      "Napper le dessus de crème fraîche, parsemer du reste de fromage et poivrer.",
-      "Cuire 10 minutes, jusqu’à ce que le dessus soit gratiné. Ajouter un œuf au plat dessus pour un croque-madame."
-    ],
-    "mc": [
-      "Béchamel express (si besoin) : mettre 20 g de beurre, 20 g de farine et 250 ml de lait dans le bol, cuire <b>6 min / 90 °C / vitesse 4</b>.",
-      "Monter les croques, napper de crème ou de béchamel, parsemer de fromage et cuire 10 minutes à 220 °C."
-    ]
-  },
-  {
-    "id": "static-114",
-    "titre": "Croques jambon, fromage et mozzarella",
-    "photo": "photos/enattente.png",
-    "temps": "15 min",
-    "personnes": "4",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "8 tranches pain de mie",
-        "valeur": 8,
-        "unite": null,
-        "reste": "tranches pain de mie"
-      },
-      {
-        "texte": "200 g de jambon",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "jambon"
-      },
-      {
-        "texte": "150 g de fromage",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "fromage"
-      },
-      {
-        "texte": "150 g de mozzarella",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "mozzarella"
-      },
-      {
-        "texte": "50 g de beurre",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "beurre"
+        "nom": "Jambon, fromage et mozzarella",
+        "temps": "15 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "8 tranches pain de mie",
+            "valeur": 8,
+            "unite": null,
+            "reste": "tranches pain de mie"
+          },
+          {
+            "texte": "200 g de jambon",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "jambon"
+          },
+          {
+            "texte": "150 g de fromage",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "fromage"
+          },
+          {
+            "texte": "150 g de mozzarella",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "mozzarella"
+          },
+          {
+            "texte": "50 g de beurre",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "beurre"
+          }
+        ],
+        "etapes": [
+          "Préchauffez votre appareil à croque-monsieur ou une poêle à feu moyen.",
+          "Étalez une fine couche de beurre sur un côté de chaque tranche de pain de mie.",
+          "Sur la partie non beurrée, déposez une tranche de jambon, une tranche de fromage et de la mozzarella.",
+          "Recouvrez avec une autre tranche de pain de mie, côté beurré vers l'extérieur.",
+          "Faites cuire dans l'appareil à croque-monsieur ou dans la poêle jusqu'à ce que le pain soit doré et le fromage fondu, environ 5-7 minutes."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : les croques cuisent à l'appareil ou à la poêle, suivre la version classique."
+        ]
       }
-    ],
-    "etapes": [
-      "Préchauffez votre appareil à croque-monsieur ou une poêle à feu moyen.",
-      "Étalez une fine couche de beurre sur un côté de chaque tranche de pain de mie.",
-      "Sur la partie non beurrée, déposez une tranche de jambon, une tranche de fromage et de la mozzarella.",
-      "Recouvrez avec une autre tranche de pain de mie, côté beurré vers l'extérieur.",
-      "Faites cuire dans l'appareil à croque-monsieur ou dans la poêle jusqu'à ce que le pain soit doré et le fromage fondu, environ 5-7 minutes."
-    ],
-    "mc": [
-      "Pas besoin du Monsieur Cuisine pour cette recette : les croques cuisent à l'appareil ou à la poêle, suivre la version classique."
     ]
   },
   {
@@ -14092,7 +14080,7 @@ const recettes = [
   },
   {
     "id": "static-120",
-    "titre": "Crumble aux fruits",
+    "titre": "Crumble",
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "variantes": [
@@ -14220,69 +14208,66 @@ const recettes = [
           "Ajouter les pépites de chocolat et mélanger <b>5 s / sens inverse / vitesse 2</b>.",
           "Répartir sur les fruits et cuire comme dans la version classique."
         ]
+      },
+      {
+        "nom": "Au Nutella",
+        "temps": "40 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "250 g de farine",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de sucre en poudre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre en poudre"
+          },
+          {
+            "texte": "0,5 c. à café de levure chimique",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          },
+          {
+            "texte": "110 g de beurre",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          "Nutella (à ajuster selon goût)"
+        ],
+        "etapes": [
+          "Dans un bol, mélanger la farine, le sucre en poudre, la levure chimique et le sel.",
+          "Ajouter le beurre froid coupé en morceaux et sabler du bout des doigts jusqu'à obtenir une texture sableuse.",
+          "Incorporer l'œuf et former une pâte homogène sans trop travailler.",
+          "Étaler les deux tiers de la pâte au fond d’un moule recouvert de papier cuisson en tassant légèrement.",
+          "Répartir des cuillerées de Nutella sur cette base.",
+          "Émietter le reste de la pâte par-dessus en gros morceaux.",
+          "Enfourner à 180°C pendant 25 minutes jusqu'à ce que le dessus soit doré et croustillant.",
+          "Laisser refroidir le crumble environ 30 minutes avant de déguster."
+        ],
+        "mc": [
+          "Mettre la farine, le sucre, la levure, le sel et le beurre froid en morceaux dans le bol. Sabler <b>10 s / vitesse 5</b>.",
+          "Ajouter l'œuf et mélanger <b>10 s / vitesse 4</b>.",
+          "Tasser les deux tiers de la pâte dans le moule, répartir le Nutella, émietter le reste de pâte dessus et cuire comme dans la version classique."
+        ]
       }
-    ]
-  },
-  {
-    "id": "static-121",
-    "titre": "Crumble Nutella",
-    "photo": "photos/enattente.png",
-    "temps": "40 min",
-    "personnes": "4",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "250 g de farine",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "100 g de sucre en poudre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "sucre en poudre"
-      },
-      {
-        "texte": "0,5 c. à café de levure chimique",
-        "valeur": 0.5,
-        "unite": "c. à café",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      },
-      {
-        "texte": "110 g de beurre",
-        "valeur": 110,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      "Nutella (à ajuster selon goût)"
-    ],
-    "etapes": [
-      "Dans un bol, mélanger la farine, le sucre en poudre, la levure chimique et le sel.",
-      "Ajouter le beurre froid coupé en morceaux et sabler du bout des doigts jusqu'à obtenir une texture sableuse.",
-      "Incorporer l'œuf et former une pâte homogène sans trop travailler.",
-      "Étaler les deux tiers de la pâte au fond d’un moule recouvert de papier cuisson en tassant légèrement.",
-      "Répartir des cuillerées de Nutella sur cette base.",
-      "Émietter le reste de la pâte par-dessus en gros morceaux.",
-      "Enfourner à 180°C pendant 25 minutes jusqu'à ce que le dessus soit doré et croustillant.",
-      "Laisser refroidir le crumble environ 30 minutes avant de déguster."
-    ],
-    "mc": [
-      "Mettre la farine, le sucre, la levure, le sel et le beurre froid en morceaux dans le bol. Sabler <b>10 s / vitesse 5</b>.",
-      "Ajouter l'œuf et mélanger <b>10 s / vitesse 4</b>.",
-      "Tasser les deux tiers de la pâte dans le moule, répartir le Nutella, émietter le reste de pâte dessus et cuire comme dans la version classique."
     ]
   },
   {
@@ -16111,7 +16096,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "apero",
     "temps": "1 h 15",
-    "personnes": "12 empanadas",
+    "personnes": "12",
     "ingredients": [
       {
         "texte": "400 g de farine",
@@ -16200,7 +16185,8 @@ const recettes = [
       "Farce : mettre l'oignon et le poivron dans le bol vidé, hacher <b>5 s / vitesse 5</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>. Ajouter la viande et les épices, cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>.",
       "Laisser refroidir, ajouter les œufs durs et les olives hachés, mélanger <b>5 s / sens inverse / vitesse 2</b>.",
       "Garnir les disques de pâte, souder, dorer et cuire comme dans la version classique."
-    ]
+    ],
+    "portion": "empanadas"
   },
   {
     "id": "static-424",
@@ -16274,7 +16260,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "temps": "15 min",
-    "personnes": "15 boules",
+    "personnes": "15",
     "ingredients": [
       {
         "texte": "200 g de dattes dénoyautées",
@@ -16318,14 +16304,15 @@ const recettes = [
       "Mettre les amandes dans le bol, mixer <b>8 s / vitesse 7</b>.",
       "Ajouter les dattes, le cacao, le beurre de cacahuète et le sel. Mixer <b>20 s / vitesse 7</b>, racler et recommencer jusqu'à une pâte collante.",
       "Former des boules, les rouler dans la noix de coco et les garder au réfrigérateur."
-    ]
+    ],
+    "portion": "boules"
   },
   {
     "id": "static-131",
     "titre": "Entremets pêche-abricot façon vitrine pâtissière (grand + minis)",
     "photo": "photos/enattente.png",
     "temps": "180 min (+ nuit de congélation)",
-    "personnes": "10 (1 entremets 20 cm) + 6 individuels",
+    "personnes": "10",
     "cat": "dessert",
     "ingredients": [
       {
@@ -16521,7 +16508,8 @@ const recettes = [
       "Financier : beurre noisette à la casserole. Bol propre : mettre la poudre de noisette, la farine, le sucre glace, les blancs, la vanille et le sel, mélanger <b>20 s / vitesse 4</b>. Ajouter le beurre noisette, <b>10 s / vitesse 3</b>. Cuire comme dans la version classique.",
       "Croustillant et mousse : faire fondre le chocolat <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b> ; monter la crème au fouet <b>vitesse 4</b> en surveillant.",
       "Assembler et finir l'entremets comme dans la version classique."
-    ]
+    ],
+    "portion": "parts"
   },
   {
     "id": "static-132",
@@ -17595,7 +17583,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "base-culinaire",
     "temps": "30 min",
-    "personnes": "1 fond de tarte",
+    "personnes": "1",
     "ingredients": [
       {
         "texte": "1 pâte brisée ou sablée",
@@ -17613,7 +17601,8 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour la cuisson à blanc : elle se fait au four, suivre la version classique."
-    ]
+    ],
+    "portion": "fond de tarte"
   },
   {
     "id": "static-623",
@@ -20977,7 +20966,7 @@ const recettes = [
       {
         "nom": "Façon pizza pesto-mozzarella",
         "temps": "25 min",
-        "personnes": "2-4",
+        "personnes": "2",
         "ingredients": [
           {
             "texte": "1 pâte feuilletée maison rectangulaire (voir recette pâte à croissants)",
@@ -21226,7 +21215,7 @@ const recettes = [
     "titre": "Glaçage au sucre glace",
     "photo": "photos/enattente.png",
     "temps": "5 min",
-    "personnes": "pour 1 gâteau ou une douzaine de biscuits",
+    "personnes": "1",
     "cat": "base-culinaire",
     "ingredients": [
       {
@@ -21260,7 +21249,8 @@ const recettes = [
       "Sucre glace maison si besoin : sucre en poudre dans le bol bien sec, <b>15 s / vitesse 10</b>.",
       "Ajouter l'eau ou le jus de citron, la vanille et le colorant. Mélanger <b>15 s / vitesse 3</b>.",
       "Ajuster la texture comme dans la version classique."
-    ]
+    ],
+    "portion": "gâteau"
   },
   {
     "id": "static-612",
@@ -22524,7 +22514,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "apero",
     "temps": "45 min",
-    "personnes": "30 gougères",
+    "personnes": "30",
     "ingredients": [
       {
         "texte": "125 ml d'eau",
@@ -22589,7 +22579,8 @@ const recettes = [
       "Ajouter la farine d'un coup, mélanger <b>30 s / vitesse 4</b>, puis dessécher <b>2 min / 100 °C / vitesse 2</b>.",
       "Laisser tiédir 3 minutes. Ajouter les œufs un à un par l'ouverture, <b>40 s / vitesse 4</b> en tout.",
       "Ajouter 100 g de fromage, la muscade et le poivre, <b>10 s / vitesse 3</b>. Dresser et cuire comme dans la version classique."
-    ]
+    ],
+    "portion": "gougères"
   },
   {
     "id": "static-186",
@@ -23166,7 +23157,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "apero",
     "temps": "1 h",
-    "personnes": "30 gyozas",
+    "personnes": "30",
     "ingredients": [
       {
         "texte": "30 feuilles à gyozas",
@@ -23243,7 +23234,8 @@ const recettes = [
       "Mettre les oignons nouveaux, le gingembre et l'ail dans le bol, hacher <b>4 s / vitesse 7</b>.",
       "Ajouter le porc, le chou pressé, la sauce soja et l'huile de sésame. Mélanger <b>20 s / sens inverse / vitesse 3</b>.",
       "Garnir et plier les gyozas, puis les cuire à la poêle (dorer, ajouter l'eau, couvrir) comme dans la version classique."
-    ]
+    ],
+    "portion": "gyozas"
   },
   {
     "id": "static-486",
@@ -24197,7 +24189,7 @@ const recettes = [
     "titre": "Kinder Chocobons maison",
     "photo": "photos/enattente.png",
     "temps": "25 min (+ prise au frais)",
-    "personnes": "25 pièces",
+    "personnes": "25",
     "cat": "dessert",
     "ingredients": [
       {
@@ -24246,7 +24238,8 @@ const recettes = [
       "Mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. Chemiser les moules et réserver le reste.",
       "Bol rincé : mettre le beurre, faire fondre <b>2 min / 50 °C / vitesse 1</b>. Ajouter le sucre glace, le chocolat blanc et les noisettes ou le pralin. Mélanger <b>20 s / vitesse 4</b>.",
       "Garnir les moules et refermer avec le reste de chocolat au lait. Réfrigérer."
-    ]
+    ],
+    "portion": "pièces"
   },
   {
     "id": "static-198",
@@ -25255,7 +25248,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "maison",
     "temps": "5 min (+ refroidissement)",
-    "personnes": "1 litre",
+    "personnes": "1",
     "ingredients": [
       {
         "texte": "50 g de copeaux de savon de Marseille",
@@ -25289,7 +25282,8 @@ const recettes = [
       "Ajouter les copeaux de savon et les cristaux de soude. Mélanger <b>3 min / 90 °C / vitesse 2</b>, jusqu'à ce que le savon soit fondu.",
       "Verser dans un bocal et laisser refroidir. Une fois épaissie, la remettre dans le bol et mixer <b>10 s / vitesse 4</b> pour une texture lisse.",
       "Bien laver le bol, le couvercle et le joint à l'eau chaude après usage (produit ménager, porter des gants pour les cristaux de soude)."
-    ]
+    ],
+    "portion": "litre"
   },
   {
     "id": "static-472",
@@ -25833,7 +25827,8 @@ const recettes = [
           "Mélanger la poudre d'amandes, le sucre glace et les premiers blancs à la main.",
           "Meringue italienne : le sirop à 118 °C se fait à la casserole avec un thermomètre (le Monsieur Cuisine ne monte pas assez haut). Insérer le fouet, monter les 55 g de blancs <b>vitesse 4</b> et verser le sirop en filet par l'ouverture, puis fouetter <b>5 min / vitesse 4</b> jusqu'à tiédeur.",
           "Ajouter le colorant, macaronner à la spatule, pocher et cuire comme dans la version classique."
-        ]
+        ],
+        "portion": "macarons"
       },
       {
         "nom": "Colorés (meringue française)",
@@ -26349,7 +26344,7 @@ const recettes = [
     "titre": "Mailänderli (biscuits de Milan)",
     "cat": "dessert",
     "temps": "40 min (+ 2 h au frais)",
-    "personnes": "40 biscuits",
+    "personnes": "40",
     "ingredients": [
       {
         "texte": "250 g de beurre mou",
@@ -26415,7 +26410,8 @@ const recettes = [
       "Ajouter les œufs et mélanger <b>15 s / vitesse 4</b>.",
       "Ajouter la farine et pétrir <b>40 s / mode pétrin</b>. Version chocolat : faire fondre le chocolat avant (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>) et l'incorporer à une partie de la pâte.",
       "Filmer et réfrigérer 2 heures, étaler sur 7 mm, découper, dorer au jaune d'œuf et cuire 8 à 10 minutes à 200 °C."
-    ]
+    ],
+    "portion": "biscuits"
   },
   {
     "id": "static-215",
@@ -28579,7 +28575,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "temps": "35 min",
-    "personnes": "12 muffins",
+    "personnes": "12",
     "ingredients": [
       {
         "texte": "250 g de farine",
@@ -28647,7 +28643,8 @@ const recettes = [
       "Mettre les œufs, le lait et le beurre fondu dans le bol, mélanger <b>10 s / vitesse 4</b>.",
       "Ajouter la farine, le cacao, le sucre, la levure et le sel. Mélanger <b>15 s / vitesse 4</b> (la pâte reste grumeleuse).",
       "Ajouter les pépites, <b>10 s / sens inverse / vitesse 2</b>. Remplir les caissettes et cuire."
-    ]
+    ],
+    "portion": "muffins"
   },
   {
     "id": "static-442",
@@ -28655,7 +28652,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "temps": "35 min",
-    "personnes": "12 muffins",
+    "personnes": "12",
     "ingredients": [
       {
         "texte": "250 g de farine",
@@ -28718,7 +28715,8 @@ const recettes = [
       "Mettre les œufs, le lait et le beurre fondu dans le bol, mélanger <b>10 s / vitesse 4</b>.",
       "Ajouter la farine, le sucre, la levure et le sel. Mélanger <b>15 s / vitesse 4</b> (la pâte reste grumeleuse).",
       "Incorporer les myrtilles à la spatule, remplir les caissettes et cuire."
-    ]
+    ],
+    "portion": "muffins"
   },
   {
     "id": "static-532",
@@ -28726,7 +28724,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "apero",
     "temps": "35 min",
-    "personnes": "12 muffins",
+    "personnes": "12",
     "ingredients": [
       {
         "texte": "250 g de farine",
@@ -28797,7 +28795,8 @@ const recettes = [
       "Mettre la courgette en tronçons dans le bol, râper <b>5 s / vitesse 5</b> et la presser. Ajouter le poivron et les herbes, hacher <b>3 s / vitesse 5</b>.",
       "Ajouter la farine, la levure, les œufs, le lait, l'huile, le parmesan, sel et poivre. Mélanger <b>20 s / sens inverse / vitesse 3</b>.",
       "Ajouter la feta émiettée, <b>5 s / sens inverse / vitesse 2</b>. Remplir les moules et cuire."
-    ]
+    ],
+    "portion": "muffins"
   },
   {
     "id": "static-520",
@@ -31510,7 +31509,7 @@ const recettes = [
       {
         "nom": "Moelleux à l’huile d’olive",
         "temps": "80 min",
-        "personnes": "7 pains",
+        "personnes": "7",
         "ingredients": [
           {
             "texte": "125 ml de lait tiède",
@@ -31590,7 +31589,8 @@ const recettes = [
           "Mettre 125 ml de lait tiède, la levure et le sucre dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>. Laisser reposer 10 minutes.",
           "Ajouter la farine, la levure chimique, le sel, le vinaigre, l'huile, le reste du lait et l'œuf. Pétrir <b>5 min / mode pétrin</b>.",
           "Laisser lever, façonner, parsemer de sésame et cuire comme dans la version classique."
-        ]
+        ],
+        "portion": "pains"
       },
       {
         "nom": "Briochés au beurre",
@@ -32562,7 +32562,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "base-culinaire",
     "temps": "50 min",
-    "personnes": "30 choux",
+    "personnes": "30",
     "ingredients": [
       {
         "texte": "125 ml d'eau",
@@ -32622,7 +32622,8 @@ const recettes = [
       "Ajouter la farine d'un coup, mélanger <b>30 s / vitesse 4</b>, puis dessécher <b>2 min / 100 °C / vitesse 2</b>.",
       "Laisser tiédir 3 minutes (bol ouvert). Ajouter les œufs un à un par l'ouverture, moteur en marche <b>vitesse 4</b>, 40 s en tout : la pâte doit être lisse et former un ruban.",
       "Pocher et cuire comme dans la version classique."
-    ]
+    ],
+    "portion": "choux"
   },
   {
     "id": "static-271",
@@ -32919,7 +32920,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "base-culinaire",
     "temps": "20 min (+ 1 h 30 de pousse)",
-    "personnes": "2 pizzas",
+    "personnes": "2",
     "ingredients": [
       {
         "texte": "500 g de farine (T45 ou T55)",
@@ -32970,7 +32971,8 @@ const recettes = [
       "Mettre l'eau tiède, la levure et le sucre dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
       "Ajouter la farine, le sel et l'huile. Pétrir <b>5 min / mode pétrin</b>.",
       "Laisser lever 1 heure, couverte, puis étaler."
-    ]
+    ],
+    "portion": "pizzas"
   },
   {
     "id": "static-273",
@@ -32981,7 +32983,7 @@ const recettes = [
       {
         "nom": "Au beurre",
         "temps": "15 min (+ 30 min de repos)",
-        "personnes": "1 fond de tarte (6-8 parts)",
+        "personnes": "1",
         "ingredients": [
           {
             "texte": "250 g de farine",
@@ -33026,12 +33028,13 @@ const recettes = [
           "Mettre la farine, le sel et le beurre bien froid en dés dans le bol. Sabler <b>10 s / vitesse 5</b>.",
           "Ajouter l'œuf et l'eau froide. Pétrir <b>20 s / mode pétrin</b>, juste le temps que la pâte se rassemble.",
           "Former une boule, filmer et réfrigérer 30 minutes."
-        ]
+        ],
+        "portion": "fond de tarte"
       },
       {
         "nom": "À l’huile d’olive, sans beurre (secouée en boîte)",
         "temps": "5 min",
-        "personnes": "1 fond de tarte",
+        "personnes": "1",
         "ingredients": [
           {
             "texte": "250 g de farine",
@@ -33069,7 +33072,8 @@ const recettes = [
           "Mettre la farine, l'huile, l'eau et le sel dans le bol.",
           "Pétrir <b>30 s / mode pétrin</b> jusqu'à ce que la pâte forme une boule.",
           "Étaler et utiliser comme dans la version classique."
-        ]
+        ],
+        "portion": "fond de tarte"
       }
     ]
   },
@@ -33146,7 +33150,7 @@ const recettes = [
     "titre": "Pâte sablée maison",
     "photo": "photos/enattente.png",
     "temps": "15 min (+ 30 min de repos)",
-    "personnes": "1 fond de tarte (6-8 parts)",
+    "personnes": "1",
     "cat": "base-culinaire",
     "ingredients": [
       {
@@ -33191,7 +33195,8 @@ const recettes = [
       "Mettre le beurre mou, le sucre glace et le sel dans le bol, mélanger <b>20 s / vitesse 4</b>.",
       "Ajouter l'œuf, <b>10 s / vitesse 4</b>.",
       "Ajouter la farine et pétrir <b>20 s / mode pétrin</b>, juste assez pour rassembler. Filmer et réfrigérer."
-    ]
+    ],
+    "portion": "fond de tarte"
   },
   {
     "id": "static-415",
@@ -35631,142 +35636,141 @@ const recettes = [
     ]
   },
   {
-    "id": "static-296",
-    "titre": "Popcorn au chocolat et beurre de cacahuète",
-    "photo": "photos/enattente.png",
-    "temps": "40 min",
-    "personnes": "3",
-    "cat": "apero",
-    "ingredients": [
-      {
-        "texte": "60 g de popcorn nature",
-        "valeur": 60,
-        "unite": "g",
-        "reste": "popcorn nature"
-      },
-      {
-        "texte": "100 g de chocolat noir ou au lait",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "chocolat noir ou au lait"
-      },
-      {
-        "texte": "80 g de beurre de cacahuète maison",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "beurre de cacahuète maison"
-      },
-      {
-        "texte": "20 g de beurre maison",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "beurre maison"
-      },
-      {
-        "texte": "1 c. à café d'extrait de vanille",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "extrait de vanille"
-      },
-      {
-        "texte": "80 g de sucre glace",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "sucre glace"
-      }
-    ],
-    "etapes": [
-      "Faire éclater le popcorn dans une grande casserole et laisser refroidir.",
-      "Faire fondre le chocolat, le beurre de cacahuète et le beurre au micro-ondes ou au bain-marie.",
-      "Ajouter l'extrait de vanille au mélange fondu et bien mélanger.",
-      "Verser la sauce sur le popcorn dans un grand saladier et mélanger pour enrober tous les grains.",
-      "Ajouter le sucre glace et secouer le tout.",
-      "Placer le mélange au congélateur pendant 30 minutes pour raffermir."
-    ],
-    "mc": [
-      "Faire éclater le popcorn à la casserole et laisser refroidir.",
-      "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre de cacahuète, le beurre et la vanille, faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
-      "Verser sur le popcorn, mélanger et saupoudrer de sucre glace."
-    ]
-  },
-  {
-    "id": "static-672",
-    "titre": "Popcorn au fromage Gouda",
-    "photo": "photos/enattente.png",
-    "cat": "apero",
-    "temps": "8 min",
-    "personnes": "7",
-    "ingredients": [
-      {
-        "texte": "125 g de grains de maïs à éclater",
-        "valeur": 125,
-        "unite": "g",
-        "reste": "grains de maïs à éclater"
-      },
-      {
-        "texte": "3 c. à soupe de beurre salé",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "beurre salé"
-      },
-      {
-        "texte": "56 g de fromage Gouda râpé",
-        "valeur": 56,
-        "unite": "g",
-        "reste": "fromage Gouda râpé"
-      }
-    ],
-    "etapes": [
-      "Verser les grains de maïs à éclater et 1 c. à soupe de beurre dans un sac en papier brun.",
-      "Plier le haut du sac deux fois pour bien le fermer.",
-      "Placer le sac dans le micro-ondes et cuire à puissance maximale pendant 2 à 3 minutes.",
-      "Faire fondre le reste du beurre (2 c. à soupe) dans une petite casserole à feu doux.",
-      "Ajouter le fromage Gouda râpé au beurre fondu et remuer jusqu'à ce que le fromage soit complètement fondu.",
-      "Ouvrir soigneusement le sac de popcorn, transférer dans un grand bol et verser le mélange de fromage fondu.",
-      "Mélanger le popcorn avec les mains pour qu'il soit uniformément enrobé de fromage."
-    ],
-    "mc": [
-      "Pas besoin du Monsieur Cuisine pour cette recette : le pop-corn éclate au micro-ondes, suivre la version classique."
-    ]
-  },
-  {
     "id": "static-297",
-    "titre": "Popcorn soufflé au beurre et brie fondu",
+    "titre": "Popcorn",
     "photo": "photos/enattente.png",
-    "temps": "8 min",
-    "personnes": "7",
     "cat": "apero",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "125 g de grains de maïs à éclater",
-        "valeur": 125,
-        "unite": "g",
-        "reste": "grains de maïs à éclater"
+        "nom": "Beurre et brie fondu",
+        "temps": "8 min",
+        "personnes": "7",
+        "ingredients": [
+          {
+            "texte": "125 g de grains de maïs à éclater",
+            "valeur": 125,
+            "unite": "g",
+            "reste": "grains de maïs à éclater"
+          },
+          {
+            "texte": "45 ml de beurre salé maison",
+            "valeur": 45,
+            "unite": "ml",
+            "reste": "beurre salé maison"
+          },
+          {
+            "texte": "56 g de brie",
+            "valeur": 56,
+            "unite": "g",
+            "reste": "brie"
+          }
+        ],
+        "etapes": [
+          "Verser les grains de maïs à éclater et 15 ml de beurre dans un sac en papier brun.",
+          "Plier le haut du sac deux fois pour bien le fermer.",
+          "Placer le sac dans le micro-ondes et cuire à puissance maximale pendant 2 à 3 minutes.",
+          "Faire fondre le reste du beurre (30 ml) dans une petite casserole à feu doux.",
+          "Retirer la croûte du brie, couper en petits morceaux et ajouter au beurre fondu. Remuer jusqu'à ce que le fromage soit complètement fondu.",
+          "Ouvrir soigneusement le sac de popcorn, transférer dans un grand bol et verser le mélange de fromage fondu.",
+          "Mélanger pour que le popcorn soit uniformément enrobé de fromage."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : le pop-corn éclate au micro-ondes, suivre la version classique."
+        ]
       },
       {
-        "texte": "45 ml de beurre salé maison",
-        "valeur": 45,
-        "unite": "ml",
-        "reste": "beurre salé maison"
+        "nom": "Gouda",
+        "temps": "8 min",
+        "personnes": "7",
+        "ingredients": [
+          {
+            "texte": "125 g de grains de maïs à éclater",
+            "valeur": 125,
+            "unite": "g",
+            "reste": "grains de maïs à éclater"
+          },
+          {
+            "texte": "3 c. à soupe de beurre salé",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "beurre salé"
+          },
+          {
+            "texte": "56 g de fromage Gouda râpé",
+            "valeur": 56,
+            "unite": "g",
+            "reste": "fromage Gouda râpé"
+          }
+        ],
+        "etapes": [
+          "Verser les grains de maïs à éclater et 1 c. à soupe de beurre dans un sac en papier brun.",
+          "Plier le haut du sac deux fois pour bien le fermer.",
+          "Placer le sac dans le micro-ondes et cuire à puissance maximale pendant 2 à 3 minutes.",
+          "Faire fondre le reste du beurre (2 c. à soupe) dans une petite casserole à feu doux.",
+          "Ajouter le fromage Gouda râpé au beurre fondu et remuer jusqu'à ce que le fromage soit complètement fondu.",
+          "Ouvrir soigneusement le sac de popcorn, transférer dans un grand bol et verser le mélange de fromage fondu.",
+          "Mélanger le popcorn avec les mains pour qu'il soit uniformément enrobé de fromage."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : le pop-corn éclate au micro-ondes, suivre la version classique."
+        ]
       },
       {
-        "texte": "56 g de brie",
-        "valeur": 56,
-        "unite": "g",
-        "reste": "brie"
+        "nom": "Chocolat et beurre de cacahuète",
+        "temps": "40 min",
+        "personnes": "3",
+        "ingredients": [
+          {
+            "texte": "60 g de popcorn nature",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "popcorn nature"
+          },
+          {
+            "texte": "100 g de chocolat noir ou au lait",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "chocolat noir ou au lait"
+          },
+          {
+            "texte": "80 g de beurre de cacahuète maison",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "beurre de cacahuète maison"
+          },
+          {
+            "texte": "20 g de beurre maison",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre maison"
+          },
+          {
+            "texte": "1 c. à café d'extrait de vanille",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "extrait de vanille"
+          },
+          {
+            "texte": "80 g de sucre glace",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "sucre glace"
+          }
+        ],
+        "etapes": [
+          "Faire éclater le popcorn dans une grande casserole et laisser refroidir.",
+          "Faire fondre le chocolat, le beurre de cacahuète et le beurre au micro-ondes ou au bain-marie.",
+          "Ajouter l'extrait de vanille au mélange fondu et bien mélanger.",
+          "Verser la sauce sur le popcorn dans un grand saladier et mélanger pour enrober tous les grains.",
+          "Ajouter le sucre glace et secouer le tout.",
+          "Placer le mélange au congélateur pendant 30 minutes pour raffermir."
+        ],
+        "mc": [
+          "Faire éclater le popcorn à la casserole et laisser refroidir.",
+          "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre de cacahuète, le beurre et la vanille, faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Verser sur le popcorn, mélanger et saupoudrer de sucre glace."
+        ]
       }
-    ],
-    "etapes": [
-      "Verser les grains de maïs à éclater et 15 ml de beurre dans un sac en papier brun.",
-      "Plier le haut du sac deux fois pour bien le fermer.",
-      "Placer le sac dans le micro-ondes et cuire à puissance maximale pendant 2 à 3 minutes.",
-      "Faire fondre le reste du beurre (30 ml) dans une petite casserole à feu doux.",
-      "Retirer la croûte du brie, couper en petits morceaux et ajouter au beurre fondu. Remuer jusqu'à ce que le fromage soit complètement fondu.",
-      "Ouvrir soigneusement le sac de popcorn, transférer dans un grand bol et verser le mélange de fromage fondu.",
-      "Mélanger pour que le popcorn soit uniformément enrobé de fromage."
-    ],
-    "mc": [
-      "Pas besoin du Monsieur Cuisine pour cette recette : le pop-corn éclate au micro-ondes, suivre la version classique."
     ]
   },
   {
@@ -36820,7 +36824,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "plat",
     "temps": "35 min",
-    "personnes": "4 boîtes",
+    "personnes": "4",
     "ingredients": [
       {
         "texte": "600 g de blancs ou hauts de cuisses de poulet",
@@ -36902,7 +36906,8 @@ const recettes = [
       "Sauce : bol vidé, mettre l'ail et le gingembre, hacher <b>3 s / vitesse 7</b>. Ajouter la sauce soja, le miel, le mirin et la maïzena délayée.",
       "Ajouter le poulet en morceaux et cuire <b>12 min / 100 °C / sens inverse / vitesse 1</b> jusqu'à ce que la sauce nappe.",
       "Répartir dans les boîtes."
-    ]
+    ],
+    "portion": "boîtes"
   },
   {
     "id": "static-437",
@@ -37320,194 +37325,193 @@ const recettes = [
     ]
   },
   {
-    "id": "static-303",
-    "titre": "Quiche aux poireaux et chèvre",
-    "photo": "photos/enattente.png",
-    "temps": "1h",
-    "personnes": "6",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "1 pâte brisée",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pâte brisée"
-      },
-      {
-        "texte": "3 poireaux",
-        "valeur": 3,
-        "unite": null,
-        "reste": "poireaux"
-      },
-      {
-        "texte": "150 g de bûche de chèvre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "bûche de chèvre"
-      },
-      {
-        "texte": "3 œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "200 ml de crème fraîche liquide",
-        "valeur": 200,
-        "unite": "ml",
-        "reste": "crème fraîche liquide"
-      },
-      {
-        "texte": "100 ml de lait",
-        "valeur": 100,
-        "unite": "ml",
-        "reste": "lait"
-      },
-      {
-        "texte": "1 c. à soupe d'huile d'olive",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "huile d'olive"
-      },
-      "noix de muscade",
-      "sel",
-      "poivre"
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C (th. 6).",
-      "Laver et émincer les poireaux, les faire fondre à la poêle dans l'huile d'olive 10 minutes.",
-      "Étaler la pâte brisée dans un moule à tarte et la piquer à la fourchette.",
-      "Répartir les poireaux fondus sur le fond de tarte.",
-      "Couper la bûche de chèvre en rondelles et les disposer sur les poireaux.",
-      "Fouetter les œufs avec la crème, le lait, le sel, le poivre et la muscade.",
-      "Verser l'appareil sur la garniture.",
-      "Enfourner 35 à 40 minutes jusqu'à ce que la quiche soit dorée et prise."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C.",
-      "Mettre les poireaux en tronçons dans le bol, émincer <b>4 s / vitesse 4</b>. Ajouter l'huile et cuire <b>10 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet. Réserver.",
-      "Bol rincé : mettre les œufs, la crème, le lait, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
-      "Garnir la pâte de poireaux et de chèvre, verser l'appareil et cuire comme dans la version classique."
-    ]
-  },
-  {
-    "id": "static-512",
-    "titre": "Quiche épinards et chèvre",
-    "photo": "photos/enattente.png",
-    "cat": "plat",
-    "temps": "55 min",
-    "personnes": "6",
-    "ingredients": [
-      {
-        "texte": "1 pâte brisée",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pâte brisée"
-      },
-      {
-        "texte": "300 g d'épinards",
-        "valeur": 300,
-        "unite": "g",
-        "reste": "épinards"
-      },
-      {
-        "texte": "150 g de bûche de chèvre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "bûche de chèvre"
-      },
-      {
-        "texte": "3 œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "200 ml de crème liquide",
-        "valeur": 200,
-        "unite": "ml",
-        "reste": "crème liquide"
-      },
-      {
-        "texte": "100 ml de lait",
-        "valeur": 100,
-        "unite": "ml",
-        "reste": "lait"
-      },
-      {
-        "texte": "1 pincée de muscade",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "muscade"
-      },
-      "sel, poivre"
-    ],
-    "etapes": [
-      "Préchauffer le four à 180 °C. Foncer un moule avec la pâte et la piquer.",
-      "Faire fondre les épinards à la poêle, puis bien les presser.",
-      "Répartir les épinards sur la pâte et disposer les rondelles de chèvre.",
-      "Battre les œufs avec la crème, le lait, la muscade, du sel et du poivre, puis verser sur la garniture.",
-      "Cuire 35 à 40 minutes, jusqu’à ce que la quiche soit dorée et prise."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C. Foncer le moule.",
-      "Mettre les épinards dans le bol et cuire <b>6 min / 100 °C / sens inverse / vitesse 1</b>. Égoutter et bien presser.",
-      "Bol rincé : mettre les œufs, la crème, le lait, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
-      "Garnir la pâte d'épinards et de chèvre, verser l'appareil et cuire comme dans la version classique."
-    ]
-  },
-  {
     "id": "static-304",
-    "titre": "Quiche lorraine maison",
+    "titre": "Quiches",
     "photo": "photos/enattente.png",
-    "temps": "45 min",
-    "personnes": "4",
     "cat": "plat",
-    "ingredients": [
-      "sel",
-      "poivre",
+    "variantes": [
       {
-        "texte": "250 g de crème fraîche épaisse",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "crème fraîche épaisse"
+        "nom": "Lorraine",
+        "temps": "45 min",
+        "personnes": "4",
+        "ingredients": [
+          "sel",
+          "poivre",
+          {
+            "texte": "250 g de crème fraîche épaisse",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "crème fraîche épaisse"
+          },
+          {
+            "texte": "1 pâte brisée maison",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pâte brisée maison"
+          },
+          {
+            "texte": "3 œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "150 g de lardons",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "lardons"
+          },
+          "muscade"
+        ],
+        "etapes": [
+          "Préchauffer le four à 200°C.",
+          "Préparer et étaler la pâte brisée maison et la placer dans un plat à tarte.",
+          "Piquer le fond avec une fourchette.",
+          "Faire dorer les lardons dans une poêle.",
+          "Pendant ce temps, mélanger les œufs battus et la crème fraîche.",
+          "Une fois les lardons dorés, les mélanger à la préparation aux œufs.",
+          "Saler, poivrer et ajouter la muscade selon votre convenance.",
+          "Verser la préparation sur le fond de pâte.",
+          "Mettre au four pendant 30 min."
+        ],
+        "mc": [
+          "Préchauffer le four à 200 °C. Foncer le moule et piquer la pâte.",
+          "Mettre les lardons dans le bol, rissoler <b>5 min / 120 °C / vitesse 1</b>. Répartir sur la pâte.",
+          "Bol rincé : mettre les œufs, la crème, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
+          "Verser sur les lardons et cuire comme dans la version classique."
+        ]
       },
       {
-        "texte": "1 pâte brisée maison",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pâte brisée maison"
+        "nom": "Poireaux et chèvre",
+        "temps": "1h",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "1 pâte brisée",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pâte brisée"
+          },
+          {
+            "texte": "3 poireaux",
+            "valeur": 3,
+            "unite": null,
+            "reste": "poireaux"
+          },
+          {
+            "texte": "150 g de bûche de chèvre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "bûche de chèvre"
+          },
+          {
+            "texte": "3 œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "200 ml de crème fraîche liquide",
+            "valeur": 200,
+            "unite": "ml",
+            "reste": "crème fraîche liquide"
+          },
+          {
+            "texte": "100 ml de lait",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "1 c. à soupe d'huile d'olive",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          "noix de muscade",
+          "sel",
+          "poivre"
+        ],
+        "etapes": [
+          "Préchauffer le four à 180°C (th. 6).",
+          "Laver et émincer les poireaux, les faire fondre à la poêle dans l'huile d'olive 10 minutes.",
+          "Étaler la pâte brisée dans un moule à tarte et la piquer à la fourchette.",
+          "Répartir les poireaux fondus sur le fond de tarte.",
+          "Couper la bûche de chèvre en rondelles et les disposer sur les poireaux.",
+          "Fouetter les œufs avec la crème, le lait, le sel, le poivre et la muscade.",
+          "Verser l'appareil sur la garniture.",
+          "Enfourner 35 à 40 minutes jusqu'à ce que la quiche soit dorée et prise."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre les poireaux en tronçons dans le bol, émincer <b>4 s / vitesse 4</b>. Ajouter l'huile et cuire <b>10 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet. Réserver.",
+          "Bol rincé : mettre les œufs, la crème, le lait, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
+          "Garnir la pâte de poireaux et de chèvre, verser l'appareil et cuire comme dans la version classique."
+        ]
       },
       {
-        "texte": "3 œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "150 g de lardons",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "lardons"
-      },
-      "muscade"
-    ],
-    "etapes": [
-      "Préchauffer le four à 200°C.",
-      "Préparer et étaler la pâte brisée maison et la placer dans un plat à tarte.",
-      "Piquer le fond avec une fourchette.",
-      "Faire dorer les lardons dans une poêle.",
-      "Pendant ce temps, mélanger les œufs battus et la crème fraîche.",
-      "Une fois les lardons dorés, les mélanger à la préparation aux œufs.",
-      "Saler, poivrer et ajouter la muscade selon votre convenance.",
-      "Verser la préparation sur le fond de pâte.",
-      "Mettre au four pendant 30 min."
-    ],
-    "mc": [
-      "Préchauffer le four à 200 °C. Foncer le moule et piquer la pâte.",
-      "Mettre les lardons dans le bol, rissoler <b>5 min / 120 °C / vitesse 1</b>. Répartir sur la pâte.",
-      "Bol rincé : mettre les œufs, la crème, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
-      "Verser sur les lardons et cuire comme dans la version classique."
+        "nom": "Épinards et chèvre",
+        "temps": "55 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "1 pâte brisée",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pâte brisée"
+          },
+          {
+            "texte": "300 g d'épinards",
+            "valeur": 300,
+            "unite": "g",
+            "reste": "épinards"
+          },
+          {
+            "texte": "150 g de bûche de chèvre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "bûche de chèvre"
+          },
+          {
+            "texte": "3 œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "200 ml de crème liquide",
+            "valeur": 200,
+            "unite": "ml",
+            "reste": "crème liquide"
+          },
+          {
+            "texte": "100 ml de lait",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "1 pincée de muscade",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "muscade"
+          },
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Préchauffer le four à 180 °C. Foncer un moule avec la pâte et la piquer.",
+          "Faire fondre les épinards à la poêle, puis bien les presser.",
+          "Répartir les épinards sur la pâte et disposer les rondelles de chèvre.",
+          "Battre les œufs avec la crème, le lait, la muscade, du sel et du poivre, puis verser sur la garniture.",
+          "Cuire 35 à 40 minutes, jusqu’à ce que la quiche soit dorée et prise."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C. Foncer le moule.",
+          "Mettre les épinards dans le bol et cuire <b>6 min / 100 °C / sens inverse / vitesse 1</b>. Égoutter et bien presser.",
+          "Bol rincé : mettre les œufs, la crème, le lait, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
+          "Garnir la pâte d'épinards et de chèvre, verser l'appareil et cuire comme dans la version classique."
+        ]
+      }
     ]
   },
   {
@@ -39777,7 +39781,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "entree",
     "temps": "25 min",
-    "personnes": "4 bocaux",
+    "personnes": "4",
     "ingredients": [
       {
         "texte": "200 g de quinoa",
@@ -39841,7 +39845,8 @@ const recettes = [
       "Mettre 1 L d'eau salée dans le bol, le quinoa rincé dans le panier. Cuire <b>15 min / 100 °C / vitesse 4</b>. Laisser refroidir.",
       "Vinaigrette : bol vidé, mettre les herbes, hacher <b>3 s / vitesse 7</b>. Ajouter l'huile, le jus de citron, sel et poivre, <b>10 s / vitesse 3</b>.",
       "Monter les bocaux avec les légumes en dés, les pois chiches et la feta."
-    ]
+    ],
+    "portion": "bocaux"
   },
   {
     "id": "static-326",
@@ -41566,140 +41571,139 @@ const recettes = [
   },
   {
     "id": "static-614",
-    "titre": "Sorbet citron",
+    "titre": "Sorbets maison",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "15 min (+ 4 h de congélation)",
-    "personnes": "6",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "250 ml de jus de citron frais (environ 6 citrons)",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "jus de citron frais (environ 6 citrons)"
+        "nom": "Citron",
+        "temps": "15 min (+ 4 h de congélation)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "250 ml de jus de citron frais (environ 6 citrons)",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "jus de citron frais (environ 6 citrons)"
+          },
+          {
+            "texte": "1 zeste de citron",
+            "valeur": 1,
+            "unite": null,
+            "reste": "zeste de citron"
+          },
+          {
+            "texte": "200 g de sucre",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "400 ml d'eau",
+            "valeur": 400,
+            "unite": "ml",
+            "reste": "eau"
+          },
+          {
+            "texte": "1 blanc d'œuf (facultatif)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "blanc d'œuf (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Porter l’eau et le sucre à ébullition 2 minutes pour faire un sirop, puis laisser refroidir.",
+          "Ajouter le jus et le zeste de citron.",
+          "Avec sorbetière : turbiner 25 minutes. Sans sorbetière : congeler dans un bac en mélangeant à la fourchette toutes les 30 minutes pendant 3 heures.",
+          "Pour un sorbet plus onctueux, incorporer le blanc d’œuf battu en neige à mi-prise."
+        ],
+        "mc": [
+          "Mettre l'eau et le sucre dans le bol. Chauffer <b>6 min / 100 °C / vitesse 2</b>. Laisser refroidir.",
+          "Ajouter le jus et le zeste de citron, mélanger <b>5 s / vitesse 3</b>.",
+          "Congeler en glaçons ou dans un bac plat. Au moment de servir, mixer les morceaux congelés <b>20 s / vitesse 8</b> (ajouter le blanc d'œuf pour un sorbet plus léger, <b>10 s / vitesse 5</b>)."
+        ]
       },
       {
-        "texte": "1 zeste de citron",
-        "valeur": 1,
-        "unite": null,
-        "reste": "zeste de citron"
+        "nom": "Fraise",
+        "temps": "15 min (+ 4 h de congélation)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "500 g de fraises",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "fraises"
+          },
+          {
+            "texte": "150 g de sucre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "150 ml d'eau",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "eau"
+          },
+          {
+            "texte": "1 citron (jus)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "citron (jus)"
+          }
+        ],
+        "etapes": [
+          "Porter l’eau et le sucre à ébullition 2 minutes, puis laisser refroidir.",
+          "Mixer les fraises avec le jus de citron, puis ajouter le sirop.",
+          "Turbiner en sorbetière, ou congeler en mélangeant toutes les 30 minutes pendant 3 heures."
+        ],
+        "mc": [
+          "Mettre l'eau et le sucre dans le bol, chauffer <b>5 min / 100 °C / vitesse 2</b>. Laisser refroidir.",
+          "Ajouter les fraises et le jus de citron, mixer <b>30 s / vitesse 8</b>.",
+          "Congeler en bac plat ou en glaçons, puis mixer les morceaux congelés <b>20 s / vitesse 8</b> au moment de servir."
+        ]
       },
       {
-        "texte": "200 g de sucre",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "400 ml d'eau",
-        "valeur": 400,
-        "unite": "ml",
-        "reste": "eau"
-      },
-      {
-        "texte": "1 blanc d'œuf (facultatif)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "blanc d'œuf (facultatif)"
+        "nom": "Mangue express",
+        "temps": "5 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "500 g de mangue surgelée en morceaux",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "mangue surgelée en morceaux"
+          },
+          {
+            "texte": "3 c. à soupe de miel ou sirop d’agave",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "miel ou sirop d’agave"
+          },
+          {
+            "texte": "1 citron vert (jus)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "citron vert (jus)"
+          },
+          {
+            "texte": "3 c. à soupe d'eau",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "eau"
+          }
+        ],
+        "etapes": [
+          "Mixer la mangue encore congelée avec le miel, le jus de citron vert et l’eau, en raclant les parois.",
+          "Servir aussitôt façon sorbet, ou remettre 30 minutes au congélateur."
+        ],
+        "mc": [
+          "Mettre la mangue congelée, le miel, le jus de citron vert et l'eau dans le bol.",
+          "Mixer <b>30 s / vitesse 9</b>, racler les parois, puis <b>15 s / vitesse 6</b>.",
+          "Servir aussitôt ou remettre 30 minutes au congélateur."
+        ]
       }
-    ],
-    "etapes": [
-      "Porter l’eau et le sucre à ébullition 2 minutes pour faire un sirop, puis laisser refroidir.",
-      "Ajouter le jus et le zeste de citron.",
-      "Avec sorbetière : turbiner 25 minutes. Sans sorbetière : congeler dans un bac en mélangeant à la fourchette toutes les 30 minutes pendant 3 heures.",
-      "Pour un sorbet plus onctueux, incorporer le blanc d’œuf battu en neige à mi-prise."
-    ],
-    "mc": [
-      "Mettre l'eau et le sucre dans le bol. Chauffer <b>6 min / 100 °C / vitesse 2</b>. Laisser refroidir.",
-      "Ajouter le jus et le zeste de citron, mélanger <b>5 s / vitesse 3</b>.",
-      "Congeler en glaçons ou dans un bac plat. Au moment de servir, mixer les morceaux congelés <b>20 s / vitesse 8</b> (ajouter le blanc d'œuf pour un sorbet plus léger, <b>10 s / vitesse 5</b>)."
-    ]
-  },
-  {
-    "id": "static-615",
-    "titre": "Sorbet fraise",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "15 min (+ 4 h de congélation)",
-    "personnes": "6",
-    "ingredients": [
-      {
-        "texte": "500 g de fraises",
-        "valeur": 500,
-        "unite": "g",
-        "reste": "fraises"
-      },
-      {
-        "texte": "150 g de sucre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "150 ml d'eau",
-        "valeur": 150,
-        "unite": "ml",
-        "reste": "eau"
-      },
-      {
-        "texte": "1 citron (jus)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "citron (jus)"
-      }
-    ],
-    "etapes": [
-      "Porter l’eau et le sucre à ébullition 2 minutes, puis laisser refroidir.",
-      "Mixer les fraises avec le jus de citron, puis ajouter le sirop.",
-      "Turbiner en sorbetière, ou congeler en mélangeant toutes les 30 minutes pendant 3 heures."
-    ],
-    "mc": [
-      "Mettre l'eau et le sucre dans le bol, chauffer <b>5 min / 100 °C / vitesse 2</b>. Laisser refroidir.",
-      "Ajouter les fraises et le jus de citron, mixer <b>30 s / vitesse 8</b>.",
-      "Congeler en bac plat ou en glaçons, puis mixer les morceaux congelés <b>20 s / vitesse 8</b> au moment de servir."
-    ]
-  },
-  {
-    "id": "static-616",
-    "titre": "Sorbet mangue express",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "5 min",
-    "personnes": "4",
-    "ingredients": [
-      {
-        "texte": "500 g de mangue surgelée en morceaux",
-        "valeur": 500,
-        "unite": "g",
-        "reste": "mangue surgelée en morceaux"
-      },
-      {
-        "texte": "3 c. à soupe de miel ou sirop d’agave",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "miel ou sirop d’agave"
-      },
-      {
-        "texte": "1 citron vert (jus)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "citron vert (jus)"
-      },
-      {
-        "texte": "3 c. à soupe d'eau",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "eau"
-      }
-    ],
-    "etapes": [
-      "Mixer la mangue encore congelée avec le miel, le jus de citron vert et l’eau, en raclant les parois.",
-      "Servir aussitôt façon sorbet, ou remettre 30 minutes au congélateur."
-    ],
-    "mc": [
-      "Mettre la mangue congelée, le miel, le jus de citron vert et l'eau dans le bol.",
-      "Mixer <b>30 s / vitesse 9</b>, racler les parois, puis <b>15 s / vitesse 6</b>.",
-      "Servir aussitôt ou remettre 30 minutes au congélateur."
     ]
   },
   {
@@ -42090,7 +42094,7 @@ const recettes = [
     "titre": "Spitzbuebe (sablés suisses à la gelée de framboise)",
     "cat": "dessert",
     "temps": "45 min (+ 1 h au frais)",
-    "personnes": "25 biscuits",
+    "personnes": "25",
     "ingredients": [
       {
         "texte": "250 g de beurre mou",
@@ -42151,7 +42155,8 @@ const recettes = [
       "Étaler sur 2 à 3 mm, découper, évider la moitié des ronds et cuire 8 à 10 minutes à 180 °C.",
       "Mettre la gelée de framboise dans le bol propre et chauffer <b>2 min / 50 °C / vitesse 2</b>.",
       "Saupoudrer de sucre glace les biscuits évidés, garnir les biscuits pleins de gelée et les assembler."
-    ]
+    ],
+    "portion": "biscuits"
   },
   {
     "id": "static-342",
@@ -45333,7 +45338,7 @@ const recettes = [
       {
         "nom": "Tortillas classiques (sans yaourt)",
         "temps": "25 min",
-        "personnes": "25 tortillas",
+        "personnes": "25",
         "ingredients": [
           {
             "texte": "500 g de farine",
@@ -45373,7 +45378,8 @@ const recettes = [
           "Mettre la farine, le sel, l'eau tiède et l'huile dans le bol.",
           "Pétrir <b>3 min / mode pétrin</b>.",
           "Laisser reposer, étaler et cuire à la poêle comme dans la version classique."
-        ]
+        ],
+        "portion": "tortillas"
       },
       {
         "nom": "Au yaourt",
@@ -45450,7 +45456,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "temps": "30 min (+ 3 h au frais)",
-    "personnes": "30 truffes",
+    "personnes": "30",
     "ingredients": [
       {
         "texte": "200 g de chocolat noir",
@@ -45487,7 +45493,8 @@ const recettes = [
       "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>.",
       "Ajouter la crème et faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter le beurre, <b>20 s / vitesse 3</b>.",
       "Laisser prendre au réfrigérateur au moins 3 heures, puis former les truffes et les rouler dans le cacao."
-    ]
+    ],
+    "portion": "truffes"
   },
   {
     "id": "static-370",
@@ -45722,131 +45729,133 @@ const recettes = [
     ]
   },
   {
-    "id": "static-630",
-    "titre": "Velouté de potimarron et châtaignes",
-    "photo": "photos/enattente.png",
-    "cat": "entree",
-    "temps": "40 min",
-    "personnes": "4",
-    "ingredients": [
-      {
-        "texte": "1 potimarron (environ 1 kg)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "potimarron (environ 1 kg)"
-      },
-      {
-        "texte": "200 g de châtaignes cuites",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "châtaignes cuites"
-      },
-      {
-        "texte": "1 oignon",
-        "valeur": 1,
-        "unite": null,
-        "reste": "oignon"
-      },
-      {
-        "texte": "750 ml de bouillon de volaille ou de légumes",
-        "valeur": 750,
-        "unite": "ml",
-        "reste": "bouillon de volaille ou de légumes"
-      },
-      {
-        "texte": "100 ml de crème liquide",
-        "valeur": 100,
-        "unite": "ml",
-        "reste": "crème liquide"
-      },
-      {
-        "texte": "20 g de beurre",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "1 pincée de muscade",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "muscade"
-      },
-      "sel, poivre"
-    ],
-    "etapes": [
-      "Laver le potimarron (inutile de l’éplucher), retirer les graines et le couper en cubes.",
-      "Faire revenir l’oignon dans le beurre, ajouter le potimarron et les trois quarts des châtaignes.",
-      "Couvrir de bouillon et cuire 25 minutes.",
-      "Mixer avec la crème, assaisonner de sel, de poivre et de muscade.",
-      "Servir avec le reste des châtaignes émiettées et grillées à la poêle."
-    ],
-    "mc": [
-      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le beurre, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
-      "Ajouter le potimarron en cubes, les trois quarts des châtaignes et le bouillon (sans dépasser le repère maxi). Cuire <b>25 min / 100 °C / vitesse 1</b>.",
-      "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement.",
-      "Servir avec le reste des châtaignes émiettées."
-    ]
-  },
-  {
     "id": "static-373",
-    "titre": "Velouté de potiron",
+    "titre": "Velouté de potiron ou potimarron",
     "photo": "photos/enattente.png",
-    "temps": "35 min",
-    "personnes": "4",
     "cat": "entree",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "800 g de chair de potiron",
-        "valeur": 800,
-        "unite": "g",
-        "reste": "chair de potiron"
+        "nom": "Potiron",
+        "temps": "35 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "800 g de chair de potiron",
+            "valeur": 800,
+            "unite": "g",
+            "reste": "chair de potiron"
+          },
+          {
+            "texte": "1 oignon",
+            "valeur": 1,
+            "unite": null,
+            "reste": "oignon"
+          },
+          {
+            "texte": "1 pomme de terre",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pomme de terre"
+          },
+          {
+            "texte": "750 ml de bouillon de légumes",
+            "valeur": 750,
+            "unite": "ml",
+            "reste": "bouillon de légumes"
+          },
+          {
+            "texte": "100 ml de crème liquide",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "crème liquide"
+          },
+          {
+            "texte": "1 c. à soupe d'huile d'olive",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          "noix de muscade",
+          "sel",
+          "poivre"
+        ],
+        "etapes": [
+          "Faire revenir l'oignon émincé dans l'huile d'olive.",
+          "Ajouter le potiron et la pomme de terre coupés en cubes.",
+          "Couvrir avec le bouillon de légumes et laisser mijoter 20 à 25 minutes, jusqu'à ce que les légumes soient tendres.",
+          "Mixer finement jusqu'à obtenir une texture veloutée.",
+          "Ajouter la crème liquide, assaisonner de sel, poivre et muscade.",
+          "Réchauffer doucement avant de servir."
+        ],
+        "mc": [
+          "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+          "Ajouter le potiron et la pomme de terre en cubes et le bouillon. Cuire <b>25 min / 100 °C / vitesse 1</b>.",
+          "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement."
+        ]
       },
       {
-        "texte": "1 oignon",
-        "valeur": 1,
-        "unite": null,
-        "reste": "oignon"
-      },
-      {
-        "texte": "1 pomme de terre",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pomme de terre"
-      },
-      {
-        "texte": "750 ml de bouillon de légumes",
-        "valeur": 750,
-        "unite": "ml",
-        "reste": "bouillon de légumes"
-      },
-      {
-        "texte": "100 ml de crème liquide",
-        "valeur": 100,
-        "unite": "ml",
-        "reste": "crème liquide"
-      },
-      {
-        "texte": "1 c. à soupe d'huile d'olive",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "huile d'olive"
-      },
-      "noix de muscade",
-      "sel",
-      "poivre"
-    ],
-    "etapes": [
-      "Faire revenir l'oignon émincé dans l'huile d'olive.",
-      "Ajouter le potiron et la pomme de terre coupés en cubes.",
-      "Couvrir avec le bouillon de légumes et laisser mijoter 20 à 25 minutes, jusqu'à ce que les légumes soient tendres.",
-      "Mixer finement jusqu'à obtenir une texture veloutée.",
-      "Ajouter la crème liquide, assaisonner de sel, poivre et muscade.",
-      "Réchauffer doucement avant de servir."
-    ],
-    "mc": [
-      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
-      "Ajouter le potiron et la pomme de terre en cubes et le bouillon. Cuire <b>25 min / 100 °C / vitesse 1</b>.",
-      "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement."
+        "nom": "Potimarron et châtaignes",
+        "temps": "40 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "1 potimarron (environ 1 kg)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "potimarron (environ 1 kg)"
+          },
+          {
+            "texte": "200 g de châtaignes cuites",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "châtaignes cuites"
+          },
+          {
+            "texte": "1 oignon",
+            "valeur": 1,
+            "unite": null,
+            "reste": "oignon"
+          },
+          {
+            "texte": "750 ml de bouillon de volaille ou de légumes",
+            "valeur": 750,
+            "unite": "ml",
+            "reste": "bouillon de volaille ou de légumes"
+          },
+          {
+            "texte": "100 ml de crème liquide",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "crème liquide"
+          },
+          {
+            "texte": "20 g de beurre",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "1 pincée de muscade",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "muscade"
+          },
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Laver le potimarron (inutile de l’éplucher), retirer les graines et le couper en cubes.",
+          "Faire revenir l’oignon dans le beurre, ajouter le potimarron et les trois quarts des châtaignes.",
+          "Couvrir de bouillon et cuire 25 minutes.",
+          "Mixer avec la crème, assaisonner de sel, de poivre et de muscade.",
+          "Servir avec le reste des châtaignes émiettées et grillées à la poêle."
+        ],
+        "mc": [
+          "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le beurre, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+          "Ajouter le potimarron en cubes, les trois quarts des châtaignes et le bouillon (sans dépasser le repère maxi). Cuire <b>25 min / 100 °C / vitesse 1</b>.",
+          "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement.",
+          "Servir avec le reste des châtaignes émiettées."
+        ]
+      }
     ]
   },
   {
@@ -45855,7 +45864,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "apero",
     "temps": "20 min",
-    "personnes": "6 verrines",
+    "personnes": "6",
     "ingredients": [
       {
         "texte": "2 avocats",
@@ -45899,7 +45908,8 @@ const recettes = [
     "mc": [
       "Mettre la chair des avocats, le jus du citron vert, sel et poivre dans le bol. Écraser <b>10 s / vitesse 4</b>.",
       "Monter les verrines avec le fromage frais, les suprêmes de pamplemousse, les crevettes et l'aneth."
-    ]
+    ],
+    "portion": "verrines"
   },
   {
     "id": "static-374",
@@ -46490,9 +46500,9 @@ const recettes = [
         "reste": "poivre"
       },
       {
-        "texte": "1 verre d'eau",
-        "valeur": 1,
-        "unite": "verre",
+        "texte": "0,2 L d'eau",
+        "valeur": 0.2,
+        "unite": "L",
         "reste": "eau"
       },
       {
@@ -46575,7 +46585,7 @@ const recettes = [
     "photo": "photos/enattente.png",
     "cat": "dessert",
     "temps": "10 min (+ 10 h de fermentation)",
-    "personnes": "8 pots",
+    "personnes": "8",
     "ingredients": [
       {
         "texte": "1 l de lait entier",
@@ -46607,7 +46617,8 @@ const recettes = [
       "Mettre le lait, le yaourt et le lait en poudre dans le bol. Chauffer <b>8 min / 40 °C / vitesse 2</b>.",
       "Répartir dans les pots.",
       "Faire fermenter 8 à 10 heures au chaud (yaourtière, four éteint lumière allumée), puis réfrigérer comme dans la version classique."
-    ]
+    ],
+    "portion": "pots"
   }
 ];
 
@@ -46644,5 +46655,61 @@ const recettesFusionnees = {
   "static-103": [
     "static-102",
     1
+  ],
+  "static-14": [
+    "static-18",
+    3
+  ],
+  "static-13": [
+    "static-18",
+    5
+  ],
+  "static-15": [
+    "static-18",
+    7
+  ],
+  "static-303": [
+    "static-304",
+    1
+  ],
+  "static-512": [
+    "static-304",
+    2
+  ],
+  "static-114": [
+    "static-504",
+    1
+  ],
+  "static-121": [
+    "static-120",
+    2
+  ],
+  "static-654": [
+    "static-49",
+    2
+  ],
+  "static-64": [
+    "static-412",
+    1
+  ],
+  "static-630": [
+    "static-373",
+    1
+  ],
+  "static-615": [
+    "static-614",
+    1
+  ],
+  "static-616": [
+    "static-614",
+    2
+  ],
+  "static-672": [
+    "static-297",
+    1
+  ],
+  "static-296": [
+    "static-297",
+    2
   ]
 };

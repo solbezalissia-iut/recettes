@@ -214,7 +214,7 @@
             ${window.RecipeVisual ? RecipeVisual.thumbHtml(r, 'plan-thumb') : `<img class="plan-thumb" src="${esc(r.photo || SITE_PHOTO)}" alt="">`}
             <div class="plan-recipe-name" data-open="${esc(x.rid)}" data-v="${x.v || 0}" data-p="${x.p}">${esc(r.titre)}${v.nom ? ` <em>(${esc(v.nom)})</em>` : ''}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(v.temps))}</small></div>
             <button class="plan-eat${x.eaten ? ' on' : ''}" data-eat="${k}" data-j="${j}" aria-pressed="${!!x.eaten}" title="${x.eaten ? 'Mangé (toucher pour annuler)' : 'Marquer comme mangé'}">${x.eaten ? '✓ Mangé' : 'Mangé ?'}</button>
-            <div class="plan-stepper"><button data-pp="${k}" data-j="${j}" data-d="-1" aria-label="Moins de personnes">−</button><b>${x.p}<span> pers.</span></b><button data-pp="${k}" data-j="${j}" data-d="1" aria-label="Plus de personnes">+</button></div>
+            <div class="plan-stepper"><button data-pp="${k}" data-j="${j}" data-d="-1" aria-label="Moins de personnes">−</button><b>${x.p}<span> ${esc(v.portion || 'pers.')}</span></b><button data-pp="${k}" data-j="${j}" data-d="1" aria-label="Plus de personnes">+</button></div>
             <button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button>
           </div>`;
         }
@@ -531,7 +531,7 @@
         const on = picked.includes(ridOf(r));
         return `<button class="plan-pick${on ? ' on' : ''}" data-rid="${esc(ridOf(r))}" aria-pressed="${on}">
           ${window.RecipeVisual ? RecipeVisual.thumbHtml(r, 'pick-thumb') : ''}
-          <span>${esc(r.titre)}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(previewVariant(r).temps))} · ${esc(previewVariant(r).personnes)} pers.</small></span><b>${on ? '✓' : '+'}</b></button>`;
+          <span>${esc(r.titre)}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(previewVariant(r).temps))} · ${esc(previewVariant(r).personnes)} ${esc(previewVariant(r).portion || 'pers.')}</small></span><b>${on ? '✓' : '+'}</b></button>`;
       }).join('')
         + (res.length > shown.length ? `<div class="plan-empty plan-empty--sm">${res.length - shown.length} autres recettes : affine ta recherche.</div>` : '')
         || '<div class="plan-empty">Aucune recette</div>';
