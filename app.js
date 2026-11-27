@@ -55,7 +55,7 @@ function refreshRecettes() {
   // reste à sa place dans la liste (avant, elle partait tout à la fin).
   const keyOf = r => r ? (r._docId ? 'live:' + r._docId : r._staticId) : null;
   const openKey = currentRecetteIdx !== null ? keyOf(allRecettes[currentRecetteIdx]) : null;
-  allRecettes = visibleStatic.concat(liveRecettes)
+  allRecettes = mergeVersionDuplicates(visibleStatic.concat(liveRecettes))
     .sort((a, b) => String(a.titre || '').localeCompare(String(b.titre || ''), 'fr', { sensitivity: 'base' }));
   if (openKey) {
     // La fiche ouverte garde la bonne recette même si sa position a changé
@@ -66,6 +66,32 @@ function refreshRecettes() {
   renderFilters();
   buildGrids();
   if (currentRecetteIdx !== null) updateModalPermissions();
+}
+
+// Une recette seule qui est en fait une version d'une recette à plusieurs versions
+// (ex. « Aperol Spritz glacé aux cerises » = version « Glacé aux cerises » de « Aperol Spritz ») :
+// on n'en garde qu'une, la recette à versions, avec le contenu et la photo de la recette seule pour cette version.
+function mergeVersionDuplicates(list) {
+  const k = s => normalize(String(s || '')).replace(/[^a-z0-9]+/g, ' ').trim();
+  const drop = new Set();
+  const out = list.map(r => {
+    if (!r.variantes) return r;
+    let copy = null;
+    r.variantes.forEach((v, vi) => {
+      if (!v.nom) return;
+      const target = k(r.titre + ' ' + v.nom);
+      const o = list.find(x => x !== r && !x.variantes && !drop.has(x) && k(x.titre) === target);
+      if (!o) return;
+      copy = copy || { ...r, variantes: r.variantes.map(x => ({ ...x })), _mergedFrom: [] };
+      const nv = { ...copy.variantes[vi], temps: o.temps, personnes: o.personnes, ingredients: o.ingredients, etapes: o.etapes };
+      if (o.mc && o.mc.length) nv.mc = o.mc;
+      if (o.photo && !/enattente/i.test(o.photo)) { nv.photo = o.photo; nv.photoDetouree = !!o.photoDetouree; }
+      copy.variantes[vi] = nv;
+      copy._mergedFrom.push(o); drop.add(o);
+    });
+    return copy || r;
+  });
+  return out.filter(x => !drop.has(x));
 }
 
 // Appelée par cloud.js à chaque changement des recettes ajoutées en ligne.
@@ -253,6 +279,50 @@ function getSortedIndices() {
   return indices;
 }
 
+// Contenu d'une carte pour la version vi (les flèches font défiler les versions sans ouvrir la recette)
+function renderCard(card, r, idx, vi) {
+  const variants = getVariants(r);
+  vi = ((vi % variants.length) + variants.length) % variants.length;
+  card.dataset.vi = vi;
+  const v = variants[vi];
+  const ingName = ing => {
+    const t = typeof ing === 'object' && ing.reste ? ing.reste : ingLabel(ing);
+    const n = String(t).replace(/\(.*?\)/g, '').replace(/^\s*(de |d'|d’|du |des )/i, '').trim();
+    return n.charAt(0).toUpperCase() + n.slice(1);
+  };
+  const pills = (v.ingredients || []).map(ing => {
+    const label = ingLabel(ing);
+    const isMatched = activeFilters.some(f => normalize(label).includes(normalize(f)));
+    return isMatched ? `<b class="ing-match">${ingName(ing)}</b>` : ingName(ing);
+  }).join(' · ');
+  const plate = window.RecipeVisual ? RecipeVisual.plateHtml(r, 'card-plate', vi) : '';
+  const mc = v.mc && v.mc.length;
+  const variantBadge = variants.length > 1 ? `<span class="variant-badge">${variants.length} versions</span>` : '';
+  const ownerBadge = !r._isStatic ? `<span class="owner-badge">👤 ${r._ownerName || 'Quelqu\'un'}</span>` : '';
+  const nav = variants.length > 1 ? `
+      <div class="card-vnav">
+        <button type="button" data-vstep="-1" aria-label="Version précédente">‹</button>
+        <span><b>${v.nom || 'Version ' + (vi + 1)}</b><small>${vi + 1}/${variants.length}</small></span>
+        <button type="button" data-vstep="1" aria-label="Version suivante">›</button>
+      </div>` : '';
+  card.innerHTML = `
+      ${plate}
+      <div class="card-body">
+        <div class="card-top">
+          <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
+          <div class="card-title">${r.titre}</div>
+          <p class="card-ings">${pills}</p>
+        </div>
+        <div class="card-foot">
+          <span>⏱ ${formatTemps(v.temps)}</span>
+          <span>👥 ${v.personnes} pers.</span>
+          ${mc ? '<span class="foot-mc">Monsieur Cuisine</span>' : ''}
+          ${ownerBadge}
+        </div>
+        ${nav}
+      </div>`;
+}
+
 function buildGrids() {
   const cats = ['apero', 'entree', 'plat', 'accompagnement', 'dessert', 'boisson', 'sauce', 'base-culinaire', 'maison'];
   const allGrid = document.getElementById('grid-all');
@@ -272,45 +342,17 @@ function buildGrids() {
       card.className = 'recipe-card' + (matched ? '' : ' hidden');
       card.dataset.idx = idx;
 
-      // Ingrédients en une ligne de texte (noms seulement), coupée proprement à 2 lignes
-      const ingName = ing => {
-        const t = typeof ing === 'object' && ing.reste ? ing.reste : ingLabel(ing);
-        const n = String(t).replace(/\(.*?\)/g, '').replace(/^\s*(de |d'|d’|du |des )/i, '').trim();
-        return n.charAt(0).toUpperCase() + n.slice(1);
-      };
-      const pills = preview.ingredients.map(ing => {
-        const label = ingLabel(ing);
-        const isMatched = activeFilters.some(f => normalize(label).includes(normalize(f)));
-        return isMatched ? `<b class="ing-match">${ingName(ing)}</b>` : ingName(ing);
-      }).join(' · ');
-      const plate = window.RecipeVisual ? RecipeVisual.plateHtml(r, 'card-plate') : '';
-      const hook = variants.some(v => v.mc && v.mc.length) ? '<div class="card-hook"><span>Version Monsieur Cuisine</span></div>' : '';
-
-      const variantBadge = variants.length > 1
-        ? `<span class="variant-badge">${variants.length} versions</span>`
-        : '';
-      const ownerBadge = !r._isStatic
-        ? `<span class="owner-badge">👤 ${r._ownerName || 'Quelqu\'un'}</span>`
-        : '';
-
-      card.innerHTML = `
-        ${plate}
-        <div class="card-body">
-          <div class="card-top">
-            <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
-            <div class="card-title">${r.titre}</div>
-            <p class="card-ings">${pills}</p>
-          </div>
-          <div class="card-foot">
-            <span>⏱ ${formatTemps(preview.temps)}</span>
-            <span>👥 ${preview.personnes} pers.</span>
-            ${hook ? '<span class="foot-mc">Monsieur Cuisine</span>' : ''}
-            ${ownerBadge}
-          </div>
-        </div>
-      `;
-
-      card.addEventListener('click', () => openModal(idx));
+      renderCard(card, r, idx, 0);
+      card.addEventListener('click', e => {
+        const step = e.target.closest('[data-vstep]');
+        if (step) {
+          e.stopPropagation();
+          renderCard(card, r, idx, +card.dataset.vi + +step.dataset.vstep);
+          card.classList.add('vflip'); setTimeout(() => card.classList.remove('vflip'), 250);
+          return;
+        }
+        openModal(idx, +card.dataset.vi || 0);
+      });
 
       if (gridCat === 'all') {
         allGrid.appendChild(card);
@@ -482,6 +524,7 @@ function selectVariant(vIdx) {
   renderVariantTabs();
   renderIngredients();
   renderSteps();
+  updateModalHero();
 }
 
 // ── Permissions : qui a le droit de modifier/supprimer la recette ouverte ──
@@ -512,33 +555,37 @@ function updateModalPermissions() {
 }
 
 // ── Modal ──
-function openModal(idx) {
-  const r = allRecettes[idx];
-  currentRecetteIdx = idx;
-  currentVariantIdx = 0;
-
+// Grand visuel en haut de la fiche, pour la version affichée
+function updateModalHero() {
+  const r = allRecettes[currentRecetteIdx];
   const photoWrap = document.getElementById('modal-photo-wrap');
   const photoImg = document.getElementById('modal-photo');
   const photoPlaceholder = document.getElementById('modal-photo-placeholder');
   if (!window.RecipeVisual) {
     photoImg.src = r.photo || SITE_PHOTO; photoImg.alt = r.titre;
     photoImg.style.display = 'block'; photoPlaceholder.style.display = 'none';
-  } else {
-    // Même présentation que sur la carte (assiette, bol ou aliment seul), en grand sur un fond clair
-    photoImg.style.display = 'none';
-    photoPlaceholder.style.display = 'flex';
-    photoPlaceholder.innerHTML = RecipeVisual.plateHtml(r, 'modal-plate');
-    photoWrap.classList.remove('modal-photo-wrap--placeholder');
-    photoWrap.classList.add('modal-photo-wrap--illu');
-    photoWrap.dataset.style = RecipeVisual.styleOf(r);
-    photoWrap.style.background = '';
+    return;
   }
+  // Même présentation que sur la carte (assiette, bol ou aliment seul), en grand sur un fond clair
+  photoImg.style.display = 'none';
+  photoPlaceholder.style.display = 'flex';
+  photoPlaceholder.innerHTML = RecipeVisual.plateHtml(r, 'modal-plate', currentVariantIdx);
+  photoWrap.classList.remove('modal-photo-wrap--placeholder');
+  photoWrap.classList.add('modal-photo-wrap--illu');
+  photoWrap.dataset.style = RecipeVisual.styleOf(RecipeVisual.forVariant(r, currentVariantIdx));
+  photoWrap.style.background = '';
+}
+
+function openModal(idx, vi) {
+  const r = allRecettes[idx];
+  currentRecetteIdx = idx;
+  currentVariantIdx = 0;
 
   document.getElementById('modal-cat').textContent = catLabels[r.cat];
   document.getElementById('modal-title').textContent = r.titre;
 
   const firstMatch = activeDiets.size ? getVariants(r).findIndex(variantMatchesDiets) : 0;
-  selectVariant(firstMatch > 0 ? firstMatch : 0);
+  selectVariant(vi > 0 && vi < getVariants(r).length ? vi : (firstMatch > 0 ? firstMatch : 0));
   updateModalPermissions();
 
   document.getElementById('modal-overlay').classList.add('open');
@@ -831,7 +878,7 @@ document.getElementById('crop-confirm').addEventListener('click', async () => {
   const rawDataUrl = canvas.toDataURL('image/jpeg', 0.85);
   const st = cropStyle();
   closeCropper();
-  newPhotoDataUrl = await resizeDataUrl(rawDataUrl, 900, 0.72);
+  newPhotoDataUrl = await resizeDataUrl(rawDataUrl, editingVariants ? 700 : 900, 0.72);
   newPhotoCut = false;
   newPhotoPreview.className = 'form-photo-preview photo-preview--' + st;
   newPhotoPreview.innerHTML = `<img src="${newPhotoDataUrl}" alt="Aperçu">`;
@@ -849,8 +896,9 @@ async function cutNewPhoto() {
   const keep = newPhotoDataUrl;
   newPhotoPreview.insertAdjacentHTML('beforeend', '<div class="detour-wait">Je retire l\'arrière-plan…</div>');
   try {
-    let url = await window.Detour.cut(keep, 640);
-    if (url.length > 800000) url = await window.Detour.cut(keep, 420); // limite Firestore (1 Mo)
+    const multi = !!editingVariants; // plusieurs photos dans la même recette : plus légères
+    let url = await window.Detour.cut(keep, multi ? 480 : 640);
+    if (url.length > (multi ? 300000 : 800000)) url = await window.Detour.cut(keep, multi ? 340 : 420); // limite Firestore (1 Mo)
     if (newPhotoDataUrl !== keep) return; // une autre photo a été choisie entre-temps
     newPhotoDataUrl = url; newPhotoCut = true;
     newPhotoPreview.innerHTML = `<img src="${url}" alt="Aperçu sans arrière-plan">`;
@@ -960,6 +1008,16 @@ function loadVariantInForm(i) {
   v._etText = (v.etapes || []).join('\n');
   document.getElementById('new-ingredients').value = v._ingText;
   document.getElementById('new-etapes').value = v._etText;
+  // Photo propre à cette version (sinon celle de la recette)
+  newPhotoDataUrl = ''; newPhotoCut = false;
+  const src = editingSource || {};
+  editingOriginalPhoto = v.photo || (src.photo && !/enattente/i.test(src.photo) ? src.photo : '');
+  editingOriginalDetouree = v.photo ? !!v.photoDetouree : !!src.photoDetouree;
+  newPhotoPreview.className = 'form-photo-preview photo-preview--' + cropStyle();
+  newPhotoPreview.innerHTML = editingOriginalPhoto ? `<img src="${editingOriginalPhoto}" alt="Aperçu">` : 'Aperçu';
+  document.getElementById('new-photo-label').textContent = `Photo de la version « ${v.nom || 'Version ' + (i + 1)} »`;
+  newPhotoInput.value = '';
+  updateRecropButton();
 }
 function saveVariantFromForm() {
   if (!editingVariants) return;
@@ -970,6 +1028,7 @@ function saveVariantFromForm() {
   if (ing !== v._ingText) v.ingredients = ing.split('\n').map(l => l.trim()).filter(Boolean).map(parseIngredientLine);
   if (et !== v._etText) v.etapes = et.split('\n').map(l => l.trim()).filter(Boolean);
   v._ingText = ing; v._etText = et;
+  if (newPhotoDataUrl) { v.photo = newPhotoDataUrl; v.photoDetouree = !!newPhotoCut; editingOriginalPhoto = newPhotoDataUrl; editingOriginalDetouree = !!newPhotoCut; newPhotoDataUrl = ''; }
 }
 document.getElementById('variant-pick').addEventListener('change', e => {
   saveVariantFromForm();
@@ -1076,6 +1135,13 @@ addForm.addEventListener('submit', async e => {
       await cutNewPhoto();
       statusEl.textContent = 'Enregistrement en ligne…';
     }
+    if (editingVariants) {
+      // Les photos vont dans chaque version ; la photo générale de la recette ne change pas
+      saveVariantFromForm();
+      newPhotoDataUrl = '';
+      editingOriginalPhoto = editingSource && editingSource.photo || '';
+      editingOriginalDetouree = !!(editingSource && editingSource.photoDetouree);
+    }
     const photo = newPhotoDataUrl || editingOriginalPhoto || '';
 
     const recipeData = {
@@ -1100,6 +1166,10 @@ addForm.addEventListener('submit', async e => {
     if (newPhotoDataUrl) recipeData.photoDetouree = newPhotoCut;
     else if (editingOriginalDetouree) recipeData.photoDetouree = true;
 
+    if (JSON.stringify(recipeData).length > 1000000) {
+      throw new Error("les photos de toutes les versions sont trop lourdes ensemble (limite 1 Mo). Recadre-les plus serré ou utilise des photos plus simples.");
+    }
+    const mergedFrom = (editingSource && editingSource._mergedFrom) || [];
     if (editingDocId) {
       await window.CloudRecipes.updateRecipe(editingDocId, recipeData);
       statusEl.textContent = 'Modifications enregistrées !';
@@ -1111,6 +1181,14 @@ addForm.addEventListener('submit', async e => {
     } else {
       await window.CloudRecipes.addRecipe(recipeData);
       statusEl.textContent = 'Recette publiée ! Elle est visible par tout le monde immédiatement.';
+    }
+    // La recette seule qui doublait une version est maintenant dans cette recette : on la retire
+    for (const o of mergedFrom) {
+      try {
+        if (o._docId) await window.CloudRecipes.deleteRecipe(o._docId);
+        if (o.replacesStaticId) await window.CloudRecipes.hideStaticRecipe(o.replacesStaticId);
+        if (o._isStatic) await window.CloudRecipes.hideStaticRecipe(o._staticId);
+      } catch (err) { console.warn('[fusion]', err); }
     }
     document.getElementById('add-form-success').classList.add('visible');
     setTimeout(() => { closeAddModal(); }, 1500);

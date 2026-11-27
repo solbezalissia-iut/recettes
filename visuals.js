@@ -130,7 +130,18 @@
   // r.presentation (choisie dans le formulaire) passe avant la catégorie
   const catStyle = cat => PLATE_CATS.includes(cat) ? 'plate' : (cat === 'sauce' ? 'bowl' : 'free');
   const styleOf = r => ['plate', 'bowl', 'free'].includes(r.presentation) ? r.presentation : catStyle(r.cat);
-  function plateHtml(r, cls) {
+  // Visuel d'une version précise : sa propre photo si elle en a une, sinon celle de la recette
+  function forVariant(r, vi) {
+    const v = r && r.variantes && r.variantes[vi];
+    if (!v || (!v.photo && !v.presentation)) return r;
+    const base = r._docId ? 'live:' + r._docId : (r._staticId || r.titre);
+    return {
+      titre: r.titre + ' ' + (v.nom || ''), cat: r.cat, presentation: v.presentation || r.presentation,
+      photo: v.photo || r.photo, photoDetouree: v.photo ? !!v.photoDetouree : r.photoDetouree, _staticId: base + '#' + vi
+    };
+  }
+  function plateHtml(r, cls, vi) {
+    if (vi != null) r = forVariant(r, vi);
     const st = styleOf(r);
     if (st === 'free') return `<div class="free ${cls || ''}" aria-hidden="true">${visualInner(r, true)}</div>`;
     // Assiette ou bol dessinés d'après le croquis (deco/assiette.svg, deco/bol-sauce.svg), sans fond coloré
@@ -157,5 +168,5 @@
     if (muts.some(m => [...m.addedNodes].some(n => n.nodeType === 1 && (n.matches('img.vis-wait') || n.querySelector('img.vis-wait'))))) hydrate();
   }).observe(document.documentElement, { childList: true, subtree: true });
 
-  window.RecipeVisual = { catStyle, emojiFor, hasPhoto, plateHtml, thumbHtml, styleOf, hydrate, tint: r => TINT[r.cat] || '#EFE4D4' };
+  window.RecipeVisual = { forVariant, catStyle, emojiFor, hasPhoto, plateHtml, thumbHtml, styleOf, hydrate, tint: r => TINT[r.cat] || '#EFE4D4' };
 })();
