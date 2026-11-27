@@ -1226,6 +1226,44 @@ const recettes = [
     ]
   },
   {
+    "id": "static-676",
+    "titre": "Bâtonnets feuilletés au cheddar et au bacon",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "250 g de pâte feuilletée",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "pâte feuilletée"
+      },
+      {
+        "texte": "150 g de cheddar",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "cheddar"
+      },
+      {
+        "texte": "100 g de bacon",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "bacon"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 190 °C.",
+      "Dérouler la pâte feuilletée sur une surface propre et farinée.",
+      "Râper le cheddar et couper le bacon en petits morceaux.",
+      "Répartir uniformément le cheddar et le bacon sur la pâte feuilletée.",
+      "Plier la pâte en deux pour enfermer la garniture.",
+      "Couper la pâte en bandes de 2 cm de large.",
+      "Disposer les bâtonnets sur une plaque recouverte de papier cuisson.",
+      "Enfourner 25 minutes, jusqu'à ce qu'ils soient dorés et croustillants."
+    ]
+  },
+  {
     "id": "static-11",
     "titre": "Béchamel maison",
     "photo": "photos/enattente.png",
@@ -2297,6 +2335,75 @@ const recettes = [
       "Ajouter le jus de citron et fouetter encore 1 à 2 minutes pour lisser le glaçage.",
       "Une fois les biscuits refroidis, les recouvrir de glaçage à la spatule ou à la poche à douille.",
       "Laisser sécher complètement avant de manipuler ou de décorer."
+    ]
+  },
+  {
+    "id": "static-675",
+    "titre": "Biscuits aux fraises et à la cardamome",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "39 min",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "225 g de beurre",
+        "valeur": 225,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "150 g de sucre en poudre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre en poudre"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 c. à café de pâte de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "pâte de vanille"
+      },
+      {
+        "texte": "400 g de farine",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "1 c. à café de cardamome moulue",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "cardamome moulue"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "125 g de confiture de fraises",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "confiture de fraises"
+      }
+    ],
+    "etapes": [
+      "Dans un grand bol, mélanger le beurre et le sucre jusqu'à obtenir une consistance légère et aérienne.",
+      "Ajouter l'œuf et la pâte de vanille, puis bien mélanger.",
+      "Mélanger la farine, la cardamome et le sel, puis les ajouter au mélange précédent.",
+      "Pétrir la pâte jusqu'à ce qu'elle soit homogène.",
+      "Étaler la pâte sur 4 mm d'épaisseur au rouleau à pâtisserie.",
+      "Découper des cœurs (évider le centre de la moitié d'entre eux) et les placer sur une plaque de cuisson.",
+      "Réfrigérer les biscuits 20 minutes avant de les cuire.",
+      "Préchauffer le four à 180 °C et cuire les biscuits 9 minutes.",
+      "Laisser refroidir complètement, puis déposer 1 c. à café de confiture de fraises au centre des cœurs pleins et refermer avec les cœurs évidés."
     ]
   },
   {
@@ -19631,6 +19738,65 @@ const recettes = [
     ]
   },
   {
+    "id": "static-674",
+    "titre": "Gnocchis fourrés à la sauce carbonara",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "50 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "250 g de pommes de terre à chair farineuse",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "pommes de terre à chair farineuse"
+      },
+      {
+        "texte": "80 g de farine T45",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "farine T45"
+      },
+      {
+        "texte": "2 jaunes d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "30 g de Pecorino Romano râpé",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "Pecorino Romano râpé"
+      },
+      {
+        "texte": "80 g de guanciale",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "guanciale"
+      },
+      {
+        "texte": "1 noix de beurre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "noix de beurre"
+      },
+      "sel, poivre"
+    ],
+    "etapes": [
+      "Éplucher les pommes de terre et les couper en morceaux.",
+      "Les cuire dans une casserole d'eau bouillante pendant environ 20 minutes.",
+      "Égoutter les pommes de terre et les écraser en purée dans un grand bol.",
+      "Ajouter la farine et le sel à la purée, puis former une pâte homogène.",
+      "Sur un plan de travail fariné, former des petites boules de pâte et les aplatir légèrement.",
+      "Dans une poêle, faire revenir le guanciale coupé en dés jusqu'à ce qu'il soit doré.",
+      "Mélanger les jaunes d'œufs avec le Pecorino Romano râpé et le poivre.",
+      "Plonger les gnocchis dans l'eau bouillante pendant 2 minutes, puis les égoutter.",
+      "Faire dorer les gnocchis dans la poêle avec le beurre, en les retournant pour qu'ils soient croustillants des deux côtés.",
+      "Ajouter le mélange de jaunes d'œufs et de fromage aux gnocchis chauds, hors du feu, pour obtenir une sauce crémeuse."
+    ]
+  },
+  {
     "id": "static-394",
     "titre": "Gnocchis géants brocoli et mozzarella",
     "photo": "photos/gnocchisbrocoli.jpg",
@@ -31074,6 +31240,43 @@ const recettes = [
     ]
   },
   {
+    "id": "static-672",
+    "titre": "Popcorn au fromage Gouda",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "temps": "8 min",
+    "personnes": "7",
+    "ingredients": [
+      {
+        "texte": "125 g de grains de maïs à éclater",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "grains de maïs à éclater"
+      },
+      {
+        "texte": "3 c. à soupe de beurre salé",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "beurre salé"
+      },
+      {
+        "texte": "56 g de fromage Gouda râpé",
+        "valeur": 56,
+        "unite": "g",
+        "reste": "fromage Gouda râpé"
+      }
+    ],
+    "etapes": [
+      "Verser les grains de maïs à éclater et 1 c. à soupe de beurre dans un sac en papier brun.",
+      "Plier le haut du sac deux fois pour bien le fermer.",
+      "Placer le sac dans le micro-ondes et cuire à puissance maximale pendant 2 à 3 minutes.",
+      "Faire fondre le reste du beurre (2 c. à soupe) dans une petite casserole à feu doux.",
+      "Ajouter le fromage Gouda râpé au beurre fondu et remuer jusqu'à ce que le fromage soit complètement fondu.",
+      "Ouvrir soigneusement le sac de popcorn, transférer dans un grand bol et verser le mélange de fromage fondu.",
+      "Mélanger le popcorn avec les mains pour qu'il soit uniformément enrobé de fromage."
+    ]
+  },
+  {
     "id": "static-297",
     "titre": "Popcorn soufflé au beurre et brie fondu",
     "photo": "photos/enattente.png",
@@ -38611,6 +38814,49 @@ const recettes = [
       "Couper 1 pomme en fines tranches puis la poêler avec 20 g de beurre et 20 g de cassonade pendant 2 à 3 min.",
       "Déposer la compotée dans les fonds, puis disposer les pommes en rosace.",
       "Ajouter une finition avec confiture d'abricot maison chauffée avec un peu d'eau puis badigeonner les tartelettes."
+    ]
+  },
+  {
+    "id": "static-673",
+    "titre": "Tartes toast au Nutella",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "18 min",
+    "personnes": "3",
+    "ingredients": [
+      {
+        "texte": "3 tranches de pain de mie",
+        "valeur": 3,
+        "unite": null,
+        "reste": "tranches de pain de mie"
+      },
+      {
+        "texte": "150 g de Nutella",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "Nutella"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "5 ml de lait",
+        "valeur": 5,
+        "unite": "ml",
+        "reste": "lait"
+      }
+    ],
+    "etapes": [
+      "Aplatir légèrement les 3 tranches de pain de mie au rouleau à pâtisserie.",
+      "Étaler une cuillère à soupe de Nutella au centre de chaque tranche.",
+      "Battre l'œuf avec le lait.",
+      "Badigeonner les bords de chaque tranche avec le mélange d'œuf.",
+      "Plier chaque tranche en deux pour former une demi-lune et appuyer fermement sur les bords.",
+      "Cuire à l'air fryer à 180 °C pendant 5 minutes, ou au four à 200 °C pendant 7 à 8 minutes.",
+      "Laisser refroidir légèrement avant de servir."
     ]
   },
   {

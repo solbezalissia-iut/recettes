@@ -283,7 +283,7 @@ function buildGrids() {
           <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
           <div class="card-title">${r.titre}</div>
           <div class="card-meta">
-            <span>⏱ ${preview.temps}</span>
+            <span>⏱ ${formatTemps(preview.temps)}</span>
             <span>👥 ${preview.personnes} pers.</span>
           </div>
           <div class="card-ingredients">${pills}</div>
@@ -329,9 +329,42 @@ function buildGrids() {
   if (footerCountEl) footerCountEl.textContent = totalAll;
 }
 
+// ── Affichage des temps en heures ──
+// « 135 min » → « 2 h 15 », « 1h30 » → « 1 h 30 », « 45 min » reste « 45 min ».
+// Le reste du texte (« + 1 nuit au frais »…) est conservé tel quel.
+function formatTemps(temps) {
+  if (temps == null) return '';
+  return String(temps)
+    .replace(/(\d+)\s*h(?:\s*(\d{1,2})(?!\d))?/gi, (m, h, mm) => `${h} h${mm ? ' ' + mm.padStart(2, '0') : ''}`)
+    .replace(/(\d+)\s*min(?:utes?)?\b/gi, (m, n) => {
+      n = parseInt(n, 10);
+      if (n < 60) return `${n} min`;
+      const h = Math.floor(n / 60), mm = n % 60;
+      return `${h} h${mm ? ' ' + String(mm).padStart(2, '0') : ''}`;
+    });
+}
+
+// ── Unités : masses en grammes, liquides en litres ──
+function normalizeUnit(valeur, unite) {
+  const u = (unite || '').trim();
+  const lu = u.toLowerCase();
+  if (lu === 'kg') return [valeur * 1000, 'g'];
+  if (lu === 'mg') return [valeur / 1000, 'g'];
+  if (lu === 'ml') return [valeur / 1000, 'L'];
+  if (lu === 'cl') return [valeur / 100, 'L'];
+  if (lu === 'dl') return [valeur / 10, 'L'];
+  if (lu === 'l' || lu === 'litre' || lu === 'litres') return [valeur, 'L'];
+  return [valeur, unite];
+}
+
 // ── Ingredient scaling ──
 function formatQty(valeur, unite, ratio) {
+  [valeur, unite] = normalizeUnit(valeur, unite);
   const qty = valeur * ratio;
+  if (unite === 'L') {
+    // jusqu'à 3 décimales : 0,015 L, 0,25 L, 1,5 L
+    return `${(Math.round(qty * 1000) / 1000).toString().replace('.', ',')} L`;
+  }
   let str;
   if (Math.abs(qty - Math.round(qty)) < 0.05) {
     str = Math.round(qty).toString();
@@ -401,7 +434,7 @@ function selectVariant(vIdx) {
   const v = currentVariant();
   baseServings = typeof v.personnes === 'number' ? v.personnes : parseInt(v.personnes, 10) || 1;
   currentServings = baseServings;
-  document.getElementById('modal-meta').innerHTML = `<span>⏱ ${v.temps}</span>`;
+  document.getElementById('modal-meta').innerHTML = `<span>⏱ ${formatTemps(v.temps)}</span>`;
   document.getElementById('serving-count').textContent = currentServings;
   renderVariantTabs();
   renderIngredients();

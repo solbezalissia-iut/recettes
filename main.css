@@ -708,8 +708,7 @@ header p {
   border-bottom: 1px solid var(--border);
 }
 .steps-list li::before {
-  content: counter(steps);
-  font-family: 'Playfair Display', serif;
+  content: '→';
   font-size: 0.95rem;
   color: var(--caramel);
   font-weight: 600;
@@ -726,3 +725,6 @@ header p {
 .diet-chip:hover { border-color: var(--mocha); }
 .diet-chip.active { background: var(--espresso); color: var(--cream); border-color: var(--espresso); }
 .diet-chip:focus-visible { outline: 2px solid var(--caramel); outline-offset: 2px; }
+
+/* Quantité sur une seule ligne (« 250 g ») */
+.ing-list .ing-qty { white-space: nowrap; }
