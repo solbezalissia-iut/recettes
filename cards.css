@@ -153,3 +153,7 @@
 .photo-preview--free img { max-height: 240px; width: auto; object-fit: contain;
   background: repeating-conic-gradient(#eee 0% 25%, #fff 0% 50%) 50% / 16px 16px; border-radius: 12px; }
 .detour-wait { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
+
+/* Les pastilles « Végé » et de variante restent sur une seule ligne */
+.card-cat { flex-wrap: wrap; row-gap: 4px; }
+.vege-badge, .variant-badge { white-space: nowrap !important; flex: none; }
