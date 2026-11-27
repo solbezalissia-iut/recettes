@@ -35604,6 +35604,12 @@ const recettes = [
       "Faire dorer le porc dans l’huile avec les échalotes et l’ail, puis verser le caramel, le nuoc-mâm et la sauce soja.",
       "Couvrir et mijoter 45 minutes, puis découvrir et laisser réduire jusqu’à ce que la sauce soit sirupeuse.",
       "Poivrer, parsemer d’oignons nouveaux et servir avec du riz. Se réchauffe très bien."
+    ],
+    "mc": [
+      "Faire le caramel à sec à la casserole et le décuire avec l'eau (le Monsieur Cuisine ne chauffe pas assez fort pour caraméliser).",
+      "Mettre les échalotes et l'ail dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile et le porc en cubes, rissoler <b>6 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter le caramel, le nuoc-mâm, la sauce soja et le poivre. Cuire <b>40 min / 100 °C / sens inverse / vitesse 1</b>, sans le gobelet, jusqu'à ce que la sauce nappe la viande.",
+      "Parsemer d'oignons nouveaux."
     ]
   },
   {
@@ -35662,6 +35668,10 @@ const recettes = [
       "Secouer tous les ingrédients sauf le Prosecco au shaker avec des glaçons.",
       "Filtrer dans un verre à cocktail et poser le demi fruit de la passion à la surface.",
       "Servir avec un petit verre de Prosecco à côté, à boire en alternance."
+    ],
+    "mc": [
+      "Mettre la vodka vanille, le Passoã, la purée de passion, le sirop et le jus de citron vert avec 4 glaçons dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
+      "Filtrer dans un verre à cocktail, poser le demi fruit de la passion et servir avec le Prosecco à côté."
     ]
   },
   {
@@ -35705,6 +35715,11 @@ const recettes = [
           "Mettre les flocons et le lait dans une casserole.",
           "Cuire 5 minutes à feu doux en remuant, jusqu’à ce que le mélange soit crémeux.",
           "Ajouter la cannelle et le miel, puis servir avec des fruits frais."
+        ],
+        "mc": [
+          "Mettre les flocons et le lait dans le bol.",
+          "Cuire <b>6 min / 90 °C / sens inverse / vitesse 2</b> jusqu'à ce que le mélange soit crémeux.",
+          "Ajouter la cannelle et le miel et servir avec des fruits frais."
         ]
       },
       {
@@ -35749,6 +35764,9 @@ const recettes = [
           "Dans un bocal, mélanger les flocons, le lait, le yaourt, le miel, les graines de chia et la cannelle.",
           "Fermer et laisser une nuit au réfrigérateur.",
           "Le matin, ajouter les fruits frais. Se garde 3 jours : on peut en préparer plusieurs à l’avance."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette version : tout se mélange en bocal la veille, suivre la version classique."
         ]
       }
     ]
@@ -35828,6 +35846,9 @@ const recettes = [
       "Ajouter les carottes, les poireaux ficelés et les navets épluchés. Poursuivre 45 minutes.",
       "Cuire les pommes de terre à part dans un peu de bouillon, et ajouter les os à moelle 20 minutes avant la fin.",
       "Servir la viande et les légumes avec du gros sel, de la moutarde et des cornichons. Le bouillon se boit en entrée."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le pot-au-feu demande une grande marmite (1,5 kg de viande et beaucoup de légumes), le bol est trop petit. Suivre la version classique."
     ]
   },
   {
@@ -35883,6 +35904,9 @@ const recettes = [
       "Saupoudrer de sel, poivre, ail en poudre et paprika dans les interstices et sur les surfaces exposées.",
       "Enfourner pendant environ 25 à 35 minutes, en les retournant à mi-cuisson, jusqu'à ce que les bords soient dorés et que l'intérieur soit tendre.",
       "Sortir du four et laisser reposer 2 minutes avant de servir."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : les pommes de terre cuisent au four, suivre la version classique."
     ]
   },
   {
@@ -35981,6 +36005,10 @@ const recettes = [
       "Disposer sur une plaque recouverte de papier cuisson et cuire au four à 200 °C pendant 20 minutes. Retourner les potatoes, ajouter un peu de parmesan si désiré et remettre 5 à 10 minutes, jusqu'à ce qu'elles soient dorées.",
       "Sauce : mélanger le yaourt grec, la mayonnaise, le paprika fumé, la poudre d'oignon, le sel, le jus de citron vert et la ciboulette ciselée. Goûter et ajuster.",
       "Servir les potatoes chaudes et croustillantes avec la sauce."
+    ],
+    "mc": [
+      "Tailler la butternut en bâtonnets, l'enrober du mélange huile-épices-parmesan et cuire au four comme dans la version classique.",
+      "Sauce : mettre les ingrédients de la sauce yaourt dans le bol et mélanger <b>10 s / vitesse 3</b>."
     ]
   },
   {
@@ -36052,6 +36080,9 @@ const recettes = [
       "Les mettre dans une grande marmite d’eau froide avec l’oignon et le bouquet garni. Porter à ébullition, écumer et cuire 1 heure.",
       "Blanchir le chou coupé en quartiers 5 minutes dans l’eau bouillante, puis l’ajouter avec les carottes et les navets. Cuire 45 minutes.",
       "Ajouter les pommes de terre et les saucisses, puis cuire encore 30 minutes. Poivrer (ne pas saler, la viande l’est déjà)."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : la potée demande une grande marmite (viandes, chou entier et légumes), le bol est trop petit. Suivre la version classique."
     ]
   },
   {
@@ -36113,6 +36144,12 @@ const recettes = [
       "Déglacer avec le vin blanc et laisser réduire de moitié.",
       "Ajouter la crème et le poulet, laisser mijoter 10 minutes à feu doux.",
       "Parsemer de persil et servir avec du riz, des pâtes ou une purée."
+    ],
+    "mc": [
+      "Mettre l'échalote dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le beurre, l'huile et le poulet en morceaux, rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les champignons émincés, sel et poivre. Cuire <b>8 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+      "Ajouter le vin blanc ou le bouillon, cuire <b>3 min / 100 °C / sens inverse / vitesse 1</b>. Ajouter la crème, <b>4 min / 90 °C / sens inverse / vitesse 1</b>.",
+      "Parsemer de persil."
     ]
   },
   {
@@ -36187,6 +36224,11 @@ const recettes = [
       "Déglacer avec le vin blanc et laisser réduire 2 minutes.",
       "Remettre le poulet dans la cocotte, couvrir et laisser mijoter 35 à 40 minutes à feu doux.",
       "Rectifier l'assaisonnement et servir bien chaud."
+    ],
+    "mc": [
+      "Faire dorer les cuisses de poulet à la poêle sur toutes les faces (elles ne tiennent pas toutes dans le bol pour dorer).",
+      "Mettre les oignons et l'ail dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile et les poivrons en lanières, cuire <b>8 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les tomates, le vin blanc, le piment, sel et poivre. Ajouter les cuisses (en morceaux si besoin, sans dépasser le repère maxi). Cuire <b>35 min / 100 °C / sens inverse / vitesse 1</b>."
     ]
   },
   {
@@ -36254,6 +36296,12 @@ const recettes = [
       "Ajouter le curry, mélanger 1 minute, puis ajouter le poulet et le faire dorer.",
       "Verser les tomates et le lait de coco, saler et laisser mijoter 20 minutes à feu doux.",
       "Parsemer de coriandre et servir avec du riz basmati."
+    ],
+    "mc": [
+      "Mettre l'oignon, l'ail et le gingembre dans le bol, hacher <b>5 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le curry, <b>1 min / 120 °C / vitesse 1</b>. Ajouter le poulet en morceaux, <b>4 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les tomates, le lait de coco et le sel. Cuire <b>15 min / 98 °C / sens inverse / vitesse 1</b>.",
+      "Parsemer de coriandre et servir avec du riz."
     ]
   },
   {
@@ -36340,6 +36388,12 @@ const recettes = [
       "Dans une grande cocotte, faire revenir les oignons, puis les carottes et les haricots verts coupés, les poivrons et les tomates en dés.",
       "Ajouter le bouillon, le persil, le céleri et le piment, puis le poulet. Laisser mijoter 25 minutes.",
       "Ajouter les plantains frits 5 minutes avant la fin et mélanger délicatement. C’est un grand classique de la cuisine camerounaise."
+    ],
+    "mc": [
+      "Mariner, dorer ou frire le poulet, et frire les plantains comme dans la version classique.",
+      "Mettre les oignons et l'ail dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les tomates en morceaux, les carottes en rondelles, les poivrons, les haricots verts et le bouillon. Cuire <b>15 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Réunir les légumes, le poulet et les plantains dans une sauteuse, mélanger et laisser mijoter 5 minutes. Finir aux herbes."
     ]
   },
   {
@@ -36412,6 +36466,11 @@ const recettes = [
       "Dans un troisième bol, écraser les cornflakes.",
       "Tremper les morceaux de poulet dans la farine assaisonnée, puis dans l'œuf, puis dans les cornflakes écrasés.",
       "Faire chauffer l'huile dans une grande casserole et faire frire les morceaux de poulet jusqu'à ce qu'ils soient dorés et cuits à cœur."
+    ],
+    "mc": [
+      "Mettre les cornflakes dans le bol, concasser <b>3 s / vitesse 5</b>. Réserver.",
+      "Mélanger la farine et les épices, battre les œufs.",
+      "Paner le poulet (farine, œuf, cornflakes) et le cuire comme dans la version classique."
     ]
   },
   {
@@ -36465,6 +36524,11 @@ const recettes = [
       "Faire frire les cubes dans un peu d'huile.",
       "Préparer la sauce dans une petite casserole : faire fondre le beurre maison, ajouter le miel, la sauce soja et le sucre. Mélanger et chauffer à feu moyen.",
       "Ajouter le poulet frit à la sauce et mélanger pour bien l'enrober."
+    ],
+    "mc": [
+      "Assaisonner, fariner et frire les cubes de poulet comme dans la version classique.",
+      "Sauce : mettre le beurre, le miel, la sauce soja et le sucre dans le bol. Cuire <b>4 min / 100 °C / vitesse 2</b>, sans le gobelet.",
+      "Enrober le poulet de sauce."
     ]
   },
   {
@@ -36515,6 +36579,9 @@ const recettes = [
       "Verser l’eau dans le plat et enfourner. Cuire 1 h 15 (compter 45 minutes par kilo + 15 minutes), en le retournant sur l’autre côté à mi-cuisson puis sur le dos les 20 dernières minutes, et en l’arrosant de jus régulièrement.",
       "Vérifier la cuisson : le jus qui s’écoule de la cuisse piquée doit être clair.",
       "Laisser reposer 10 minutes sous une feuille d’aluminium avant de découper."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le poulet entier rôtit au four, suivre la version classique."
     ]
   },
   {
@@ -36599,6 +36666,12 @@ const recettes = [
       "Faire dorer le poulet en morceaux dans l’huile 8 minutes, puis verser la sauce et laisser épaissir 2 minutes.",
       "Répartir riz, légumes et poulet dans 4 boîtes, parsemer de sésame.",
       "Se garde 3 jours au réfrigérateur. Réchauffer 2 minutes au micro-ondes."
+    ],
+    "mc": [
+      "Mettre 1 L d'eau dans le bol. Mettre le riz rincé dans le panier, le brocoli et la carotte dans l'accessoire vapeur. Cuire <b>15 min / 120 °C / vitesse 4</b> (retirer les légumes au bout de 6 minutes s'ils doivent rester croquants).",
+      "Sauce : bol vidé, mettre l'ail et le gingembre, hacher <b>3 s / vitesse 7</b>. Ajouter la sauce soja, le miel, le mirin et la maïzena délayée.",
+      "Ajouter le poulet en morceaux et cuire <b>12 min / 100 °C / sens inverse / vitesse 1</b> jusqu'à ce que la sauce nappe.",
+      "Répartir dans les boîtes."
     ]
   },
   {
@@ -36641,6 +36714,11 @@ const recettes = [
       "Sauce : faire chauffer la crème, la verser sur le chocolat haché, mélanger puis ajouter le beurre.",
       "Ouvrir les choux en deux et les garnir d’une petite boule de glace vanille.",
       "Napper de sauce chocolat chaude au moment de servir et parsemer d’amandes."
+    ],
+    "mc": [
+      "Pâte à choux : voir la fiche « Pâte à choux », version Monsieur Cuisine.",
+      "Sauce : mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le beurre, faire fondre <b>4 min / 50 °C / vitesse 2</b>.",
+      "Garnir les choux de glace et napper de sauce chaude."
     ]
   },
   {
@@ -36682,6 +36760,9 @@ const recettes = [
       "Attendre 10 minutes, puis mélanger à nouveau pour éviter les grumeaux.",
       "Réserver au moins 4 heures (ou une nuit) au réfrigérateur : les graines gonflent et forment un pudding.",
       "Servir avec des fruits frais."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : tout se mélange et gonfle au réfrigérateur, suivre la version classique."
     ]
   },
   {
@@ -36733,6 +36814,11 @@ const recettes = [
       "Mixer tous les ingrédients jusqu’à obtenir un mélange bien lisse.",
       "Verser en bouteille et réserver au moins 2 heures au réfrigérateur.",
       "Agiter avant de servir bien frais, dans des petits verres."
+    ],
+    "mc": [
+      "Mettre tous les ingrédients dans le bol.",
+      "Mixer <b>30 s / vitesse 6</b>.",
+      "Mettre en bouteille et réfrigérer au moins 2 heures. Agiter avant de servir."
     ]
   },
   {
@@ -36791,6 +36877,10 @@ const recettes = [
       "Mélanger tous les ingrédients dans un pichet (multiplier les doses pour un grand saladier).",
       "Laisser reposer au moins 2 heures au réfrigérateur pour que les épices infusent.",
       "Servir sur des glaçons avec des morceaux de fruits."
+    ],
+    "mc": [
+      "Mettre le rhum, les jus, le sirop et les épices dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
+      "Réfrigérer au moins 2 heures et servir sur des glaçons."
     ]
   },
   {
@@ -36833,6 +36923,9 @@ const recettes = [
       "Mélanger les jus et la grenadine dans un grand saladier.",
       "Ajouter la limonade au dernier moment, puis la main glacée (démoulée du gant) qui flotte.",
       "Ajouter les « yeux » : litchis dénoyautés garnis d’une myrtille."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce punch : tout se mélange dans le saladier, suivre la version classique."
     ]
   },
   {
@@ -36876,6 +36969,12 @@ const recettes = [
       "Écraser au presse-purée ou au moulin à légumes (jamais au mixeur, la purée deviendrait élastique).",
       "Incorporer le beurre en morceaux, puis le lait chaud petit à petit jusqu’à la consistance voulue.",
       "Assaisonner de sel, de poivre et de muscade."
+    ],
+    "mc": [
+      "Éplucher les pommes de terre et les couper en morceaux égaux.",
+      "Mettre 500 ml d'eau salée dans le bol et les pommes de terre dans le panier (le bol en contient environ 800 g). Cuire <b>25 min / 100 °C / vitesse 1</b>.",
+      "Vider l'eau. Mettre les pommes de terre, le lait chaud, le beurre, la muscade, sel et poivre dans le bol.",
+      "Écraser <b>20 s / vitesse 3</b> avec la spatule par l'ouverture (jamais plus vite, sinon la purée devient élastique)."
     ]
   },
   {
@@ -36929,6 +37028,12 @@ const recettes = [
       "Ajouter les œufs un à un en fouettant entre chaque.",
       "Incorporer la farine, la levure et le sel.",
       "Verser dans le moule et cuire 40 à 45 minutes, jusqu’à ce que la lame d’un couteau ressorte sèche."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C et beurrer le moule.",
+      "Mettre le beurre mou et le sucre dans le bol, mélanger <b>1 min / vitesse 4</b>.",
+      "Ajouter les œufs, <b>20 s / vitesse 4</b>. Ajouter la farine, la levure et le sel, <b>20 s / vitesse 4</b>.",
+      "Verser dans le moule et cuire comme dans la version classique."
     ]
   },
   {
@@ -36977,6 +37082,11 @@ const recettes = [
       "Sur une tortilla maison, répartir le poulet cuit, puis ajouter la mozzarella maison et une cuillère de crème. Recouvrir avec une autre tortilla.",
       "Cuire dans une poêle chaude 2 à 3 minutes de chaque côté jusqu'à ce que le fromage fonde et les tortillas soient dorées.",
       "Couper en triangles et servir avec la sauce crème restante."
+    ],
+    "mc": [
+      "Mettre l'huile et le poivron en dés dans le bol. Cuire <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter le poulet, les épices, sel et poivre. Cuire <b>8 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Garnir les tortillas de poulet et de mozzarella et les dorer à la poêle."
     ]
   },
   {
@@ -37042,6 +37152,12 @@ const recettes = [
       "Fouetter les œufs avec la crème, le lait, le sel, le poivre et la muscade.",
       "Verser l'appareil sur la garniture.",
       "Enfourner 35 à 40 minutes jusqu'à ce que la quiche soit dorée et prise."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Mettre les poireaux en tronçons dans le bol, émincer <b>4 s / vitesse 4</b>. Ajouter l'huile et cuire <b>10 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet. Réserver.",
+      "Bol rincé : mettre les œufs, la crème, le lait, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
+      "Garnir la pâte de poireaux et de chèvre, verser l'appareil et cuire comme dans la version classique."
     ]
   },
   {
@@ -37102,6 +37218,12 @@ const recettes = [
       "Répartir les épinards sur la pâte et disposer les rondelles de chèvre.",
       "Battre les œufs avec la crème, le lait, la muscade, du sel et du poivre, puis verser sur la garniture.",
       "Cuire 35 à 40 minutes, jusqu’à ce que la quiche soit dorée et prise."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C. Foncer le moule.",
+      "Mettre les épinards dans le bol et cuire <b>6 min / 100 °C / sens inverse / vitesse 1</b>. Égoutter et bien presser.",
+      "Bol rincé : mettre les œufs, la crème, le lait, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
+      "Garnir la pâte d'épinards et de chèvre, verser l'appareil et cuire comme dans la version classique."
     ]
   },
   {
@@ -37150,6 +37272,12 @@ const recettes = [
       "Saler, poivrer et ajouter la muscade selon votre convenance.",
       "Verser la préparation sur le fond de pâte.",
       "Mettre au four pendant 30 min."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C. Foncer le moule et piquer la pâte.",
+      "Mettre les lardons dans le bol, rissoler <b>5 min / 120 °C / vitesse 1</b>. Répartir sur la pâte.",
+      "Bol rincé : mettre les œufs, la crème, la muscade, sel et poivre. Mélanger <b>15 s / vitesse 4</b>.",
+      "Verser sur les lardons et cuire comme dans la version classique."
     ]
   },
   {
@@ -37209,6 +37337,11 @@ const recettes = [
       "Ajouter l'huile d'olive au mélange fromage-ciboulette et fouetter légèrement pour obtenir une texture homogène.",
       "Étaler une cuillère de préparation sur chaque tranche de pain ou cracker, puis déposer 2 à 3 rondelles de radis sur chaque tartine.",
       "Assembler les radis en bouquets ou en petites brochettes sur une assiette, décorées d'un filet d'huile d'olive si souhaité."
+    ],
+    "mc": [
+      "Mettre la ciboulette dans le bol, hacher <b>3 s / vitesse 7</b>.",
+      "Ajouter le fromage frais, l'huile, sel et poivre. Mélanger <b>10 s / vitesse 3</b>.",
+      "Assembler avec les rondelles de radis comme dans la version classique."
     ]
   },
   {
@@ -37301,6 +37434,12 @@ const recettes = [
       "Pendant ce temps, rincer le riz basmati et le faire cuire dans une casserole séparée avec 400 ml d'eau selon les instructions du paquet.",
       "Saler et poivrer le ragoût selon le goût, ajouter le persil haché hors du feu.",
       "Égoutter le riz et l'égréner. Servir le ragoût chaud sur un lit de riz parfumé."
+    ],
+    "mc": [
+      "Mettre les oignons et l'ail dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter les carottes, le poivron et les tomates en morceaux, hacher <b>3 s / vitesse 4</b>.",
+      "Ajouter l'huile et rissoler <b>5 min / 120 °C / vitesse 1</b>. Ajouter le curry, <b>1 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le riz rincé, le bouillon, sel et poivre. Cuire <b>15 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Laisser reposer 5 minutes couvercle fermé, puis servir."
     ]
   },
   {
@@ -37385,6 +37524,12 @@ const recettes = [
       "Ajouter les champignons émincés au bouillon 3 minutes.",
       "Cuire les nouilles à part selon le paquet et les répartir dans deux grands bols.",
       "Verser le bouillon chaud, ajouter le poulet, les œufs coupés en deux, les oignons nouveaux, la nori, le sésame et l’huile de sésame."
+    ],
+    "mc": [
+      "Œufs : 500 ml d'eau dans le bol, œufs dans le panier, <b>12 min / 100 °C / vitesse 1</b>. Refroidir, écaler et mariner dans la sauce soja.",
+      "Bol vidé : mettre l'ail et le gingembre, hacher <b>3 s / vitesse 7</b>. Ajouter le bouillon, le reste de sauce soja et le miso. Chauffer <b>8 min / 100 °C / vitesse 1</b>.",
+      "Poser le blanc de poulet et les champignons dans l'accessoire vapeur sur le bol et cuire <b>15 min / 100 °C / vitesse 1</b>. Trancher le poulet.",
+      "Cuire les nouilles à part et dresser les bols comme dans la version classique."
     ]
   },
   {
@@ -37463,6 +37608,12 @@ const recettes = [
           "Remettre tous les légumes dans la cocotte avec le thym et le laurier.",
           "Laisser mijoter à feu doux 30 à 40 minutes en remuant de temps en temps.",
           "Saler, poivrer et retirer le thym et le laurier avant de servir."
+        ],
+        "mc": [
+          "Mettre les oignons et l'ail dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>4 min / 120 °C / vitesse 1</b>.",
+          "Ajouter les aubergines, les courgettes et les poivrons en dés (sans dépasser le repère maxi). Cuire <b>10 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+          "Ajouter les tomates, le thym, le laurier, sel et poivre. Cuire <b>30 min / 100 °C / sens inverse / vitesse 1</b>, sans le gobelet (panier posé sur le couvercle).",
+          "Les légumes cuits ensemble se tiennent moins que revenus séparément ; pour une ratatouille plus rôtie, suivre la version classique."
         ]
       },
       {
@@ -37528,6 +37679,10 @@ const recettes = [
           "Disposer les tranches de légumes en couches sur la sauce dans le plat.",
           "Arroser d'un peu d'huile d'olive, assaisonner avec des herbes, puis couvrir le plat avec du papier sulfurisé.",
           "Enfourner et cuire pendant environ 40 minutes jusqu'à ce que les légumes soient tendres."
+        ],
+        "mc": [
+          "Rôtir la base tomate-poivron-ail au four comme dans la version classique, puis la mixer dans le bol <b>20 s / vitesse 7</b>.",
+          "Étaler la sauce dans le plat, disposer les tranches de légumes en rosace et cuire comme dans la version classique."
         ]
       }
     ]
@@ -37592,6 +37747,11 @@ const recettes = [
       "Si désiré, ajouter des touches de chocolat blanc fondu par-dessus pour simuler les motifs Reese's, puis saupoudrer d'une pincée de sel fin.",
       "Refermer avec une seconde couche de chocolat noir en veillant à bien recouvrir la garniture. Lisser la surface.",
       "Laisser prendre au réfrigérateur pendant au moins 1 heure avant de découper en portions."
+    ],
+    "mc": [
+      "Mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>, fondre <b>4 min / 50 °C / vitesse 2</b>. Couler la moitié dans le moule et réfrigérer.",
+      "Bol rincé : mettre le beurre de cacahuète, le sucre glace, la crème, le beurre et le sel. Chauffer <b>2 min / 50 °C / vitesse 3</b>.",
+      "Étaler sur le chocolat, recouvrir du reste de chocolat fondu et réfrigérer. Décorer de chocolat blanc fondu si désiré."
     ]
   },
   {
@@ -37656,6 +37816,9 @@ const recettes = [
       "Saler, poivrer, ajouter la graisse de canard puis remettre 1 heure à cuire doucement à couvert.",
       "Mettre en pots, laisser refroidir puis réserver au moins 24 heures au réfrigérateur.",
       "Servir sur du pain grillé, avec des cornichons."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour la cuisson : 2,5 kg de poulet ne tiennent pas dans le bol, suivre la version classique en cocotte. On peut effilocher la viande cuite dans le bol par petites quantités, <b>10 s / sens inverse / vitesse 4</b>."
     ]
   },
   {
@@ -37699,6 +37862,11 @@ const recettes = [
       "Bien mélanger jusqu'à obtenir une texture homogène.",
       "Saler et poivrer selon le goût.",
       "Réserver au frais au moins 30 minutes avant de servir avec des toasts."
+    ],
+    "mc": [
+      "Mettre la ciboulette dans le bol, hacher <b>3 s / vitesse 7</b>.",
+      "Ajouter le thon, le fromage frais, le jus de citron, sel et poivre. Mélanger <b>15 s / sens inverse / vitesse 4</b>.",
+      "Réserver au frais."
     ]
   },
   {
@@ -37768,6 +37936,13 @@ const recettes = [
       "Ajouter le bouillon chaud louche par louche, en attendant qu'il soit absorbé avant d'en rajouter, pendant 18 à 20 minutes.",
       "Incorporer les champignons, le reste de beurre et le parmesan hors du feu.",
       "Rectifier l'assaisonnement et servir immédiatement."
+    ],
+    "mc": [
+      "Mettre la moitié du beurre et les champignons émincés dans le bol, cuire <b>6 min / 120 °C / sens inverse / vitesse 1</b>. Saler et réserver.",
+      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le riz, nacrer <b>2 min / 120 °C / sens inverse / vitesse 1</b>. Ajouter le vin, <b>1 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter le bouillon chaud et cuire <b>17 min / 100 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+      "Ajouter les champignons, le reste du beurre et le parmesan, mélanger <b>1 min / sens inverse / vitesse 1</b>. Laisser reposer 2 minutes."
     ]
   },
   {
@@ -37816,6 +37991,11 @@ const recettes = [
       "Laisser cuire à feu très doux pendant 30 à 35 minutes en remuant régulièrement pour éviter que le riz n'attache, jusqu'à ce qu'il soit crémeux et fondant.",
       "Ajouter le sucre en fin de cuisson et mélanger jusqu'à dissolution complète.",
       "Retirer la gousse de vanille, répartir le riz au lait dans des ramequins et servir tiède ou froid, selon les goûts."
+    ],
+    "mc": [
+      "Mettre le lait, le riz rincé, le sucre, les graines de vanille et le sel dans le bol.",
+      "Cuire <b>40 min / 90 °C / sens inverse / vitesse 1</b>, sans le gobelet (panier posé sur le couvercle).",
+      "Verser dans des ramequins : le riz épaissit en refroidissant."
     ]
   },
   {
@@ -37874,6 +38054,9 @@ const recettes = [
       "Faire sauter les oignons émincés et les petits pois 3 minutes dans l’huile restante à feu vif.",
       "Ajouter le riz et le faire sauter 5 minutes en remuant.",
       "Ajouter le jambon, l’omelette et la sauce soja, mélanger 2 minutes et servir."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le riz se fait sauter à la poêle ou au wok très chaud, suivre la version classique."
     ]
   },
   {
@@ -37914,6 +38097,12 @@ const recettes = [
       "Verser de l'eau pour couvrir le riz et ajouter les épices.",
       "Porter à ébullition, puis réduire le feu et couvrir, laisser mijoter pendant 15 à 20 minutes.",
       "Une fois le riz cuit, retirer du feu et laisser reposer quelques minutes avant de servir."
+    ],
+    "mc": [
+      "Mettre les échalotes dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les restes de légumes en morceaux et les épices, cuire <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter le riz rincé et 1,5 fois son volume d'eau ou de bouillon. Cuire <b>15 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Laisser reposer 5 minutes couvercle fermé."
     ]
   },
   {
@@ -37976,6 +38165,9 @@ const recettes = [
       "Ajouter le riz cuit et mélanger pour enrober les grains avec les œufs et les aromates.",
       "Verser la sauce soja, assaisonner avec le poivre et mélanger délicatement jusqu'à ce que tout soit bien chaud et homogène.",
       "Goûter et ajuster le sel si nécessaire, puis servir aussitôt."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le riz se fait sauter à la poêle, suivre la version classique."
     ]
   },
   {
@@ -38016,6 +38208,11 @@ const recettes = [
       "Mélanger la noix de coco, le sucre, les blancs d’œufs non battus et le sel.",
       "Former des petites pyramides avec les doigts mouillés sur une plaque recouverte de papier cuisson.",
       "Cuire 12 à 15 minutes, jusqu’à ce que les pointes soient dorées."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Mettre la noix de coco, le sucre, les blancs et le sel dans le bol. Mélanger <b>20 s / sens inverse / vitesse 3</b>.",
+      "Former les rochers et cuire 12 à 15 minutes."
     ]
   },
   {
@@ -38056,6 +38253,11 @@ const recettes = [
       "Hors du feu, incorporer délicatement les corn flakes sans les briser.",
       "Déposer des petits tas dans des caissettes en papier.",
       "Laisser durcir au réfrigérateur au moins 1 heure."
+    ],
+    "mc": [
+      "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre, faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+      "Ajouter le sucre glace, <b>10 s / vitesse 3</b>. Ajouter les corn flakes et mélanger <b>20 s / sens inverse / vitesse 1</b> (doucement pour ne pas les briser).",
+      "Former des petits tas dans les caissettes et laisser durcir au réfrigérateur."
     ]
   },
   {
@@ -38106,6 +38308,9 @@ const recettes = [
       "Ajouter les oignons en quartiers, le thym, le laurier et l’eau.",
       "Cuire 1 h 10 environ (compter 1 heure par kilo), en arrosant toutes les 20 minutes.",
       "Laisser reposer 10 minutes sous une feuille d’aluminium avant de trancher. Servir avec le jus."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le rôti cuit au four, suivre la version classique."
     ]
   },
   {
@@ -38166,6 +38371,11 @@ const recettes = [
       "Ajouter 3 Kinder Bueno émiettés à la crème et l’étaler sur le chocolat.",
       "Rouler fermement la génoise à l’aide du papier, puis filmer.",
       "Réfrigérer au moins 2 heures, saupoudrer de cacao et décorer avec le dernier Kinder Bueno avant de trancher."
+    ],
+    "mc": [
+      "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>, fondre <b>3 min / 50 °C / vitesse 2</b>. Étaler sur la génoise.",
+      "Bol propre et froid, insérer le fouet. Fouetter la crème bien froide <b>vitesse 4</b> en surveillant. Ajouter le lait concentré et la vanille, <b>10 s / vitesse 3</b>.",
+      "Étaler, parsemer de Kinder Bueno en morceaux, rouler et saupoudrer de cacao."
     ]
   },
   {
@@ -38228,6 +38438,11 @@ const recettes = [
       "Couper les rouleaux si besoin, puis les tremper dans le lait puis dans les cornflakes pour bien les enrober.",
       "Chauffer l'huile à environ 170 °C et faire frire les roulés jusqu'à ce qu'ils soient dorés et croustillants.",
       "Égoutter sur du papier absorbant et servir chaud."
+    ],
+    "mc": [
+      "Mettre la farine et le skyr dans le bol. Pétrir <b>30 s / mode pétrin</b>.",
+      "Mettre les cornflakes dans un bol à part et les concasser au bol <b>3 s / vitesse 5</b>.",
+      "Étaler la pâte, garnir de jambon et de fromage, rouler, tremper dans le lait, paner et frire comme dans la version classique."
     ]
   },
   {
@@ -38291,6 +38506,11 @@ const recettes = [
       "Rouler le tout délicatement à l'aide du papier pour former un rouleau serré.",
       "Cuire environ 20 minutes à 200 °C (plus si besoin), jusqu'à ce que les pommes de terre soient tendres et le dessus bien doré.",
       "Laisser reposer 1 minute, couper en tranches et servir chaud avec une salade verte."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C.",
+      "Mettre les lardons dans le bol, rissoler <b>5 min / 120 °C / vitesse 1</b>. Réserver.",
+      "Disposer les rondelles de pommes de terre, garnir et rouler comme dans la version classique (pour des rondelles régulières, la mandoline reste préférable au bol)."
     ]
   },
   {
@@ -38350,6 +38570,9 @@ const recettes = [
       "Ajouter une cuillère à soupe de crème fraîche sur chaque roulé, puis assaisonner avec poivre et condiments au choix.",
       "Enrouler fermement chaque tranche pour former des rouleaux bien compacts.",
       "Couper les rouleaux en deux ou trois morceaux et les dresser sur une assiette."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : tout s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -38468,6 +38691,12 @@ const recettes = [
       "Disposer les rouleaux dans un plat à gratin beurré, couvrir et laisser lever à nouveau 30 à 45 minutes.",
       "Cuire au four préchauffé à 175°C pendant 25 à 30 minutes, jusqu'à dorure.",
       "Pour le glaçage, battre le beurre ramolli, le sucre glace, la vanille et suffisamment de crème pour obtenir un glaçage lisse. Étaler sur les rouleaux encore chauds et saupoudrer d'Oreos écrasés supplémentaires."
+    ],
+    "mc": [
+      "Mettre le lait, le sucre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter le beurre fondu, le jaune, la vanille, la farine et le sel. Pétrir <b>4 min / mode pétrin</b>. Laisser lever.",
+      "Garniture : mettre les Oreo dans le bol propre, mixer <b>5 s / vitesse 6</b>, ajouter le beurre fondu et le reste de la garniture, <b>10 s / vitesse 3</b>.",
+      "Étaler, garnir, rouler, couper et cuire comme dans la version classique."
     ]
   },
   {
@@ -38578,6 +38807,12 @@ const recettes = [
       "Garnir chaque tortilla d'une couche de fromage râpé, d'une portion de viande encore chaude, puis d'un peu de fromage. Rouler fermement comme un cigare.",
       "Chauffer une poêle, badigeonner légèrement les rouleaux d'huile et les faire dorer sur toutes les faces jusqu'à ce qu'ils soient croustillants.",
       "Servir chaud, accompagné de la sauce avocat."
+    ],
+    "mc": [
+      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la viande, cuire <b>6 min / 100 °C / sens inverse / vitesse 1</b>. Ajouter le concentré, la sauce tomate et l'eau, cuire <b>5 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Sauce avocat : bol rincé, ail et coriandre <b>3 s / vitesse 7</b>, ajouter l'avocat et le citron, <b>15 s / vitesse 5</b>.",
+      "Rouler avec le fromage et cuire comme dans la version classique."
     ]
   },
   {
@@ -38636,6 +38871,11 @@ const recettes = [
           "Préchauffer le four à 180°C. Étaler la pâte sur 4 à 5 mm d'épaisseur et découper les sablés à l'emporte-pièce.",
           "Disposer sur une plaque recouverte de papier cuisson et cuire 10 à 12 minutes, jusqu'à ce que les bords soient légèrement dorés.",
           "Laisser refroidir sur une grille avant de déguster ou de garnir."
+        ],
+        "mc": [
+          "Mettre le beurre mou et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter l'œuf et la vanille, <b>15 s / vitesse 4</b>.",
+          "Ajouter la farine et le sel, pétrir <b>20 s / mode pétrin</b>.",
+          "Réfrigérer, étaler, découper et cuire comme dans la version classique."
         ]
       },
       {
@@ -38697,6 +38937,11 @@ const recettes = [
           "Réfrigérer les biscuits pendant 20 minutes avant de les cuire.",
           "Préchauffer le four à 180°C et cuire les biscuits pendant 9 minutes.",
           "Laisser refroidir complètement avant d'assembler les sandwichs avec 1 c. à c. de confiture de fraises."
+        ],
+        "mc": [
+          "Mettre le beurre et le sucre dans le bol, mélanger <b>1 min / vitesse 4</b>. Ajouter l'œuf et la vanille, <b>15 s / vitesse 4</b>.",
+          "Ajouter la farine, la cardamome et le sel, pétrir <b>30 s / mode pétrin</b>.",
+          "Réfrigérer, découper, cuire et fourrer de confiture comme dans la version classique."
         ]
       },
       {
@@ -38741,6 +38986,11 @@ const recettes = [
           "Remplir une poche à douille avec cette pâte et déposer des petits cercles de même taille bien espacés sur une plaque recouverte d'une feuille de cuisson.",
           "Enfourner environ 8 à 10 min dans un four chaud à 200°C.",
           "Laisser refroidir les biscuits sur une grille avant de les garnir de Nutella, de pâte à tartiner ou de confiture."
+        ],
+        "mc": [
+          "Mettre le beurre mou, le sucre, la farine, la poudre d'amandes et les œufs dans le bol.",
+          "Mélanger <b>30 s / vitesse 4</b>.",
+          "Pocher, cuire et garnir comme dans la version classique."
         ]
       },
       {
@@ -38786,6 +39036,12 @@ const recettes = [
           "Incorporez l'extrait de vanille et mélangez jusqu'à obtenir une pâte homogène.",
           "Formez des petits boudins avec la pâte et placez-les sur une plaque de cuisson.",
           "Enfournez pendant environ 10 à 12 minutes jusqu'à ce qu'ils soient légèrement dorés."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre le beurre ramolli et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter les œufs et la vanille, <b>20 s / vitesse 4</b>.",
+          "Ajouter la farine, mélanger <b>20 s / vitesse 4</b>.",
+          "Pousser les biscuits à la poche ou à la presse et cuire comme dans la version classique."
         ]
       }
     ]
@@ -38836,6 +39092,10 @@ const recettes = [
       "Ajoutez l'oignon et les tomates au bol avec la feta.",
       "Arrosez le tout avec l'huile d'olive et ajoutez le basilic ciselé.",
       "Mélangez délicatement et servez frais."
+    ],
+    "mc": [
+      "Mettre l'oignon rouge dans le bol, hacher <b>3 s / vitesse 5</b>.",
+      "Assembler avec les tomates, la feta, l'huile et le basilic comme dans la version classique."
     ]
   },
   {
@@ -38917,6 +39177,12 @@ const recettes = [
       "Ajouter le jus de citron, saler et poivrer.",
       "Laver et essorer la laitue romaine, la couper grossièrement.",
       "Mélanger la salade avec la sauce, ajouter le poulet, les croûtons et le parmesan en copeaux."
+    ],
+    "mc": [
+      "Poulet : 500 ml d'eau dans le bol, blancs dans l'accessoire vapeur, <b>20 min / 120 °C / vitesse 1</b> (ou griller à la poêle pour plus de couleur). Couper en lanières.",
+      "Croûtons : au four ou à la poêle comme dans la version classique.",
+      "Sauce : bol vidé, mettre le parmesan en morceaux, râper <b>10 s / vitesse 8</b>, réserver la moitié. Ajouter l'ail et les anchois, <b>5 s / vitesse 7</b>. Ajouter les jaunes, la moutarde, le citron, sel et poivre. Insérer le fouet et mélanger <b>3 min / vitesse 4</b> en versant l'huile en filet sur le couvercle.",
+      "Assembler la salade avec la romaine, le poulet, les croûtons et le parmesan."
     ]
   },
   {
@@ -38976,6 +39242,10 @@ const recettes = [
       "Une fois la viande cuite, l'égoutter et la mélanger avec la sauce barbecue.",
       "Dans un grand bol, ajouter la salade, les tomates, les oignons, et les cornichons.",
       "Ajouter la viande hachée mélangée à la sauce et parsemer de fromage cheddar."
+    ],
+    "mc": [
+      "Mettre la viande dans le bol et cuire <b>8 min / 100 °C / sens inverse / vitesse 1</b>. Égoutter et mélanger avec la sauce barbecue.",
+      "Assembler la salade comme dans la version classique."
     ]
   },
   {
@@ -39017,6 +39287,11 @@ const recettes = [
       "Couper les concombres en fines rondelles, les saler et les laisser dégorger 10 minutes dans une passoire.",
       "Mélanger le yaourt avec l’ail écrasé, les herbes ciselées et l’huile.",
       "Égoutter les concombres, les mélanger à la sauce et poivrer."
+    ],
+    "mc": [
+      "Faire dégorger les rondelles de concombre comme dans la version classique.",
+      "Mettre l'ail et les herbes dans le bol, hacher <b>3 s / vitesse 7</b>. Ajouter le yaourt, l'huile, sel et poivre, mélanger <b>10 s / vitesse 3</b>.",
+      "Mélanger avec les concombres égouttés."
     ]
   },
   {
@@ -39082,6 +39357,9 @@ const recettes = [
       "Couper tous les fruits en morceaux de même taille.",
       "Mélanger le jus d’orange, le jus de citron et le sucre, puis verser sur les fruits.",
       "Ajouter la menthe ciselée et réserver au frais 30 minutes."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : les fruits se coupent au couteau pour garder de beaux morceaux, suivre la version classique."
     ]
   },
   {
@@ -39134,6 +39412,11 @@ const recettes = [
           "Dans un grand saladier, mélanger la salade verte, les tomates cerises coupées en deux, les gnocchis dorés et les lardons.",
           "Ajouter le pesto et mélanger délicatement pour bien enrober tous les ingrédients.",
           "Parsemer de noix concassées juste avant de servir."
+        ],
+        "mc": [
+          "Mettre les lardons dans le bol, rissoler <b>5 min / 120 °C / vitesse 1</b>. Réserver.",
+          "Cuire et dorer les gnocchis comme dans la version classique.",
+          "Mélanger avec le pesto, les lardons, les noix, la salade et les tomates."
         ]
       },
       {
@@ -39186,6 +39469,9 @@ const recettes = [
           "Dans un grand saladier, mélanger les gnocchis, l'avocat, la mozzarella et les tomates cerises.",
           "Ajouter le pesto, un filet d'huile d'olive, du sel et du poivre, puis mélanger délicatement.",
           "Réserver au frais avant de servir."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette version : les gnocchis cuisent à l'eau et la salade s'assemble à froid, suivre la version classique."
         ]
       }
     ]
@@ -39248,6 +39534,11 @@ const recettes = [
       "Préparer une vinaigrette avec la moutarde, le vinaigre, l’huile, du sel et du poivre.",
       "Mélanger les lentilles tièdes avec la vinaigrette, l’échalote ciselée et le persil.",
       "Ajouter les lardons dorés ou la feta émiettée. Servir tiède ou froid."
+    ],
+    "mc": [
+      "Mettre 1 L d'eau dans le bol, les lentilles rincées et la carotte en dés dans le panier. Cuire <b>25 min / 100 °C / vitesse 1</b>. Égoutter et saler.",
+      "Bol vidé : mettre l'échalote et le persil, hacher <b>4 s / vitesse 5</b>. Ajouter la moutarde, le vinaigre, l'huile, sel et poivre, mélanger <b>10 s / vitesse 3</b>.",
+      "Mélanger avec les lentilles (et les lardons dorés ou la feta)."
     ]
   },
   {
@@ -39315,6 +39606,11 @@ const recettes = [
       "Couper les légumes en dés et émietter la feta.",
       "Dans chaque bocal, mettre la vinaigrette au fond, puis les légumes durs (poivron, concombre, pois chiches), le quinoa, les tomates, la feta et les herbes.",
       "Fermer : se garde 3 jours au frais. Secouer ou verser dans une assiette au moment de manger."
+    ],
+    "mc": [
+      "Mettre 1 L d'eau salée dans le bol, le quinoa rincé dans le panier. Cuire <b>15 min / 100 °C / vitesse 4</b>. Laisser refroidir.",
+      "Vinaigrette : bol vidé, mettre les herbes, hacher <b>3 s / vitesse 7</b>. Ajouter l'huile, le jus de citron, sel et poivre, <b>10 s / vitesse 3</b>.",
+      "Monter les bocaux avec les légumes en dés, les pois chiches et la feta."
     ]
   },
   {
@@ -39394,6 +39690,9 @@ const recettes = [
       "Émulsionner l'huile d'olive avec le sel et le poivre, puis arroser légèrement la salade.",
       "Parsemer les tomates séchées sur le dessus et mélanger légèrement pour répartir les saveurs sans écraser les morceaux délicats.",
       "Laisser reposer 5 minutes pour que les saveurs se mêlent avant de servir."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : tout s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -39468,6 +39767,11 @@ const recettes = [
       "Enfourner pendant 30 minutes à 200°C.",
       "Mélanger dans un grand bol : fromage blanc, mayonnaise maison, moutarde, moutarde à l'ancienne, concombre coupé en dés, échalote ciselée, herbes, jus de citron, sel et poivre.",
       "Ajouter les pommes de terre croustillantes refroidies et mélanger le tout."
+    ],
+    "mc": [
+      "Mettre 500 ml d'eau salée dans le bol, les pommes de terre dans le panier. Cuire <b>20 min / 100 °C / vitesse 1</b>.",
+      "Écraser, assaisonner et rôtir au four comme dans la version classique.",
+      "Sauce : bol vidé, hacher les herbes <b>3 s / vitesse 7</b>, ajouter le fromage blanc, la mayonnaise et les moutardes, <b>10 s / vitesse 3</b>."
     ]
   },
   {
@@ -39539,6 +39843,9 @@ const recettes = [
       "Disposer les légumes dans un saladier avec les olives.",
       "Poser la feta en bloc ou en gros morceaux sur le dessus.",
       "Arroser d’huile d’olive et de vinaigre, parsemer d’origan, saler légèrement et poivrer."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : les légumes se coupent au couteau en morceaux, suivre la version classique."
     ]
   },
   {
@@ -39607,6 +39914,9 @@ const recettes = [
       "Dans un grand saladier, mélanger les pâtes froides, le maïs égoutté, l'avocat, la mozzarella, les tomates cerises et le jambon cru.",
       "Assaisonner avec l'huile d'olive, le vinaigre balsamique, le sel et le poivre, puis mélanger délicatement.",
       "Réserver au frais avant de servir pour que les saveurs se développent."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : les pâtes cuisent à la casserole et la salade s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -39679,6 +39989,10 @@ const recettes = [
       "Couper les tomates en quartiers, le poivron et l’oignon en fines lamelles.",
       "Disposer la salade, les légumes, le thon émietté, les œufs, les anchois et les olives.",
       "Arroser d’une vinaigrette huile d’olive-vinaigre, saler légèrement et poivrer."
+    ],
+    "mc": [
+      "Mettre 500 ml d'eau dans le bol, les œufs dans le panier. Cuire <b>16 min / 100 °C / vitesse 1</b>. Refroidir, écaler et couper en quartiers.",
+      "Assembler la salade comme dans la version classique."
     ]
   },
   {
@@ -39721,6 +40035,9 @@ const recettes = [
       "Émietter la feta et ciseler la menthe.",
       "Mélanger délicatement avec le jus du citron vert et l’huile d’olive. Poivrer.",
       "Servir bien frais."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : tout s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -39775,6 +40092,9 @@ const recettes = [
       "Émietter la feta et la disposer sur la salade avec les pommes et les noix concassées.",
       "Mélanger le pesto avec l'huile d'olive et le vinaigre balsamique pour obtenir une vinaigrette homogène.",
       "Arroser la salade de vinaigrette juste avant de servir."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : tout s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -39849,6 +40169,11 @@ const recettes = [
       "Prélever une petite portion de garniture et la déposer au bout d'une feuille pour samoussas ; plier en triangle et sceller l'extrémité pour former le samoussa. Répéter avec le reste.",
       "Chauffer de l'huile dans une friteuse ou une poêle profonde et cuire les samoussas jusqu'à ce qu'ils soient dorés et croustillants.",
       "Égoutter sur du papier absorbant pour retirer l'excès de gras et servir chaud."
+    ],
+    "mc": [
+      "Mettre l'oignon, l'ail et le gingembre dans le bol, hacher <b>5 s / vitesse 5</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le poulet en morceaux, le sel, le curcuma et le cumin. Cuire <b>8 min / 100 °C / sens inverse / vitesse 1</b>, puis effilocher <b>3 s / sens inverse / vitesse 4</b>.",
+      "Laisser refroidir, garnir les feuilles et frire comme dans la version classique."
     ]
   },
   {
@@ -39876,6 +40201,9 @@ const recettes = [
       "Plier chaque moitié de feuille de brick pour former un rectangle.",
       "Mettre la moitié d'une rondelle de chèvre et un filet de miel sur le rectangle de brick et replier en triangle.",
       "Faire frire dans l'huile chaude jusqu'à dorure."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (pliage et friture)."
     ]
   },
   {
@@ -39944,6 +40272,9 @@ const recettes = [
           "Dans une grande carafe, mélanger le vin, le sucre, la liqueur, la cannelle et les fruits.",
           "Laisser macérer au moins 4 heures au réfrigérateur.",
           "Au moment de servir, ajouter la limonade et les glaçons."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : la sangria macère en carafe, suivre la version classique."
         ]
       },
       {
@@ -40007,6 +40338,9 @@ const recettes = [
           "Mélanger dans une carafe le vin, la liqueur, le sucre et les fruits.",
           "Laisser macérer 3 heures au réfrigérateur.",
           "Ajouter la limonade, la menthe et les glaçons au moment de servir."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : la sangria macère en carafe, suivre la version classique."
         ]
       }
     ]
@@ -40050,6 +40384,10 @@ const recettes = [
       "Recouvrir de la seconde pâte et découper un grand sapin.",
       "Couper des bandes de chaque côté du tronc central et les torsader.",
       "Dorer au jaune d’œuf et cuire 20 minutes. Décorer de demi-tomates cerises comme des boules de Noël."
+    ],
+    "mc": [
+      "Pesto maison si besoin : voir la fiche « Pesto », version Monsieur Cuisine.",
+      "Monter, découper et cuire le sapin comme dans la version classique."
     ]
   },
   {
@@ -40086,6 +40424,9 @@ const recettes = [
       "Couper des bandes horizontales de 2 cm de chaque côté en laissant un tronc central de 3 cm, puis torsader chaque bande : ce sont les branches.",
       "Dorer au jaune d’œuf et cuire 20 minutes.",
       "Saupoudrer de sucre glace pour faire la neige."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (pâte, Nutella et four)."
     ]
   },
   {
@@ -40131,6 +40472,10 @@ const recettes = [
       "Égoutter l’ail (garder l’huile parfumée pour une autre recette) et le placer dans un bol étroit avec le jus de citron et quelques brins de persil.",
       "Ajouter le lait, la moutarde, saler et mixer avec un mixeur plongeant jusqu'à obtenir une sauce lisse.",
       "Utiliser immédiatement sur du pain grillé avec du caprice des dieux fondu, ou conserver au frais."
+    ],
+    "mc": [
+      "Mettre les gousses d'ail épluchées, l'huile et le romarin dans le bol. Confire <b>20 min / 100 °C / vitesse 1</b> (l'ail confit sans brunir ; pour une note dorée, finir 5 minutes à la casserole). Laisser refroidir et retirer le romarin.",
+      "Ajouter le lait, la moutarde, le citron, le persil et le sel. Mixer <b>30 s / vitesse 8</b> jusqu'à une sauce lisse et émulsionnée."
     ]
   },
   {
@@ -40184,6 +40529,11 @@ const recettes = [
       "Ajouter le poivre concassé, puis déglacer au cognac.",
       "Verser le fond de veau et laisser réduire de moitié.",
       "Ajouter la crème et laisser épaissir 3 à 4 minutes. Saler et servir avec un steak."
+    ],
+    "mc": [
+      "Mettre l'échalote dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le beurre, rissoler <b>2 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le poivre et le cognac, <b>2 min / 120 °C / vitesse 1</b>, sans le gobelet.",
+      "Ajouter le fond de veau, cuire <b>5 min / 100 °C / vitesse 1</b>, sans le gobelet. Ajouter la crème et le sel, <b>4 min / 90 °C / vitesse 2</b>."
     ]
   },
   {
@@ -40231,6 +40581,11 @@ const recettes = [
       "Ajouter les jaunes et 2 cuillères à soupe d’eau, puis fouetter au bain-marie à feu très doux jusqu’à obtenir une mousse épaisse (le fouet laisse des traces).",
       "Hors du feu, incorporer le beurre tiède en filet en fouettant sans arrêt.",
       "Filtrer si désiré, saler et ajouter le reste d’estragon. Servir tiède avec une viande grillée."
+    ],
+    "mc": [
+      "Mettre les échalotes dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le vinaigre, la moitié de l'estragon et le poivre. Réduire <b>8 min / 100 °C / vitesse 1</b>, sans le gobelet, jusqu'à ce qu'il ne reste presque plus de liquide. Laisser tiédir 5 minutes.",
+      "Ajouter les jaunes et 2 c. à soupe d'eau. Insérer le fouet et cuire <b>6 min / 70 °C / vitesse 3</b> en versant le beurre clarifié en filet sur le couvercle.",
+      "Ajouter le reste d'estragon et le sel, <b>5 s / vitesse 2</b>. Servir aussitôt."
     ]
   },
   {
@@ -40310,6 +40665,12 @@ const recettes = [
       "Déglacer avec le vin rouge et laisser évaporer 2 minutes.",
       "Ajouter les tomates, le concentré, l’origan, du sel et du poivre.",
       "Couvrir partiellement et laisser mijoter à feu doux au moins 1 heure en remuant de temps en temps. Plus elle mijote, meilleure elle est."
+    ],
+    "mc": [
+      "Mettre l'oignon, la carotte, le céleri et l'ail dans le bol. Hacher <b>5 s / vitesse 5</b>.",
+      "Ajouter l'huile, rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la viande, cuire <b>5 min / 120 °C / sens inverse / vitesse 1</b>. Ajouter le vin, <b>2 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les tomates, le concentré et les assaisonnements. Cuire <b>45 min / 98 °C / sens inverse / vitesse 1</b>, sans le gobelet (panier posé sur le couvercle)."
     ]
   },
   {
@@ -40347,6 +40708,10 @@ const recettes = [
       "Ajouter la moutarde et bien mélanger au fouet à main, puis verser le jus de citron tout en continuant à fouetter le mélange.",
       "Poivrer et saler à votre convenance.",
       "Faire cuire à feu très doux et à couvert pendant 15 min."
+    ],
+    "mc": [
+      "Mettre la crème, le lait et la moutarde dans le bol. Chauffer <b>4 min / 80 °C / vitesse 3</b>.",
+      "Ajouter le jus de citron, sel et poivre, mélanger <b>10 s / vitesse 3</b>."
     ]
   },
   {
@@ -40392,6 +40757,11 @@ const recettes = [
           "Ajouter les tomates en les écrasant à la cuillère, puis le sucre (il corrige l’acidité), le sel et le poivre.",
           "Laisser mijoter 20 minutes à découvert, jusqu’à ce que la sauce épaississe.",
           "Ajouter le basilic ciselé hors du feu. Mixer si vous la voulez lisse."
+        ],
+        "mc": [
+          "Mettre l'ail dans le bol, hacher <b>3 s / vitesse 7</b>. Ajouter l'huile, rissoler <b>2 min / 120 °C / vitesse 1</b>.",
+          "Ajouter les tomates, le sucre, sel et poivre. Cuire <b>25 min / 100 °C / vitesse 1</b>, sans le gobelet (panier posé sur le couvercle).",
+          "Ajouter le basilic. Pour une sauce lisse, mixer <b>15 s / vitesse 7</b>."
         ]
       },
       {
@@ -40457,6 +40827,11 @@ const recettes = [
           "Verser les tomates pelées concassées et l'eau. Mélanger et laisser mijoter 6 à 8 minutes. Saler et poivrer.",
           "Ajouter le basilic ciselé et couvrir quelques instants pour parfumer.",
           "Servir chaud, saupoudrer de parmesan râpé."
+        ],
+        "mc": [
+          "Mettre l'ail dans le bol, hacher <b>3 s / vitesse 7</b>. Ajouter l'huile, le poivron en lanières et la courgette, cuire <b>8 min / 120 °C / sens inverse / vitesse 1</b>.",
+          "Ajouter les tomates, l'eau, sel et poivre. Cuire <b>15 min / 100 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+          "Ajouter le basilic et le parmesan, mélanger <b>10 s / sens inverse / vitesse 2</b>."
         ]
       }
     ]
@@ -40502,6 +40877,10 @@ const recettes = [
       "Sur 4 feuilles de papier cuisson, disposer les courgettes, un pavé de saumon, 2 tranches de citron et de l’aneth. Saler, poivrer et arroser d’huile.",
       "Refermer les papillotes hermétiquement et cuire 15 à 18 minutes.",
       "Servir dans la papillote, avec du riz."
+    ],
+    "mc": [
+      "Mettre 500 ml d'eau dans le bol. Disposer les courgettes en rondelles dans l'accessoire vapeur, puis les pavés de saumon, le citron, l'aneth, l'huile, sel et poivre.",
+      "Cuire <b>18 min / 120 °C / vitesse 1</b>, jusqu'à ce que le saumon soit cuit à cœur."
     ]
   },
   {
@@ -40554,6 +40933,10 @@ const recettes = [
       "Dans un plat, étaler la moitié du mélange, poser le saumon côté peau, puis couvrir du reste et de l’aneth haché.",
       "Filmer, poser un poids et réfrigérer 48 heures en retournant le filet toutes les 12 heures.",
       "Rincer, sécher et trancher finement en biais. Servir avec une sauce moutarde-aneth."
+    ],
+    "mc": [
+      "Mettre l'aneth dans le bol, hacher <b>3 s / vitesse 7</b>. Ajouter le sel, le sucre, le poivre et le zeste, mélanger <b>5 s / vitesse 4</b>.",
+      "Couvrir le saumon de ce mélange et le laisser mariner au frais comme dans la version classique."
     ]
   },
   {
@@ -40594,6 +40977,9 @@ const recettes = [
       "Remplir un verre haut de glaçons.",
       "Verser le jus d’orange et le jus de pêche, puis le jus de cranberry pour créer un dégradé.",
       "Ajouter la grenadine et servir avec une paille."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare en dégradé directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -40661,6 +41047,11 @@ const recettes = [
       "Creuser 4 puits dans la sauce et y casser les œufs.",
       "Couvrir et cuire 5 à 7 minutes à feu doux, jusqu’à ce que les blancs soient pris et les jaunes encore coulants.",
       "Parsemer d’herbes et servir dans la poêle avec du pain."
+    ],
+    "mc": [
+      "Mettre l'oignon, l'ail et le poivron dans le bol, hacher <b>5 s / vitesse 4</b>. Ajouter l'huile, cuire <b>8 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les épices, les tomates, sel et poivre. Cuire <b>10 min / 100 °C / vitesse 1</b>, sans le gobelet.",
+      "Verser la sauce dans une poêle, y casser les œufs et terminer comme dans la version classique."
     ]
   },
   {
@@ -40695,6 +41086,9 @@ const recettes = [
       "Remplir un verre de glaçons et verser la limonade.",
       "Ajouter la grenadine qui tombe au fond.",
       "Décorer d’une cerise confite."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -40736,6 +41130,10 @@ const recettes = [
       "Retirer du feu, incorporer l'extrait de vanille et mélanger brièvement.",
       "Laisser refroidir le sirop à température ambiante avant l'utilisation.",
       "Optionnel : ajouter le sirop de chocolat pour une version chocolatée ; mélanger jusqu'à homogénéité."
+    ],
+    "mc": [
+      "Mettre l'eau et le sucre dans le bol. Chauffer <b>5 min / 100 °C / vitesse 2</b>, jusqu'à dissolution.",
+      "Ajouter la vanille (et le sirop de chocolat), mélanger <b>5 s / vitesse 3</b>. Laisser refroidir."
     ]
   },
   {
@@ -40770,6 +41168,11 @@ const recettes = [
       "Mixer les fruits congelés et la banane avec le lait jusqu’à obtenir une texture épaisse (ajouter un peu de lait si besoin).",
       "Verser dans un bol.",
       "Garnir de granola, de fruits frais tranchés et de graines."
+    ],
+    "mc": [
+      "Mettre les fruits rouges et la banane congelés et le lait dans le bol.",
+      "Mixer <b>30 s / vitesse 9</b>, racler les parois, puis <b>15 s / vitesse 6</b> : la texture doit être épaisse.",
+      "Verser dans un bol et garnir."
     ]
   },
   {
@@ -40817,6 +41220,11 @@ const recettes = [
       "Ajouter les glaçons et mixer à puissance élevée jusqu'à obtenir une texture bien lisse et mousseuse.",
       "Goûter et ajuster en miel selon le goût.",
       "Verser dans des verres et déguster immédiatement."
+    ],
+    "mc": [
+      "Mettre les fraises, la banane, le lait, le miel et les glaçons dans le bol.",
+      "Mixer <b>40 s / vitesse 9</b>.",
+      "Servir aussitôt."
     ]
   },
   {
@@ -40877,6 +41285,11 @@ const recettes = [
       "Tremper chaque sofficini dans le mélange d'œuf puis les enrober de cornflakes écrasés.",
       "Disposer les sofficini sur une plaque de cuisson recouverte de papier sulfurisé.",
       "Enfourner pendant 15 minutes ou jusqu'à ce qu'ils soient dorés et croustillants."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C.",
+      "Mettre les cornflakes dans le bol, concasser <b>3 s / vitesse 5</b>. Réserver.",
+      "Battre l'œuf avec le lait, sel et poivre, puis garnir, paner et cuire comme dans la version classique."
     ]
   },
   {
@@ -40915,6 +41328,10 @@ const recettes = [
       "Allumer l’appareil à raclette 10 minutes avant de passer à table.",
       "Chacun fait fondre son fromage dans son poêlon et le verse sur ses pommes de terre. Poivrer.",
       "Servir avec une salade verte vinaigrette pour alléger."
+    ],
+    "mc": [
+      "Mettre 500 ml d'eau dans le bol, les pommes de terre avec la peau dans le panier (environ 800 g par fournée ; le reste dans l'accessoire vapeur). Cuire <b>30 min / 120 °C / vitesse 1</b>.",
+      "Garder au chaud dans un torchon et servir avec le fromage et la charcuterie."
     ]
   },
   {
@@ -40961,6 +41378,11 @@ const recettes = [
       "Ajouter le jus et le zeste de citron.",
       "Avec sorbetière : turbiner 25 minutes. Sans sorbetière : congeler dans un bac en mélangeant à la fourchette toutes les 30 minutes pendant 3 heures.",
       "Pour un sorbet plus onctueux, incorporer le blanc d’œuf battu en neige à mi-prise."
+    ],
+    "mc": [
+      "Mettre l'eau et le sucre dans le bol. Chauffer <b>6 min / 100 °C / vitesse 2</b>. Laisser refroidir.",
+      "Ajouter le jus et le zeste de citron, mélanger <b>5 s / vitesse 3</b>.",
+      "Congeler en glaçons ou dans un bac plat. Au moment de servir, mixer les morceaux congelés <b>20 s / vitesse 8</b> (ajouter le blanc d'œuf pour un sorbet plus léger, <b>10 s / vitesse 5</b>)."
     ]
   },
   {
@@ -41000,6 +41422,11 @@ const recettes = [
       "Porter l’eau et le sucre à ébullition 2 minutes, puis laisser refroidir.",
       "Mixer les fraises avec le jus de citron, puis ajouter le sirop.",
       "Turbiner en sorbetière, ou congeler en mélangeant toutes les 30 minutes pendant 3 heures."
+    ],
+    "mc": [
+      "Mettre l'eau et le sucre dans le bol, chauffer <b>5 min / 100 °C / vitesse 2</b>. Laisser refroidir.",
+      "Ajouter les fraises et le jus de citron, mixer <b>30 s / vitesse 8</b>.",
+      "Congeler en bac plat ou en glaçons, puis mixer les morceaux congelés <b>20 s / vitesse 8</b> au moment de servir."
     ]
   },
   {
@@ -41038,6 +41465,11 @@ const recettes = [
     "etapes": [
       "Mixer la mangue encore congelée avec le miel, le jus de citron vert et l’eau, en raclant les parois.",
       "Servir aussitôt façon sorbet, ou remettre 30 minutes au congélateur."
+    ],
+    "mc": [
+      "Mettre la mangue congelée, le miel, le jus de citron vert et l'eau dans le bol.",
+      "Mixer <b>30 s / vitesse 9</b>, racler les parois, puis <b>15 s / vitesse 6</b>.",
+      "Servir aussitôt ou remettre 30 minutes au congélateur."
     ]
   },
   {
@@ -41102,6 +41534,11 @@ const recettes = [
       "Préchauffer le four en position grill.",
       "Répartir la soupe dans des bols allant au four, déposer une tranche de pain sur chaque bol et couvrir de gruyère râpé.",
       "Passer sous le grill quelques minutes jusqu'à ce que le fromage soit gratiné et doré."
+    ],
+    "mc": [
+      "Mettre les oignons en quartiers dans le bol, émincer <b>4 s / vitesse 4</b>. Ajouter le beurre et cuire <b>25 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet, jusqu'à ce qu'ils soient bien dorés.",
+      "Ajouter la farine, <b>1 min / 120 °C / sens inverse / vitesse 1</b>. Ajouter le vin, le bouillon, sel et poivre. Cuire <b>20 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Verser dans des bols, poser le pain et le gruyère et gratiner comme dans la version classique."
     ]
   },
   {
@@ -41157,6 +41594,12 @@ const recettes = [
       "Faire revenir l’oignon, ajouter la chair de citrouille et la pomme de terre en cubes, puis le bouillon. Cuire 25 minutes.",
       "Mixer avec la crème, la muscade, du sel et du poivre.",
       "Verser la soupe dans la citrouille creusée, dessiner une toile d’araignée avec un filet de crème et parsemer de graines."
+    ],
+    "mc": [
+      "Évider la citrouille de service comme dans la version classique.",
+      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la chair de citrouille et la pomme de terre en cubes et le bouillon (sans dépasser le repère maxi, en deux fois si besoin). Cuire <b>25 min / 100 °C / vitesse 1</b>.",
+      "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement. Servir dans la citrouille avec les graines grillées."
     ]
   },
   {
@@ -41224,6 +41667,11 @@ const recettes = [
       "Ajouter les autres légumes, l’eau et le cube de bouillon.",
       "Porter à ébullition puis laisser mijoter 30 minutes à couvert.",
       "Mixer, rectifier l’assaisonnement et servir avec une cuillère de crème fraîche."
+    ],
+    "mc": [
+      "Mettre l'oignon et les poireaux dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le beurre, rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les autres légumes en morceaux, le cube et l'eau (sans dépasser le repère maxi ; 1,2 L en général). Cuire <b>30 min / 100 °C / vitesse 1</b>.",
+      "Mixer <b>1 min / vitesse 10</b> en montant progressivement. Saler, poivrer et ajouter la crème."
     ]
   },
   {
@@ -41278,6 +41726,11 @@ const recettes = [
       "Faire revenir l’oignon, les carottes et les lardons dans une cocotte.",
       "Ajouter les pois cassés, l’eau et le bouquet garni. Cuire 1 heure à feu doux en remuant de temps en temps (saler en fin de cuisson).",
       "Retirer le bouquet garni, mixer et servir avec des croûtons."
+    ],
+    "mc": [
+      "Mettre l'oignon et les carottes dans le bol, hacher <b>5 s / vitesse 5</b>. Ajouter les lardons, rissoler <b>4 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les pois cassés rincés, le bouquet garni et l'eau (sans dépasser le repère maxi). Cuire <b>50 min / 100 °C / vitesse 1</b>.",
+      "Retirer le bouquet garni et mixer <b>1 min / vitesse 10</b> en montant progressivement. Saler, poivrer et servir avec les croûtons."
     ]
   },
   {
@@ -41326,6 +41779,11 @@ const recettes = [
       "Mixer avec l’avocat, le yaourt, le jus du citron vert, les herbes et l’eau jusqu’à obtenir un velouté lisse.",
       "Saler, poivrer et réserver au moins 1 heure au réfrigérateur.",
       "Servir bien frais avec un filet d’huile d’olive."
+    ],
+    "mc": [
+      "Mettre les concombres en morceaux, l'avocat, le yaourt, le jus de citron vert, les herbes et l'eau dans le bol.",
+      "Mixer <b>1 min / vitesse 10</b> en montant progressivement.",
+      "Saler, poivrer et réfrigérer."
     ]
   },
   {
@@ -41389,6 +41847,11 @@ const recettes = [
       "Couper les tomates cerises en deux et les mélanger avec l'huile d'olive, le jus de citron, l'ail émincé, le sel, le poivre et le basilic ciselé.",
       "Mélanger les spaghetti refroidis avec la sauce burrata et les légumes assaisonnés.",
       "Répartir dans des assiettes et ajouter des morceaux de burrata supplémentaires sur le dessus."
+    ],
+    "mc": [
+      "Cuire les spaghetti à la casserole et les rincer à l'eau froide.",
+      "Mettre l'ail dans le bol, hacher <b>3 s / vitesse 7</b>. Ajouter la burrata, l'eau froide, l'huile, le jus de citron, sel et poivre. Mixer <b>20 s / vitesse 5</b>.",
+      "Mélanger avec les pâtes, les tomates cerises et le basilic."
     ]
   },
   {
@@ -41500,6 +41963,10 @@ const recettes = [
       "Ajouter l'Aperol puis le prosecco en versant lentement pour garder les bulles.",
       "Compléter avec l'eau pétillante et mélanger légèrement à l'aide d'une cuillère longue.",
       "Décorer avec une tranche de pastèque ou une feuille de menthe et servir aussitôt."
+    ],
+    "mc": [
+      "Jus de pastèque : pastèque en morceaux dans le bol, <b>20 s / vitesse 8</b>, puis filtrer.",
+      "Monter le spritz dans le verre comme dans la version classique."
     ]
   },
   {
@@ -41540,6 +42007,9 @@ const recettes = [
       "Remplir un verre à vin de glaçons.",
       "Verser l’apéritif sans alcool, le jus d’orange puis l’eau gazeuse.",
       "Mélanger doucement et décorer d’une rondelle d’orange."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -41577,6 +42047,11 @@ const recettes = [
       "Ajouter une pincée de gros sel selon votre goût.",
       "Mélanger délicatement le tout jusqu'à obtenir une texture homogène.",
       "Verser un filet d'huile d'olive sur le mélange avant de servir."
+    ],
+    "mc": [
+      "Mettre la mozzarella en morceaux dans le bol. Effilocher <b>4 s / sens inverse / vitesse 4</b>.",
+      "Ajouter la crème et le gros sel, mélanger <b>5 s / sens inverse / vitesse 2</b>.",
+      "Servir avec un filet d'huile d'olive."
     ]
   },
   {
@@ -41610,6 +42085,10 @@ const recettes = [
       "Mixer les fruits avec le jus d’orange et le miel.",
       "Verser dans des moules à glaces, planter les bâtonnets.",
       "Congeler au moins 6 heures. Passer le moule sous l’eau chaude quelques secondes pour démouler."
+    ],
+    "mc": [
+      "Mettre les fruits, le jus d'orange et le miel dans le bol. Mixer <b>30 s / vitesse 8</b>.",
+      "Verser dans les moules, planter les bâtonnets et congeler au moins 6 heures."
     ]
   },
   {
@@ -41647,6 +42126,9 @@ const recettes = [
       "Ajouter une couche de thon émietté.",
       "Rouler chaque tranche sur elle-même et maintenir avec un cure-dent.",
       "Découper en rondelles et servir frais."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le concombre se tranche à la mandoline et tout s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -41723,6 +42205,12 @@ const recettes = [
       "Verser la pâte dans le moule et lisser la surface. Parsemer d'éclats supplémentaires si souhaité.",
       "Cuire pendant environ 25 minutes, jusqu'à ce que les bords soient dorés et que le centre reste légèrement moelleux.",
       "Laisser refroidir complètement dans le moule, puis couper en carrés ou rectangles."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C et chemiser le moule.",
+      "Mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre, faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+      "Ajouter les sucres et les œufs, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine, la levure et le sel, <b>15 s / vitesse 4</b>.",
+      "Ajouter les éclats de chocolat, <b>10 s / sens inverse / vitesse 2</b>. Étaler dans le moule et cuire comme dans la version classique."
     ]
   },
   {
@@ -41783,6 +42271,12 @@ const recettes = [
       "Couper les tomates en petits dés et émincer l’oignon.",
       "Mélanger le tout avec l’huile d’olive, du sel et du poivre.",
       "Réserver 1 heure au frais. Le vrai taboulé est surtout du persil, avec peu de boulgour."
+    ],
+    "mc": [
+      "Rincer le boulgour et le laisser gonfler dans le jus des citrons.",
+      "Mettre le persil et la menthe (sans les tiges) dans le bol, bien secs, par moitiés. Hacher <b>4 s / vitesse 6</b> (pas plus, sinon ils deviennent une purée).",
+      "Ajouter l'oignon nouveau, hacher <b>2 s / vitesse 5</b>.",
+      "Mélanger avec le boulgour, les tomates en dés, l'huile, sel et poivre."
     ]
   },
   {
@@ -41868,6 +42362,12 @@ const recettes = [
       "Réchauffer légèrement les galettes sous une presse ou à la poêle pour les rendre flexibles et éviter qu'elles ne se cassent.",
       "Garnir chaque galette avec le poulet à la sauce fromagère et des frites, refermer soigneusement puis passer brièvement sous la presse jusqu'à ce que les tacos soient bien dorés et serrés.",
       "Servir immédiatement et apprécier bien chaud."
+    ],
+    "mc": [
+      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le poulet en morceaux, sel, poivre et paprika. Cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>. Réserver.",
+      "Sauce fromagère : bol rincé, mettre la crème et les fromages, chauffer <b>5 min / 90 °C / vitesse 2</b>.",
+      "Garnir les galettes et les dorer comme dans la version classique."
     ]
   },
   {
@@ -41947,6 +42447,12 @@ const recettes = [
       "Remettre le poulet, ajouter l’eau, saler peu (les citrons et olives sont salés) et poivrer. Couvrir et laisser mijoter 40 minutes à feu doux.",
       "Ajouter les citrons confits coupés en quartiers et les olives, puis poursuivre 15 minutes.",
       "Parsemer d’herbes fraîches et servir avec de la semoule ou du pain."
+    ],
+    "mc": [
+      "Faire dorer les cuisses de poulet à la poêle.",
+      "Mettre les oignons et l'ail dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile et les épices, rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le poulet (sans dépasser le repère maxi), les citrons confits en quartiers et le liquide de la version classique. Cuire <b>40 min / 98 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les olives et cuire <b>10 min / 98 °C / sens inverse / vitesse 1</b>."
     ]
   },
   {
@@ -42000,6 +42506,11 @@ const recettes = [
       "Mixer les olives, les câpres, les anchois, l’ail et le thym.",
       "Ajouter l’huile d’olive en filet et le jus de citron, puis mixer jusqu’à obtenir une pâte. Poivrer.",
       "Servir sur des toasts. Se conserve 1 semaine au réfrigérateur sous un filet d’huile."
+    ],
+    "mc": [
+      "Mettre l'ail dans le bol, hacher <b>3 s / vitesse 7</b>.",
+      "Ajouter les olives, les câpres, les anchois et le thym. Mixer <b>10 s / vitesse 6</b>.",
+      "Ajouter l'huile et le jus de citron, mixer <b>10 s / vitesse 6</b>. Poivrer."
     ]
   },
   {
@@ -42048,6 +42559,11 @@ const recettes = [
       "Ajouter l’échalote ciselée, les herbes, l’huile, le jus du citron vert, du sel et du poivre.",
       "Couper l’avocat en dés et l’arroser d’un peu de citron.",
       "Dresser à l’aide d’un emporte-pièce : une couche d’avocat, puis le saumon. Servir aussitôt."
+    ],
+    "mc": [
+      "Couper le saumon en dés au couteau (le bol écraserait la chair).",
+      "Mettre l'échalote et les herbes dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, le jus de citron vert, sel et poivre, mélanger <b>5 s / vitesse 3</b>.",
+      "Mélanger avec le saumon et l'avocat en dés."
     ]
   },
   {
@@ -42129,6 +42645,12 @@ const recettes = [
       "Verser l'appareil œufs-skyr et lisser.",
       "Cuire 45 minutes environ, jusqu'à ce que la tarte soit dorée et le centre pris.",
       "Laisser tiédir quelques minutes et arroser d'un filet de miel au service si désiré."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Mettre 500 ml d'eau dans le bol, la butternut en cubes dans l'accessoire vapeur. Cuire <b>20 min / 120 °C / vitesse 1</b> (au lieu d'1 heure au four). Vider l'eau.",
+      "Mettre la butternut, les œufs, le skyr, sel, poivre et paprika dans le bol. Mixer <b>20 s / vitesse 6</b>.",
+      "Garnir la pâte, ajouter le bacon et le chèvre et cuire comme dans la version classique."
     ]
   },
   {
@@ -42198,6 +42720,12 @@ const recettes = [
       "Préparer la meringue : monter les blancs d'œufs en neige ferme, puis ajouter le sucre en trois fois en continuant de fouetter jusqu'à obtenir une meringue brillante et lisse.",
       "Répartir ou pocher la meringue sur la tarte froide, puis dorer au chalumeau ou sous le gril du four quelques instants jusqu'à coloration.",
       "Servir bien frais."
+    ],
+    "mc": [
+      "Préchauffer le four à 170 °C, foncer le moule et cuire à blanc 15 minutes.",
+      "Crème au citron : mettre les œufs, les jaunes, 150 g de sucre, le jus et les zestes dans le bol. Cuire <b>8 min / 80 °C / vitesse 4</b>, jusqu'à ce que la crème épaississe. Ajouter le beurre, <b>30 s / vitesse 4</b>. Verser sur le fond de tarte.",
+      "Meringue : bol propre et sec, insérer le fouet. Mettre les blancs et 90 g de sucre, fouetter <b>4 min / 50 °C / vitesse 4</b> (meringue suisse), puis <b>4 min / vitesse 4</b> sans chauffer.",
+      "Pocher la meringue et la colorer au chalumeau ou sous le gril."
     ]
   },
   {
@@ -42275,6 +42803,11 @@ const recettes = [
       "Étaler la pâte dans un moule à tarte et laisser lever encore 30 minutes. Préchauffer le four à 200 °C.",
       "Parsemer de cassonade et de noisettes de beurre, puis napper du mélange œuf-crème.",
       "Cuire 15 à 20 minutes : le sucre doit être caramélisé."
+    ],
+    "mc": [
+      "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le sucre, le sel et l'œuf, pétrir <b>3 min / mode pétrin</b>. Ajouter le beurre mou, <b>2 min / mode pétrin</b>.",
+      "Laisser lever, étaler, garnir et cuire comme dans la version classique."
     ]
   },
   {
@@ -42323,6 +42856,11 @@ const recettes = [
       "Faites fondre chaque type de chocolat séparément avec 100 ml de crème liquide.",
       "Versez les ganaches successivement dans la pâte cuite, en laissant chaque couche prendre avant d'ajouter la suivante.",
       "Réfrigérez la tarte pendant au moins 4 heures avant de servir."
+    ],
+    "mc": [
+      "Cuire le fond de tarte à blanc comme dans la version classique.",
+      "Pour chaque chocolat : le mettre dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter 100 ml de crème, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Couler la couche et laisser prendre au frais avant la suivante.",
+      "Réfrigérer au moins 2 heures."
     ]
   },
   {
@@ -42354,6 +42892,10 @@ const recettes = [
       "Laver, équeuter et couper les fraises en deux.",
       "Fouetter la crème, l’étaler sur le fond de tarte, puis disposer les fraises serrées.",
       "Napper de confiture tiède au pinceau pour faire briller. Réserver au frais jusqu’au service."
+    ],
+    "mc": [
+      "Pâte sablée et crème pâtissière : voir les fiches « Pâte sablée » et « Crème pâtissière », versions Monsieur Cuisine.",
+      "Cuire le fond à blanc, garnir de crème refroidie et de fraises, puis napper comme dans la version classique."
     ]
   },
   {
@@ -42423,6 +42965,11 @@ const recettes = [
       "Verser la préparation sur la pâte brisée déposée dans un moule et étaler pour former une couche uniforme.",
       "Disposer quelques noix de pécan entières sur le dessus pour la décoration.",
       "Enfourner à 170 °C pendant 35 à 40 minutes, jusqu'à ce que les bords soient dorés et la garniture bien prise."
+    ],
+    "mc": [
+      "Mettre les noix de pécan dans le bol, griller <b>5 min / 120 °C / vitesse 1</b>, sans le gobelet. Réserver quelques noix pour le décor et concasser le reste <b>2 s / vitesse 5</b>.",
+      "Mettre le sucre roux, la fécule, la crème végétale, le sirop d'érable, la margarine et la vanille dans le bol. Cuire <b>5 min / 90 °C / vitesse 3</b>.",
+      "Ajouter les noix concassées, <b>5 s / sens inverse / vitesse 2</b>. Garnir la pâte et cuire comme dans la version classique."
     ]
   },
   {
@@ -42480,6 +43027,11 @@ const recettes = [
           "Saupoudrer de sucre et de cannelle si désiré, puis parsemer de petits morceaux de beurre.",
           "Enfourner pendant 35 à 40 minutes, jusqu'à ce que la pâte soit dorée et les pommes tendres.",
           "À la sortie du four, chauffer légèrement la confiture d'abricot et en napper la tarte pour la faire briller. Servir tiède ou froid."
+        ],
+        "mc": [
+          "Préchauffer le four à 190 °C.",
+          "Préparer la pâte brisée (fiche « Pâte brisée », version Monsieur Cuisine) et la disposer dans le moule.",
+          "Garnir de pommes en rosace et cuire comme dans la version classique. Napper de confiture tiédie (<b>1 min / 60 °C / vitesse 2</b>)."
         ]
       },
       {
@@ -42531,6 +43083,9 @@ const recettes = [
           "Parsemer le beurre maison en petits morceaux sur les pommes, saupoudrer de sucre et ajouter la cannelle.",
           "Ajouter 2 cl d'eau autour des bords.",
           "Cuire au micro-ondes à puissance moyenne pendant 8 à 10 minutes jusqu'à ce que la pâte soit cuite et les pommes tendres."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette version : elle cuit au micro-ondes, suivre la version classique."
         ]
       },
       {
@@ -42614,6 +43169,11 @@ const recettes = [
           "Couper les boudins de pâte en tranches (mini cinnamon rolls). En tapisser un moule à tarte en les serrant, verser les pommes caramélisées, puis recouvrir avec le reste des tranches.",
           "Cuire 20 minutes à 190 °C, jusqu'à ce que les bords soient dorés.",
           "Laisser tiédir avant de couper pour que la tarte se tienne bien."
+        ],
+        "mc": [
+          "Mettre le beurre pommade, la cassonade et les épices dans le bol, mélanger <b>15 s / vitesse 4</b>.",
+          "Tartiner les pâtes, les rouler et réfrigérer comme dans la version classique.",
+          "Caramel et pommes : à la poêle (le Monsieur Cuisine ne caramélise pas). Monter et cuire comme dans la version classique."
         ]
       }
     ]
@@ -42676,6 +43236,11 @@ const recettes = [
       "Étaler la crème d’amandes sur la pâte.",
       "Égoutter les poires, les émincer en lamelles sans les séparer et les disposer en rosace sur la crème.",
       "Parsemer d’amandes effilées et cuire 35 à 40 minutes. Servir tiède ou froid."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C et foncer le moule.",
+      "Crème d'amandes : mettre le beurre mou et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter la poudre d'amandes, les œufs et la farine, <b>20 s / vitesse 4</b>.",
+      "Étaler sur la pâte, disposer les poires, parsemer d'amandes effilées et cuire comme dans la version classique."
     ]
   },
   {
@@ -42737,6 +43302,9 @@ const recettes = [
       "Trancher finement les légumes et les disposer en rosace en les alternant.",
       "Arroser d’huile, parsemer d’herbes, saler et poivrer.",
       "Cuire 30 minutes, puis émietter la feta dessus à la sortie du four."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : les légumes se tranchent finement et la tarte cuit au four, suivre la version classique."
     ]
   },
   {
@@ -42817,6 +43385,11 @@ const recettes = [
       "Verser la ganache Gianduja sur le croustillant et laisser prendre au réfrigérateur pendant au moins 2 heures.",
       "Préparer la ganache montée : faire chauffer le reste de crème, verser sur les 100 g de Gianduja restants, laisser refroidir, puis fouetter jusqu'à obtenir une texture légère.",
       "Décorer la tarte avec la ganache montée avant de servir."
+    ],
+    "mc": [
+      "Pâte : mettre le beurre mou, le sucre glace et la poudre d'amande dans le bol, mélanger <b>20 s / vitesse 4</b>. Ajouter l'œuf, <b>10 s / vitesse 4</b>, puis la farine et le cacao, pétrir <b>20 s / mode pétrin</b>. Réfrigérer 30 minutes, foncer et cuire comme dans la version classique.",
+      "Noisettes : torréfier dans le bol <b>5 min / 120 °C / vitesse 1</b>, puis concasser <b>2 s / vitesse 5</b>.",
+      "Chocolats : les faire fondre séparément, <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>, et monter la tarte comme dans la version classique."
     ]
   },
   {
@@ -42890,6 +43463,11 @@ const recettes = [
       "Mixer les noisettes en poudre fine, puis les incorporer à la crème vanillée tiédie avec les 2 œufs battus.",
       "Verser la garniture vanillée sur le fond de tarte encore tiède et lisser la surface.",
       "Enfourner à nouveau 15 à 20 minutes jusqu'à ce que la surface soit bien prise et légèrement dorée."
+    ],
+    "mc": [
+      "Pâte : mettre le beurre dans le bol, faire fondre <b>2 min / 60 °C / vitesse 1</b>. Ajouter le sucre et les jaunes, <b>15 s / vitesse 4</b>, puis la farine et la vanille, pétrir <b>20 s / mode pétrin</b>. Foncer le moule.",
+      "Mettre les noisettes dans le bol, concasser <b>3 s / vitesse 5</b>.",
+      "Ajouter la crème, le sucre glace et les œufs, mélanger <b>15 s / vitesse 3</b>. Verser sur la pâte et cuire comme dans la version classique."
     ]
   },
   {
@@ -42944,6 +43522,12 @@ const recettes = [
       "Versez le mélange sur la pâte sablée.",
       "Enfournez pendant 25 minutes jusqu'à ce que la tarte soit dorée.",
       "Laissez refroidir et décorez avec les fraises des bois avant de servir."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C. Foncer le moule.",
+      "Mettre les pistaches dans le bol, mixer <b>15 s / vitesse 8</b> en poudre.",
+      "Ajouter le sucre, la crème et les œufs, mélanger <b>20 s / vitesse 4</b>.",
+      "Verser sur la pâte, cuire comme dans la version classique et garnir de fraises des bois."
     ]
   },
   {
@@ -43026,6 +43610,12 @@ const recettes = [
       "À la sortie du four, étaler la stracciatella sur le fond de tarte, disposer les tagliatelles de courgette, les tranches de jambon, les pignons grillés et les feuilles de basilic.",
       "Arroser d'un filet d'huile d'olive et ajouter un peu de jus de citron restant si désiré.",
       "Parsemer d’herbes fraîches selon le goût et servir tiède ou froid."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C. Préparer et précuire la pâte comme dans la version classique.",
+      "Pignons : griller dans le bol <b>4 min / 120 °C / vitesse 1</b>. Réserver.",
+      "Stracciatella : mettre la mozzarella en morceaux dans le bol, effilocher <b>4 s / sens inverse / vitesse 4</b>, ajouter la crème, <b>5 s / sens inverse / vitesse 2</b>.",
+      "Garnir avec les tagliatelles de courgette (au couteau-économe), le jambon, les pignons, le zeste et le basilic."
     ]
   },
   {
@@ -43113,6 +43703,12 @@ const recettes = [
       "Concasser les cacahuètes et les parsemer sur le caramel.",
       "Monter la crème liquide en chantilly et l'étaler sur le dessus de la tarte.",
       "Réfrigérer la tarte pendant au moins 2 heures avant de servir."
+    ],
+    "mc": [
+      "Pâte sablée : mettre le beurre mou et le sucre glace dans le bol, mélanger <b>20 s / vitesse 4</b>. Ajouter le jaune, l'eau et la farine, pétrir <b>30 s / mode pétrin</b>. Foncer et cuire à blanc comme dans la version classique.",
+      "Caramel : caramel à sec à la casserole (le Monsieur Cuisine ne caramélise pas), décuire à la crème chaude et ajouter le beurre.",
+      "Chocolat : bol propre, <b>10 s / vitesse 7</b>, ajouter la crème prévue, <b>4 min / 50 °C / vitesse 2</b>.",
+      "Monter la tarte (caramel, cacahuètes, chocolat) comme dans la version classique."
     ]
   },
   {
@@ -43157,6 +43753,9 @@ const recettes = [
       "Recouvrir avec la pâte brisée en rentrant les bords à l'intérieur du moule.",
       "Enfourner 30 minutes jusqu'à ce que la pâte soit dorée.",
       "Laisser tiédir 5 minutes puis démouler délicatement en retournant sur un plat."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le caramel à sec et la cuisson des pommes se font dans le moule, au four, suivre la version classique (pâte brisée : fiche « Pâte brisée », version Monsieur Cuisine)."
     ]
   },
   {
@@ -43232,6 +43831,11 @@ const recettes = [
       "Badigeonner la pâte avec le jaune d'œuf.",
       "Enfourner la tarte pendant environ 30 minutes, jusqu'à ce qu'elle soit dorée.",
       "Servir chaud ou tiède avec des morceaux de mozzarella et de burrata, des pignons grillés et du basilic frais."
+    ],
+    "mc": [
+      "Mettre les échalotes dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile et le beurre, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le vinaigre balsamique et le miel, cuire <b>3 min / 100 °C / vitesse 1</b>, sans le gobelet.",
+      "Disposer dans le moule avec les tomates, recouvrir de pâte et cuire comme dans la version classique. Garnir de burrata et de basilic."
     ]
   },
   {
@@ -43303,6 +43907,10 @@ const recettes = [
       "Monter 250 ml de crème entière en chantilly.",
       "Ajouter le basilic ciselé, la ciboulette ciselée, le zeste de citron et le piment d'Espelette.",
       "Mélanger délicatement la chantilly avec les ingrédients ajoutés avant de servir."
+    ],
+    "mc": [
+      "Cuire les carottes au beurre, miel et balsamique dans la sauteuse, puis la tarte au four, comme dans la version classique.",
+      "Chantilly basilic-citron : mettre le basilic et la ciboulette dans le bol, hacher <b>3 s / vitesse 7</b>. Insérer le fouet, ajouter la crème bien froide, le zeste, sel et poivre, fouetter <b>vitesse 4</b> en surveillant."
     ]
   },
   {
@@ -43389,6 +43997,11 @@ const recettes = [
       "Couper 1 pomme en fines tranches puis la poêler avec 20 g de beurre et 20 g de cassonade pendant 2 à 3 min.",
       "Déposer la compotée dans les fonds, puis disposer les pommes en rosace.",
       "Ajouter une finition avec confiture d'abricot maison chauffée avec un peu d'eau puis badigeonner les tartelettes."
+    ],
+    "mc": [
+      "Pâte : mettre 150 g de beurre mou et le sucre glace dans le bol, mélanger <b>20 s / vitesse 4</b>. Ajouter 40 g de poudre d'amande et les œufs prévus, puis la farine et le sel, pétrir <b>30 s / mode pétrin</b>. Réfrigérer.",
+      "Crème d'amandes : bol rincé, mettre le reste du beurre, les sucres, le reste de poudre d'amande, l'œuf et la vanille, mélanger <b>20 s / vitesse 4</b>.",
+      "Foncer, garnir de crème et de pommes et cuire comme dans la version classique. Napper de confiture tiédie."
     ]
   },
   {
@@ -43432,6 +44045,9 @@ const recettes = [
       "Plier chaque tranche en deux pour former une demi-lune et appuyer fermement sur les bords.",
       "Cuire à l'air fryer à 180 °C pendant 5 minutes, ou au four à 200 °C pendant 7 à 8 minutes.",
       "Laisser refroidir légèrement avant de servir."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique."
     ]
   },
   {
@@ -43493,6 +44109,12 @@ const recettes = [
       "Dans un plat beurré, alterner pommes de terre et mélange lardons-oignons. Poivrer et napper de crème fraîche.",
       "Couper le reblochon en deux dans l’épaisseur et le poser sur le dessus, croûte vers le haut.",
       "Cuire 20 à 25 minutes, jusqu’à ce que le reblochon soit fondu et doré."
+    ],
+    "mc": [
+      "Mettre 500 ml d'eau dans le bol, les pommes de terre avec la peau dans le panier et l'accessoire vapeur. Cuire <b>30 min / 120 °C / vitesse 1</b>. Éplucher et couper en rondelles.",
+      "Bol vidé : mettre les oignons, émincer <b>4 s / vitesse 4</b>. Ajouter le beurre et les lardons, rissoler <b>8 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le vin blanc, <b>3 min / 100 °C / vitesse 1</b>, sans le gobelet.",
+      "Monter la tartiflette avec la crème et le reblochon, puis cuire au four comme dans la version classique."
     ]
   },
   {
@@ -43529,6 +44151,9 @@ const recettes = [
       "Dans un autre plat, mettre les tomates cerises sur un papier cuisson et assaisonner avec sel, poivre, herbes de Provence, huile d'olive.",
       "Mettre les tomates 20 à 30 mins au four à 180°C.",
       "Disposer les tomates confites et la feta rôtie sur une tranche de pain maison grillé."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : la feta et les tomates rôtissent au four, suivre la version classique."
     ]
   },
   {
@@ -43574,6 +44199,9 @@ const recettes = [
       "Ajouter des lanières de jambon de Parme déchirées sur la burrata.",
       "Disposer les tranches de pêches sur le jambon.",
       "Parsemer de feuilles de thym frais et terminer avec une pincée de sel et un filet de miel."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : tout s'assemble sur le pain grillé, suivre la version classique."
     ]
   },
   {
@@ -43671,6 +44299,10 @@ const recettes = [
       "Frire les lanières en petites quantités 4 à 5 minutes, jusqu'à ce qu'elles soient dorées et croustillantes.",
       "Égoutter sur du papier absorbant et garder au chaud pendant la cuisson du reste.",
       "Mélanger la sauce ranch avec le miel si désiré et servir les tenders chauds avec la sauce."
+    ],
+    "mc": [
+      "Panko maison si besoin : pain de mie sec dans le bol, <b>5 s / vitesse 6</b>.",
+      "Paner et frire les tenders comme dans la version classique."
     ]
   },
   {
@@ -43711,6 +44343,9 @@ const recettes = [
       "Remplir un verre haut de glaçons et verser la tequila et le jus d’orange. Mélanger.",
       "Verser doucement la grenadine : elle tombe au fond et crée le dégradé « lever de soleil ».",
       "Décorer d’une rondelle d’orange, sans mélanger."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : le dégradé se fait directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -43752,6 +44387,9 @@ const recettes = [
       "Mettre les sachets dans l’eau froide et laisser infuser 8 heures au réfrigérateur : l’infusion à froid donne un thé doux, sans amertume.",
       "Retirer les sachets, ajouter le jus du citron et le miel, puis mélanger.",
       "Servir sur des glaçons avec des feuilles de menthe et des rondelles de citron."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le thé infuse à froid au réfrigérateur, suivre la version classique."
     ]
   },
   {
@@ -43785,6 +44423,9 @@ const recettes = [
       "Mettre le sucre et presser le quartier de citron vert dans un petit verre.",
       "Mélanger avec une cuillère (le « bois lélé ») pour dissoudre le sucre.",
       "Ajouter le rhum, mélanger et servir sans glace, comme le veut la tradition."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -43851,6 +44492,12 @@ const recettes = [
           "Répéter l'opération : une couche de biscuits imbibés, une couche de crème, en terminant par la crème.",
           "Réfrigérer au moins 4 heures, idéalement toute une nuit.",
           "Juste avant de servir, saupoudrer généreusement de cacao amer en poudre à l'aide d'une passoire fine."
+        ],
+        "mc": [
+          "Préparer le café et le laisser refroidir.",
+          "Insérer le fouet. Mettre les blancs et le sel dans le bol propre et sec, fouetter <b>4 min / vitesse 4</b>. Réserver dans un saladier.",
+          "Sans rincer, mettre les jaunes et le sucre, fouetter <b>2 min / vitesse 4</b>. Ajouter le mascarpone, <b>30 s / vitesse 3</b>.",
+          "Retirer le fouet, incorporer les blancs à la spatule et monter le tiramisu avec les biscuits trempés. Saupoudrer de cacao."
         ]
       },
       {
@@ -43922,6 +44569,11 @@ const recettes = [
           "Étaler la crème à la pâte à tartiner, parsemer à nouveau de Kinder Bueno émietté.",
           "Réfrigérer au moins 4 heures, idéalement toute une nuit.",
           "Décorer avec des morceaux de Kinder Bueno juste avant de servir."
+        ],
+        "mc": [
+          "Insérer le fouet. Monter les blancs avec le sel <b>4 min / vitesse 4</b>. Réserver.",
+          "Sans rincer, fouetter les jaunes et le sucre <b>2 min / vitesse 4</b>. Ajouter le mascarpone, <b>30 s / vitesse 3</b>. Retirer le fouet et incorporer les blancs à la spatule.",
+          "Monter le tiramisu avec les biscuits trempés dans le lait, la pâte à tartiner et les Kinder Bueno émiettés."
         ]
       },
       {
@@ -43982,6 +44634,11 @@ const recettes = [
           "Répéter l'opération en alternant spéculoos imbibés et crème, en terminant par la crème.",
           "Réfrigérer au moins 4 heures, idéalement toute une nuit.",
           "Parsemer de spéculoos émiettés juste avant de servir."
+        ],
+        "mc": [
+          "Insérer le fouet. Monter les blancs avec le sel <b>4 min / vitesse 4</b>. Réserver.",
+          "Sans rincer, fouetter les jaunes et le sucre <b>2 min / vitesse 4</b>. Ajouter le mascarpone et la pâte à tartiner, <b>30 s / vitesse 3</b>. Retirer le fouet et incorporer les blancs à la spatule.",
+          "Monter le tiramisu avec les spéculoos trempés dans le lait et décorer."
         ]
       },
       {
@@ -44036,6 +44693,11 @@ const recettes = [
           "Incorporer délicatement les blancs d'œufs en neige au mélange de mascarpone.",
           "Dans un plat, alterner des couches de crème et de Shokobons.",
           "Réfrigérer pendant au moins 4 heures, idéalement une nuit avant de servir."
+        ],
+        "mc": [
+          "Insérer le fouet. Monter les blancs avec le sel <b>4 min / vitesse 4</b>. Réserver.",
+          "Sans rincer, fouetter les jaunes et le sucre <b>2 min / vitesse 4</b>. Ajouter le mascarpone et la pâte à tartiner, <b>30 s / vitesse 3</b>.",
+          "Retirer le fouet, incorporer les blancs à la spatule et monter avec les Shokobons."
         ]
       },
       {
@@ -44081,6 +44743,11 @@ const recettes = [
           "Dans une coupe ou un plat à tiramisu, déposer une couche de crème, puis réaliser une seconde couche avec le reste.",
           "Parsemer de morceaux de Kinder Bueno White pour une texture croquante.",
           "Conserver au réfrigérateur au moins 2 heures avant de déguster."
+        ],
+        "mc": [
+          "Insérer le fouet. Mettre le mascarpone bien froid, les œufs, le sucre et le sel dans le bol. Fouetter <b>1 min / vitesse 4</b>.",
+          "Ajouter la Nocciolata bianca, <b>10 s / vitesse 3</b>.",
+          "Monter dans les verrines avec les Kinder Bueno White."
         ]
       }
     ]
@@ -44180,6 +44847,10 @@ const recettes = [
       "Sur un plat, disposer une couche de biscuits apéritif, puis étaler une couche de mélange de mascarpone.",
       "Alterner les couches de tomates et de mascarpone jusqu'à épuisement des ingrédients, puis terminer par une couche de stracciatella.",
       "Décorer le dessus avec quelques olives et un filet de crème de balsamique avant de servir."
+    ],
+    "mc": [
+      "Insérer le fouet. Mettre le mascarpone, la crème bien froide, les épices, sel et poivre dans le bol. Fouetter <b>vitesse 4</b> en surveillant.",
+      "Monter le tiramisu salé avec les tomates assaisonnées comme dans la version classique."
     ]
   },
   {
@@ -44221,6 +44892,11 @@ const recettes = [
       "Mélanger le fromage frais avec le zeste du citron, un peu d’aneth ciselé et du poivre.",
       "Tartiner les toasts.",
       "Ajouter une lanière de saumon fumé roulée en rose, une goutte de jus de citron et un brin d’aneth."
+    ],
+    "mc": [
+      "Mettre l'aneth dans le bol, hacher <b>3 s / vitesse 7</b>.",
+      "Ajouter le fromage frais, le zeste de citron et le poivre. Mélanger <b>10 s / vitesse 3</b>.",
+      "Tartiner les toasts et garnir de saumon."
     ]
   },
   {
@@ -44299,6 +44975,9 @@ const recettes = [
       "Faire sauter les légumes coupés finement dans le reste d’huile 5 minutes, avec l’ail et le gingembre.",
       "Ajouter la sauce soja, le miel et le tofu, mélanger 1 minute pour laquer.",
       "Parsemer de sésame et servir avec du riz."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le tofu et les légumes se font sauter à la poêle très chaude, suivre la version classique."
     ]
   },
   {
@@ -44363,6 +45042,12 @@ const recettes = [
       "Préchauffer le four à 180°C. Ajouter la chapelure à la farce pour la lier légèrement.",
       "Garnir les tomates évidées avec la farce, parsemer de fromage râpé, puis les disposer dans un plat allant au four.",
       "Enfourner 25 à 30 minutes, jusqu'à ce que les tomates soient tendres et le dessus gratiné."
+    ],
+    "mc": [
+      "Préchauffer le four comme dans la version classique. Évider les tomates en gardant la pulpe.",
+      "Mettre l'oignon, l'ail et le persil dans le bol, hacher <b>5 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le steak haché, la chapelure, sel et poivre. Mélanger <b>15 s / sens inverse / vitesse 3</b>.",
+      "Farcir les tomates, parsemer de fromage et cuire au four."
     ]
   },
   {
@@ -44404,6 +45089,9 @@ const recettes = [
       "Trancher les tomates et la mozzarella en rondelles.",
       "Les disposer en alternance sur un plat avec les feuilles de basilic.",
       "Arroser d’huile d’olive et de crème de balsamique, puis assaisonner de fleur de sel et de poivre."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : tout s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -44450,6 +45138,11 @@ const recettes = [
           "Fariner le plan de travail et étaler chaque boule très finement.",
           "Cuire à feu vif dans une poêle chaude, moins d'1 minute de chaque côté, dès qu'une légère coloration apparaît.",
           "Empiler les tortillas sous un torchon pour qu'elles restent souples. Elles se congèlent très bien."
+        ],
+        "mc": [
+          "Mettre la farine, le sel, l'eau tiède et l'huile dans le bol.",
+          "Pétrir <b>3 min / mode pétrin</b>.",
+          "Laisser reposer, étaler et cuire à la poêle comme dans la version classique."
         ]
       },
       {
@@ -44482,6 +45175,11 @@ const recettes = [
           "Quand la pâte est prête, la diviser en 4 ou 6 parts égales puis les étaler à l'aide d'un rouleau.",
           "Chauffer une poêle légèrement huilée sur feu moyen-fort puis y déposer les pains.",
           "Après 1 à 2 min, retourner les pains plats, laisser bien gonfler et dorer."
+        ],
+        "mc": [
+          "Mettre la farine, le sel et le yaourt dans le bol.",
+          "Pétrir <b>1 min / mode pétrin</b>.",
+          "Étaler et cuire à la poêle comme dans la version classique."
         ]
       }
     ]
@@ -44510,6 +45208,10 @@ const recettes = [
       "Écraser chaque tronçon avec le fond d’un verre pour former une galette de 1 cm.",
       "Les frire une seconde fois 2 à 3 minutes à 180 °C jusqu’à ce qu’ils soient croustillants.",
       "Saler aussitôt et servir avec la sauce à l’ail."
+    ],
+    "mc": [
+      "Frire, écraser et refrire les tostones comme dans la version classique.",
+      "Sauce à l'ail : mettre l'ail dans le bol, hacher <b>3 s / vitesse 7</b>. Ajouter la mayonnaise et le jus de citron vert, <b>10 s / vitesse 3</b>."
     ]
   },
   {
@@ -44550,6 +45252,11 @@ const recettes = [
       "Laisser prendre au réfrigérateur au moins 3 heures.",
       "Prélever des petites portions à la cuillère, les rouler rapidement entre les mains.",
       "Les rouler dans le cacao et conserver au frais dans une boîte."
+    ],
+    "mc": [
+      "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>.",
+      "Ajouter la crème et faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter le beurre, <b>20 s / vitesse 3</b>.",
+      "Laisser prendre au réfrigérateur au moins 3 heures, puis former les truffes et les rouler dans le cacao."
     ]
   },
   {
@@ -44606,6 +45313,12 @@ const recettes = [
       "Cuire au four environ 10 min en surveillant de près. Le biscuit doit rester blond.",
       "Aussitôt cuits, décoller les disques de pâte à l'aide d'une spatule et mouler sur le fond d'un bol arrondi très rapidement.",
       "Garnir les tulipes de crème de marron puis de chantilly maison."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Mettre le beurre ramolli et les sucres dans le bol, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine puis les blancs, <b>20 s / vitesse 4</b>.",
+      "Étaler, cuire et mouler les tulipes comme dans la version classique.",
+      "Chantilly : bol propre et froid, fouet, crème bien froide, <b>vitesse 4</b> en surveillant. Garnir de crème de marron et de chantilly."
     ]
   },
   {
@@ -44666,6 +45379,12 @@ const recettes = [
       "Faire fondre le chocolat noir puis tremper chaque barre dans le chocolat fondu pour les enrober complètement.",
       "Ajouter une pincée de fleur de sel si vous aimez le mélange sucré-salé.",
       "Placer les barres sur une plaque et laisser prendre au réfrigérateur pendant environ 1 heure avant dégustation."
+    ],
+    "mc": [
+      "Flocons d'avoine en farine si besoin : <b>15 s / vitesse 9</b>.",
+      "Ajouter le beurre de cacahuète, le skyr et le miel, mélanger <b>20 s / vitesse 4</b>. Ajouter les pépites, <b>10 s / sens inverse / vitesse 2</b>.",
+      "Former les barres et congeler un peu.",
+      "Enrobage : chocolat <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>. Tremper les barres et parsemer de fleur de sel."
     ]
   },
   {
@@ -44705,6 +45424,11 @@ const recettes = [
       "Essorer le concombre pour faire sortir l'eau.",
       "Dans un bol, mélanger le concombre, le yaourt grec, l'ail écrasé, l'aneth ciselé, le jus de citron, du sel et du poivre.",
       "Arroser d'un filet d'huile d'olive avant de servir (délicieux avec du pain maison)."
+    ],
+    "mc": [
+      "Mettre l'ail et l'aneth dans le bol, hacher <b>3 s / vitesse 7</b>.",
+      "Ajouter le concombre en tronçons, râper <b>4 s / vitesse 5</b>. Presser dans un torchon pour retirer l'eau.",
+      "Remettre dans le bol avec le yaourt, le jus de citron, sel, poivre et un filet d'huile. Mélanger <b>10 s / sens inverse / vitesse 3</b>."
     ]
   },
   {
@@ -44759,6 +45483,12 @@ const recettes = [
       "Ajouter la pomme de terre en dés et le bouillon. Laisser mijoter 20 minutes.",
       "Mixer finement, ajouter la crème et rectifier l’assaisonnement.",
       "Servir avec un peu de persil ciselé."
+    ],
+    "mc": [
+      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le beurre, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les champignons en morceaux, cuire <b>5 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la pomme de terre en dés et le bouillon. Cuire <b>20 min / 100 °C / vitesse 1</b>.",
+      "Ajouter la crème, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement. Parsemer de persil."
     ]
   },
   {
@@ -44819,6 +45549,12 @@ const recettes = [
       "Couvrir de bouillon et cuire 25 minutes.",
       "Mixer avec la crème, assaisonner de sel, de poivre et de muscade.",
       "Servir avec le reste des châtaignes émiettées et grillées à la poêle."
+    ],
+    "mc": [
+      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter le beurre, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le potimarron en cubes, les trois quarts des châtaignes et le bouillon (sans dépasser le repère maxi). Cuire <b>25 min / 100 °C / vitesse 1</b>.",
+      "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement.",
+      "Servir avec le reste des châtaignes émiettées."
     ]
   },
   {
@@ -44876,6 +45612,11 @@ const recettes = [
       "Mixer finement jusqu'à obtenir une texture veloutée.",
       "Ajouter la crème liquide, assaisonner de sel, poivre et muscade.",
       "Réchauffer doucement avant de servir."
+    ],
+    "mc": [
+      "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le potiron et la pomme de terre en cubes et le bouillon. Cuire <b>25 min / 100 °C / vitesse 1</b>.",
+      "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement."
     ]
   },
   {
@@ -44924,6 +45665,10 @@ const recettes = [
       "Peler le pamplemousse à vif et détacher les suprêmes.",
       "Dans les verrines, alterner avocat, fromage frais et suprêmes de pamplemousse.",
       "Terminer par les crevettes et un brin d’aneth. Servir frais."
+    ],
+    "mc": [
+      "Mettre la chair des avocats, le jus du citron vert, sel et poivre dans le bol. Écraser <b>10 s / vitesse 4</b>.",
+      "Monter les verrines avec le fromage frais, les suprêmes de pamplemousse, les crevettes et l'aneth."
     ]
   },
   {
@@ -44978,6 +45723,11 @@ const recettes = [
       "Monter la crème chantilly maison et l'ajouter délicatement sur la base solidifiée.",
       "Saupoudrer le dessus avec le cacao en poudre, quelques copeaux de chocolat et des grains de cacao croustillants.",
       "Entreposer au frais pendant 5 à 10 minutes avant de servir."
+    ],
+    "mc": [
+      "Mettre les Kinder Country en morceaux et le beurre dans le bol. Faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+      "Répartir dans les ramequins et laisser prendre au frais.",
+      "Chantilly : bol propre et froid, fouet, crème bien froide, <b>vitesse 4</b> en surveillant. Garnir et décorer."
     ]
   },
   {
@@ -45030,6 +45780,11 @@ const recettes = [
       "Couper les fraises en morceaux et émietter les biscuits.",
       "Dans des verrines, alterner biscuits, crème et fraises.",
       "Réserver au frais jusqu’au service."
+    ],
+    "mc": [
+      "Mettre le bol et le fouet au froid. Insérer le fouet.",
+      "Mettre le mascarpone, la crème froide, le sucre glace et la vanille dans le bol. Fouetter <b>vitesse 4</b> en surveillant jusqu'à une chantilly ferme.",
+      "Monter les verrines avec les biscuits émiettés et les fraises."
     ]
   },
   {
@@ -45087,6 +45842,11 @@ const recettes = [
       "Verser le vin dans une casserole avec le sucre, l’orange coupée en rondelles et les épices.",
       "Faire chauffer à feu doux 15 minutes sans jamais laisser bouillir.",
       "Filtrer et servir bien chaud dans des tasses."
+    ],
+    "mc": [
+      "Mettre le vin, le sucre, l'orange en rondelles et les épices dans le bol.",
+      "Chauffer <b>15 min / 80 °C / vitesse 1</b> (sans jamais bouillir).",
+      "Filtrer et servir bien chaud."
     ]
   },
   {
@@ -45134,6 +45894,10 @@ const recettes = [
       "Ajouter l'huile d'olive petit à petit en fouettant (ou en secouant le pot fermé) jusqu'à ce que la vinaigrette soit bien émulsionnée.",
       "Goûter et rectifier l'assaisonnement si besoin.",
       "Se conserve quelques jours au réfrigérateur ; secouer à nouveau avant chaque utilisation."
+    ],
+    "mc": [
+      "Mettre la moutarde, le vinaigre, le sel et le poivre dans le bol.",
+      "Mélanger <b>30 s / vitesse 4</b> en versant l'huile sur le couvercle (elle s'écoule doucement par l'ouverture)."
     ]
   },
   {
@@ -45174,6 +45938,11 @@ const recettes = [
       "Secouer tous les ingrédients au shaker sans glace 10 secondes (pour faire mousser le blanc).",
       "Ajouter des glaçons et secouer à nouveau.",
       "Filtrer dans un verre bas sur un gros glaçon et décorer d’un zeste de citron."
+    ],
+    "mc": [
+      "Mettre le bourbon, le jus de citron, le sirop et le blanc d'œuf dans le bol. Mixer <b>15 s / vitesse 6</b> pour faire mousser.",
+      "Ajouter 4 glaçons et mélanger <b>5 s / vitesse 4</b>.",
+      "Filtrer dans un verre bas sur un gros glaçon."
     ]
   },
   {
@@ -45208,6 +45977,9 @@ const recettes = [
       "Verser la vodka et la liqueur de café dans un verre bas rempli de glaçons.",
       "Faire couler doucement la crème sur le dessus.",
       "Servir tel quel ou mélanger légèrement."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -45304,6 +46076,12 @@ const recettes = [
           "Ajouter le sucre glace et la vanille. Mélanger jusqu'à ce que le mélange soit homogène.",
           "Laisser refroidir (pas trop sinon ce sera dur).",
           "Étaler la crème entre 2 biscuits de même taille refroidis."
+        ],
+        "mc": [
+          "Préchauffer le four à 175 °C.",
+          "Mettre la farine, la levure, le sel, le cacao et le sucre dans le bol. Ajouter l'œuf, l'huile et le lait. Mélanger <b>30 s / vitesse 4</b>.",
+          "Pocher et cuire comme dans la version classique.",
+          "Crème guimauve : bol rincé, mettre le beurre et les guimauves, faire fondre <b>3 min / 60 °C / vitesse 2</b>. Laisser tiédir, ajouter le sucre glace et un peu de lait, <b>30 s / vitesse 4</b>. Garnir les whoopies."
         ]
       },
       {
@@ -45376,6 +46154,12 @@ const recettes = [
           "Couvrir aussitôt chaque Chamallow avec un second disque et appuyer doucement pour l'étaler jusqu'aux bords.",
           "Laisser refroidir pour que le Chamallow se fige un peu avant de déguster.",
           "Astuce : des disques bien réguliers s'emboîtent mieux (poche à douille ou cuillère à glace). Se conservent 2 jours dans une boîte hermétique."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre le beurre mou et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter l'œuf, <b>10 s / vitesse 4</b>.",
+          "Ajouter la farine, le cacao, la levure, le sel et le lait, mélanger <b>20 s / vitesse 4</b>.",
+          "Pocher, cuire, puis garnir de Chamallow fondu comme dans la version classique."
         ]
       }
     ]
@@ -45418,6 +46202,10 @@ const recettes = [
       "Secouer la vodka, la liqueur de pêche et le jus de cranberry au shaker avec des glaçons.",
       "Verser dans un verre haut rempli de glaçons.",
       "Décorer d’un quartier de citron vert."
+    ],
+    "mc": [
+      "Mettre la vodka, la liqueur de pêche, le jus de cranberry et 4 glaçons dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
+      "Verser dans un verre haut rempli de glaçons et décorer de citron vert."
     ]
   },
   {
@@ -45472,6 +46260,10 @@ const recettes = [
       "Tartiner les tortillas de fromage frais.",
       "Garnir de salade, de poulet, de tomate, d’avocat et de fromage. Saler et poivrer.",
       "Replier le bas, puis rouler serré. Couper en deux en biais."
+    ],
+    "mc": [
+      "Poulet cuit si besoin : 500 ml d'eau dans le bol, blanc dans l'accessoire vapeur, <b>20 min / 120 °C / vitesse 1</b>.",
+      "Garnir et rouler les wraps comme dans la version classique."
     ]
   },
   {
@@ -45559,6 +46351,11 @@ const recettes = [
       "Rabattre les deux côtés de la tortilla vers le centre, puis replier le haut vers le bas pour bien fermer le wrap.",
       "Cuire le wrap à la poêle avec un filet d'huile d'olive 2 à 3 minutes de chaque côté, jusqu'à ce que la tortilla soit dorée et le fromage fondu.",
       "Couper en deux et déguster chaud."
+    ],
+    "mc": [
+      "Mettre 500 ml d'eau dans le bol, les pommes de terre en fines lamelles dans le panier. Cuire <b>12 min / 100 °C / vitesse 1</b>.",
+      "Vider l'eau. Mettre les lardons dans le bol, rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+      "Garnir la tortilla et la dorer à la poêle comme dans la version classique."
     ]
   },
   {
@@ -45591,6 +46388,11 @@ const recettes = [
     "etapes": [
       "Mettre les fruits rouges encore congelés, le yaourt et le miel dans un mixeur.",
       "Mixer par à-coups jusqu’à obtenir une texture de glace.",
+      "Servir aussitôt."
+    ],
+    "mc": [
+      "Mettre les fruits rouges congelés, le yaourt et le miel dans le bol.",
+      "Mixer <b>30 s / vitesse 9</b>, racler les parois, puis <b>15 s / vitesse 6</b>.",
       "Servir aussitôt."
     ]
   },
@@ -45627,6 +46429,11 @@ const recettes = [
       "Répartir dans 8 pots.",
       "Faire fermenter 8 à 10 heures en yaourtière (ou au four éteint, lampe allumée, à environ 40 °C).",
       "Fermer les pots et réfrigérer au moins 4 heures. Garder un yaourt pour la prochaine fournée."
+    ],
+    "mc": [
+      "Mettre le lait, le yaourt et le lait en poudre dans le bol. Chauffer <b>8 min / 40 °C / vitesse 2</b>.",
+      "Répartir dans les pots.",
+      "Faire fermenter 8 à 10 heures au chaud (yaourtière, four éteint lumière allumée), puis réfrigérer comme dans la version classique."
     ]
   }
 ];
