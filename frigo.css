@@ -56,3 +56,29 @@
 .frigo-kept li small { display: block; color: var(--muted); font-size: 0.75rem; }
 .frigo-kept li button { border: none; background: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; }
 .frigo-plan { width: 100%; padding: 0.85rem !important; margin-bottom: 0.5rem; }
+
+/* ── Aliments avec quantités ── */
+.frigo-add--qty { display: grid; grid-template-columns: 1fr 5.5rem 7.5rem auto; gap: 0.45rem; }
+.frigo-add--qty input, .frigo-add--qty select {
+  min-width: 0; padding: 0.7rem 0.8rem; border: 1.5px solid var(--border); border-radius: 12px;
+  font: inherit; font-size: 16px; background: var(--warm-white); color: var(--text);
+}
+.frigo-add--qty input:focus, .frigo-add--qty select:focus { outline: none; border-color: var(--caramel); }
+.frigo-tip { margin: 0.5rem 0 0; }
+.frigo-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.45rem; margin-top: 0.9rem; }
+.frigo-item { display: flex; align-items: stretch; background: var(--warm-white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.frigo-item-main { flex: 1; min-width: 0; display: flex; justify-content: space-between; align-items: center; gap: 0.5rem;
+  border: none; background: none; padding: 0.55rem 0.4rem 0.55rem 0.8rem; font: inherit; color: var(--espresso); cursor: pointer; text-align: left; }
+.frigo-item-main span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; font-size: 0.9rem; }
+.frigo-item-main b { flex: none; font-weight: 600; font-size: 0.82rem; color: var(--caramel); }
+.frigo-item-main i { font-style: normal; font-weight: 400; color: var(--muted); }
+.frigo-item-rm { border: none; background: none; color: var(--muted); padding: 0 0.7rem; cursor: pointer; }
+.frigo-item--used { background: #EEF4E8; border-color: rgba(63,107,46,.25); }
+.frigo-item--used .frigo-item-main span { text-decoration: line-through; color: #3F6B2E; }
+.frigo-item--edit { border-color: var(--caramel); box-shadow: 0 0 0 3px rgba(184,115,58,.15); }
+.fchip--short { background: #FBE9DF; color: #9A4A2A; }
+@media (max-width: 560px) {
+  .frigo-add--qty { grid-template-columns: 1fr 4.6rem; }
+  .frigo-add--qty select { grid-column: 1; }
+  .frigo-add--qty button { grid-column: 2; }
+}
