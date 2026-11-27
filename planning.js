@@ -191,7 +191,7 @@
           if (!r) return `<div class="plan-recipe plan-recipe--gone"><div class="plan-recipe-name">Recette supprimée</div><button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button></div>`;
           const v = variantOf(r, x.v);
           return `<div class="plan-recipe">
-            <img class="plan-thumb" src="${esc(r.photo || SITE_PHOTO)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${SITE_PHOTO}';">
+            ${window.RecipeVisual ? RecipeVisual.thumbHtml(r, 'plan-thumb') : `<img class="plan-thumb" src="${esc(r.photo || SITE_PHOTO)}" alt="">`}
             <div class="plan-recipe-name" data-open="${esc(x.rid)}" data-v="${x.v || 0}" data-p="${x.p}">${esc(r.titre)}${v.nom ? ` <em>(${esc(v.nom)})</em>` : ''}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(v.temps))}</small></div>
             <div class="plan-stepper"><button data-pp="${k}" data-j="${j}" data-d="-1" aria-label="Moins de personnes">−</button><b>${x.p}<span> pers.</span></b><button data-pp="${k}" data-j="${j}" data-d="1" aria-label="Plus de personnes">+</button></div>
             <button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button>
@@ -490,7 +490,7 @@
       list.innerHTML = shown.map(r => {
         const on = picked.includes(ridOf(r));
         return `<button class="plan-pick${on ? ' on' : ''}" data-rid="${esc(ridOf(r))}" aria-pressed="${on}">
-          <img src="${esc(r.photo || SITE_PHOTO)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${SITE_PHOTO}';">
+          ${window.RecipeVisual ? RecipeVisual.thumbHtml(r, 'pick-thumb') : ''}
           <span>${esc(r.titre)}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(previewVariant(r).temps))} · ${esc(previewVariant(r).personnes)} pers.</small></span><b>${on ? '✓' : '+'}</b></button>`;
       }).join('')
         + (res.length > shown.length ? `<div class="plan-empty plan-empty--sm">${res.length - shown.length} autres recettes : affine ta recherche.</div>` : '')

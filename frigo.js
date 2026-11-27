@@ -162,7 +162,7 @@
     const r = c.r, v = c.v;
     const ia = c.kind === 'ia';
     return `<div class="frigo-card${ia ? ' frigo-card--ia' : ''}">
-      <div class="frigo-card-photo"><img src="${esc(r.photo || SITE_PHOTO)}" alt="" onerror="this.onerror=null;this.src='${SITE_PHOTO}';">
+      <div class="frigo-card-photo" style="background:${window.RecipeVisual ? RecipeVisual.tint(r) : ''}">${window.RecipeVisual ? RecipeVisual.plateHtml(r, 'frigo-plate') : ''}
         ${ia ? '<span class="frigo-ia-badge">✨ Recette inventée</span>' : ''}</div>
       <div class="frigo-card-body">
         <div class="card-cat">${esc(catLabels[r.cat] || '')}${v.nom ? ' · ' + esc(v.nom) : ''}</div>

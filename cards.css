@@ -1,0 +1,109 @@
+/* ════════════════════════════════════════════════════════════════════════
+   cards.css — cartes de recettes façon croquis : le texte à gauche,
+   la photo (ou l'illustration) dans une assiette qui déborde en haut à
+   droite, les ingrédients en dessous. Voir visuals.js.
+   ════════════════════════════════════════════════════════════════════════ */
+
+/* ── Assiette ── */
+.plate {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 0;
+  display: grid; place-items: center;
+  background:
+    radial-gradient(circle at 32% 26%, #ffffff 0%, #f7f5f2 38%, #e9e5df 72%, #d9d3cb 100%);
+  box-shadow: 0 12px 26px rgba(62, 36, 20, 0.22), 0 2px 4px rgba(62, 36, 20, 0.10), inset 0 -5px 10px rgba(0, 0, 0, 0.06);
+}
+.plate-in {
+  width: 84%; height: 84%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid; place-items: center;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.18), inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+.plate-in img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vis-emo { line-height: 1; filter: drop-shadow(0 4px 5px rgba(62, 36, 20, 0.22)); user-select: none; }
+.plate .vis-emo { font-size: 4.6rem; }
+
+/* Petites vignettes (planning, choix de recettes) */
+.vis-thumb { border-radius: 10px; overflow: hidden; display: grid; place-items: center; flex-shrink: 0; }
+.vis-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vis-thumb .vis-emo { font-size: 1.6rem; }
+.plan-thumb.vis-thumb { width: 48px; height: 48px; }
+.pick-thumb.vis-thumb { width: 46px; height: 46px; border-radius: 8px; }
+
+/* ── Grille ── */
+.grid {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  gap: 3rem 1.6rem !important;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)) !important;
+  padding-top: 2.2rem;
+}
+
+/* ── Carte ── */
+.recipe-card {
+  position: relative;
+  background: #fff !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 6px 22px rgba(62, 36, 20, 0.08) !important;
+  overflow: visible !important;
+  min-height: 0;
+}
+.recipe-card:hover { transform: translateY(-3px) !important; box-shadow: 0 14px 32px rgba(62, 36, 20, 0.14) !important; background: #fff !important; }
+.recipe-card .card-photo { display: none; }
+
+.card-plate {
+  position: absolute;
+  top: -2.2rem; right: -0.9rem;
+  width: 46%; max-width: 190px;
+  z-index: 2;
+  transition: transform 0.25s ease;
+}
+.recipe-card:hover .card-plate { transform: rotate(-6deg) scale(1.03); }
+
+.recipe-card .card-body { padding: 1.3rem 1.3rem 1.3rem !important; display: flex; flex-direction: column; flex: 1; }
+.card-top { padding-right: calc(46% - 0.4rem); min-height: 9.5rem; }
+.card-title { font-size: 1.15rem !important; line-height: 1.25 !important; margin: 0.15rem 0 0.4rem !important; }
+.card-meta { flex-wrap: wrap; gap: 0.3rem 0.9rem !important; }
+
+/* « Texte ou autre » du croquis : nombre d'ingrédients + Monsieur Cuisine */
+.card-hook { margin-top: 0.8rem; line-height: 1.2; }
+.card-hook b {
+  display: block;
+  font-family: 'Playfair Display', serif; font-weight: 800;
+  font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.02em;
+  color: var(--espresso);
+}
+.card-hook span { display: inline-block; margin-top: 0.35rem; font-size: 0.72rem; color: var(--caramel); font-weight: 500; }
+
+.recipe-card .card-ingredients { margin-top: 1rem !important; display: flex !important; flex-wrap: wrap; gap: 0.35rem; }
+
+/* ── Fiche recette sans photo : grande assiette ── */
+.modal-photo-wrap--illu #modal-photo-placeholder { display: flex !important; align-items: center; justify-content: center; }
+.modal-plate { width: 200px; }
+.modal-plate .vis-emo { font-size: 5.5rem; }
+
+/* ── Frigo ── */
+.frigo-card-photo { display: flex; align-items: center; justify-content: center; }
+.frigo-plate { width: 46%; max-width: 200px; }
+
+/* ── Téléphone : une carte par ligne, assiette à droite ── */
+@media (max-width: 780px) {
+  .grid { grid-template-columns: 1fr !important; gap: 2.2rem !important; padding-top: 1.6rem; }
+  .recipe-card { border-radius: 18px !important; }
+  .card-plate { width: 128px; top: -1.4rem; right: -0.4rem; }
+  .plate .vis-emo { font-size: 3.7rem; }
+  .recipe-card .card-body { padding: 1rem 1rem 1rem !important; }
+  .card-top { padding-right: 128px; min-height: 7.4rem; }
+  .card-title { font-size: 1.05rem !important; -webkit-line-clamp: 3; }
+  .card-meta span:nth-child(2) { display: inline !important; }
+  .card-hook b { font-size: 0.95rem; }
+  .recipe-card .card-ingredients { display: flex !important; margin-top: 0.7rem !important; }
+  .recipe-card .card-ingredients .ing-pill:nth-child(n+4):not(:last-child) { display: none; }
+  .modal-plate { width: 160px; }
+  .modal-plate .vis-emo { font-size: 4.4rem; }
+}
