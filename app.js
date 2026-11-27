@@ -520,6 +520,11 @@ function renderSteps() {
     note.hidden = false;
   }
   document.getElementById('modal-steps').innerHTML = steps.map(e => `<li><div>${e}</div></li>`).join('');
+  // Boutons minuteur sur les étapes qui donnent une durée (voir timers.js)
+  if (window.Timers) Timers.decorateSteps(document.getElementById('modal-steps'), () => {
+    const r = allRecettes[currentRecetteIdx], vv = currentVariant();
+    return r ? r.titre + (vv && vv.nom ? ' (' + vv.nom + ')' : '') : '';
+  });
 }
 
 document.querySelectorAll('.mode-switch button').forEach(b => b.addEventListener('click', () => {
