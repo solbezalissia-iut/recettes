@@ -65,6 +65,45 @@ service cloud.firestore {
 
     // Liste des recettes d'origine (du fichier recettes-data.js) qu'Alissia a
     // choisi de masquer ou de remplacer. Réservé à Alissia.
+    // Plannings partagés : séparés du planning perso, chacun avec sa semaine,
+    // ses courses, son frigo et un nom. members = adresses e-mail (minuscules)
+    // des personnes qui le voient, la créatrice comprise.
+    match /shared_plannings/{planId} {
+      function myEmail() {
+        return request.auth.token.email.lower();
+      }
+      function signedIn() {
+        return request.auth != null
+               && request.auth.token.email != null
+               && request.auth.token.email_verified == true;
+      }
+      function isCreator() {
+        return request.auth != null && resource.data.ownerUid == request.auth.uid;
+      }
+      function isMember() {
+        return signedIn() && myEmail() in resource.data.members;
+      }
+
+      allow read: if isCreator() || isMember();
+
+      // On crée un planning partagé à son nom, en étant dans la liste des personnes.
+      allow create: if signedIn()
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && myEmail() in request.resource.data.members;
+
+      // La créatrice modifie tout (nom, personnes…). Les autres modifient la semaine,
+      // les courses, le frigo et le nom, ou se retirent eux-mêmes.
+      allow update: if isCreator()
+                    || (isMember()
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['weeks', 'frigo', 'updatedAt', 'name']))
+                    || (isMember()
+                        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['members'])
+                        && request.resource.data.members == resource.data.members.removeAll([myEmail()]));
+
+      // Seule la créatrice peut le supprimer.
+      allow delete: if isCreator();
+    }
+
     match /hidden_static_recipes/{staticId} {
       allow read: if true;
       allow write: if isAdmin();
