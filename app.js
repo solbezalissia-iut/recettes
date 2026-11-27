@@ -489,7 +489,7 @@ function canDeleteRecipe(r) {
   return !r._isStatic && r._ownerId === currentUser.uid;
 }
 function canEditRecipe(r) {
-  return canDeleteRecipe(r) && !r.variantes;
+  return canDeleteRecipe(r);
 }
 
 function updateModalPermissions() {
@@ -884,6 +884,8 @@ function closeAddModal() {
   document.getElementById('add-modal-title').textContent = 'Ajouter une recette';
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   document.getElementById('new-photo-label').textContent = 'Photo (optionnelle)';
+  editingVariants = null; editingSource = null;
+  document.getElementById('variant-pick-field').style.display = 'none';
   updateRecropButton();
 }
 
@@ -942,6 +944,34 @@ document.getElementById('new-photo-paste').addEventListener('click', async () =>
   if (ev === 'drop') useImageFile([...e.dataTransfer.files].find(f => /^image\//.test(f.type)));
 }));
 
+// ── Recettes à plusieurs versions : une version à la fois dans le formulaire ──
+let editingVariants = null, editingVariantIdx = 0, editingSource = null;
+function escapeHtml(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+function loadVariantInForm(i) {
+  const v = editingVariants[i]; editingVariantIdx = i;
+  document.getElementById('variant-pick').value = String(i);
+  document.getElementById('new-temps').value = v.temps || '';
+  document.getElementById('new-personnes').value = v.personnes || '';
+  v._ingText = (v.ingredients || []).map(ingLabel).join('\n');
+  v._etText = (v.etapes || []).join('\n');
+  document.getElementById('new-ingredients').value = v._ingText;
+  document.getElementById('new-etapes').value = v._etText;
+}
+function saveVariantFromForm() {
+  if (!editingVariants) return;
+  const v = editingVariants[editingVariantIdx];
+  v.temps = document.getElementById('new-temps').value.trim();
+  const p = document.getElementById('new-personnes').value.trim(); v.personnes = isNaN(+p) || p === '' ? p : +p;
+  const ing = document.getElementById('new-ingredients').value, et = document.getElementById('new-etapes').value;
+  if (ing !== v._ingText) v.ingredients = ing.split('\n').map(l => l.trim()).filter(Boolean).map(parseIngredientLine);
+  if (et !== v._etText) v.etapes = et.split('\n').map(l => l.trim()).filter(Boolean);
+  v._ingText = ing; v._etText = et;
+}
+document.getElementById('variant-pick').addEventListener('change', e => {
+  saveVariantFromForm();
+  loadVariantInForm(+e.target.value);
+});
+
 // ── Modifier une recette existante ──
 // (son auteur, ou Alissia qui peut tout modifier, y compris les recettes d'origine)
 document.getElementById('modal-edit').addEventListener('click', () => {
@@ -949,9 +979,7 @@ document.getElementById('modal-edit').addEventListener('click', () => {
   const r = allRecettes[currentRecetteIdx];
 
   if (!canEditRecipe(r)) {
-    if (r.variantes) {
-      alert("La modification n'est pas encore prise en charge pour les recettes à plusieurs versions.");
-    } else if (r._isStatic) {
+    if (r._isStatic) {
       alert("Cette recette fait partie des recettes d'origine du site : elle ne peut pas être modifiée depuis ici.");
     } else {
       alert("Seule la personne qui a ajouté cette recette peut la modifier.");
@@ -971,10 +999,22 @@ document.getElementById('modal-edit').addEventListener('click', () => {
   document.getElementById('new-cat').value = r.cat;
   presManual = !!r.presentation;
   setPresentation(window.RecipeVisual ? RecipeVisual.styleOf(r) : 'plate');
-  document.getElementById('new-temps').value = r.temps;
-  document.getElementById('new-personnes').value = r.personnes;
-  document.getElementById('new-ingredients').value = r.ingredients.map(ingLabel).join('\n');
-  document.getElementById('new-etapes').value = r.etapes.join('\n');
+  editingSource = r;
+  if (r.variantes) {
+    // Recette à plusieurs versions : on modifie une version à la fois
+    editingVariants = JSON.parse(JSON.stringify(r.variantes));
+    const pick = document.getElementById('variant-pick');
+    pick.innerHTML = editingVariants.map((v, i) => `<option value="${i}">${escapeHtml(v.nom || 'Version ' + (i + 1))}</option>`).join('');
+    document.getElementById('variant-pick-field').style.display = '';
+    loadVariantInForm(0);
+  } else {
+    editingVariants = null;
+    document.getElementById('variant-pick-field').style.display = 'none';
+    document.getElementById('new-temps').value = r.temps || '';
+    document.getElementById('new-personnes').value = r.personnes || '';
+    document.getElementById('new-ingredients').value = (r.ingredients || []).map(ingLabel).join('\n');
+    document.getElementById('new-etapes').value = (r.etapes || []).join('\n');
+  }
 
   newPhotoDataUrl = '';
   newPhotoPreview.innerHTML = r.photo ? `<img src="${r.photo}" alt="Aperçu">` : 'Aperçu';
@@ -1041,6 +1081,18 @@ addForm.addEventListener('submit', async e => {
     };
     recipeData.presentation = cropStyle();
     if (photo) recipeData.photo = photo;
+    if (editingVariants) {
+      saveVariantFromForm();
+      recipeData.variantes = editingVariants.map(({ _ingText, _etText, ...v }) => v);
+      const v0 = recipeData.variantes[0];
+      Object.assign(recipeData, { temps: v0.temps || '', personnes: v0.personnes || '', ingredients: v0.ingredients || [], etapes: v0.etapes || [] });
+    }
+    // Recette d'origine remplacée : on garde tout ce que le formulaire ne montre pas (version Monsieur Cuisine…)
+    if (editingStaticId && editingSource) {
+      Object.entries(editingSource).forEach(([k, val]) => {
+        if (k[0] !== '_' && k !== 'id' && !(k in recipeData) && val !== undefined) recipeData[k] = JSON.parse(JSON.stringify(val));
+      });
+    }
     if (newPhotoDataUrl) recipeData.photoDetouree = newPhotoCut;
     else if (editingOriginalDetouree) recipeData.photoDetouree = true;
 
