@@ -123,87 +123,89 @@ const recettes = [
   },
   {
     "id": "static-561",
-    "titre": "Aperol Spritz classique",
-    "photo": "photos/enattente.png",
-    "cat": "boisson",
-    "temps": "3 min",
-    "personnes": "1",
-    "ingredients": [
-      {
-        "texte": "6 cl d'Aperol",
-        "valeur": 6,
-        "unite": "cl",
-        "reste": "Aperol"
-      },
-      {
-        "texte": "9 cl de Prosecco",
-        "valeur": 9,
-        "unite": "cl",
-        "reste": "Prosecco"
-      },
-      {
-        "texte": "3 cl d'eau gazeuse",
-        "valeur": 3,
-        "unite": "cl",
-        "reste": "eau gazeuse"
-      },
-      {
-        "texte": "1 rondelle d'orange",
-        "valeur": 1,
-        "unite": null,
-        "reste": "rondelle d'orange"
-      },
-      "glaçons"
-    ],
-    "etapes": [
-      "Remplir un grand verre à vin de glaçons.",
-      "Verser le Prosecco, puis l’Aperol, puis l’eau gazeuse (règle 3-2-1).",
-      "Mélanger doucement et décorer d’une rondelle d’orange."
-    ]
-  },
-  {
-    "id": "static-0",
-    "titre": "Aperol Spritz glacé aux cerises",
+    "titre": "Aperol Spritz",
     "photo": "photos/aperolcerises.png",
-    "temps": "10 min",
-    "personnes": "1",
-    "cat": "apero",
-    "ingredients": [
+    "cat": "boisson",
+    "variantes": [
       {
-        "texte": "60 ml d'Aperol",
-        "valeur": 60,
-        "unite": "ml",
-        "reste": "Aperol"
+        "nom": "Classique",
+        "temps": "3 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "6 cl d'Aperol",
+            "valeur": 6,
+            "unite": "cl",
+            "reste": "Aperol"
+          },
+          {
+            "texte": "9 cl de Prosecco",
+            "valeur": 9,
+            "unite": "cl",
+            "reste": "Prosecco"
+          },
+          {
+            "texte": "3 cl d'eau gazeuse",
+            "valeur": 3,
+            "unite": "cl",
+            "reste": "eau gazeuse"
+          },
+          {
+            "texte": "1 rondelle d'orange",
+            "valeur": 1,
+            "unite": null,
+            "reste": "rondelle d'orange"
+          },
+          "glaçons"
+        ],
+        "etapes": [
+          "Remplir un grand verre à vin de glaçons.",
+          "Verser le Prosecco, puis l’Aperol, puis l’eau gazeuse (règle 3-2-1).",
+          "Mélanger doucement et décorer d’une rondelle d’orange."
+        ]
       },
       {
-        "texte": "90 ml de Prosecco",
-        "valeur": 90,
-        "unite": "ml",
-        "reste": "Prosecco"
-      },
-      {
-        "texte": "240 g de cerises aigres congelées",
-        "valeur": 240,
-        "unite": "g",
-        "reste": "cerises aigres congelées"
-      },
-      {
-        "texte": "30 ml d'eau pétillante",
-        "valeur": 30,
-        "unite": "ml",
-        "reste": "eau pétillante"
-      },
-      "gomme xanthane",
-      "glace pilée"
-    ],
-    "etapes": [
-      "Dans un blender, ajouter les cerises aigres congelées.",
-      "Verser l'Aperol et le Prosecco dans le blender.",
-      "Ajouter l'eau pétillante et la gomme xanthane.",
-      "Mixer le tout jusqu'à obtenir une consistance lisse et homogène.",
-      "Remplir un verre de glace pilée.",
-      "Verser le mélange de cocktail sur la glace pilée.",
-      "Garnir avec une cerise pour la décoration."
+        "nom": "Glacé aux cerises",
+        "temps": "10 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "60 ml d'Aperol",
+            "valeur": 60,
+            "unite": "ml",
+            "reste": "Aperol"
+          },
+          {
+            "texte": "90 ml de Prosecco",
+            "valeur": 90,
+            "unite": "ml",
+            "reste": "Prosecco"
+          },
+          {
+            "texte": "240 g de cerises aigres congelées",
+            "valeur": 240,
+            "unite": "g",
+            "reste": "cerises aigres congelées"
+          },
+          {
+            "texte": "30 ml d'eau pétillante",
+            "valeur": 30,
+            "unite": "ml",
+            "reste": "eau pétillante"
+          },
+          "gomme xanthane",
+          "glace pilée"
+        ],
+        "etapes": [
+          "Dans un blender, ajouter les cerises aigres congelées.",
+          "Verser l'Aperol et le Prosecco dans le blender.",
+          "Ajouter l'eau pétillante et la gomme xanthane.",
+          "Mixer le tout jusqu'à obtenir une consistance lisse et homogène.",
+          "Remplir un verre de glace pilée.",
+          "Verser le mélange de cocktail sur la glace pilée.",
+          "Garnir avec une cerise pour la décoration."
+        ]
+      }
     ]
   },
   {
@@ -8491,76 +8493,205 @@ const recettes = [
   },
   {
     "id": "static-72",
-    "titre": "Cheesecake Oreo en portions individuelles sans cuisson",
+    "titre": "Cheesecake Oreo sans cuisson",
     "photo": "photos/enattente.png",
-    "temps": "120 min",
-    "personnes": "4",
     "cat": "dessert",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "4 biscuits Oreo",
-        "valeur": 4,
-        "unite": null,
-        "reste": "biscuits Oreo"
+        "nom": "En portions individuelles",
+        "temps": "120 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "4 biscuits Oreo",
+            "valeur": 4,
+            "unite": null,
+            "reste": "biscuits Oreo"
+          },
+          {
+            "texte": "1 c. à soupe de beurre maison fondu",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "beurre maison fondu"
+          },
+          {
+            "texte": "60 ml de crème liquide entière",
+            "valeur": 60,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          },
+          {
+            "texte": "1 c. à soupe de sucre glace",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sucre glace"
+          },
+          {
+            "texte": "80 g de caprice des dieux",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "caprice des dieux"
+          },
+          {
+            "texte": "4 carrés chocolat blanc",
+            "valeur": 4,
+            "unite": null,
+            "reste": "carrés chocolat blanc"
+          },
+          {
+            "texte": "8 carrés chocolat blanc pour la garniture",
+            "valeur": 8,
+            "unite": null,
+            "reste": "carrés chocolat blanc pour la garniture"
+          },
+          {
+            "texte": "1 c. à café d'huile neutre",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "huile neutre"
+          },
+          {
+            "texte": "2 biscuits Oreo pour la garniture",
+            "valeur": 2,
+            "unite": null,
+            "reste": "biscuits Oreo pour la garniture"
+          }
+        ],
+        "etapes": [
+          "Écraser les 4 biscuits Oreo dans un robot culinaire ou les mettre dans un sachet et les écraser avec un rouleau à pâtisserie.",
+          "Faire fondre le beurre maison au micro-ondes, puis le mélanger avec les biscuits écrasés jusqu'à obtenir une texture homogène.",
+          "Dans un bol séparé, battre la crème liquide avec le sucre glace à l'aide d'un batteur pendant environ 3 minutes.",
+          "Ajouter le caprice des dieux et les 4 carrés de chocolat blanc fondus au mélange de crème et battre jusqu'à obtenir une crème lisse.",
+          "Pour faire fondre rapidement le chocolat, placer dans un sachet, puis mettre le sachet dans un bol d'eau chaude pendant 2 minutes.",
+          "Assembler le dessert en mettant une couche de mélange de biscuits au fond des verrines, suivie d'une couche de crème, puis une couche de chocolat blanc fondu.",
+          "Garnir chaque verrine avec un biscuit Oreo entier et parsemer des miettes de biscuits.",
+          "Mettre les verrines au congélateur pendant 1h30 à 2h avant de servir."
+        ]
       },
       {
-        "texte": "1 c. à soupe de beurre maison fondu",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "beurre maison fondu"
-      },
-      {
-        "texte": "60 ml de crème liquide entière",
-        "valeur": 60,
-        "unite": "ml",
-        "reste": "crème liquide entière"
-      },
-      {
-        "texte": "1 c. à soupe de sucre glace",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "sucre glace"
-      },
-      {
-        "texte": "80 g de caprice des dieux",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "caprice des dieux"
-      },
-      {
-        "texte": "4 carrés chocolat blanc",
-        "valeur": 4,
-        "unite": null,
-        "reste": "carrés chocolat blanc"
-      },
-      {
-        "texte": "8 carrés chocolat blanc pour la garniture",
-        "valeur": 8,
-        "unite": null,
-        "reste": "carrés chocolat blanc pour la garniture"
-      },
-      {
-        "texte": "1 c. à café d'huile neutre",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "huile neutre"
-      },
-      {
-        "texte": "2 biscuits Oreo pour la garniture",
-        "valeur": 2,
-        "unite": null,
-        "reste": "biscuits Oreo pour la garniture"
+        "nom": "Grand gâteau à la ganache blanche",
+        "temps": "40 min (+ 1 nuit et 6 h au frais)",
+        "personnes": "10",
+        "ingredients": [
+          {
+            "texte": "250 g de biscuits Oreo",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "biscuits Oreo"
+          },
+          {
+            "texte": "90 g de beurre non salé fondu",
+            "valeur": 90,
+            "unite": "g",
+            "reste": "beurre non salé fondu"
+          },
+          {
+            "texte": "150 ml de crème liquide entière bien froide",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "crème liquide entière bien froide"
+          },
+          {
+            "texte": "40 g de sucre glace",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          {
+            "texte": "300 g de fromage à la crème type Philadelphia",
+            "valeur": 300,
+            "unite": "g",
+            "reste": "fromage à la crème type Philadelphia"
+          },
+          {
+            "texte": "250 g de mascarpone",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "mascarpone"
+          },
+          {
+            "texte": "1 gousse de vanille (graines)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "gousse de vanille (graines)"
+          },
+          {
+            "texte": "1 c. à café d'extrait de vanille",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "extrait de vanille"
+          },
+          {
+            "texte": "1 c. à soupe de lait concentré sucré",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "lait concentré sucré"
+          },
+          {
+            "texte": "120 ml de crème liquide (ganache)",
+            "valeur": 120,
+            "unite": "ml",
+            "reste": "crème liquide (ganache)"
+          },
+          {
+            "texte": "1 pincée de sel de mer",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel de mer"
+          },
+          {
+            "texte": "1 c. à café d'extrait de vanille (ganache)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "extrait de vanille (ganache)"
+          },
+          {
+            "texte": "1 c. à soupe de lait concentré sucré (ganache)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "lait concentré sucré (ganache)"
+          },
+          {
+            "texte": "180 g de chocolat blanc haché",
+            "valeur": 180,
+            "unite": "g",
+            "reste": "chocolat blanc haché"
+          },
+          {
+            "texte": "20 g de beurre fondu (ganache)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre fondu (ganache)"
+          },
+          {
+            "texte": "1 c. à café de poudre de lait",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "poudre de lait"
+          },
+          {
+            "texte": "50 g de brisures d'Oreo",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "brisures d'Oreo"
+          },
+          "chocolat blanc fondu pour la déco",
+          "biscuits Oreo supplémentaires pour la déco"
+        ],
+        "etapes": [
+          "Préparer la ganache blanche : chauffer la crème, le sel, l'extrait de vanille, le lait concentré sucré et la poudre de lait dans une casserole jusqu'à chaude sans bouillir.",
+          "Verser sur le chocolat blanc haché et laisser reposer une minute, puis mélanger jusqu'à homogénéité. Incorporer le beurre fondu.",
+          "Couvrir la surface avec du film alimentaire et réfrigérer toute la nuit.",
+          "Le lendemain, fouetter la ganache jusqu'à obtenir des pics souples à moyens, puis incorporer les brisures d'Oreo.",
+          "Préparer la base : réduire les biscuits Oreo en miettes fines et les mélanger avec le beurre fondu.",
+          "Presser fermement le mélange dans le fond d'un moule à charnière de 23 cm et réfrigérer 20 minutes.",
+          "Préparer la garniture au cheesecake : battre le fromage à la crème, le mascarpone, le sucre glace, les graines de vanille et le lait concentré sucré jusqu'à obtenir une texture lisse.",
+          "Dans un bol séparé, monter la crème bien froide en pics fermes, puis l'incorporer délicatement à la préparation au fromage.",
+          "Assembler : étaler la ganache Oreo sur la base froide en couche uniforme, puis déposer la garniture cheesecake et lisser la surface.",
+          "Réfrigérer au moins 6 heures ou toute la nuit jusqu'à prise complète.",
+          "Décorer avec le chocolat blanc fondu et des biscuits Oreo supplémentaires avant de servir."
+        ]
       }
-    ],
-    "etapes": [
-      "Écraser les 4 biscuits Oreo dans un robot culinaire ou les mettre dans un sachet et les écraser avec un rouleau à pâtisserie.",
-      "Faire fondre le beurre maison au micro-ondes, puis le mélanger avec les biscuits écrasés jusqu'à obtenir une texture homogène.",
-      "Dans un bol séparé, battre la crème liquide avec le sucre glace à l'aide d'un batteur pendant environ 3 minutes.",
-      "Ajouter le caprice des dieux et les 4 carrés de chocolat blanc fondus au mélange de crème et battre jusqu'à obtenir une crème lisse.",
-      "Pour faire fondre rapidement le chocolat, placer dans un sachet, puis mettre le sachet dans un bol d'eau chaude pendant 2 minutes.",
-      "Assembler le dessert en mettant une couche de mélange de biscuits au fond des verrines, suivie d'une couche de crème, puis une couche de chocolat blanc fondu.",
-      "Garnir chaque verrine avec un biscuit Oreo entier et parsemer des miettes de biscuits.",
-      "Mettre les verrines au congélateur pendant 1h30 à 2h avant de servir."
     ]
   },
   {
@@ -16435,53 +16566,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-603",
-    "titre": "Frozen margarita à la fraise",
-    "photo": "photos/enattente.png",
-    "cat": "boisson",
-    "temps": "5 min",
-    "personnes": "1",
-    "ingredients": [
-      {
-        "texte": "5 cl de tequila",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "tequila"
-      },
-      {
-        "texte": "2 cl de triple sec",
-        "valeur": 2,
-        "unite": "cl",
-        "reste": "triple sec"
-      },
-      {
-        "texte": "2 cl de jus de citron vert",
-        "valeur": 2,
-        "unite": "cl",
-        "reste": "jus de citron vert"
-      },
-      {
-        "texte": "150 g de fraises surgelées",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "fraises surgelées"
-      },
-      {
-        "texte": "1 cl de sirop de sucre",
-        "valeur": 1,
-        "unite": "cl",
-        "reste": "sirop de sucre"
-      },
-      "une poignée de glaçons",
-      "sucre pour le givrage"
-    ],
-    "etapes": [
-      "Givrer le bord du verre avec du citron vert et du sucre.",
-      "Mixer tous les ingrédients jusqu’à obtenir une texture de granité.",
-      "Verser dans le verre et servir aussitôt."
-    ]
-  },
-  {
     "id": "static-444",
     "titre": "Galette des rois frangipane",
     "photo": "photos/enattente.png",
@@ -17065,134 +17149,66 @@ const recettes = [
           "Verser dans le moule et enfourner 22 à 25 minutes : contrairement au coulant, le centre doit être cuit et moelleux, pas liquide — vérifier avec la pointe d'un couteau qui doit ressortir avec quelques miettes humides mais pas de pâte crue.",
           "Laisser tiédir avant de démouler et de couper en parts."
         ]
+      },
+      {
+        "nom": "Rapide à l’huile, sans œufs",
+        "temps": "35 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "250 g de farine",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de sucre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "60 ml d'eau",
+            "valeur": 60,
+            "unite": "ml",
+            "reste": "eau"
+          },
+          {
+            "texte": "120 ml d'huile de tournesol",
+            "valeur": 120,
+            "unite": "ml",
+            "reste": "huile de tournesol"
+          },
+          {
+            "texte": "200 g de chocolat noir",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat noir"
+          },
+          {
+            "texte": "1 c. à café de levure chimique",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180°C et préparer un moule carré ou rond de 20-22 cm.",
+          "Dans un bol, mélanger la farine avec la levure chimique et le sel.",
+          "Ajouter le sucre et mélanger.",
+          "Faire fondre le chocolat puis le mélanger avec l'eau et l'huile de tournesol.",
+          "Verser le mélange liquide sur les ingrédients secs et mélanger rapidement à la spatule jusqu'à obtenir une pâte lisse.",
+          "Verser dans le moule et lisser la surface.",
+          "Cuire au four pendant environ 25 minutes jusqu'à ce qu'un cure-dent ressorte propre.",
+          "Laisser refroidir avant de démouler."
+        ]
       }
-    ]
-  },
-  {
-    "id": "static-149",
-    "titre": "Gâteau au fromage sans cuisson Oreo et ganache blanche",
-    "photo": "photos/enattente.png",
-    "temps": "40 min (+ 1 nuit et 6 h au frais)",
-    "personnes": "10",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "250 g de biscuits Oreo",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "biscuits Oreo"
-      },
-      {
-        "texte": "90 g de beurre non salé fondu",
-        "valeur": 90,
-        "unite": "g",
-        "reste": "beurre non salé fondu"
-      },
-      {
-        "texte": "150 ml de crème liquide entière bien froide",
-        "valeur": 150,
-        "unite": "ml",
-        "reste": "crème liquide entière bien froide"
-      },
-      {
-        "texte": "40 g de sucre glace",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      {
-        "texte": "300 g de fromage à la crème type Philadelphia",
-        "valeur": 300,
-        "unite": "g",
-        "reste": "fromage à la crème type Philadelphia"
-      },
-      {
-        "texte": "250 g de mascarpone",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "mascarpone"
-      },
-      {
-        "texte": "1 gousse de vanille (graines)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "gousse de vanille (graines)"
-      },
-      {
-        "texte": "1 c. à café d'extrait de vanille",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "extrait de vanille"
-      },
-      {
-        "texte": "1 c. à soupe de lait concentré sucré",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "lait concentré sucré"
-      },
-      {
-        "texte": "120 ml de crème liquide (ganache)",
-        "valeur": 120,
-        "unite": "ml",
-        "reste": "crème liquide (ganache)"
-      },
-      {
-        "texte": "1 pincée de sel de mer",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel de mer"
-      },
-      {
-        "texte": "1 c. à café d'extrait de vanille (ganache)",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "extrait de vanille (ganache)"
-      },
-      {
-        "texte": "1 c. à soupe de lait concentré sucré (ganache)",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "lait concentré sucré (ganache)"
-      },
-      {
-        "texte": "180 g de chocolat blanc haché",
-        "valeur": 180,
-        "unite": "g",
-        "reste": "chocolat blanc haché"
-      },
-      {
-        "texte": "20 g de beurre fondu (ganache)",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "beurre fondu (ganache)"
-      },
-      {
-        "texte": "1 c. à café de poudre de lait",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "poudre de lait"
-      },
-      {
-        "texte": "50 g de brisures d'Oreo",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "brisures d'Oreo"
-      },
-      "chocolat blanc fondu pour la déco",
-      "biscuits Oreo supplémentaires pour la déco"
-    ],
-    "etapes": [
-      "Préparer la ganache blanche : chauffer la crème, le sel, l'extrait de vanille, le lait concentré sucré et la poudre de lait dans une casserole jusqu'à chaude sans bouillir.",
-      "Verser sur le chocolat blanc haché et laisser reposer une minute, puis mélanger jusqu'à homogénéité. Incorporer le beurre fondu.",
-      "Couvrir la surface avec du film alimentaire et réfrigérer toute la nuit.",
-      "Le lendemain, fouetter la ganache jusqu'à obtenir des pics souples à moyens, puis incorporer les brisures d'Oreo.",
-      "Préparer la base : réduire les biscuits Oreo en miettes fines et les mélanger avec le beurre fondu.",
-      "Presser fermement le mélange dans le fond d'un moule à charnière de 23 cm et réfrigérer 20 minutes.",
-      "Préparer la garniture au cheesecake : battre le fromage à la crème, le mascarpone, le sucre glace, les graines de vanille et le lait concentré sucré jusqu'à obtenir une texture lisse.",
-      "Dans un bol séparé, monter la crème bien froide en pics fermes, puis l'incorporer délicatement à la préparation au fromage.",
-      "Assembler : étaler la ganache Oreo sur la base froide en couche uniforme, puis déposer la garniture cheesecake et lisser la surface.",
-      "Réfrigérer au moins 6 heures ou toute la nuit jusqu'à prise complète.",
-      "Décorer avec le chocolat blanc fondu et des biscuits Oreo supplémentaires avant de servir."
     ]
   },
   {
@@ -18127,68 +18143,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-162",
-    "titre": "Gâteau rapide au chocolat et huile de tournesol",
-    "photo": "photos/enattente.png",
-    "temps": "35 min",
-    "personnes": "6",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "250 g de farine",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "100 g de sucre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "60 ml d'eau",
-        "valeur": 60,
-        "unite": "ml",
-        "reste": "eau"
-      },
-      {
-        "texte": "120 ml d'huile de tournesol",
-        "valeur": 120,
-        "unite": "ml",
-        "reste": "huile de tournesol"
-      },
-      {
-        "texte": "200 g de chocolat noir",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chocolat noir"
-      },
-      {
-        "texte": "1 c. à café de levure chimique",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      }
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C et préparer un moule carré ou rond de 20-22 cm.",
-      "Dans un bol, mélanger la farine avec la levure chimique et le sel.",
-      "Ajouter le sucre et mélanger.",
-      "Faire fondre le chocolat puis le mélanger avec l'eau et l'huile de tournesol.",
-      "Verser le mélange liquide sur les ingrédients secs et mélanger rapidement à la spatule jusqu'à obtenir une pâte lisse.",
-      "Verser dans le moule et lisser la surface.",
-      "Cuire au four pendant environ 25 minutes jusqu'à ce qu'un cure-dent ressorte propre.",
-      "Laisser refroidir avant de démouler."
-    ]
-  },
-  {
     "id": "static-163",
     "titre": "Gâteau renversé à l'ananas",
     "photo": "photos/enattente.png",
@@ -18912,122 +18866,124 @@ const recettes = [
     ]
   },
   {
-    "id": "static-170",
-    "titre": "Gaufres salées façon pizza pesto-mozzarella",
-    "photo": "photos/enattente.png",
-    "temps": "25 min",
-    "personnes": "2-4",
-    "cat": "apero",
-    "ingredients": [
-      {
-        "texte": "1 pâte feuilletée maison rectangulaire (voir recette pâte à croissants)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pâte feuilletée maison rectangulaire (voir recette pâte à croissants)"
-      },
-      {
-        "texte": "3 c. à soupe de pesto maison",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "pesto maison"
-      },
-      {
-        "texte": "3 rondelles de tomate",
-        "valeur": 3,
-        "unite": null,
-        "reste": "rondelles de tomate"
-      },
-      {
-        "texte": "3 tranches de mozzarella maison",
-        "valeur": 3,
-        "unite": null,
-        "reste": "tranches de mozzarella maison"
-      }
-    ],
-    "etapes": [
-      "Couper la pâte feuilletée maison en 6 rectangles de taille égale.",
-      "Étaler sur 3 rectangles un peu de pesto, puis ajouter une rondelle de tomate et de la mozzarella.",
-      "Recouvrir avec les 3 autres rectangles de pâte.",
-      "Placer directement dans le gaufrier bien chaud.",
-      "Cuire jusqu'à ce que les gaufres soient bien dorées et croustillantes."
-    ]
-  },
-  {
     "id": "static-396",
-    "titre": "Gaufres salées fromage-jambon",
+    "titre": "Gaufres salées",
     "photo": "photos/enattente.png",
-    "temps": "25 min",
-    "personnes": "6",
     "cat": "apero",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "130 g de farine",
-        "valeur": 130,
-        "unite": "g",
-        "reste": "farine"
+        "nom": "Fromage-jambon",
+        "temps": "25 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "130 g de farine",
+            "valeur": 130,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1 c. à café de levure chimique",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "0,5 c. à café de sel",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "sel"
+          },
+          {
+            "texte": "1 pincée de poivre",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "poivre"
+          },
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "260 ml de lait",
+            "valeur": 260,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "50 g de beurre demi-sel fondu",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "beurre demi-sel fondu"
+          },
+          {
+            "texte": "80 g de fromage râpé (emmental, comté…)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "fromage râpé (emmental, comté…)"
+          },
+          {
+            "texte": "100 g de jambon en dés",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "jambon en dés"
+          },
+          {
+            "texte": "1 c. à soupe de ciboulette ciselée",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "ciboulette ciselée"
+          }
+        ],
+        "etapes": [
+          "Dans un saladier, mélanger la farine, la levure, le sel et le poivre. Ajouter les œufs et fouetter.",
+          "Verser le lait petit à petit en fouettant jusqu'à obtenir une pâte lisse, puis incorporer le beurre fondu.",
+          "Ajouter le fromage râpé, le jambon et la ciboulette.",
+          "Préchauffer le gaufrier et le graisser légèrement.",
+          "Verser une louche de pâte par empreinte, refermer et cuire 4 à 5 minutes, jusqu'à ce que les gaufres soient bien dorées et se détachent facilement. Servir chaud.",
+          "Astuce : remplacer le jambon par des lardons cuits, du saumon fumé ou 150 g de courgette râpée bien essorée. Le fromage fait dorer plus vite, surveiller dès 3 minutes."
+        ]
       },
       {
-        "texte": "1 c. à café de levure chimique",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "0,5 c. à café de sel",
-        "valeur": 0.5,
-        "unite": "c. à café",
-        "reste": "sel"
-      },
-      {
-        "texte": "1 pincée de poivre",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "poivre"
-      },
-      {
-        "texte": "2 œufs",
-        "valeur": 2,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "260 ml de lait",
-        "valeur": 260,
-        "unite": "ml",
-        "reste": "lait"
-      },
-      {
-        "texte": "50 g de beurre demi-sel fondu",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "beurre demi-sel fondu"
-      },
-      {
-        "texte": "80 g de fromage râpé (emmental, comté…)",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "fromage râpé (emmental, comté…)"
-      },
-      {
-        "texte": "100 g de jambon en dés",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "jambon en dés"
-      },
-      {
-        "texte": "1 c. à soupe de ciboulette ciselée",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "ciboulette ciselée"
+        "nom": "Façon pizza pesto-mozzarella",
+        "temps": "25 min",
+        "personnes": "2-4",
+        "ingredients": [
+          {
+            "texte": "1 pâte feuilletée maison rectangulaire (voir recette pâte à croissants)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pâte feuilletée maison rectangulaire (voir recette pâte à croissants)"
+          },
+          {
+            "texte": "3 c. à soupe de pesto maison",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "pesto maison"
+          },
+          {
+            "texte": "3 rondelles de tomate",
+            "valeur": 3,
+            "unite": null,
+            "reste": "rondelles de tomate"
+          },
+          {
+            "texte": "3 tranches de mozzarella maison",
+            "valeur": 3,
+            "unite": null,
+            "reste": "tranches de mozzarella maison"
+          }
+        ],
+        "etapes": [
+          "Couper la pâte feuilletée maison en 6 rectangles de taille égale.",
+          "Étaler sur 3 rectangles un peu de pesto, puis ajouter une rondelle de tomate et de la mozzarella.",
+          "Recouvrir avec les 3 autres rectangles de pâte.",
+          "Placer directement dans le gaufrier bien chaud.",
+          "Cuire jusqu'à ce que les gaufres soient bien dorées et croustillantes."
+        ]
       }
-    ],
-    "etapes": [
-      "Dans un saladier, mélanger la farine, la levure, le sel et le poivre. Ajouter les œufs et fouetter.",
-      "Verser le lait petit à petit en fouettant jusqu'à obtenir une pâte lisse, puis incorporer le beurre fondu.",
-      "Ajouter le fromage râpé, le jambon et la ciboulette.",
-      "Préchauffer le gaufrier et le graisser légèrement.",
-      "Verser une louche de pâte par empreinte, refermer et cuire 4 à 5 minutes, jusqu'à ce que les gaufres soient bien dorées et se détachent facilement. Servir chaud.",
-      "Astuce : remplacer le jambon par des lardons cuits, du saumon fumé ou 150 g de courgette râpée bien essorée. Le fromage fait dorer plus vite, surveiller dès 3 minutes."
     ]
   },
   {
@@ -19157,28 +19113,59 @@ const recettes = [
     "titre": "Gin tonic",
     "photo": "photos/enattente.png",
     "cat": "boisson",
-    "temps": "3 min",
-    "personnes": "1",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "5 cl de gin",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "gin"
+        "nom": "Classique",
+        "temps": "3 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "5 cl de gin",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "gin"
+          },
+          {
+            "texte": "15 cl de tonic bien froid",
+            "valeur": 15,
+            "unite": "cl",
+            "reste": "tonic bien froid"
+          },
+          "rondelle de citron vert ou concombre, baies de genièvre",
+          "glaçons"
+        ],
+        "etapes": [
+          "Remplir un grand verre ballon de glaçons.",
+          "Verser le gin, puis le tonic en le faisant couler le long d’une cuillère pour garder les bulles.",
+          "Ajouter la garniture choisie et mélanger une seule fois."
+        ]
       },
       {
-        "texte": "15 cl de tonic bien froid",
-        "valeur": 15,
-        "unite": "cl",
-        "reste": "tonic bien froid"
-      },
-      "rondelle de citron vert ou concombre, baies de genièvre",
-      "glaçons"
-    ],
-    "etapes": [
-      "Remplir un grand verre ballon de glaçons.",
-      "Verser le gin, puis le tonic en le faisant couler le long d’une cuillère pour garder les bulles.",
-      "Ajouter la garniture choisie et mélanger une seule fois."
+        "nom": "Pink gin tonic",
+        "temps": "3 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "5 cl de gin rose (à la fraise ou à la framboise)",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "gin rose (à la fraise ou à la framboise)"
+          },
+          {
+            "texte": "15 cl de tonic",
+            "valeur": 15,
+            "unite": "cl",
+            "reste": "tonic"
+          },
+          "quelques fraises ou framboises",
+          "glaçons"
+        ],
+        "etapes": [
+          "Remplir un verre ballon de glaçons et de fruits rouges coupés.",
+          "Verser le gin puis le tonic le long d’une cuillère.",
+          "Mélanger une seule fois."
+        ]
+      }
     ]
   },
   {
@@ -19254,6 +19241,49 @@ const recettes = [
       "Mélanger le lait de coco, le lait concentré et la noix de coco râpée.",
       "Fouetter la crème en chantilly et l’incorporer délicatement.",
       "Congeler 6 heures en mélangeant à la fourchette deux fois pendant les 2 premières heures."
+    ]
+  },
+  {
+    "id": "static-177",
+    "titre": "Glace à la pêche sans sorbetière",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "20 min (+ 4h de congélation)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "4 pêches bien mûres",
+        "valeur": 4,
+        "unite": null,
+        "reste": "pêches bien mûres"
+      },
+      {
+        "texte": "500 ml de crème liquide entière bien froide",
+        "valeur": 500,
+        "unite": "ml",
+        "reste": "crème liquide entière bien froide"
+      },
+      {
+        "texte": "150 g de sucre",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 c. à soupe de jus de citron",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "jus de citron"
+      }
+    ],
+    "etapes": [
+      "Peler les pêches, retirer le noyau et les couper en morceaux.",
+      "Mixer les pêches avec le sucre et le jus de citron jusqu'à obtenir une purée lisse.",
+      "Fouetter la crème liquide bien froide en chantilly ferme.",
+      "Incorporer délicatement la purée de pêches à la chantilly, en soulevant la masse à la spatule pour ne pas la faire retomber.",
+      "Verser dans un contenant hermétique et lisser la surface.",
+      "Placer au congélateur au moins 4 heures, idéalement toute une nuit.",
+      "Sortir la glace 5 à 10 minutes avant de servir pour faciliter le service à la cuillère."
     ]
   },
   {
@@ -19485,129 +19515,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-177",
-    "titre": "Glace maison sans sorbetière",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "variantes": [
-      {
-        "nom": "Vanille simple",
-        "temps": "240 min",
-        "personnes": "6",
-        "ingredients": [
-          {
-            "texte": "500 ml de crème liquide",
-            "valeur": 500,
-            "unite": "ml",
-            "reste": "crème liquide"
-          },
-          {
-            "texte": "150 g de sucre",
-            "valeur": 150,
-            "unite": "g",
-            "reste": "sucre"
-          },
-          {
-            "texte": "2 c. à café d'extrait de vanille",
-            "valeur": 2,
-            "unite": "c. à café",
-            "reste": "extrait de vanille"
-          },
-          {
-            "texte": "250 ml de lait",
-            "valeur": 250,
-            "unite": "ml",
-            "reste": "lait"
-          }
-        ],
-        "etapes": [
-          "Fouetter la crème liquide bien froide en chantilly souple.",
-          "Mélanger le lait, le sucre et la vanille jusqu’à dissolution du sucre, puis incorporer délicatement à la chantilly.",
-          "Verser dans un récipient hermétique et placer au congélateur.",
-          "Mélanger à la fourchette toutes les 30 minutes pendant les 2 premières heures pour éviter les cristaux, puis laisser prendre au moins 2 heures de plus."
-        ]
-      },
-      {
-        "nom": "Vanille au mascarpone",
-        "temps": "10 min (+ 6 h de congélation)",
-        "personnes": "4",
-        "ingredients": [
-          {
-            "texte": "125 g de lait concentré sucré",
-            "valeur": 125,
-            "unite": "g",
-            "reste": "lait concentré sucré"
-          },
-          {
-            "texte": "125 g de mascarpone",
-            "valeur": 125,
-            "unite": "g",
-            "reste": "mascarpone"
-          },
-          {
-            "texte": "1 gousse de vanille",
-            "valeur": 1,
-            "unite": "gousse",
-            "reste": "vanille"
-          },
-          {
-            "texte": "250 ml de crème liquide 35%",
-            "valeur": 250,
-            "unite": "ml",
-            "reste": "crème liquide 35%"
-          }
-        ],
-        "etapes": [
-          "Couper la gousse de vanille en deux et gratter les graines à l'aide de la pointe d'un couteau.",
-          "Dans un bol, verser le mascarpone et le lait concentré sucré.",
-          "Ajouter les graines de vanille et la gousse grattée dans le mélange.",
-          "Ajouter la crème liquide et fouetter avec un batteur jusqu'à obtenir une texture homogène et légèrement mousseuse.",
-          "Transvaser la préparation dans un bac adapté et placer au congélateur pendant au moins six heures jusqu'à prise complète."
-        ]
-      },
-      {
-        "nom": "À la pêche",
-        "temps": "20 min (+ 4h de congélation)",
-        "personnes": "6",
-        "ingredients": [
-          {
-            "texte": "4 pêches bien mûres",
-            "valeur": 4,
-            "unite": null,
-            "reste": "pêches bien mûres"
-          },
-          {
-            "texte": "500 ml de crème liquide entière bien froide",
-            "valeur": 500,
-            "unite": "ml",
-            "reste": "crème liquide entière bien froide"
-          },
-          {
-            "texte": "150 g de sucre",
-            "valeur": 150,
-            "unite": "g",
-            "reste": "sucre"
-          },
-          {
-            "texte": "1 c. à soupe de jus de citron",
-            "valeur": 1,
-            "unite": "c. à soupe",
-            "reste": "jus de citron"
-          }
-        ],
-        "etapes": [
-          "Peler les pêches, retirer le noyau et les couper en morceaux.",
-          "Mixer les pêches avec le sucre et le jus de citron jusqu'à obtenir une purée lisse.",
-          "Fouetter la crème liquide bien froide en chantilly ferme.",
-          "Incorporer délicatement la purée de pêches à la chantilly, en soulevant la masse à la spatule pour ne pas la faire retomber.",
-          "Verser dans un contenant hermétique et lisser la surface.",
-          "Placer au congélateur au moins 4 heures, idéalement toute une nuit.",
-          "Sortir la glace 5 à 10 minutes avant de servir pour faciliter le service à la cuillère."
-        ]
-      }
-    ]
-  },
-  {
     "id": "static-611",
     "titre": "Glace stracciatella",
     "photo": "photos/enattente.png",
@@ -19652,87 +19559,164 @@ const recettes = [
     "titre": "Glace vanille",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "20 min (+ 6 h de congélation)",
-    "personnes": "6",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "500 g de crème fraîche",
-        "valeur": 500,
-        "unite": "g",
-        "reste": "crème fraîche"
+        "nom": "Aux œufs, sans sorbetière",
+        "temps": "20 min (+ 6 h de congélation)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "500 g de crème fraîche",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "crème fraîche"
+          },
+          {
+            "texte": "100 g de sucre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "3 œufs (blancs et jaunes séparés)",
+            "valeur": 3,
+            "unite": null,
+            "reste": "œufs (blancs et jaunes séparés)"
+          },
+          {
+            "texte": "1 gousse de vanille (ou 1 c. à café d’extrait)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "gousse de vanille (ou 1 c. à café d’extrait)"
+          }
+        ],
+        "etapes": [
+          "Séparer les blancs des jaunes d’œufs.",
+          "Fouetter les jaunes avec le sucre et les graines de vanille jusqu’à ce que le mélange blanchisse.",
+          "Fouetter la crème fraîche bien froide jusqu’à ce qu’elle épaississe, puis l’incorporer au mélange jaunes-sucre.",
+          "Monter les blancs en neige ferme et les incorporer délicatement à la spatule, sans les casser.",
+          "Verser dans un bac hermétique et placer au congélateur au moins 6 heures. Pas besoin de sorbetière ni de remuer : les blancs en neige rendent la glace légère.",
+          "Sortir la glace 10 minutes avant de servir. (Les œufs étant crus, utiliser des œufs très frais.)"
+        ]
       },
       {
-        "texte": "100 g de sucre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "sucre"
+        "nom": "À la chantilly, sans sorbetière",
+        "temps": "240 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "500 ml de crème liquide",
+            "valeur": 500,
+            "unite": "ml",
+            "reste": "crème liquide"
+          },
+          {
+            "texte": "150 g de sucre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "2 c. à café d'extrait de vanille",
+            "valeur": 2,
+            "unite": "c. à café",
+            "reste": "extrait de vanille"
+          },
+          {
+            "texte": "250 ml de lait",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "lait"
+          }
+        ],
+        "etapes": [
+          "Fouetter la crème liquide bien froide en chantilly souple.",
+          "Mélanger le lait, le sucre et la vanille jusqu’à dissolution du sucre, puis incorporer délicatement à la chantilly.",
+          "Verser dans un récipient hermétique et placer au congélateur.",
+          "Mélanger à la fourchette toutes les 30 minutes pendant les 2 premières heures pour éviter les cristaux, puis laisser prendre au moins 2 heures de plus."
+        ]
       },
       {
-        "texte": "3 œufs (blancs et jaunes séparés)",
-        "valeur": 3,
-        "unite": null,
-        "reste": "œufs (blancs et jaunes séparés)"
+        "nom": "Au mascarpone, sans sorbetière",
+        "temps": "10 min (+ 6 h de congélation)",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "125 g de lait concentré sucré",
+            "valeur": 125,
+            "unite": "g",
+            "reste": "lait concentré sucré"
+          },
+          {
+            "texte": "125 g de mascarpone",
+            "valeur": 125,
+            "unite": "g",
+            "reste": "mascarpone"
+          },
+          {
+            "texte": "1 gousse de vanille",
+            "valeur": 1,
+            "unite": "gousse",
+            "reste": "vanille"
+          },
+          {
+            "texte": "250 ml de crème liquide 35%",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "crème liquide 35%"
+          }
+        ],
+        "etapes": [
+          "Couper la gousse de vanille en deux et gratter les graines à l'aide de la pointe d'un couteau.",
+          "Dans un bol, verser le mascarpone et le lait concentré sucré.",
+          "Ajouter les graines de vanille et la gousse grattée dans le mélange.",
+          "Ajouter la crème liquide et fouetter avec un batteur jusqu'à obtenir une texture homogène et légèrement mousseuse.",
+          "Transvaser la préparation dans un bac adapté et placer au congélateur pendant au moins six heures jusqu'à prise complète."
+        ]
       },
       {
-        "texte": "1 gousse de vanille (ou 1 c. à café d’extrait)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "gousse de vanille (ou 1 c. à café d’extrait)"
+        "nom": "À la sorbetière (crème anglaise)",
+        "temps": "30 min (+ 4 h de repos et turbinage)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "500 ml de lait entier",
+            "valeur": 500,
+            "unite": "ml",
+            "reste": "lait entier"
+          },
+          {
+            "texte": "250 ml de crème liquide entière",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          },
+          {
+            "texte": "6 jaunes d'œufs",
+            "valeur": 6,
+            "unite": null,
+            "reste": "jaunes d'œufs"
+          },
+          {
+            "texte": "150 g de sucre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "1 gousse de vanille",
+            "valeur": 1,
+            "unite": null,
+            "reste": "gousse de vanille"
+          }
+        ],
+        "etapes": [
+          "Chauffer le lait et la crème avec la vanille fendue et grattée, puis laisser infuser 15 minutes.",
+          "Fouetter les jaunes avec le sucre, verser le lait chaud dessus, puis cuire à feu doux en remuant jusqu’à ce que la crème nappe la spatule (sans bouillir).",
+          "Filtrer, laisser refroidir puis réfrigérer au moins 4 heures.",
+          "Turbiner dans la sorbetière 20 à 30 minutes, puis placer au congélateur 1 heure avant de servir."
+        ]
       }
-    ],
-    "etapes": [
-      "Séparer les blancs des jaunes d’œufs.",
-      "Fouetter les jaunes avec le sucre et les graines de vanille jusqu’à ce que le mélange blanchisse.",
-      "Fouetter la crème fraîche bien froide jusqu’à ce qu’elle épaississe, puis l’incorporer au mélange jaunes-sucre.",
-      "Monter les blancs en neige ferme et les incorporer délicatement à la spatule, sans les casser.",
-      "Verser dans un bac hermétique et placer au congélateur au moins 6 heures. Pas besoin de sorbetière ni de remuer : les blancs en neige rendent la glace légère.",
-      "Sortir la glace 10 minutes avant de servir. (Les œufs étant crus, utiliser des œufs très frais.)"
-    ]
-  },
-  {
-    "id": "static-613",
-    "titre": "Glace vanille à la sorbetière (crème anglaise)",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "30 min (+ 4 h de repos et turbinage)",
-    "personnes": "6",
-    "ingredients": [
-      {
-        "texte": "500 ml de lait entier",
-        "valeur": 500,
-        "unite": "ml",
-        "reste": "lait entier"
-      },
-      {
-        "texte": "250 ml de crème liquide entière",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "crème liquide entière"
-      },
-      {
-        "texte": "6 jaunes d'œufs",
-        "valeur": 6,
-        "unite": null,
-        "reste": "jaunes d'œufs"
-      },
-      {
-        "texte": "150 g de sucre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "1 gousse de vanille",
-        "valeur": 1,
-        "unite": null,
-        "reste": "gousse de vanille"
-      }
-    ],
-    "etapes": [
-      "Chauffer le lait et la crème avec la vanille fendue et grattée, puis laisser infuser 15 minutes.",
-      "Fouetter les jaunes avec le sucre, verser le lait chaud dessus, puis cuire à feu doux en remuant jusqu’à ce que la crème nappe la spatule (sans bouillir).",
-      "Filtrer, laisser refroidir puis réfrigérer au moins 4 heures.",
-      "Turbiner dans la sorbetière 20 à 30 minutes, puis placer au congélateur 1 heure avant de servir."
     ]
   },
   {
@@ -24071,34 +24055,83 @@ const recettes = [
     "titre": "Margarita",
     "photo": "photos/enattente.png",
     "cat": "boisson",
-    "temps": "5 min",
-    "personnes": "1",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "5 cl de tequila",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "tequila"
+        "nom": "Classique",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "5 cl de tequila",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "tequila"
+          },
+          {
+            "texte": "3 cl de triple sec (Cointreau)",
+            "valeur": 3,
+            "unite": "cl",
+            "reste": "triple sec (Cointreau)"
+          },
+          {
+            "texte": "2 cl de jus de citron vert frais",
+            "valeur": 2,
+            "unite": "cl",
+            "reste": "jus de citron vert frais"
+          },
+          "sel fin pour le givrage",
+          "glaçons"
+        ],
+        "etapes": [
+          "Givrer le bord d’un verre à margarita : le frotter avec un quartier de citron vert puis le tremper dans le sel.",
+          "Secouer la tequila, le triple sec et le jus de citron vert au shaker avec des glaçons.",
+          "Filtrer dans le verre givré."
+        ]
       },
       {
-        "texte": "3 cl de triple sec (Cointreau)",
-        "valeur": 3,
-        "unite": "cl",
-        "reste": "triple sec (Cointreau)"
-      },
-      {
-        "texte": "2 cl de jus de citron vert frais",
-        "valeur": 2,
-        "unite": "cl",
-        "reste": "jus de citron vert frais"
-      },
-      "sel fin pour le givrage",
-      "glaçons"
-    ],
-    "etapes": [
-      "Givrer le bord d’un verre à margarita : le frotter avec un quartier de citron vert puis le tremper dans le sel.",
-      "Secouer la tequila, le triple sec et le jus de citron vert au shaker avec des glaçons.",
-      "Filtrer dans le verre givré."
+        "nom": "Frozen à la fraise",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "5 cl de tequila",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "tequila"
+          },
+          {
+            "texte": "2 cl de triple sec",
+            "valeur": 2,
+            "unite": "cl",
+            "reste": "triple sec"
+          },
+          {
+            "texte": "2 cl de jus de citron vert",
+            "valeur": 2,
+            "unite": "cl",
+            "reste": "jus de citron vert"
+          },
+          {
+            "texte": "150 g de fraises surgelées",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "fraises surgelées"
+          },
+          {
+            "texte": "1 cl de sirop de sucre",
+            "valeur": 1,
+            "unite": "cl",
+            "reste": "sirop de sucre"
+          },
+          "une poignée de glaçons",
+          "sucre pour le givrage"
+        ],
+        "etapes": [
+          "Givrer le bord du verre avec du citron vert et du sucre.",
+          "Mixer tous les ingrédients jusqu’à obtenir une texture de granité.",
+          "Verser dans le verre et servir aussitôt."
+        ]
+      }
     ]
   },
   {
@@ -24329,77 +24362,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-646",
-    "titre": "Meringues bonshommes de neige",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "20 min (+ 1 h 30 de cuisson)",
-    "personnes": "20",
-    "ingredients": [
-      {
-        "texte": "3 blancs d'œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "blancs d'œufs"
-      },
-      {
-        "texte": "150 g de sucre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "75 g de sucre glace",
-        "valeur": 75,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      "mini pépites de chocolat",
-      "bonbons orange (pour le nez)"
-    ],
-    "etapes": [
-      "Préchauffer le four à 100 °C. Monter les blancs en neige en ajoutant le sucre petit à petit, puis incorporer le sucre glace.",
-      "À la poche à douille lisse, pocher une grosse boule puis une plus petite au-dessus pour chaque bonhomme.",
-      "Planter des mini pépites pour les yeux et les boutons.",
-      "Cuire 1 h 30 et laisser refroidir dans le four entrouvert. Coller un petit morceau de bonbon orange pour le nez."
-    ]
-  },
-  {
-    "id": "static-652",
-    "titre": "Meringues fantômes",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "20 min (+ 1 h 30 de cuisson)",
-    "personnes": "20",
-    "ingredients": [
-      {
-        "texte": "3 blancs d'œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "blancs d'œufs"
-      },
-      {
-        "texte": "150 g de sucre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "75 g de sucre glace",
-        "valeur": 75,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      "mini pépites de chocolat"
-    ],
-    "etapes": [
-      "Préchauffer le four à 100 °C. Monter les blancs en neige en ajoutant le sucre petit à petit, puis le sucre glace.",
-      "À la poche à douille lisse, pocher des fantômes en tirant vers le haut pour faire une pointe.",
-      "Planter deux pépites pour les yeux (et une pour la bouche).",
-      "Cuire 1 h 30 et laisser refroidir dans le four."
-    ]
-  },
-  {
     "id": "static-221",
     "titre": "Meringues maison",
     "photo": "photos/enattente.png",
@@ -24476,6 +24438,71 @@ const recettes = [
           "Transférer la meringue dans une poche à douille munie d'une douille cannelée ou lisse.",
           "Pocher des petites meringues ou des rosaces sur la plaque préparée, en les espaçant régulièrement.",
           "Cuire environ 1h15 à 1h30 à 100°C, jusqu'à ce que les meringues se détachent facilement du papier. Laisser refroidir complètement dans le four éteint entrouvert avant de les décoller."
+        ]
+      },
+      {
+        "nom": "Bonshommes de neige",
+        "temps": "20 min (+ 1 h 30 de cuisson)",
+        "personnes": "20",
+        "ingredients": [
+          {
+            "texte": "3 blancs d'œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "blancs d'œufs"
+          },
+          {
+            "texte": "150 g de sucre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "75 g de sucre glace",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          "mini pépites de chocolat",
+          "bonbons orange (pour le nez)"
+        ],
+        "etapes": [
+          "Préchauffer le four à 100 °C. Monter les blancs en neige en ajoutant le sucre petit à petit, puis incorporer le sucre glace.",
+          "À la poche à douille lisse, pocher une grosse boule puis une plus petite au-dessus pour chaque bonhomme.",
+          "Planter des mini pépites pour les yeux et les boutons.",
+          "Cuire 1 h 30 et laisser refroidir dans le four entrouvert. Coller un petit morceau de bonbon orange pour le nez."
+        ]
+      },
+      {
+        "nom": "Fantômes d’Halloween",
+        "temps": "20 min (+ 1 h 30 de cuisson)",
+        "personnes": "20",
+        "ingredients": [
+          {
+            "texte": "3 blancs d'œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "blancs d'œufs"
+          },
+          {
+            "texte": "150 g de sucre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "75 g de sucre glace",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          "mini pépites de chocolat"
+        ],
+        "etapes": [
+          "Préchauffer le four à 100 °C. Monter les blancs en neige en ajoutant le sucre petit à petit, puis le sucre glace.",
+          "À la poche à douille lisse, pocher des fantômes en tirant vers le haut pour faire une pointe.",
+          "Planter deux pépites pour les yeux (et une pour la bouche).",
+          "Cuire 1 h 30 et laisser refroidir dans le four."
         ]
       }
     ]
@@ -25088,85 +25115,119 @@ const recettes = [
     "id": "static-233",
     "titre": "Mojito",
     "photo": "photos/enattente.png",
-    "temps": "10 min",
-    "personnes": "1",
     "cat": "boisson",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "50 ml de rhum blanc",
-        "valeur": 50,
-        "unite": "ml",
-        "reste": "rhum blanc"
+        "nom": "Classique",
+        "temps": "10 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "50 ml de rhum blanc",
+            "valeur": 50,
+            "unite": "ml",
+            "reste": "rhum blanc"
+          },
+          {
+            "texte": "8 feuilles de menthe fraîche",
+            "valeur": 8,
+            "unite": "feuille",
+            "reste": "menthe fraîche"
+          },
+          {
+            "texte": "20 g de sucre de canne",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "sucre de canne"
+          },
+          {
+            "texte": "1/2 citron vert",
+            "valeur": 1,
+            "unite": null,
+            "reste": "citron vert"
+          },
+          "eau gazeuse",
+          "glace pilée"
+        ],
+        "etapes": [
+          "Couper le citron vert en quartiers et le presser légèrement dans un verre avec le sucre et les feuilles de menthe.",
+          "Piler délicatement le tout pour libérer les arômes sans écraser complètement la menthe.",
+          "Ajouter le rhum blanc et mélanger.",
+          "Remplir le verre de glace pilée.",
+          "Compléter avec de l'eau gazeuse et mélanger délicatement avant de déguster."
+        ]
       },
       {
-        "texte": "8 feuilles de menthe fraîche",
-        "valeur": 8,
-        "unite": "feuille",
-        "reste": "menthe fraîche"
+        "nom": "À la fraise",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "5 cl de rhum blanc",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "rhum blanc"
+          },
+          {
+            "texte": "4 fraises",
+            "valeur": 4,
+            "unite": null,
+            "reste": "fraises"
+          },
+          {
+            "texte": "0,5 citron vert",
+            "valeur": 0.5,
+            "unite": null,
+            "reste": "citron vert"
+          },
+          "une dizaine de feuilles de menthe",
+          {
+            "texte": "2 c. à café de sucre de canne",
+            "valeur": 2,
+            "unite": "c. à café",
+            "reste": "sucre de canne"
+          },
+          "eau gazeuse",
+          "glace pilée"
+        ],
+        "etapes": [
+          "Écraser au pilon les fraises coupées, le citron vert en quartiers, la menthe et le sucre au fond d’un verre.",
+          "Remplir de glace pilée et verser le rhum.",
+          "Compléter d’eau gazeuse et mélanger."
+        ]
       },
       {
-        "texte": "20 g de sucre de canne",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "sucre de canne"
-      },
-      {
-        "texte": "1/2 citron vert",
-        "valeur": 1,
-        "unite": null,
-        "reste": "citron vert"
-      },
-      "eau gazeuse",
-      "glace pilée"
-    ],
-    "etapes": [
-      "Couper le citron vert en quartiers et le presser légèrement dans un verre avec le sucre et les feuilles de menthe.",
-      "Piler délicatement le tout pour libérer les arômes sans écraser complètement la menthe.",
-      "Ajouter le rhum blanc et mélanger.",
-      "Remplir le verre de glace pilée.",
-      "Compléter avec de l'eau gazeuse et mélanger délicatement avant de déguster."
-    ]
-  },
-  {
-    "id": "static-601",
-    "titre": "Mojito à la fraise",
-    "photo": "photos/enattente.png",
-    "cat": "boisson",
-    "temps": "5 min",
-    "personnes": "1",
-    "ingredients": [
-      {
-        "texte": "5 cl de rhum blanc",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "rhum blanc"
-      },
-      {
-        "texte": "4 fraises",
-        "valeur": 4,
-        "unite": null,
-        "reste": "fraises"
-      },
-      {
-        "texte": "0,5 citron vert",
-        "valeur": 0.5,
-        "unite": null,
-        "reste": "citron vert"
-      },
-      "une dizaine de feuilles de menthe",
-      {
-        "texte": "2 c. à café de sucre de canne",
-        "valeur": 2,
-        "unite": "c. à café",
-        "reste": "sucre de canne"
-      },
-      "eau gazeuse",
-      "glace pilée"
-    ],
-    "etapes": [
-      "Écraser au pilon les fraises coupées, le citron vert en quartiers, la menthe et le sucre au fond d’un verre.",
-      "Remplir de glace pilée et verser le rhum.",
-      "Compléter d’eau gazeuse et mélanger."
+        "nom": "Sans alcool (virgin)",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "0,5 citron vert",
+            "valeur": 0.5,
+            "unite": null,
+            "reste": "citron vert"
+          },
+          "une dizaine de feuilles de menthe",
+          {
+            "texte": "2 c. à café de sucre de canne",
+            "valeur": 2,
+            "unite": "c. à café",
+            "reste": "sucre de canne"
+          },
+          {
+            "texte": "150 ml d'eau gazeuse ou limonade",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "eau gazeuse ou limonade"
+          },
+          "glace pilée"
+        ],
+        "etapes": [
+          "Couper le citron vert en quartiers et le mettre dans un verre avec la menthe et le sucre.",
+          "Écraser doucement avec un pilon pour libérer le jus et les arômes.",
+          "Remplir de glace pilée, compléter avec l’eau gazeuse et mélanger."
+        ]
+      }
     ]
   },
   {
@@ -27062,81 +27123,83 @@ const recettes = [
     "titre": "Œufs mimosa",
     "photo": "photos/enattente.png",
     "cat": "entree",
-    "temps": "25 min",
-    "personnes": "4",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "6 œufs",
-        "valeur": 6,
-        "unite": null,
-        "reste": "œufs"
+        "nom": "Classiques",
+        "temps": "25 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "6 œufs",
+            "valeur": 6,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "3 c. à soupe de mayonnaise",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "mayonnaise"
+          },
+          {
+            "texte": "1 c. à café de moutarde",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "moutarde"
+          },
+          "ciboulette",
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Cuire les œufs 10 minutes dans l’eau bouillante, les refroidir dans l’eau glacée et les écaler.",
+          "Les couper en deux dans la longueur et retirer les jaunes.",
+          "Écraser les jaunes (en garder 1 pour le décor) avec la mayonnaise, la moutarde, du sel et du poivre.",
+          "Garnir les blancs à la cuillère ou à la poche, émietter le jaune réservé dessus et parsemer de ciboulette."
+        ]
       },
       {
-        "texte": "3 c. à soupe de mayonnaise",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "mayonnaise"
-      },
-      {
-        "texte": "1 c. à café de moutarde",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "moutarde"
-      },
-      "ciboulette",
-      "sel, poivre"
-    ],
-    "etapes": [
-      "Cuire les œufs 10 minutes dans l’eau bouillante, les refroidir dans l’eau glacée et les écaler.",
-      "Les couper en deux dans la longueur et retirer les jaunes.",
-      "Écraser les jaunes (en garder 1 pour le décor) avec la mayonnaise, la moutarde, du sel et du poivre.",
-      "Garnir les blancs à la cuillère ou à la poche, émietter le jaune réservé dessus et parsemer de ciboulette."
-    ]
-  },
-  {
-    "id": "static-651",
-    "titre": "Œufs mimosa yeux de monstre",
-    "photo": "photos/enattente.png",
-    "cat": "apero",
-    "temps": "30 min",
-    "personnes": "6",
-    "ingredients": [
-      {
-        "texte": "6 œufs",
-        "valeur": 6,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "3 c. à soupe de mayonnaise",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "mayonnaise"
-      },
-      {
-        "texte": "1 c. à café de moutarde",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "moutarde"
-      },
-      {
-        "texte": "6 olives noires",
-        "valeur": 6,
-        "unite": null,
-        "reste": "olives noires"
-      },
-      {
-        "texte": "1 c. à soupe de ketchup",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "ketchup"
+        "nom": "Yeux de monstre (Halloween)",
+        "temps": "30 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "6 œufs",
+            "valeur": 6,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "3 c. à soupe de mayonnaise",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "mayonnaise"
+          },
+          {
+            "texte": "1 c. à café de moutarde",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "moutarde"
+          },
+          {
+            "texte": "6 olives noires",
+            "valeur": 6,
+            "unite": null,
+            "reste": "olives noires"
+          },
+          {
+            "texte": "1 c. à soupe de ketchup",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "ketchup"
+          }
+        ],
+        "etapes": [
+          "Cuire les œufs durs 10 minutes, les refroidir, les écaler et les couper en deux.",
+          "Écraser les jaunes avec la mayonnaise et la moutarde, puis regarnir les blancs.",
+          "Poser une rondelle d’olive au centre : c’est la pupille.",
+          "Dessiner des petites veines rouges autour avec un cure-dent trempé dans le ketchup."
+        ]
       }
-    ],
-    "etapes": [
-      "Cuire les œufs durs 10 minutes, les refroidir, les écaler et les couper en deux.",
-      "Écraser les jaunes avec la mayonnaise et la moutarde, puis regarnir les blancs.",
-      "Poser une rondelle d’olive au centre : c’est la pupille.",
-      "Dessiner des petites veines rouges autour avec un cure-dent trempé dans le ketchup."
     ]
   },
   {
@@ -27557,53 +27620,6 @@ const recettes = [
           "Enrober les oursons de chocolat fondu et placer au frais pendant au moins deux heures avant de déguster."
         ]
       }
-    ]
-  },
-  {
-    "id": "static-530",
-    "titre": "Overnight oats (porridge de la veille)",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "5 min (+ 1 nuit au frais)",
-    "personnes": "1",
-    "ingredients": [
-      {
-        "texte": "50 g de flocons d'avoine",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "flocons d'avoine"
-      },
-      {
-        "texte": "150 ml de lait ou boisson végétale",
-        "valeur": 150,
-        "unite": "ml",
-        "reste": "lait ou boisson végétale"
-      },
-      {
-        "texte": "80 g d'yaourt nature",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "yaourt nature"
-      },
-      {
-        "texte": "1 c. à café de miel",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "miel"
-      },
-      {
-        "texte": "1 c. à soupe de graines de chia (facultatif)",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "graines de chia (facultatif)"
-      },
-      "fruits frais",
-      "une pincée de cannelle"
-    ],
-    "etapes": [
-      "Dans un bocal, mélanger les flocons, le lait, le yaourt, le miel, les graines de chia et la cannelle.",
-      "Fermer et laisser une nuit au réfrigérateur.",
-      "Le matin, ajouter les fruits frais. Se garde 3 jours : on peut en préparer plusieurs à l’avance."
     ]
   },
   {
@@ -28141,104 +28157,106 @@ const recettes = [
   },
   {
     "id": "static-419",
-    "titre": "Pain perdu classique",
+    "titre": "Pain perdu",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "15 min",
-    "personnes": "4",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "4 tranches de pain rassis (brioche ou baguette)",
-        "valeur": 4,
-        "unite": null,
-        "reste": "tranches de pain rassis (brioche ou baguette)"
+        "nom": "Classique",
+        "temps": "15 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "4 tranches de pain rassis (brioche ou baguette)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "tranches de pain rassis (brioche ou baguette)"
+          },
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "250 ml de lait",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "40 g de sucre",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "1 sachet de sucre vanillé",
+            "valeur": 1,
+            "unite": "sachet",
+            "reste": "sucre vanillé"
+          },
+          {
+            "texte": "30 g de beurre",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "1 pincée de cannelle",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "cannelle"
+          }
+        ],
+        "etapes": [
+          "Fouetter les œufs avec le lait, le sucre, le sucre vanillé et la cannelle dans une assiette creuse.",
+          "Tremper chaque tranche de pain quelques secondes de chaque côté.",
+          "Faire fondre le beurre dans une poêle à feu moyen.",
+          "Cuire les tranches 2 à 3 minutes par face, jusqu’à ce qu’elles soient bien dorées.",
+          "Servir chaud, saupoudré de sucre ou avec du sirop d’érable."
+        ]
       },
       {
-        "texte": "2 œufs",
-        "valeur": 2,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "250 ml de lait",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "lait"
-      },
-      {
-        "texte": "40 g de sucre",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "1 sachet de sucre vanillé",
-        "valeur": 1,
-        "unite": "sachet",
-        "reste": "sucre vanillé"
-      },
-      {
-        "texte": "30 g de beurre",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "1 pincée de cannelle",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "cannelle"
+        "nom": "Fourré au Nutella façon chausson",
+        "temps": "18 min",
+        "personnes": "3",
+        "ingredients": [
+          {
+            "texte": "3 tranches de pain de mie maison",
+            "valeur": 3,
+            "unite": null,
+            "reste": "tranches de pain de mie maison"
+          },
+          {
+            "texte": "150 g de Nutella",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "Nutella"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "5 ml de lait",
+            "valeur": 5,
+            "unite": "ml",
+            "reste": "lait"
+          }
+        ],
+        "etapes": [
+          "Prendre 3 tranches de pain de mie et les aplatir légèrement à l'aide d'un rouleau à pâtisserie.",
+          "Étaler une cuillère à soupe de Nutella au centre de chaque tranche.",
+          "Battre l'œuf avec le lait.",
+          "Badigeonner les bords de chaque tranche de pain avec le mélange d'œuf.",
+          "Plier chaque tranche en deux pour former une demi-lune et appuyer fermement sur les bords.",
+          "Cuire dans l'air fryer à 180°C pendant 5 minutes ou au four à 200°C pendant 7 à 8 minutes.",
+          "Laisser refroidir légèrement avant de servir."
+        ]
       }
-    ],
-    "etapes": [
-      "Fouetter les œufs avec le lait, le sucre, le sucre vanillé et la cannelle dans une assiette creuse.",
-      "Tremper chaque tranche de pain quelques secondes de chaque côté.",
-      "Faire fondre le beurre dans une poêle à feu moyen.",
-      "Cuire les tranches 2 à 3 minutes par face, jusqu’à ce qu’elles soient bien dorées.",
-      "Servir chaud, saupoudré de sucre ou avec du sirop d’érable."
-    ]
-  },
-  {
-    "id": "static-261",
-    "titre": "Pain perdu fourré au Nutella façon chausson",
-    "photo": "photos/enattente.png",
-    "temps": "18 min",
-    "personnes": "3",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "3 tranches de pain de mie maison",
-        "valeur": 3,
-        "unite": null,
-        "reste": "tranches de pain de mie maison"
-      },
-      {
-        "texte": "150 g de Nutella",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "Nutella"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "5 ml de lait",
-        "valeur": 5,
-        "unite": "ml",
-        "reste": "lait"
-      }
-    ],
-    "etapes": [
-      "Prendre 3 tranches de pain de mie et les aplatir légèrement à l'aide d'un rouleau à pâtisserie.",
-      "Étaler une cuillère à soupe de Nutella au centre de chaque tranche.",
-      "Battre l'œuf avec le lait.",
-      "Badigeonner les bords de chaque tranche de pain avec le mélange d'œuf.",
-      "Plier chaque tranche en deux pour former une demi-lune et appuyer fermement sur les bords.",
-      "Cuire dans l'air fryer à 180°C pendant 5 minutes ou au four à 200°C pendant 7 à 8 minutes.",
-      "Laisser refroidir légèrement avant de servir."
     ]
   },
   {
@@ -28473,72 +28491,6 @@ const recettes = [
   },
   {
     "id": "static-518",
-    "titre": "Pains au lait",
-    "photo": "photos/enattente.png",
-    "cat": "base-culinaire",
-    "temps": "40 min (+ 2 h de pousse)",
-    "personnes": "12",
-    "ingredients": [
-      {
-        "texte": "500 g de farine",
-        "valeur": 500,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "250 ml de lait tiède",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "lait tiède"
-      },
-      {
-        "texte": "10 g de levure de boulanger sèche",
-        "valeur": 10,
-        "unite": "g",
-        "reste": "levure de boulanger sèche"
-      },
-      {
-        "texte": "50 g de sucre",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "80 g de beurre mou",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "beurre mou"
-      },
-      {
-        "texte": "1 c. à café de sel",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "sel"
-      },
-      {
-        "texte": "1 jaune d'œuf (dorure)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "jaune d'œuf (dorure)"
-      },
-      "sucre perlé (facultatif)"
-    ],
-    "etapes": [
-      "Délayer la levure dans le lait tiède avec une pincée de sucre.",
-      "Mélanger la farine, le sucre et le sel, ajouter l’œuf et le lait, puis pétrir 8 minutes.",
-      "Ajouter le beurre mou et pétrir encore 5 minutes jusqu’à obtenir une pâte souple. Laisser lever 1 h 30.",
-      "Diviser en 12 boules, les allonger en petits pains et les poser sur une plaque. Laisser lever encore 45 minutes.",
-      "Dorer au jaune d’œuf, parsemer de sucre perlé et cuire 15 minutes à 180 °C."
-    ]
-  },
-  {
-    "id": "static-678",
     "titre": "Pains au lait moelleux",
     "photo": "photos/enattente.png",
     "cat": "base-culinaire",
@@ -31025,68 +30977,74 @@ const recettes = [
     "titre": "Piña colada",
     "photo": "photos/enattente.png",
     "cat": "boisson",
-    "temps": "5 min",
-    "personnes": "1",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "5 cl de rhum blanc",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "rhum blanc"
+        "nom": "Classique",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "5 cl de rhum blanc",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "rhum blanc"
+          },
+          {
+            "texte": "10 cl de jus d'ananas",
+            "valeur": 10,
+            "unite": "cl",
+            "reste": "jus d'ananas"
+          },
+          {
+            "texte": "5 cl de crème de coco (ou lait de coco)",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "crème de coco (ou lait de coco)"
+          },
+          "glaçons",
+          {
+            "texte": "1 morceau d'ananas (décor)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "morceau d'ananas (décor)"
+          }
+        ],
+        "etapes": [
+          "Mettre le rhum, le jus d’ananas, la crème de coco et une poignée de glaçons dans un blender (ou un shaker).",
+          "Mixer jusqu’à obtenir une texture onctueuse et mousseuse.",
+          "Verser dans un grand verre et décorer d’un morceau d’ananas."
+        ]
       },
       {
-        "texte": "10 cl de jus d'ananas",
-        "valeur": 10,
-        "unite": "cl",
-        "reste": "jus d'ananas"
-      },
-      {
-        "texte": "5 cl de crème de coco (ou lait de coco)",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "crème de coco (ou lait de coco)"
-      },
-      "glaçons",
-      {
-        "texte": "1 morceau d'ananas (décor)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "morceau d'ananas (décor)"
+        "nom": "Sans alcool (virgin colada)",
+        "temps": "5 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "12 cl de jus d'ananas",
+            "valeur": 12,
+            "unite": "cl",
+            "reste": "jus d'ananas"
+          },
+          {
+            "texte": "5 cl de crème de coco",
+            "valeur": 5,
+            "unite": "cl",
+            "reste": "crème de coco"
+          },
+          {
+            "texte": "2 cl de jus de citron vert",
+            "valeur": 2,
+            "unite": "cl",
+            "reste": "jus de citron vert"
+          },
+          "glaçons"
+        ],
+        "etapes": [
+          "Mixer tous les ingrédients avec une poignée de glaçons.",
+          "Verser dans un grand verre et décorer d’un morceau d’ananas."
+        ]
       }
-    ],
-    "etapes": [
-      "Mettre le rhum, le jus d’ananas, la crème de coco et une poignée de glaçons dans un blender (ou un shaker).",
-      "Mixer jusqu’à obtenir une texture onctueuse et mousseuse.",
-      "Verser dans un grand verre et décorer d’un morceau d’ananas."
-    ]
-  },
-  {
-    "id": "static-602",
-    "titre": "Pink gin tonic",
-    "photo": "photos/enattente.png",
-    "cat": "boisson",
-    "temps": "3 min",
-    "personnes": "1",
-    "ingredients": [
-      {
-        "texte": "5 cl de gin rose (à la fraise ou à la framboise)",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "gin rose (à la fraise ou à la framboise)"
-      },
-      {
-        "texte": "15 cl de tonic",
-        "valeur": 15,
-        "unite": "cl",
-        "reste": "tonic"
-      },
-      "quelques fraises ou framboises",
-      "glaçons"
-    ],
-    "etapes": [
-      "Remplir un verre ballon de glaçons et de fruits rouges coupés.",
-      "Verser le gin puis le tonic le long d’une cuillère.",
-      "Mélanger une seule fois."
     ]
   },
   {
@@ -32668,39 +32626,88 @@ const recettes = [
     "titre": "Porridge",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "10 min",
-    "personnes": "1",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "50 g de flocons d'avoine",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "flocons d'avoine"
+        "nom": "Chaud, cuit au lait",
+        "temps": "10 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "50 g de flocons d'avoine",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "flocons d'avoine"
+          },
+          {
+            "texte": "250 ml de lait (ou boisson végétale)",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "lait (ou boisson végétale)"
+          },
+          {
+            "texte": "1 c. à café de miel",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "miel"
+          },
+          {
+            "texte": "1 pincée de cannelle",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "cannelle"
+          },
+          "fruits frais pour servir"
+        ],
+        "etapes": [
+          "Mettre les flocons et le lait dans une casserole.",
+          "Cuire 5 minutes à feu doux en remuant, jusqu’à ce que le mélange soit crémeux.",
+          "Ajouter la cannelle et le miel, puis servir avec des fruits frais."
+        ]
       },
       {
-        "texte": "250 ml de lait (ou boisson végétale)",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "lait (ou boisson végétale)"
-      },
-      {
-        "texte": "1 c. à café de miel",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "miel"
-      },
-      {
-        "texte": "1 pincée de cannelle",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "cannelle"
-      },
-      "fruits frais pour servir"
-    ],
-    "etapes": [
-      "Mettre les flocons et le lait dans une casserole.",
-      "Cuire 5 minutes à feu doux en remuant, jusqu’à ce que le mélange soit crémeux.",
-      "Ajouter la cannelle et le miel, puis servir avec des fruits frais."
+        "nom": "Overnight oats (préparé la veille)",
+        "temps": "5 min (+ 1 nuit au frais)",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "50 g de flocons d'avoine",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "flocons d'avoine"
+          },
+          {
+            "texte": "150 ml de lait ou boisson végétale",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "lait ou boisson végétale"
+          },
+          {
+            "texte": "80 g d'yaourt nature",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "yaourt nature"
+          },
+          {
+            "texte": "1 c. à café de miel",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "miel"
+          },
+          {
+            "texte": "1 c. à soupe de graines de chia (facultatif)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "graines de chia (facultatif)"
+          },
+          "fruits frais",
+          "une pincée de cannelle"
+        ],
+        "etapes": [
+          "Dans un bocal, mélanger les flocons, le lait, le yaourt, le miel, les graines de chia et la cannelle.",
+          "Fermer et laisser une nuit au réfrigérateur.",
+          "Le matin, ajouter les fruits frais. Se garde 3 jours : on peut en préparer plusieurs à l’avance."
+        ]
+      }
     ]
   },
   {
@@ -36833,130 +36840,132 @@ const recettes = [
     "titre": "Sangria",
     "photo": "photos/enattente.png",
     "cat": "boisson",
-    "temps": "15 min (+ 4 h de macération)",
-    "personnes": "8",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "75 cl de vin rouge",
-        "valeur": 75,
-        "unite": "cl",
-        "reste": "vin rouge"
+        "nom": "Rouge",
+        "temps": "15 min (+ 4 h de macération)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "75 cl de vin rouge",
+            "valeur": 75,
+            "unite": "cl",
+            "reste": "vin rouge"
+          },
+          {
+            "texte": "1 orange",
+            "valeur": 1,
+            "unite": null,
+            "reste": "orange"
+          },
+          {
+            "texte": "1 citron",
+            "valeur": 1,
+            "unite": null,
+            "reste": "citron"
+          },
+          {
+            "texte": "1 pomme",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pomme"
+          },
+          {
+            "texte": "80 g de sucre",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "10 cl de triple sec ou liqueur d’orange",
+            "valeur": 10,
+            "unite": "cl",
+            "reste": "triple sec ou liqueur d’orange"
+          },
+          {
+            "texte": "1 bâton de cannelle",
+            "valeur": 1,
+            "unite": null,
+            "reste": "bâton de cannelle"
+          },
+          {
+            "texte": "50 cl de limonade ou eau gazeuse",
+            "valeur": 50,
+            "unite": "cl",
+            "reste": "limonade ou eau gazeuse"
+          },
+          "glaçons"
+        ],
+        "etapes": [
+          "Couper l’orange, le citron et la pomme en petits morceaux.",
+          "Dans une grande carafe, mélanger le vin, le sucre, la liqueur, la cannelle et les fruits.",
+          "Laisser macérer au moins 4 heures au réfrigérateur.",
+          "Au moment de servir, ajouter la limonade et les glaçons."
+        ]
       },
       {
-        "texte": "1 orange",
-        "valeur": 1,
-        "unite": null,
-        "reste": "orange"
-      },
-      {
-        "texte": "1 citron",
-        "valeur": 1,
-        "unite": null,
-        "reste": "citron"
-      },
-      {
-        "texte": "1 pomme",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pomme"
-      },
-      {
-        "texte": "80 g de sucre",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "10 cl de triple sec ou liqueur d’orange",
-        "valeur": 10,
-        "unite": "cl",
-        "reste": "triple sec ou liqueur d’orange"
-      },
-      {
-        "texte": "1 bâton de cannelle",
-        "valeur": 1,
-        "unite": null,
-        "reste": "bâton de cannelle"
-      },
-      {
-        "texte": "50 cl de limonade ou eau gazeuse",
-        "valeur": 50,
-        "unite": "cl",
-        "reste": "limonade ou eau gazeuse"
-      },
-      "glaçons"
-    ],
-    "etapes": [
-      "Couper l’orange, le citron et la pomme en petits morceaux.",
-      "Dans une grande carafe, mélanger le vin, le sucre, la liqueur, la cannelle et les fruits.",
-      "Laisser macérer au moins 4 heures au réfrigérateur.",
-      "Au moment de servir, ajouter la limonade et les glaçons."
-    ]
-  },
-  {
-    "id": "static-604",
-    "titre": "Sangria blanche",
-    "photo": "photos/enattente.png",
-    "cat": "boisson",
-    "temps": "10 min (+ 3 h au frais)",
-    "personnes": "8",
-    "ingredients": [
-      {
-        "texte": "75 cl de vin blanc sec",
-        "valeur": 75,
-        "unite": "cl",
-        "reste": "vin blanc sec"
-      },
-      {
-        "texte": "10 cl de liqueur de pêche ou triple sec",
-        "valeur": 10,
-        "unite": "cl",
-        "reste": "liqueur de pêche ou triple sec"
-      },
-      {
-        "texte": "60 g de sucre",
-        "valeur": 60,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "1 pêche",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pêche"
-      },
-      {
-        "texte": "1 orange",
-        "valeur": 1,
-        "unite": null,
-        "reste": "orange"
-      },
-      {
-        "texte": "1 citron",
-        "valeur": 1,
-        "unite": null,
-        "reste": "citron"
-      },
-      {
-        "texte": "150 g de raisin blanc",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "raisin blanc"
-      },
-      {
-        "texte": "50 cl de limonade",
-        "valeur": 50,
-        "unite": "cl",
-        "reste": "limonade"
-      },
-      "menthe",
-      "glaçons"
-    ],
-    "etapes": [
-      "Couper les fruits en morceaux.",
-      "Mélanger dans une carafe le vin, la liqueur, le sucre et les fruits.",
-      "Laisser macérer 3 heures au réfrigérateur.",
-      "Ajouter la limonade, la menthe et les glaçons au moment de servir."
+        "nom": "Blanche",
+        "temps": "10 min (+ 3 h au frais)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "75 cl de vin blanc sec",
+            "valeur": 75,
+            "unite": "cl",
+            "reste": "vin blanc sec"
+          },
+          {
+            "texte": "10 cl de liqueur de pêche ou triple sec",
+            "valeur": 10,
+            "unite": "cl",
+            "reste": "liqueur de pêche ou triple sec"
+          },
+          {
+            "texte": "60 g de sucre",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "1 pêche",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pêche"
+          },
+          {
+            "texte": "1 orange",
+            "valeur": 1,
+            "unite": null,
+            "reste": "orange"
+          },
+          {
+            "texte": "1 citron",
+            "valeur": 1,
+            "unite": null,
+            "reste": "citron"
+          },
+          {
+            "texte": "150 g de raisin blanc",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "raisin blanc"
+          },
+          {
+            "texte": "50 cl de limonade",
+            "valeur": 50,
+            "unite": "cl",
+            "reste": "limonade"
+          },
+          "menthe",
+          "glaçons"
+        ],
+        "etapes": [
+          "Couper les fruits en morceaux.",
+          "Mélanger dans une carafe le vin, la liqueur, le sucre et les fruits.",
+          "Laisser macérer 3 heures au réfrigérateur.",
+          "Ajouter la limonade, la menthe et les glaçons au moment de servir."
+        ]
+      }
     ]
   },
   {
@@ -37298,113 +37307,115 @@ const recettes = [
     ]
   },
   {
-    "id": "static-335",
-    "titre": "Sauce tomate aux légumes sautés et parmesan",
-    "photo": "photos/enattente.png",
-    "temps": "30 min",
-    "personnes": "4",
-    "cat": "sauce",
-    "ingredients": [
-      {
-        "texte": "1 poivron rouge",
-        "valeur": 1,
-        "unite": null,
-        "reste": "poivron rouge"
-      },
-      {
-        "texte": "1 courgette",
-        "valeur": 1,
-        "unite": null,
-        "reste": "courgette"
-      },
-      {
-        "texte": "2 c. à soupe d'huile d'olive",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "huile d'olive"
-      },
-      {
-        "texte": "2 gousses d'ail",
-        "valeur": 2,
-        "unite": null,
-        "reste": "gousses d'ail"
-      },
-      {
-        "texte": "400 g de tomates pelées concassées",
-        "valeur": 400,
-        "unite": "g",
-        "reste": "tomates pelées concassées"
-      },
-      {
-        "texte": "50 ml d'eau",
-        "valeur": 50,
-        "unite": "ml",
-        "reste": "eau"
-      },
-      "sel",
-      "poivre noir",
-      {
-        "texte": "6 feuilles de basilic frais",
-        "valeur": 6,
-        "unite": null,
-        "reste": "feuilles de basilic frais"
-      },
-      {
-        "texte": "20 g de parmesan râpé",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "parmesan râpé"
-      }
-    ],
-    "etapes": [
-      "Couper le poivron en lanières et la courgette en demi-rondelles.",
-      "Faire chauffer l'huile dans une poêle à feu moyen. Ajouter l'ail écrasé et faire revenir jusqu'à ce qu'il soit translucide.",
-      "Ajouter le poivron et la courgette, poursuivre la cuisson en remuant jusqu'à ce qu'ils soient tendres, environ 5 à 7 minutes.",
-      "Verser les tomates pelées concassées et l'eau. Mélanger et laisser mijoter 6 à 8 minutes. Saler et poivrer.",
-      "Ajouter le basilic ciselé et couvrir quelques instants pour parfumer.",
-      "Servir chaud, saupoudrer de parmesan râpé."
-    ]
-  },
-  {
     "id": "static-410",
     "titre": "Sauce tomate maison",
     "photo": "photos/enattente.png",
     "cat": "sauce",
-    "temps": "30 min",
-    "personnes": "4",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "800 g de tomates pelées en conserve",
-        "valeur": 800,
-        "unite": "g",
-        "reste": "tomates pelées en conserve"
+        "nom": "Classique",
+        "temps": "30 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "800 g de tomates pelées en conserve",
+            "valeur": 800,
+            "unite": "g",
+            "reste": "tomates pelées en conserve"
+          },
+          {
+            "texte": "2 gousses d'ail",
+            "valeur": 2,
+            "unite": null,
+            "reste": "gousses d'ail"
+          },
+          {
+            "texte": "3 c. à soupe d'huile d'olive",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          {
+            "texte": "1 pincée de sucre",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sucre"
+          },
+          "quelques feuilles de basilic",
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Faire chauffer l’huile à feu doux et y faire dorer légèrement l’ail émincé.",
+          "Ajouter les tomates en les écrasant à la cuillère, puis le sucre (il corrige l’acidité), le sel et le poivre.",
+          "Laisser mijoter 20 minutes à découvert, jusqu’à ce que la sauce épaississe.",
+          "Ajouter le basilic ciselé hors du feu. Mixer si vous la voulez lisse."
+        ]
       },
       {
-        "texte": "2 gousses d'ail",
-        "valeur": 2,
-        "unite": null,
-        "reste": "gousses d'ail"
-      },
-      {
-        "texte": "3 c. à soupe d'huile d'olive",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "huile d'olive"
-      },
-      {
-        "texte": "1 pincée de sucre",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sucre"
-      },
-      "quelques feuilles de basilic",
-      "sel, poivre"
-    ],
-    "etapes": [
-      "Faire chauffer l’huile à feu doux et y faire dorer légèrement l’ail émincé.",
-      "Ajouter les tomates en les écrasant à la cuillère, puis le sucre (il corrige l’acidité), le sel et le poivre.",
-      "Laisser mijoter 20 minutes à découvert, jusqu’à ce que la sauce épaississe.",
-      "Ajouter le basilic ciselé hors du feu. Mixer si vous la voulez lisse."
+        "nom": "Aux légumes sautés et parmesan",
+        "temps": "30 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "1 poivron rouge",
+            "valeur": 1,
+            "unite": null,
+            "reste": "poivron rouge"
+          },
+          {
+            "texte": "1 courgette",
+            "valeur": 1,
+            "unite": null,
+            "reste": "courgette"
+          },
+          {
+            "texte": "2 c. à soupe d'huile d'olive",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          {
+            "texte": "2 gousses d'ail",
+            "valeur": 2,
+            "unite": null,
+            "reste": "gousses d'ail"
+          },
+          {
+            "texte": "400 g de tomates pelées concassées",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "tomates pelées concassées"
+          },
+          {
+            "texte": "50 ml d'eau",
+            "valeur": 50,
+            "unite": "ml",
+            "reste": "eau"
+          },
+          "sel",
+          "poivre noir",
+          {
+            "texte": "6 feuilles de basilic frais",
+            "valeur": 6,
+            "unite": null,
+            "reste": "feuilles de basilic frais"
+          },
+          {
+            "texte": "20 g de parmesan râpé",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "parmesan râpé"
+          }
+        ],
+        "etapes": [
+          "Couper le poivron en lanières et la courgette en demi-rondelles.",
+          "Faire chauffer l'huile dans une poêle à feu moyen. Ajouter l'ail écrasé et faire revenir jusqu'à ce qu'il soit translucide.",
+          "Ajouter le poivron et la courgette, poursuivre la cuisson en remuant jusqu'à ce qu'ils soient tendres, environ 5 à 7 minutes.",
+          "Verser les tomates pelées concassées et l'eau. Mélanger et laisser mijoter 6 à 8 minutes. Saler et poivrer.",
+          "Ajouter le basilic ciselé et couvrir quelques instants pour parfumer.",
+          "Servir chaud, saupoudrer de parmesan râpé."
+        ]
+      }
     ]
   },
   {
@@ -42011,74 +42022,6 @@ const recettes = [
       "Ajouter l'huile d'olive petit à petit en fouettant (ou en secouant le pot fermé) jusqu'à ce que la vinaigrette soit bien émulsionnée.",
       "Goûter et rectifier l'assaisonnement si besoin.",
       "Se conserve quelques jours au réfrigérateur ; secouer à nouveau avant chaque utilisation."
-    ]
-  },
-  {
-    "id": "static-587",
-    "titre": "Virgin colada (piña colada sans alcool)",
-    "photo": "photos/enattente.png",
-    "cat": "boisson",
-    "temps": "5 min",
-    "personnes": "1",
-    "ingredients": [
-      {
-        "texte": "12 cl de jus d'ananas",
-        "valeur": 12,
-        "unite": "cl",
-        "reste": "jus d'ananas"
-      },
-      {
-        "texte": "5 cl de crème de coco",
-        "valeur": 5,
-        "unite": "cl",
-        "reste": "crème de coco"
-      },
-      {
-        "texte": "2 cl de jus de citron vert",
-        "valeur": 2,
-        "unite": "cl",
-        "reste": "jus de citron vert"
-      },
-      "glaçons"
-    ],
-    "etapes": [
-      "Mixer tous les ingrédients avec une poignée de glaçons.",
-      "Verser dans un grand verre et décorer d’un morceau d’ananas."
-    ]
-  },
-  {
-    "id": "static-560",
-    "titre": "Virgin mojito",
-    "photo": "photos/enattente.png",
-    "cat": "boisson",
-    "temps": "5 min",
-    "personnes": "1",
-    "ingredients": [
-      {
-        "texte": "0,5 citron vert",
-        "valeur": 0.5,
-        "unite": null,
-        "reste": "citron vert"
-      },
-      "une dizaine de feuilles de menthe",
-      {
-        "texte": "2 c. à café de sucre de canne",
-        "valeur": 2,
-        "unite": "c. à café",
-        "reste": "sucre de canne"
-      },
-      {
-        "texte": "150 ml d'eau gazeuse ou limonade",
-        "valeur": 150,
-        "unite": "ml",
-        "reste": "eau gazeuse ou limonade"
-      },
-      "glace pilée"
-    ],
-    "etapes": [
-      "Couper le citron vert en quartiers et le mettre dans un verre avec la menthe et le sucre.",
-      "Écraser doucement avec un pilon pour libérer le jus et les arômes.",
-      "Remplir de glace pilée, compléter avec l’eau gazeuse et mélanger."
     ]
   },
   {
