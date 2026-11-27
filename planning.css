@@ -443,3 +443,20 @@
   }
   .filter-bar { top: 54px !important; }
 }
+
+/* ── Repas mangé ── */
+.plan-eat {
+  flex: none; border: 1.5px solid var(--border); background: #fff; color: var(--muted);
+  border-radius: 99px; padding: 0.3rem 0.6rem; font: inherit; font-size: 0.72rem; font-weight: 600;
+  cursor: pointer; white-space: nowrap;
+}
+.plan-eat:hover { border-color: #6E9A57; color: #3F6B2E; }
+.plan-eat.on { background: #E3EFD9; border-color: #9CC283; color: #3F6B2E; }
+.plan-recipe--eaten { background: #F1F5EC; }
+.plan-recipe--eaten .plan-recipe-name { color: var(--muted); }
+.plan-recipe--eaten .plan-thumb { opacity: 0.55; }
+@media (max-width: 560px) {
+  .plan-recipe { flex-wrap: wrap; }
+  .plan-recipe-name { flex-basis: calc(100% - 100px); }
+  .plan-eat { margin-left: 52px; }
+}

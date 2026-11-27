@@ -395,4 +395,46 @@
   });
 
   window.renderFrigo = render;
+
+  // ── Repas mangé (onglet « Ma semaine ») : on retire du frigo ce que la recette a utilisé ──
+  // v = version de la recette, factor = personnes prévues / personnes de la recette.
+  // Renvoie ce qui a été retiré, pour pouvoir le remettre si on décoche « mangé ».
+  function consumeMeal(v, factor) {
+    const items = frigoItems(); if (!items.length) return [];
+    const ings = (v.ingredients || []).filter(i => ingText(i));
+    const record = [];
+    const kept = [];
+    items.forEach(it => {
+      const k = key(it.nom);
+      const ing = k.trim() ? ings.find(i => key(ingText(i)).includes(k)) : null;
+      if (!ing) { kept.push(it); return; }
+      const need = typeof ing === 'object' && ing.valeur != null ? base(ing.valeur * factor, ing.unite) : null;
+      const have = base(it.qte, it.unite);
+      if (need && have && need.d === have.d) {
+        const unit = base(1, it.unite).n || 1;
+        const usedQ = Math.min(it.qte, need.n / unit);
+        const rest = +(it.qte - usedQ).toFixed(3);
+        if (rest > it.qte * 0.03 && rest > 0) { kept.push({ ...it, qte: rest }); record.push({ nom: it.nom, unite: it.unite, used: usedQ, removed: false }); }
+        else record.push({ nom: it.nom, unite: it.unite, used: it.qte, removed: true });
+      } else if (it.qte == null && isPlacard(it.nom)) {
+        kept.push(it); // sel, huile… sans quantité : on les garde
+      } else {
+        record.push({ nom: it.nom, unite: it.unite, used: it.qte, removed: true }); // pas comparable : l'aliment est utilisé
+      }
+    });
+    if (record.length) { P().saveFrigo(kept); render(); }
+    return record;
+  }
+  function restoreMeal(record) {
+    if (!record || !record.length) return;
+    const items = frigoItems();
+    record.forEach(r => {
+      const it = items.find(i => key(i.nom) === key(r.nom));
+      if (it) { if (it.qte != null && r.used != null && (it.unite || '') === (r.unite || '')) it.qte = +(it.qte + r.used).toFixed(3); }
+      else items.push({ nom: r.nom, qte: r.used ?? null, unite: r.used != null ? r.unite : null });
+    });
+    P().saveFrigo(items); render();
+  }
+  const labelOf = r => r.nom + (r.used != null ? ' (' + (base(r.used, r.unite) ? fmtBase(base(r.used, r.unite)) : r.used + ' ' + (r.unite || '')) + ')' : '');
+  window.FrigoAPI = { consumeMeal, restoreMeal, labelOf };
 })();
