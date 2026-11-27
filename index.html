@@ -223,7 +223,14 @@
         <ul class="ing-list" id="modal-ings"></ul>
       </div>
       <div>
-        <div class="modal-section-title">Préparation</div>
+        <div class="steps-head">
+          <div class="modal-section-title">Préparation</div>
+          <div class="mode-switch" role="tablist" aria-label="Mode de préparation">
+            <button type="button" data-mode="classique" class="active" role="tab">Classique</button>
+            <button type="button" data-mode="mc" role="tab">Monsieur Cuisine</button>
+          </div>
+        </div>
+        <p class="mc-note" id="mc-note" hidden></p>
         <ol class="steps-list" id="modal-steps"></ol>
       </div>
     </div>

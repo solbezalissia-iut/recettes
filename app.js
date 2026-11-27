@@ -183,7 +183,7 @@ function ingLabel(ing) {
 // simple recipe or a grouped one with a `variantes` array.
 function getVariants(r) {
   if (r.variantes) return r.variantes;
-  return [{ nom: null, temps: r.temps, personnes: r.personnes, ingredients: r.ingredients, etapes: r.etapes }];
+  return [{ nom: null, temps: r.temps, personnes: r.personnes, ingredients: r.ingredients, etapes: r.etapes, mc: r.mc }];
 }
 
 function previewVariant(r) {
@@ -400,10 +400,34 @@ function renderIngredients() {
   }).join('');
 }
 
+// Mode de préparation : « classique » (à la main / au four) ou « mc » (Monsieur Cuisine de Lidl).
+// Le choix est mémorisé sur l'appareil.
+let stepsMode = 'classique';
+try { stepsMode = localStorage.getItem('recettes-mode') === 'mc' ? 'mc' : 'classique'; } catch (e) { /* stockage indisponible */ }
+
 function renderSteps() {
   const v = currentVariant();
-  document.getElementById('modal-steps').innerHTML = v.etapes.map(e => `<li><div>${e}</div></li>`).join('');
+  const note = document.getElementById('mc-note');
+  document.querySelectorAll('.mode-switch button').forEach(b => b.classList.toggle('active', b.dataset.mode === stepsMode));
+  let steps = v.etapes;
+  note.hidden = true;
+  if (stepsMode === 'mc') {
+    if (v.mc && v.mc.length) {
+      steps = v.mc;
+      note.textContent = 'Réglages indiqués : temps / température / vitesse. Ils fonctionnent sur tous les Monsieur Cuisine (Smart, Connect, Trend).';
+    } else {
+      note.textContent = 'Pas encore de version Monsieur Cuisine pour cette recette : voici la version classique.';
+    }
+    note.hidden = false;
+  }
+  document.getElementById('modal-steps').innerHTML = steps.map(e => `<li><div>${e}</div></li>`).join('');
 }
+
+document.querySelectorAll('.mode-switch button').forEach(b => b.addEventListener('click', () => {
+  stepsMode = b.dataset.mode;
+  try { localStorage.setItem('recettes-mode', stepsMode); } catch (e) { /* rien */ }
+  renderSteps();
+}));
 
 function updateServingDisplay() {
   document.getElementById('serving-count').textContent = currentServings;

@@ -30,6 +30,9 @@ const recettes = [
       "Mettre la boule de glace dans une petite tasse ou un verre.",
       "Verser l’expresso brûlant dessus au moment de servir (et l’amaretto si désiré).",
       "Déguster aussitôt, pendant que la glace fond."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (glace + expresso versé au dernier moment)."
     ]
   },
   {
@@ -79,6 +82,12 @@ const recettes = [
       "Égoutter sur du papier absorbant et saler légèrement.",
       "Sauce : mixer ou hacher l’oignon, les tomates et le piment avec un filet d’huile et du sel. Servir l’alloco avec la sauce, du poisson grillé ou un œuf.",
       "Astuce : une banane plantain bien mûre a la peau presque noire, elle est sucrée et fondante ; une plantain verte ou jaune est ferme et plus salée, idéale pour les chips et les tostones."
+    ],
+    "mc": [
+      "Éplucher les bananes plantain et les couper en rondelles épaisses ou en biais (1,5 cm).",
+      "Les frire à la friteuse ou dans une casserole d'huile à 170 °C, 4 à 5 minutes, jusqu'à ce qu'elles soient bien dorées. Égoutter et saler.",
+      "Sauce : mettre l'oignon coupé en quatre, les tomates, le piment, un filet d'huile et le sel dans le bol. Hacher <b>5 s / vitesse 5</b>.",
+      "Racler les parois et cuire <b>5 min / 100 °C / vitesse 1</b> pour une sauce plus douce (ou la servir crue). Servir avec l'alloco."
     ]
   },
   {
@@ -119,6 +128,11 @@ const recettes = [
       "Secouer tous les ingrédients sans glace 10 secondes pour faire mousser le blanc.",
       "Ajouter des glaçons et secouer à nouveau.",
       "Filtrer dans un verre bas sur des glaçons et décorer d’une cerise."
+    ],
+    "mc": [
+      "Mettre l'amaretto, le jus de citron, le sirop de sucre et le blanc d'œuf dans le bol (sans glaçons).",
+      "Mixer <b>20 s / vitesse 4</b> pour faire mousser le blanc.",
+      "Verser dans un verre bas rempli de glaçons et décorer d'une cerise."
     ]
   },
   {
@@ -162,6 +176,9 @@ const recettes = [
           "Remplir un grand verre à vin de glaçons.",
           "Verser le Prosecco, puis l’Aperol, puis l’eau gazeuse (règle 3-2-1).",
           "Mélanger doucement et décorer d’une rondelle d’orange."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour ce cocktail : suivre la version classique (règle 3-2-1 directement dans le verre)."
         ]
       },
       {
@@ -204,6 +221,11 @@ const recettes = [
           "Remplir un verre de glace pilée.",
           "Verser le mélange de cocktail sur la glace pilée.",
           "Garnir avec une cerise pour la décoration."
+        ],
+        "mc": [
+          "Mettre les cerises congelées, l'Aperol, le Prosecco, l'eau pétillante et la gomme xanthane dans le bol.",
+          "Mixer <b>30 s / vitesse 5 à 8</b> en augmentant progressivement, jusqu'à obtenir une texture lisse.",
+          "Verser sur la glace pilée et décorer d'une cerise."
         ]
       }
     ]
@@ -243,6 +265,11 @@ const recettes = [
       "Chauffer une poêle très chaude et déposer les arepas ; cuire environ 5 à 7 minutes de chaque côté jusqu'à ce qu'elles soient dorées et que le fromage commence à fondre.",
       "Retourner avec précaution pour éviter de brûler et poursuivre la cuisson jusqu'à cuisson interne et extérieur croustillant.",
       "Servir immédiatement, les arepas doivent être bien chaudes et le fromage à cœur fondant."
+    ],
+    "mc": [
+      "Mettre la farine de maïs et l'eau dans le bol. Pétrir <b>1 min 30 / mode pétrin</b> (ou <b>vitesse 4 en sens inverse</b>) jusqu'à obtenir une pâte souple.",
+      "Façonner des boules de 60 g, les aplatir, mettre le fromage au centre et refermer en boule lisse.",
+      "Cuire dans une poêle très chaude 5 à 7 minutes de chaque côté, jusqu'à ce qu'elles soient dorées et le fromage fondu. Servir bien chaud."
     ]
   },
   {
@@ -291,6 +318,13 @@ const recettes = [
       "Dans un plat, alterner sauce tomate, aubergines, mozzarella en tranches, basilic et parmesan, sur 3 couches.",
       "Terminer par la sauce, la mozzarella et le parmesan.",
       "Cuire 35 minutes à 180 °C. Laisser reposer 10 minutes avant de servir."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C. Couper les aubergines en tranches de 1 cm, les badigeonner d'huile et les rôtir 20 minutes.",
+      "Sauce maison : mettre 1 gousse d'ail et 1 oignon dans le bol, hacher <b>5 s / vitesse 5</b>, ajouter 1 c. à soupe d'huile et rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les tomates (ou la sauce tomate), sel, poivre et cuire <b>15 min / 100 °C / vitesse 1</b>, sans le gobelet.",
+      "Monter le plat en alternant sauce, aubergines, mozzarella, basilic et parmesan, sur 3 couches.",
+      "Cuire 35 minutes au four à 180 °C. Laisser reposer 10 minutes avant de servir."
     ]
   },
   {
@@ -366,6 +400,11 @@ const recettes = [
       "Ajouter la garniture de votre choix : jambon cru et copeaux de parmesan pour une version salée classique, œuf poché pour une version brunch, crevettes ou thon pour une version marine, ou tofu fumé et graines pour une version sans poisson.",
       "Ajouter les tomates cerises, arroser d'un filet d'huile d'olive et parsemer d'herbes fraîches.",
       "Assaisonner légèrement avec sel et poivre selon le goût et servir immédiatement."
+    ],
+    "mc": [
+      "Toaster les tranches de pain.",
+      "Mettre la chair des avocats, le jus de citron, le sel et le poivre dans le bol. Écraser <b>8 s / vitesse 4</b> (pour une purée avec des morceaux) ou <b>15 s / vitesse 6</b> (pour une purée lisse).",
+      "Étaler la purée sur le pain, ajouter le fromage, la garniture choisie, les tomates cerises, un filet d'huile d'olive et les herbes. Servir aussitôt."
     ]
   },
   {
@@ -414,6 +453,11 @@ const recettes = [
       "Ajouter les crevettes et mélanger.",
       "Couper les avocats en deux, retirer le noyau et arroser de citron.",
       "Garnir chaque demi-avocat de crevettes et parsemer de ciboulette."
+    ],
+    "mc": [
+      "Mettre la mayonnaise, le ketchup et quelques gouttes de citron dans le bol. Mélanger <b>10 s / vitesse 3</b> : c'est la sauce cocktail.",
+      "Ajouter les crevettes et mélanger <b>10 s / sens inverse / vitesse 1</b>.",
+      "Couper les avocats en deux, retirer le noyau, arroser de citron, garnir de crevettes et parsemer de ciboulette."
     ]
   },
   {
@@ -461,6 +505,12 @@ const recettes = [
       "Préparer la crème de thon en mélangeant le thon égoutté, le caprice des dieux, le sel, le poivre et la ciboulette hachée.",
       "Remplir les peaux d'avocat avec la purée d'avocat, puis ajouter la crème de thon par-dessus.",
       "Servir frais."
+    ],
+    "mc": [
+      "Mettre la ciboulette dans le bol et hacher <b>3 s / vitesse 7</b>. Réserver.",
+      "Mettre le thon égoutté, le caprice des dieux, le sel, le poivre et la ciboulette dans le bol. Mélanger <b>15 s / vitesse 4</b> : c'est la crème de thon. Réserver.",
+      "Mettre la chair des avocats, le jus de citron et le paprika dans le bol. Écraser <b>8 s / vitesse 4</b>, puis ajouter la tomate en cubes et mélanger <b>10 s / sens inverse / vitesse 1</b>.",
+      "Remplir les peaux d'avocat de purée, puis de crème de thon. Servir frais."
     ]
   },
   {
@@ -514,6 +564,11 @@ const recettes = [
       "Disposer des tranches de tomate et une feuille de salade.",
       "Arroser légèrement d'huile d'olive, saupoudrer de sel et poivre.",
       "Refermer le bagel et couper en deux si souhaité."
+    ],
+    "mc": [
+      "Œuf dur : mettre 500 ml d'eau dans le bol, poser l'œuf dans le panier de cuisson et cuire <b>14 min / 100 °C / vitesse 1</b>. Le rafraîchir à l'eau froide et l'écaler.",
+      "Couper le bagel en deux, le tartiner de caprice des dieux poivré.",
+      "Ajouter le thon émietté, l'œuf en tranches, la tomate et la salade, un filet d'huile, sel, poivre, et refermer."
     ]
   },
   {
@@ -587,6 +642,15 @@ const recettes = [
       "Badigeonner les bagels avec le blanc d'œuf et ajouter les garnitures de votre choix.",
       "Préchauffer le four à 200°C et enfourner les bagels pendant environ 20 minutes.",
       "Couvrir immédiatement avec un torchon pendant quelques minutes avant de garnir."
+    ],
+    "mc": [
+      "Mettre le lait et le beurre dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la levure émiettée, le sucre et le jaune d'œuf, puis mélanger <b>10 s / vitesse 3</b>.",
+      "Ajouter la farine et le sel. Pétrir <b>3 min / mode pétrin</b> jusqu'à obtenir une pâte souple, un peu collante.",
+      "Laisser lever 45 à 60 minutes dans le bol fermé (ou dans un saladier huilé, couvert).",
+      "Diviser en 6, faire un trou au centre de chaque boule et laisser reposer 20 minutes sur une plaque.",
+      "Pocher les bagels 30 secondes par face dans 2 litres d'eau bouillante sucrée (dans une casserole).",
+      "Les badigeonner de blanc d'œuf, ajouter les garnitures et cuire 20 minutes au four à 200 °C. Couvrir d'un torchon à la sortie du four."
     ]
   },
   {
@@ -637,6 +701,13 @@ const recettes = [
       "Dégazer la pâte, la diviser en deux morceaux égaux et former des baguettes.",
       "Déposer les baguettes sur la plaque de cuisson et laisser lever à nouveau pendant 30 minutes.",
       "Faire des incisions sur le dessus des baguettes et enfourner pendant 20 à 25 minutes jusqu'à ce qu'elles soient dorées."
+    ],
+    "mc": [
+      "Mettre l'eau et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le sucre et le sel. Pétrir <b>3 min / mode pétrin</b>.",
+      "Former une boule, la mettre dans un saladier huilé, couvrir et laisser lever 1 heure.",
+      "Préchauffer le four à 220 °C. Dégazer, diviser en deux et façonner les baguettes. Laisser lever 30 minutes sur la plaque.",
+      "Inciser le dessus et cuire 20 à 25 minutes, jusqu'à ce qu'elles soient dorées."
     ]
   },
   {
@@ -689,6 +760,10 @@ const recettes = [
       "Secouer tous les ingrédients sauf la grenadine au shaker avec des glaçons.",
       "Verser dans un verre haut rempli de glaçons.",
       "Faire couler la grenadine qui tombe au fond."
+    ],
+    "mc": [
+      "Mettre le rhum, le Malibu, la liqueur de café, le jus d'ananas et le jus d'orange dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
+      "Verser dans un verre haut rempli de glaçons, puis faire couler la grenadine qui tombe au fond."
     ]
   },
   {
@@ -721,6 +796,10 @@ const recettes = [
     ],
     "etapes": [
       "Mixer le Baileys, la glace et le lait.",
+      "Verser dans un grand verre et couvrir de chantilly et de copeaux de chocolat."
+    ],
+    "mc": [
+      "Mettre le Baileys, la glace et le lait froid dans le bol. Mixer <b>20 s / vitesse 6</b>.",
       "Verser dans un grand verre et couvrir de chantilly et de copeaux de chocolat."
     ]
   },
@@ -758,6 +837,12 @@ const recettes = [
       "Prélever des portions de pâte et rouler entre les paumes pour former des boules de la taille d'une noix.",
       "Disposer les boules sur une plaque et les laisser reposer brièvement afin qu'elles se raffermissent légèrement.",
       "Chauffer une quantité suffisante d'huile dans une poêle ou une friteuse et plonger les balles jusqu'à coloration dorée et cuisson à cœur."
+    ],
+    "mc": [
+      "Mettre l'œuf et la maïzena dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
+      "Ajouter la mozzarella râpée et mélanger <b>20 s / sens inverse / vitesse 3</b>, en aidant avec la spatule si besoin.",
+      "Former des boules de la taille d'une noix et les laisser se raffermir un peu.",
+      "Les frire dans l'huile chaude jusqu'à ce qu'elles soient dorées."
     ]
   },
   {
@@ -834,6 +919,13 @@ const recettes = [
       "Écraser les bananes à la fourchette, puis ajouter les œufs, le sucre et le beurre fondu.",
       "Incorporer la farine, la levure, le bicarbonate, la cannelle et le sel sans trop mélanger.",
       "Ajouter les noix ou les pépites, verser dans le moule et cuire 50 à 55 minutes."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C et chemiser un moule à cake.",
+      "Mettre les bananes dans le bol et écraser <b>10 s / vitesse 4</b>.",
+      "Ajouter les œufs, le sucre et le beurre fondu. Mélanger <b>20 s / vitesse 4</b>.",
+      "Ajouter la farine, la levure, le bicarbonate, la cannelle et le sel. Mélanger <b>15 s / vitesse 4</b> sans plus.",
+      "Ajouter les noix ou les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>. Verser dans le moule et cuire 50 à 55 minutes."
     ]
   },
   {
@@ -870,6 +962,10 @@ const recettes = [
       "Couper les bananes en deux dans la longueur et les placer dans deux coupes allongées.",
       "Disposer 3 boules de glace entre les moitiés de banane.",
       "Napper de sauce chocolat, ajouter la chantilly, les fruits secs et une cerise."
+    ],
+    "mc": [
+      "Sauce chocolat : mettre 100 g de chocolat et 100 ml de crème dans le bol. Faire fondre <b>4 min / 50 °C / vitesse 2</b>.",
+      "Couper les bananes en deux dans la longueur, ajouter 3 boules de glace, napper de sauce chocolat, puis chantilly, fruits secs et cerise."
     ]
   },
   {
@@ -918,6 +1014,9 @@ const recettes = [
       "Saupoudrer de cassonade et de cannelle et laisser caraméliser 2 minutes.",
       "Flamber au rhum si désiré (hotte éteinte, avec prudence).",
       "Servir aussitôt avec une boule de glace vanille ou de la noix de coco râpée."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : la caramélisation se fait à la poêle, suivre la version classique."
     ]
   },
   {
@@ -953,6 +1052,9 @@ const recettes = [
       "Éplucher les clémentines en gardant les quartiers ensemble.",
       "Planter un petit bâtonnet de céleri au sommet de chaque clémentine : c’est la tige de la citrouille.",
       "Servir ensemble sur un plat : un goûter d’Halloween sans sucre ajouté."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce goûter : suivre la version classique."
     ]
   },
   {
@@ -993,6 +1095,9 @@ const recettes = [
       "Éplucher les bananes et les couper en biais en tranches de 1,5 cm.",
       "Les mélanger avec l’huile, le sel et le paprika, puis les étaler sur une plaque recouverte de papier cuisson.",
       "Cuire 20 à 25 minutes en les retournant à mi-cuisson, jusqu’à ce qu’elles soient dorées. Une version plus légère que la friture."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : les bananes se rôtissent au four, suivre la version classique."
     ]
   },
   {
@@ -1052,6 +1157,13 @@ const recettes = [
       "Verser sur les flocons, les fruits secs et les graines, puis bien mélanger.",
       "Tasser fortement dans le moule et cuire 20 minutes.",
       "Laisser refroidir, parsemer de pépites de chocolat fondues ou non, réfrigérer 1 heure puis couper en barres."
+    ],
+    "mc": [
+      "Préchauffer le four à 170 °C et chemiser un moule carré.",
+      "Mettre le miel, le beurre de cacahuète et le beurre dans le bol. Faire fondre <b>3 min / 60 °C / vitesse 2</b>.",
+      "Ajouter les flocons d'avoine, les fruits secs et les graines. Mélanger <b>30 s / sens inverse / vitesse 2</b>, en aidant avec la spatule.",
+      "Tasser fortement dans le moule et cuire 20 minutes.",
+      "Laisser refroidir, ajouter les pépites de chocolat, réfrigérer 1 heure puis couper en barres."
     ]
   },
   {
@@ -1095,6 +1207,13 @@ const recettes = [
       "Fouetter la crème liquide et mélanger avec le lait concentré sucré chocolat maison jusqu'à texture mousseuse. Verser dans les cavités.",
       "Laisser prendre au congélateur environ 3 heures.",
       "Démouler les barres et couvrir avec 100 g de chocolat au lait fondu. Remettre au congélateur 10 minutes avant de servir."
+    ],
+    "mc": [
+      "Mettre 200 g de chocolat au lait en morceaux dans le bol. Hacher <b>10 s / vitesse 7</b>, puis faire fondre <b>4 min / 50 °C / vitesse 2</b>.",
+      "Tapisser les cavités du moule de chocolat fondu et placer 10 minutes au congélateur. Ajouter une couche de lait concentré caramel, puis 10 minutes au congélateur.",
+      "Rincer et bien sécher le bol. Insérer le fouet, mettre la crème bien froide et fouetter <b>vitesse 4</b> en surveillant (1 à 2 min) jusqu'à une crème mousseuse. Ajouter le lait concentré chocolat et mélanger <b>10 s / vitesse 2</b>.",
+      "Verser dans les cavités et laisser prendre 3 heures au congélateur.",
+      "Faire fondre 100 g de chocolat au lait (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>), enrober les barres démoulées et remettre 10 minutes au congélateur."
     ]
   },
   {
@@ -1182,6 +1301,14 @@ const recettes = [
       "Parsemer le dessus de pépites de chocolat.",
       "Enfourner pendant 25 à 30 minutes ou jusqu'à ce que le dessus soit doré.",
       "Laisser refroidir complètement avant de couper en barres et servir."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C et chemiser un moule rectangulaire.",
+      "Mettre le beurre dans le bol et faire fondre <b>2 min / 60 °C / vitesse 2</b>.",
+      "Ajouter les sucres, les œufs et la vanille. Mélanger <b>20 s / vitesse 4</b>.",
+      "Ajouter la farine, la levure et le sel. Mélanger <b>20 s / vitesse 4</b>.",
+      "Étaler la moitié de la pâte dans le moule, ajouter les Kinder mini et le Nutella, puis le reste de la pâte et les pépites.",
+      "Cuire 25 à 30 minutes et laisser refroidir complètement avant de couper."
     ]
   },
   {
@@ -1225,6 +1352,12 @@ const recettes = [
       "Placer les moules au congélateur pendant au moins 4 heures jusqu'à ce que les bâtonnets soient bien congelés.",
       "Faire fondre le chocolat noir au bain-marie et tremper les bâtonnets de glace congelés dans le chocolat.",
       "Remettre les bâtonnets au congélateur pendant 30 minutes pour que le chocolat durcisse."
+    ],
+    "mc": [
+      "Mettre le yaourt et le miel dans le bol. Mélanger <b>10 s / vitesse 3</b>.",
+      "Ajouter les fruits coupés en morceaux et mélanger <b>10 s / sens inverse / vitesse 2</b> (ou <b>5 s / vitesse 5</b> pour des fruits mixés).",
+      "Verser dans les moules, ajouter les bâtonnets et congeler au moins 4 heures.",
+      "Mettre le chocolat noir dans le bol propre. Hacher <b>10 s / vitesse 7</b>, puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. Tremper les glaces et remettre 30 minutes au congélateur."
     ]
   },
   {
@@ -1263,6 +1396,12 @@ const recettes = [
       "Couper la pâte en bandes de 2 cm de large.",
       "Disposer les bâtonnets sur une plaque recouverte de papier cuisson.",
       "Enfourner 25 minutes, jusqu'à ce qu'ils soient dorés et croustillants."
+    ],
+    "mc": [
+      "Préchauffer le four à 190 °C.",
+      "Mettre le cheddar en morceaux dans le bol et râper <b>8 s / vitesse 6</b>. Ajouter le bacon et hacher <b>3 s / vitesse 5</b>.",
+      "Répartir sur la pâte feuilletée, plier la pâte en deux et couper des bandes de 2 cm.",
+      "Cuire 25 minutes sur une plaque recouverte de papier cuisson."
     ]
   },
   {
@@ -1316,6 +1455,11 @@ const recettes = [
       "Verser le lait froid petit à petit en fouettant sans arrêt pour éviter les grumeaux.",
       "Continuer à cuire à feu moyen en remuant constamment jusqu'à ce que la sauce épaississe et nappe la cuillère.",
       "Assaisonner avec le sel, le poivre et la muscade, puis retirer du feu et utiliser aussitôt dans un gratin, des lasagnes ou un mac and cheese."
+    ],
+    "mc": [
+      "Mettre tous les ingrédients dans le bol : beurre, farine, lait, sel, poivre et muscade.",
+      "Cuire <b>8 min / 90 °C / vitesse 4</b>, jusqu'à ce que la béchamel épaississe et nappe la spatule.",
+      "Utiliser aussitôt dans un gratin, des lasagnes ou un mac and cheese."
     ]
   },
   {
@@ -1381,6 +1525,13 @@ const recettes = [
           "Verser des cuillerées de pâte dans le panier de la friteuse.",
           "Cuire les beignets pendant environ 10 minutes, ou jusqu'à ce qu'ils soient dorés.",
           "Laisser refroidir légèrement avant de déguster."
+        ],
+        "mc": [
+          "Mettre le chocolat en morceaux dans le bol. Hacher <b>10 s / vitesse 7</b>.",
+          "Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter les œufs et le lait, mélanger <b>10 s / vitesse 3</b>.",
+          "Ajouter la farine, le sucre et la levure. Mélanger <b>20 s / vitesse 4</b>.",
+          "Déposer des cuillerées de pâte dans le panier de l'air fryer préchauffé à 180 °C et cuire environ 10 minutes."
         ]
       },
       {
@@ -1466,6 +1617,13 @@ const recettes = [
           "Cuire au air fryer à 180°C pendant 8 à 10 minutes jusqu'à ce que les beignets soient fermes et légèrement dorés.",
           "À la sortie, badigeonner de beurre fondu et saupoudrer de sucre glace pour la finition.",
           "Laisser tiédir 2 minutes avant de servir pour éviter les brûlures et apprécier l'intérieur moelleux."
+        ],
+        "mc": [
+          "Mettre les œufs, le lait et l'huile dans le bol. Mélanger <b>10 s / vitesse 3</b>.",
+          "Ajouter la farine, le cacao, la levure, le sel et le sucre. Mélanger <b>20 s / vitesse 4</b>.",
+          "Ajouter les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>. Laisser reposer 5 à 10 minutes.",
+          "Cuire des boules de pâte 8 à 10 minutes à l'air fryer à 180 °C.",
+          "Badigeonner de beurre fondu et saupoudrer de sucre glace. Laisser tiédir 2 minutes."
         ]
       }
     ]
@@ -1538,6 +1696,14 @@ const recettes = [
           "Préchauffer le four à 180°C et enfourner les beignets pendant 10 minutes.",
           "Faire fondre le beurre maison dans un bol et mettre du sucre dans un autre.",
           "Badigeonner les beignets de beurre fondu et les rouler dans le sucre pour les enrober."
+        ],
+        "mc": [
+          "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sucre, le sel, l'œuf et la fleur d'oranger. Pétrir <b>3 min / mode pétrin</b>.",
+          "Ajouter le beurre en morceaux et pétrir encore <b>2 min / mode pétrin</b>.",
+          "Laisser pousser 2 heures dans un endroit chaud.",
+          "Former des boules de 50 g, les laisser lever 1 h à 1 h 30 sur une plaque, puis cuire 10 minutes à 180 °C.",
+          "Faire fondre du beurre (<b>2 min / 60 °C / vitesse 1</b>), badigeonner les beignets et les rouler dans le sucre."
         ]
       },
       {
@@ -1598,6 +1764,13 @@ const recettes = [
           "Une fois la pâte levée, former des boules et les placer sur une plaque de cuisson recouverte de papier sulfurisé.",
           "Enfourner pendant 15 à 20 minutes jusqu'à ce que les beignets soient dorés.",
           "Laisser refroidir légèrement avant de les garnir de pâte à tartiner."
+        ],
+        "mc": [
+          "Mettre le lait, le beurre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sucre et le sucre vanillé. Pétrir <b>3 min / mode pétrin</b>.",
+          "Laisser lever 1 heure dans un endroit chaud.",
+          "Former des boules, les poser sur une plaque et cuire 15 à 20 minutes à 180 °C.",
+          "Laisser tiédir et garnir de pâte à tartiner."
         ]
       }
     ]
@@ -1672,6 +1845,14 @@ const recettes = [
       "Laisser lever à nouveau 30 minutes sur une plaque farinée, recouverts d'un torchon.",
       "Chauffer l'huile à 170°C et faire frire les beignets 2 à 3 minutes de chaque côté, jusqu'à coloration dorée.",
       "Égoutter sur du papier absorbant et rouler immédiatement dans le sucre."
+    ],
+    "mc": [
+      "La veille ou 30 minutes avant : former de petites boules de Nutella et les congeler.",
+      "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le sucre, le sel et l'œuf. Pétrir <b>2 min / mode pétrin</b>. Ajouter le beurre mou et pétrir encore <b>2 min / mode pétrin</b>.",
+      "Laisser lever 1 heure, puis étaler sur 1 cm et découper des cercles.",
+      "Garnir la moitié des cercles d'une boule de Nutella, recouvrir et souder. Laisser lever 30 minutes.",
+      "Frire 2 à 3 minutes par face dans l'huile à 170 °C, égoutter et rouler dans le sucre."
     ]
   },
   {
@@ -1762,6 +1943,13 @@ const recettes = [
           "Placer les disques sur une feuille de papier cuisson et couvrir avec un torchon propre pour laisser pousser 1h30 à température ambiante.",
           "Plonger les beignets dans l'huile bouillante préchauffée à 160-170°C et les faire dorer environ 2 minutes de chaque côté.",
           "Égoutter sur du papier absorbant puis enrober immédiatement dans le sucre."
+        ],
+        "mc": [
+          "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter les jaunes, l'œuf, l'huile, le beurre fondu, le sucre, le sel, la vanille et la farine. Pétrir <b>4 min / mode pétrin</b>, jusqu'à ce que la pâte ne colle plus.",
+          "Laisser pousser 1 h 30 dans un grand bol fariné, couvert.",
+          "Dégazer, étaler sur 1 cm, découper des disques de 9 cm et laisser pousser encore 1 h 30 sous un torchon.",
+          "Frire environ 2 minutes par face dans l'huile à 160-170 °C, égoutter et enrober de sucre."
         ]
       },
       {
@@ -1830,6 +2018,13 @@ const recettes = [
           "Faire cuire les beignets dans l'huile chaude, en les retournant pour cuire les deux côtés.",
           "Enrober les beignets généreusement de sucre fin.",
           "Facultatif : fourrer les beignets de pâte à tartiner ou de confiture."
+        ],
+        "mc": [
+          "Mettre le lait et la levure émiettée dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sucre, les œufs, le sel et la vanille. Pétrir <b>3 min / mode pétrin</b>.",
+          "Ajouter le beurre mou et pétrir encore <b>2 min / mode pétrin</b>. Laisser reposer 1 heure.",
+          "Former des boules de 20 g et laisser reposer 30 minutes.",
+          "Frire dans l'huile chaude en les retournant, puis enrober de sucre fin (et fourrer si désiré)."
         ]
       },
       {
@@ -1900,6 +2095,13 @@ const recettes = [
           "Faire chauffer l'huile à 170 °C et frire les beignets 2 à 3 minutes de chaque côté.",
           "Égoutter l'huile accumulée.",
           "Baigner les beignets de miel et saupoudrer d'une généreuse couche de sucre glace."
+        ],
+        "mc": [
+          "Mettre l'eau, la levure et la cassonade dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter le lait, les œufs, le sel, la farine et le beurre fondu. Pétrir <b>4 min / mode pétrin</b>.",
+          "Laisser reposer 2 heures.",
+          "Étaler la pâte à un doigt d'épaisseur, couper des rectangles et frire 2 à 3 minutes par face à 170 °C.",
+          "Égoutter, napper de miel et saupoudrer de sucre glace."
         ]
       }
     ]
@@ -1929,6 +2131,10 @@ const recettes = [
       "Verser la purée de pêche au fond d’une flûte.",
       "Compléter doucement avec le Prosecco.",
       "Mélanger délicatement une seule fois."
+    ],
+    "mc": [
+      "Purée de pêche maison : mettre 1 pêche blanche épluchée et dénoyautée dans le bol et mixer <b>20 s / vitesse 8</b>.",
+      "Verser 5 cl de purée dans une flûte et compléter doucement avec le Prosecco. Mélanger une seule fois."
     ]
   },
   {
@@ -1959,6 +2165,12 @@ const recettes = [
       "Rincer le beurre à l'eau claire très froide.",
       "Si du babeurre reste, presser le beurre dans un torchon propre pour retirer le liquide.",
       "Mettre le beurre dans un beurrier ou l'enrouler dans du film étirable et conserver au réfrigérateur."
+    ],
+    "mc": [
+      "Insérer le fouet. Mettre la crème à température ambiante dans le bol.",
+      "Fouetter <b>vitesse 4</b> pendant 4 à 6 minutes, jusqu'à ce que le beurre se sépare du babeurre (le liquide). Retirer le fouet.",
+      "Égoutter le beurre (garder le babeurre pour remplacer le lait dans d'autres recettes).",
+      "Rincer le beurre à l'eau très froide, le presser dans un torchon, ajouter le sel et le conserver au réfrigérateur."
     ]
   },
   {
@@ -2050,6 +2262,13 @@ const recettes = [
       "Cuire les œufs au plat.",
       "Répartir le riz dans des bols, disposer les légumes et le bœuf en sections, puis l’œuf au centre.",
       "Servir avec le gochujang, le reste d’huile de sésame et les graines de sésame, et mélanger au moment de manger."
+    ],
+    "mc": [
+      "Mariner le bœuf 15 minutes avec la sauce soja, le sucre et 1 c. à café d'huile de sésame.",
+      "Mettre la carotte et la courgette en morceaux dans le bol. Hacher <b>4 s / vitesse 5</b> (ou les couper en julienne pour une présentation plus jolie).",
+      "Mettre 500 ml d'eau dans le bol, les légumes, les épinards et les pousses de soja dans l'accessoire vapeur. Cuire <b>12 min / 120 °C / vitesse 1</b>.",
+      "Pendant ce temps, faire sauter le bœuf 2 minutes à feu vif à la poêle et cuire les œufs au plat.",
+      "Répartir le riz dans les bols, ajouter les légumes, le bœuf et l'œuf. Servir avec le gochujang, l'huile de sésame et les graines."
     ]
   },
   {
@@ -2153,6 +2372,12 @@ const recettes = [
       "Assembler les tacos en plaçant un steak sur chaque tortilla, puis ajouter une tranche de cheddar, quelques morceaux de cornichons, de la salade et des rondelles d'oignon.",
       "Terminer en ajoutant une cuillère de sauce sur le dessus de chaque taco.",
       "Servir immédiatement et déguster!"
+    ],
+    "mc": [
+      "Sauce : mettre les cornichons et le demi-oignon dans le bol. Hacher <b>4 s / vitesse 5</b>.",
+      "Ajouter la mayonnaise, la moutarde, le paprika, l'oignon en poudre et le sel. Mélanger <b>10 s / vitesse 3</b>. Réserver au frais.",
+      "Cuire les steaks à la poêle, salés et poivrés, puis chauffer les tortillas 30 secondes par face.",
+      "Assembler : steak, cheddar, cornichons, salade, oignon et une cuillère de sauce sur chaque tortilla."
     ]
   },
   {
@@ -2205,6 +2430,11 @@ const recettes = [
       "La veille, mélanger les flocons avec le jus de pomme et réserver au frais.",
       "Le matin, râper la pomme avec la peau et l’ajouter avec le yaourt, le miel et la cannelle.",
       "Servir parsemé de noisettes."
+    ],
+    "mc": [
+      "La veille, mélanger les flocons avec le jus de pomme et réserver au frais.",
+      "Le matin, mettre la pomme coupée en quatre (avec la peau) dans le bol et râper <b>4 s / vitesse 5</b>.",
+      "Ajouter les flocons trempés, le yaourt, le miel et la cannelle. Mélanger <b>15 s / sens inverse / vitesse 2</b>. Servir parsemé de noisettes."
     ]
   },
   {
@@ -2262,6 +2492,14 @@ const recettes = [
       "Cuire environ 8 à 10 minutes à 165 °C jusqu'à ce que la surface soit juste prise et légèrement dorée.",
       "Sortir du four et déposer rapidement sur un torchon propre humide. Enrouler le biscuit dans le torchon et laisser refroidir pour faciliter le roulage.",
       "Dérouler délicatement, garnir selon l'envie, puis rouler à nouveau fermement."
+    ],
+    "mc": [
+      "Préchauffer le four à 165 °C et préparer une plaque ou un tapis silicone.",
+      "Insérer le fouet. Mettre les œufs et le sucre dans le bol et fouetter <b>5 min / 37 °C / vitesse 4</b>, puis <b>3 min / vitesse 4</b> sans chauffer, jusqu'à une mousse claire.",
+      "Ajouter le lait et l'huile, mélanger <b>10 s / vitesse 2</b>. Retirer le fouet.",
+      "Ajouter la farine et le cacao tamisés et incorporer délicatement à la spatule.",
+      "Étaler finement sur la plaque et cuire 8 à 10 minutes.",
+      "Rouler le biscuit chaud dans un torchon humide, laisser refroidir, dérouler, garnir et rouler à nouveau."
     ]
   },
   {
@@ -2337,6 +2575,13 @@ const recettes = [
       "Ajouter le jus de citron et fouetter encore 1 à 2 minutes pour lisser le glaçage.",
       "Une fois les biscuits refroidis, les recouvrir de glaçage à la spatule ou à la poche à douille.",
       "Laisser sécher complètement avant de manipuler ou de décorer."
+    ],
+    "mc": [
+      "Mettre la farine, le sucre et le beurre froid en morceaux dans le bol. Mélanger <b>15 s / vitesse 5</b> jusqu'à une texture sableuse.",
+      "Ajouter l'œuf, la vanille et l'eau froide. Pétrir <b>30 s / mode pétrin</b>. Filmer et réfrigérer 30 minutes.",
+      "Étaler sur 5 mm, découper les formes et cuire 12 à 15 minutes à 180 °C.",
+      "Glaçage royal : bol propre et sec, insérer le fouet. Mettre les blancs, le sucre glace et le jus de citron, puis fouetter <b>4 min / vitesse 4</b> jusqu'à un glaçage ferme et brillant.",
+      "Glacer les biscuits refroidis et laisser sécher complètement."
     ]
   },
   {
@@ -2412,6 +2657,12 @@ const recettes = [
           "Préchauffer le four à 180 °C. Étaler la pâte sur 5 mm et découper des bonshommes à l’emporte-pièce.",
           "Cuire 8 à 10 minutes sur une plaque recouverte de papier cuisson. Laisser refroidir.",
           "Décorer au glaçage royal (yeux, sourire, boutons)."
+        ],
+        "mc": [
+          "Mettre le beurre mou, la cassonade et le miel dans le bol. Mélanger <b>20 s / vitesse 4</b>. Ajouter l'œuf, mélanger <b>10 s / vitesse 4</b>.",
+          "Ajouter la farine, les épices et le bicarbonate. Pétrir <b>40 s / mode pétrin</b>. Former une boule, filmer et réfrigérer 1 heure.",
+          "Préchauffer le four à 180 °C. Étaler sur 5 mm, découper les bonshommes et cuire 8 à 10 minutes.",
+          "Décorer au glaçage royal une fois refroidis."
         ]
       },
       {
@@ -2508,6 +2759,14 @@ const recettes = [
           "Cuire 10 à 12 minutes, jusqu'à ce que les bords soient légèrement dorés. Laisser refroidir.",
           "Glaçage : mélanger le sucre glace et la poudre de meringue, puis ajouter l'eau petit à petit jusqu'à obtenir un glaçage lisse et un peu épais.",
           "Napper les biscuits de glaçage, décorer de bonbons et laisser figer avant de déguster."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre le sucre brun, le beurre mou et le sirop doré dans le bol. Mélanger <b>30 s / vitesse 4</b>. Ajouter l'œuf, mélanger <b>10 s / vitesse 4</b>.",
+          "Ajouter la farine, la levure et les épices. Pétrir <b>40 s / mode pétrin</b>.",
+          "Étaler sur 5 mm, découper et cuire 10 à 12 minutes. Laisser refroidir.",
+          "Glaçage : mettre le sucre glace et la poudre de meringue dans le bol propre, puis l'eau petit à petit en mélangeant <b>30 s / vitesse 3</b>, jusqu'à un glaçage lisse et un peu épais.",
+          "Napper les biscuits, décorer de bonbons et laisser figer."
         ]
       }
     ]
@@ -2579,6 +2838,13 @@ const recettes = [
       "Réfrigérer les biscuits 20 minutes avant de les cuire.",
       "Préchauffer le four à 180 °C et cuire les biscuits 9 minutes.",
       "Laisser refroidir complètement, puis déposer 1 c. à café de confiture de fraises au centre des cœurs pleins et refermer avec les cœurs évidés."
+    ],
+    "mc": [
+      "Mettre le beurre mou et le sucre dans le bol. Mélanger <b>30 s / vitesse 4</b>.",
+      "Ajouter l'œuf et la vanille, mélanger <b>10 s / vitesse 4</b>.",
+      "Ajouter la farine, la cardamome et le sel. Pétrir <b>40 s / mode pétrin</b>.",
+      "Étaler sur 4 mm, découper les cœurs (évider la moitié), réfrigérer 20 minutes puis cuire 9 minutes à 180 °C.",
+      "Une fois froids, garnir de confiture et refermer."
     ]
   },
   {
@@ -2661,6 +2927,13 @@ const recettes = [
       "Laisser prendre le nappage à température ambiante ou au réfrigérateur quelques minutes avant de découper.",
       "Découper le gâteau en carrés d'environ 4 par 4 cm pour obtenir environ une trentaine de carrés.",
       "Conserver au réfrigérateur dans une boîte hermétique jusqu'au service pour garder le caramel et le chocolat fermes."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C et préparer un cadre de 20 cm.",
+      "Mettre la farine, le beurre très mou, le sucre, la fleur de sel et la levure dans le bol. Mélanger <b>20 s / vitesse 4</b>. Tasser dans le cadre, piquer et cuire 12 à 15 minutes. Laisser refroidir.",
+      "Caramel : mettre le lait concentré, le sucre, le beurre et le miel dans le bol propre. Cuire <b>12 min / 100 °C / vitesse 3</b>, sans le gobelet, jusqu'à ce que le caramel épaississe. L'étaler sur le sablé.",
+      "Chocolat : mettre le chocolat dans le bol propre, hacher <b>10 s / vitesse 7</b> puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. L'étaler sur le caramel.",
+      "Laisser prendre, couper en carrés de 4 cm et conserver au réfrigérateur."
     ]
   },
   {

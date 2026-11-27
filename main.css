@@ -728,3 +728,12 @@ header p {
 
 /* Quantité sur une seule ligne (« 250 g ») */
 .ing-list .ing-qty { white-space: nowrap; }
+
+/* Bascule Classique / Monsieur Cuisine */
+.steps-head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+.steps-head .modal-section-title { margin-bottom: 0; }
+.mode-switch { display: inline-flex; background: var(--cream); border: 1px solid var(--border); border-radius: 99px; padding: 3px; }
+.mode-switch button { border: none; background: none; font: inherit; font-size: 0.78rem; padding: 0.38rem 0.85rem; border-radius: 99px; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.mode-switch button.active { background: var(--espresso); color: var(--cream); font-weight: 500; }
+.mc-note { font-size: 0.78rem; color: var(--muted); background: rgba(196,123,58,0.08); border-left: 3px solid var(--caramel); padding: 0.5rem 0.75rem; border-radius: 0 8px 8px 0; margin-bottom: 0.4rem; }
+.mc-note[hidden] { display: none; }
