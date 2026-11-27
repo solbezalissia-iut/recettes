@@ -4708,6 +4708,69 @@ const recettes = [
     ]
   },
   {
+    "id": "static-690",
+    "titre": "Bras de Vénus (Languedoc)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "60 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "125 g de sucre (biscuit)",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "sucre (biscuit)"
+      },
+      {
+        "texte": "125 g de farine",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "farine"
+      },
+      "marmelade de potiron (ou Nutella, ou confiture au choix)",
+      {
+        "texte": "200 ml d'eau (sirop)",
+        "valeur": 200,
+        "unite": "ml",
+        "reste": "eau (sirop)"
+      },
+      {
+        "texte": "100 g de sucre (sirop)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre (sirop)"
+      },
+      {
+        "texte": "50 g de sucre glace (décor)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "sucre glace (décor)"
+      }
+    ],
+    "etapes": [
+      "Séparer les blancs des jaunes. Mélanger les 4 jaunes avec 100 g de sucre et travailler jusqu'à ce que le mélange blanchisse. Ajouter la farine et bien mélanger.",
+      "Monter les blancs en neige et, quand ils sont fermes, ajouter le reste du sucre (25 g). Les mêler délicatement à la pâte.",
+      "Garnir une plaque à pâtisserie d'une feuille d'aluminium. Étaler la pâte à biscuit en couche régulière (0,5 cm) et cuire à four chaud, 220 à 230 °C, pendant 5 minutes.",
+      "Dès la sortie du four, retourner le biscuit sur un linge saupoudré de sucre et le rouler avec le linge quelques minutes.",
+      "Faire bouillir l'eau et le sucre du sirop, puis en imbiber le biscuit déroulé.",
+      "Garnir régulièrement de marmelade de potiron (ou de Nutella, de confiture…) et rouler. Décorer avec le sucre glace."
+    ],
+    "mc": [
+      "Préchauffer le four à 220-230 °C et garnir la plaque d'aluminium.",
+      "Insérer le fouet. Mettre les blancs dans le bol propre et sec et fouetter <b>4 min / vitesse 4</b>. Ajouter 25 g de sucre par l'ouverture, <b>1 min / vitesse 4</b>. Réserver dans un saladier.",
+      "Sans rincer, mettre les jaunes et 100 g de sucre, fouetter <b>3 min / vitesse 4</b> jusqu'à ce que ce soit blanchi. Retirer le fouet, ajouter la farine, mélanger <b>10 s / vitesse 3</b>.",
+      "Incorporer les blancs à la spatule, étaler sur 0,5 cm et cuire 5 minutes. Rouler aussitôt dans un linge sucré.",
+      "Sirop : bol rincé, mettre l'eau et 100 g de sucre, cuire <b>5 min / 100 °C / vitesse 1</b>.",
+      "Imbiber le biscuit, garnir, rouler et décorer de sucre glace."
+    ]
+  },
+  {
     "id": "static-40",
     "titre": "Bricks au thon et pommes de terre épicées",
     "photo": "photos/enattente.png",
@@ -10524,114 +10587,130 @@ const recettes = [
   },
   {
     "id": "static-82",
-    "titre": "Cinnamon rolls briochés au beurre, cassonade et cannelle",
+    "titre": "Cinnamon rolls",
     "photo": "photos/enattente.png",
-    "temps": "60 min (+ 2h de pousse)",
-    "personnes": "8",
+    "temps": "65 min (+ 2 h 15 de repos)",
+    "personnes": "6-8",
     "cat": "dessert",
     "ingredients": [
       {
-        "texte": "130 ml de lait tiède",
-        "valeur": 130,
-        "unite": "ml",
-        "reste": "lait tiède"
+        "texte": "600 g de farine (type 550)",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "farine (type 550)"
       },
       {
-        "texte": "100 g de sucre",
+        "texte": "300 ml de lait tiède (35 °C)",
+        "valeur": 300,
+        "unite": "ml",
+        "reste": "lait tiède (35 °C)"
+      },
+      {
+        "texte": "7 g de levure sèche",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure sèche"
+      },
+      {
+        "texte": "110 g de beurre fondu",
+        "valeur": 110,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "100 g de sucre en poudre",
         "valeur": 100,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "sucre en poudre"
       },
       {
-        "texte": "10 g de levure boulangère sèche",
-        "valeur": 10,
-        "unite": "g",
-        "reste": "levure boulangère sèche"
-      },
-      {
-        "texte": "90 g de beurre mou",
-        "valeur": 90,
-        "unite": "g",
-        "reste": "beurre mou"
-      },
-      {
-        "texte": "2 œufs",
-        "valeur": 2,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "450 g de farine",
-        "valeur": 450,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1 pincée de sel",
+        "texte": "1 c. à café de vanille en poudre ou arôme",
         "valeur": 1,
-        "unite": "pincée",
+        "unite": "c. à café",
+        "reste": "vanille en poudre ou arôme"
+      },
+      {
+        "texte": "2 g de sel",
+        "valeur": 2,
+        "unite": "g",
         "reste": "sel"
       },
       {
-        "texte": "100 g de beurre fondu (garniture)",
-        "valeur": 100,
+        "texte": "110 g de beurre mou (garniture)",
+        "valeur": 110,
         "unite": "g",
-        "reste": "beurre fondu (garniture)"
+        "reste": "beurre mou (garniture)"
       },
       {
-        "texte": "100 g de cassonade (garniture)",
-        "valeur": 100,
+        "texte": "200 g de sucre de canne (garniture)",
+        "valeur": 200,
         "unite": "g",
-        "reste": "cassonade (garniture)"
+        "reste": "sucre de canne (garniture)"
       },
       {
-        "texte": "1 c. à soupe de cannelle (garniture)",
-        "valeur": 1,
-        "unite": "c. à soupe",
+        "texte": "70 g de miel liquide (garniture)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "miel liquide (garniture)"
+      },
+      {
+        "texte": "2,5 c. à café de cannelle (garniture)",
+        "valeur": 2.5,
+        "unite": "c. à café",
         "reste": "cannelle (garniture)"
       },
       {
-        "texte": "50 g de beurre pommade (glaçage)",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "beurre pommade (glaçage)"
-      },
-      {
-        "texte": "100 g de sucre glace (glaçage)",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "sucre glace (glaçage)"
-      },
-      {
-        "texte": "1/2 gousse de vanille (glaçage)",
-        "valeur": 0.5,
-        "unite": "gousse",
-        "reste": "vanille (glaçage)"
-      },
-      {
-        "texte": "2 c. à soupe de crème liquide (glaçage)",
+        "texte": "2 c. à soupe de crème (garniture, seulement si la masse est trop solide)",
         "valeur": 2,
         "unite": "c. à soupe",
-        "reste": "crème liquide (glaçage)"
+        "reste": "crème (garniture, seulement si la masse est trop solide)"
+      },
+      {
+        "texte": "175 g de Philadelphia (glaçage)",
+        "valeur": 175,
+        "unite": "g",
+        "reste": "Philadelphia (glaçage)"
+      },
+      {
+        "texte": "80 g de beurre mou (glaçage)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "beurre mou (glaçage)"
+      },
+      {
+        "texte": "80 g de sucre en poudre (glaçage)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre en poudre (glaçage)"
+      },
+      {
+        "texte": "45 ml de crème liquide (au fond du plat de cuisson)",
+        "valeur": 45,
+        "unite": "ml",
+        "reste": "crème liquide (au fond du plat de cuisson)"
       }
     ],
     "etapes": [
-      "Mélanger le lait tiède, la levure, le sucre, les œufs, la farine et le sel dans un bol jusqu'à obtenir une pâte homogène.",
-      "Pétrir pendant huit minutes jusqu'à ce que la pâte soit souple et légèrement élastique.",
-      "Ajouter le beurre mou coupé en morceaux et pétrir à nouveau pendant huit minutes jusqu'à incorporation complète.",
-      "Couvrir et laisser pousser la pâte pendant deux heures dans un endroit chaud.",
-      "Dégazer la pâte, l'étaler en rectangle, puis répartir le beurre fondu, la cassonade et la cannelle sur toute la surface.",
-      "Rouler la pâte sur elle-même pour former un boudin, puis découper huit tronçons égaux.",
-      "Disposer les morceaux dans un moule et couvrir. Laisser pousser à température ambiante pendant une heure ou à 40°C pendant 30 à 40 minutes sous un torchon.",
-      "Préparer le glaçage : mélanger le beurre pommade avec le sucre glace, la demi-gousse de vanille et la crème liquide jusqu'à obtenir une texture lisse et crémeuse.",
-      "Cuire à 170°C pendant 25 à 30 minutes jusqu'à dorure et cuisson complète, puis napper de glaçage."
+      "Verser tous les ingrédients de la pâte dans la cuve du robot et pétrir 8 minutes (ou 15 à 20 minutes à la main) : la pâte ne doit plus coller.",
+      "Laisser pousser 1 h 30 à température ambiante.",
+      "Pendant ce temps, préparer la garniture : fouetter le beurre mou avec le sucre de canne, le miel et la cannelle jusqu'à obtenir un mélange crémeux (ajouter la crème seulement si la masse est trop solide).",
+      "Préchauffer le four à 170 °C en mode statique.",
+      "Dès que la pâte a doublé de volume, l'étaler en carré sur environ 0,5 cm d'épaisseur.",
+      "Étaler généreusement la garniture, puis enrouler la pâte pour former un gros boudin.",
+      "Couper le boudin en morceaux de même taille avec un fil à coudre (on presse le fil autour de la pâte pour la trancher).",
+      "Placer les escargots dans un plat de cuisson et laisser pousser encore 30 minutes.",
+      "Verser la crème au fond du plat, puis enfourner 35 minutes.",
+      "Glaçage : fouetter le Philadelphia, le beurre mou et le sucre jusqu'à obtenir une préparation bien lisse.",
+      "Laisser refroidir les cinnamon rolls 15 minutes avant d'étaler le glaçage dessus."
     ],
     "mc": [
-      "Mettre le lait, le sucre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
-      "Ajouter les œufs, la farine et le sel. Pétrir <b>4 min / mode pétrin</b>. Ajouter le beurre mou et pétrir encore <b>4 min / mode pétrin</b>.",
-      "Laisser pousser 2 heures, étaler, garnir de beurre fondu, cassonade et cannelle, rouler, couper et laisser lever comme dans la version classique.",
-      "Cuire selon la version classique.",
-      "Glaçage : bol propre, mettre le beurre pommade, le sucre glace, la vanille et la crème. Mélanger <b>20 s / vitesse 4</b>. Napper les rolls tièdes."
+      "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le beurre fondu, le sucre, la vanille et le sel. Pétrir <b>8 min / mode pétrin</b> (si le bol est trop plein, pétrir en deux fois).",
+      "Laisser pousser 1 h 30 à température ambiante. Préchauffer le four à 170 °C (statique).",
+      "Garniture : bol propre, mettre le beurre mou, le sucre de canne, le miel et la cannelle. Mélanger <b>30 s / vitesse 4</b> (ajouter la crème si c'est trop solide).",
+      "Étaler la pâte, garnir, rouler, couper au fil et laisser pousser 30 minutes dans le plat.",
+      "Verser la crème au fond du plat et cuire 35 minutes.",
+      "Glaçage : bol propre, mettre le Philadelphia, le beurre mou et le sucre. Mélanger <b>30 s / vitesse 4</b>. Étaler sur les rolls refroidis 15 minutes."
     ]
   },
   {
@@ -19870,6 +19949,89 @@ const recettes = [
       "Mettre les œufs, le sucre, le lait, l'huile et le sucre vanillé dans le bol. Mélanger <b>20 s / vitesse 4</b>.",
       "Ajouter la farine, la levure et le sel, mélanger <b>15 s / vitesse 4</b>.",
       "Mélanger avec les pommes en fines tranches, verser dans le moule, saupoudrer de cassonade et cuire comme dans la version classique."
+    ]
+  },
+  {
+    "id": "static-691",
+    "titre": "Gâteau nuage au yaourt",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "70 min",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "125 g de yaourt nature (1 pot)",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "yaourt nature (1 pot)"
+      },
+      {
+        "texte": "50 g de beurre fondu",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "beurre fondu"
+      },
+      {
+        "texte": "80 g de farine",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "20 g de maïzena",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "maïzena"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "0,5 sachet de levure chimique",
+        "valeur": 0.5,
+        "unite": "sachet",
+        "reste": "levure chimique"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      "sucre glace pour la décoration"
+    ],
+    "etapes": [
+      "Préchauffer le four à 160 °C. Chemiser de papier cuisson un moule rond de 18 à 20 cm à bords hauts (fond et bords).",
+      "Séparer les blancs des jaunes.",
+      "Fouetter les jaunes avec le yaourt, le beurre fondu tiède et la vanille. Ajouter la farine, la maïzena et la levure tamisées et mélanger jusqu'à obtenir une pâte lisse.",
+      "Monter les blancs en neige avec la pincée de sel. Quand ils moussent, ajouter le sucre en 3 fois et fouetter jusqu'à obtenir une meringue brillante et souple (le bec doit retomber légèrement).",
+      "Incorporer la meringue à la pâte en 3 fois, délicatement à la spatule, en soulevant la masse.",
+      "Verser dans le moule et taper doucement le moule sur le plan de travail pour chasser les grosses bulles.",
+      "Poser le moule dans un plat contenant 2 cm d'eau chaude et cuire au bain-marie 50 à 60 minutes, jusqu'à ce que le dessus soit doré et que le gâteau soit pris.",
+      "Éteindre le four et laisser le gâteau 10 minutes porte entrouverte pour qu'il ne retombe pas, puis le démouler.",
+      "Laisser refroidir et saupoudrer de sucre glace."
+    ],
+    "mc": [
+      "Préchauffer le four à 160 °C et chemiser le moule.",
+      "Insérer le fouet. Mettre les blancs et le sel dans le bol propre et sec, fouetter <b>3 min / vitesse 4</b>. Ajouter le sucre en 3 fois par l'ouverture et fouetter <b>3 min / vitesse 4</b> (meringue souple et brillante). Réserver dans un saladier.",
+      "Retirer le fouet. Mettre les jaunes, le yaourt, le beurre fondu et la vanille dans le bol, mélanger <b>15 s / vitesse 3</b>. Ajouter la farine, la maïzena et la levure, <b>15 s / vitesse 3</b>.",
+      "Incorporer la meringue à la spatule en 3 fois, verser dans le moule et cuire au bain-marie 50 à 60 minutes à 160 °C.",
+      "Laisser 10 minutes dans le four éteint, porte entrouverte, démouler et saupoudrer de sucre glace."
     ]
   },
   {
@@ -30745,6 +30907,51 @@ const recettes = [
     "cat": "base-culinaire",
     "variantes": [
       {
+        "nom": "Recette maison sans pétrissage",
+        "temps": "45 min (+ 1 h 30 de pousse)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "500 g de farine",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "10 g de sel",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "16 g de levure boulangère",
+            "valeur": 16,
+            "unite": "g",
+            "reste": "levure boulangère"
+          },
+          {
+            "texte": "400 ml d'eau tiède",
+            "valeur": 400,
+            "unite": "ml",
+            "reste": "eau tiède"
+          }
+        ],
+        "etapes": [
+          "Diluer la levure avec un peu d'eau tiède, puis ajouter le reste de l'eau.",
+          "Ajouter la farine et le sel, puis mélanger grossièrement à la cuillère en bois.",
+          "Laisser lever pendant 1 h 30, couvert d'un torchon.",
+          "Ne pas travailler la pâte : la verser telle quelle sur une plaque farinée ou dans un moule.",
+          "Préchauffer le four à 240 °C et mettre un peu d'eau dans un plat au fond du four (pour la vapeur).",
+          "Enfourner et cuire 30 minutes."
+        ],
+        "mc": [
+          "Mettre l'eau tiède et la levure dans le bol. Mélanger <b>1 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine et le sel. Mélanger <b>30 s / mode pétrin</b>, juste pour rassembler (la pâte ne doit pas être travaillée).",
+          "Laisser lever 1 h 30, couvert, dans le bol ou dans un saladier.",
+          "Verser la pâte sur la plaque, puis cuire 30 minutes à 240 °C avec un peu d'eau au fond du four."
+        ]
+      },
+      {
         "nom": "Pain rond croustillant",
         "temps": "70 min (+ 2h de repos)",
         "personnes": "4",
@@ -30790,51 +30997,6 @@ const recettes = [
         "mc": [
           "Mettre l'eau tiède et la levure dans le bol. Chauffer <b>1 min / 37 °C / vitesse 1</b>.",
           "Ajouter la farine et le sel. Pétrir <b>4 min / mode pétrin</b>.",
-          "Laisser lever, façonner et cuire comme dans la version classique."
-        ]
-      },
-      {
-        "nom": "Petits pains sans pétrissage",
-        "temps": "50 min (+ 1 h 30 de pousse)",
-        "personnes": "6",
-        "ingredients": [
-          {
-            "texte": "300 g de farine de blé T65",
-            "valeur": 300,
-            "unite": "g",
-            "reste": "farine de blé T65"
-          },
-          {
-            "texte": "230 ml d'eau tiède",
-            "valeur": 230,
-            "unite": "ml",
-            "reste": "eau tiède"
-          },
-          {
-            "texte": "1/2 sachet de levure boulangère sèche",
-            "valeur": 1,
-            "unite": null,
-            "reste": "/2 sachet de levure boulangère sèche"
-          },
-          {
-            "texte": "5 g de sel",
-            "valeur": 5,
-            "unite": "g",
-            "reste": "sel"
-          }
-        ],
-        "etapes": [
-          "Mélanger la levure avec l'eau tiède (pas chaude, pour ne pas abîmer la levure).",
-          "Ajouter la farine et le sel, puis mélanger à la cuillère jusqu'à obtenir une pâte homogène.",
-          "Ne pas pétrir : couvrir le saladier et laisser lever jusqu'à ce que la pâte double de volume, 1 h 30 à 2 h.",
-          "Sans dégazer, déposer délicatement la pâte sur un plan légèrement fariné.",
-          "La diviser en 6 portions et les façonner en petites boules ou en mini-baguettes (rabattre les extrémités vers le centre, puis souder les bords).",
-          "Les poser sur une plaque recouverte de papier cuisson, soudure en dessous, et les saupoudrer de farine.",
-          "Cuire 15 à 20 minutes à 230 °C, avec un petit récipient d'eau dans le four pour une croûte plus croustillante."
-        ],
-        "mc": [
-          "Mettre l'eau tiède et la levure dans le bol, mélanger <b>10 s / vitesse 2</b>.",
-          "Ajouter la farine et le sel, mélanger <b>30 s / mode pétrin</b> (sans pétrir plus longtemps).",
           "Laisser lever, façonner et cuire comme dans la version classique."
         ]
       }
