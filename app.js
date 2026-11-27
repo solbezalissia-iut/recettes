@@ -1,6 +1,7 @@
 const catLabels = {
   apero: "Apéro", entree: "Entrée", plat: "Plat", accompagnement: "Accompagnement",
-  dessert: "Dessert", boisson: "Boisson", sauce: "Sauce", "base-culinaire": "Base culinaire"
+  dessert: "Dessert", boisson: "Boisson", sauce: "Sauce", "base-culinaire": "Base culinaire",
+  maison: "Maison"
 };
 
 // Photo de secours utilisée quand une recette n'a pas encore sa propre photo.
@@ -182,7 +183,7 @@ function ingLabel(ing) {
 // simple recipe or a grouped one with a `variantes` array.
 function getVariants(r) {
   if (r.variantes) return r.variantes;
-  return [{ nom: null, temps: r.temps, personnes: r.personnes, ingredients: r.ingredients, etapes: r.etapes }];
+  return [{ nom: null, temps: r.temps, personnes: r.personnes, ingredients: r.ingredients, etapes: r.etapes, mc: r.mc }];
 }
 
 function previewVariant(r) {
@@ -243,12 +244,12 @@ function getSortedIndices() {
 }
 
 function buildGrids() {
-  const cats = ['apero', 'entree', 'plat', 'accompagnement', 'dessert', 'boisson', 'sauce', 'base-culinaire'];
+  const cats = ['apero', 'entree', 'plat', 'accompagnement', 'dessert', 'boisson', 'sauce', 'base-culinaire', 'maison'];
   const allGrid = document.getElementById('grid-all');
   allGrid.innerHTML = '';
   cats.forEach(cat => { document.getElementById('grid-' + cat).innerHTML = ''; });
 
-  const counts = { all: 0, apero: 0, entree: 0, plat: 0, accompagnement: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0 };
+  const counts = { all: 0, apero: 0, entree: 0, plat: 0, accompagnement: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0, maison: 0 };
 
   getSortedIndices().forEach(idx => {
     const r = allRecettes[idx];
@@ -283,7 +284,7 @@ function buildGrids() {
           <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
           <div class="card-title">${r.titre}</div>
           <div class="card-meta">
-            <span>⏱ ${preview.temps}</span>
+            <span>⏱ ${formatTemps(preview.temps)}</span>
             <span>👥 ${preview.personnes} pers.</span>
           </div>
           <div class="card-ingredients">${pills}</div>
@@ -329,9 +330,42 @@ function buildGrids() {
   if (footerCountEl) footerCountEl.textContent = totalAll;
 }
 
+// ── Affichage des temps en heures ──
+// « 135 min » → « 2 h 15 », « 1h30 » → « 1 h 30 », « 45 min » reste « 45 min ».
+// Le reste du texte (« + 1 nuit au frais »…) est conservé tel quel.
+function formatTemps(temps) {
+  if (temps == null) return '';
+  return String(temps)
+    .replace(/(\d+)\s*h(?:\s*(\d{1,2})(?!\d))?/gi, (m, h, mm) => `${h} h${mm ? ' ' + mm.padStart(2, '0') : ''}`)
+    .replace(/(\d+)\s*min(?:utes?)?\b/gi, (m, n) => {
+      n = parseInt(n, 10);
+      if (n < 60) return `${n} min`;
+      const h = Math.floor(n / 60), mm = n % 60;
+      return `${h} h${mm ? ' ' + String(mm).padStart(2, '0') : ''}`;
+    });
+}
+
+// ── Unités : masses en grammes, liquides en litres ──
+function normalizeUnit(valeur, unite) {
+  const u = (unite || '').trim();
+  const lu = u.toLowerCase();
+  if (lu === 'kg') return [valeur * 1000, 'g'];
+  if (lu === 'mg') return [valeur / 1000, 'g'];
+  if (lu === 'ml') return [valeur / 1000, 'L'];
+  if (lu === 'cl') return [valeur / 100, 'L'];
+  if (lu === 'dl') return [valeur / 10, 'L'];
+  if (lu === 'l' || lu === 'litre' || lu === 'litres') return [valeur, 'L'];
+  return [valeur, unite];
+}
+
 // ── Ingredient scaling ──
 function formatQty(valeur, unite, ratio) {
+  [valeur, unite] = normalizeUnit(valeur, unite);
   const qty = valeur * ratio;
+  if (unite === 'L') {
+    // jusqu'à 3 décimales : 0,015 L, 0,25 L, 1,5 L
+    return `${(Math.round(qty * 1000) / 1000).toString().replace('.', ',')} L`;
+  }
   let str;
   if (Math.abs(qty - Math.round(qty)) < 0.05) {
     str = Math.round(qty).toString();
@@ -366,10 +400,34 @@ function renderIngredients() {
   }).join('');
 }
 
+// Mode de préparation : « classique » (à la main / au four) ou « mc » (Monsieur Cuisine de Lidl).
+// Le choix est mémorisé sur l'appareil.
+let stepsMode = 'classique';
+try { stepsMode = localStorage.getItem('recettes-mode') === 'mc' ? 'mc' : 'classique'; } catch (e) { /* stockage indisponible */ }
+
 function renderSteps() {
   const v = currentVariant();
-  document.getElementById('modal-steps').innerHTML = v.etapes.map(e => `<li><div>${e}</div></li>`).join('');
+  const note = document.getElementById('mc-note');
+  document.querySelectorAll('.mode-switch button').forEach(b => b.classList.toggle('active', b.dataset.mode === stepsMode));
+  let steps = v.etapes;
+  note.hidden = true;
+  if (stepsMode === 'mc') {
+    if (v.mc && v.mc.length) {
+      steps = v.mc;
+      note.textContent = 'Réglages indiqués : temps / température / vitesse. Ils fonctionnent sur tous les Monsieur Cuisine (Smart, Connect, Trend).';
+    } else {
+      note.textContent = 'Pas encore de version Monsieur Cuisine pour cette recette : voici la version classique.';
+    }
+    note.hidden = false;
+  }
+  document.getElementById('modal-steps').innerHTML = steps.map(e => `<li><div>${e}</div></li>`).join('');
 }
+
+document.querySelectorAll('.mode-switch button').forEach(b => b.addEventListener('click', () => {
+  stepsMode = b.dataset.mode;
+  try { localStorage.setItem('recettes-mode', stepsMode); } catch (e) { /* rien */ }
+  renderSteps();
+}));
 
 function updateServingDisplay() {
   document.getElementById('serving-count').textContent = currentServings;
@@ -401,7 +459,7 @@ function selectVariant(vIdx) {
   const v = currentVariant();
   baseServings = typeof v.personnes === 'number' ? v.personnes : parseInt(v.personnes, 10) || 1;
   currentServings = baseServings;
-  document.getElementById('modal-meta').innerHTML = `<span>⏱ ${v.temps}</span>`;
+  document.getElementById('modal-meta').innerHTML = `<span>⏱ ${formatTemps(v.temps)}</span>`;
   document.getElementById('serving-count').textContent = currentServings;
   renderVariantTabs();
   renderIngredients();

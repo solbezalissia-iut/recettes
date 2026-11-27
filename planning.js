@@ -154,7 +154,7 @@
           const v = variantOf(r, x.v);
           return `<div class="plan-recipe">
             <img class="plan-thumb" src="${esc(r.photo || SITE_PHOTO)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${SITE_PHOTO}';">
-            <div class="plan-recipe-name" data-open="${esc(x.rid)}" data-v="${x.v || 0}" data-p="${x.p}">${esc(r.titre)}${v.nom ? ` <em>(${esc(v.nom)})</em>` : ''}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(v.temps)}</small></div>
+            <div class="plan-recipe-name" data-open="${esc(x.rid)}" data-v="${x.v || 0}" data-p="${x.p}">${esc(r.titre)}${v.nom ? ` <em>(${esc(v.nom)})</em>` : ''}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(v.temps))}</small></div>
             <div class="plan-stepper"><button data-pp="${k}" data-j="${j}" data-d="-1" aria-label="Moins de personnes">−</button><b>${x.p}<span> pers.</span></b><button data-pp="${k}" data-j="${j}" data-d="1" aria-label="Plus de personnes">+</button></div>
             <button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button>
           </div>`;
@@ -209,10 +209,10 @@
     if (u === 'g') return [valeur, 'g'];
     if (u === 'kg') return [valeur * 1000, 'g'];
     if (u === 'mg') return [valeur / 1000, 'g'];
-    if (u === 'ml') return [valeur / 10, 'cl'];
-    if (u === 'cl') return [valeur, 'cl'];
-    if (u === 'dl') return [valeur * 10, 'cl'];
-    if (u === 'l') return [valeur * 100, 'cl'];
+    if (u === 'ml') return [valeur / 1000, 'L'];
+    if (u === 'cl') return [valeur / 100, 'L'];
+    if (u === 'dl') return [valeur / 10, 'L'];
+    if (u === 'l') return [valeur, 'L'];
     return [valeur, u];
   }
   function fmtTotal(q, u) {
@@ -221,7 +221,7 @@
       return String(r).replace('.', ',');
     };
     if (u === 'g') return q >= 1000 ? String(Math.round(q / 10) / 100).replace('.', ',') + ' kg' : Math.round(q) + ' g';
-    if (u === 'cl') return q >= 100 ? String(Math.round(q) / 100).replace('.', ',') + ' L' : num(q) + ' cl';
+    if (u === 'L') return String(Math.round(q * 1000) / 1000).replace('.', ',') + ' L';
     if (!u) return num(q);
     // pluriel simple pour les petites unités (2 gousses, 3 pincées…)
     const plural = q > 1 && /^(gousse|pincée|sachet|feuille|tranche|dose|filet|verre)$/.test(u) ? u + 's' : u;
@@ -436,7 +436,7 @@
       const shown = res.slice(0, 80);
       list.innerHTML = shown.map(r => `<button class="plan-pick" data-rid="${esc(ridOf(r))}">
           <img src="${esc(r.photo || SITE_PHOTO)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${SITE_PHOTO}';">
-          <span>${esc(r.titre)}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(previewVariant(r).temps)} · ${esc(previewVariant(r).personnes)} pers.</small></span><b>+</b></button>`).join('')
+          <span>${esc(r.titre)}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(previewVariant(r).temps))} · ${esc(previewVariant(r).personnes)} pers.</small></span><b>+</b></button>`).join('')
         + (res.length > shown.length ? `<div class="plan-empty plan-empty--sm">${res.length - shown.length} autres recettes : affine ta recherche.</div>` : '')
         || '<div class="plan-empty">Aucune recette</div>';
     };
