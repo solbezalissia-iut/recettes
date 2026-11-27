@@ -4822,6 +4822,13 @@ const recettes = [
       "Égoutter les bricks sur du papier absorbant.",
       "Pour la sauce : mélanger le fromage blanc avec le jus de citron, les échalotes émincées et le persil ciselé.",
       "Assaisonner et réfrigérer la sauce pendant au moins 30 minutes avant de servir."
+    ],
+    "mc": [
+      "Mettre la courgette en morceaux dans le bol et râper <b>5 s / vitesse 5</b>. La presser dans un torchon pour retirer l'eau.",
+      "Mettre les échalotes dans le bol et hacher <b>3 s / vitesse 5</b>. En réserver un peu pour la sauce.",
+      "Ajouter la courgette, le thon égoutté, le chèvre, sel et poivre. Mélanger <b>15 s / sens inverse / vitesse 3</b>.",
+      "Rouler la farce en cigares dans les feuilles de brick et les dorer à la poêle dans l'huile d'olive.",
+      "Sauce : mettre le persil dans le bol propre, hacher <b>3 s / vitesse 7</b>, ajouter le fromage blanc, le citron et l'échalote réservée, mélanger <b>10 s / vitesse 3</b>. Réfrigérer 30 minutes."
     ]
   },
   {
@@ -4868,6 +4875,11 @@ const recettes = [
       "Enfariner légèrement le brie, tremper dans l'œuf battu, puis rouler dans la chapelure.",
       "Chauffer l'huile dans une poêle à feu moyen. Déposer délicatement les bries panés et les faire dorer sur chaque face 2 à 3 minutes.",
       "Égoutter sur du papier absorbant, assaisonner de sel et poivre avant de servir."
+    ],
+    "mc": [
+      "Chapelure maison : mettre du pain sec dans le bol et mixer <b>15 s / vitesse 8</b>.",
+      "Envelopper les tranches de brie de bacon, puis les passer dans la farine, l'œuf battu et la chapelure.",
+      "Dorer 2 à 3 minutes par face à la poêle, égoutter, saler et poivrer."
     ]
   },
   {
@@ -4917,6 +4929,9 @@ const recettes = [
       "Couper les pommes de terre en morceaux et les faire sauter dans une poêle avec un filet d'huile d'olive, l'ail haché et des herbes de Provence.",
       "Cuire les pommes de terre jusqu'à ce qu'elles soient dorées et croustillantes, environ 15 à 20 minutes.",
       "Servir le brie rôti avec les pommes de terre sautées, napper d'un filet de miel supplémentaire si désiré."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le brie rôtit au four et les pommes de terre se font à la poêle, suivre la version classique."
     ]
   },
   {
@@ -4988,6 +5003,14 @@ const recettes = [
       "Badigeonner avec l'œuf battu pour obtenir une belle dorure.",
       "Cuire dans un four préchauffé à 180°C pendant 25 à 30 minutes, jusqu'à ce que la brioche soit dorée et gonflée.",
       "Laisser refroidir légèrement avant de démouler."
+    ],
+    "mc": [
+      "Mettre le lait, le sucre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine et l'œuf. Pétrir <b>3 min / mode pétrin</b>.",
+      "Ajouter le beurre mou en morceaux et pétrir encore <b>3 min / mode pétrin</b>.",
+      "Laisser lever 1 heure dans le bol fermé.",
+      "Étaler en rectangle, tartiner de Nutella, rouler, couper des tronçons de 2 à 3 cm et les ranger dans un moule.",
+      "Dorer à l'œuf battu et cuire 25 à 30 minutes à 180 °C."
     ]
   },
   {
@@ -5054,6 +5077,13 @@ const recettes = [
       "Laisser lever 2 heures (ou une nuit au réfrigérateur).",
       "Dégazer, façonner en tresse ou en boules dans un moule à cake et laisser lever encore 1 heure.",
       "Dorer au jaune d’œuf et cuire 30 minutes à 180 °C."
+    ],
+    "mc": [
+      "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le sucre, le sel et les œufs. Pétrir <b>4 min / mode pétrin</b>.",
+      "Ajouter le beurre mou en morceaux et pétrir encore <b>4 min / mode pétrin</b>, jusqu'à ce que la pâte se décolle des parois.",
+      "Laisser lever 2 heures (ou une nuit au réfrigérateur).",
+      "Façonner, laisser lever 1 heure, dorer et cuire 30 minutes à 180 °C."
     ]
   },
   {
@@ -5150,6 +5180,14 @@ const recettes = [
       "Préchauffer le four à 200°C. Badigeonner légèrement les brioches avec la dorure à l'œuf.",
       "Cuire 13 à 15 minutes jusqu'à coloration légèrement dorée.",
       "Optionnel : badigeonner d'un sirop léger (2 c. à c. de sucre dissous dans 2 c. à c. d'eau bouillante) pour une brillance à la sortie du four."
+    ],
+    "mc": [
+      "Mettre le lait, la crème, le sucre et les levures dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter les farines et le sel. Pétrir <b>4 min / mode pétrin</b>.",
+      "Ajouter le beurre en morceaux et pétrir encore <b>4 min / mode pétrin</b>. Laisser lever 75 à 90 minutes.",
+      "Crème pâtissière (si elle n'est pas prête) : voir la fiche « Crème pâtissière », version Monsieur Cuisine.",
+      "Étaler la pâte, garnir de crème pâtissière et de pépites, plier, couper en lanières, torsader et laisser lever 1 heure.",
+      "Dorer et cuire 13 à 15 minutes à 200 °C."
     ]
   },
   {
@@ -5202,6 +5240,11 @@ const recettes = [
       "Couper les fruits en morceaux et les enfiler sur les piques en alternant les couleurs.",
       "Faire fondre le chocolat avec le lait au micro-ondes par tranches de 30 secondes.",
       "Napper les brochettes de chocolat ou servir le chocolat à part pour tremper."
+    ],
+    "mc": [
+      "Mettre le chocolat en morceaux dans le bol. Hacher <b>10 s / vitesse 7</b>.",
+      "Ajouter le lait et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+      "Enfiler les fruits sur les piques et les napper de chocolat (ou le servir à part)."
     ]
   },
   {
@@ -5233,6 +5276,9 @@ const recettes = [
       "Couper les bananes en rondelles de 1,5 cm.",
       "Sur chaque pique : un bas de fraise, une rondelle de banane (le visage), puis la pointe de fraise (le bonnet).",
       "Ajouter un point de chantilly au sommet du bonnet et deux mini pépites pour les yeux. Servir aussitôt."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ces brochettes : suivre la version classique (la chantilly peut se faire au fouet du Monsieur Cuisine, vitesse 4)."
     ]
   },
   {
@@ -5292,6 +5338,13 @@ const recettes = [
           "Verser la préparation dans le moule et lisser la surface.",
           "Enfourner 22 à 25 minutes : le centre doit rester légèrement fondant, façon brownie-cookie.",
           "Laisser refroidir au moins 15 minutes dans le moule avant de découper en carrés."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C et chemiser un moule carré.",
+          "Mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter le sucre et les œufs, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine, mélanger <b>15 s / vitesse 4</b>.",
+          "Ajouter les pépites, mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+          "Cuire 22 à 25 minutes et laisser refroidir 15 minutes avant de couper."
         ]
       },
       {
@@ -5343,6 +5396,13 @@ const recettes = [
           "Incorporez les œufs un à un, puis ajoutez la farine et mélangez jusqu'à ce que la pâte soit homogène.",
           "Ajoutez les cacahuètes hachées et mélangez délicatement.",
           "Versez la préparation dans un moule et enfournez pendant 25 minutes."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre les cacahuètes dans le bol, concasser <b>3 s / vitesse 5</b>. Réserver.",
+          "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter le sucre et les œufs, mélanger <b>20 s / vitesse 4</b>, puis la farine, <b>15 s / vitesse 4</b>.",
+          "Ajouter les cacahuètes, mélanger <b>10 s / sens inverse / vitesse 2</b>. Cuire 25 minutes."
         ]
       }
     ]
@@ -5406,6 +5466,13 @@ const recettes = [
       "Écraser les Oreo en miettes et les répandre dessus : c’est la terre.",
       "Écrire « RIP » au glaçage blanc sur les biscuits et les planter comme des pierres tombales.",
       "Ajouter les bonbons vers de terre qui sortent de la terre. Couper en carrés."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+      "Ajouter le sucre et les œufs, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine, <b>15 s / vitesse 4</b>. Cuire 25 minutes dans un moule carré.",
+      "Bol propre : mettre les Oreo et mixer <b>5 s / vitesse 6</b> pour faire « la terre ».",
+      "Décorer avec la terre, les pierres tombales en biscuits (RIP au glaçage) et les bonbons vers de terre."
     ]
   },
   {
@@ -5474,6 +5541,12 @@ const recettes = [
           "Ajouter la farine, le sucre vanillé, le sel et le mélange chocolat fondu.",
           "Ajouter les noix concassées si souhaité.",
           "Verser dans un moule beurré et enfourner à 180 °C pendant 20 à 25 minutes : le centre doit rester fondant."
+        ],
+        "mc": [
+          "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter les œufs, le sucre, le sucre vanillé et le sel. Mélanger <b>20 s / vitesse 4</b>.",
+          "Ajouter la farine, mélanger <b>15 s / vitesse 4</b>. Ajouter les noix et mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+          "Cuire 20 à 25 minutes à 180 °C : le centre doit rester fondant."
         ]
       },
       {
@@ -5550,6 +5623,13 @@ const recettes = [
           "Verser la pâte dans un cadre de cuisson de 20 x 20 cm préalablement beurré ou tapissé de papier sulfurisé.",
           "Enfourner à 165°C pendant 15 à 20 minutes ; le cœur doit rester bien fondant.",
           "À la sortie du four, laisser refroidir légèrement puis pocher des boules généreuses de caramel sur le dessus et ajouter des noix pour la touche gourmande."
+        ],
+        "mc": [
+          "Mettre les chocolats dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+          "Ajouter les œufs, le sucre glace et le sel. Mélanger <b>20 s / vitesse 3</b> (sans faire mousser).",
+          "Ajouter la farine et le cacao, mélanger <b>15 s / vitesse 4</b>.",
+          "Verser dans un cadre de 20 cm et cuire 15 à 20 minutes à 165 °C.",
+          "Laisser refroidir, puis ajouter le caramel et les noix."
         ]
       }
     ]
@@ -5590,6 +5670,11 @@ const recettes = [
       "Dans un bol, mélanger les dés de tomates avec le fromage de chèvre émietté.",
       "Répartir le mélange de tomates et fromage de chèvre sur les tranches de pain grillé.",
       "Servir immédiatement."
+    ],
+    "mc": [
+      "Mettre les tomates coupées en quatre dans le bol. Hacher <b>3 s / vitesse 4</b> (petits dés).",
+      "Ajouter le chèvre émietté et mélanger <b>8 s / sens inverse / vitesse 2</b>.",
+      "Griller les tranches de pain 5 à 7 minutes au four à 200 °C, les garnir et servir aussitôt."
     ]
   },
   {
@@ -5706,6 +5791,14 @@ const recettes = [
       "Lisser la base et congeler l'ensemble minimum 6 h, idéalement toute une nuit.",
       "Démouler la bûche encore congelée, la poser sur une grille et pulvériser le spray velours blanc à 20-25 cm de distance.",
       "Laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
+    ],
+    "mc": [
+      "Caramel de l'insert : à la casserole (le caramel à sec dépasse la température du Monsieur Cuisine). Suivre les étapes 2 à 7 de la version classique.",
+      "Ganache montée vanille : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter 100 ml de crème et la vanille, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter 300 ml de crème froide, mélanger <b>10 s / vitesse 3</b>. Filmer et réfrigérer au moins 4 heures.",
+      "Génoise : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine à la spatule et cuire 20 minutes à 180 °C.",
+      "Croustillant : mettre les spéculoos dans le bol propre, mixer <b>10 s / vitesse 7</b>, ajouter le beurre fondu et mélanger <b>10 s / vitesse 3</b>. Étaler sur la génoise.",
+      "Monter la ganache bien froide : insérer le fouet et fouetter <b>vitesse 4</b> en surveillant (1 à 2 min) jusqu'à une texture ferme.",
+      "Monter la bûche comme dans la version classique (étapes 15 à 20) : congeler, floquer et décongeler 4 à 5 heures au réfrigérateur."
     ]
   },
   {
@@ -5818,6 +5911,13 @@ const recettes = [
       "Sortir la bûche bien congelée et la démouler aussitôt (le rhodoïd facilite le démoulage), la poser sur une grille au-dessus d'un plat.",
       "Pulvériser le spray velours chocolat à 20-25 cm de distance, en mouvements réguliers, pour un effet velouté uniforme.",
       "Transférer la bûche sur le plat de service et laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
+    ],
+    "mc": [
+      "Ganache montée : mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter 100 ml de crème, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter 300 ml de crème froide, mélanger <b>10 s / vitesse 3</b>. Filmer et réfrigérer au moins 4 heures.",
+      "Insert framboise : faire tremper la gélatine. Mettre les framboises et le sucre dans le bol propre, mixer <b>20 s / vitesse 8</b>, puis chauffer <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée, mélanger <b>10 s / vitesse 3</b>, filtrer, couler dans le petit moule et congeler à cœur.",
+      "Génoise : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine à la spatule et cuire 20 minutes à 180 °C.",
+      "Croustillant : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>, ajouter le praliné, puis les cornflakes et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur la génoise.",
+      "Monter la ganache froide au fouet <b>vitesse 4</b> en surveillant, puis monter la bûche comme dans la version classique (étapes 15 à 22)."
     ]
   },
   {
@@ -5912,6 +6012,14 @@ const recettes = [
       "Étaler une partie de la ganache sur la pâte, puis rouler en bûche à l'aide du papier.",
       "Placer 20 minutes au congélateur.",
       "Recouvrir la bûche du reste de ganache, décorer de coulures à la poche à douille et de feuilles d'or."
+    ],
+    "mc": [
+      "Cuire la farine 10 minutes à 160 °C au four et la laisser refroidir.",
+      "Mettre le beurre mou, la vergeoise et le sucre dans le bol. Mélanger <b>30 s / vitesse 4</b>.",
+      "Ajouter le lait, la vanille, la farine refroidie et le sel. Mélanger <b>30 s / vitesse 4</b>. Ajouter les pépites, <b>10 s / sens inverse / vitesse 2</b>.",
+      "Étaler la pâte en rectangle sur du papier cuisson et la réfrigérer.",
+      "Ganache : bol propre, mettre les chocolats, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le beurre, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Laisser épaissir 1 à 2 heures.",
+      "Étaler de la ganache, rouler en bûche, congeler 20 minutes, puis couvrir du reste de ganache et décorer."
     ]
   },
   {
@@ -5980,6 +6088,13 @@ const recettes = [
       "Détendre la crème chantilly si nécessaire et étaler une première couche généreuse sur la génoise démoulée.",
       "Ajouter la confiture en fine couche et rouler à nouveau fermement. Envelopper dans du film et réfrigérer 1 heure.",
       "Saupoudrer de sucre glace avant de servir et découper des tronçons pour présenter."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Insérer le fouet. Mettre les œufs et le sucre dans le bol et fouetter <b>6 min / 37 °C / vitesse 4</b>, puis <b>4 min / vitesse 4</b>, jusqu'à ce que le mélange double de volume. Retirer le fouet.",
+      "Incorporer la farine tamisée à la spatule, puis le beurre fondu et la vanille.",
+      "Étaler sur une plaque et cuire 10 à 12 minutes. Rouler dans un torchon humide et laisser refroidir.",
+      "Garnir de chantilly et de confiture, rouler, réfrigérer 1 heure et saupoudrer de sucre glace."
     ]
   },
   {
@@ -6028,6 +6143,12 @@ const recettes = [
       "Remplir le creux de sorbet framboise et de quelques fruits rouges. Lisser.",
       "Couvrir d’une couche de biscuits écrasés mélangés au beurre fondu et tasser : ce sera la base.",
       "Congeler au moins 8 heures. Démouler sur le plat de service, décorer de chantilly, de meringues et de fruits rouges juste avant de servir."
+    ],
+    "mc": [
+      "Ramollir la glace et le sorbet 10 minutes, chemiser un moule à cake.",
+      "Étaler la glace vanille au fond et sur les bords, congeler 30 minutes, puis garnir de sorbet et de fruits rouges.",
+      "Base : mettre les biscuits dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre et mélanger <b>10 s / vitesse 3</b> (ou faire fondre le beurre avant : <b>2 min / 60 °C / vitesse 2</b>). Tasser sur la glace.",
+      "Congeler au moins 8 heures, démouler et décorer."
     ]
   },
   {
@@ -6164,6 +6285,13 @@ const recettes = [
       "Démouler la bûche encore congelée, la poser sur une grille et pulvériser le spray velours blanc à 20-25 cm de distance.",
       "Décorer avec les tuiles croustillantes juste avant de servir (elles ramollissent si elles restent trop longtemps au contact de l'humidité du frigo).",
       "Laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
+    ],
+    "mc": [
+      "Insert : faire tremper 4 g de gélatine. Mettre le yaourt grec, le sucre et la vanille dans le bol. Chauffer la crème à part, y dissoudre la gélatine, ajouter dans le bol et mélanger <b>10 s / vitesse 3</b>. Couler dans le petit moule et congeler à cœur.",
+      "Ganache marron : faire tremper 6 g de gélatine. Mettre 150 g de crème et la vanille dans le bol propre, chauffer <b>3 min / 80 °C / vitesse 2</b>. Ajouter la gélatine essorée, puis la crème de marron et 200 g de crème froide, mélanger <b>15 s / vitesse 3</b>. Filmer et réfrigérer au moins 4 heures.",
+      "Génoise : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine et cuire 20 minutes à 180 °C.",
+      "Tuiles : mettre le sucre, le beurre fondu, la farine et le miel dans le bol, mélanger <b>15 s / vitesse 4</b>. Étaler finement et cuire 6 à 8 minutes à 180 °C, puis façonner à chaud.",
+      "Monter la ganache froide au fouet <b>vitesse 4</b> en surveillant, puis monter la bûche comme dans la version classique (étapes 16 à 22)."
     ]
   },
   {
@@ -6236,6 +6364,13 @@ const recettes = [
       "Dérouler le biscuit, étaler le croustillant puis la moitié de la mousse, rouler serré.",
       "Couvrir du reste de mousse et réfrigérer 3 heures.",
       "Glaçage : verser la crème chaude sur le chocolat noir, laisser tiédir et napper la bûche. Réfrigérer encore 1 heure."
+    ],
+    "mc": [
+      "Biscuit : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine, étaler et cuire 8 à 10 minutes à 200 °C. Rouler dans un torchon humide.",
+      "Croustillant : bol propre, mettre le chocolat au lait, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter 50 g de praliné et les crêpes dentelles, mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+      "Mousse : bol propre et froid, insérer le fouet, mettre la crème bien froide et fouetter <b>vitesse 4</b> en surveillant (1 à 2 min). Ajouter le reste du praliné, mélanger <b>5 s / vitesse 2</b>.",
+      "Garnir le biscuit de croustillant et de mousse, rouler, couvrir du reste de mousse et réfrigérer 3 heures.",
+      "Glaçage : mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter la crème et faire fondre <b>4 min / 50 °C / vitesse 2</b>. Laisser tiédir, napper et réfrigérer 1 heure."
     ]
   },
   {
@@ -6309,6 +6444,13 @@ const recettes = [
       "Ganache : verser la crème chaude sur le chocolat haché, mélanger, ajouter le beurre. Laisser épaissir.",
       "Fouetter la crème froide avec le sucre glace en chantilly. Dérouler le biscuit, l’étaler de chantilly et rouler serré.",
       "Couvrir de ganache, dessiner des stries à la fourchette pour imiter l’écorce, couper les extrémités en biais et réfrigérer 2 heures. Décorer."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C. Insérer le fouet, mettre les œufs et le sucre dans le bol et fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet.",
+      "Incorporer délicatement la farine et le cacao tamisés, étaler sur une plaque et cuire 8 à 10 minutes. Rouler dans un torchon humide.",
+      "Ganache : bol propre, mettre le chocolat, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le beurre, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Laisser épaissir.",
+      "Chantilly : bol propre et froid, insérer le fouet, mettre la crème froide et le sucre glace, fouetter <b>vitesse 4</b> en surveillant.",
+      "Garnir le biscuit de chantilly, rouler, couvrir de ganache, strier à la fourchette et réfrigérer 2 heures."
     ]
   },
   {
@@ -6372,6 +6514,13 @@ const recettes = [
       "Une fois la base légèrement refroidie, badigeonner de crème et rouler délicatement en formant une bûche.",
       "Étaler le reste de crème sur la bûche et rayer légèrement la surface avec une fourchette.",
       "Faire fondre le chocolat et le répartir en filet sur la surface de la bûche."
+    ],
+    "mc": [
+      "Mettre les spéculoos dans le bol. Mixer <b>15 s / vitesse 8</b>.",
+      "Ajouter 150 ml de crème et mélanger <b>20 s / vitesse 4</b>. Étaler sur 1 cm sur une plaque et cuire 8 à 10 minutes à 180 °C.",
+      "Bol propre et froid, insérer le fouet. Fouetter les 100 ml de crème restants <b>vitesse 4</b> en surveillant. Réserver la chantilly.",
+      "Mettre le caprice des dieux, le sucre, le beurre mou et la vanille dans le bol. Mélanger <b>20 s / vitesse 4</b>, puis ajouter la chantilly et mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+      "Garnir la base tiède, rouler, couvrir de crème et décorer de chocolat fondu (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>)."
     ]
   },
   {
@@ -6432,6 +6581,13 @@ const recettes = [
       "Monter les blancs en neige avec le sel et les incorporer délicatement.",
       "Tremper rapidement les biscuits dans le café (et l’amaretto), et alterner couches de biscuits et de crème dans le moule, en finissant par des biscuits.",
       "Réfrigérer au moins 6 heures, démouler sur le plat, couvrir de crème restante, saupoudrer de cacao et dessiner des stries à la fourchette."
+    ],
+    "mc": [
+      "Chemiser un moule à cake ou à bûche de film alimentaire.",
+      "Insérer le fouet. Mettre les blancs d'œufs et le sel dans le bol, fouetter <b>3 min / vitesse 4</b>. Retirer et réserver les blancs.",
+      "Mettre les jaunes et le sucre dans le bol, fouetter <b>2 min / vitesse 4</b>. Ajouter le mascarpone, mélanger <b>20 s / vitesse 3</b>. Retirer le fouet.",
+      "Incorporer les blancs à la spatule.",
+      "Monter la bûche en alternant biscuits trempés dans le café et crème, réfrigérer au moins 6 heures, démouler et saupoudrer de cacao."
     ]
   },
   {
@@ -6511,6 +6667,13 @@ const recettes = [
       "Râper la carotte, émincer le chou rouge et trancher l’avocat.",
       "Sauce : mélanger le tahini, le jus du citron et 3 cuillères à soupe d’eau.",
       "Répartir tous les éléments en sections dans deux bols, napper de sauce et parsemer de sésame."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C et rôtir la patate douce en cubes avec les pois chiches, l'huile, le paprika et le sel pendant 25 minutes.",
+      "Mettre 1 L d'eau salée dans le bol, le quinoa rincé dans le panier de cuisson, et cuire <b>15 min / 100 °C / vitesse 1</b>.",
+      "Bol vidé : mettre la carotte en morceaux et râper <b>4 s / vitesse 5</b>. Réserver. Émincer le chou rouge <b>3 s / vitesse 4</b>.",
+      "Sauce : mettre le tahini, le jus du citron, 3 c. à soupe d'eau et du sel dans le bol. Mélanger <b>15 s / vitesse 4</b>.",
+      "Composer les bols avec l'avocat tranché, napper de sauce et parsemer de sésame."
     ]
   },
   {
@@ -6618,6 +6781,13 @@ const recettes = [
       "Garnir le dessus des buns de pâte à croûte au café en formant un motif en spirale.",
       "Préchauffer le four à 185°C et cuire les buns pendant 15 minutes, puis augmenter à 210°C pendant 5 minutes.",
       "Laisser refroidir les buns pendant 5 minutes pour que la croûte devienne croustillante."
+    ],
+    "mc": [
+      "Mettre le levain, l'eau, le lait, le sucre, le café soluble, la farine et le sel dans le bol. Pétrir <b>3 min / mode pétrin</b>.",
+      "Ajouter le beurre ramolli et pétrir encore <b>3 min / mode pétrin</b>. Laisser lever jusqu'à ce que la pâte double.",
+      "Diviser en boules, laisser reposer 15 minutes, enfermer un morceau de chocolat congelé dans chaque boule et laisser lever à nouveau.",
+      "Croûte : bol propre, mettre le beurre mou, le sucre, l'œuf, la farine et le café instantané. Mélanger <b>20 s / vitesse 4</b>. Pocher en spirale sur les buns.",
+      "Cuire 15 minutes à 185 °C, puis 5 minutes à 210 °C. Laisser refroidir 5 minutes."
     ]
   },
   {
@@ -6706,6 +6876,13 @@ const recettes = [
       "Laisser reposer les buns pendant 1 heure pour qu'ils gonflent.",
       "Préchauffer le four à 180°C, badigeonner les buns avec le jaune d'œuf battu avec un peu de lait, puis saupoudrer de graines de sésame.",
       "Enfourner les buns pendant 20 minutes jusqu'à ce qu'ils soient dorés."
+    ],
+    "mc": [
+      "Mettre l'eau et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le sel, le sucre et la poudre de lait. Pétrir <b>2 min / mode pétrin</b>. Ajouter le beurre et pétrir <b>3 min / mode pétrin</b>. Laisser reposer 1 heure.",
+      "Farce : bol propre, mettre l'ail et hacher <b>3 s / vitesse 7</b>. Ajouter un filet d'huile et le poivron en dés, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le poulet en morceaux et les épices, cuire <b>8 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Façonner les buns, les garnir de farce et de mozzarella, laisser reposer 1 heure, dorer, parsemer de sésame et cuire 20 minutes à 180 °C."
     ]
   },
   {
@@ -6767,6 +6944,13 @@ const recettes = [
       "Dans la poêle, faire fondre la mozzarella avec la crème pour obtenir une sauce crémeuse.",
       "Cuire les buns dans une poêle chaude couverte, environ 3 minutes de chaque côté, jusqu'à ce qu'ils soient dorés et cuits.",
       "Garnir les buns chauds de sauce mozzarella et de bacon, refermer et laisser reposer 1 minute avant de servir."
+    ],
+    "mc": [
+      "Mettre la farine, le skyr, la levure et le sel dans le bol. Pétrir <b>1 min / mode pétrin</b>.",
+      "Façonner 2 petits pains sur un plan fariné.",
+      "Cuire le bacon à la poêle bien chaude jusqu'à ce qu'il soit croustillant.",
+      "Mettre la mozzarella et la crème dans le bol. Faire fondre <b>3 min / 70 °C / vitesse 2</b>.",
+      "Cuire les buns 3 minutes par face dans une poêle couverte, puis les garnir de sauce et de bacon."
     ]
   },
   {
@@ -6841,6 +7025,12 @@ const recettes = [
       "Réserver 15 minutes au frais pour qu’elles se tiennent.",
       "Cuire 4 minutes par face dans l’huile, en posant le cheddar la dernière minute.",
       "Monter les burgers avec la salade, la tomate, l’oignon et la sauce."
+    ],
+    "mc": [
+      "Mettre l'oignon dans le bol et hacher <b>4 s / vitesse 5</b>.",
+      "Ajouter les haricots, l'œuf, la chapelure, les épices, sel et poivre. Mélanger <b>8 s / vitesse 4</b> (il doit rester des morceaux).",
+      "Former 4 galettes et les réserver 15 minutes au frais.",
+      "Cuire 4 minutes par face à la poêle, avec le cheddar la dernière minute, puis monter les burgers."
     ]
   },
   {
@@ -6899,6 +7089,12 @@ const recettes = [
       "Verser le mélange dans un petit bol recouvert de film alimentaire.",
       "Plonger le bol dans un saladier rempli de glaçons pendant 15 minutes, puis placer au réfrigérateur pour un minimum de 3 heures.",
       "Servir avec de l'huile d'olive, du vinaigre balsamique et du piment d'Espelette."
+    ],
+    "mc": [
+      "La veille (ou 6 heures avant), faire tremper les noix de cajou. Les rincer et les égoutter.",
+      "Mettre tous les ingrédients dans le bol. Mixer <b>1 min / vitesse 8</b> jusqu'à une texture bien lisse.",
+      "Cuire <b>5 min / 90 °C / vitesse 4</b>, jusqu'à ce que le mélange épaississe et devienne élastique.",
+      "Verser dans un petit bol filmé, refroidir 15 minutes dans l'eau glacée puis au moins 3 heures au réfrigérateur."
     ]
   },
   {
@@ -6972,6 +7168,12 @@ const recettes = [
       "Garnir chaque tortilla de riz, de viande, de cheddar et d’une cuillère de crème.",
       "Replier les côtés puis rouler serré.",
       "Faire dorer les burritos 2 minutes par face dans une poêle chaude, soudure dessous en premier."
+    ],
+    "mc": [
+      "Mettre l'oignon dans le bol et hacher <b>4 s / vitesse 5</b>. Ajouter un filet d'huile et rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le bœuf et rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les épices, les tomates et les haricots. Cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Garnir les tortillas chaudes de riz, de viande, de cheddar et de crème, les rouler et les dorer 2 minutes par face à la poêle."
     ]
   },
   {
@@ -7057,6 +7259,13 @@ const recettes = [
       "Faire revenir l’oignon, l’ail et le gingembre dans le reste du beurre, ajouter le reste des épices puis le coulis de tomate. Mijoter 10 minutes.",
       "Mixer la sauce si on la veut lisse, ajouter la crème et le poulet, puis laisser mijoter 15 minutes.",
       "Parsemer de coriandre et servir avec du riz basmati et des naans."
+    ],
+    "mc": [
+      "Mariner le poulet en morceaux avec le yaourt, la moitié des épices et du sel au moins 1 heure.",
+      "Mettre l'oignon, l'ail et le gingembre dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter 20 g de beurre et rissoler <b>4 min / 120 °C / vitesse 1</b>.",
+      "Ajouter le reste des épices et le coulis de tomate. Cuire <b>10 min / 100 °C / vitesse 1</b>, puis mixer <b>20 s / vitesse 8</b> pour une sauce lisse.",
+      "Pendant ce temps, dorer le poulet égoutté dans le reste du beurre à la poêle.",
+      "Ajouter le poulet et la crème dans le bol. Cuire <b>15 min / 98 °C / sens inverse / vitesse 1</b>. Servir avec de la coriandre et du riz."
     ]
   },
   {
@@ -7099,6 +7308,11 @@ const recettes = [
       "Disposer les dos de cabillaud dans un plat, saler et poivrer.",
       "Mélanger l’huile, le zeste et le jus du citron, l’ail haché et les herbes ciselées, puis en napper le poisson.",
       "Cuire 12 à 15 minutes : la chair doit être nacrée et se détacher en lamelles."
+    ],
+    "mc": [
+      "Mettre l'ail, le persil et la ciboulette dans le bol. Hacher <b>4 s / vitesse 7</b>.",
+      "Ajouter l'huile, le zeste et le jus du citron, mélanger <b>5 s / vitesse 3</b>.",
+      "Napper les dos de cabillaud salés et poivrés et cuire 12 à 15 minutes au four à 200 °C. (Variante vapeur : 500 ml d'eau dans le bol, poisson dans l'accessoire vapeur, <b>15 min / 120 °C / vitesse 1</b>.)"
     ]
   },
   {
@@ -7128,6 +7342,9 @@ const recettes = [
       "Mettre 2 boules de glace dans chaque grand verre.",
       "Verser l’expresso froid par-dessus.",
       "Couvrir de chantilly et décorer de grains de café. (Version chocolat liégeois : remplacer le café par du chocolat chaud refroidi et la glace par de la glace chocolat.)"
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine : suivre la version classique (la chantilly peut se faire au fouet, vitesse 4)."
     ]
   },
   {
@@ -7162,6 +7379,9 @@ const recettes = [
       "Couper le citron vert en 8 quartiers et les mettre dans un verre bas avec le sucre.",
       "Écraser au pilon pour extraire le jus.",
       "Remplir de glace pilée, verser la cachaça et mélanger."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour ce cocktail : le citron vert s'écrase au pilon directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -7227,6 +7447,13 @@ const recettes = [
       "Incorporer la farine et la levure.",
       "Verser dans le moule et cuire 45 minutes.",
       "Glaçage : mélanger le sucre glace avec le jus du second citron et en napper le cake refroidi."
+    ],
+    "mc": [
+      "Préchauffer le four à 170 °C. Prélever le zeste des citrons (sans le blanc).",
+      "Mettre les zestes et le sucre dans le bol. Mixer <b>15 s / vitesse 9</b>.",
+      "Ajouter les œufs et mélanger <b>1 min / vitesse 4</b>. Ajouter le jus d'un citron, le beurre fondu et la crème, <b>15 s / vitesse 3</b>.",
+      "Ajouter la farine et la levure, mélanger <b>15 s / vitesse 4</b>. Cuire 45 minutes dans un moule à cake.",
+      "Glaçage : mélanger le sucre glace avec le jus du second citron et napper le cake refroidi."
     ]
   },
   {
@@ -7298,6 +7525,13 @@ const recettes = [
       "Fouetter les œufs et le sucre, puis ajouter le beurre fondu, la purée de plantain et la vanille.",
       "Incorporer la farine, la levure, la cannelle et la noix de coco.",
       "Cuire 45 minutes, jusqu’à ce que la lame d’un couteau ressorte sèche."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Mettre les plantains en morceaux dans le bol. Mixer <b>15 s / vitesse 6</b>.",
+      "Ajouter les œufs, le sucre, le beurre fondu et la vanille. Mélanger <b>20 s / vitesse 4</b>.",
+      "Ajouter la farine, la levure, la cannelle et la noix de coco. Mélanger <b>15 s / vitesse 4</b>.",
+      "Cuire 45 minutes dans un moule à cake."
     ]
   },
   {
@@ -7363,6 +7597,12 @@ const recettes = [
       "Fouetter les œufs avec la farine et la levure, puis ajouter l’huile et le lait tiède petit à petit.",
       "Incorporer le gruyère, le jambon et les olives coupées en rondelles. Saler peu (olives et jambon sont salés), poivrer.",
       "Verser dans le moule et cuire 45 minutes, jusqu’à ce que la lame d’un couteau ressorte sèche."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C. Mettre le gruyère en morceaux dans le bol et râper <b>8 s / vitesse 6</b> (s'il n'est pas déjà râpé). Réserver.",
+      "Mettre les œufs, la farine, la levure, l'huile, le lait, sel et poivre dans le bol. Mélanger <b>20 s / vitesse 4</b>.",
+      "Ajouter le gruyère, le jambon et les olives en rondelles. Mélanger <b>15 s / sens inverse / vitesse 2</b>.",
+      "Cuire 45 minutes dans un moule à cake beurré."
     ]
   },
   {
@@ -7426,6 +7666,11 @@ const recettes = [
       "Plonger les portions panées dans l'huile chaude et cuire jusqu'à ce que la croûte soit dorée et croustillante, environ 2 à 3 minutes par face.",
       "Égoutter sur du papier absorbant et saupoudrer légèrement de sel si nécessaire.",
       "Servir immédiatement avec une sauce légère ou une salade verte pour équilibrer le plat."
+    ],
+    "mc": [
+      "Chapelure maison si besoin : pain sec dans le bol, <b>15 s / vitesse 8</b>.",
+      "Couper le camembert en portions, les passer dans la farine assaisonnée, l'œuf battu puis la chapelure.",
+      "Frire dans l'huile chaude jusqu'à ce que la panure soit dorée et égoutter."
     ]
   },
   {
@@ -7492,6 +7737,12 @@ const recettes = [
       "Préchauffer le four à 250 °C. Beurrer généreusement les moules à cannelés.",
       "Mélanger la pâte, remplir les moules aux trois quarts et cuire 10 minutes à 250 °C, puis 50 minutes à 180 °C : la croûte doit être brun foncé.",
       "Démouler encore chauds."
+    ],
+    "mc": [
+      "Mettre le lait, le beurre et la vanille fendue dans le bol. Chauffer <b>6 min / 90 °C / vitesse 1</b>. Retirer la gousse et laisser tiédir.",
+      "Ajouter le sucre, la farine, les œufs et les jaunes. Mélanger <b>15 s / vitesse 3</b> (sans fouetter fort).",
+      "Ajouter le rhum, mélanger <b>5 s / vitesse 2</b>, filtrer et réserver 24 heures au réfrigérateur.",
+      "Remplir les moules beurrés aux trois quarts et cuire comme dans la version classique (250 °C puis 180 °C)."
     ]
   },
   {
@@ -7579,6 +7830,13 @@ const recettes = [
       "Fourrer chaque cannelloni avec le mélange viande-sauce et mozzarella. Disposer les tubes farcis dans un plat à gratin légèrement huilé.",
       "Verser le reste de sauce tomate sur les cannellonis et saupoudrer de fromage râpé restant.",
       "Enfourner 25 à 30 minutes jusqu'à ce que le dessus soit doré et bouillonnant. Laisser reposer 5 minutes avant de servir."
+    ],
+    "mc": [
+      "Cuire les cannellonis selon le paquet si besoin et préchauffer le four à 180 °C.",
+      "Mettre l'oignon et l'ail dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la viande, sel, poivre et herbes. Cuire <b>8 min / 120 °C / sens inverse / vitesse 1</b>. Ajouter la mozzarella en dés et mélanger <b>10 s / sens inverse / vitesse 1</b>.",
+      "Farcir les cannellonis, les ranger dans un plat sur un peu de purée de tomate, couvrir du reste de tomate et du fromage râpé.",
+      "Cuire 25 à 30 minutes."
     ]
   },
   {
@@ -7641,6 +7899,12 @@ const recettes = [
       "Préchauffer le four à 180°C et former des boudins avec la pâte sur une plaque de cuisson.",
       "Enfourner pendant environ 25 minutes jusqu'à ce qu'ils soient dorés, puis laisser refroidir légèrement.",
       "Couper les boudins en tranches et les remettre au four pendant 10 minutes pour les faire croustiller."
+    ],
+    "mc": [
+      "Mettre le beurre ramolli et le sucre dans le bol. Mélanger <b>30 s / vitesse 4</b>.",
+      "Ajouter les œufs, mélanger <b>15 s / vitesse 4</b>. Ajouter la farine, la levure et le sel, pétrir <b>30 s / mode pétrin</b>.",
+      "Ajouter les amandes et mélanger <b>15 s / sens inverse / vitesse 2</b>.",
+      "Former des boudins, cuire 25 minutes à 180 °C, couper en tranches et recuire 10 minutes."
     ]
   },
   {
@@ -7676,6 +7940,11 @@ const recettes = [
       "Quand le caramel est ambré, retirer du feu et ajouter le beurre en fouettant (attention aux projections).",
       "Verser la crème chaude petit à petit en fouettant, puis remettre 1 minute sur le feu pour lisser.",
       "Verser dans un pot : le caramel épaissit en refroidissant. Il se conserve 2 semaines au réfrigérateur."
+    ],
+    "mc": [
+      "Le caramel à sec se fait à la casserole (il dépasse la température du Monsieur Cuisine). Suivre les étapes 2 et 3 de la version classique.",
+      "Pendant ce temps, chauffer la crème dans le bol : <b>3 min / 90 °C / vitesse 1</b>.",
+      "Verser le caramel ambré avec le beurre dans le bol, ajouter la crème chaude et mélanger <b>2 min / 90 °C / vitesse 3</b> jusqu'à une sauce lisse. Verser en pot."
     ]
   },
   {
@@ -7730,6 +7999,12 @@ const recettes = [
       "Remettre sur feu doux et ajouter le beurre en morceaux, la vanille et la fleur de sel. Mélanger jusqu'à parfaite émulsion.",
       "Ajouter le chocolat blanc coupé en morceaux et mélanger jusqu'à ce qu'il soit entièrement fondu et lisse.",
       "Mixer au mixeur plongeant pour obtenir un caramel parfaitement lisse et brillant, puis laisser refroidir légèrement ou placer au frais selon l'usage."
+    ],
+    "mc": [
+      "Faire le caramel à sec à la casserole (il dépasse la température du Monsieur Cuisine).",
+      "Pendant ce temps, mettre la crème dans le bol et chauffer <b>4 min / 90 °C / vitesse 1</b>.",
+      "Verser le caramel dans le bol avec la crème chaude, ajouter le beurre, la vanille et la fleur de sel. Mélanger <b>3 min / 90 °C / vitesse 3</b>.",
+      "Ajouter le chocolat blanc en morceaux et mélanger <b>1 min / vitesse 3</b> jusqu'à ce qu'il soit fondu. Mettre en pots."
     ]
   },
   {
@@ -7802,6 +8077,12 @@ const recettes = [
       "Remettre la viande, verser la bière, ajouter le bouquet garni, saler et poivrer.",
       "Tartiner le pain d’épices de moutarde et le poser sur le dessus.",
       "Couvrir et mijoter 2 h 30 à feu doux : le pain d’épices fond et lie la sauce. Servir avec des frites ou des pommes de terre. Meilleure réchauffée."
+    ],
+    "mc": [
+      "Mettre les oignons coupés en quatre dans le bol. Émincer <b>4 s / vitesse 4</b>. Ajouter le beurre et rissoler <b>8 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la cassonade et le vinaigre, puis la viande en cubes. Rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter la bière, le bouquet garni, sel et poivre, puis le pain d'épices tartiné de moutarde.",
+      "Cuire <b>120 min / 98 °C / sens inverse / vitesse 1</b>, sans le gobelet. Servir avec des frites."
     ]
   },
   {
@@ -7850,6 +8131,11 @@ const recettes = [
       "Mélanger la moutarde, le jus de citron, l’huile, du sel et du poivre.",
       "Mélanger avec les carottes, ajouter le persil ciselé et les raisins secs.",
       "Réserver au frais 15 minutes avant de servir."
+    ],
+    "mc": [
+      "Mettre les carottes en morceaux dans le bol. Râper <b>5 s / vitesse 5</b>. Réserver.",
+      "Mettre le persil dans le bol, hacher <b>3 s / vitesse 7</b>, ajouter la moutarde, le jus de citron, l'huile, sel et poivre. Mélanger <b>5 s / vitesse 3</b>.",
+      "Ajouter les carottes et les raisins secs, mélanger <b>10 s / sens inverse / vitesse 2</b>. Réserver 15 minutes au frais."
     ]
   },
   {
@@ -7897,6 +8183,9 @@ const recettes = [
       "Couper des tranches les plus fines possible et les disposer sur des assiettes froides.",
       "Arroser d’huile d’olive et de jus de citron.",
       "Ajouter la roquette, les copeaux de parmesan, la fleur de sel et le poivre."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : la viande se tranche au couteau, suivre la version classique."
     ]
   },
   {
@@ -7986,6 +8275,13 @@ const recettes = [
       "Incorporer la farine, la levure, la cannelle et le sel, puis les carottes et les noix.",
       "Verser dans le moule et cuire 45 à 50 minutes. Laisser refroidir complètement.",
       "Glaçage : fouetter le fromage frais, le beurre mou et le sucre glace, puis l’étaler sur le gâteau froid."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C. Mettre les carottes en morceaux dans le bol et râper <b>5 s / vitesse 5</b>. Réserver.",
+      "Mettre les noix dans le bol, concasser <b>3 s / vitesse 5</b>. Réserver.",
+      "Mettre les œufs, le sucre roux et l'huile dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter la farine, la levure, la cannelle et le sel, <b>15 s / vitesse 4</b>.",
+      "Ajouter les carottes et les noix, mélanger <b>15 s / sens inverse / vitesse 2</b>. Cuire 45 à 50 minutes et laisser refroidir.",
+      "Glaçage : bol propre, mettre le fromage frais, le beurre mou et le sucre glace, mélanger <b>20 s / vitesse 4</b>. Étaler sur le gâteau froid."
     ]
   },
   {
@@ -8065,6 +8361,12 @@ const recettes = [
       "Ajouter les haricots, le concentré, le bouquet garni et le bouillon. Mijoter 1 h 30.",
       "Préchauffer le four à 150 °C. Mettre le tout dans une cassole, enfouir les cuisses de canard et les saucisses coupées.",
       "Cuire 2 heures au four en cassant la croûte qui se forme et en la renfonçant 3 fois. Ajouter un peu de bouillon si ça sèche."
+    ],
+    "mc": [
+      "La veille, faire tremper les haricots. Les blanchir 10 minutes dans une casserole d'eau et égoutter.",
+      "Mettre les oignons, l'ail et les carottes dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter 1 c. à soupe de graisse de canard et la poitrine en morceaux, rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les haricots, le concentré, le bouquet garni et le bouillon (sans dépasser le repère maxi). Cuire <b>90 min / 98 °C / sens inverse / vitesse 1</b>.",
+      "Dorer les saucisses à la poêle, puis tout disposer en cocotte avec les cuisses de canard et terminer au four à 150 °C comme dans la version classique."
     ]
   },
   {
@@ -8106,6 +8408,11 @@ const recettes = [
       "L’arroser aussitôt de jus de citron pour qu’il ne noircisse pas.",
       "Mélanger la mayonnaise et la moutarde, puis les incorporer au céleri. Saler et poivrer.",
       "Réserver au moins 30 minutes au frais : le céleri s’attendrit."
+    ],
+    "mc": [
+      "Mettre le céleri-rave en morceaux dans le bol. Râper <b>5 s / vitesse 5</b>, puis arroser aussitôt de jus de citron.",
+      "Ajouter la mayonnaise, la moutarde, sel et poivre. Mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+      "Réserver au moins 30 minutes au frais."
     ]
   },
   {
@@ -8154,6 +8461,9 @@ const recettes = [
       "Le recouvrir du jus des citrons verts et saler : l’acidité du citron rend le poisson opaque, comme s’il était saisi.",
       "Ajouter l’oignon rouge en fines lamelles et le piment émincé. Laisser mariner 15 à 20 minutes au frais.",
       "Ajouter la coriandre et l’avocat en dés juste avant de servir."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : le poisson se coupe au couteau et marine au citron, suivre la version classique."
     ]
   },
   {
@@ -8186,6 +8496,12 @@ const recettes = [
           "Changer de vitesse progressivement (du plus lent au plus rapide), toutes les 30 secondes environ.",
           "Laisser reposer au réfrigérateur 2 heures au minimum. Ne sortir qu'au moment de servir.",
           "Servir de préférence à l'aide d'une poche à douille."
+        ],
+        "mc": [
+          "Mettre le bol et le fouet 15 minutes au réfrigérateur. Insérer le fouet.",
+          "Mettre la crème bien froide et le sucre glace dans le bol.",
+          "Fouetter <b>vitesse 4</b> en surveillant par l'ouverture du couvercle, 1 à 3 minutes, jusqu'à ce que la chantilly soit ferme. Arrêter dès qu'elle tient (sinon elle tourne en beurre).",
+          "Réserver au réfrigérateur jusqu'au service."
         ]
       },
       {
@@ -8224,6 +8540,11 @@ const recettes = [
           "Fouetter jusqu'à l'obtention d'une chantilly ferme.",
           "Débarrasser rapidement dans un bac froid et ranger au réfrigérateur.",
           "Utiliser comme une chantilly classique, par exemple pour garnir des mille-feuilles aux fraises, des choux, etc."
+        ],
+        "mc": [
+          "Mettre le bol et le fouet 15 minutes au réfrigérateur. Insérer le fouet.",
+          "Mettre la crème, le mascarpone, le sucre glace et la vanille dans le bol.",
+          "Fouetter <b>vitesse 4</b> en surveillant, 1 à 2 minutes, jusqu'à une chantilly ferme. Réserver au frais."
         ]
       },
       {
@@ -8295,6 +8616,11 @@ const recettes = [
           "Incorporer 100 g ou 100 ml de garniture aux fruits selon préférence.",
           "Diviser la crème en portions et aromatiser séparément avec le chocolat blanc fondu (100 g minimum) ou le chocolat noir/lait (100 g à 200 g selon goût).",
           "Utiliser la crème chantilly mascarpone pour garnir et napper les couches de gâteau."
+        ],
+        "mc": [
+          "Insérer le fouet. Mettre le mascarpone et la crème bien froids, le sucre glace et la vanille dans le bol.",
+          "Fouetter <b>vitesse 4</b> en surveillant, 2 à 3 minutes, jusqu'à une texture ferme et souple. Retirer le fouet.",
+          "Ajouter la garniture choisie (confiture, fruits mixés ou chocolat fondu tiède) et mélanger <b>10 s / sens inverse / vitesse 2</b>."
         ]
       },
       {
@@ -8350,6 +8676,11 @@ const recettes = [
           "Préparer la ganache au chocolat noir et laisser tiédir légèrement.",
           "Assembler le layer cake en étalant une couche généreuse de chantilly framboise entre chaque génoise, puis napper le dessus avec la ganache tiède.",
           "Décorer avec les framboises supplémentaires et une rosace de chantilly sur le dessus."
+        ],
+        "mc": [
+          "Mettre le bol et le fouet 15 minutes au réfrigérateur. Insérer le fouet.",
+          "Mettre la crème bien froide, le sucre glace, la vanille et le zeste de citron dans le bol. Fouetter <b>vitesse 4</b> en surveillant (1 à 3 min) jusqu'à une chantilly ferme.",
+          "Retirer le fouet, ajouter les framboises légèrement écrasées et mélanger <b>5 s / sens inverse / vitesse 1</b>. Monter le layer cake avec la ganache et décorer de framboises."
         ]
       }
     ]
@@ -8408,6 +8739,12 @@ const recettes = [
       "Cuire 3 heures (environ 50 minutes par kilo), en arrosant toutes les 20 minutes. Couvrir d’aluminium si la peau colore trop.",
       "Ajouter le reste des marrons dans le plat 30 minutes avant la fin.",
       "Laisser reposer 15 minutes avant de découper."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C.",
+      "Farce : mettre l'échalote et le thym dans le bol, hacher <b>3 s / vitesse 5</b>. Ajouter la chair à saucisse, la moitié des marrons, sel et poivre. Mélanger <b>15 s / sens inverse / vitesse 3</b>.",
+      "Farcir la volaille, la ficeler, la badigeonner de beurre et la cuire au four comme dans la version classique (environ 50 minutes par kilo en arrosant).",
+      "Réchauffer les marrons restants dans le bol avec un peu de bouillon : <b>6 min / 90 °C / sens inverse / vitesse 1</b>."
     ]
   },
   {
@@ -8467,6 +8804,11 @@ const recettes = [
       "Couper les fraises en morceaux (en garder quelques-unes pour le décor).",
       "Alterner couches de crème, de fraises et de biscuits imbibés, en terminant par des biscuits.",
       "Couvrir d’une assiette avec un poids et réfrigérer au moins 6 heures. Démouler et décorer de fraises."
+    ],
+    "mc": [
+      "Tapisser le moule de biscuits trempés dans le sirop.",
+      "Mettre le bol et le fouet au froid, insérer le fouet. Mettre le mascarpone, la crème froide, le sucre glace et la vanille. Fouetter <b>vitesse 4</b> en surveillant (1 à 2 min) jusqu'à une chantilly ferme.",
+      "Monter la charlotte en alternant crème, fraises et biscuits, couvrir et réfrigérer au moins 6 heures."
     ]
   },
   {
@@ -8513,6 +8855,9 @@ const recettes = [
       "Répéter l'opération (fromage blanc, poires, Nutella, boudoirs) jusqu'à remplir complètement le moule, en terminant par une couche de boudoirs.",
       "Couvrir et réfrigérer au moins 4 heures, idéalement toute une nuit, pour que la charlotte se tienne bien.",
       "Démouler délicatement sur un plat de service juste avant de servir."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette charlotte : tout s'assemble à froid, suivre la version classique."
     ]
   },
   {
@@ -8565,6 +8910,11 @@ const recettes = [
       "Badigeonner le dessus des cœurs avec le reste de l'œuf battu.",
       "Enfourner pendant environ 10 minutes ou jusqu'à ce qu'ils soient dorés.",
       "Sortir du four, laisser refroidir légèrement, puis saupoudrer de sucre glace."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C. Pour la pâte feuilletée maison, voir la fiche correspondante (version Monsieur Cuisine).",
+      "Découper les cœurs, garnir la moitié de Nutella, souder avec l'œuf battu et refermer.",
+      "Dorer et cuire environ 10 minutes, puis saupoudrer de sucre glace."
     ]
   },
   {
@@ -8618,6 +8968,12 @@ const recettes = [
       "Fouetter la crème bien froide en chantilly.",
       "Fouetter le fromage frais avec le sucre glace, le zeste et le jus des citrons, puis incorporer délicatement la chantilly.",
       "Verser sur la base, lisser et réfrigérer au moins 6 heures avant de démouler."
+    ],
+    "mc": [
+      "Mettre les biscuits dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre mou, mélanger <b>10 s / vitesse 4</b>. Tasser dans un moule et réserver au frais.",
+      "Bol propre et froid, insérer le fouet. Fouetter la crème bien froide <b>vitesse 4</b> en surveillant jusqu'à une chantilly. Réserver.",
+      "Mettre le fromage frais, le sucre glace, le zeste et le jus des citrons dans le bol. Mélanger <b>20 s / vitesse 4</b>.",
+      "Ajouter la chantilly et mélanger <b>10 s / sens inverse / vitesse 2</b>. Verser sur la base et réfrigérer au moins 6 heures."
     ]
   },
   {
@@ -8711,6 +9067,13 @@ const recettes = [
           "Fouetter le mascarpone avec la crème liquide entière, le sucre glace et la pâte à tartiner.",
           "À l'aide d'une douille cannelée, pocher des motifs sur le cheesecake et ajouter des morceaux de Kinder Bueno.",
           "Laisser décongeler quelques heures au réfrigérateur avant de servir."
+        ],
+        "mc": [
+          "Mettre les petits beurre dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre fondu, mélanger <b>10 s / vitesse 4</b>. Tasser dans le moule et réserver au frais.",
+          "Bol propre : mettre le Kinder Maxi en morceaux et faire fondre <b>3 min / 50 °C / vitesse 2</b>. Réserver.",
+          "Insérer le fouet. Mettre la crème froide, le caprice des dieux et le sucre glace. Fouetter <b>vitesse 4</b> en surveillant (1 à 2 min). Retirer le fouet.",
+          "Ajouter le Kinder Maxi fondu et les Kinder Bueno en morceaux, mélanger <b>10 s / sens inverse / vitesse 2</b>. Verser sur la base et réfrigérer.",
+          "Décor : fouetter le mascarpone, la crème et la pâte à tartiner au fouet <b>vitesse 4</b>, pocher sur le dessus et ajouter les Kinder Bueno."
         ]
       },
       {
@@ -8783,6 +9146,13 @@ const recettes = [
           "Glaçage : faire fondre les barres Kinder Maxi restantes et les mélanger avec l'huile jusqu'à obtenir une sauce lisse et brillante.",
           "Verser le glaçage sur le cheesecake uniformément et étaler légèrement pour recouvrir la surface.",
           "Réfrigérer au minimum 6 heures, idéalement toute la nuit, avant de servir."
+        ],
+        "mc": [
+          "Mettre les biscuits dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre fondu, mélanger <b>10 s / vitesse 4</b>. Tasser dans le moule et réfrigérer 20 minutes.",
+          "Bol propre : faire fondre 5 Kinder Maxi <b>3 min / 50 °C / vitesse 2</b>. Réserver.",
+          "Insérer le fouet. Mettre le mascarpone, la crème froide et le sucre glace, fouetter <b>vitesse 4</b> en surveillant. Retirer le fouet, ajouter le Kinder fondu et les Bueno en morceaux, mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+          "Verser sur la base et réfrigérer.",
+          "Glaçage : faire fondre 8 Kinder Maxi avec l'huile <b>3 min / 50 °C / vitesse 2</b>, laisser tiédir et napper le cheesecake."
         ]
       }
     ]
@@ -8857,6 +9227,11 @@ const recettes = [
           "Placer le cheesecake au congélateur pendant toute une nuit.",
           "Démouler et placer au réfrigérateur environ 30 minutes avant de servir.",
           "Décorer avec de la pâte à tartiner Lotus, de la crème chantilly maison et des biscuits émiettés."
+        ],
+        "mc": [
+          "Mettre les biscuits Lotus dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre fondu, mélanger <b>10 s / vitesse 4</b>. Tasser dans le moule.",
+          "Insérer le fouet dans le bol propre. Mettre le caprice des dieux, la crème froide, la vanille, le sucre glace et la pâte Lotus. Fouetter <b>vitesse 4</b> en surveillant jusqu'à une texture ferme.",
+          "Verser sur la base, congeler une nuit, puis mettre 30 minutes au réfrigérateur avant de servir et décorer."
         ]
       },
       {
@@ -8922,6 +9297,11 @@ const recettes = [
           "Lisser le dessus et saupoudrer de Biscoff moulu si désiré, puis ajouter un petit filet de coulis ou de sirop sur chaque cheesecake.",
           "Réfrigérer les mini cheesecakes pendant au moins 2 heures avant de servir pour que la crème prenne bien.",
           "Démouler délicatement et présenter avec une touche de topping si nécessaire."
+        ],
+        "mc": [
+          "Mettre les spéculoos dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre fondu, mélanger <b>10 s / vitesse 4</b>. Foncer les mini-moules et réfrigérer 15 minutes.",
+          "Bol propre : mettre le fromage frais, la crème et le sucre, mélanger <b>20 s / vitesse 4</b>.",
+          "Garnir les fonds, réfrigérer, puis ajouter la confiture Biscoff ou le caramel et le Biscoff moulu."
         ]
       },
       {
@@ -8986,6 +9366,12 @@ const recettes = [
           "Verser l'appareil sur la base dans le moule et lisser la surface avec une spatule.",
           "Cuire au four préchauffé à 180°C pendant environ 40 minutes, jusqu'à ce que le centre soit légèrement tremblotant.",
           "Laisser refroidir complètement puis réfrigérer au moins 4 heures, idéalement une nuit. Décorer avec les spéculoos restants avant de servir."
+        ],
+        "mc": [
+          "Préchauffer le four comme indiqué dans la version classique.",
+          "Mettre les spéculoos dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre fondu, mélanger <b>10 s / vitesse 4</b>. Tasser dans le moule.",
+          "Bol propre : mettre le fromage frais, le sucre, la crème, les jaunes et la vanille. Mélanger <b>30 s / vitesse 4</b>.",
+          "Verser sur la base et cuire au four comme dans la version classique, puis réfrigérer."
         ]
       }
     ]
@@ -9065,6 +9451,12 @@ const recettes = [
           "Assembler le dessert en mettant une couche de mélange de biscuits au fond des verrines, suivie d'une couche de crème, puis une couche de chocolat blanc fondu.",
           "Garnir chaque verrine avec un biscuit Oreo entier et parsemer des miettes de biscuits.",
           "Mettre les verrines au congélateur pendant 1h30 à 2h avant de servir."
+        ],
+        "mc": [
+          "Mettre les 4 Oreo dans le bol, mixer <b>5 s / vitesse 6</b>. Ajouter le beurre fondu, mélanger <b>5 s / vitesse 4</b>. Répartir dans 4 verrines.",
+          "Bol propre : faire fondre les 4 carrés de chocolat blanc <b>2 min / 50 °C / vitesse 2</b>. Laisser tiédir.",
+          "Insérer le fouet. Mettre la crème froide et le sucre glace, fouetter <b>vitesse 4</b> en surveillant. Ajouter le caprice des dieux et le chocolat fondu, mélanger <b>10 s / vitesse 3</b>.",
+          "Répartir sur les bases, réfrigérer, puis décorer de chocolat blanc fondu avec l'huile et d'Oreo."
         ]
       },
       {
@@ -9189,6 +9581,12 @@ const recettes = [
           "Assembler : étaler la ganache Oreo sur la base froide en couche uniforme, puis déposer la garniture cheesecake et lisser la surface.",
           "Réfrigérer au moins 6 heures ou toute la nuit jusqu'à prise complète.",
           "Décorer avec le chocolat blanc fondu et des biscuits Oreo supplémentaires avant de servir."
+        ],
+        "mc": [
+          "La veille, ganache : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème, le sel, la vanille, le lait concentré et la poudre de lait, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter le beurre fondu, mélanger <b>10 s / vitesse 3</b>. Filmer et réfrigérer une nuit.",
+          "Base : mettre les Oreo dans le bol propre, mixer <b>10 s / vitesse 7</b>, ajouter le beurre fondu et mélanger <b>10 s / vitesse 4</b>. Tasser dans le moule.",
+          "Crème : insérer le fouet, mettre le fromage frais, le mascarpone, la crème froide, le sucre glace, la vanille et le lait concentré. Fouetter <b>vitesse 4</b> en surveillant. Ajouter les brisures d'Oreo, mélanger <b>5 s / sens inverse / vitesse 1</b>.",
+          "Verser sur la base et réfrigérer au moins 6 heures. Fouetter la ganache froide <b>vitesse 4</b> et décorer."
         ]
       }
     ]
@@ -9264,6 +9662,11 @@ const recettes = [
       "Dans un bol, mélanger l'huile d'olive, le vinaigre balsamique, le sel et le poivre pour la vinaigrette.",
       "Mélanger la salade avec la vinaigrette et dresser dans les assiettes.",
       "Sortir l'assiette de chèvre du four et servir immédiatement sur le lit de salade."
+    ],
+    "mc": [
+      "Faire fondre le chèvre au miel 6 à 8 minutes au four à 180 °C.",
+      "Vinaigrette : mettre l'huile, le vinaigre balsamique, le sel et le poivre dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
+      "Servir le chèvre chaud sur la salade, les tomates et le concombre arrosés de vinaigrette."
     ]
   },
   {
@@ -9349,6 +9752,12 @@ const recettes = [
       "Verser les tomates et le concentré, saler, poivrer, puis laisser mijoter 40 minutes à feu doux.",
       "Ajouter les haricots rouges et poursuivre 15 minutes.",
       "Servir avec du riz, de la crème fraîche ou des tortillas."
+    ],
+    "mc": [
+      "Mettre les oignons, l'ail et le poivron en morceaux dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+      "Ajouter la viande et les épices. Rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les tomates, le concentré, sel et poivre. Cuire <b>40 min / 100 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+      "Ajouter les haricots rouges et cuire <b>15 min / 100 °C / sens inverse / vitesse 1</b>. Servir avec du riz."
     ]
   },
   {
@@ -9438,6 +9847,11 @@ const recettes = [
       "Ajouter les lentilles corail rincées, les tomates et l’eau. Laisser mijoter 20 minutes : les lentilles remplacent la viande hachée.",
       "Ajouter les haricots rouges et le maïs égouttés, puis cuire 10 minutes de plus. Saler.",
       "Servir avec du riz, de la crème fraîche et de la coriandre."
+    ],
+    "mc": [
+      "Mettre l'oignon, l'ail et le poivron dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les épices, les lentilles rincées, les tomates et l'eau. Cuire <b>20 min / 100 °C / sens inverse / vitesse 1</b>.",
+      "Ajouter les haricots et le maïs égouttés, saler et cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>. Servir avec du riz et de la coriandre."
     ]
   },
   {
@@ -9465,6 +9879,9 @@ const recettes = [
           "Éplucher les bananes et les trancher très finement à la mandoline, en long ou en rondelles.",
           "Les plonger par petites quantités dans l’huile chauffée à 175 °C et frire 2 à 3 minutes jusqu’à ce qu’elles soient dorées.",
           "Égoutter sur du papier absorbant, saler et épicer aussitôt. Elles deviennent croustillantes en refroidissant."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : les chips se font à la friture, suivre la version classique."
         ]
       },
       {
@@ -9491,6 +9908,9 @@ const recettes = [
           "Préchauffer l'air fryer à 160 °C quelques minutes.",
           "Ranger les rondelles en une seule couche dans le panier.",
           "Cuire 20 minutes à 160 °C en secouant le panier à mi-cuisson."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : la cuisson se fait à l'air fryer, suivre la version classique."
         ]
       }
     ]
@@ -9523,6 +9943,9 @@ const recettes = [
       "Saupoudrer légèrement de paprika.",
       "Enfourner 8 à 10 minutes, jusqu'à ce que les chips soient dorées et croustillantes sur les bords.",
       "Laisser refroidir quelques minutes sur la plaque avant de les décoller délicatement : elles durcissent en refroidissant."
+    ],
+    "mc": [
+      "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (cuisson au four)."
     ]
   },
   {
@@ -9574,6 +9997,9 @@ const recettes = [
           "Transférer les tranches dans un bol et ajouter l'huile d'olive, les flocons de piment, le cumin, la fécule de maïs, le poivre et une pincée de sel.",
           "Mélanger pour bien enrober les tranches et les répartir sur une plaque à pâtisserie.",
           "Cuire les chips pendant 25 min à 200°C."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour ces chips : les tranches se font à la mandoline et cuisent au four, suivre la version classique."
         ]
       },
       {
@@ -9604,6 +10030,9 @@ const recettes = [
           "Ajouter le sel et le thym sur les tranches en les répartissant uniformément.",
           "Mettre l'assiette au micro-ondes à puissance maximale pendant 5 à 6 minutes.",
           "Laisser refroidir les chips quelques minutes avant de déguster."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour ces chips : cuisson au micro-ondes, suivre la version classique."
         ]
       },
       {
@@ -9630,6 +10059,9 @@ const recettes = [
           "Badigeonner les rouleaux avec de l'huile d'olive et saupoudrer de sel.",
           "Cuire dans une friteuse à air à 200°C pendant 14 minutes, en retournant à mi-cuisson.",
           "Retirer les cure-dents et ajouter les épices de votre choix."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour ces chips : cuisson à l'air fryer, suivre la version classique."
         ]
       },
       {
@@ -9671,6 +10103,9 @@ const recettes = [
           "Ajouter les rondelles de pommes de terre dans l'huile chaude.",
           "Faire frire les chips jusqu'à ce qu'elles soient dorées et croustillantes, environ 3 à 5 minutes.",
           "Retirer les chips de l'huile et les égoutter sur du papier absorbant."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour ces chips : cuisson à la friture, suivre la version classique (le blanc d'œuf peut se fouetter au fouet du Monsieur Cuisine, vitesse 4, 1 min)."
         ]
       }
     ]
@@ -9714,6 +10149,11 @@ const recettes = [
       "Hors du feu, ajouter le chocolat haché et fouetter jusqu’à ce qu’il soit fondu.",
       "Remettre 1 à 2 minutes sur feu doux en fouettant pour le rendre mousseux.",
       "Servir aussitôt, avec de la chantilly si désiré."
+    ],
+    "mc": [
+      "Mettre le chocolat en morceaux dans le bol. Hacher <b>10 s / vitesse 7</b>.",
+      "Ajouter le lait, le sucre et la cannelle. Cuire <b>7 min / 90 °C / vitesse 3</b>.",
+      "Mixer <b>10 s / vitesse 7</b> pour le rendre mousseux. Servir aussitôt, avec de la chantilly si désiré."
     ]
   },
   {
@@ -9798,6 +10238,12 @@ const recettes = [
       "Couvrir et laisser mijoter 1 h 30 à feu doux.",
       "Ajouter les pommes de terre épluchées et les saucisses de Montbéliard, cuire 30 minutes. Réchauffer les Strasbourg 10 minutes dans l’eau frémissante à part.",
       "Servir la choucroute entourée des viandes tranchées et des pommes de terre, avec de la moutarde."
+    ],
+    "mc": [
+      "La choucroute garnie demande un grand volume : elle se cuit en cocotte. Le Monsieur Cuisine peut servir à cuire les pommes de terre à la vapeur.",
+      "Rincer et essorer la choucroute, puis suivre les étapes 2 à 4 de la version classique en cocotte.",
+      "Pommes de terre : mettre 500 ml d'eau dans le bol, les pommes de terre épluchées dans l'accessoire vapeur, et cuire <b>30 min / 120 °C / vitesse 1</b>.",
+      "Réchauffer les saucisses de Strasbourg dans la cocotte et servir avec les pommes de terre."
     ]
   },
   {
@@ -9867,6 +10313,13 @@ const recettes = [
       "Enfourner 20 à 25 minutes jusqu'à ce que les choux soient bien dorés et gonflés.",
       "Sortir et laisser refroidir sur une grille, puis saupoudrer de sucre glace et parsemer de graines de sucre perlé.",
       "Déguster tiède ou à température ambiante, idéal pour le dessert de Noël."
+    ],
+    "mc": [
+      "Préchauffer le four à 200 °C.",
+      "Mettre l'eau, le beurre, le sel et le sucre dans le bol. Chauffer <b>6 min / 100 °C / vitesse 1</b>.",
+      "Ajouter la farine d'un coup et mélanger <b>30 s / vitesse 4</b>. Laisser tiédir <b>5 min / vitesse 2</b> (sans chauffer).",
+      "Ajouter les œufs un à un par l'ouverture du couvercle, <b>vitesse 4</b>, en mélangeant 15 s après chaque œuf, jusqu'à une pâte lisse.",
+      "Pocher de petits tas, parsemer de sucre perlé et cuire 20 à 25 minutes sans ouvrir le four."
     ]
   },
   {
@@ -9984,6 +10437,13 @@ const recettes = [
       "Crème pâtissière : chauffer le lait avec la vanille. Fouetter les jaunes avec le sucre et la Maïzena, verser le lait chaud, puis remettre sur feu moyen en fouettant jusqu'à épaississement. Ajouter le beurre hors du feu, filmer au contact et laisser refroidir.",
       "Caramel à sec : faire fondre le sucre sans eau jusqu'à un caramel ambré.",
       "Garnir généreusement les choux de crème pâtissière, puis tremper délicatement le dessus dans le caramel."
+    ],
+    "mc": [
+      "Craquelin : mettre le beurre mou, la cassonade et la farine dans le bol, mélanger <b>20 s / vitesse 4</b>. Étaler sur 2 mm entre deux feuilles et congeler.",
+      "Crème pâtissière : bol propre, mettre le lait, les jaunes, le sucre, la Maïzena et les graines de vanille. Cuire <b>8 min / 90 °C / vitesse 4</b>. Ajouter le beurre, mélanger <b>20 s / vitesse 4</b>, filmer au contact et refroidir.",
+      "Pâte à choux : bol propre, mettre l'eau, le beurre, le sel et le sucre. Chauffer <b>5 min / 100 °C / vitesse 1</b>. Ajouter la farine, mélanger <b>30 s / vitesse 4</b>, laisser tiédir <b>5 min / vitesse 2</b>.",
+      "Ajouter les œufs petit à petit <b>vitesse 4</b> par l'ouverture, jusqu'à une pâte souple. Pocher 8 choux, poser les disques de craquelin et cuire 35 minutes à 180 °C.",
+      "Caramel à sec à la casserole, puis garnir les choux de crème et tremper le dessus dans le caramel."
     ]
   },
   {
@@ -10053,6 +10513,13 @@ const recettes = [
       "Former des bâtonnets de pâte de 10 à 12 cm et les glisser lentement dans l'huile chaude sans surcharger.",
       "Cuire 3 à 4 minutes jusqu'à dorure uniforme, puis égoutter sur du papier absorbant.",
       "Enrober légèrement les churros de sucre et servir avec le Nutella fondu ou en dipping."
+    ],
+    "mc": [
+      "Mettre l'eau, le beurre, le sucre et le sel dans le bol. Chauffer <b>7 min / 100 °C / vitesse 1</b>.",
+      "Ajouter la farine d'un coup et mélanger <b>30 s / vitesse 4</b>. Laisser tiédir <b>5 min / vitesse 2</b>.",
+      "Ajouter les œufs un à un <b>vitesse 4</b> par l'ouverture, 15 s après chaque œuf.",
+      "Mettre la pâte en poche à douille étoilée, frire les churros dans l'huile à 175 °C et les rouler dans le sucre.",
+      "Nutella chaud pour tremper : <b>2 min / 50 °C / vitesse 2</b>."
     ]
   },
   {
@@ -10158,6 +10625,13 @@ const recettes = [
       "Disposer les morceaux dans un moule et couvrir. Laisser pousser à température ambiante pendant une heure ou à 40°C pendant 30 à 40 minutes sous un torchon.",
       "Préparer le glaçage : mélanger le beurre pommade avec le sucre glace, la demi-gousse de vanille et la crème liquide jusqu'à obtenir une texture lisse et crémeuse.",
       "Cuire à 170°C pendant 25 à 30 minutes jusqu'à dorure et cuisson complète, puis napper de glaçage."
+    ],
+    "mc": [
+      "Mettre le lait, le sucre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter les œufs, la farine et le sel. Pétrir <b>4 min / mode pétrin</b>. Ajouter le beurre mou et pétrir encore <b>4 min / mode pétrin</b>.",
+      "Laisser pousser 2 heures, étaler, garnir de beurre fondu, cassonade et cannelle, rouler, couper et laisser lever comme dans la version classique.",
+      "Cuire selon la version classique.",
+      "Glaçage : bol propre, mettre le beurre pommade, le sucre glace, la vanille et la crème. Mélanger <b>20 s / vitesse 4</b>. Napper les rolls tièdes."
     ]
   },
   {
@@ -10217,6 +10691,11 @@ const recettes = [
       "Verser le lait petit à petit en fouettant pour obtenir une pâte lisse.",
       "Verser sur les cerises et cuire 35 à 40 minutes, jusqu’à ce que le clafoutis soit doré et pris.",
       "Servir tiède ou froid, saupoudré de sucre."
+    ],
+    "mc": [
+      "Préchauffer le four à 180 °C. Beurrer un plat et y répartir les cerises.",
+      "Mettre les œufs, le sucre, le sel, la farine et le lait dans le bol. Mélanger <b>20 s / vitesse 5</b>.",
+      "Verser sur les cerises et cuire 35 à 40 minutes."
     ]
   },
   {
@@ -10270,6 +10749,10 @@ const recettes = [
       "Tartiner les tranches de mayonnaise.",
       "Sur une tranche, poser salade, poulet et tomate. Couvrir d’une tranche, puis ajouter bacon, œuf dur en rondelles et salade. Fermer avec la troisième tranche.",
       "Maintenir avec des piques, couper en deux triangles et servir."
+    ],
+    "mc": [
+      "Œufs durs : mettre 500 ml d'eau dans le bol, les œufs dans le panier de cuisson, cuire <b>14 min / 100 °C / vitesse 1</b>. Rafraîchir et écaler.",
+      "Griller le pain, cuire le bacon à la poêle, puis monter le club sandwich comme dans la version classique."
     ]
   },
   {
@@ -10308,6 +10791,12 @@ const recettes = [
       "Faire fondre le chocolat au bain-marie ou au micro-ondes.",
       "Tremper chaque cluster congelé dans le chocolat fondu et remettre sur la plaque.",
       "Remettre au congélateur pendant 30 minutes pour que le chocolat durcisse."
+    ],
+    "mc": [
+      "Mettre les fraises équeutées dans le bol. Hacher <b>3 s / vitesse 4</b> (petits morceaux).",
+      "Ajouter le yaourt grec et mélanger <b>10 s / sens inverse / vitesse 2</b>. Former des petits tas sur une plaque et congeler 2 heures.",
+      "Bol propre : mettre le chocolat, hacher <b>10 s / vitesse 7</b> puis faire fondre <b>4 min / 50 °C / vitesse 2</b>.",
+      "Tremper les clusters congelés dans le chocolat et remettre 30 minutes au congélateur."
     ]
   },
   {
