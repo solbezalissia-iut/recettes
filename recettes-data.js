@@ -969,57 +969,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-670",
-    "titre": "Banane plantain caramélisée (dessert)",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "15 min",
-    "personnes": "4",
-    "ingredients": [
-      {
-        "texte": "2 bananes plantain très mûres",
-        "valeur": 2,
-        "unite": null,
-        "reste": "bananes plantain très mûres"
-      },
-      {
-        "texte": "30 g de beurre",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "40 g de cassonade",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "cassonade"
-      },
-      {
-        "texte": "1 pincée de cannelle",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "cannelle"
-      },
-      {
-        "texte": "3 cl de rhum (facultatif)",
-        "valeur": 3,
-        "unite": "cl",
-        "reste": "rhum (facultatif)"
-      },
-      "glace vanille ou noix de coco râpée pour servir"
-    ],
-    "etapes": [
-      "Éplucher les bananes et les couper en deux puis en long.",
-      "Les faire dorer dans le beurre 3 minutes par face.",
-      "Saupoudrer de cassonade et de cannelle et laisser caraméliser 2 minutes.",
-      "Flamber au rhum si désiré (hotte éteinte, avec prudence).",
-      "Servir aussitôt avec une boule de glace vanille ou de la noix de coco râpée."
-    ],
-    "mc": [
-      "Pas besoin du Monsieur Cuisine pour cette recette : la caramélisation se fait à la poêle, suivre la version classique."
-    ]
-  },
-  {
     "id": "static-655",
     "titre": "Bananes fantômes et clémentines citrouilles",
     "photo": "photos/enattente.png",
@@ -1059,45 +1008,98 @@ const recettes = [
   },
   {
     "id": "static-660",
-    "titre": "Bananes plantain rôties au four",
+    "titre": "Bananes plantain au four ou caramélisées",
     "photo": "photos/enattente.png",
     "cat": "accompagnement",
-    "temps": "35 min",
-    "personnes": "4",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "3 bananes plantain mûres",
-        "valeur": 3,
-        "unite": null,
-        "reste": "bananes plantain mûres"
+        "nom": "Rôties au four (accompagnement)",
+        "temps": "35 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "3 bananes plantain mûres",
+            "valeur": 3,
+            "unite": null,
+            "reste": "bananes plantain mûres"
+          },
+          {
+            "texte": "2 c. à soupe d'huile",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "huile"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          },
+          {
+            "texte": "1 pincée de piment doux ou paprika",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "piment doux ou paprika"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 200 °C.",
+          "Éplucher les bananes et les couper en biais en tranches de 1,5 cm.",
+          "Les mélanger avec l’huile, le sel et le paprika, puis les étaler sur une plaque recouverte de papier cuisson.",
+          "Cuire 20 à 25 minutes en les retournant à mi-cuisson, jusqu’à ce qu’elles soient dorées. Une version plus légère que la friture."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : les bananes se rôtissent au four, suivre la version classique."
+        ]
       },
       {
-        "texte": "2 c. à soupe d'huile",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "huile"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      },
-      {
-        "texte": "1 pincée de piment doux ou paprika",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "piment doux ou paprika"
+        "nom": "Caramélisées (dessert)",
+        "temps": "15 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "2 bananes plantain très mûres",
+            "valeur": 2,
+            "unite": null,
+            "reste": "bananes plantain très mûres"
+          },
+          {
+            "texte": "30 g de beurre",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "40 g de cassonade",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "cassonade"
+          },
+          {
+            "texte": "1 pincée de cannelle",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "cannelle"
+          },
+          {
+            "texte": "3 cl de rhum (facultatif)",
+            "valeur": 3,
+            "unite": "cl",
+            "reste": "rhum (facultatif)"
+          },
+          "glace vanille ou noix de coco râpée pour servir"
+        ],
+        "etapes": [
+          "Éplucher les bananes et les couper en deux puis en long.",
+          "Les faire dorer dans le beurre 3 minutes par face.",
+          "Saupoudrer de cassonade et de cannelle et laisser caraméliser 2 minutes.",
+          "Flamber au rhum si désiré (hotte éteinte, avec prudence).",
+          "Servir aussitôt avec une boule de glace vanille ou de la noix de coco râpée."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour cette recette : la caramélisation se fait à la poêle, suivre la version classique."
+        ]
       }
-    ],
-    "etapes": [
-      "Préchauffer le four à 200 °C.",
-      "Éplucher les bananes et les couper en biais en tranches de 1,5 cm.",
-      "Les mélanger avec l’huile, le sel et le paprika, puis les étaler sur une plaque recouverte de papier cuisson.",
-      "Cuire 20 à 25 minutes en les retournant à mi-cuisson, jusqu’à ce qu’elles soient dorées. Une version plus légère que la friture."
-    ],
-    "mc": [
-      "Pas besoin du Monsieur Cuisine pour cette recette : les bananes se rôtissent au four, suivre la version classique."
     ]
   },
   {
@@ -4772,126 +4774,128 @@ const recettes = [
   },
   {
     "id": "static-40",
-    "titre": "Bricks au thon et pommes de terre épicées",
+    "titre": "Bricks au thon",
     "photo": "photos/enattente.png",
-    "temps": "35 min",
-    "personnes": "4",
     "cat": "entree",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "3 pommes de terre",
-        "valeur": 3,
-        "unite": null,
-        "reste": "pommes de terre"
+        "nom": "Pommes de terre épicées",
+        "temps": "35 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "3 pommes de terre",
+            "valeur": 3,
+            "unite": null,
+            "reste": "pommes de terre"
+          },
+          {
+            "texte": "0,5 boîte de thon",
+            "valeur": 0.5,
+            "unite": null,
+            "reste": "boîte de thon"
+          },
+          {
+            "texte": "50 g de caprice des dieux râpé",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "caprice des dieux râpé"
+          },
+          {
+            "texte": "2 gousses d'ail",
+            "valeur": 2,
+            "unite": null,
+            "reste": "gousses d'ail"
+          },
+          "sel",
+          "poivre",
+          "cumin",
+          "paprika",
+          "persil frais",
+          "feuilles de brick",
+          "huile pour friture"
+        ],
+        "etapes": [
+          "Éplucher les pommes de terre et les couper en dés.",
+          "Rincer les dés de pommes de terre et les cuire dans une casserole d'eau salée.",
+          "Égoutter les pommes de terre cuites et les écraser dans un grand bol.",
+          "Ajouter le thon égoutté et le caprice des dieux râpé à la purée de pommes de terre.",
+          "Incorporer les épices : le sel, le poivre, le cumin et le paprika.",
+          "Ajouter l'ail émincé et le persil ciselé.",
+          "Prendre une feuille de brick, y déposer une cuillerée de farce, plier et façonner en forme de brick.",
+          "Faire frire les bricks jusqu'à ce qu'elles soient dorées des deux côtés. Égoutter sur du papier absorbant."
+        ],
+        "mc": [
+          "Mettre l'ail et le persil dans le bol, hacher <b>3 s / vitesse 7</b>. Réserver.",
+          "Mettre 500 ml d'eau dans le bol, les pommes de terre en dés dans le panier, et cuire <b>20 min / 100 °C / vitesse 1</b>.",
+          "Vider l'eau, mettre les pommes de terre dans le bol avec le thon, le caprice des dieux râpé, l'ail, le persil et les épices. Mélanger <b>15 s / vitesse 3</b>.",
+          "Garnir les feuilles de brick, les plier et les frire jusqu'à ce qu'elles soient dorées."
+        ]
       },
       {
-        "texte": "0,5 boîte de thon",
-        "valeur": 0.5,
-        "unite": null,
-        "reste": "boîte de thon"
-      },
-      {
-        "texte": "50 g de caprice des dieux râpé",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "caprice des dieux râpé"
-      },
-      {
-        "texte": "2 gousses d'ail",
-        "valeur": 2,
-        "unite": null,
-        "reste": "gousses d'ail"
-      },
-      "sel",
-      "poivre",
-      "cumin",
-      "paprika",
-      "persil frais",
-      "feuilles de brick",
-      "huile pour friture"
-    ],
-    "etapes": [
-      "Éplucher les pommes de terre et les couper en dés.",
-      "Rincer les dés de pommes de terre et les cuire dans une casserole d'eau salée.",
-      "Égoutter les pommes de terre cuites et les écraser dans un grand bol.",
-      "Ajouter le thon égoutté et le caprice des dieux râpé à la purée de pommes de terre.",
-      "Incorporer les épices : le sel, le poivre, le cumin et le paprika.",
-      "Ajouter l'ail émincé et le persil ciselé.",
-      "Prendre une feuille de brick, y déposer une cuillerée de farce, plier et façonner en forme de brick.",
-      "Faire frire les bricks jusqu'à ce qu'elles soient dorées des deux côtés. Égoutter sur du papier absorbant."
-    ],
-    "mc": [
-      "Mettre l'ail et le persil dans le bol, hacher <b>3 s / vitesse 7</b>. Réserver.",
-      "Mettre 500 ml d'eau dans le bol, les pommes de terre en dés dans le panier, et cuire <b>20 min / 100 °C / vitesse 1</b>.",
-      "Vider l'eau, mettre les pommes de terre dans le bol avec le thon, le caprice des dieux râpé, l'ail, le persil et les épices. Mélanger <b>15 s / vitesse 3</b>.",
-      "Garnir les feuilles de brick, les plier et les frire jusqu'à ce qu'elles soient dorées."
-    ]
-  },
-  {
-    "id": "static-41",
-    "titre": "Bricks croustillantes au thon et courgette, sauce fromage blanc",
-    "photo": "photos/enattente.png",
-    "temps": "35 min",
-    "personnes": "8",
-    "cat": "entree",
-    "ingredients": [
-      {
-        "texte": "8 feuilles de brick",
-        "valeur": 8,
-        "unite": null,
-        "reste": "feuilles de brick"
-      },
-      {
-        "texte": "1 courgette",
-        "valeur": 1,
-        "unite": null,
-        "reste": "courgette"
-      },
-      {
-        "texte": "1 boîte de thon",
-        "valeur": 1,
-        "unite": null,
-        "reste": "boîte de thon"
-      },
-      {
-        "texte": "200 g de chèvre frais",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chèvre frais"
-      },
-      {
-        "texte": "2 échalotes",
-        "valeur": 2,
-        "unite": null,
-        "reste": "échalotes"
-      },
-      "sel et poivre",
-      "huile d'olive",
-      {
-        "texte": "200 g de fromage blanc",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "fromage blanc"
-      },
-      "persil frais",
-      "jus de citron"
-    ],
-    "etapes": [
-      "Râper la courgette et la presser pour enlever l'excès d'eau.",
-      "Mélanger la courgette râpée, le thon égoutté, le chèvre frais et les échalotes finement émincées.",
-      "Assaisonner avec du sel et du poivre.",
-      "Prendre une feuille de brick, déposer une portion de la préparation au centre et former un cigare.",
-      "Faire dorer les bricks des deux côtés dans l'huile d'olive jusqu'à ce qu'ils soient croustillants.",
-      "Égoutter les bricks sur du papier absorbant.",
-      "Pour la sauce : mélanger le fromage blanc avec le jus de citron, les échalotes émincées et le persil ciselé.",
-      "Assaisonner et réfrigérer la sauce pendant au moins 30 minutes avant de servir."
-    ],
-    "mc": [
-      "Mettre la courgette en morceaux dans le bol et râper <b>5 s / vitesse 5</b>. La presser dans un torchon pour retirer l'eau.",
-      "Mettre les échalotes dans le bol et hacher <b>3 s / vitesse 5</b>. En réserver un peu pour la sauce.",
-      "Ajouter la courgette, le thon égoutté, le chèvre, sel et poivre. Mélanger <b>15 s / sens inverse / vitesse 3</b>.",
-      "Rouler la farce en cigares dans les feuilles de brick et les dorer à la poêle dans l'huile d'olive.",
-      "Sauce : mettre le persil dans le bol propre, hacher <b>3 s / vitesse 7</b>, ajouter le fromage blanc, le citron et l'échalote réservée, mélanger <b>10 s / vitesse 3</b>. Réfrigérer 30 minutes."
+        "nom": "Courgette, sauce fromage blanc",
+        "temps": "35 min",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "8 feuilles de brick",
+            "valeur": 8,
+            "unite": null,
+            "reste": "feuilles de brick"
+          },
+          {
+            "texte": "1 courgette",
+            "valeur": 1,
+            "unite": null,
+            "reste": "courgette"
+          },
+          {
+            "texte": "1 boîte de thon",
+            "valeur": 1,
+            "unite": null,
+            "reste": "boîte de thon"
+          },
+          {
+            "texte": "200 g de chèvre frais",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chèvre frais"
+          },
+          {
+            "texte": "2 échalotes",
+            "valeur": 2,
+            "unite": null,
+            "reste": "échalotes"
+          },
+          "sel et poivre",
+          "huile d'olive",
+          {
+            "texte": "200 g de fromage blanc",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "fromage blanc"
+          },
+          "persil frais",
+          "jus de citron"
+        ],
+        "etapes": [
+          "Râper la courgette et la presser pour enlever l'excès d'eau.",
+          "Mélanger la courgette râpée, le thon égoutté, le chèvre frais et les échalotes finement émincées.",
+          "Assaisonner avec du sel et du poivre.",
+          "Prendre une feuille de brick, déposer une portion de la préparation au centre et former un cigare.",
+          "Faire dorer les bricks des deux côtés dans l'huile d'olive jusqu'à ce qu'ils soient croustillants.",
+          "Égoutter les bricks sur du papier absorbant.",
+          "Pour la sauce : mélanger le fromage blanc avec le jus de citron, les échalotes émincées et le persil ciselé.",
+          "Assaisonner et réfrigérer la sauce pendant au moins 30 minutes avant de servir."
+        ],
+        "mc": [
+          "Mettre la courgette en morceaux dans le bol et râper <b>5 s / vitesse 5</b>. La presser dans un torchon pour retirer l'eau.",
+          "Mettre les échalotes dans le bol et hacher <b>3 s / vitesse 5</b>. En réserver un peu pour la sauce.",
+          "Ajouter la courgette, le thon égoutté, le chèvre, sel et poivre. Mélanger <b>15 s / sens inverse / vitesse 3</b>.",
+          "Rouler la farce en cigares dans les feuilles de brick et les dorer à la poêle dans l'huile d'olive.",
+          "Sauce : mettre le persil dans le bol propre, hacher <b>3 s / vitesse 7</b>, ajouter le fromage blanc, le citron et l'échalote réservée, mélanger <b>10 s / vitesse 3</b>. Réfrigérer 30 minutes."
+        ]
+      }
     ]
   },
   {
@@ -9734,187 +9738,189 @@ const recettes = [
   },
   {
     "id": "static-422",
-    "titre": "Chili con carne",
+    "titre": "Chili",
     "photo": "photos/enattente.png",
     "cat": "plat",
-    "temps": "1 h 15",
-    "personnes": "6",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "500 g de bœuf haché",
-        "valeur": 500,
-        "unite": "g",
-        "reste": "bœuf haché"
+        "nom": "Con carne (bœuf)",
+        "temps": "1 h 15",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "500 g de bœuf haché",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "bœuf haché"
+          },
+          {
+            "texte": "2 oignons",
+            "valeur": 2,
+            "unite": null,
+            "reste": "oignons"
+          },
+          {
+            "texte": "2 gousses d'ail",
+            "valeur": 2,
+            "unite": null,
+            "reste": "gousses d'ail"
+          },
+          {
+            "texte": "1 poivron rouge",
+            "valeur": 1,
+            "unite": null,
+            "reste": "poivron rouge"
+          },
+          {
+            "texte": "800 g de tomates concassées",
+            "valeur": 800,
+            "unite": "g",
+            "reste": "tomates concassées"
+          },
+          {
+            "texte": "400 g d'haricots rouges cuits (égouttés)",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "haricots rouges cuits (égouttés)"
+          },
+          {
+            "texte": "2 c. à soupe de concentré de tomate",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "concentré de tomate"
+          },
+          {
+            "texte": "1 c. à café de cumin",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cumin"
+          },
+          {
+            "texte": "1 c. à café de paprika",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "paprika"
+          },
+          {
+            "texte": "0,5 c. à café de piment en poudre",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "piment en poudre"
+          },
+          {
+            "texte": "2 c. à soupe d'huile d'olive",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          "sel, poivre"
+        ],
+        "etapes": [
+          "Faire revenir les oignons, l’ail et le poivron émincés dans l’huile 5 minutes.",
+          "Ajouter la viande et la faire dorer en l’émiettant.",
+          "Ajouter les épices et mélanger 1 minute.",
+          "Verser les tomates et le concentré, saler, poivrer, puis laisser mijoter 40 minutes à feu doux.",
+          "Ajouter les haricots rouges et poursuivre 15 minutes.",
+          "Servir avec du riz, de la crème fraîche ou des tortillas."
+        ],
+        "mc": [
+          "Mettre les oignons, l'ail et le poivron en morceaux dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+          "Ajouter la viande et les épices. Rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
+          "Ajouter les tomates, le concentré, sel et poivre. Cuire <b>40 min / 100 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+          "Ajouter les haricots rouges et cuire <b>15 min / 100 °C / sens inverse / vitesse 1</b>. Servir avec du riz."
+        ]
       },
       {
-        "texte": "2 oignons",
-        "valeur": 2,
-        "unite": null,
-        "reste": "oignons"
-      },
-      {
-        "texte": "2 gousses d'ail",
-        "valeur": 2,
-        "unite": null,
-        "reste": "gousses d'ail"
-      },
-      {
-        "texte": "1 poivron rouge",
-        "valeur": 1,
-        "unite": null,
-        "reste": "poivron rouge"
-      },
-      {
-        "texte": "800 g de tomates concassées",
-        "valeur": 800,
-        "unite": "g",
-        "reste": "tomates concassées"
-      },
-      {
-        "texte": "400 g d'haricots rouges cuits (égouttés)",
-        "valeur": 400,
-        "unite": "g",
-        "reste": "haricots rouges cuits (égouttés)"
-      },
-      {
-        "texte": "2 c. à soupe de concentré de tomate",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "concentré de tomate"
-      },
-      {
-        "texte": "1 c. à café de cumin",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "cumin"
-      },
-      {
-        "texte": "1 c. à café de paprika",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "paprika"
-      },
-      {
-        "texte": "0,5 c. à café de piment en poudre",
-        "valeur": 0.5,
-        "unite": "c. à café",
-        "reste": "piment en poudre"
-      },
-      {
-        "texte": "2 c. à soupe d'huile d'olive",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "huile d'olive"
-      },
-      "sel, poivre"
-    ],
-    "etapes": [
-      "Faire revenir les oignons, l’ail et le poivron émincés dans l’huile 5 minutes.",
-      "Ajouter la viande et la faire dorer en l’émiettant.",
-      "Ajouter les épices et mélanger 1 minute.",
-      "Verser les tomates et le concentré, saler, poivrer, puis laisser mijoter 40 minutes à feu doux.",
-      "Ajouter les haricots rouges et poursuivre 15 minutes.",
-      "Servir avec du riz, de la crème fraîche ou des tortillas."
-    ],
-    "mc": [
-      "Mettre les oignons, l'ail et le poivron en morceaux dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>5 min / 120 °C / vitesse 1</b>.",
-      "Ajouter la viande et les épices. Rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
-      "Ajouter les tomates, le concentré, sel et poivre. Cuire <b>40 min / 100 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
-      "Ajouter les haricots rouges et cuire <b>15 min / 100 °C / sens inverse / vitesse 1</b>. Servir avec du riz."
-    ]
-  },
-  {
-    "id": "static-507",
-    "titre": "Chili sin carne",
-    "photo": "photos/enattente.png",
-    "cat": "plat",
-    "temps": "45 min",
-    "personnes": "4",
-    "ingredients": [
-      {
-        "texte": "400 g d'haricots rouges cuits",
-        "valeur": 400,
-        "unite": "g",
-        "reste": "haricots rouges cuits"
-      },
-      {
-        "texte": "150 g de lentilles corail",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "lentilles corail"
-      },
-      {
-        "texte": "1 poivron rouge",
-        "valeur": 1,
-        "unite": null,
-        "reste": "poivron rouge"
-      },
-      {
-        "texte": "150 g de maïs",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "maïs"
-      },
-      {
-        "texte": "1 oignon",
-        "valeur": 1,
-        "unite": null,
-        "reste": "oignon"
-      },
-      {
-        "texte": "2 gousses d'ail",
-        "valeur": 2,
-        "unite": null,
-        "reste": "gousses d'ail"
-      },
-      {
-        "texte": "800 g de tomates concassées",
-        "valeur": 800,
-        "unite": "g",
-        "reste": "tomates concassées"
-      },
-      {
-        "texte": "300 ml d'eau",
-        "valeur": 300,
-        "unite": "ml",
-        "reste": "eau"
-      },
-      {
-        "texte": "1 c. à café de cumin",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "cumin"
-      },
-      {
-        "texte": "1 c. à café de paprika fumé",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "paprika fumé"
-      },
-      {
-        "texte": "0,5 c. à café de piment",
-        "valeur": 0.5,
-        "unite": "c. à café",
-        "reste": "piment"
-      },
-      {
-        "texte": "2 c. à soupe d'huile d'olive",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "huile d'olive"
-      },
-      "sel"
-    ],
-    "etapes": [
-      "Faire revenir l’oignon, l’ail et le poivron dans l’huile 5 minutes, puis ajouter les épices.",
-      "Ajouter les lentilles corail rincées, les tomates et l’eau. Laisser mijoter 20 minutes : les lentilles remplacent la viande hachée.",
-      "Ajouter les haricots rouges et le maïs égouttés, puis cuire 10 minutes de plus. Saler.",
-      "Servir avec du riz, de la crème fraîche et de la coriandre."
-    ],
-    "mc": [
-      "Mettre l'oignon, l'ail et le poivron dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>5 min / 120 °C / vitesse 1</b>.",
-      "Ajouter les épices, les lentilles rincées, les tomates et l'eau. Cuire <b>20 min / 100 °C / sens inverse / vitesse 1</b>.",
-      "Ajouter les haricots et le maïs égouttés, saler et cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>. Servir avec du riz et de la coriandre."
+        "nom": "Sin carne (végétarien)",
+        "temps": "45 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "400 g d'haricots rouges cuits",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "haricots rouges cuits"
+          },
+          {
+            "texte": "150 g de lentilles corail",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "lentilles corail"
+          },
+          {
+            "texte": "1 poivron rouge",
+            "valeur": 1,
+            "unite": null,
+            "reste": "poivron rouge"
+          },
+          {
+            "texte": "150 g de maïs",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "maïs"
+          },
+          {
+            "texte": "1 oignon",
+            "valeur": 1,
+            "unite": null,
+            "reste": "oignon"
+          },
+          {
+            "texte": "2 gousses d'ail",
+            "valeur": 2,
+            "unite": null,
+            "reste": "gousses d'ail"
+          },
+          {
+            "texte": "800 g de tomates concassées",
+            "valeur": 800,
+            "unite": "g",
+            "reste": "tomates concassées"
+          },
+          {
+            "texte": "300 ml d'eau",
+            "valeur": 300,
+            "unite": "ml",
+            "reste": "eau"
+          },
+          {
+            "texte": "1 c. à café de cumin",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cumin"
+          },
+          {
+            "texte": "1 c. à café de paprika fumé",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "paprika fumé"
+          },
+          {
+            "texte": "0,5 c. à café de piment",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "piment"
+          },
+          {
+            "texte": "2 c. à soupe d'huile d'olive",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          "sel"
+        ],
+        "etapes": [
+          "Faire revenir l’oignon, l’ail et le poivron dans l’huile 5 minutes, puis ajouter les épices.",
+          "Ajouter les lentilles corail rincées, les tomates et l’eau. Laisser mijoter 20 minutes : les lentilles remplacent la viande hachée.",
+          "Ajouter les haricots rouges et le maïs égouttés, puis cuire 10 minutes de plus. Saler.",
+          "Servir avec du riz, de la crème fraîche et de la coriandre."
+        ],
+        "mc": [
+          "Mettre l'oignon, l'ail et le poivron dans le bol. Hacher <b>5 s / vitesse 5</b>. Ajouter l'huile et rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+          "Ajouter les épices, les lentilles rincées, les tomates et l'eau. Cuire <b>20 min / 100 °C / sens inverse / vitesse 1</b>.",
+          "Ajouter les haricots et le maïs égouttés, saler et cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>. Servir avec du riz et de la coriandre."
+        ]
+      }
     ]
   },
   {
@@ -10994,7 +11000,7 @@ const recettes = [
   },
   {
     "id": "static-86",
-    "titre": "Cocktails d’été : Sex on the Beach, Malibu Sunrise et Sunrise Orangina",
+    "titre": "Cocktails d’été",
     "photo": "photos/enattente.png",
     "cat": "boisson",
     "variantes": [
@@ -11122,58 +11128,55 @@ const recettes = [
         "mc": [
           "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
         ]
+      },
+      {
+        "nom": "Rhum, citron et grenadine",
+        "temps": "10 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "120 ml de jus de citron frais",
+            "valeur": 120,
+            "unite": "ml",
+            "reste": "jus de citron frais"
+          },
+          {
+            "texte": "60 ml de sirop de grenadine",
+            "valeur": 60,
+            "unite": "ml",
+            "reste": "sirop de grenadine"
+          },
+          {
+            "texte": "60 ml de rhum blanc",
+            "valeur": 60,
+            "unite": "ml",
+            "reste": "rhum blanc"
+          },
+          {
+            "texte": "200 ml d'eau pétillante",
+            "valeur": 200,
+            "unite": "ml",
+            "reste": "eau pétillante"
+          },
+          "glaçons",
+          {
+            "texte": "1 zeste de citron",
+            "valeur": 1,
+            "unite": null,
+            "reste": "zeste de citron"
+          }
+        ],
+        "etapes": [
+          "Préparer deux verres hauts et les garnir de glaçons.",
+          "Dans chaque verre, verser le jus de citron frais et le sirop de grenadine.",
+          "Ajouter le rhum blanc dans chaque verre.",
+          "Compléter avec l'eau pétillante et remuer délicatement pour ne pas faire perdre les bulles.",
+          "Décorer avec le zeste de citron et servir aussitôt."
+        ],
+        "mc": [
+          "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
+        ]
       }
-    ]
-  },
-  {
-    "id": "static-87",
-    "titre": "Cocktails d'été rafraîchissants",
-    "photo": "photos/enattente.png",
-    "temps": "10 min",
-    "personnes": "2",
-    "cat": "boisson",
-    "ingredients": [
-      {
-        "texte": "120 ml de jus de citron frais",
-        "valeur": 120,
-        "unite": "ml",
-        "reste": "jus de citron frais"
-      },
-      {
-        "texte": "60 ml de sirop de grenadine",
-        "valeur": 60,
-        "unite": "ml",
-        "reste": "sirop de grenadine"
-      },
-      {
-        "texte": "60 ml de rhum blanc",
-        "valeur": 60,
-        "unite": "ml",
-        "reste": "rhum blanc"
-      },
-      {
-        "texte": "200 ml d'eau pétillante",
-        "valeur": 200,
-        "unite": "ml",
-        "reste": "eau pétillante"
-      },
-      "glaçons",
-      {
-        "texte": "1 zeste de citron",
-        "valeur": 1,
-        "unite": null,
-        "reste": "zeste de citron"
-      }
-    ],
-    "etapes": [
-      "Préparer deux verres hauts et les garnir de glaçons.",
-      "Dans chaque verre, verser le jus de citron frais et le sirop de grenadine.",
-      "Ajouter le rhum blanc dans chaque verre.",
-      "Compléter avec l'eau pétillante et remuer délicatement pour ne pas faire perdre les bulles.",
-      "Décorer avec le zeste de citron et servir aussitôt."
-    ],
-    "mc": [
-      "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
     ]
   },
   {
@@ -11559,62 +11562,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-91",
-    "titre": "Cookies au chocolat blanc et Nutella",
-    "photo": "photos/enattente.png",
-    "temps": "30 min",
-    "personnes": "10",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "110 g de beurre maison salé",
-        "valeur": 110,
-        "unite": "g",
-        "reste": "beurre maison salé"
-      },
-      {
-        "texte": "60 g de sucre",
-        "valeur": 60,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "165 g de farine",
-        "valeur": 165,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "100 g de Nutella",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "Nutella"
-      },
-      {
-        "texte": "100 g de chocolat blanc",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "chocolat blanc"
-      }
-    ],
-    "etapes": [
-      "Préchauffer le four à 170°C.",
-      "Dans un grand bol, battre le beurre maison salé ramolli et le sucre ensemble jusqu'à obtenir un mélange crémeux.",
-      "Ajouter la farine progressivement et mélanger jusqu'à ce que la pâte soit homogène.",
-      "Former des boules de pâte et les placer sur une plaque de cuisson.",
-      "Enfourner pendant 10 à 12 minutes, jusqu'à ce que les bords soient légèrement dorés.",
-      "Laisser les cookies refroidir complètement sur une grille.",
-      "Étaler une cuillère de Nutella sur chaque cookie.",
-      "Faire fondre le chocolat blanc et le verser sur le Nutella."
-    ],
-    "mc": [
-      "Préchauffer le four à 170 °C.",
-      "Mettre le beurre salé ramolli et le sucre dans le bol. Mélanger <b>30 s / vitesse 4</b>. Ajouter la farine et pétrir <b>30 s / mode pétrin</b>.",
-      "Former des boules et cuire 10 à 12 minutes. Laisser refroidir.",
-      "Étaler du Nutella sur chaque cookie. Bol propre : chocolat blanc <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>, et le verser sur le Nutella."
-    ]
-  },
-  {
     "id": "static-92",
     "titre": "Cookies au chocolat et beurre noisette sur glace",
     "photo": "photos/enattente.png",
@@ -11699,75 +11646,133 @@ const recettes = [
     "id": "static-93",
     "titre": "Cookies au Nutella",
     "photo": "photos/enattente.png",
-    "temps": "29 min",
-    "personnes": "12",
     "cat": "dessert",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "250 g de farine",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "farine"
+        "nom": "Aux pépites de chocolat",
+        "temps": "29 min",
+        "personnes": "12",
+        "ingredients": [
+          {
+            "texte": "250 g de farine",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de sucre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "125 g de beurre doux",
+            "valeur": 125,
+            "unite": "g",
+            "reste": "beurre doux"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "150 g de Nutella",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "Nutella"
+          },
+          {
+            "texte": "100 g de pépites de chocolat",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "pépites de chocolat"
+          },
+          {
+            "texte": "1 c. à café de levure chimique",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180°C et tapisser une plaque de cuisson de papier sulfurisé.",
+          "Dans un bol, fouetter le beurre mou avec le sucre jusqu'à obtenir une texture légère et homogène.",
+          "Ajouter l'œuf et mélanger jusqu'à dissolution complète.",
+          "Incorporer la farine, la levure chimique et le sel, puis mélanger jusqu'à obtention d'une pâte.",
+          "Ajouter le Nutella et les pépites de chocolat, puis mélanger délicatement pour répartir les garnitures.",
+          "Répartir des portions de pâte sur la plaque, en les espaçant d'environ 5 à 6 cm.",
+          "Cuire au four pendant 12 à 14 minutes, jusqu'à ce que les bords soient légèrement dorés et le centre encore moelleux.",
+          "Laisser refroidir sur une grille avant de déguster."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre le beurre mou et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter l'œuf, <b>15 s / vitesse 4</b>.",
+          "Ajouter la farine, la levure et le sel, mélanger <b>20 s / vitesse 4</b>.",
+          "Ajouter le Nutella et les pépites, mélanger <b>10 s / sens inverse / vitesse 2</b> (pour garder des marbrures).",
+          "Former des boules et cuire comme dans la version classique."
+        ]
       },
       {
-        "texte": "100 g de sucre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "125 g de beurre doux",
-        "valeur": 125,
-        "unite": "g",
-        "reste": "beurre doux"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "150 g de Nutella",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "Nutella"
-      },
-      {
-        "texte": "100 g de pépites de chocolat",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "pépites de chocolat"
-      },
-      {
-        "texte": "1 c. à café de levure chimique",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
+        "nom": "Au chocolat blanc",
+        "temps": "30 min",
+        "personnes": "10",
+        "ingredients": [
+          {
+            "texte": "110 g de beurre maison salé",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "beurre maison salé"
+          },
+          {
+            "texte": "60 g de sucre",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "165 g de farine",
+            "valeur": 165,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de Nutella",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "Nutella"
+          },
+          {
+            "texte": "100 g de chocolat blanc",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "chocolat blanc"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 170°C.",
+          "Dans un grand bol, battre le beurre maison salé ramolli et le sucre ensemble jusqu'à obtenir un mélange crémeux.",
+          "Ajouter la farine progressivement et mélanger jusqu'à ce que la pâte soit homogène.",
+          "Former des boules de pâte et les placer sur une plaque de cuisson.",
+          "Enfourner pendant 10 à 12 minutes, jusqu'à ce que les bords soient légèrement dorés.",
+          "Laisser les cookies refroidir complètement sur une grille.",
+          "Étaler une cuillère de Nutella sur chaque cookie.",
+          "Faire fondre le chocolat blanc et le verser sur le Nutella."
+        ],
+        "mc": [
+          "Préchauffer le four à 170 °C.",
+          "Mettre le beurre salé ramolli et le sucre dans le bol. Mélanger <b>30 s / vitesse 4</b>. Ajouter la farine et pétrir <b>30 s / mode pétrin</b>.",
+          "Former des boules et cuire 10 à 12 minutes. Laisser refroidir.",
+          "Étaler du Nutella sur chaque cookie. Bol propre : chocolat blanc <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>, et le verser sur le Nutella."
+        ]
       }
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C et tapisser une plaque de cuisson de papier sulfurisé.",
-      "Dans un bol, fouetter le beurre mou avec le sucre jusqu'à obtenir une texture légère et homogène.",
-      "Ajouter l'œuf et mélanger jusqu'à dissolution complète.",
-      "Incorporer la farine, la levure chimique et le sel, puis mélanger jusqu'à obtention d'une pâte.",
-      "Ajouter le Nutella et les pépites de chocolat, puis mélanger délicatement pour répartir les garnitures.",
-      "Répartir des portions de pâte sur la plaque, en les espaçant d'environ 5 à 6 cm.",
-      "Cuire au four pendant 12 à 14 minutes, jusqu'à ce que les bords soient légèrement dorés et le centre encore moelleux.",
-      "Laisser refroidir sur une grille avant de déguster."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C.",
-      "Mettre le beurre mou et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter l'œuf, <b>15 s / vitesse 4</b>.",
-      "Ajouter la farine, la levure et le sel, mélanger <b>20 s / vitesse 4</b>.",
-      "Ajouter le Nutella et les pépites, mélanger <b>10 s / sens inverse / vitesse 2</b> (pour garder des marbrures).",
-      "Former des boules et cuire comme dans la version classique."
     ]
   },
   {
@@ -12701,132 +12706,134 @@ const recettes = [
   },
   {
     "id": "static-102",
-    "titre": "Courgettes farcies à la semoule, feta et lardons",
+    "titre": "Courgettes farcies",
     "photo": "photos/courgettefarcis.png",
-    "temps": "45 min",
-    "personnes": "4",
     "cat": "plat",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "4 courgettes",
-        "valeur": 4,
-        "unite": null,
-        "reste": "courgettes"
+        "nom": "Semoule, feta et lardons",
+        "temps": "45 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "4 courgettes",
+            "valeur": 4,
+            "unite": null,
+            "reste": "courgettes"
+          },
+          {
+            "texte": "100 g de semoule fine",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "semoule fine"
+          },
+          {
+            "texte": "150 ml d'eau ou bouillon",
+            "valeur": 150,
+            "unite": "ml",
+            "reste": "eau ou bouillon"
+          },
+          {
+            "texte": "100 g de feta",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "feta"
+          },
+          {
+            "texte": "100 g de lardons",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "lardons"
+          },
+          {
+            "texte": "100 g de yaourt nature",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "yaourt nature"
+          },
+          {
+            "texte": "2 c. à soupe d'huile d'olive",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          "sel",
+          "poivre",
+          {
+            "texte": "1 c. à café d'herbes de Provence",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "herbes de Provence"
+          }
+        ],
+        "etapes": [
+          "Couper les courgettes en deux dans la longueur et évider la chair à l'aide d'une cuillère, en réservant la pulpe.",
+          "Faire revenir les lardons à sec dans une poêle jusqu'à ce qu'ils soient dorés, puis ajouter la pulpe de courgette coupée en dés et cuire quelques minutes.",
+          "Porter l'eau ou le bouillon à ébullition, verser sur la semoule, couvrir et laisser gonfler 5 minutes hors du feu.",
+          "Mélanger la semoule gonflée avec les lardons, la pulpe de courgette, la feta émiettée, du sel, du poivre et les herbes de Provence.",
+          "Préchauffer le four à 180°C. Badigeonner les courgettes évidées d'huile d'olive, saler légèrement et les précuire 10 minutes au four.",
+          "Garnir les courgettes avec la farce à la semoule, puis remettre au four 20 à 25 minutes jusqu'à ce qu'elles soient tendres et dorées.",
+          "Servir chaud, nappé d'un filet de yaourt nature."
+        ],
+        "mc": [
+          "Évider les courgettes en gardant la pulpe.",
+          "Mettre la pulpe de courgette dans le bol, hacher <b>3 s / vitesse 4</b>. Ajouter les lardons et l'huile, rissoler <b>5 min / 120 °C / vitesse 1</b>.",
+          "Ajouter le bouillon et chauffer <b>3 min / 100 °C / vitesse 1</b>. Ajouter la semoule, mélanger <b>10 s / sens inverse / vitesse 2</b> et laisser gonfler 5 minutes, couvercle fermé.",
+          "Ajouter la feta émiettée, le yaourt, les herbes, sel et poivre. Mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+          "Farcir les courgettes et cuire au four comme dans la version classique."
+        ]
       },
       {
-        "texte": "100 g de semoule fine",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "semoule fine"
-      },
-      {
-        "texte": "150 ml d'eau ou bouillon",
-        "valeur": 150,
-        "unite": "ml",
-        "reste": "eau ou bouillon"
-      },
-      {
-        "texte": "100 g de feta",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "feta"
-      },
-      {
-        "texte": "100 g de lardons",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "lardons"
-      },
-      {
-        "texte": "100 g de yaourt nature",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "yaourt nature"
-      },
-      {
-        "texte": "2 c. à soupe d'huile d'olive",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "huile d'olive"
-      },
-      "sel",
-      "poivre",
-      {
-        "texte": "1 c. à café d'herbes de Provence",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "herbes de Provence"
+        "nom": "Viande et coulis de tomate",
+        "temps": "50 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "1 courgette",
+            "valeur": 1,
+            "unite": null,
+            "reste": "courgette"
+          },
+          {
+            "texte": "200 g de viande hachée",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "viande hachée"
+          },
+          {
+            "texte": "400 ml de coulis de tomate",
+            "valeur": 400,
+            "unite": "ml",
+            "reste": "coulis de tomate"
+          },
+          "huile d'olive",
+          {
+            "texte": "50 g de caprice des dieux râpé",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "caprice des dieux râpé"
+          },
+          "sel",
+          "poivre",
+          "herbes de Provence"
+        ],
+        "etapes": [
+          "Couper une courgette en deux dans la longueur.",
+          "Creuser la courgette à l'aide d'une cuillère pour récupérer la chair.",
+          "Assaisonner la courgette avec de l'huile, du sel et du poivre.",
+          "Mettre 20 mins au four à 180°C.",
+          "Découper les restes de chair de courgette en cubes.",
+          "Faire revenir les cubes de courgette à la poêle avec de l'huile, ajouter la viande hachée, le coulis de tomate, le sel, le poivre et les herbes de Provence. Laisser mijoter quelques minutes.",
+          "Farcir les courgettes avec le mélange et mettre du caprice des dieux râpé par-dessus.",
+          "Remettre au four 10 min jusqu'à ce que le fromage soit fondu."
+        ],
+        "mc": [
+          "Évider la courgette, l'huiler, l'assaisonner et la précuire 20 minutes au four à 180 °C.",
+          "Mettre la chair de courgette dans le bol, hacher <b>3 s / vitesse 4</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
+          "Ajouter la viande, le coulis, sel, poivre et herbes. Cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>.",
+          "Garnir les demi-courgettes, couvrir de caprice des dieux râpé et terminer au four comme dans la version classique."
+        ]
       }
-    ],
-    "etapes": [
-      "Couper les courgettes en deux dans la longueur et évider la chair à l'aide d'une cuillère, en réservant la pulpe.",
-      "Faire revenir les lardons à sec dans une poêle jusqu'à ce qu'ils soient dorés, puis ajouter la pulpe de courgette coupée en dés et cuire quelques minutes.",
-      "Porter l'eau ou le bouillon à ébullition, verser sur la semoule, couvrir et laisser gonfler 5 minutes hors du feu.",
-      "Mélanger la semoule gonflée avec les lardons, la pulpe de courgette, la feta émiettée, du sel, du poivre et les herbes de Provence.",
-      "Préchauffer le four à 180°C. Badigeonner les courgettes évidées d'huile d'olive, saler légèrement et les précuire 10 minutes au four.",
-      "Garnir les courgettes avec la farce à la semoule, puis remettre au four 20 à 25 minutes jusqu'à ce qu'elles soient tendres et dorées.",
-      "Servir chaud, nappé d'un filet de yaourt nature."
-    ],
-    "mc": [
-      "Évider les courgettes en gardant la pulpe.",
-      "Mettre la pulpe de courgette dans le bol, hacher <b>3 s / vitesse 4</b>. Ajouter les lardons et l'huile, rissoler <b>5 min / 120 °C / vitesse 1</b>.",
-      "Ajouter le bouillon et chauffer <b>3 min / 100 °C / vitesse 1</b>. Ajouter la semoule, mélanger <b>10 s / sens inverse / vitesse 2</b> et laisser gonfler 5 minutes, couvercle fermé.",
-      "Ajouter la feta émiettée, le yaourt, les herbes, sel et poivre. Mélanger <b>10 s / sens inverse / vitesse 2</b>.",
-      "Farcir les courgettes et cuire au four comme dans la version classique."
-    ]
-  },
-  {
-    "id": "static-103",
-    "titre": "Courgettes farcies à la viande et coulis de tomate",
-    "photo": "photos/enattente.png",
-    "temps": "50 min",
-    "personnes": "2",
-    "cat": "plat",
-    "ingredients": [
-      {
-        "texte": "1 courgette",
-        "valeur": 1,
-        "unite": null,
-        "reste": "courgette"
-      },
-      {
-        "texte": "200 g de viande hachée",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "viande hachée"
-      },
-      {
-        "texte": "400 ml de coulis de tomate",
-        "valeur": 400,
-        "unite": "ml",
-        "reste": "coulis de tomate"
-      },
-      "huile d'olive",
-      {
-        "texte": "50 g de caprice des dieux râpé",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "caprice des dieux râpé"
-      },
-      "sel",
-      "poivre",
-      "herbes de Provence"
-    ],
-    "etapes": [
-      "Couper une courgette en deux dans la longueur.",
-      "Creuser la courgette à l'aide d'une cuillère pour récupérer la chair.",
-      "Assaisonner la courgette avec de l'huile, du sel et du poivre.",
-      "Mettre 20 mins au four à 180°C.",
-      "Découper les restes de chair de courgette en cubes.",
-      "Faire revenir les cubes de courgette à la poêle avec de l'huile, ajouter la viande hachée, le coulis de tomate, le sel, le poivre et les herbes de Provence. Laisser mijoter quelques minutes.",
-      "Farcir les courgettes avec le mélange et mettre du caprice des dieux râpé par-dessus.",
-      "Remettre au four 10 min jusqu'à ce que le fromage soit fondu."
-    ],
-    "mc": [
-      "Évider la courgette, l'huiler, l'assaisonner et la précuire 20 minutes au four à 180 °C.",
-      "Mettre la chair de courgette dans le bol, hacher <b>3 s / vitesse 4</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
-      "Ajouter la viande, le coulis, sel, poivre et herbes. Cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>.",
-      "Garnir les demi-courgettes, couvrir de caprice des dieux râpé et terminer au four comme dans la version classique."
     ]
   },
   {
@@ -15529,73 +15536,132 @@ const recettes = [
     "id": "static-125",
     "titre": "Dessert fraises, mascarpone et spéculoos",
     "photo": "photos/enattente.png",
-    "temps": "20 min (+ 4 h au frais)",
-    "personnes": "4",
     "cat": "dessert",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "16 biscuits cuillères maison",
-        "valeur": 16,
-        "unite": null,
-        "reste": "biscuits cuillères maison"
+        "nom": "Grand dessert aux biscuits cuillères",
+        "temps": "20 min (+ 4 h au frais)",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "16 biscuits cuillères maison",
+            "valeur": 16,
+            "unite": null,
+            "reste": "biscuits cuillères maison"
+          },
+          {
+            "texte": "200 ml de lait",
+            "valeur": 200,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "250 g de fraises",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "fraises"
+          },
+          {
+            "texte": "200 g de mascarpone",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "mascarpone"
+          },
+          {
+            "texte": "400 g de crème liquide entière",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "crème liquide entière"
+          },
+          {
+            "texte": "80 g de sucre glace",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          {
+            "texte": "1 c. à café de vanille liquide",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "vanille liquide"
+          },
+          {
+            "texte": "50 g de spéculoos",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "spéculoos"
+          }
+        ],
+        "etapes": [
+          "Dans un bol, mettre le mascarpone, la crème liquide, le sucre glace et la vanille.",
+          "Monter le mélange en chantilly.",
+          "Hacher 6 à 7 fraises et les ajouter à la chantilly.",
+          "Transférer la chantilly dans une poche à douille.",
+          "Tremper les biscuits cuillères dans le lait et les disposer sur une assiette.",
+          "Déposer une couche de chantilly sur les biscuits, suivie de morceaux de fraises découpées.",
+          "Ajouter une autre couche de biscuits, puis de chantilly et de spéculoos émiettés.",
+          "Décorer avec des fraises, puis placer au frais pendant au moins 4 heures."
+        ],
+        "mc": [
+          "Mettre le bol et le fouet au froid, insérer le fouet. Mettre le mascarpone, la crème, le sucre glace et la vanille. Fouetter <b>vitesse 4</b> en surveillant jusqu'à une chantilly ferme. Retirer le fouet.",
+          "Ajouter 6 à 7 fraises en morceaux et mélanger <b>5 s / sens inverse / vitesse 2</b>.",
+          "Monter le dessert en alternant biscuits trempés dans le lait, chantilly, fraises et spéculoos. Réfrigérer au moins 4 heures."
+        ]
       },
       {
-        "texte": "200 ml de lait",
-        "valeur": 200,
-        "unite": "ml",
-        "reste": "lait"
-      },
-      {
-        "texte": "250 g de fraises",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "fraises"
-      },
-      {
-        "texte": "200 g de mascarpone",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "mascarpone"
-      },
-      {
-        "texte": "400 g de crème liquide entière",
-        "valeur": 400,
-        "unite": "g",
-        "reste": "crème liquide entière"
-      },
-      {
-        "texte": "80 g de sucre glace",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      {
-        "texte": "1 c. à café de vanille liquide",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "vanille liquide"
-      },
-      {
-        "texte": "50 g de spéculoos",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "spéculoos"
+        "nom": "En verrines rapides",
+        "temps": "15 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "250 g de fraises",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "fraises"
+          },
+          {
+            "texte": "150 g de mascarpone",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "mascarpone"
+          },
+          {
+            "texte": "100 ml de crème liquide entière bien froide",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "crème liquide entière bien froide"
+          },
+          {
+            "texte": "40 g de sucre glace",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          {
+            "texte": "6 biscuits sablés ou spéculoos",
+            "valeur": 6,
+            "unite": null,
+            "reste": "biscuits sablés ou spéculoos"
+          },
+          {
+            "texte": "1 c. à café d'extrait de vanille",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "extrait de vanille"
+          }
+        ],
+        "etapes": [
+          "Fouetter le mascarpone, la crème froide, le sucre glace et la vanille en chantilly ferme.",
+          "Couper les fraises en morceaux et émietter les biscuits.",
+          "Dans des verrines, alterner biscuits, crème et fraises.",
+          "Réserver au frais jusqu’au service."
+        ],
+        "mc": [
+          "Mettre le bol et le fouet au froid. Insérer le fouet.",
+          "Mettre le mascarpone, la crème froide, le sucre glace et la vanille dans le bol. Fouetter <b>vitesse 4</b> en surveillant jusqu'à une chantilly ferme.",
+          "Monter les verrines avec les biscuits émiettés et les fraises."
+        ]
       }
-    ],
-    "etapes": [
-      "Dans un bol, mettre le mascarpone, la crème liquide, le sucre glace et la vanille.",
-      "Monter le mélange en chantilly.",
-      "Hacher 6 à 7 fraises et les ajouter à la chantilly.",
-      "Transférer la chantilly dans une poche à douille.",
-      "Tremper les biscuits cuillères dans le lait et les disposer sur une assiette.",
-      "Déposer une couche de chantilly sur les biscuits, suivie de morceaux de fraises découpées.",
-      "Ajouter une autre couche de biscuits, puis de chantilly et de spéculoos émiettés.",
-      "Décorer avec des fraises, puis placer au frais pendant au moins 4 heures."
-    ],
-    "mc": [
-      "Mettre le bol et le fouet au froid, insérer le fouet. Mettre le mascarpone, la crème, le sucre glace et la vanille. Fouetter <b>vitesse 4</b> en surveillant jusqu'à une chantilly ferme. Retirer le fouet.",
-      "Ajouter 6 à 7 fraises en morceaux et mélanger <b>5 s / sens inverse / vitesse 2</b>.",
-      "Monter le dessert en alternant biscuits trempés dans le lait, chantilly, fraises et spéculoos. Réfrigérer au moins 4 heures."
     ]
   },
   {
@@ -19797,77 +19863,169 @@ const recettes = [
   },
   {
     "id": "static-160",
-    "titre": "Gâteau moelleux à l'ananas caramélisé",
+    "titre": "Gâteau à l'ananas caramélisé",
     "photo": "photos/enattente.png",
-    "temps": "45 min",
-    "personnes": "6",
     "cat": "dessert",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "200 g de beurre fondu",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "beurre fondu"
+        "nom": "Moelleux au caramel liquide",
+        "temps": "45 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "200 g de beurre fondu",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "beurre fondu"
+          },
+          {
+            "texte": "200 g de farine",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "200 g de sucre",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "4 œufs",
+            "valeur": 4,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "0,5 sachet levure chimique",
+            "valeur": 0.5,
+            "unite": null,
+            "reste": "sachet levure chimique"
+          },
+          {
+            "texte": "1 c. à café de vanille liquide",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "vanille liquide"
+          },
+          {
+            "texte": "200 g d'ananas",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "ananas"
+          },
+          {
+            "texte": "100 g de caramel liquide",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "caramel liquide"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180°C.",
+          "Faire fondre le beurre puis le laisser tiédir.",
+          "Dans un bol, fouetter le sucre avec les œufs jusqu'à obtenir un mélange mousseux.",
+          "Ajouter le beurre fondu tiède et la vanille liquide, puis mélanger jusqu'à homogénéité.",
+          "Tamiser la farine et la levure, puis les incorporer progressivement au mélange tout en fouettant doucement.",
+          "Graisser le moule et déposer le caramel liquide au fond. Placer des morceaux d'ananas en couronnes ou en empreintes dans le fond du moule, puis verser une partie de la pâte.",
+          "Disposer les tranches ou morceaux d'ananas restants sur la pâte et recouvrir avec le reste de la pâte.",
+          "Cuire au four pendant 25 à 30 minutes. Vérifier la cuisson en plantant la lame d'un couteau : elle doit ressortir propre sans pâte.",
+          "Laisser tiédir le gâteau avant de démouler et servir."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Mettre le beurre dans le bol et faire fondre <b>3 min / 60 °C / vitesse 1</b>. Ajouter le sucre, les œufs et la vanille, mélanger <b>30 s / vitesse 4</b>.",
+          "Ajouter la farine et la levure, mélanger <b>20 s / vitesse 4</b>.",
+          "Verser le caramel au fond du moule, disposer l'ananas, couvrir de pâte et cuire comme dans la version classique."
+        ]
       },
       {
-        "texte": "200 g de farine",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "200 g de sucre",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "4 œufs",
-        "valeur": 4,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "0,5 sachet levure chimique",
-        "valeur": 0.5,
-        "unite": null,
-        "reste": "sachet levure chimique"
-      },
-      {
-        "texte": "1 c. à café de vanille liquide",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "vanille liquide"
-      },
-      {
-        "texte": "200 g d'ananas",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "ananas"
-      },
-      {
-        "texte": "100 g de caramel liquide",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "caramel liquide"
+        "nom": "Renversé au caramel maison",
+        "temps": "55 min",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "500 g d'ananas frais ou en conserve, en rondelles",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "ananas frais ou en conserve, en rondelles"
+          },
+          {
+            "texte": "150 g de sucre (caramel)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre (caramel)"
+          },
+          {
+            "texte": "60 g de beurre demi-sel fondu",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "beurre demi-sel fondu"
+          },
+          {
+            "texte": "3 œufs",
+            "valeur": 3,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "120 g de sucre (pâte)",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "sucre (pâte)"
+          },
+          {
+            "texte": "120 ml de lait tiède",
+            "valeur": 120,
+            "unite": "ml",
+            "reste": "lait tiède"
+          },
+          {
+            "texte": "5 ml d'extrait de vanille",
+            "valeur": 5,
+            "unite": "ml",
+            "reste": "extrait de vanille"
+          },
+          {
+            "texte": "180 g de farine",
+            "valeur": 180,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1 c. à café de levure chimique",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180°C et beurrer un moule à manqué rond d'environ 22 cm.",
+          "Préparer le caramel : faire chauffer le sucre à sec dans une petite casserole à feu doux jusqu'à obtenir une couleur ambrée, sans le brûler.",
+          "Hors du feu, ajouter le beurre demi-sel fondu et mélanger rapidement jusqu'à obtenir un caramel lisse et homogène.",
+          "Verser aussitôt le caramel dans le fond du moule en l'étalant uniformément sur toute la surface avant qu'il ne fige.",
+          "Égoutter les rondelles d'ananas si besoin, puis les disposer sur le caramel en les serrant bien pour former une couche compacte et régulière.",
+          "Préparer la pâte : dans un grand bol, fouetter les œufs avec le sucre jusqu'à ce que le mélange pâlisse et double de volume.",
+          "Ajouter le lait tiède et l'extrait de vanille, mélanger.",
+          "Incorporer progressivement la farine tamisée, la levure chimique et le sel, en fouettant jusqu'à obtenir une pâte lisse et sans grumeaux.",
+          "Verser délicatement la pâte sur les rondelles d'ananas dans le moule, en lissant la surface sans déplacer les fruits.",
+          "Enfourner 35 à 40 minutes, jusqu'à ce que le gâteau soit doré et qu'un couteau planté au centre ressorte propre.",
+          "Laisser reposer le gâteau 5 minutes hors du four, puis démouler soigneusement en retournant le moule sur un plat de service, pour révéler le caramel et les rondelles d'ananas sur le dessus.",
+          "Servir tiède ou à température ambiante."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C. Faire le caramel à sec à la casserole, ajouter le beurre et le verser dans le moule. Disposer l'ananas.",
+          "Mettre les œufs et le sucre dans le bol, mélanger <b>1 min / vitesse 4</b>. Ajouter le lait et la vanille, <b>10 s / vitesse 3</b>.",
+          "Ajouter la farine, la levure et le sel, mélanger <b>20 s / vitesse 4</b>.",
+          "Verser sur l'ananas et cuire comme dans la version classique."
+        ]
       }
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C.",
-      "Faire fondre le beurre puis le laisser tiédir.",
-      "Dans un bol, fouetter le sucre avec les œufs jusqu'à obtenir un mélange mousseux.",
-      "Ajouter le beurre fondu tiède et la vanille liquide, puis mélanger jusqu'à homogénéité.",
-      "Tamiser la farine et la levure, puis les incorporer progressivement au mélange tout en fouettant doucement.",
-      "Graisser le moule et déposer le caramel liquide au fond. Placer des morceaux d'ananas en couronnes ou en empreintes dans le fond du moule, puis verser une partie de la pâte.",
-      "Disposer les tranches ou morceaux d'ananas restants sur la pâte et recouvrir avec le reste de la pâte.",
-      "Cuire au four pendant 25 à 30 minutes. Vérifier la cuisson en plantant la lame d'un couteau : elle doit ressortir propre sans pâte.",
-      "Laisser tiédir le gâteau avant de démouler et servir."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C.",
-      "Mettre le beurre dans le bol et faire fondre <b>3 min / 60 °C / vitesse 1</b>. Ajouter le sucre, les œufs et la vanille, mélanger <b>30 s / vitesse 4</b>.",
-      "Ajouter la farine et la levure, mélanger <b>20 s / vitesse 4</b>.",
-      "Verser le caramel au fond du moule, disposer l'ananas, couvrir de pâte et cuire comme dans la version classique."
     ]
   },
   {
@@ -20032,96 +20190,6 @@ const recettes = [
       "Retirer le fouet. Mettre les jaunes, le yaourt, le beurre fondu et la vanille dans le bol, mélanger <b>15 s / vitesse 3</b>. Ajouter la farine, la maïzena et la levure, <b>15 s / vitesse 3</b>.",
       "Incorporer la meringue à la spatule en 3 fois, verser dans le moule et cuire au bain-marie 50 à 60 minutes à 160 °C.",
       "Laisser 10 minutes dans le four éteint, porte entrouverte, démouler et saupoudrer de sucre glace."
-    ]
-  },
-  {
-    "id": "static-163",
-    "titre": "Gâteau renversé à l'ananas",
-    "photo": "photos/enattente.png",
-    "temps": "55 min",
-    "personnes": "8",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "500 g d'ananas frais ou en conserve, en rondelles",
-        "valeur": 500,
-        "unite": "g",
-        "reste": "ananas frais ou en conserve, en rondelles"
-      },
-      {
-        "texte": "150 g de sucre (caramel)",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "sucre (caramel)"
-      },
-      {
-        "texte": "60 g de beurre demi-sel fondu",
-        "valeur": 60,
-        "unite": "g",
-        "reste": "beurre demi-sel fondu"
-      },
-      {
-        "texte": "3 œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "120 g de sucre (pâte)",
-        "valeur": 120,
-        "unite": "g",
-        "reste": "sucre (pâte)"
-      },
-      {
-        "texte": "120 ml de lait tiède",
-        "valeur": 120,
-        "unite": "ml",
-        "reste": "lait tiède"
-      },
-      {
-        "texte": "5 ml d'extrait de vanille",
-        "valeur": 5,
-        "unite": "ml",
-        "reste": "extrait de vanille"
-      },
-      {
-        "texte": "180 g de farine",
-        "valeur": 180,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1 c. à café de levure chimique",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      }
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C et beurrer un moule à manqué rond d'environ 22 cm.",
-      "Préparer le caramel : faire chauffer le sucre à sec dans une petite casserole à feu doux jusqu'à obtenir une couleur ambrée, sans le brûler.",
-      "Hors du feu, ajouter le beurre demi-sel fondu et mélanger rapidement jusqu'à obtenir un caramel lisse et homogène.",
-      "Verser aussitôt le caramel dans le fond du moule en l'étalant uniformément sur toute la surface avant qu'il ne fige.",
-      "Égoutter les rondelles d'ananas si besoin, puis les disposer sur le caramel en les serrant bien pour former une couche compacte et régulière.",
-      "Préparer la pâte : dans un grand bol, fouetter les œufs avec le sucre jusqu'à ce que le mélange pâlisse et double de volume.",
-      "Ajouter le lait tiède et l'extrait de vanille, mélanger.",
-      "Incorporer progressivement la farine tamisée, la levure chimique et le sel, en fouettant jusqu'à obtenir une pâte lisse et sans grumeaux.",
-      "Verser délicatement la pâte sur les rondelles d'ananas dans le moule, en lissant la surface sans déplacer les fruits.",
-      "Enfourner 35 à 40 minutes, jusqu'à ce que le gâteau soit doré et qu'un couteau planté au centre ressorte propre.",
-      "Laisser reposer le gâteau 5 minutes hors du four, puis démouler soigneusement en retournant le moule sur un plat de service, pour révéler le caramel et les rondelles d'ananas sur le dessus.",
-      "Servir tiède ou à température ambiante."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C. Faire le caramel à sec à la casserole, ajouter le beurre et le verser dans le moule. Disposer l'ananas.",
-      "Mettre les œufs et le sucre dans le bol, mélanger <b>1 min / vitesse 4</b>. Ajouter le lait et la vanille, <b>10 s / vitesse 3</b>.",
-      "Ajouter la farine, la levure et le sel, mélanger <b>20 s / vitesse 4</b>.",
-      "Verser sur l'ananas et cuire comme dans la version classique."
     ]
   },
   {
@@ -45893,63 +45961,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-554",
-    "titre": "Verrines fraises, mascarpone et biscuits",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "15 min",
-    "personnes": "4",
-    "ingredients": [
-      {
-        "texte": "250 g de fraises",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "fraises"
-      },
-      {
-        "texte": "150 g de mascarpone",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "mascarpone"
-      },
-      {
-        "texte": "100 ml de crème liquide entière bien froide",
-        "valeur": 100,
-        "unite": "ml",
-        "reste": "crème liquide entière bien froide"
-      },
-      {
-        "texte": "40 g de sucre glace",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      {
-        "texte": "6 biscuits sablés ou spéculoos",
-        "valeur": 6,
-        "unite": null,
-        "reste": "biscuits sablés ou spéculoos"
-      },
-      {
-        "texte": "1 c. à café d'extrait de vanille",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "extrait de vanille"
-      }
-    ],
-    "etapes": [
-      "Fouetter le mascarpone, la crème froide, le sucre glace et la vanille en chantilly ferme.",
-      "Couper les fraises en morceaux et émietter les biscuits.",
-      "Dans des verrines, alterner biscuits, crème et fraises.",
-      "Réserver au frais jusqu’au service."
-    ],
-    "mc": [
-      "Mettre le bol et le fouet au froid. Insérer le fouet.",
-      "Mettre le mascarpone, la crème froide, le sucre glace et la vanille dans le bol. Fouetter <b>vitesse 4</b> en surveillant jusqu'à une chantilly ferme.",
-      "Monter les verrines avec les biscuits émiettés et les fraises."
-    ]
-  },
-  {
     "id": "static-493",
     "titre": "Vin chaud",
     "photo": "photos/enattente.png",
@@ -46599,3 +46610,39 @@ const recettes = [
     ]
   }
 ];
+
+// Recettes fusionnées (doublons) : ancien identifiant → [recette qui la contient, numéro de version]
+const recettesFusionnees = {
+  "static-670": [
+    "static-660",
+    1
+  ],
+  "static-554": [
+    "static-125",
+    1
+  ],
+  "static-163": [
+    "static-160",
+    1
+  ],
+  "static-91": [
+    "static-93",
+    1
+  ],
+  "static-507": [
+    "static-422",
+    1
+  ],
+  "static-87": [
+    "static-86",
+    3
+  ],
+  "static-41": [
+    "static-40",
+    1
+  ],
+  "static-103": [
+    "static-102",
+    1
+  ]
+};
