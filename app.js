@@ -272,13 +272,17 @@ function buildGrids() {
       card.className = 'recipe-card' + (matched ? '' : ' hidden');
       card.dataset.idx = idx;
 
-      const pills = preview.ingredients.slice(0, 5).map(ing => {
+      // Ingrédients en une ligne de texte (noms seulement), coupée proprement à 2 lignes
+      const ingName = ing => {
+        const t = typeof ing === 'object' && ing.reste ? ing.reste : ingLabel(ing);
+        const n = String(t).replace(/\(.*?\)/g, '').replace(/^\s*(de |d'|d’|du |des )/i, '').trim();
+        return n.charAt(0).toUpperCase() + n.slice(1);
+      };
+      const pills = preview.ingredients.map(ing => {
         const label = ingLabel(ing);
         const isMatched = activeFilters.some(f => normalize(label).includes(normalize(f)));
-        return `<span class="ing-pill${isMatched ? ' matched' : ''}">${label}</span>`;
-      }).join('') + (preview.ingredients.length > 5 ? `<span class="ing-pill">+${preview.ingredients.length - 5}</span>` : '');
-
-      // Visuel dans une assiette (photo ou illustration, voir visuals.js)
+        return isMatched ? `<b class="ing-match">${ingName(ing)}</b>` : ingName(ing);
+      }).join(' · ');
       const plate = window.RecipeVisual ? RecipeVisual.plateHtml(r, 'card-plate') : '';
       const hook = variants.some(v => v.mc && v.mc.length) ? '<div class="card-hook"><span>Version Monsieur Cuisine</span></div>' : '';
 
@@ -295,14 +299,14 @@ function buildGrids() {
           <div class="card-top">
             <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
             <div class="card-title">${r.titre}</div>
-            <div class="card-meta">
-              <span>⏱ ${formatTemps(preview.temps)}</span>
-              <span>👥 ${preview.personnes} pers.</span>
-            </div>
-            ${hook}
+            <p class="card-ings">${pills}</p>
           </div>
-          <div class="card-ingredients">${pills}</div>
-          ${ownerBadge}
+          <div class="card-foot">
+            <span>⏱ ${formatTemps(preview.temps)}</span>
+            <span>👥 ${preview.personnes} pers.</span>
+            ${hook ? '<span class="foot-mc">Monsieur Cuisine</span>' : ''}
+            ${ownerBadge}
+          </div>
         </div>
       `;
 
