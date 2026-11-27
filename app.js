@@ -167,7 +167,7 @@ function renderAuthZone() {
       catch (e) { console.error(e); }
     });
   } else {
-    zone.innerHTML = `<button class="auth-btn" id="auth-signin-btn">Se connecter avec Google</button>`;
+    zone.innerHTML = `<button class="auth-btn" id="auth-signin-btn">Se connecter<span class="auth-long"> avec Google</span></button>`;
     document.getElementById('auth-signin-btn').addEventListener('click', async () => {
       try { await window.CloudRecipes.signInWithGoogle(); }
       catch (e) {
