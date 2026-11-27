@@ -190,9 +190,10 @@
           const r = findRecipe(x.rid);
           if (!r) return `<div class="plan-recipe plan-recipe--gone"><div class="plan-recipe-name">Recette supprimée</div><button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button></div>`;
           const v = variantOf(r, x.v);
-          return `<div class="plan-recipe">
+          return `<div class="plan-recipe${x.eaten ? ' plan-recipe--eaten' : ''}">
             ${window.RecipeVisual ? RecipeVisual.thumbHtml(r, 'plan-thumb') : `<img class="plan-thumb" src="${esc(r.photo || SITE_PHOTO)}" alt="">`}
             <div class="plan-recipe-name" data-open="${esc(x.rid)}" data-v="${x.v || 0}" data-p="${x.p}">${esc(r.titre)}${v.nom ? ` <em>(${esc(v.nom)})</em>` : ''}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(v.temps))}</small></div>
+            <button class="plan-eat${x.eaten ? ' on' : ''}" data-eat="${k}" data-j="${j}" aria-pressed="${!!x.eaten}" title="${x.eaten ? 'Mangé (toucher pour annuler)' : 'Marquer comme mangé'}">${x.eaten ? '✓ Mangé' : 'Mangé ?'}</button>
             <div class="plan-stepper"><button data-pp="${k}" data-j="${j}" data-d="-1" aria-label="Moins de personnes">−</button><b>${x.p}<span> pers.</span></b><button data-pp="${k}" data-j="${j}" data-d="1" aria-label="Plus de personnes">+</button></div>
             <button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button>
           </div>`;
@@ -223,6 +224,25 @@
     if (t.dataset.rm) {
       w.plan[t.dataset.rm].splice(+t.dataset.j, 1);
       if (!w.plan[t.dataset.rm].length) delete w.plan[t.dataset.rm];
+      save(); renderAll(); return;
+    }
+    if (t.dataset.eat) {
+      // Mangé : on retire ses ingrédients du frigo (et on les remet si on annule)
+      const x = w.plan[t.dataset.eat][+t.dataset.j];
+      const r = findRecipe(x.rid);
+      const F = window.FrigoAPI;
+      if (!x.eaten) {
+        x.eaten = true;
+        if (r && F) {
+          const v = variantOf(r, x.v);
+          const rec = F.consumeMeal(v, (x.p || basePers(v)) / basePers(v));
+          x.used = rec;
+          toast(rec.length ? 'Retiré du frigo : ' + rec.map(F.labelOf).join(', ') : 'Bon appétit ! Rien à retirer du frigo.');
+        }
+      } else {
+        if (F && x.used && x.used.length) { F.restoreMeal(x.used); toast('Remis dans le frigo : ' + x.used.map(F.labelOf).join(', ')); }
+        delete x.eaten; delete x.used;
+      }
       save(); renderAll(); return;
     }
     if (t.dataset.pp) {
