@@ -79,6 +79,14 @@
     if (!state.weeks[k]) state.weeks[k] = { plan: {}, checked: {}, extras: [] };
     const w = state.weeks[k];
     w.plan = w.plan || {}; w.checked = w.checked || {}; w.extras = w.extras || [];
+    // Recettes fusionnées (anciens doublons) : on pointe vers la bonne recette et la bonne version
+    const AL = typeof recettesFusionnees !== 'undefined' ? recettesFusionnees : {};
+    let moved = false;
+    Object.values(w.plan).forEach(arr => (arr || []).forEach(x => {
+      const al = AL[x.rid]; if (!al) return;
+      x.rid = al[0]; x.v = (x.v || 0) + al[1]; moved = true;
+    }));
+    if (moved && user && activeUid) { dirty.add(k); clearTimeout(saveTimer); saveTimer = setTimeout(flush, 400); }
     return w;
   }
 
