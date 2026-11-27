@@ -185,3 +185,7 @@
   .modal-photo-wrap.modal-photo-wrap--illu { height: 260px !important; }
   .modal-plate .vis-emo { font-size: 4.6rem; }
 }
+
+/* Les pastilles « Végé » et de variante restent sur une seule ligne */
+.card-cat { flex-wrap: wrap; row-gap: 4px; }
+.vege-badge, .variant-badge { white-space: nowrap !important; flex: none; }
