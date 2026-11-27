@@ -460,3 +460,21 @@
   .plan-recipe-name { flex-basis: calc(100% - 100px); }
   .plan-eat { margin-left: 52px; }
 }
+
+/* ── Plannings : perso + partagés, chacun avec son nom ── */
+.share-switch button { white-space: nowrap; }
+.share-switch .share-new { background: transparent; border-style: dashed; color: var(--caramel); }
+.share-btn { flex: none; }
+.share-rename, .share-new-form { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+.share-rename label, .share-new-form label { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.78rem; color: var(--muted); }
+.share-rename input, .share-new-form input {
+  padding: 0.7rem 0.8rem; border: 1.5px solid var(--border); border-radius: 12px; font: inherit; font-size: 16px; background: var(--warm-white); color: var(--text);
+}
+.share-rename { flex-direction: row; align-items: flex-end; }
+.share-rename label { flex: 1; }
+.share-new-form .btn-primary { align-self: flex-start; }
+#view-frigo .plan-sharebar { margin-top: 1rem; }
+.share-rename label { min-width: 0; }
+.share-rename input { width: 100%; box-sizing: border-box; }
+.share-rename .btn-primary { flex: none; }
+@media (max-width: 480px) { .share-rename { flex-direction: column; align-items: stretch; } }
