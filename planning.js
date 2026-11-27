@@ -9,6 +9,9 @@
 // allRecettes, getVariants, ingLabel, normalize, catLabels, openModal…
 // ────────────────────────────────────────────────────────────────────────
 (function () {
+  // Ordre des services dans un repas et intitulés affichés
+  const COURSE_ORDER = ['boisson', 'apero', 'entree', 'plat', 'accompagnement', 'sauce', 'base-culinaire', 'dessert', 'maison'];
+  const COURSE_LABEL = { boisson: 'Boissons', apero: 'Apéro', entree: 'Entrée', plat: 'Plat', accompagnement: 'Accompagnement', sauce: 'Sauce', 'base-culinaire': 'Base', dessert: 'Dessert', maison: 'Maison' };
   const DAYS = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
   const MEALS = [['midi', 'Midi'], ['soir', 'Soir']];
 
@@ -169,7 +172,19 @@
       const meals = MEALS.map(([m, l]) => {
         const k = `${i}-${m}`;
         const arr = w.plan[k] || [];
-        const items = arr.map((x, j) => {
+        // Plusieurs recettes par repas : on les range dans l'ordre du repas (apéro → entrée → plat → dessert…)
+        const order = x => { const r = findRecipe(x.rid); const o = COURSE_ORDER.indexOf(r ? r.cat : ''); return o < 0 ? 99 : o; };
+        const sorted = arr.map((x, j) => [x, j]).sort((a, b) => order(a[0]) - order(b[0]) || a[1] - b[1]);
+        const showGroups = arr.length > 1;
+        let lastCat = null;
+        const items = sorted.map(([x, j]) => {
+          const rr = findRecipe(x.rid);
+          const c = rr ? rr.cat : '';
+          const head = showGroups && c !== lastCat ? `<div class="plan-course">${esc(COURSE_LABEL[c] || catLabels[c] || 'Autre')}</div>` : '';
+          lastCat = c;
+          return head + itemHtml(x, j);
+        }).join('');
+        function itemHtml(x, j) {
           const r = findRecipe(x.rid);
           if (!r) return `<div class="plan-recipe plan-recipe--gone"><div class="plan-recipe-name">Recette supprimée</div><button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button></div>`;
           const v = variantOf(r, x.v);
@@ -179,9 +194,9 @@
             <div class="plan-stepper"><button data-pp="${k}" data-j="${j}" data-d="-1" aria-label="Moins de personnes">−</button><b>${x.p}<span> pers.</span></b><button data-pp="${k}" data-j="${j}" data-d="1" aria-label="Plus de personnes">+</button></div>
             <button class="plan-rm" data-rm="${k}" data-j="${j}" aria-label="Retirer">✕</button>
           </div>`;
-        }).join('');
-        return `<div class="plan-meal"><div class="plan-meal-label">${l}</div>${items}
-          <button class="plan-add-slot" data-slot="${k}">+ Ajouter une recette</button></div>`;
+        }
+        return `<div class="plan-meal"><div class="plan-meal-label">${l}${arr.length > 1 ? ` <span class="plan-meal-n">${arr.length} recettes</span>` : ''}</div>${items}
+          <button class="plan-add-slot" data-slot="${k}">+ ${arr.length ? 'Ajouter un plat' : 'Ajouter des recettes'}</button></div>`;
       }).join('');
       return `<div class="plan-day${cur && i === today ? ' plan-day--today' : ''}">
         <div class="plan-day-head"><span>${d}</span><small>${fmtD(dt, { day: 'numeric', month: 'short' })}${cur && i === today ? ' · aujourd\'hui' : ''}</small></div>
@@ -441,23 +456,41 @@
   function openSlotPicker(slot) {
     const [d, m] = slot.split('-');
     let q = '', cat = 'all';
+    const picked = []; // recettes cochées, dans l'ordre
     openSheet(`
       <div class="plan-sheet-head"><div class="modal-cat">${DAYS[d]} · ${MEALS.find(x => x[0] === m)[1]}</div>
-        <div class="modal-title">Choisir une recette</div>
+        <div class="modal-title">Choisir des recettes</div>
         <button class="modal-close" data-close aria-label="Fermer">✕</button></div>
       <div class="plan-sheet-body">
+        <p class="plan-hint plan-hint--block">Coche autant de recettes que tu veux : entrée, plat, dessert, ou plein de petites bouchées pour un apéro dînatoire.</p>
         <div class="search-wrap plan-search"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="search" id="plan-pick-q" placeholder="Nom de la recette…" autocomplete="off"></div>
         <div class="plan-chips">${[['all', 'Toutes'], ...Object.entries(catLabels)].map(([k, l]) => `<button class="plan-chip${k === 'all' ? ' on' : ''}" data-c="${k}">${l}</button>`).join('')}</div>
         <div class="plan-pick-list" id="plan-pick-list"></div>
+      </div>
+      <div class="plan-pick-foot" id="plan-pick-foot" hidden>
+        <div class="plan-pick-sel" id="plan-pick-sel"></div>
+        <button class="btn-primary" id="plan-pick-ok">Ajouter</button>
       </div>`);
     const list = sheet.querySelector('#plan-pick-list');
+    const foot = sheet.querySelector('#plan-pick-foot');
+    const drawFoot = () => {
+      foot.hidden = !picked.length;
+      sheet.querySelector('#plan-pick-sel').innerHTML = picked.map(rid => {
+        const r = findRecipe(rid);
+        return `<button type="button" data-unpick="${esc(rid)}">${esc(r ? r.titre : '?')} <b>✕</b></button>`;
+      }).join('');
+      sheet.querySelector('#plan-pick-ok').textContent = picked.length > 1 ? `Ajouter les ${picked.length} recettes` : 'Ajouter la recette';
+    };
     const draw = () => {
       const res = allRecettes.filter(r => (cat === 'all' || r.cat === cat) && (!q || normalize(r.titre).includes(normalize(q))))
         .sort((a, b) => a.titre.localeCompare(b.titre, 'fr'));
       const shown = res.slice(0, 80);
-      list.innerHTML = shown.map(r => `<button class="plan-pick" data-rid="${esc(ridOf(r))}">
+      list.innerHTML = shown.map(r => {
+        const on = picked.includes(ridOf(r));
+        return `<button class="plan-pick${on ? ' on' : ''}" data-rid="${esc(ridOf(r))}" aria-pressed="${on}">
           <img src="${esc(r.photo || SITE_PHOTO)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${SITE_PHOTO}';">
-          <span>${esc(r.titre)}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(previewVariant(r).temps))} · ${esc(previewVariant(r).personnes)} pers.</small></span><b>+</b></button>`).join('')
+          <span>${esc(r.titre)}<small>${esc(catLabels[r.cat] || '')} · ⏱ ${esc(formatTemps(previewVariant(r).temps))} · ${esc(previewVariant(r).personnes)} pers.</small></span><b>${on ? '✓' : '+'}</b></button>`;
+      }).join('')
         + (res.length > shown.length ? `<div class="plan-empty plan-empty--sm">${res.length - shown.length} autres recettes : affine ta recherche.</div>` : '')
         || '<div class="plan-empty">Aucune recette</div>';
     };
@@ -468,9 +501,18 @@
     list.addEventListener('click', e => {
       const b = e.target.closest('[data-rid]');
       if (!b) return;
-      const r = findRecipe(b.dataset.rid);
-      (W().plan[slot] = W().plan[slot] || []).push({ rid: b.dataset.rid, v: 0, p: basePers(previewVariant(r)) });
-      save(); closeSheet(); renderAll(); toast('Ajouté ✓');
+      const rid = b.dataset.rid, i = picked.indexOf(rid);
+      i < 0 ? picked.push(rid) : picked.splice(i, 1);
+      draw(); drawFoot();
+    });
+    foot.addEventListener('click', e => {
+      const u = e.target.closest('[data-unpick]');
+      if (u) { picked.splice(picked.indexOf(u.dataset.unpick), 1); draw(); drawFoot(); return; }
+      if (!e.target.closest('#plan-pick-ok') || !picked.length) return;
+      const arr = (W().plan[slot] = W().plan[slot] || []);
+      picked.forEach(rid => { const r = findRecipe(rid); if (r) arr.push({ rid, v: 0, p: basePers(previewVariant(r)) }); });
+      save(); closeSheet(); renderAll();
+      toast(picked.length > 1 ? `${picked.length} recettes ajoutées ✓` : 'Ajouté ✓');
     });
     draw();
   }

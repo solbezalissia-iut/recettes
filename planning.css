@@ -409,3 +409,27 @@
 .share-list li span { overflow: hidden; text-overflow: ellipsis; }
 .share-list button { border: none; background: none; color: var(--blush); font: inherit; font-size: 0.85rem; cursor: pointer; padding: 0.3rem 0.5rem; }
 .share-send, .share-leave { width: 100%; }
+
+/* ── Plusieurs recettes par repas ── */
+.plan-meal-n { text-transform: none; letter-spacing: 0; color: var(--caramel); font-weight: 500; margin-left: 0.3rem; }
+.plan-course { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: var(--mocha); margin: 0.55rem 0 0.25rem; }
+.plan-course:first-of-type { margin-top: 0.1rem; }
+.plan-hint--block { display: block; margin: 0 0 0.8rem; font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
+.plan-pick.on { border-color: var(--caramel); background: #fbf1e6; }
+.plan-pick.on b { color: #fff; background: var(--caramel); border-radius: 50%; width: 1.6rem; height: 1.6rem; display: grid; place-items: center; font-size: 0.9rem; font-weight: 600; }
+.plan-pick-foot {
+  position: sticky; bottom: 0; z-index: 2;
+  padding: 0.8rem 1.4rem calc(0.9rem + env(safe-area-inset-bottom));
+  background: var(--warm-white, #fff); border-top: 1px solid var(--border);
+  box-shadow: 0 -6px 18px rgba(44,26,14,0.08);
+}
+.plan-pick-foot[hidden] { display: none; }
+.plan-pick-foot .btn-primary { width: 100%; }
+.plan-pick-sel { display: flex; gap: 0.35rem; overflow-x: auto; scrollbar-width: none; margin-bottom: 0.6rem; }
+.plan-pick-sel::-webkit-scrollbar { display: none; }
+.plan-pick-sel button {
+  flex: none; max-width: 70vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  border: 1px solid var(--sand); background: var(--cream); color: var(--text);
+  border-radius: 999px; padding: 0.3rem 0.7rem; font: inherit; font-size: 0.78rem; cursor: pointer;
+}
+.plan-pick-sel button b { color: var(--muted); font-weight: 400; margin-left: 0.2rem; }
