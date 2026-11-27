@@ -189,3 +189,7 @@
 /* Les pastilles « Végé » et de variante restent sur une seule ligne */
 .card-cat { flex-wrap: wrap; row-gap: 4px; }
 .vege-badge, .variant-badge { white-space: nowrap !important; flex: none; }
+
+/* Bouton « Coller une image » */
+.form-photo-row { flex-wrap: wrap; }
+.btn-paste { padding: 0.45rem 0.9rem; font-size: 0.8rem; white-space: nowrap; }
