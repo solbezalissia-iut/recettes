@@ -30,10 +30,12 @@ body {
 
 /* ── En-tête façon affiche ── */
 header {
-  background: linear-gradient(180deg, #EADBC6 0%, #F1E6D6 100%);
-  color: var(--espresso);
+  background: var(--espresso);
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(255,255,255,0.018) 40px, rgba(255,255,255,0.018) 80px);
+  color: var(--cream);
+  padding-top: max(2.6rem, env(safe-area-inset-top)) !important;
   padding: 2.6rem 2rem 2.2rem;
-  border-bottom: 1px solid rgba(62, 36, 20, 0.12);
+  border-bottom: none;
 }
 header::before { display: none; }
 header .container { position: relative; z-index: 2; }
@@ -58,17 +60,17 @@ header .container { position: relative; z-index: 2; }
   filter: drop-shadow(0 3px 0 rgba(62, 36, 20, 0.12));
 }
 header h1 em { color: var(--caramel); }
-header p { color: var(--muted); letter-spacing: 0.14em; }
-.header-count { color: var(--mocha); font-weight: 500; }
+header p { color: rgba(246, 238, 227, 0.6); letter-spacing: 0.14em; }
+.header-count { color: #D9A26B; font-weight: 500; }
 
-.header-photo, .monogram { border: 3px solid #fff; box-shadow: 0 6px 18px rgba(62, 36, 20, 0.18); }
+.header-photo, .monogram { border: 3px solid rgba(246, 238, 227, 0.85); box-shadow: 0 6px 18px rgba(62, 36, 20, 0.18); }
 .monogram { background: linear-gradient(145deg, #D9A26B, var(--caramel)); color: var(--espresso); }
 
-/* Boutons de connexion sur fond clair */
-.auth-btn { border-color: rgba(62, 36, 20, 0.35); background: #fff; color: var(--espresso); }
-.auth-btn:hover { background: var(--sand); border-color: var(--espresso); }
-.auth-avatar { border-color: rgba(62, 36, 20, 0.25); }
-.auth-name { color: var(--espresso) !important; }
+/* Boutons de connexion sur la bande marron */
+header .auth-btn { border-color: rgba(246, 238, 227, 0.4); background: rgba(246, 238, 227, 0.08); color: var(--cream); }
+header .auth-btn:hover { background: rgba(246, 238, 227, 0.18); border-color: rgba(246, 238, 227, 0.7); }
+.auth-avatar { border-color: rgba(246, 238, 227, 0.4); }
+header .auth-name { color: var(--cream) !important; }
 
 /* Illustrations découpées de l'affiche */
 .deco-layer { position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
@@ -95,12 +97,11 @@ header p { color: var(--muted); letter-spacing: 0.14em; }
 
 /* En-tête compact sur téléphone */
 @media (max-width: 780px) {
-  header { padding: 0.7rem 0 0.8rem !important; border-bottom-width: 1px; }
+  header { padding: max(0.7rem, env(safe-area-inset-top)) 0 0.8rem !important; }
   .logo { flex-direction: row; align-items: baseline; gap: 0.3rem; }
-  .logo-a { font-size: 1.15rem !important; -webkit-text-stroke: 0; margin: 0; }
-  .logo-b { font-size: 1.45rem !important; -webkit-text-stroke: 0; filter: none; }
-  header h1.logo { white-space: nowrap; overflow: hidden; }
-  .auth-btn { background: #fff; }
+  .logo-a { font-size: 1.15rem !important; -webkit-text-stroke: 3.5px #FFFCF7; margin: 0; }
+  .logo-b { font-size: 1.45rem !important; -webkit-text-stroke: 4.5px #FFFCF7; filter: none; letter-spacing: 0.01em !important; }
+  header h1.logo { white-space: nowrap; overflow: visible !important; text-overflow: clip !important; padding: 4px 4px 2px; line-height: 1.15; }
 }
 
 /* ── Barre de recherche et catégories ── */
