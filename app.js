@@ -268,8 +268,10 @@ function buildGrids() {
         return `<span class="ing-pill${isMatched ? ' matched' : ''}">${label}</span>`;
       }).join('') + (preview.ingredients.length > 5 ? `<span class="ing-pill">+${preview.ingredients.length - 5}</span>` : '');
 
-      const photoSrc = r.photo || SITE_PHOTO;
-      const photoHtml = `<div class="card-photo"><img src="${photoSrc}" alt="${r.titre}" loading="lazy" onerror="this.onerror=null;this.src='${SITE_PHOTO}';"></div>`;
+      // Visuel dans une assiette (photo ou illustration, voir visuals.js)
+      const plate = window.RecipeVisual ? RecipeVisual.plateHtml(r, 'card-plate') : '';
+      const nIng = preview.ingredients.length;
+      const hook = `<div class="card-hook"><b>${nIng} ingrédient${nIng > 1 ? 's' : ''}</b>${variants.some(v => v.mc && v.mc.length) ? '<span>Version Monsieur Cuisine</span>' : ''}</div>`;
 
       const variantBadge = variants.length > 1
         ? `<span class="variant-badge">${variants.length} versions</span>`
@@ -279,13 +281,16 @@ function buildGrids() {
         : '';
 
       card.innerHTML = `
-        ${photoHtml}
+        ${plate}
         <div class="card-body">
-          <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
-          <div class="card-title">${r.titre}</div>
-          <div class="card-meta">
-            <span>⏱ ${formatTemps(preview.temps)}</span>
-            <span>👥 ${preview.personnes} pers.</span>
+          <div class="card-top">
+            <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
+            <div class="card-title">${r.titre}</div>
+            <div class="card-meta">
+              <span>⏱ ${formatTemps(preview.temps)}</span>
+              <span>👥 ${preview.personnes} pers.</span>
+            </div>
+            ${hook}
           </div>
           <div class="card-ingredients">${pills}</div>
           ${ownerBadge}
@@ -502,12 +507,22 @@ function openModal(idx) {
   const photoWrap = document.getElementById('modal-photo-wrap');
   const photoImg = document.getElementById('modal-photo');
   const photoPlaceholder = document.getElementById('modal-photo-placeholder');
-  photoImg.src = r.photo || SITE_PHOTO;
-  photoImg.alt = r.titre;
-  photoImg.onerror = function () { this.onerror = null; this.src = SITE_PHOTO; };
-  photoImg.style.display = 'block';
-  photoPlaceholder.style.display = 'none';
-  photoWrap.classList.remove('modal-photo-wrap--placeholder');
+  if (!window.RecipeVisual || RecipeVisual.hasPhoto(r)) {
+    photoImg.src = r.photo || SITE_PHOTO;
+    photoImg.alt = r.titre;
+    photoImg.onerror = function () { this.onerror = null; this.src = SITE_PHOTO; };
+    photoImg.style.display = 'block';
+    photoPlaceholder.style.display = 'none';
+    photoWrap.classList.remove('modal-photo-wrap--placeholder', 'modal-photo-wrap--illu');
+    photoWrap.style.background = '';
+  } else {
+    // Pas encore de photo : grande illustration dans une assiette
+    photoImg.style.display = 'none';
+    photoPlaceholder.style.display = 'flex';
+    photoPlaceholder.innerHTML = RecipeVisual.plateHtml(r, 'modal-plate');
+    photoWrap.classList.add('modal-photo-wrap--illu');
+    photoWrap.style.background = RecipeVisual.tint(r);
+  }
 
   document.getElementById('modal-cat').textContent = catLabels[r.cat];
   document.getElementById('modal-title').textContent = r.titre;
