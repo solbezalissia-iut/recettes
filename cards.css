@@ -245,3 +245,21 @@
 .card-vnav small { font-size: 0.66rem; color: var(--muted); }
 .recipe-card.vflip .card-plate { animation: vflip .25s ease; }
 @keyframes vflip { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: none; } }
+
+/* ── Gomme ── */
+.erase-modal { max-width: 720px; }
+.erase-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; padding: 0.8rem 1.2rem; border-bottom: 1px solid var(--border); }
+.erase-mode { display: flex; background: #F3EADF; border-radius: 99px; padding: 3px; }
+.erase-mode button { border: none; background: none; padding: 0.4rem 0.8rem; border-radius: 99px; font: inherit; font-size: 0.82rem; cursor: pointer; color: var(--espresso); }
+.erase-mode button.on { background: var(--espresso); color: #fff; }
+.erase-size { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--muted); text-transform: none; letter-spacing: 0; }
+.erase-size input { width: 110px; accent-color: var(--caramel); }
+#erase-undo { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+.erase-stage {
+  position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;
+  height: 55vh; max-height: 460px; padding: 0.8rem;
+  background: repeating-conic-gradient(#E9E1D6 0 25%, #fff 0 50%) 50% / 18px 18px;
+}
+#erase-canvas { max-width: 100%; max-height: 100%; touch-action: none; cursor: none; }
+.erase-cursor { position: absolute; display: none; pointer-events: none; border: 2px solid var(--caramel); border-radius: 50%; box-shadow: 0 0 0 1px #fff; }
+#erase-overlay { z-index: 1300; }

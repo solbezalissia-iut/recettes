@@ -777,6 +777,7 @@ let editingDocId = null;
 let editingStaticId = null; // rempli quand Alissia modifie une recette d'origine
 let editingOriginalPhoto = ''; // photo actuelle de la recette en cours de modification, gardée si on ne la change pas
 let editingOriginalDetouree = false;
+let photoBeforeCut = ''; // la photo juste avant le retrait du fond (pour « Restaurer » dans la gomme)
 let newPhotoCut = false; // la nouvelle photo a déjà son arrière-plan enlevé
 
 // Réduit une image (depuis un fichier ou une image déjà rognée) avant envoi
@@ -814,7 +815,9 @@ let cropper = null;
 let cropSourceDataUrl = ''; // image (non rognée) sur laquelle on rouvre le cadrage avec "Rogner la photo"
 
 function updateRecropButton() {
-  newPhotoRecropBtn.style.display = (newPhotoDataUrl || editingOriginalPhoto) ? 'inline-block' : 'none';
+  const has = (newPhotoDataUrl || editingOriginalPhoto) ? 'inline-block' : 'none';
+  newPhotoRecropBtn.style.display = has;
+  const eb = document.getElementById('new-photo-erase'); if (eb) eb.style.display = has;
 }
 
 // Forme du cadrage selon la catégorie : assiette (plats, entrées, desserts), bol (sauces),
@@ -878,6 +881,7 @@ document.getElementById('crop-confirm').addEventListener('click', async () => {
   const rawDataUrl = canvas.toDataURL('image/jpeg', 0.85);
   const st = cropStyle();
   closeCropper();
+  photoBeforeCut = '';
   newPhotoDataUrl = await resizeDataUrl(rawDataUrl, editingVariants ? 700 : 900, 0.72);
   newPhotoCut = false;
   newPhotoPreview.className = 'form-photo-preview photo-preview--' + st;
@@ -894,6 +898,7 @@ function resetPresentation() {
 async function cutNewPhoto() {
   if (!newPhotoDataUrl || newPhotoCut || !window.Detour) return;
   const keep = newPhotoDataUrl;
+  photoBeforeCut = keep;
   newPhotoPreview.insertAdjacentHTML('beforeend', '<div class="detour-wait">Je retire l\'arrière-plan…</div>');
   try {
     const multi = !!editingVariants; // plusieurs photos dans la même recette : plus légères
@@ -924,7 +929,7 @@ function closeAddModal() {
   addModalOverlay.classList.remove('open');
   document.body.style.overflow = '';
   addForm.reset();
-  newPhotoDataUrl = '';
+  newPhotoDataUrl = ''; photoBeforeCut = '';
   newPhotoPreview.innerHTML = 'Aperçu';
   document.getElementById('add-form-success').classList.remove('visible');
   const statusEl = document.getElementById('publish-status');
@@ -963,6 +968,93 @@ newPhotoInput.addEventListener('change', async () => {
   const dataUrl = await readFileAsDataUrl(file);
   openCropper(dataUrl);
 });
+
+// ── Gomme manuelle (après le retrait du fond, ou sur n'importe quelle photo) ──
+(function () {
+  const ov = document.getElementById('erase-overlay');
+  const cv = document.getElementById('erase-canvas');
+  const stage = document.getElementById('erase-stage');
+  const cursor = document.getElementById('erase-cursor');
+  const sizeIn = document.getElementById('erase-size');
+  const ctx = cv.getContext('2d');
+  let orig = null, mode = 'erase', history = [], drawing = false, last = null;
+  const loadImg = src => new Promise((ok, ko) => { const i = new Image(); i.crossOrigin = 'anonymous'; i.onload = () => ok(i); i.onerror = ko; i.src = src; });
+
+  async function open() {
+    let src = newPhotoDataUrl || editingOriginalPhoto;
+    if (!src) return;
+    // Style « sans fond » pas encore détouré : on retire d'abord le fond automatiquement
+    if (cropStyle() === 'free' && !(newPhotoDataUrl ? newPhotoCut : editingOriginalDetouree) && window.Detour) {
+      if (!newPhotoDataUrl) { newPhotoDataUrl = src; newPhotoCut = false; }
+      await cutNewPhoto();
+      src = newPhotoDataUrl;
+    }
+    const img = await loadImg(src);
+    const max = 1000, k = Math.min(1, max / Math.max(img.naturalWidth, img.naturalHeight));
+    cv.width = Math.round(img.naturalWidth * k); cv.height = Math.round(img.naturalHeight * k);
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.clearRect(0, 0, cv.width, cv.height); ctx.drawImage(img, 0, 0, cv.width, cv.height);
+    // Image d'origine pour « Restaurer » : la photo d'avant le retrait du fond si on l'a, sinon l'image actuelle
+    orig = document.createElement('canvas'); orig.width = cv.width; orig.height = cv.height;
+    let base = img;
+    if (photoBeforeCut && newPhotoDataUrl) { try { base = await loadImg(photoBeforeCut); } catch (e) { base = img; } }
+    orig.getContext('2d').drawImage(base, 0, 0, cv.width, cv.height);
+    history = [ctx.getImageData(0, 0, cv.width, cv.height)];
+    setMode('erase');
+    ov.classList.add('open'); document.body.style.overflow = 'hidden';
+  }
+  function setMode(m) {
+    mode = m;
+    ov.querySelectorAll('[data-emode]').forEach(b => b.classList.toggle('on', b.dataset.emode === m));
+  }
+  const scale = () => cv.width / cv.getBoundingClientRect().width;
+  const pos = e => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) * scale(), y: (e.clientY - r.top) * scale() }; };
+  function stroke(a, b) {
+    const w = (+sizeIn.value) * scale();
+    const line = c => { c.lineCap = 'round'; c.lineJoin = 'round'; c.lineWidth = w; c.beginPath(); c.moveTo(a.x, a.y); c.lineTo(b.x + 0.01, b.y); c.stroke(); };
+    ctx.save();
+    if (mode === 'erase') { ctx.globalCompositeOperation = 'destination-out'; line(ctx); }
+    else {
+      // Restaurer : on recopie l'image d'origine (avec son fond) sous le trait
+      const tmp = document.createElement('canvas'); tmp.width = cv.width; tmp.height = cv.height;
+      const t = tmp.getContext('2d'); line(t);
+      t.globalCompositeOperation = 'source-in'; t.drawImage(orig, 0, 0, cv.width, cv.height);
+      ctx.globalCompositeOperation = 'source-over'; ctx.drawImage(tmp, 0, 0);
+    }
+    ctx.restore();
+  }
+  function moveCursor(e) {
+    const r = stage.getBoundingClientRect(), d = +sizeIn.value;
+    cursor.style.width = cursor.style.height = d + 'px';
+    cursor.style.left = (e.clientX - r.left - d / 2) + 'px'; cursor.style.top = (e.clientY - r.top - d / 2) + 'px';
+    cursor.style.display = 'block';
+  }
+  cv.addEventListener('pointerdown', e => { e.preventDefault(); cv.setPointerCapture(e.pointerId); drawing = true; last = pos(e); stroke(last, last); moveCursor(e); });
+  cv.addEventListener('pointermove', e => { moveCursor(e); if (!drawing) return; const p = pos(e); stroke(last, p); last = p; });
+  const end = () => { if (!drawing) return; drawing = false; history.push(ctx.getImageData(0, 0, cv.width, cv.height)); if (history.length > 30) history.splice(1, 1); };
+  cv.addEventListener('pointerup', end); cv.addEventListener('pointercancel', end);
+  cv.addEventListener('pointerleave', () => { cursor.style.display = 'none'; });
+  ov.querySelectorAll('[data-emode]').forEach(b => b.addEventListener('click', () => setMode(b.dataset.emode)));
+  document.getElementById('erase-undo').addEventListener('click', () => { if (history.length > 1) { history.pop(); ctx.putImageData(history[history.length - 1], 0, 0); } });
+  const close = () => { ov.classList.remove('open'); document.body.style.overflow = addModalOverlay.classList.contains('open') ? 'hidden' : ''; };
+  document.getElementById('erase-cancel').addEventListener('click', close);
+  document.getElementById('erase-confirm').addEventListener('click', () => {
+    // Image avec transparence (PNG) ; on réduit si elle est trop lourde pour l'enregistrement en ligne
+    let url = cv.toDataURL('image/png');
+    const limit = editingVariants ? 300000 : 800000;
+    if (url.length > limit) {
+      const k = Math.sqrt(limit / url.length) * 0.95, c2 = document.createElement('canvas');
+      c2.width = Math.round(cv.width * k); c2.height = Math.round(cv.height * k);
+      c2.getContext('2d').drawImage(cv, 0, 0, c2.width, c2.height); url = c2.toDataURL('image/png');
+    }
+    newPhotoDataUrl = url; newPhotoCut = true;
+    newPhotoPreview.className = 'form-photo-preview photo-preview--' + cropStyle();
+    newPhotoPreview.innerHTML = `<img src="${url}" alt="Aperçu">`;
+    updateRecropButton();
+    close();
+  });
+  document.getElementById('new-photo-erase').addEventListener('click', () => open().catch(e => { console.error(e); alert("Impossible d'ouvrir la gomme sur cette photo."); }));
+})();
 
 // ── Coller ou glisser une image ──
 // Ctrl+V / ⌘+V n'importe où dans le formulaire, bouton « Coller une image » (pratique sur téléphone), ou glisser-déposer.

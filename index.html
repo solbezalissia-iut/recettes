@@ -15,13 +15,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Ultra&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css?v=20261127b">
-<link rel="stylesheet" href="planning.css?v=20261127b">
-<link rel="stylesheet" href="mobile.css?v=20261127b">
+<link rel="stylesheet" href="main.css?v=20261127c">
+<link rel="stylesheet" href="planning.css?v=20261127c">
+<link rel="stylesheet" href="mobile.css?v=20261127c">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
-<link rel="stylesheet" href="frigo.css?v=20261127b">
-<link rel="stylesheet" href="cards.css?v=20261127b">
-<link rel="stylesheet" href="theme.css?v=20261127b">
+<link rel="stylesheet" href="frigo.css?v=20261127c">
+<link rel="stylesheet" href="cards.css?v=20261127c">
+<link rel="stylesheet" href="theme.css?v=20261127c">
 <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
 <body>
@@ -334,6 +334,7 @@
             <div class="form-photo-row">
               <div class="form-photo-preview" id="new-photo-preview">Aperçu</div>
               <button type="button" class="btn-secondary btn-recrop" id="new-photo-recrop" style="display:none;">Rogner la photo</button>
+              <button type="button" class="btn-secondary btn-recrop" id="new-photo-erase" style="display:none;">🧽 Gommer</button>
               <span class="hint">Tu peux aussi coller une image copiée (Ctrl+V ou ⌘+V) ou la glisser ici. Assiette ou bol : tu places l'aliment dans le rond. Sans fond : l'arrière-plan est enlevé automatiquement.</span>
             </div>
           </div>
@@ -375,6 +376,29 @@
   </div>
 </div>
 
+<!-- Gomme : effacer à la main des morceaux qui restent après le retrait du fond -->
+<div class="modal-overlay" id="erase-overlay">
+  <div class="crop-modal erase-modal">
+    <div class="crop-modal-header">
+      <h3>Gommer</h3>
+      <p>Passe le doigt (ou la souris) sur ce que tu veux effacer. « Restaurer » fait revenir l'image d'origine.</p>
+    </div>
+    <div class="erase-tools">
+      <div class="erase-mode" role="radiogroup">
+        <button type="button" class="on" data-emode="erase">🧽 Gommer</button>
+        <button type="button" data-emode="restore">🖌️ Restaurer</button>
+      </div>
+      <label class="erase-size">Taille <input type="range" id="erase-size" min="6" max="90" value="28"></label>
+      <button type="button" class="btn-secondary" id="erase-undo">↶ Annuler</button>
+    </div>
+    <div class="erase-stage" id="erase-stage"><canvas id="erase-canvas"></canvas><div class="erase-cursor" id="erase-cursor"></div></div>
+    <div class="form-actions crop-modal-actions">
+      <button type="button" class="btn-secondary" id="erase-cancel">Fermer sans garder</button>
+      <button type="button" class="btn-primary" id="erase-confirm">Valider</button>
+    </div>
+  </div>
+</div>
+
 <!-- Bouton flottant « Ajouter une recette » (téléphone) -->
 <button type="button" class="add-fab" id="add-fab" aria-label="Ajouter une recette">+</button>
 
@@ -388,14 +412,14 @@
   </div>
 </footer>
 
-<script src="recettes-data.js?v=20261127b"></script>
-<script src="detour.js?v=20261127b"></script>
-<script src="visuals.js?v=20261127b"></script>
-<script src="app.js?v=20261127b"></script>
-<script src="planning.js?v=20261127b"></script>
-<script src="frigo.js?v=20261127b"></script>
-<script src="nav.js?v=20261127b"></script>
-<script src="firebase-config.js?v=20261127b"></script>
-<script type="module" src="cloud.js?v=20261127b"></script>
+<script src="recettes-data.js?v=20261127c"></script>
+<script src="detour.js?v=20261127c"></script>
+<script src="visuals.js?v=20261127c"></script>
+<script src="app.js?v=20261127c"></script>
+<script src="planning.js?v=20261127c"></script>
+<script src="frigo.js?v=20261127c"></script>
+<script src="nav.js?v=20261127c"></script>
+<script src="firebase-config.js?v=20261127c"></script>
+<script type="module" src="cloud.js?v=20261127c"></script>
 </body>
 </html>
