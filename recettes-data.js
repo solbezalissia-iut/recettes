@@ -2338,6 +2338,179 @@ const recettes = [
     ]
   },
   {
+    "id": "static-641",
+    "titre": "Biscuits au pain d’épices",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "variantes": [
+      {
+        "nom": "Bonshommes au glaçage royal",
+        "temps": "45 min (+ 1 h au frais)",
+        "personnes": "20",
+        "ingredients": [
+          {
+            "texte": "350 g de farine",
+            "valeur": 350,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de beurre mou",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "beurre mou"
+          },
+          {
+            "texte": "100 g de cassonade",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "cassonade"
+          },
+          {
+            "texte": "100 g de miel",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "miel"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "2 c. à café de gingembre en poudre",
+            "valeur": 2,
+            "unite": "c. à café",
+            "reste": "gingembre en poudre"
+          },
+          {
+            "texte": "2 c. à café de cannelle",
+            "valeur": 2,
+            "unite": "c. à café",
+            "reste": "cannelle"
+          },
+          {
+            "texte": "0,5 c. à café de muscade",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "muscade"
+          },
+          {
+            "texte": "1 c. à café de bicarbonate",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "bicarbonate"
+          },
+          "glaçage royal pour décorer"
+        ],
+        "etapes": [
+          "Mélanger le beurre mou, la cassonade et le miel, puis ajouter l’œuf.",
+          "Incorporer la farine, les épices et le bicarbonate. Former une boule, filmer et réfrigérer 1 heure.",
+          "Préchauffer le four à 180 °C. Étaler la pâte sur 5 mm et découper des bonshommes à l’emporte-pièce.",
+          "Cuire 8 à 10 minutes sur une plaque recouverte de papier cuisson. Laisser refroidir.",
+          "Décorer au glaçage royal (yeux, sourire, boutons)."
+        ]
+      },
+      {
+        "nom": "Au sirop doré, glaçage meringue et bonbons",
+        "temps": "42 min",
+        "personnes": "24",
+        "ingredients": [
+          {
+            "texte": "175 g de sucre brun clair",
+            "valeur": 175,
+            "unite": "g",
+            "reste": "sucre brun clair"
+          },
+          {
+            "texte": "125 g de beurre mou",
+            "valeur": 125,
+            "unite": "g",
+            "reste": "beurre mou"
+          },
+          {
+            "texte": "75 g de sirop doré (golden syrup)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sirop doré (golden syrup)"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "350 g de farine",
+            "valeur": 350,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1 c. à café de levure chimique",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 c. à café de gingembre moulu",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "gingembre moulu"
+          },
+          {
+            "texte": "1 c. à café de cannelle moulue",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cannelle moulue"
+          },
+          {
+            "texte": "1 pincée de noix de muscade",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "noix de muscade"
+          },
+          {
+            "texte": "400 g de sucre glace",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          {
+            "texte": "15 g de poudre de meringue",
+            "valeur": 15,
+            "unite": "g",
+            "reste": "poudre de meringue"
+          },
+          {
+            "texte": "4 à 6 c. à soupe d'eau froide",
+            "valeur": 4,
+            "unite": null,
+            "reste": "à 6 c. à soupe d'eau froide"
+          },
+          {
+            "texte": "100 g de petits bonbons (type Smarties)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "petits bonbons (type Smarties)"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180 °C et couvrir une plaque de papier cuisson.",
+          "Mélanger le sucre brun, le beurre mou et le sirop doré jusqu'à obtenir une texture crémeuse.",
+          "Ajouter l'œuf et mélanger.",
+          "Tamiser la farine avec la levure, le gingembre, la cannelle et la muscade, puis les incorporer petit à petit.",
+          "Rassembler la pâte, couvrir et laisser reposer un moment si possible.",
+          "Étaler la pâte sur 5 mm sur un plan fariné et découper des formes à l'emporte-pièce.",
+          "Cuire 10 à 12 minutes, jusqu'à ce que les bords soient légèrement dorés. Laisser refroidir.",
+          "Glaçage : mélanger le sucre glace et la poudre de meringue, puis ajouter l'eau petit à petit jusqu'à obtenir un glaçage lisse et un peu épais.",
+          "Napper les biscuits de glaçage, décorer de bonbons et laisser figer avant de déguster."
+        ]
+      }
+    ]
+  },
+  {
     "id": "static-675",
     "titre": "Biscuits aux fraises et à la cardamome",
     "photo": "photos/enattente.png",
@@ -2560,6 +2733,80 @@ const recettes = [
     ]
   },
   {
+    "id": "static-26",
+    "titre": "Biscuits fourrés au chocolat façon Prince de Lu",
+    "photo": "photos/enattente.png",
+    "temps": "72 min (+ 1 h au frais)",
+    "personnes": "12",
+    "cat": "dessert",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "150 g de beurre demi-sel",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre demi-sel"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "20 g de poudre de noisettes",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "poudre de noisettes"
+      },
+      {
+        "texte": "1 c. à soupe d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "50 g de chocolat au lait",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "chocolat au lait"
+      },
+      {
+        "texte": "50 g de chocolat noir",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "90 g de crème liquide",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "crème liquide"
+      }
+    ],
+    "etapes": [
+      "Préparer la ganache : chauffer la crème liquide et la verser sur les chocolats au lait et noir hachés. Couvrir 1 minute, puis mélanger jusqu'à obtenir une ganache lisse. Réserver.",
+      "Préparer la pâte : dans un saladier, mettre la farine, le beurre coupé en dés, le sucre, la poudre de noisettes et l'extrait de vanille. Sabler du bout des doigts jusqu'à obtenir une texture de sable.",
+      "Ajouter l'œuf et mélanger jusqu'à former une boule homogène.",
+      "Placer la pâte 1 heure au frais pour la raffermir.",
+      "Étaler la pâte sur 2 mm d'épaisseur, découper des biscuits à l'emporte-pièce dentelé, puis placer 10 minutes au congélateur.",
+      "Disposer les sablés sur une plaque recouverte de papier cuisson et les piquer avec une fourchette ou un bâtonnet pour faire les petits trous.",
+      "Cuire 12 minutes à 180 °C, jusqu'à légère coloration. Laisser refroidir.",
+      "Garnir la moitié des sablés de ganache à la poche à douille et refermer avec un second sablé."
+    ]
+  },
+  {
     "id": "static-25",
     "titre": "Biscuits granola maison enrobés de chocolat",
     "photo": "photos/enattente.png",
@@ -2620,81 +2867,6 @@ const recettes = [
       "Faire fondre le chocolat et tremper une face de chaque biscuit dedans.",
       "Réaliser une petite décoration sur le dessus des biscuits à l'aide d'un cure-dent.",
       "Laisser sécher les biscuits avant de déguster."
-    ]
-  },
-  {
-    "id": "static-26",
-    "titre": "Biscuits sablés amandes et ganache chocolat façon Petit Prince",
-    "photo": "photos/enattente.png",
-    "temps": "35 min",
-    "personnes": "10",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "120 g de beurre maison",
-        "valeur": 120,
-        "unite": "g",
-        "reste": "beurre maison"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      },
-      {
-        "texte": "90 g de sucre glace",
-        "valeur": 90,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      {
-        "texte": "30 g de poudre d'amande",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "poudre d'amande"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "235 g de farine",
-        "valeur": 235,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "100 g de crème liquide entière",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "crème liquide entière"
-      },
-      {
-        "texte": "150 g de chocolat au lait",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "chocolat au lait"
-      },
-      {
-        "texte": "130 g de chocolat noir",
-        "valeur": 130,
-        "unite": "g",
-        "reste": "chocolat noir"
-      }
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C.",
-      "Dans un grand bol, mélanger le beurre ramolli avec le sucre glace jusqu'à obtenir une consistance crémeuse.",
-      "Ajouter l'œuf et le sel, puis bien mélanger.",
-      "Incorporer la poudre d'amande et la farine progressivement.",
-      "Former des petites boules de pâte et les disposer sur une plaque de cuisson.",
-      "Enfourner pendant environ 12 à 15 minutes.",
-      "Préparer la ganache en chauffant la crème dans une casserole.",
-      "Retirer du feu et ajouter les deux chocolats, puis mélanger jusqu'à ce que le chocolat soit complètement fondu.",
-      "Laisser refroidir les biscuits après cuisson, puis les garnir de ganache au chocolat."
     ]
   },
   {
@@ -3367,78 +3539,6 @@ const recettes = [
           "Découper en fines bandes et les rouler."
         ]
       }
-    ]
-  },
-  {
-    "id": "static-641",
-    "titre": "Bonshommes en pain d’épices",
-    "photo": "photos/enattente.png",
-    "cat": "dessert",
-    "temps": "45 min (+ 1 h au frais)",
-    "personnes": "20",
-    "ingredients": [
-      {
-        "texte": "350 g de farine",
-        "valeur": 350,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "100 g de beurre mou",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "beurre mou"
-      },
-      {
-        "texte": "100 g de cassonade",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "cassonade"
-      },
-      {
-        "texte": "100 g de miel",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "miel"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "2 c. à café de gingembre en poudre",
-        "valeur": 2,
-        "unite": "c. à café",
-        "reste": "gingembre en poudre"
-      },
-      {
-        "texte": "2 c. à café de cannelle",
-        "valeur": 2,
-        "unite": "c. à café",
-        "reste": "cannelle"
-      },
-      {
-        "texte": "0,5 c. à café de muscade",
-        "valeur": 0.5,
-        "unite": "c. à café",
-        "reste": "muscade"
-      },
-      {
-        "texte": "1 c. à café de bicarbonate",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "bicarbonate"
-      },
-      "glaçage royal pour décorer"
-    ],
-    "etapes": [
-      "Mélanger le beurre mou, la cassonade et le miel, puis ajouter l’œuf.",
-      "Incorporer la farine, les épices et le bicarbonate. Former une boule, filmer et réfrigérer 1 heure.",
-      "Préchauffer le four à 180 °C. Étaler la pâte sur 5 mm et découper des bonshommes à l’emporte-pièce.",
-      "Cuire 8 à 10 minutes sur une plaque recouverte de papier cuisson. Laisser refroidir.",
-      "Décorer au glaçage royal (yeux, sourire, boutons)."
     ]
   },
   {
@@ -5220,6 +5320,100 @@ const recettes = [
     ]
   },
   {
+    "id": "static-686",
+    "titre": "Bûche cookie dough sans cuisson",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "25 min (+ 2 h de prise)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "300 g de farine",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "166 g de beurre mou",
+        "valeur": 166,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "130 g de vergeoise brune",
+        "valeur": 130,
+        "unite": "g",
+        "reste": "vergeoise brune"
+      },
+      {
+        "texte": "40 g de sucre blanc",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre blanc"
+      },
+      {
+        "texte": "65 g de lait",
+        "valeur": 65,
+        "unite": "g",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "120 g de pépites de chocolat",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "pépites de chocolat"
+      },
+      {
+        "texte": "200 g de chocolat au lait",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat au lait"
+      },
+      {
+        "texte": "100 g de chocolat noir",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat noir"
+      },
+      {
+        "texte": "200 g de crème liquide entière",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "crème liquide entière"
+      },
+      {
+        "texte": "25 g de beurre (ganache)",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "beurre (ganache)"
+      },
+      "feuilles d'or (facultatif)"
+    ],
+    "etapes": [
+      "Étaler la farine sur une plaque et la cuire 10 minutes à 160 °C (pour qu'elle se mange crue sans risque). Laisser complètement refroidir.",
+      "Battre le beurre mou avec la vergeoise et le sucre blanc jusqu'à obtenir une crème.",
+      "Ajouter le lait et l'extrait de vanille, puis la farine refroidie en plusieurs fois et le sel.",
+      "Incorporer les pépites de chocolat.",
+      "Étaler la pâte en rectangle sur du papier cuisson et la placer au réfrigérateur.",
+      "Ganache : verser la crème chaude sur les chocolats hachés, ajouter le beurre, mélanger et laisser épaissir 1 à 2 heures.",
+      "Étaler une partie de la ganache sur la pâte, puis rouler en bûche à l'aide du papier.",
+      "Placer 20 minutes au congélateur.",
+      "Recouvrir la bûche du reste de ganache, décorer de coulures à la poche à douille et de feuilles d'or."
+    ]
+  },
+  {
     "id": "static-53",
     "titre": "Bûche de génoise douce et mousse légère",
     "photo": "photos/enattente.png",
@@ -5926,65 +6120,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-57",
-    "titre": "Buns de viande hachée à la mozzarella",
-    "photo": "photos/enattente.png",
-    "temps": "60 min",
-    "personnes": "4",
-    "cat": "apero",
-    "ingredients": [
-      {
-        "texte": "300 g de viande hachée",
-        "valeur": 300,
-        "unite": "g",
-        "reste": "viande hachée"
-      },
-      "sel",
-      "poivre",
-      "paprika",
-      "crème liquide",
-      {
-        "texte": "50 g de caprice des dieux",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "caprice des dieux"
-      },
-      {
-        "texte": "1 mozzarella maison",
-        "valeur": 1,
-        "unite": null,
-        "reste": "mozzarella maison"
-      },
-      {
-        "texte": "1 pâte à pizza maison (rectangle)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "pâte à pizza maison (rectangle)"
-      },
-      "fromage râpé",
-      {
-        "texte": "1 jaune d'œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "jaune d'œuf"
-      },
-      "graines de sésame",
-      "ciboulette fraîche",
-      "persil frais"
-    ],
-    "etapes": [
-      "Assaisonner la viande avec sel, poivre et paprika, puis la cuire à la poêle.",
-      "Ajouter la crème liquide et le caprice des dieux râpé, mélanger.",
-      "Ajouter la mozzarella déchirée et mélanger. Laisser refroidir.",
-      "Préparer la pâte à pizza maison et l'étaler en rectangle, puis la couper en 4 carrés.",
-      "Déposer de la farce, du fromage râpé, de la mozzarella sur chaque carré.",
-      "Replier les bords et former une boule bien fermée.",
-      "Déposer sur une plaque recouverte de papier cuisson et badigeonner de jaune d'œuf.",
-      "Parsemer de graines de sésame, de ciboulette et de persil.",
-      "Mettre au four 30 min à 200°C."
-    ]
-  },
-  {
     "id": "static-58",
     "titre": "Buns farcis au poulet et mozzarella grillés",
     "photo": "photos/enattente.png",
@@ -6081,50 +6216,56 @@ const recettes = [
     "cat": "apero",
     "ingredients": [
       {
-        "texte": "25 g de mozzarella râpée",
-        "valeur": 25,
-        "unite": "g",
-        "reste": "mozzarella râpée"
-      },
-      {
-        "texte": "60 g de farine de blé",
-        "valeur": 60,
+        "texte": "129 g de farine de blé",
+        "valeur": 129,
         "unite": "g",
         "reste": "farine de blé"
       },
       {
-        "texte": "60 g de skyr",
-        "valeur": 60,
+        "texte": "120 g de skyr",
+        "valeur": 120,
         "unite": "g",
         "reste": "skyr"
       },
       {
-        "texte": "2,5 g de levure chimique",
-        "valeur": 2.5,
+        "texte": "5 g de levure chimique",
+        "valeur": 5,
         "unite": "g",
         "reste": "levure chimique"
       },
       {
-        "texte": "75 g de bacon",
-        "valeur": 75,
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "150 g de bacon",
+        "valeur": 150,
         "unite": "g",
         "reste": "bacon"
       },
       {
-        "texte": "25 g de crème 4%",
-        "valeur": 25,
+        "texte": "50 g de crème 4 %",
+        "valeur": 50,
         "unite": "g",
-        "reste": "crème 4%"
+        "reste": "crème 4 %"
+      },
+      {
+        "texte": "50 g de mozzarella râpée",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "mozzarella râpée"
       }
     ],
     "etapes": [
-      "Dans un bol, mélanger la farine, la levure chimique et le skyr pour obtenir une pâte homogène.",
-      "Ajouter la mozzarella râpée et mélanger légèrement afin qu'elle soit répartie dans la pâte sans former de grumeaux.",
-      "Diviser la pâte en deux portions égales pour former 2 buns.",
-      "Préparer la garniture en faisant revenir le bacon jusqu'à ce qu'il soit croustillant, puis le mélanger avec la crème 4% pour obtenir une sauce légère au bacon.",
-      "Former des boules ou des pains plats avec la pâte, puis déposer une cuillère de garniture au centre et refermer légèrement.",
-      "Cuire au four préchauffé à 180°C pendant environ 12 à 15 minutes, jusqu'à ce que les buns soient dorés et cuits à cœur.",
-      "Laisser légèrement tiédir avant de servir ; accompagner éventuellement d'une salade et d'une sauce légère."
+      "Mélanger le skyr, la farine, la levure et une pincée de sel jusqu'à obtenir une boule de pâte.",
+      "Pétrir légèrement pour obtenir une pâte souple.",
+      "La diviser en deux et façonner deux petits pains sur un plan fariné.",
+      "Cuire le bacon dans une poêle bien chaude jusqu'à ce qu'il soit croustillant, puis le réserver sur du papier absorbant.",
+      "Dans la poêle, faire fondre la mozzarella avec la crème pour obtenir une sauce crémeuse.",
+      "Cuire les buns dans une poêle chaude couverte, environ 3 minutes de chaque côté, jusqu'à ce qu'ils soient dorés et cuits.",
+      "Garnir les buns chauds de sauce mozzarella et de bacon, refermer et laisser reposer 1 minute avant de servir."
     ]
   },
   {
@@ -8671,26 +8812,57 @@ const recettes = [
   },
   {
     "id": "static-662",
-    "titre": "Chips de banane plantain",
+    "titre": "Chips de banane",
     "photo": "photos/enattente.png",
     "cat": "apero",
-    "temps": "20 min",
-    "personnes": "4",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "2 bananes plantain vertes",
-        "valeur": 2,
-        "unite": null,
-        "reste": "bananes plantain vertes"
+        "nom": "Banane plantain frite",
+        "temps": "20 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "2 bananes plantain vertes",
+            "valeur": 2,
+            "unite": null,
+            "reste": "bananes plantain vertes"
+          },
+          "huile pour friture",
+          "sel",
+          "paprika ou piment (facultatif)"
+        ],
+        "etapes": [
+          "Éplucher les bananes et les trancher très finement à la mandoline, en long ou en rondelles.",
+          "Les plonger par petites quantités dans l’huile chauffée à 175 °C et frire 2 à 3 minutes jusqu’à ce qu’elles soient dorées.",
+          "Égoutter sur du papier absorbant, saler et épicer aussitôt. Elles deviennent croustillantes en refroidissant."
+        ]
       },
-      "huile pour friture",
-      "sel",
-      "paprika ou piment (facultatif)"
-    ],
-    "etapes": [
-      "Éplucher les bananes et les trancher très finement à la mandoline, en long ou en rondelles.",
-      "Les plonger par petites quantités dans l’huile chauffée à 175 °C et frire 2 à 3 minutes jusqu’à ce qu’elles soient dorées.",
-      "Égoutter sur du papier absorbant, saler et épicer aussitôt. Elles deviennent croustillantes en refroidissant."
+      {
+        "nom": "Banane douce à l’huile d’olive (air fryer)",
+        "temps": "25 min",
+        "personnes": "1",
+        "ingredients": [
+          {
+            "texte": "1 banane mi-mûre",
+            "valeur": 1,
+            "unite": null,
+            "reste": "banane mi-mûre"
+          },
+          {
+            "texte": "1 cl d'huile d'olive",
+            "valeur": 1,
+            "unite": "cl",
+            "reste": "huile d'olive"
+          }
+        ],
+        "etapes": [
+          "Éplucher la banane et la couper en fines rondelles.",
+          "Les mettre dans un bol et les enrober légèrement d'huile d'olive.",
+          "Préchauffer l'air fryer à 160 °C quelques minutes.",
+          "Ranger les rondelles en une seule couche dans le panier.",
+          "Cuire 20 minutes à 160 °C en secouant le panier à mi-cuisson."
+        ]
+      }
     ]
   },
   {
@@ -9065,6 +9237,123 @@ const recettes = [
       "Enfourner 20 à 25 minutes jusqu'à ce que les choux soient bien dorés et gonflés.",
       "Sortir et laisser refroidir sur une grille, puis saupoudrer de sucre glace et parsemer de graines de sucre perlé.",
       "Déguster tiède ou à température ambiante, idéal pour le dessert de Noël."
+    ]
+  },
+  {
+    "id": "static-680",
+    "titre": "Choux craquelin à la vanille, crème pâtissière et caramel",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "55 min (+ refroidissement)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "155 ml d'eau",
+        "valeur": 155,
+        "unite": "ml",
+        "reste": "eau"
+      },
+      {
+        "texte": "68 g de beurre",
+        "valeur": 68,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "2 g de sel",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "2 g de sucre",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "88 g de farine T55",
+        "valeur": 88,
+        "unite": "g",
+        "reste": "farine T55"
+      },
+      {
+        "texte": "165 g d'œufs (3 œufs environ)",
+        "valeur": 165,
+        "unite": "g",
+        "reste": "œufs (3 œufs environ)"
+      },
+      {
+        "texte": "55 g de beurre mou (craquelin)",
+        "valeur": 55,
+        "unite": "g",
+        "reste": "beurre mou (craquelin)"
+      },
+      {
+        "texte": "55 g de cassonade",
+        "valeur": 55,
+        "unite": "g",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "55 g de farine (craquelin)",
+        "valeur": 55,
+        "unite": "g",
+        "reste": "farine (craquelin)"
+      },
+      {
+        "texte": "600 ml de lait entier",
+        "valeur": 600,
+        "unite": "ml",
+        "reste": "lait entier"
+      },
+      {
+        "texte": "5 jaunes d'œufs",
+        "valeur": 5,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "95 g de sucre (crème)",
+        "valeur": 95,
+        "unite": "g",
+        "reste": "sucre (crème)"
+      },
+      {
+        "texte": "48 g de Maïzena",
+        "valeur": 48,
+        "unite": "g",
+        "reste": "Maïzena"
+      },
+      {
+        "texte": "48 g de beurre (crème)",
+        "valeur": 48,
+        "unite": "g",
+        "reste": "beurre (crème)"
+      },
+      {
+        "texte": "1 gousse de vanille",
+        "valeur": 1,
+        "unite": "gousse",
+        "reste": "vanille"
+      },
+      {
+        "texte": "150 g de sucre (caramel)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre (caramel)"
+      }
+    ],
+    "etapes": [
+      "Craquelin : mélanger le beurre mou, la cassonade et la farine, étaler sur 2 mm entre deux feuilles de papier cuisson et placer au congélateur.",
+      "Pâte à choux : porter à ébullition l'eau, le beurre, le sel et le sucre.",
+      "Hors du feu, verser la farine d'un coup et mélanger énergiquement jusqu'à ce que la pâte se décolle des parois.",
+      "Laisser tiédir, puis incorporer les œufs petit à petit jusqu'à obtenir une pâte souple et lisse.",
+      "Pocher 8 gros choux sur une plaque en les espaçant. Découper 8 disques de craquelin et les poser sur les choux.",
+      "Cuire environ 35 minutes à 180 °C en chaleur statique, sans ouvrir le four au début.",
+      "Crème pâtissière : chauffer le lait avec la vanille. Fouetter les jaunes avec le sucre et la Maïzena, verser le lait chaud, puis remettre sur feu moyen en fouettant jusqu'à épaississement. Ajouter le beurre hors du feu, filmer au contact et laisser refroidir.",
+      "Caramel à sec : faire fondre le sucre sans eau jusqu'à un caramel ambré.",
+      "Garnir généreusement les choux de crème pâtissière, puis tremper délicatement le dessus dans le caramel."
     ]
   },
   {
@@ -12853,75 +13142,149 @@ const recettes = [
   },
   {
     "id": "static-645",
-    "titre": "Cupcakes sapins de Noël",
+    "titre": "Cupcakes",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "45 min",
-    "personnes": "12",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "200 g de farine",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "farine"
+        "nom": "Vanille ultra moelleux",
+        "temps": "31 min",
+        "personnes": "12",
+        "ingredients": [
+          {
+            "texte": "60 g de beurre fondu",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "beurre fondu"
+          },
+          {
+            "texte": "60 g d'huile",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "huile"
+          },
+          {
+            "texte": "60 g de lait",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "lait"
+          },
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "120 g de sucre",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "130 g de farine",
+            "valeur": 130,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1 sachet de levure chimique",
+            "valeur": 1,
+            "unite": "sachet",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 c. à café d'arôme vanille",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "arôme vanille"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180 °C et placer 12 caissettes dans un moule à muffins.",
+          "Mélanger le beurre fondu, l'huile, les œufs, le lait, le sucre et la vanille, puis ajouter le sel.",
+          "Tamiser la farine avec la levure et l'incorporer petit à petit jusqu'à obtenir une pâte lisse.",
+          "Remplir chaque caissette avec 2 cuillères à soupe de pâte.",
+          "Cuire environ 16 minutes, jusqu'à ce qu'un cure-dent ressorte propre.",
+          "Laisser refroidir avant de décorer avec le glaçage de ton choix."
+        ]
       },
       {
-        "texte": "150 g de sucre",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "2 œufs",
-        "valeur": 2,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "120 g de beurre fondu",
-        "valeur": 120,
-        "unite": "g",
-        "reste": "beurre fondu"
-      },
-      {
-        "texte": "120 ml de lait",
-        "valeur": 120,
-        "unite": "ml",
-        "reste": "lait"
-      },
-      {
-        "texte": "1 sachet de levure chimique",
-        "valeur": 1,
-        "unite": "sachet",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "250 g de mascarpone",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "mascarpone"
-      },
-      {
-        "texte": "200 ml de crème liquide entière bien froide",
-        "valeur": 200,
-        "unite": "ml",
-        "reste": "crème liquide entière bien froide"
-      },
-      {
-        "texte": "80 g de sucre glace",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      "colorant alimentaire vert",
-      "perles de sucre et étoiles en sucre"
-    ],
-    "etapes": [
-      "Préchauffer le four à 180 °C. Mélanger les œufs et le sucre, puis le beurre, le lait, la farine et la levure.",
-      "Remplir 12 caissettes aux deux tiers et cuire 20 minutes. Laisser refroidir complètement.",
-      "Fouetter le mascarpone, la crème et le sucre glace en chantilly ferme, puis la colorer en vert.",
-      "Avec une douille étoilée, pocher la crème en spirale de plus en plus étroite pour former un sapin.",
-      "Décorer de perles de sucre (les boules) et d’une étoile au sommet."
+        "nom": "Sapins de Noël",
+        "temps": "45 min",
+        "personnes": "12",
+        "ingredients": [
+          {
+            "texte": "200 g de farine",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "150 g de sucre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "120 g de beurre fondu",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "beurre fondu"
+          },
+          {
+            "texte": "120 ml de lait",
+            "valeur": 120,
+            "unite": "ml",
+            "reste": "lait"
+          },
+          {
+            "texte": "1 sachet de levure chimique",
+            "valeur": 1,
+            "unite": "sachet",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "250 g de mascarpone",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "mascarpone"
+          },
+          {
+            "texte": "200 ml de crème liquide entière bien froide",
+            "valeur": 200,
+            "unite": "ml",
+            "reste": "crème liquide entière bien froide"
+          },
+          {
+            "texte": "80 g de sucre glace",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          "colorant alimentaire vert",
+          "perles de sucre et étoiles en sucre"
+        ],
+        "etapes": [
+          "Préchauffer le four à 180 °C. Mélanger les œufs et le sucre, puis le beurre, le lait, la farine et la levure.",
+          "Remplir 12 caissettes aux deux tiers et cuire 20 minutes. Laisser refroidir complètement.",
+          "Fouetter le mascarpone, la crème et le sucre glace en chantilly ferme, puis la colorer en vert.",
+          "Avec une douille étoilée, pocher la crème en spirale de plus en plus étroite pour former un sapin.",
+          "Décorer de perles de sucre (les boules) et d’une étoile au sommet."
+        ]
+      }
     ]
   },
   {
@@ -15327,49 +15690,95 @@ const recettes = [
   },
   {
     "id": "static-489",
-    "titre": "Foie gras mi-cuit au torchon",
+    "titre": "Foie gras mi-cuit maison",
     "photo": "photos/enattente.png",
     "cat": "entree",
-    "temps": "30 min (+ 48 h de repos)",
-    "personnes": "8",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "1 lobe de foie gras cru déveiné (500 g)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "lobe de foie gras cru déveiné (500 g)"
+        "nom": "Au torchon",
+        "temps": "30 min (+ 48 h de repos)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "1 lobe de foie gras cru déveiné (500 g)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "lobe de foie gras cru déveiné (500 g)"
+          },
+          {
+            "texte": "7 g de sel fin",
+            "valeur": 7,
+            "unite": "g",
+            "reste": "sel fin"
+          },
+          {
+            "texte": "2 g de poivre blanc",
+            "valeur": 2,
+            "unite": "g",
+            "reste": "poivre blanc"
+          },
+          {
+            "texte": "1 pincée de sucre",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sucre"
+          },
+          {
+            "texte": "2 c. à soupe de cognac ou porto (facultatif)",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "cognac ou porto (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Laisser le foie 1 heure à température ambiante, puis retirer les veines s’il ne l’est pas.",
+          "L’assaisonner avec le sel, le poivre, le sucre et l’alcool.",
+          "Le rouler serré en boudin dans du film alimentaire, puis dans un torchon propre, en ficelant les extrémités.",
+          "Le plonger 4 minutes dans une casserole d’eau frémissante (environ 80 °C), puis immédiatement dans de l’eau glacée.",
+          "Réserver 48 heures au réfrigérateur avant de trancher. Servir avec du pain d’épices ou un chutney de figues."
+        ]
       },
       {
-        "texte": "7 g de sel fin",
-        "valeur": 7,
-        "unite": "g",
-        "reste": "sel fin"
-      },
-      {
-        "texte": "2 g de poivre blanc",
-        "valeur": 2,
-        "unite": "g",
-        "reste": "poivre blanc"
-      },
-      {
-        "texte": "1 pincée de sucre",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sucre"
-      },
-      {
-        "texte": "2 c. à soupe de cognac ou porto (facultatif)",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "cognac ou porto (facultatif)"
+        "nom": "Au mug (méthode poêlée)",
+        "temps": "1 h 02 (+ 3 h de repos)",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "1 lobe de foie gras de canard cru",
+            "valeur": 1,
+            "unite": null,
+            "reste": "lobe de foie gras de canard cru"
+          },
+          {
+            "texte": "7 g de sel",
+            "valeur": 7,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "8 g de poivre",
+            "valeur": 8,
+            "unite": "g",
+            "reste": "poivre"
+          },
+          {
+            "texte": "1 cl de liqueur de poire Williams (facultatif)",
+            "valeur": 1,
+            "unite": "cl",
+            "reste": "liqueur de poire Williams (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Laisser le foie gras 1 heure à température ambiante.",
+          "Le déveiner : séparer les deux lobes et pousser le foie le long des veines avec le manche d'une petite cuillère.",
+          "Remodeler le foie, l'assaisonner avec le sel et le poivre et arroser de liqueur si désiré.",
+          "Laisser mariner 2 heures (ou une nuit) au réfrigérateur.",
+          "Couper le foie gras en tranches d'environ 2 cm.",
+          "Poêler les tranches 1 minute d'un côté à feu moyen, couper le feu, les retourner et laisser reposer 4 minutes dans la poêle.",
+          "Les tasser dans un mug et laisser reposer 1 heure à température ambiante.",
+          "Réfrigérer 3 à 5 jours avant de déguster."
+        ]
       }
-    ],
-    "etapes": [
-      "Laisser le foie 1 heure à température ambiante, puis retirer les veines s’il ne l’est pas.",
-      "L’assaisonner avec le sel, le poivre, le sucre et l’alcool.",
-      "Le rouler serré en boudin dans du film alimentaire, puis dans un torchon propre, en ficelant les extrémités.",
-      "Le plonger 4 minutes dans une casserole d’eau frémissante (environ 80 °C), puis immédiatement dans de l’eau glacée.",
-      "Réserver 48 heures au réfrigérateur avant de trancher. Servir avec du pain d’épices ou un chutney de figues."
     ]
   },
   {
@@ -16417,41 +16826,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-147",
-    "titre": "Galettes wrap maison au yaourt",
-    "photo": "photos/enattente.png",
-    "temps": "15 min",
-    "personnes": "4",
-    "cat": "base-culinaire",
-    "ingredients": [
-      {
-        "texte": "250 g de farine",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1 c. à café de sel",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "sel"
-      },
-      {
-        "texte": "250 g de yaourt nature",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "yaourt nature"
-      }
-    ],
-    "etapes": [
-      "Dans un saladier, mélanger tous les ingrédients avec une spatule jusqu'à ce qu'il n'y ait plus de farine dans le saladier.",
-      "Mettre un peu de farine sur le plan de travail pour y déposer la pâte et la pétrir quelques minutes (ajouter de la farine si ça colle).",
-      "Quand la pâte est prête, la diviser en 4 ou 6 parts égales puis les étaler à l'aide d'un rouleau.",
-      "Chauffer une poêle légèrement huilée sur feu moyen-fort puis y déposer les pains.",
-      "Après 1 à 2 min, retourner les pains plats, laisser bien gonfler et dorer."
-    ]
-  },
-  {
     "id": "static-399",
     "titre": "Ganache au chocolat",
     "photo": "photos/enattente.png",
@@ -16825,53 +17199,56 @@ const recettes = [
     "id": "static-150",
     "titre": "Gâteau au yaourt",
     "photo": "photos/enattente.png",
-    "temps": "45 min",
+    "temps": "30 min",
     "personnes": "6",
     "cat": "dessert",
     "ingredients": [
       {
-        "texte": "1 yaourt",
+        "texte": "1 pot de yaourt nature",
         "valeur": 1,
-        "unite": null,
-        "reste": "yaourt"
+        "unite": "pot",
+        "reste": "yaourt nature"
       },
       {
-        "texte": "300 g de farine",
-        "valeur": 300,
-        "unite": "g",
+        "texte": "3 pots de farine",
+        "valeur": 3,
+        "unite": "pot",
         "reste": "farine"
       },
       {
-        "texte": "200 g de sucre",
-        "valeur": 200,
-        "unite": "g",
+        "texte": "2 pots de sucre",
+        "valeur": 2,
+        "unite": "pot",
         "reste": "sucre"
       },
       {
-        "texte": "100 ml d'huile",
-        "valeur": 100,
-        "unite": "ml",
+        "texte": "0,5 pot d'huile",
+        "valeur": 0.5,
+        "unite": "pot",
         "reste": "huile"
-      },
-      {
-        "texte": "3 œufs",
-        "valeur": 3,
-        "unite": null,
-        "reste": "œufs"
       },
       {
         "texte": "1 sachet de levure chimique",
         "valeur": 1,
         "unite": "sachet",
         "reste": "levure chimique"
+      },
+      {
+        "texte": "3 œufs",
+        "valeur": 3,
+        "unite": null,
+        "reste": "œufs"
       }
     ],
     "etapes": [
-      "Dans un grand bol, versez le yaourt.",
-      "Ajoutez les œufs un à un en mélangeant bien après chaque ajout.",
-      "Incorporez le sucre et l'huile, puis mélangez jusqu'à obtenir une préparation homogène.",
-      "Ajoutez la farine et la levure chimique, puis mélangez délicatement jusqu'à ce qu'il n'y ait plus de grumeaux.",
-      "Verser la pâte dans un moule beurré et fariné, puis enfourner à 180 °C pendant 30 à 35 minutes."
+      "Préchauffer le four à 180 °C.",
+      "Verser le yaourt dans un saladier et garder le pot vide pour mesurer les autres ingrédients.",
+      "Ajouter les 3 pots de farine et les 2 pots de sucre, puis mélanger.",
+      "Ajouter le demi-pot d'huile et la levure, puis continuer à mélanger.",
+      "Incorporer les œufs et mélanger jusqu'à obtenir une pâte lisse, sans grumeaux.",
+      "Répartir la pâte dans de petits moules (1 grosse cuillère à soupe par moule) ou dans un grand moule beurré.",
+      "Cuire 12 à 15 minutes pour les petits moules, 30 à 35 minutes pour un grand moule, jusqu'à ce que le gâteau soit doré et ferme au toucher.",
+      "Laisser refroidir. Les petits gâteaux peuvent être coupés en deux et garnis de confiture ou de Nutella."
     ]
   },
   {
@@ -21428,13 +21805,117 @@ const recettes = [
     ]
   },
   {
+    "id": "static-685",
+    "titre": "Kesra farcie au thon, tomate et mozzarella",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "30 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1000 g de semoule fine",
+        "valeur": 1000,
+        "unite": "g",
+        "reste": "semoule fine"
+      },
+      {
+        "texte": "120 g d'huile d'olive",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "10 g de sel",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "30 cl d'eau tiède",
+        "valeur": 30,
+        "unite": "cl",
+        "reste": "eau tiède"
+      },
+      {
+        "texte": "20 g d'huile d'olive (farce)",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "huile d'olive (farce)"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "1 tomate",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tomate"
+      },
+      {
+        "texte": "5 g de concentré de tomate",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "concentré de tomate"
+      },
+      {
+        "texte": "1 pincée de sel (farce)",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel (farce)"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      },
+      {
+        "texte": "2 g de paprika",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "paprika"
+      },
+      {
+        "texte": "120 g de thon émietté",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "thon émietté"
+      },
+      {
+        "texte": "150 g de mozzarella",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mozzarella"
+      }
+    ],
+    "etapes": [
+      "Mélanger la semoule avec le sel et l'huile d'olive.",
+      "Ajouter l'eau tiède petit à petit en pétrissant jusqu'à obtenir une pâte lisse (ajouter un peu d'eau si elle est trop sèche).",
+      "Couvrir et laisser reposer quelques minutes au frais.",
+      "Farce : faire revenir l'oignon émincé dans l'huile d'olive jusqu'à ce qu'il soit translucide.",
+      "Ajouter la tomate en petits cubes, le concentré de tomate et les épices, puis laisser compoter environ 15 minutes.",
+      "Diviser la pâte en 4 portions et les étaler en disques fins.",
+      "Garnir une moitié de chaque disque de tomate, de thon et de mozzarella, replier en chausson et bien souder les bords. Piquer légèrement le dessus.",
+      "Cuire dans une poêle très chaude 10 à 15 minutes, en retournant régulièrement et en appuyant avec un torchon pour une cuisson régulière."
+    ]
+  },
+  {
     "id": "static-197",
     "titre": "Kinder Chocobons maison",
     "photo": "photos/enattente.png",
-    "temps": "25 min",
-    "personnes": "12",
+    "temps": "25 min (+ prise au frais)",
+    "personnes": "25 pièces",
     "cat": "dessert",
     "ingredients": [
+      {
+        "texte": "240 g de chocolat au lait",
+        "valeur": 240,
+        "unite": "g",
+        "reste": "chocolat au lait"
+      },
       {
         "texte": "50 g de beurre",
         "valeur": 50,
@@ -21454,16 +21935,10 @@ const recettes = [
         "reste": "chocolat blanc"
       },
       {
-        "texte": "30 g de noisettes ou pralin",
+        "texte": "30 g de noisettes ou de pralin",
         "valeur": 30,
         "unite": "g",
-        "reste": "noisettes ou pralin"
-      },
-      {
-        "texte": "200 g de chocolat au lait",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chocolat au lait"
+        "reste": "noisettes ou de pralin"
       }
     ],
     "etapes": [
@@ -22410,6 +22885,42 @@ const recettes = [
     ]
   },
   {
+    "id": "static-682",
+    "titre": "Lessive maison au savon de Marseille",
+    "photo": "photos/enattente.png",
+    "cat": "maison",
+    "temps": "5 min (+ refroidissement)",
+    "personnes": "1 litre",
+    "ingredients": [
+      {
+        "texte": "50 g de copeaux de savon de Marseille",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "copeaux de savon de Marseille"
+      },
+      {
+        "texte": "20 g de cristaux de soude",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "cristaux de soude"
+      },
+      {
+        "texte": "1 L d'eau bouillante",
+        "valeur": 1,
+        "unite": "L",
+        "reste": "eau bouillante"
+      }
+    ],
+    "etapes": [
+      "Mettre les copeaux de savon de Marseille et les cristaux de soude dans un grand bocal.",
+      "Verser 1 litre d'eau bouillante dessus.",
+      "Remuer régulièrement jusqu'à ce que le savon soit fondu et le mélange homogène.",
+      "Laisser refroidir : le mélange s'épaissit en refroidissant.",
+      "Mixer brièvement pour obtenir une texture plus fluide et un peu crémeuse, puis laisser prendre. Bien secouer avant chaque utilisation.",
+      "Précaution : les cristaux de soude sont irritants, porter des gants et garder la lessive hors de portée des enfants."
+    ]
+  },
+  {
     "id": "static-472",
     "titre": "Limonade maison",
     "photo": "photos/enattente.png",
@@ -22855,6 +23366,104 @@ const recettes = [
           "Garniture : faire fondre doucement le chocolat noir avec le beurre, ajouter le praliné si désiré et laisser épaissir.",
           "Assembler les coques refroidies deux par deux avec la garniture et réserver au frais quelques minutes."
         ]
+      },
+      {
+        "nom": "Citrouilles d’Halloween (meringue italienne)",
+        "temps": "27 min (+ croûtage)",
+        "personnes": "60",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amandes",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amandes"
+          },
+          {
+            "texte": "150 g de sucre glace",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          {
+            "texte": "55 g de blancs d'œufs",
+            "valeur": 55,
+            "unite": "g",
+            "reste": "blancs d'œufs"
+          },
+          {
+            "texte": "150 g de sucre en poudre",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre en poudre"
+          },
+          {
+            "texte": "37 g d'eau",
+            "valeur": 37,
+            "unite": "g",
+            "reste": "eau"
+          },
+          {
+            "texte": "55 g de blancs d'œufs (meringue)",
+            "valeur": 55,
+            "unite": "g",
+            "reste": "blancs d'œufs (meringue)"
+          },
+          "colorant orange",
+          "ganache montée au chocolat",
+          "praliné noisette",
+          "pâte d'amande verte (pédoncules)"
+        ],
+        "etapes": [
+          "Tamiser la poudre d'amandes et le sucre glace, puis les mélanger avec les premiers 55 g de blancs d'œufs.",
+          "Cuire l'eau et le sucre. Quand le sirop atteint 115 °C, commencer à monter les autres 55 g de blancs au batteur à grande vitesse.",
+          "À 118 °C, verser le sirop en filet sur les blancs sans arrêter de fouetter. Fouetter encore 1 minute à grande vitesse, puis 2 minutes à vitesse moyenne.",
+          "Laisser tiédir la meringue, puis l'incorporer au mélange aux amandes avec le colorant orange. Macaronner jusqu'à ce que la pâte forme un ruban.",
+          "Avec une douille de 8 mm, pocher des citrouilles en suivant un gabarit glissé sous le papier cuisson (le retirer avant d'enfourner).",
+          "Cuire environ 12 minutes à 145 °C, en ouvrant brièvement le four à la 8e et à la 10e minute.",
+          "Laisser refroidir, garnir de ganache montée et de praliné, puis ajouter un pédoncule en pâte d'amande."
+        ]
+      },
+      {
+        "nom": "Colorés (meringue française)",
+        "temps": "25 min (+ croûtage)",
+        "personnes": "16",
+        "ingredients": [
+          {
+            "texte": "100 g de blancs d'œufs",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "blancs d'œufs"
+          },
+          {
+            "texte": "90 g de sucre en poudre",
+            "valeur": 90,
+            "unite": "g",
+            "reste": "sucre en poudre"
+          },
+          {
+            "texte": "130 g de poudre d'amandes",
+            "valeur": 130,
+            "unite": "g",
+            "reste": "poudre d'amandes"
+          },
+          {
+            "texte": "130 g de sucre glace",
+            "valeur": 130,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          "colorants alimentaires (vert, jaune, violet, rose)",
+          "garniture au choix (ganache, confiture, crème au beurre)"
+        ],
+        "etapes": [
+          "Fouetter les blancs d'œufs avec le sucre en poudre jusqu'à obtenir une meringue ferme.",
+          "Ajouter la poudre d'amandes et le sucre glace tamisés.",
+          "Macaronner jusqu'à obtenir une pâte lisse et brillante qui forme un ruban.",
+          "Répartir la pâte dans plusieurs bols et colorer chacun (vert, jaune, violet, rose).",
+          "Pocher des disques sur une plaque recouverte d'un tapis en silicone, en suivant des cercles guides. Laisser croûter.",
+          "Cuire 15 minutes à 145 °C.",
+          "Garnir les coques refroidies et les assembler deux par deux."
+        ]
       }
     ]
   },
@@ -23289,9 +23898,9 @@ const recettes = [
   },
   {
     "id": "static-215",
-    "titre": "Maki apéro jambon et cookies salés parmesan",
+    "titre": "Maki jambon, avocat et fromage frais",
     "photo": "photos/enattente.png",
-    "temps": "45 min",
+    "temps": "50 min",
     "personnes": "4",
     "cat": "apero",
     "ingredients": [
@@ -23302,21 +23911,33 @@ const recettes = [
         "reste": "riz rond à sushi"
       },
       {
-        "texte": "200 g de jambon braisé",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "jambon braisé"
+        "texte": "2 c. à soupe de vinaigre de riz",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "vinaigre de riz"
       },
       {
-        "texte": "100 g de caprice des dieux à tartiner",
+        "texte": "1 c. à soupe de sucre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "sucre"
+      },
+      {
+        "texte": "100 g de jambon blanc",
         "valeur": 100,
         "unite": "g",
-        "reste": "caprice des dieux à tartiner"
+        "reste": "jambon blanc"
       },
       {
-        "texte": "50 g de graines de sésame",
-        "valeur": 50,
+        "texte": "60 g de fromage à tartiner",
+        "valeur": 60,
         "unite": "g",
+        "reste": "fromage à tartiner"
+      },
+      {
+        "texte": "1 c. à soupe de graines de sésame",
+        "valeur": 1,
+        "unite": "c. à soupe",
         "reste": "graines de sésame"
       },
       {
@@ -23326,89 +23947,32 @@ const recettes = [
         "reste": "avocat"
       },
       {
-        "texte": "1 concombre",
+        "texte": "1/2 concombre",
         "valeur": 1,
         "unite": null,
-        "reste": "concombre"
+        "reste": "/2 concombre"
       },
       {
-        "texte": "50 g d'oignons frits",
-        "valeur": 50,
-        "unite": "g",
+        "texte": "2 c. à soupe d'oignons frits",
+        "valeur": 2,
+        "unite": "c. à soupe",
         "reste": "oignons frits"
       },
       {
-        "texte": "50 ml de sauce soja",
-        "valeur": 50,
+        "texte": "45 ml de sauce soja sucrée",
+        "valeur": 45,
         "unite": "ml",
-        "reste": "sauce soja"
-      },
-      "feuilles de nori",
-      {
-        "texte": "150 g de beurre maison",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "beurre maison"
-      },
-      {
-        "texte": "130 g de farine",
-        "valeur": 130,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "1 c. à soupe de levure chimique",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "1 c. à soupe de parmesan râpé",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "parmesan râpé"
-      },
-      {
-        "texte": "100 g de caprice des dieux râpé",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "caprice des dieux râpé"
-      },
-      {
-        "texte": "1 c. à café de sel",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "sel"
-      },
-      {
-        "texte": "1 c. à café de poivre",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "poivre"
-      },
-      {
-        "texte": "50 g de chèvre frais",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "chèvre frais"
-      },
-      "vinaigre de riz et sucre (pour le riz)"
+        "reste": "sauce soja sucrée"
+      }
     ],
     "etapes": [
-      "Cuire le riz à sushi selon les instructions, l'assaisonner avec du vinaigre de riz et du sucre.",
-      "Couper l'avocat et le concombre en fines lamelles.",
-      "Sur une feuille de nori, étaler le riz, ajouter le jambon, le caprice des dieux à tartiner, les lamelles d'avocat et de concombre, puis parsemer de graines de sésame.",
-      "Rouler le nori en serrant bien pour former un maki, puis couper en morceaux.",
-      "Pour les cookies salés, préchauffer le four à 180°C.",
-      "Dans un bol, mélanger le beurre maison ramolli avec l'œuf, puis ajouter la farine, la levure, le parmesan, le jambon coupé en dés, le caprice des dieux râpé, le sel et le poivre.",
-      "Former des boules de pâte et les placer sur une plaque recouverte de papier sulfurisé.",
-      "Enfourner pendant environ 15 minutes, puis laisser refroidir avant de servir avec du chèvre frais en topping."
+      "Cuire le riz à sushi selon le paquet, puis l'assaisonner avec le vinaigre de riz et le sucre. Mélanger et laisser tiédir.",
+      "Poser une feuille de film alimentaire sur le plan de travail et y étaler le riz en couche régulière.",
+      "Couper le jambon, l'avocat et le concombre en bâtonnets. Les aligner au centre du riz avec le fromage à tartiner et les oignons frits.",
+      "Parsemer de graines de sésame, puis rouler fermement à l'aide du film pour former un boudin bien serré.",
+      "Garder le rouleau dans le film et le placer 30 minutes au réfrigérateur pour qu'il se tienne à la découpe.",
+      "Retirer le film, couper en rondelles régulières et servir avec la sauce soja sucrée.",
+      "Les garnitures peuvent varier selon les envies (thon, saumon, surimi…)."
     ]
   },
   {
@@ -26044,6 +26608,69 @@ const recettes = [
           "Couper chaque feuille de riz en deux et déposer une cuillère de farce près du bord pour rouler les nems mini, en scellant les bords avec un peu d'eau si nécessaire.",
           "Disposer les nems sur une plaque recouverte de papier cuisson, badigeonner légèrement d'huile et cuire au four préchauffé à 200°C pendant 12 à 15 minutes, en les retournant à mi-cuisson pour une cuisson uniforme."
         ]
+      },
+      {
+        "nom": "Bouchées croustillantes à l’air fryer",
+        "temps": "35 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "300 g de blanc de poulet",
+            "valeur": 300,
+            "unite": "g",
+            "reste": "blanc de poulet"
+          },
+          {
+            "texte": "1 oignon",
+            "valeur": 1,
+            "unite": null,
+            "reste": "oignon"
+          },
+          {
+            "texte": "1 carotte",
+            "valeur": 1,
+            "unite": null,
+            "reste": "carotte"
+          },
+          {
+            "texte": "1 gousse d'ail",
+            "valeur": 1,
+            "unite": "gousse",
+            "reste": "ail"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          },
+          {
+            "texte": "1 pincée de poivre",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "poivre"
+          },
+          {
+            "texte": "8 feuilles de riz",
+            "valeur": 8,
+            "unite": "feuille",
+            "reste": "riz"
+          },
+          {
+            "texte": "15 ml d'huile",
+            "valeur": 15,
+            "unite": "ml",
+            "reste": "huile"
+          }
+        ],
+        "etapes": [
+          "Hacher le poulet finement au mixeur.",
+          "Le mélanger avec l'oignon finement haché, la carotte râpée, l'ail haché, le sel et le poivre.",
+          "Tremper une feuille de riz dans l'eau pour l'assouplir, déposer une ligne de farce et rouler.",
+          "Couper les rouleaux en tronçons égaux avec des ciseaux.",
+          "Enrober les bouchées d'un filet d'huile dans un bol.",
+          "Cuire à l'air fryer à 200 °C environ 12 minutes, jusqu'à ce qu'elles soient dorées et croustillantes."
+        ]
       }
     ]
   },
@@ -27275,89 +27902,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-258",
-    "titre": "Pain burger moelleux maison aux graines de sésame",
-    "photo": "photos/enattente.png",
-    "temps": "80 min",
-    "personnes": "7 pains",
-    "cat": "base-culinaire",
-    "ingredients": [
-      {
-        "texte": "125 ml de lait tiède",
-        "valeur": 125,
-        "unite": "ml",
-        "reste": "lait tiède"
-      },
-      {
-        "texte": "1 sachet levure boulangère",
-        "valeur": 1,
-        "unite": null,
-        "reste": "sachet levure boulangère"
-      },
-      {
-        "texte": "1 c. à soupe de sucre",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "sucre"
-      },
-      {
-        "texte": "450 g de farine",
-        "valeur": 450,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1 c. à café de levure chimique",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "1 c. à café de sel",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "sel"
-      },
-      {
-        "texte": "1 c. à soupe de vinaigre",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "vinaigre"
-      },
-      {
-        "texte": "50 ml d'huile d'olive",
-        "valeur": 50,
-        "unite": "ml",
-        "reste": "huile d'olive"
-      },
-      {
-        "texte": "125 ml de lait entier",
-        "valeur": 125,
-        "unite": "ml",
-        "reste": "lait entier"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      "graines de sésame"
-    ],
-    "etapes": [
-      "Dans un premier bol, mélanger le lait tiède, la levure boulangère et le sucre. Laisser reposer 10 minutes jusqu'à apparition de bulles.",
-      "Dans un second bol, combiner la farine, la levure chimique et le sel.",
-      "Ajouter le vinaigre, l'huile d'olive et le lait. Mélanger pour obtenir une pâte homogène.",
-      "Ajouter le premier mélange à la pâte et pétrir jusqu'à obtention d'une pâte lisse et élastique.",
-      "Laisser reposer la pâte couverte d'un linge humide pendant 45 minutes jusqu'à ce qu'elle double.",
-      "Diviser la pâte en 7 portions et façonner des boules légèrement aplaties.",
-      "Laisser reposer 30 minutes sur une plaque farinée.",
-      "Préchauffer le four à 180°C.",
-      "Badigeonner les pains avec l'œuf battu mélangé au lait et saupoudrer de graines de sésame.",
-      "Cuire pendant environ 20 minutes à 180°C jusqu'à dorure légère."
-    ]
-  },
-  {
     "id": "static-494",
     "titre": "Pain d’épices",
     "photo": "photos/enattente.png",
@@ -27507,47 +28051,92 @@ const recettes = [
     "id": "static-260",
     "titre": "Pain maison simple et croustillant",
     "photo": "photos/enattente.png",
-    "temps": "70 min (+ 2h de repos)",
-    "personnes": "4",
     "cat": "base-culinaire",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "400 g de farine",
-        "valeur": 400,
-        "unite": "g",
-        "reste": "farine"
+        "nom": "Pain rond croustillant",
+        "temps": "70 min (+ 2h de repos)",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "400 g de farine",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "300 ml d'eau tiède",
+            "valeur": 300,
+            "unite": "ml",
+            "reste": "eau tiède"
+          },
+          {
+            "texte": "1 sachet de levure boulangère",
+            "valeur": 1,
+            "unite": "sachet",
+            "reste": "levure boulangère"
+          },
+          {
+            "texte": "1 c. à café de sel",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Dans un grand saladier, verser la farine.",
+          "Ajouter le sachet de levure boulangère et le sel, puis mélanger brièvement pour répartir les ingrédients.",
+          "Ajouter progressivement l'eau tiède dans le mélange farine-levure-sel jusqu'à obtenir une pâte légèrement collante et visqueuse.",
+          "Pétrir la pâte à la main ou avec une spatule jusqu'à ce qu'elle soit homogène et élastique.",
+          "Couvrir avec un torchon et laisser poser au moins deux heures pour lever ; idéalement laisser poser toute la nuit pour un meilleur développement aromatique.",
+          "Au bout de la première levée, saupoudrer légèrement le plan de travail de farine et retourner la pâte dessus pour la dégazer délicatement.",
+          "Rabattre la pâte en ramenant un côté puis l'autre, puis replier jusqu'à obtenir une forme lisse et régulière.",
+          "Laisser reposer à nouveau couvert pendant trente minutes sur le plan de travail.",
+          "Préchauffer le four à 230°C et préparer un plat allant au four adapté ; y placer la pâte et couvrir.",
+          "Cuire trente minutes sous couvercle, puis retirer le couvercle et poursuivre la cuisson vingt minutes supplémentaires pour obtenir une croûte dorée et croustillante.",
+          "Laisser refroidir le pain jusqu'à tiède ou refroidir complètement avant de le couper afin de préserver les bulles et la mie."
+        ]
       },
       {
-        "texte": "300 ml d'eau tiède",
-        "valeur": 300,
-        "unite": "ml",
-        "reste": "eau tiède"
-      },
-      {
-        "texte": "1 sachet de levure boulangère",
-        "valeur": 1,
-        "unite": "sachet",
-        "reste": "levure boulangère"
-      },
-      {
-        "texte": "1 c. à café de sel",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "sel"
+        "nom": "Petits pains sans pétrissage",
+        "temps": "50 min (+ 1 h 30 de pousse)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "300 g de farine de blé T65",
+            "valeur": 300,
+            "unite": "g",
+            "reste": "farine de blé T65"
+          },
+          {
+            "texte": "230 ml d'eau tiède",
+            "valeur": 230,
+            "unite": "ml",
+            "reste": "eau tiède"
+          },
+          {
+            "texte": "1/2 sachet de levure boulangère sèche",
+            "valeur": 1,
+            "unite": null,
+            "reste": "/2 sachet de levure boulangère sèche"
+          },
+          {
+            "texte": "5 g de sel",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Mélanger la levure avec l'eau tiède (pas chaude, pour ne pas abîmer la levure).",
+          "Ajouter la farine et le sel, puis mélanger à la cuillère jusqu'à obtenir une pâte homogène.",
+          "Ne pas pétrir : couvrir le saladier et laisser lever jusqu'à ce que la pâte double de volume, 1 h 30 à 2 h.",
+          "Sans dégazer, déposer délicatement la pâte sur un plan légèrement fariné.",
+          "La diviser en 6 portions et les façonner en petites boules ou en mini-baguettes (rabattre les extrémités vers le centre, puis souder les bords).",
+          "Les poser sur une plaque recouverte de papier cuisson, soudure en dessous, et les saupoudrer de farine.",
+          "Cuire 15 à 20 minutes à 230 °C, avec un petit récipient d'eau dans le four pour une croûte plus croustillante."
+        ]
       }
-    ],
-    "etapes": [
-      "Dans un grand saladier, verser la farine.",
-      "Ajouter le sachet de levure boulangère et le sel, puis mélanger brièvement pour répartir les ingrédients.",
-      "Ajouter progressivement l'eau tiède dans le mélange farine-levure-sel jusqu'à obtenir une pâte légèrement collante et visqueuse.",
-      "Pétrir la pâte à la main ou avec une spatule jusqu'à ce qu'elle soit homogène et élastique.",
-      "Couvrir avec un torchon et laisser poser au moins deux heures pour lever ; idéalement laisser poser toute la nuit pour un meilleur développement aromatique.",
-      "Au bout de la première levée, saupoudrer légèrement le plan de travail de farine et retourner la pâte dessus pour la dégazer délicatement.",
-      "Rabattre la pâte en ramenant un côté puis l'autre, puis replier jusqu'à obtenir une forme lisse et régulière.",
-      "Laisser reposer à nouveau couvert pendant trente minutes sur le plan de travail.",
-      "Préchauffer le four à 230°C et préparer un plat allant au four adapté ; y placer la pâte et couvrir.",
-      "Cuire trente minutes sous couvercle, puis retirer le couvercle et poursuivre la cuisson vingt minutes supplémentaires pour obtenir une croûte dorée et croustillante.",
-      "Laisser refroidir le pain jusqu'à tiède ou refroidir complètement avant de le couper afin de préserver les bulles et la mie."
     ]
   },
   {
@@ -27650,6 +28239,74 @@ const recettes = [
       "Plier chaque tranche en deux pour former une demi-lune et appuyer fermement sur les bords.",
       "Cuire dans l'air fryer à 180°C pendant 5 minutes ou au four à 200°C pendant 7 à 8 minutes.",
       "Laisser refroidir légèrement avant de servir."
+    ]
+  },
+  {
+    "id": "static-677",
+    "titre": "Pain pizza à la raclette",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 pâte à pizza",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte à pizza"
+      },
+      {
+        "texte": "1 oignon",
+        "valeur": 1,
+        "unite": null,
+        "reste": "oignon"
+      },
+      {
+        "texte": "100 g de jambon en allumettes",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "jambon en allumettes"
+      },
+      {
+        "texte": "2 c. à soupe d'huile d'olive",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "15 g de beurre",
+        "valeur": 15,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "150 g de mozzarella râpée",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mozzarella râpée"
+      },
+      {
+        "texte": "3 tranches de fromage à raclette",
+        "valeur": 3,
+        "unite": "tranche",
+        "reste": "fromage à raclette"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Émincer l'oignon en petits morceaux et couper le jambon en allumettes.",
+      "Chauffer l'huile d'olive et le beurre dans une poêle, puis faire revenir l'oignon et le jambon quelques minutes à feu moyen. Poivrer.",
+      "Étaler la pâte à pizza sur le plan de travail.",
+      "Répartir une bonne poignée de mozzarella sur une moitié de la pâte, puis la préparation oignon-jambon.",
+      "Ajouter les tranches de raclette et un peu de mozzarella. Saler, poivrer.",
+      "Rabattre l'autre moitié de la pâte par-dessus en chausson et souder les bords. Couper l'excédent de pâte.",
+      "Cuire dans une poêle sans matière grasse, à feu moyen, en appuyant légèrement pour bien dorer, environ 6 à 8 minutes de chaque côté, jusqu'à ce que le fromage soit fondu et la pâte dorée."
     ]
   },
   {
@@ -27878,6 +28535,370 @@ const recettes = [
       "Ajouter le beurre mou et pétrir encore 5 minutes jusqu’à obtenir une pâte souple. Laisser lever 1 h 30.",
       "Diviser en 12 boules, les allonger en petits pains et les poser sur une plaque. Laisser lever encore 45 minutes.",
       "Dorer au jaune d’œuf, parsemer de sucre perlé et cuire 15 minutes à 180 °C."
+    ]
+  },
+  {
+    "id": "static-678",
+    "titre": "Pains au lait moelleux",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "25 min (+ 2 h de pousse)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "500 g de farine",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "220 ml de lait tiède",
+        "valeur": 220,
+        "unite": "ml",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "7 g de levure boulangère sèche",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure boulangère sèche"
+      },
+      {
+        "texte": "110 g de sucre",
+        "valeur": 110,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "85 g de beurre mou",
+        "valeur": 85,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "8 g de sel",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      }
+    ],
+    "etapes": [
+      "Dans le bol du robot, mettre la levure dans le lait tiède et laisser reposer 5 minutes.",
+      "Ajouter la farine, le sucre et le sel, puis mélanger rapidement.",
+      "Battre l'œuf à part et l'incorporer petit à petit à la pâte.",
+      "Pétrir 5 minutes, puis ajouter le beurre mou petit à petit en continuant à pétrir.",
+      "Pétrir encore 8 à 10 minutes, jusqu'à obtenir une pâte souple et élastique.",
+      "Laisser pousser jusqu'à ce que la pâte double de volume, puis la dégazer et la diviser en boules.",
+      "Façonner des petits pains et les poser sur une plaque, un peu espacés. Laisser pousser encore 30 minutes.",
+      "Badigeonner de jaune d'œuf battu et faire quelques entailles sur le dessus.",
+      "Cuire environ 10 minutes à 180 °C. À la sortie du four, badigeonner d'un peu de sirop (eau + sucre) pour les faire briller."
+    ]
+  },
+  {
+    "id": "static-258",
+    "titre": "Pains burger maison",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "variantes": [
+      {
+        "nom": "Moelleux à l’huile d’olive",
+        "temps": "80 min",
+        "personnes": "7 pains",
+        "ingredients": [
+          {
+            "texte": "125 ml de lait tiède",
+            "valeur": 125,
+            "unite": "ml",
+            "reste": "lait tiède"
+          },
+          {
+            "texte": "1 sachet levure boulangère",
+            "valeur": 1,
+            "unite": null,
+            "reste": "sachet levure boulangère"
+          },
+          {
+            "texte": "1 c. à soupe de sucre",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sucre"
+          },
+          {
+            "texte": "450 g de farine",
+            "valeur": 450,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1 c. à café de levure chimique",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "1 c. à café de sel",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "sel"
+          },
+          {
+            "texte": "1 c. à soupe de vinaigre",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "vinaigre"
+          },
+          {
+            "texte": "50 ml d'huile d'olive",
+            "valeur": 50,
+            "unite": "ml",
+            "reste": "huile d'olive"
+          },
+          {
+            "texte": "125 ml de lait entier",
+            "valeur": 125,
+            "unite": "ml",
+            "reste": "lait entier"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          "graines de sésame"
+        ],
+        "etapes": [
+          "Dans un premier bol, mélanger le lait tiède, la levure boulangère et le sucre. Laisser reposer 10 minutes jusqu'à apparition de bulles.",
+          "Dans un second bol, combiner la farine, la levure chimique et le sel.",
+          "Ajouter le vinaigre, l'huile d'olive et le lait. Mélanger pour obtenir une pâte homogène.",
+          "Ajouter le premier mélange à la pâte et pétrir jusqu'à obtention d'une pâte lisse et élastique.",
+          "Laisser reposer la pâte couverte d'un linge humide pendant 45 minutes jusqu'à ce qu'elle double.",
+          "Diviser la pâte en 7 portions et façonner des boules légèrement aplaties.",
+          "Laisser reposer 30 minutes sur une plaque farinée.",
+          "Préchauffer le four à 180°C.",
+          "Badigeonner les pains avec l'œuf battu mélangé au lait et saupoudrer de graines de sésame.",
+          "Cuire pendant environ 20 minutes à 180°C jusqu'à dorure légère."
+        ]
+      },
+      {
+        "nom": "Briochés au beurre",
+        "temps": "33 min (+ 2 h 30 de pousse)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "7 g de levure sèche active",
+            "valeur": 7,
+            "unite": "g",
+            "reste": "levure sèche active"
+          },
+          {
+            "texte": "240 ml de lait tiède",
+            "valeur": 240,
+            "unite": "ml",
+            "reste": "lait tiède"
+          },
+          {
+            "texte": "30 g de sucre",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "420 g de farine",
+            "valeur": 420,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "8 g de sel",
+            "valeur": 8,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "60 g de beurre doux pommade",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "beurre doux pommade"
+          },
+          {
+            "texte": "1 jaune d'œuf (dorure)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "jaune d'œuf (dorure)"
+          },
+          {
+            "texte": "15 ml de lait (dorure)",
+            "valeur": 15,
+            "unite": "ml",
+            "reste": "lait (dorure)"
+          },
+          "graines de sésame"
+        ],
+        "etapes": [
+          "Délayer la levure dans le lait tiède avec le sucre et laisser reposer 5 à 10 minutes.",
+          "Mettre la farine, l'œuf et le sel dans un bol, puis ajouter la levure et former une pâte.",
+          "Pétrir 2 à 3 minutes jusqu'à ce que la pâte soit homogène.",
+          "Ajouter le beurre pommade et pétrir encore 10 minutes, jusqu'à obtenir une boule élastique qui ne colle plus.",
+          "Couvrir et laisser pousser 1 h 30 dans un endroit chaud, jusqu'à ce que la pâte double.",
+          "Dégazer, diviser en 6 pâtons et les bouler. Les poser sur une plaque farinée et laisser pousser encore 1 heure.",
+          "Badigeonner du mélange jaune d'œuf et lait, puis parsemer de sésame.",
+          "Cuire 15 à 18 minutes à 180 °C, jusqu'à ce qu'ils soient bien dorés."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "static-57",
+    "titre": "Pains farcis à la viande hachée et au fromage",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "variantes": [
+      {
+        "nom": "Petits buns à la mozzarella",
+        "temps": "60 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "300 g de viande hachée",
+            "valeur": 300,
+            "unite": "g",
+            "reste": "viande hachée"
+          },
+          "sel",
+          "poivre",
+          "paprika",
+          "crème liquide",
+          {
+            "texte": "50 g de caprice des dieux",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "caprice des dieux"
+          },
+          {
+            "texte": "1 mozzarella maison",
+            "valeur": 1,
+            "unite": null,
+            "reste": "mozzarella maison"
+          },
+          {
+            "texte": "1 pâte à pizza maison (rectangle)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pâte à pizza maison (rectangle)"
+          },
+          "fromage râpé",
+          {
+            "texte": "1 jaune d'œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "jaune d'œuf"
+          },
+          "graines de sésame",
+          "ciboulette fraîche",
+          "persil frais"
+        ],
+        "etapes": [
+          "Assaisonner la viande avec sel, poivre et paprika, puis la cuire à la poêle.",
+          "Ajouter la crème liquide et le caprice des dieux râpé, mélanger.",
+          "Ajouter la mozzarella déchirée et mélanger. Laisser refroidir.",
+          "Préparer la pâte à pizza maison et l'étaler en rectangle, puis la couper en 4 carrés.",
+          "Déposer de la farce, du fromage râpé, de la mozzarella sur chaque carré.",
+          "Replier les bords et former une boule bien fermée.",
+          "Déposer sur une plaque recouverte de papier cuisson et badigeonner de jaune d'œuf.",
+          "Parsemer de graines de sésame, de ciboulette et de persil.",
+          "Mettre au four 30 min à 200°C."
+        ]
+      },
+      {
+        "nom": "Grand pain au cheddar façon burger",
+        "temps": "25 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "1 pâte à pizza à dérouler",
+            "valeur": 1,
+            "unite": null,
+            "reste": "pâte à pizza à dérouler"
+          },
+          {
+            "texte": "2 steaks hachés",
+            "valeur": 2,
+            "unite": null,
+            "reste": "steaks hachés"
+          },
+          {
+            "texte": "1 oignon blanc",
+            "valeur": 1,
+            "unite": null,
+            "reste": "oignon blanc"
+          },
+          {
+            "texte": "15 ml d'huile d'olive",
+            "valeur": 15,
+            "unite": "ml",
+            "reste": "huile d'olive"
+          },
+          {
+            "texte": "30 ml de crème liquide entière",
+            "valeur": 30,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          },
+          {
+            "texte": "4 tranches de cheddar",
+            "valeur": 4,
+            "unite": "tranche",
+            "reste": "cheddar"
+          },
+          {
+            "texte": "1 c. à café de sel",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "sel"
+          },
+          "poivre",
+          {
+            "texte": "1 jaune d'œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "jaune d'œuf"
+          },
+          {
+            "texte": "20 g de graines de sésame",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "graines de sésame"
+          }
+        ],
+        "etapes": [
+          "Émincer l'oignon finement et le faire revenir dans l'huile d'olive quelques minutes, jusqu'à ce qu'il soit translucide.",
+          "Ajouter les steaks hachés et les émietter à la spatule pendant la cuisson.",
+          "Saler, poivrer, verser la crème et mélanger. Ajouter 2 tranches de cheddar et laisser fondre à feu doux.",
+          "Dérouler la pâte à pizza et déposer la préparation au centre, puis les 2 dernières tranches de cheddar.",
+          "Rabattre les côtés de la pâte pour former un pain rectangulaire bien fermé.",
+          "Badigeonner de jaune d'œuf battu et parsemer de graines de sésame.",
+          "Cuire environ 15 minutes à 180 °C, jusqu'à ce que le pain soit bien doré."
+        ]
+      }
     ]
   },
   {
@@ -28253,6 +29274,94 @@ const recettes = [
           "Cuire l'autre face jusqu'à ce qu'elle soit dorée et que les pancakes soient cuits à cœur.",
           "Répéter l'opération jusqu'à épuisement de la pâte pour obtenir plusieurs pancakes chauds.",
           "Dresser les pancakes avec des tranches de banane, un filet de sirop d'érable et de la crème fouettée selon le goût."
+        ]
+      },
+      {
+        "nom": "Tourbillon à la cannelle (cinnamon roll)",
+        "temps": "45 min",
+        "personnes": "10",
+        "ingredients": [
+          {
+            "texte": "380 ml de lait demi-écrémé",
+            "valeur": 380,
+            "unite": "ml",
+            "reste": "lait demi-écrémé"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "25 g de sucre",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "60 ml d'huile",
+            "valeur": 60,
+            "unite": "ml",
+            "reste": "huile"
+          },
+          {
+            "texte": "1 c. à soupe de vanille",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "vanille"
+          },
+          {
+            "texte": "190 g de farine",
+            "valeur": 190,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "12 g de levure chimique",
+            "valeur": 12,
+            "unite": "g",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "3 g de sel",
+            "valeur": 3,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "55 g de beurre mou",
+            "valeur": 55,
+            "unite": "g",
+            "reste": "beurre mou"
+          },
+          {
+            "texte": "25 g de vergeoise brune",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "vergeoise brune"
+          },
+          {
+            "texte": "25 g de sucre (tourbillon)",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "sucre (tourbillon)"
+          },
+          {
+            "texte": "5 g de cannelle",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "cannelle"
+          }
+        ],
+        "etapes": [
+          "Fouetter le lait avec l'œuf, le sucre, l'huile et la vanille.",
+          "Verser sur la farine, la levure et le sel, puis fouetter jusqu'à obtenir une pâte lisse. Laisser reposer quelques minutes au frais.",
+          "Tourbillon : mélanger le beurre mou, la vergeoise, le sucre, la cannelle et 1 cuillère à soupe de pâte à pancakes. Mettre dans une poche à douille.",
+          "Chauffer une poêle à feu doux et verser une louche de pâte.",
+          "Tracer une spirale de mélange à la cannelle sur le pancake et couvrir avec un couvercle.",
+          "Cuire 5 à 6 minutes sans retourner : la vapeur cuit le dessus.",
+          "Recommencer jusqu'à épuisement de la pâte et déguster bien chaud."
         ]
       }
     ]
@@ -28863,48 +29972,91 @@ const recettes = [
     "id": "static-273",
     "titre": "Pâte brisée maison",
     "photo": "photos/enattente.png",
-    "temps": "15 min (+ 30 min de repos)",
-    "personnes": "1 fond de tarte (6-8 parts)",
     "cat": "base-culinaire",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "250 g de farine",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "farine"
+        "nom": "Au beurre",
+        "temps": "15 min (+ 30 min de repos)",
+        "personnes": "1 fond de tarte (6-8 parts)",
+        "ingredients": [
+          {
+            "texte": "250 g de farine",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "125 g de beurre bien froid",
+            "valeur": 125,
+            "unite": "g",
+            "reste": "beurre bien froid"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          },
+          {
+            "texte": "1 œuf",
+            "valeur": 1,
+            "unite": null,
+            "reste": "œuf"
+          },
+          {
+            "texte": "2 c. à soupe d'eau froide",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "eau froide"
+          }
+        ],
+        "etapes": [
+          "Couper le beurre froid en petits dés.",
+          "Dans un saladier, mélanger la farine et le sel, puis ajouter le beurre.",
+          "Sabler du bout des doigts jusqu'à obtenir une texture de semoule grossière.",
+          "Ajouter l'œuf et l'eau froide, puis rassembler rapidement la pâte sans trop la travailler pour qu'elle reste friable.",
+          "Former une boule, l'aplatir légèrement, l'envelopper de film alimentaire et réfrigérer au moins 30 minutes.",
+          "Étaler la pâte sur un plan de travail fariné et foncer un moule à tarte. Piquer le fond avec une fourchette avant de garnir et cuire selon la recette choisie."
+        ]
       },
       {
-        "texte": "125 g de beurre bien froid",
-        "valeur": 125,
-        "unite": "g",
-        "reste": "beurre bien froid"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      },
-      {
-        "texte": "1 œuf",
-        "valeur": 1,
-        "unite": null,
-        "reste": "œuf"
-      },
-      {
-        "texte": "2 c. à soupe d'eau froide",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "eau froide"
+        "nom": "À l’huile d’olive, sans beurre (secouée en boîte)",
+        "temps": "5 min",
+        "personnes": "1 fond de tarte",
+        "ingredients": [
+          {
+            "texte": "250 g de farine",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "60 ml d'huile d'olive",
+            "valeur": 60,
+            "unite": "ml",
+            "reste": "huile d'olive"
+          },
+          {
+            "texte": "100 ml d'eau",
+            "valeur": 100,
+            "unite": "ml",
+            "reste": "eau"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          }
+        ],
+        "etapes": [
+          "Verser la farine dans une boîte hermétique.",
+          "Ajouter l'huile d'olive, l'eau et le sel.",
+          "Fermer la boîte et secouer vigoureusement jusqu'à ce que la pâte se forme.",
+          "Sortir la pâte et la travailler rapidement à la main pour former une boule.",
+          "L'étaler dans un moule à tarte, garnir (par exemple une tatin aux oignons) et cuire jusqu'à ce que la pâte soit dorée."
+        ]
       }
-    ],
-    "etapes": [
-      "Couper le beurre froid en petits dés.",
-      "Dans un saladier, mélanger la farine et le sel, puis ajouter le beurre.",
-      "Sabler du bout des doigts jusqu'à obtenir une texture de semoule grossière.",
-      "Ajouter l'œuf et l'eau froide, puis rassembler rapidement la pâte sans trop la travailler pour qu'elle reste friable.",
-      "Former une boule, l'aplatir légèrement, l'envelopper de film alimentaire et réfrigérer au moins 30 minutes.",
-      "Étaler la pâte sur un plan de travail fariné et foncer un moule à tarte. Piquer le fond avec une fourchette avant de garnir et cuire selon la recette choisie."
     ]
   },
   {
@@ -30562,6 +31714,79 @@ const recettes = [
       "Cuire 25 minutes à frémissement en les retournant pour qu’elles se colorent uniformément.",
       "Laisser refroidir dans le sirop au moins 2 heures.",
       "Faire réduire le sirop pour qu’il devienne nappant et servir les poires avec, tièdes ou froides."
+    ]
+  },
+  {
+    "id": "static-679",
+    "titre": "Poisson pané maison",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "35 min (+ 30 min au congélateur)",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "400 g de poisson blanc (colin, lieu…)",
+        "valeur": 400,
+        "unite": "g",
+        "reste": "poisson blanc (colin, lieu…)"
+      },
+      {
+        "texte": "1/2 courgette",
+        "valeur": 1,
+        "unite": null,
+        "reste": "/2 courgette"
+      },
+      {
+        "texte": "1 carotte",
+        "valeur": 1,
+        "unite": null,
+        "reste": "carotte"
+      },
+      {
+        "texte": "1 gousse d'ail",
+        "valeur": 1,
+        "unite": "gousse",
+        "reste": "ail"
+      },
+      {
+        "texte": "1 petit œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "petit œuf"
+      },
+      {
+        "texte": "80 g de chapelure",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chapelure"
+      },
+      "sel, poivre",
+      {
+        "texte": "2 œufs (panure)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs (panure)"
+      },
+      {
+        "texte": "50 g de farine (panure)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "farine (panure)"
+      },
+      {
+        "texte": "80 g de chapelure (panure)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chapelure (panure)"
+      },
+      "huile"
+    ],
+    "etapes": [
+      "Hacher le poisson et le mélanger avec la courgette et la carotte râpées, l'ail émincé, le petit œuf et 80 g de chapelure. Saler, poivrer.",
+      "Former des filets ou des bâtonnets, les poser sur une plaque et les placer 20 à 30 minutes au congélateur pour les raffermir.",
+      "Préparer trois assiettes : la farine salée, les 2 œufs battus et la chapelure.",
+      "Passer chaque morceau dans la farine, puis dans l'œuf battu et enfin dans la chapelure.",
+      "Au four : cuire environ 20 minutes à 180 °C avec un filet d'huile. À la poêle : dorer dans un fond d'huile jusqu'à ce que la panure soit bien croustillante."
     ]
   },
   {
@@ -33953,6 +35178,69 @@ const recettes = [
       "Couper les rouleaux si besoin, puis les tremper dans le lait puis dans les cornflakes pour bien les enrober.",
       "Chauffer l'huile à environ 170 °C et faire frire les roulés jusqu'à ce qu'ils soient dorés et croustillants.",
       "Égoutter sur du papier absorbant et servir chaud."
+    ]
+  },
+  {
+    "id": "static-684",
+    "titre": "Roulé de pommes de terre aux lardons et fromage",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "600 g de pommes de terre",
+        "valeur": 600,
+        "unite": "g",
+        "reste": "pommes de terre"
+      },
+      {
+        "texte": "180 g de lardons",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "lardons"
+      },
+      {
+        "texte": "150 g d'emmental râpé",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "emmental râpé"
+      },
+      {
+        "texte": "150 g de mozzarella",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mozzarella"
+      },
+      {
+        "texte": "1 portion de fromage ail et fines herbes",
+        "valeur": 1,
+        "unite": null,
+        "reste": "portion de fromage ail et fines herbes"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      },
+      "salade verte (pour servir)"
+    ],
+    "etapes": [
+      "Préchauffer le four à 200 °C. Faire précuire les lardons à la poêle.",
+      "Éplucher les pommes de terre et les trancher en fines rondelles régulières.",
+      "Sur une plaque recouverte de papier cuisson, disposer les rondelles en les faisant se chevaucher pour former un rectangle. Saler, poivrer.",
+      "Répartir l'emmental et la mozzarella, puis les lardons et le fromage ail et fines herbes.",
+      "Recouvrir d'une seconde couche de rondelles et appuyer légèrement.",
+      "Rouler le tout délicatement à l'aide du papier pour former un rouleau serré.",
+      "Cuire environ 20 minutes à 200 °C (plus si besoin), jusqu'à ce que les pommes de terre soient tendres et le dessus bien doré.",
+      "Laisser reposer 1 minute, couper en tranches et servir chaud avec une salade verte."
     ]
   },
   {
@@ -37640,6 +38928,87 @@ const recettes = [
     ]
   },
   {
+    "id": "static-683",
+    "titre": "Tarte au butternut ultra protéinée",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "1 h 15",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "1 pâte feuilletée",
+        "valeur": 1,
+        "unite": null,
+        "reste": "pâte feuilletée"
+      },
+      {
+        "texte": "300 g de butternut",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "butternut"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de skyr",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "skyr"
+      },
+      {
+        "texte": "100 g d'allumettes de bacon",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "allumettes de bacon"
+      },
+      {
+        "texte": "1 bûche de chèvre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bûche de chèvre"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      },
+      {
+        "texte": "1 pincée de paprika",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "paprika"
+      },
+      {
+        "texte": "1 c. à soupe de miel (facultatif)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "miel (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C.",
+      "Cuire le butternut : le couper en deux, retirer les graines et le cuire environ 1 heure au four jusqu'à ce qu'il soit tendre. Laisser refroidir et l'écraser en purée.",
+      "Piquer la pâte feuilletée, la mettre dans un moule et la précuire à blanc 15 minutes.",
+      "Faire revenir les allumettes de bacon à la poêle jusqu'à ce qu'elles soient croustillantes.",
+      "Battre les œufs avec le skyr, le paprika, le sel et le poivre.",
+      "Étaler la purée de butternut sur la pâte, ajouter le bacon et la bûche de chèvre en rondelles.",
+      "Verser l'appareil œufs-skyr et lisser.",
+      "Cuire 45 minutes environ, jusqu'à ce que la tarte soit dorée et le centre pris.",
+      "Laisser tiédir quelques minutes et arroser d'un filet de miel au service si désiré."
+    ]
+  },
+  {
     "id": "static-347",
     "titre": "Tarte au citron meringuée",
     "photo": "photos/enattente.png",
@@ -38039,6 +39408,89 @@ const recettes = [
           "Parsemer le beurre maison en petits morceaux sur les pommes, saupoudrer de sucre et ajouter la cannelle.",
           "Ajouter 2 cl d'eau autour des bords.",
           "Cuire au micro-ondes à puissance moyenne pendant 8 à 10 minutes jusqu'à ce que la pâte soit cuite et les pommes tendres."
+        ]
+      },
+      {
+        "nom": "Façon cinnamon rolls, pommes caramélisées",
+        "temps": "45 min (+ 30 min au frais)",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "2 pâtes feuilletées pur beurre",
+            "valeur": 2,
+            "unite": null,
+            "reste": "pâtes feuilletées pur beurre"
+          },
+          {
+            "texte": "50 g de beurre pommade",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "beurre pommade"
+          },
+          {
+            "texte": "50 g de cassonade",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "cassonade"
+          },
+          {
+            "texte": "1 c. à café de cannelle",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cannelle"
+          },
+          {
+            "texte": "1 pincée de noix de muscade",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "noix de muscade"
+          },
+          {
+            "texte": "1 pincée de gingembre en poudre",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "gingembre en poudre"
+          },
+          {
+            "texte": "25 g de beurre (caramel)",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "beurre (caramel)"
+          },
+          {
+            "texte": "40 g de sucre",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "1 gousse de vanille",
+            "valeur": 1,
+            "unite": "gousse",
+            "reste": "vanille"
+          },
+          {
+            "texte": "1 grosse pincée de fleur de sel",
+            "valeur": 1,
+            "unite": null,
+            "reste": "grosse pincée de fleur de sel"
+          },
+          {
+            "texte": "4 pommes",
+            "valeur": 4,
+            "unite": null,
+            "reste": "pommes"
+          }
+        ],
+        "etapes": [
+          "Mélanger le beurre pommade et la cassonade, puis ajouter la cannelle, la muscade et le gingembre.",
+          "Étaler les deux pâtes feuilletées, les tartiner de ce mélange, puis les rouler en boudins serrés. Placer 30 minutes au frais pour les durcir.",
+          "Caramel : faire fondre 25 g de beurre dans une poêle, ajouter 40 g de sucre et cuire quelques minutes jusqu'à un caramel clair, en surveillant.",
+          "Ajouter les graines de la gousse de vanille et la fleur de sel, puis mélanger.",
+          "Ajouter les pommes coupées en morceaux et cuire jusqu'à ce qu'elles soient tendres et bien enrobées de caramel.",
+          "Couper les boudins de pâte en tranches (mini cinnamon rolls). En tapisser un moule à tarte en les serrant, verser les pommes caramélisées, puis recouvrir avec le reste des tranches.",
+          "Cuire 20 minutes à 190 °C, jusqu'à ce que les bords soient dorés.",
+          "Laisser tiédir avant de couper pour que la tarte se tienne bien."
         ]
       }
     ]
@@ -39002,6 +40454,103 @@ const recettes = [
     ]
   },
   {
+    "id": "static-681",
+    "titre": "Tenders de poulet croustillants façon Raising Cane’s",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "temps": "40 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "500 g de filets de poulet",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "filets de poulet"
+      },
+      {
+        "texte": "120 g de farine",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "5 g de sel fin",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "sel fin"
+      },
+      {
+        "texte": "2 g de poivre noir moulu",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "poivre noir moulu"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "120 ml de lait",
+        "valeur": 120,
+        "unite": "ml",
+        "reste": "lait"
+      },
+      {
+        "texte": "180 g de chapelure panko",
+        "valeur": 180,
+        "unite": "g",
+        "reste": "chapelure panko"
+      },
+      {
+        "texte": "2 g d'ail en poudre",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "ail en poudre"
+      },
+      {
+        "texte": "3 g de paprika",
+        "valeur": 3,
+        "unite": "g",
+        "reste": "paprika"
+      },
+      {
+        "texte": "2 g d'oignon en poudre",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "oignon en poudre"
+      },
+      {
+        "texte": "750 ml d'huile végétale (friture)",
+        "valeur": 750,
+        "unite": "ml",
+        "reste": "huile végétale (friture)"
+      },
+      {
+        "texte": "180 ml de sauce ranch",
+        "valeur": 180,
+        "unite": "ml",
+        "reste": "sauce ranch"
+      },
+      {
+        "texte": "15 g de miel ou sirop d'érable (facultatif)",
+        "valeur": 15,
+        "unite": "g",
+        "reste": "miel ou sirop d'érable (facultatif)"
+      }
+    ],
+    "etapes": [
+      "Couper le poulet en lanières régulières et les essuyer.",
+      "Préparer trois bols : la farine avec le sel et le poivre ; l'œuf battu avec le lait ; le panko mélangé à l'ail, au paprika et à l'oignon en poudre.",
+      "Passer chaque lanière dans la farine, puis dans l'œuf au lait, puis dans le panko assaisonné, en appuyant bien.",
+      "Chauffer l'huile à 170-180 °C dans une friteuse ou une grande casserole.",
+      "Frire les lanières en petites quantités 4 à 5 minutes, jusqu'à ce qu'elles soient dorées et croustillantes.",
+      "Égoutter sur du papier absorbant et garder au chaud pendant la cuisson du reste.",
+      "Mélanger la sauce ranch avec le miel si désiré et servir les tenders chauds avec la sauce."
+    ]
+  },
+  {
     "id": "static-571",
     "titre": "Tequila sunrise",
     "photo": "photos/enattente.png",
@@ -39732,6 +41281,86 @@ const recettes = [
       "Trancher les tomates et la mozzarella en rondelles.",
       "Les disposer en alternance sur un plat avec les feuilles de basilic.",
       "Arroser d’huile d’olive et de crème de balsamique, puis assaisonner de fleur de sel et de poivre."
+    ]
+  },
+  {
+    "id": "static-147",
+    "titre": "Tortillas et galettes wrap maison",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "variantes": [
+      {
+        "nom": "Tortillas classiques (sans yaourt)",
+        "temps": "25 min",
+        "personnes": "25 tortillas",
+        "ingredients": [
+          {
+            "texte": "500 g de farine",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "270 ml d'eau tiède",
+            "valeur": 270,
+            "unite": "ml",
+            "reste": "eau tiède"
+          },
+          {
+            "texte": "5 g de sel",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "5 c. à soupe d'huile",
+            "valeur": 5,
+            "unite": "c. à soupe",
+            "reste": "huile"
+          }
+        ],
+        "etapes": [
+          "Mettre la farine et le sel dans un grand bol, puis ajouter l'eau tiède et l'huile.",
+          "Mélanger à la main jusqu'à obtenir une pâte homogène, un peu collante.",
+          "Pétrir sur le plan de travail jusqu'à ce que la pâte soit lisse et ne colle plus.",
+          "Diviser en boules égales selon le nombre de tortillas voulu.",
+          "Fariner le plan de travail et étaler chaque boule très finement.",
+          "Cuire à feu vif dans une poêle chaude, moins d'1 minute de chaque côté, dès qu'une légère coloration apparaît.",
+          "Empiler les tortillas sous un torchon pour qu'elles restent souples. Elles se congèlent très bien."
+        ]
+      },
+      {
+        "nom": "Au yaourt",
+        "temps": "15 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "250 g de farine",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "1 c. à café de sel",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "sel"
+          },
+          {
+            "texte": "250 g de yaourt nature",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "yaourt nature"
+          }
+        ],
+        "etapes": [
+          "Dans un saladier, mélanger tous les ingrédients avec une spatule jusqu'à ce qu'il n'y ait plus de farine dans le saladier.",
+          "Mettre un peu de farine sur le plan de travail pour y déposer la pâte et la pétrir quelques minutes (ajouter de la farine si ça colle).",
+          "Quand la pâte est prête, la diviser en 4 ou 6 parts égales puis les étaler à l'aide d'un rouleau.",
+          "Chauffer une poêle légèrement huilée sur feu moyen-fort puis y déposer les pains.",
+          "Après 1 à 2 min, retourner les pains plats, laisser bien gonfler et dorer."
+        ]
+      }
     ]
   },
   {

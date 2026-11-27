@@ -88,6 +88,7 @@
     <button class="tab-btn" data-cat="boisson">Boisson <span class="tab-count" id="count-boisson">0</span></button>
     <button class="tab-btn" data-cat="sauce">Sauce <span class="tab-count" id="count-sauce">0</span></button>
     <button class="tab-btn" data-cat="base-culinaire">Base culinaire <span class="tab-count" id="count-base-culinaire">0</span></button>
+    <button class="tab-btn" data-cat="maison">Maison <span class="tab-count" id="count-maison">0</span></button>
   </div>
 
   <div class="section visible" id="section-all">
@@ -134,6 +135,11 @@
     <div class="results-info" id="info-base-culinaire"></div>
     <div class="grid" id="grid-base-culinaire"></div>
     <div class="no-section" id="empty-base-culinaire">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-maison">
+    <div class="results-info" id="info-maison"></div>
+    <div class="grid" id="grid-maison"></div>
+    <div class="no-section" id="empty-maison">Aucune recette ne correspond à vos filtres.</div>
   </div>
 </div>
 </div><!-- /view-recettes -->
@@ -250,6 +256,7 @@
               <option value="boisson">Boisson</option>
               <option value="sauce">Sauce</option>
               <option value="base-culinaire">Base culinaire</option>
+              <option value="maison">Maison</option>
             </select>
           </div>
           <div class="form-field">
