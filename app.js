@@ -51,7 +51,17 @@ function refreshRecettes() {
   const visibleStatic = STATIC_RECETTES.filter(r =>
     !hiddenStaticIds.has(r._staticId) && !replacedStaticIds.has(r._staticId)
   );
-  allRecettes = visibleStatic.concat(liveRecettes);
+  // Ordre alphabétique pour TOUTES les recettes : une recette modifiée ou ajoutée
+  // reste à sa place dans la liste (avant, elle partait tout à la fin).
+  const keyOf = r => r ? (r._docId ? 'live:' + r._docId : r._staticId) : null;
+  const openKey = currentRecetteIdx !== null ? keyOf(allRecettes[currentRecetteIdx]) : null;
+  allRecettes = visibleStatic.concat(liveRecettes)
+    .sort((a, b) => String(a.titre || '').localeCompare(String(b.titre || ''), 'fr', { sensitivity: 'base' }));
+  if (openKey) {
+    // La fiche ouverte garde la bonne recette même si sa position a changé
+    const i = allRecettes.findIndex(r => keyOf(r) === openKey || (r.replacesStaticId && r.replacesStaticId === openKey));
+    if (i >= 0) currentRecetteIdx = i;
+  }
   allIngredients = getAllIngredients();
   renderFilters();
   buildGrids();
