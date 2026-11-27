@@ -308,7 +308,7 @@
       <div class="frigo-head">
         <img class="frigo-deco" src="deco/oeuf.webp" alt="" aria-hidden="true">
         <h2>Mon frigo</h2>
-        <p>Note ce que tu as, je te propose des recettes une par une jusqu'à tout utiliser.${api.isMine() ? '' : ` <em>(frigo partagé de ${esc(api.ownerName())})</em>`}</p>
+        <p>Note ce que tu as, je te propose des recettes une par une jusqu'à tout utiliser.${api.isMine() ? '' : ` <em>(frigo partagé · ${esc(api.ownerName())})</em>`}</p>
         <form class="frigo-add frigo-add--qty" data-form>
           <input id="frigo-input" list="frigo-known" placeholder="Aliment (ex : courgettes)" autocomplete="off" enterkeyhint="next" aria-label="Aliment">
           <input id="frigo-qte" type="number" inputmode="decimal" min="0" step="any" placeholder="Qté" aria-label="Quantité">

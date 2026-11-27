@@ -47,6 +47,7 @@ import {
 const RECIPES_COLLECTION = 'recipes';
 const HIDDEN_STATIC_COLLECTION = 'hidden_static_recipes';
 const PLANNING_COLLECTION = 'planning';
+const SHARED_COLLECTION = 'shared_plannings'; // plannings partagés, séparés du planning perso
 
 function configLooksEmpty(cfg) {
   return !cfg || !cfg.apiKey || cfg.apiKey.includes('COLLE_ICI');
@@ -74,7 +75,8 @@ if (configLooksEmpty(window.FIREBASE_CONFIG)) {
   // Le propriétaire peut le partager avec d'autres comptes Google (champ sharedWith,
   // liste d'adresses e-mail en minuscules) : ils le voient et le modifient en direct.
   // Utilisé par planning.js. Défini AVANT l'écoute de la connexion pour être prêt dès le login.
-  const planRef = uid => doc(db, PLANNING_COLLECTION, uid);
+  // Clé d'un planning : l'uid pour le planning perso, « s:<id> » pour un planning partagé
+  const planRef = key => String(key).startsWith('s:') ? doc(db, SHARED_COLLECTION, String(key).slice(2)) : doc(db, PLANNING_COLLECTION, key);
   window.CloudPlanning = {
     // Suit un planning (le sien ou un planning partagé)
     subscribe(uid, onData, onError) {
@@ -108,6 +110,33 @@ if (configLooksEmpty(window.FIREBASE_CONFIG)) {
     // Pour un invité : ne plus voir un planning partagé
     async leave(uid, email) {
       await updateDoc(planRef(uid), { sharedWith: arrayRemove(email) });
+    },
+
+    // ── Plannings partagés (semaine + courses + frigo à part, avec un nom) ──
+    subscribeMyShared(email, onList, onError) {
+      const q = query(collection(db, SHARED_COLLECTION), where('members', 'array-contains', email));
+      return onSnapshot(q, (snap) => {
+        onList(snap.docs.map(d => ({ key: 's:' + d.id, name: d.data().name || 'Planning partagé', ownerUid: d.data().ownerUid,
+          ownerName: d.data().ownerName || '', members: d.data().members || [] })));
+      }, onError);
+    },
+    async createShared(name, ownerName, email) {
+      const ref = await addDoc(collection(db, SHARED_COLLECTION), {
+        name, ownerUid: currentUser.uid, ownerName: ownerName || '', members: [email], weeks: {}, frigo: [], createdAt: serverTimestamp()
+      });
+      return 's:' + ref.id;
+    },
+    async rename(key, name) {
+      await setDoc(planRef(key), { name }, { merge: true });
+    },
+    async setMembers(key, emails) {
+      await updateDoc(planRef(key), { members: emails });
+    },
+    async leaveShared(key, email) {
+      await updateDoc(planRef(key), { members: arrayRemove(email) });
+    },
+    async deleteShared(key) {
+      await deleteDoc(planRef(key));
     }
   };
 

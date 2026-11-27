@@ -61,15 +61,27 @@
   // Partage
   let activeUid = null;          // planning affiché : le sien (user.uid) ou celui de quelqu'un d'autre
   let sharing = { sharedWith: [], ownerName: '' }; // infos de partage du planning affiché
-  let sharedList = [];           // plannings que d'autres ont partagés avec moi
+  let sharedList = [];           // anciens partages : plannings perso que d'autres ont partagés avec moi
+  let myShared = [];             // plannings partagés (séparés du planning perso), dont je suis membre
+  let unsubMyShared = null;
+  let myPlanName = '';           // nom donné à mon planning perso
+  let activeName = '';           // nom du planning affiché
   let unsubShared = null;
   const dirty = new Set();       // semaines modifiées pas encore envoyées
   let frigo = [];                // aliments du frigo (onglet Frigo, voir frigo.js)
   const isMine = () => !!user && activeUid === user.uid;
   const myEmail = () => (user && user.email || '').toLowerCase();
   const firstName = n => String(n || '').trim().split(/\s+/)[0] || '';
+  // Nom affiché d'un planning
+  function labelOf(key) {
+    if (user && key === user.uid) return myPlanName || 'Mon planning';
+    const s = myShared.find(x => x.key === key); if (s) return s.name;
+    const o = sharedList.find(x => x.uid === key); if (o) return 'Planning de ' + (firstName(o.ownerName) || o.ownerEmail);
+    return activeName || 'Planning partagé';
+  }
   function activeOwnerName() {
     if (isMine()) return '';
+    if (String(activeUid).startsWith('s:')) return labelOf(activeUid);
     const o = sharedList.find(x => x.uid === activeUid);
     return o ? (firstName(o.ownerName) || o.ownerEmail) : (firstName(sharing.ownerName) || 'quelqu\'un');
   }
@@ -111,7 +123,7 @@
         const empty = !w || !(Object.keys(w.plan || {}).length || (w.extras || []).length || Object.keys(w.checked || {}).length);
         await window.CloudPlanning.saveWeek(uid, k, empty ? null : w);
       }
-      setSync(isMine() ? (sharing.sharedWith.length ? '✓ Enregistré · partagé' : '✓ Enregistré sur ton compte') : '✓ Enregistré · planning de ' + activeOwnerName(), 'ok');
+      setSync(isMine() ? (sharing.sharedWith.length ? '✓ Enregistré · partagé' : '✓ Enregistré sur ton compte') : '✓ Enregistré · ' + labelOf(activeUid), 'ok');
     } catch (e) {
       console.error('[planning] enregistrement', e);
       keys.forEach(k => dirty.add(k));
@@ -470,7 +482,7 @@
         const w = W();
         sel.forEach(k => { (w.plan[k] = w.plan[k] || []).push({ rid: ridOf(r), v: vIdx || 0, p }); });
         save(); closeSheet(); renderAll();
-        toast(isMine() ? 'Ajouté à ta semaine ✓' : `Ajouté au planning de ${activeOwnerName()} ✓`);
+        toast(isMine() ? 'Ajouté à ta semaine ✓' : `Ajouté à « ${labelOf(activeUid)} » ✓`);
       });
     };
     draw();
@@ -617,12 +629,14 @@
       state = { weeks: remote };
       sharing = { sharedWith: (data && data.sharedWith) || [], ownerName: (data && data.ownerName) || '' };
       frigo = (data && Array.isArray(data.frigo)) ? data.frigo : [];
+      activeName = (data && data.name) || '';
+      if (isMine()) myPlanName = activeName;
       loaded = true;
-      setSync(isMine() ? (sharing.sharedWith.length ? '✓ Synchronisé · partagé' : '✓ Synchronisé avec ton compte') : '✓ Synchronisé · planning de ' + activeOwnerName(), 'ok');
+      setSync(isMine() ? '✓ Synchronisé · ' + labelOf(activeUid) : '✓ Synchronisé · ' + labelOf(activeUid) + ' (partagé)', 'ok');
       renderAll();
     }, err => {
       console.error('[planning] lecture', err);
-      if (!isMine() && err.code === 'permission-denied') { toast('Ce planning n\'est plus partagé avec toi'); openPlanning(user.uid); return; }
+      if (!isMine() && err.code === 'permission-denied') { toast('Tu n\'as plus accès à ce planning'); openPlanning(user.uid); return; }
       loaded = true;
       setSync('⚠️ Lecture impossible : ' + (err.code === 'permission-denied' ? 'règles Firestore à mettre à jour' : (err.message || err)), 'err');
       renderAll();
@@ -630,103 +644,159 @@
     renderAll();
   }
 
-  // ── Barre de partage (au-dessus de la semaine et des courses) ──
+  // ── Choix du planning (au-dessus de la semaine, des courses et du frigo) ──
+  // « Mon planning » est personnel ; chaque planning partagé a sa propre semaine,
+  // sa propre liste de courses et son propre frigo, et un nom qu'on peut changer.
   function renderShareBars() {
     document.querySelectorAll('.plan-sharebar').forEach(bar => {
       if (!user || !activeUid) { bar.hidden = true; return; }
       bar.hidden = false;
-      const chips = sharedList.length
-        ? `<div class="share-switch" role="tablist" aria-label="Planning affiché">
-            <button type="button" data-plan="${esc(user.uid)}" class="${isMine() ? 'on' : ''}">Mon planning</button>
-            ${sharedList.map(o => `<button type="button" data-plan="${esc(o.uid)}" class="${activeUid === o.uid ? 'on' : ''}">${esc(firstName(o.ownerName) || o.ownerEmail)}</button>`).join('')}
-          </div>`
-        : `<div class="share-info">${isMine() && sharing.sharedWith.length ? `👥 Partagé avec ${sharing.sharedWith.length === 1 ? esc(sharing.sharedWith[0]) : sharing.sharedWith.length + ' personnes'}` : 'Planning personnel'}</div>`;
-      bar.innerHTML = chips + `<button type="button" class="share-btn" data-share>👥 ${isMine() ? 'Partager' : 'Partage'}</button>`;
+      const all = [{ key: user.uid, label: labelOf(user.uid), icon: '🔒' }]
+        .concat(myShared.map(x => ({ key: x.key, label: x.name, icon: '👥' })))
+        .concat(sharedList.map(o => ({ key: o.uid, label: labelOf(o.uid), icon: '👥' })));
+      bar.innerHTML = `<div class="share-switch" role="tablist" aria-label="Planning affiché">
+          ${all.map(p => `<button type="button" data-plan="${esc(p.key)}" class="${activeUid === p.key ? 'on' : ''}" role="tab" aria-selected="${activeUid === p.key}">${p.icon} ${esc(p.label)}</button>`).join('')}
+          <button type="button" class="share-new" data-new>+ Partagé</button>
+        </div>
+        <button type="button" class="share-btn" data-share aria-label="Renommer, partager">⚙️</button>`;
     });
   }
   document.addEventListener('click', e => {
     const p = e.target.closest('.plan-sharebar [data-plan]');
     if (p && p.dataset.plan !== activeUid) { openPlanning(p.dataset.plan); return; }
+    if (e.target.closest('.plan-sharebar [data-new]')) return openNewSheet();
     if (e.target.closest('.plan-sharebar [data-share]')) openShareSheet();
   });
 
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  function openShareSheet() {
+  const errMsg = e => '⚠️ ' + (e && e.code === 'permission-denied' ? 'Règles Firestore à mettre à jour.' : esc((e && e.message) || e));
+
+  // Créer un planning partagé (vide, séparé de « Mon planning »)
+  function openNewSheet(msg) {
     if (!user) return;
-    if (!isMine()) {
-      const name = activeOwnerName();
-      openSheet(`
-        <div class="plan-sheet-head"><div class="modal-cat">Planning partagé</div>
-          <div class="modal-title">Planning de ${esc(name)}</div>
-          <button class="modal-close" data-close aria-label="Fermer">✕</button></div>
-        <div class="plan-sheet-body">
-          <p class="share-p">${esc(name)} a partagé sa semaine et sa liste de courses avec toi. Tout ce que vous ajoutez, retirez ou cochez s'affiche chez l'autre en direct.</p>
-          <button class="btn-secondary share-leave" data-leave>Ne plus voir ce planning</button>
-        </div>`);
-      sheet.querySelector('[data-leave]').addEventListener('click', async () => {
-        if (!confirm(`Ne plus voir le planning de ${name} ? Il faudra qu'il ou elle te réinvite pour le retrouver.`)) return;
-        const uid = activeUid;
-        try { await window.CloudPlanning.leave(uid, myEmail()); closeSheet(); openPlanning(user.uid); toast('Planning retiré'); }
-        catch (e) { console.error(e); toast('Impossible pour le moment'); }
-      });
-      return;
-    }
-    const draw = (msg) => {
-      const list = sharing.sharedWith;
-      openSheet(`
-        <div class="plan-sheet-head"><div class="modal-cat">Partager</div>
-          <div class="modal-title">Ma semaine et mes courses</div>
-          <button class="modal-close" data-close aria-label="Fermer">✕</button></div>
-        <div class="plan-sheet-body">
-          <p class="share-p">Ajoute l'adresse Gmail de la personne. Quand elle se connecte au site avec ce compte, elle voit ton planning et ta liste de courses et peut les modifier avec toi, en direct.</p>
-          <form class="share-add" data-form>
+    openSheet(`
+      <div class="plan-sheet-head"><div class="modal-cat">Nouveau planning partagé</div>
+        <div class="modal-title">Semaine, courses et frigo à part</div>
+        <button class="modal-close" data-close aria-label="Fermer">✕</button></div>
+      <div class="plan-sheet-body">
+        <p class="share-p">Un planning partagé a sa propre semaine, sa propre liste de courses et son propre frigo. « Mon planning » reste à toi seule.</p>
+        <form class="share-new-form" data-form>
+          <label>Nom<input name="nom" maxlength="40" placeholder="Ex : Repas avec Tom" required></label>
+          <label>Inviter (adresse Gmail, facultatif)<input name="mail" type="email" inputmode="email" autocomplete="email" placeholder="prenom@gmail.com"></label>
+          <button class="btn-primary" type="submit">Créer</button>
+        </form>
+        ${msg ? `<div class="share-msg">${msg}</div>` : ''}
+      </div>`);
+    const form = sheet.querySelector('[data-form]');
+    setTimeout(() => form.nom.focus(), 50);
+    form.addEventListener('submit', async ev => {
+      ev.preventDefault();
+      const name = form.nom.value.trim(); const mail = form.mail.value.trim().toLowerCase();
+      if (!name) return;
+      if (mail && !EMAIL_RE.test(mail)) return openNewSheet('Adresse e-mail invalide.');
+      try {
+        const key = await window.CloudPlanning.createShared(name, user.displayName || '', myEmail());
+        if (mail && mail !== myEmail()) await window.CloudPlanning.setMembers(key, [myEmail(), mail]);
+        closeSheet(); openPlanning(key);
+        toast(`« ${name} » créé ✓${mail ? ' · ' + mail + ' invité·e' : ''}`);
+      } catch (e) { console.error('[planning] création', e); openNewSheet(errMsg(e)); }
+    });
+  }
+
+  // Réglages du planning affiché : nom, personnes, quitter / supprimer
+  function openShareSheet(msg) {
+    if (!user) return;
+    const key = activeUid;
+    const legacy = sharedList.find(x => x.uid === key);
+    const shared = myShared.find(x => x.key === key);
+    const iOwn = shared && shared.ownerUid === user.uid;
+    const renameForm = `<form class="share-rename" data-rename>
+        <label>Nom du planning<input name="nom" maxlength="40" value="${esc(labelOf(key))}" required></label>
+        <button class="btn-primary" type="submit">Renommer</button>
+      </form>`;
+    let body;
+    if (legacy) {
+      body = `<p class="share-p">${esc(firstName(legacy.ownerName) || legacy.ownerEmail)} a partagé son planning avec toi. Tout ce que vous ajoutez, retirez ou cochez s'affiche chez l'autre en direct.</p>
+        <button class="btn-secondary share-leave" data-leave-legacy>Ne plus voir ce planning</button>`;
+    } else if (isMine()) {
+      const old = sharing.sharedWith || [];
+      body = `${renameForm}
+        <p class="share-p">🔒 Ce planning est à toi seule : ta semaine, ta liste de courses et ton frigo. Pour cuisiner avec quelqu'un, crée un planning partagé : il aura sa propre semaine, ses courses et son frigo.</p>
+        <button class="btn-primary share-send" data-new>+ Créer un planning partagé</button>
+        ${old.length ? `<div class="modal-section-title">Encore partagé (ancien partage)</div>
+          <p class="share-p">Ces personnes voient encore ton planning perso. Retire-les pour qu'il soit vraiment à toi.</p>
+          <ul class="share-list">${old.map(m => `<li><span>${esc(m)}</span><button type="button" data-rm-old="${esc(m)}">Retirer</button></li>`).join('')}</ul>` : ''}`;
+    } else if (shared) {
+      const members = shared.members || [];
+      body = `${renameForm}
+        <div class="modal-section-title">Personnes${iOwn ? '' : ' (gérées par ' + esc(firstName(shared.ownerName) || 'la personne qui l\'a créé') + ')'}</div>
+        <ul class="share-list">${members.map(m => `<li><span>${esc(m)}${m === myEmail() ? ' (toi)' : ''}</span>${iOwn && m !== myEmail() ? `<button type="button" data-rm-mail="${esc(m)}">Retirer</button>` : ''}</li>`).join('')}</ul>
+        ${iOwn ? `<form class="share-add" data-add>
             <input type="email" inputmode="email" autocomplete="email" placeholder="prenom@gmail.com" aria-label="Adresse Gmail" required>
             <button class="btn-primary" type="submit">Inviter</button>
-          </form>
-          ${msg ? `<div class="share-msg">${msg}</div>` : ''}
-          <div class="modal-section-title">Partagé avec</div>
-          ${list.length ? `<ul class="share-list">${list.map(m => `<li><span>${esc(m)}</span><button type="button" data-rm-mail="${esc(m)}" aria-label="Retirer ${esc(m)}">Retirer</button></li>`).join('')}</ul>`
-            : '<div class="plan-empty plan-empty--sm">Personne pour l\'instant.</div>'}
-          ${list.length ? `<button class="btn-secondary share-send" data-send>Envoyer le lien du site</button>` : ''}
-        </div>`);
-      const form = sheet.querySelector('[data-form]');
-      const inp = form.querySelector('input');
-      form.addEventListener('submit', async ev => {
-        ev.preventDefault();
-        const m = inp.value.trim().toLowerCase();
-        if (!EMAIL_RE.test(m)) { draw('Adresse e-mail invalide.'); return; }
-        if (m === myEmail()) { draw('C\'est ton adresse 🙂'); return; }
-        if (list.includes(m)) { draw('Déjà invité·e.'); return; }
-        await updateSharing([...list, m], draw, `✓ ${esc(m)} peut maintenant voir et modifier ton planning.`);
-      });
-      sheet.querySelectorAll('[data-rm-mail]').forEach(b => b.addEventListener('click', async () => {
-        const m = b.dataset.rmMail;
-        if (!confirm(`Arrêter le partage avec ${m} ?`)) return;
-        await updateSharing(list.filter(x => x !== m), draw, `Partage arrêté avec ${esc(m)}.`);
-      }));
-      const send = sheet.querySelector('[data-send]');
-      if (send) send.addEventListener('click', async () => {
-        const url = location.origin + location.pathname;
-        const text = `Je t'ai partagé mon planning des repas et ma liste de courses. Connecte-toi avec ton compte Google ici : ${url}`;
-        try {
-          if (navigator.share) await navigator.share({ title: 'Mon planning repas', text, url });
-          else { await navigator.clipboard.writeText(text); toast('Message copié ✓'); }
-        } catch (e) { /* partage annulé */ }
-      });
-      if (!msg) setTimeout(() => inp.focus(), 50);
-    };
-    draw();
-  }
-  async function updateSharing(emails, draw, okMsg) {
-    try {
-      await window.CloudPlanning.setSharing(user.uid, emails, user.displayName || '', myEmail());
-      sharing.sharedWith = emails;
-      renderShareBars();
-      draw(okMsg);
-    } catch (e) {
-      console.error('[planning] partage', e);
-      draw('⚠️ ' + (e.code === 'permission-denied' ? 'Règles Firestore à mettre à jour.' : esc(e.message || e)));
-    }
+          </form>` : ''}
+        <button class="btn-secondary share-send" data-send>Envoyer le lien du site</button>
+        ${iOwn ? `<button class="btn-secondary share-leave" data-delete>Supprimer ce planning</button>` : `<button class="btn-secondary share-leave" data-leave>Quitter ce planning</button>`}`;
+    } else body = '<p class="share-p">Chargement…</p>';
+    openSheet(`
+      <div class="plan-sheet-head"><div class="modal-cat">${isMine() ? 'Planning perso' : 'Planning partagé'}</div>
+        <div class="modal-title">${esc(labelOf(key))}</div>
+        <button class="modal-close" data-close aria-label="Fermer">✕</button></div>
+      <div class="plan-sheet-body">${msg ? `<div class="share-msg">${msg}</div>` : ''}${body}</div>`);
+
+    const on = (sel, ev, fn) => { const el = sheet.querySelector(sel); if (el) el.addEventListener(ev, fn); };
+    on('[data-rename]', 'submit', async ev => {
+      ev.preventDefault();
+      const name = ev.target.nom.value.trim(); if (!name) return;
+      try {
+        await window.CloudPlanning.rename(key, name);
+        if (key === user.uid) myPlanName = name; else { const x = myShared.find(y => y.key === key); if (x) x.name = name; }
+        activeName = name; renderShareBars(); setSync('✓ Renommé', 'ok'); openShareSheet('✓ Renommé');
+      } catch (e) { console.error(e); openShareSheet(errMsg(e)); }
+    });
+    on('[data-new]', 'click', () => openNewSheet());
+    on('[data-add]', 'submit', async ev => {
+      ev.preventDefault();
+      const m = ev.target.querySelector('input').value.trim().toLowerCase();
+      if (!EMAIL_RE.test(m)) return openShareSheet('Adresse e-mail invalide.');
+      if (shared.members.includes(m)) return openShareSheet('Déjà invité·e.');
+      try { await window.CloudPlanning.setMembers(key, [...shared.members, m]); shared.members = [...shared.members, m]; openShareSheet(`✓ ${esc(m)} peut maintenant voir et modifier ce planning.`); }
+      catch (e) { console.error(e); openShareSheet(errMsg(e)); }
+    });
+    sheet.querySelectorAll('[data-rm-mail]').forEach(b => b.addEventListener('click', async () => {
+      const m = b.dataset.rmMail;
+      if (!confirm(`Retirer ${m} de « ${labelOf(key)} » ?`)) return;
+      try { const list = shared.members.filter(x => x !== m); await window.CloudPlanning.setMembers(key, list); shared.members = list; openShareSheet(`${esc(m)} retiré·e.`); }
+      catch (e) { console.error(e); openShareSheet(errMsg(e)); }
+    }));
+    sheet.querySelectorAll('[data-rm-old]').forEach(b => b.addEventListener('click', async () => {
+      const m = b.dataset.rmOld;
+      try { const list = sharing.sharedWith.filter(x => x !== m); await window.CloudPlanning.setSharing(user.uid, list, user.displayName || '', myEmail()); sharing.sharedWith = list; openShareSheet(`${esc(m)} ne voit plus ton planning perso.`); }
+      catch (e) { console.error(e); openShareSheet(errMsg(e)); }
+    }));
+    on('[data-leave]', 'click', async () => {
+      if (!confirm(`Quitter « ${labelOf(key)} » ? Il faudra être réinvité·e pour le retrouver.`)) return;
+      try { await window.CloudPlanning.leaveShared(key, myEmail()); closeSheet(); openPlanning(user.uid); toast('Planning quitté'); }
+      catch (e) { console.error(e); openShareSheet(errMsg(e)); }
+    });
+    on('[data-delete]', 'click', async () => {
+      if (!confirm(`Supprimer « ${labelOf(key)} » pour tout le monde ? Sa semaine, ses courses et son frigo seront effacés. Ça ne peut pas être annulé.`)) return;
+      try { await window.CloudPlanning.deleteShared(key); closeSheet(); openPlanning(user.uid); toast('Planning supprimé'); }
+      catch (e) { console.error(e); openShareSheet(errMsg(e)); }
+    });
+    on('[data-leave-legacy]', 'click', async () => {
+      if (!confirm('Ne plus voir ce planning ? Il faudra être réinvité·e pour le retrouver.')) return;
+      try { await window.CloudPlanning.leave(key, myEmail()); closeSheet(); openPlanning(user.uid); toast('Planning retiré'); }
+      catch (e) { console.error(e); toast('Impossible pour le moment'); }
+    });
+    on('[data-send]', 'click', async () => {
+      const url = location.origin + location.pathname;
+      const text = `Je t'ai partagé le planning « ${labelOf(key)} » (repas de la semaine, courses et frigo). Connecte-toi avec ton compte Google ici : ${url}`;
+      try {
+        if (navigator.share) await navigator.share({ title: labelOf(key), text, url });
+        else { await navigator.clipboard.writeText(text); toast('Message copié ✓'); }
+      } catch (e) { /* partage annulé */ }
+    });
   }
 
   // ── Branchement sur la connexion (cloud.js → app.js → ici) ──
@@ -735,7 +805,8 @@
     if (typeof prevAuth === 'function') prevAuth(u);
     if (unsub) { unsub(); unsub = null; }
     if (unsubShared) { unsubShared(); unsubShared = null; }
-    user = u; loaded = false; state = { weeks: {} }; activeUid = null; sharedList = []; dirty.clear();
+    if (unsubMyShared) { unsubMyShared(); unsubMyShared = null; }
+    user = u; loaded = false; state = { weeks: {} }; activeUid = null; sharedList = []; myShared = []; myPlanName = ''; dirty.clear();
     if (u && window.CloudPlanning) {
       let saved = '';
       try { saved = localStorage.getItem('planning-actif') || ''; } catch (e) { /* rien */ }
@@ -746,10 +817,21 @@
           sharedList = list;
           // On revient sur le planning partagé qu'on regardait la dernière fois
           if (first && saved && list.some(x => x.uid === saved)) openPlanning(saved);
-          else if (!isMine() && !list.some(x => x.uid === activeUid)) openPlanning(u.uid);
+          else if (!isMine() && !String(activeUid).startsWith('s:') && !list.some(x => x.uid === activeUid)) openPlanning(u.uid);
           first = false;
           renderAll();
         }, err => console.warn('[planning] plannings partagés', err.code || err));
+      }
+      // Plannings partagés séparés (shared_plannings)
+      if (u.email && window.CloudPlanning.subscribeMyShared) {
+        let firstS = true;
+        unsubMyShared = window.CloudPlanning.subscribeMyShared(u.email.toLowerCase(), list => {
+          myShared = list;
+          if (firstS && saved && saved.startsWith('s:') && list.some(x => x.key === saved)) openPlanning(saved);
+          else if (String(activeUid).startsWith('s:') && !list.some(x => x.key === activeUid)) { toast('Tu n\'as plus accès à ce planning'); openPlanning(u.uid); }
+          firstS = false;
+          renderAll();
+        }, err => console.warn('[planning] plannings partagés (nouveaux)', err.code || err));
       }
     }
     renderAll();
