@@ -63,8 +63,6 @@ service cloud.firestore {
                         && request.resource.data.sharedWith == resource.data.sharedWith.removeAll([myEmail()]));
     }
 
-    // Liste des recettes d'origine (du fichier recettes-data.js) qu'Alissia a
-    // choisi de masquer ou de remplacer. Réservé à Alissia.
     // Plannings partagés : séparés du planning perso, chacun avec sa semaine,
     // ses courses, son frigo et un nom. members = adresses e-mail (minuscules)
     // des personnes qui le voient, la créatrice comprise.
@@ -104,6 +102,8 @@ service cloud.firestore {
       allow delete: if isCreator();
     }
 
+    // Liste des recettes d'origine (du fichier recettes-data.js) qu'Alissia a
+    // choisi de masquer ou de remplacer. Réservé à Alissia.
     match /hidden_static_recipes/{staticId} {
       allow read: if true;
       allow write: if isAdmin();
