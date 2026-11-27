@@ -433,3 +433,13 @@
   border-radius: 999px; padding: 0.3rem 0.7rem; font: inherit; font-size: 0.78rem; cursor: pointer;
 }
 .plan-pick-sel button b { color: var(--muted); font-weight: 400; margin-left: 0.2rem; }
+
+/* ── Ordinateur / tablette : la barre Recettes · Ma semaine · Courses · Frigo
+   reste collée en haut de l'écran quand on descend ── */
+@media (min-width: 781px) {
+  .view-nav {
+    position: sticky; top: 0; z-index: 120;
+    box-shadow: 0 6px 16px -12px rgba(62, 36, 20, 0.45);
+  }
+  .filter-bar { top: 54px !important; }
+}
