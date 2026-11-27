@@ -105,14 +105,26 @@
     if (hasPhoto(r)) return `<img src="${esc(r.photo)}" alt="" loading="lazy" onerror="this.outerHTML='<span class=&quot;vis-emo&quot;>${emojiFor(r)}</span>'">`;
     return `<span class="vis-emo" aria-hidden="true">${emojiFor(r)}</span>`;
   }
-  // Visuel rond façon assiette
+  // Présentation selon la catégorie :
+  //  • assiette pour les plats, entrées et desserts
+  //  • bol à sauce pour les sauces
+  //  • l'aliment seul, sans fond, pour tout le reste (verre de cocktail, apéro…)
+  const PLATE_CATS = ['plat', 'entree', 'dessert'];
+  const styleOf = r => PLATE_CATS.includes(r.cat) ? 'plate' : (r.cat === 'sauce' ? 'bowl' : 'free');
   function plateHtml(r, cls) {
-    return `<div class="plate ${cls || ''}" aria-hidden="true"><div class="plate-in" style="background:${TINT[r.cat] || '#EFE4D4'}">${visualInner(r)}</div></div>`;
+    const st = styleOf(r);
+    const tint = TINT[r.cat] || '#EFE4D4';
+    if (st === 'free') {
+      return hasPhoto(r)
+        ? `<div class="free free--photo ${cls || ''}" aria-hidden="true">${visualInner(r)}</div>`
+        : `<div class="free ${cls || ''}" aria-hidden="true">${visualInner(r)}</div>`;
+    }
+    return `<div class="${st} ${cls || ''}" aria-hidden="true"><div class="plate-in" style="background:${st === 'bowl' ? '#F3E3C3' : tint}">${visualInner(r)}</div></div>`;
   }
   // Petite vignette carrée arrondie (planning, listes…)
   function thumbHtml(r, cls) {
     return `<div class="vis-thumb ${cls || ''}" style="background:${TINT[r.cat] || '#EFE4D4'}" aria-hidden="true">${visualInner(r)}</div>`;
   }
 
-  window.RecipeVisual = { emojiFor, hasPhoto, plateHtml, thumbHtml, tint: r => TINT[r.cat] || '#EFE4D4' };
+  window.RecipeVisual = { emojiFor, hasPhoto, plateHtml, thumbHtml, styleOf, tint: r => TINT[r.cat] || '#EFE4D4' };
 })();
