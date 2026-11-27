@@ -322,3 +322,47 @@
 }
 .steps-list .step-timers { grid-column: 2; margin-top: 0; }
 .step-timer { display: inline-flex; align-items: center; width: auto; height: auto; line-height: 1.3; white-space: nowrap; }
+/* ═══════ Téléphone : 2 recettes par ligne, visuel en haut de la carte ═══════ */
+@media (max-width: 780px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2.4rem 0.6rem !important;
+    padding-top: 2.6rem !important;
+  }
+  .recipe-card { min-width: 0; border-radius: 16px !important; padding-top: 0; }
+  /* visuel centré qui dépasse un peu en haut */
+  .card-plate, .card-plate.bowl, .card-plate.free {
+    position: relative !important; top: auto !important; right: auto !important;
+    display: block; margin: -2rem auto -0.2rem !important;
+  }
+  .card-plate { width: 74% !important; max-width: 140px !important; }
+  .card-plate.bowl { width: 62% !important; max-width: 118px !important; }
+  .card-plate.free { width: 70% !important; max-width: 130px !important; aspect-ratio: 1; }
+  .plate .vis-emo { font-size: 2.6rem !important; }
+  .bowl .vis-emo { font-size: 2.1rem !important; }
+  .free .vis-emo { font-size: 3.6rem !important; }
+  .recipe-card:hover .card-plate { transform: none; }
+
+  .recipe-card .card-body { padding: 0.5rem 0.7rem 0.6rem !important; }
+  .card-top { padding-right: 0 !important; min-height: 0 !important; margin-bottom: 0.5rem !important; }
+  .card-cat { font-size: 0.56rem !important; letter-spacing: 0.1em !important; gap: 3px; display: flex; flex-wrap: wrap; align-items: center; }
+  .card-cat .vege-badge, .card-cat .variant-badge { margin-left: 0 !important; font-size: 0.56rem !important; padding: 0 5px !important; }
+  .card-title { font-size: 0.92rem !important; line-height: 1.2 !important; margin: 0.25rem 0 0 !important; -webkit-line-clamp: 2 !important; }
+  .card-top .card-ings { font-size: 0.68rem !important; line-height: 1.35; margin-top: 0.3rem !important; -webkit-line-clamp: 2 !important; }
+  .card-foot { padding-top: 0.45rem; gap: 0.2rem 0.5rem; font-size: 0.66rem; }
+  .card-foot .owner-badge { display: none; }
+  .foot-mc { font-size: 0; padding: 1px 6px; }
+  .foot-mc::after { content: 'MC'; font-size: 0.6rem; }
+  .card-vnav { margin: 0.5rem -0.35rem -0.2rem; padding: 0.25rem; gap: 0.2rem; }
+  .card-vnav button { width: 28px; height: 28px; font-size: 1.1rem; }
+  .card-vnav b { font-size: 0.66rem; }
+  .card-vnav small { font-size: 0.58rem; }
+}
+@media (max-width: 780px) {
+  .auth-long { display: none; }
+  .free.card-plate { display: flex !important; align-items: center; justify-content: center; }
+  .free.card-plate .vis-emo { font-size: 4.2rem !important; }
+}
+@media (max-width: 400px) {
+  header h1 { font-size: 1.1rem !important; }
+}
