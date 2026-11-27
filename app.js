@@ -516,21 +516,18 @@ function openModal(idx) {
   const photoWrap = document.getElementById('modal-photo-wrap');
   const photoImg = document.getElementById('modal-photo');
   const photoPlaceholder = document.getElementById('modal-photo-placeholder');
-  if (!window.RecipeVisual || RecipeVisual.hasPhoto(r)) {
-    photoImg.src = r.photo || SITE_PHOTO;
-    photoImg.alt = r.titre;
-    photoImg.onerror = function () { this.onerror = null; this.src = SITE_PHOTO; };
-    photoImg.style.display = 'block';
-    photoPlaceholder.style.display = 'none';
-    photoWrap.classList.remove('modal-photo-wrap--placeholder', 'modal-photo-wrap--illu');
-    photoWrap.style.background = '';
+  if (!window.RecipeVisual) {
+    photoImg.src = r.photo || SITE_PHOTO; photoImg.alt = r.titre;
+    photoImg.style.display = 'block'; photoPlaceholder.style.display = 'none';
   } else {
-    // Pas encore de photo : grande illustration dans une assiette
+    // Même présentation que sur la carte (assiette, bol ou aliment seul), en grand sur un fond clair
     photoImg.style.display = 'none';
     photoPlaceholder.style.display = 'flex';
     photoPlaceholder.innerHTML = RecipeVisual.plateHtml(r, 'modal-plate');
+    photoWrap.classList.remove('modal-photo-wrap--placeholder');
     photoWrap.classList.add('modal-photo-wrap--illu');
-    photoWrap.style.background = RecipeVisual.tint(r);
+    photoWrap.dataset.style = RecipeVisual.styleOf(r);
+    photoWrap.style.background = '';
   }
 
   document.getElementById('modal-cat').textContent = catLabels[r.cat];
@@ -771,10 +768,26 @@ function updateRecropButton() {
 
 // Forme du cadrage selon la catégorie : assiette (plats, entrées, desserts), bol (sauces),
 // ou libre pour le reste (l'arrière-plan sera enlevé à l'enregistrement).
-function cropStyle() {
-  const cat = document.getElementById('new-cat').value;
-  return window.RecipeVisual ? RecipeVisual.styleOf({ cat }) : 'plate';
+// Présentation choisie dans le formulaire (proposée selon la catégorie tant qu'on n'y touche pas)
+let presManual = false;
+function setPresentation(v) {
+  const el = document.querySelector(`#pres-choice input[value="${v}"]`); if (el) el.checked = true;
 }
+function cropStyle() {
+  const el = document.querySelector('#pres-choice input:checked');
+  if (el) return el.value;
+  const cat = document.getElementById('new-cat').value;
+  return window.RecipeVisual ? RecipeVisual.catStyle(cat) : 'plate';
+}
+document.getElementById('new-cat').addEventListener('change', e => {
+  if (!presManual && window.RecipeVisual) setPresentation(RecipeVisual.catStyle(e.target.value));
+});
+document.getElementById('pres-choice').addEventListener('change', async () => {
+  presManual = true;
+  const st = cropStyle();
+  if (newPhotoDataUrl || editingOriginalPhoto) newPhotoPreview.className = 'form-photo-preview photo-preview--' + st;
+  if (st === 'free' && newPhotoDataUrl) await cutNewPhoto();
+});
 function openCropper(src) {
   cropSourceDataUrl = src;
   cropImage.src = src;
@@ -821,6 +834,10 @@ document.getElementById('crop-confirm').addEventListener('click', async () => {
   updateRecropButton();
   if (st === 'free') await cutNewPhoto();
 });
+function resetPresentation() {
+  presManual = false;
+  setPresentation(window.RecipeVisual ? RecipeVisual.catStyle(document.getElementById('new-cat').value) : 'plate');
+}
 
 // Détourage de la photo choisie (catégories « sans fond »)
 async function cutNewPhoto() {
@@ -847,6 +864,7 @@ newPhotoRecropBtn.addEventListener('click', () => {
 });
 
 function openAddModal() {
+  if (!editingDocId && !editingStaticId) resetPresentation();
   addModalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -919,6 +937,8 @@ document.getElementById('modal-edit').addEventListener('click', () => {
 
   document.getElementById('new-titre').value = r.titre;
   document.getElementById('new-cat').value = r.cat;
+  presManual = !!r.presentation;
+  setPresentation(window.RecipeVisual ? RecipeVisual.styleOf(r) : 'plate');
   document.getElementById('new-temps').value = r.temps;
   document.getElementById('new-personnes').value = r.personnes;
   document.getElementById('new-ingredients').value = r.ingredients.map(ingLabel).join('\n');
@@ -975,7 +995,7 @@ addForm.addEventListener('submit', async e => {
     // Si on modifie une recette sans changer sa photo, on garde l'ancienne
     // (essentiel pour les recettes d'origine : sinon la version modifiée perdrait sa photo).
     // Catégorie « sans fond » : on enlève l'arrière-plan de la nouvelle photo si ce n'est pas déjà fait
-    if (newPhotoDataUrl && !newPhotoCut && window.RecipeVisual && RecipeVisual.styleOf({ cat }) === 'free') {
+    if (newPhotoDataUrl && !newPhotoCut && window.RecipeVisual && cropStyle() === 'free') {
       statusEl.textContent = "Je retire l'arrière-plan de la photo…";
       await cutNewPhoto();
       statusEl.textContent = 'Enregistrement en ligne…';
@@ -987,6 +1007,7 @@ addForm.addEventListener('submit', async e => {
       ingredients: ingredientsLines.map(parseIngredientLine),
       etapes: etapesLines,
     };
+    recipeData.presentation = cropStyle();
     if (photo) recipeData.photo = photo;
     if (newPhotoDataUrl) recipeData.photoDetouree = newPhotoCut;
     else if (editingOriginalDetouree) recipeData.photoDetouree = true;
