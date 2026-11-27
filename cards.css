@@ -380,3 +380,6 @@
 /* Nombre de personnes + ce qu'il compte (pers., muffins…) */
 .pers-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
 .pers-row input { min-width: 0; }
+
+/* Les recettes qui ne correspondent pas à la recherche / aux filtres restent cachées */
+.recipe-card.hidden { display: none !important; }

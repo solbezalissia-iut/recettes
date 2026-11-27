@@ -309,7 +309,11 @@ function parseTempsMinutes(temps) {
 }
 
 function cardMatchesFilters(r) {
-  if (searchQuery && !normalize(r.titre).includes(normalize(searchQuery))) return false;
+  if (searchQuery) {
+    // Le titre, le nom d'une version ou un ingrédient ; chaque mot cherché doit s'y trouver
+    const hay = normalize([r.titre, catLabels[r.cat] || ''].concat(getVariants(r).flatMap(v => [v.nom || ''].concat((v.ingredients || []).map(ingLabel)))).join(' '));
+    if (!normalize(searchQuery).split(/\s+/).filter(Boolean).every(w => hay.includes(w))) return false;
+  }
   if (activeDiets.size && !getVariants(r).some(variantMatchesDiets)) return false;
   if (timeFilter) {
     const max = parseInt(timeFilter, 10);
