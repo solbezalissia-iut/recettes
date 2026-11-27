@@ -910,6 +910,38 @@ newPhotoInput.addEventListener('change', async () => {
   openCropper(dataUrl);
 });
 
+// ── Coller ou glisser une image ──
+// Ctrl+V / ⌘+V n'importe où dans le formulaire, bouton « Coller une image » (pratique sur téléphone), ou glisser-déposer.
+async function useImageFile(file) {
+  if (!file || !/^image\//.test(file.type)) return false;
+  openCropper(await readFileAsDataUrl(file));
+  return true;
+}
+document.addEventListener('paste', e => {
+  if (!addModalOverlay.classList.contains('open') || cropModalOverlay.classList.contains('open')) return;
+  const item = [...(e.clipboardData ? e.clipboardData.items : [])].find(i => i.kind === 'file' && /^image\//.test(i.type));
+  if (!item) return; // du texte : on le laisse se coller normalement
+  e.preventDefault();
+  useImageFile(item.getAsFile());
+});
+document.getElementById('new-photo-paste').addEventListener('click', async () => {
+  try {
+    if (!navigator.clipboard || !navigator.clipboard.read) throw new Error('non pris en charge');
+    for (const it of await navigator.clipboard.read()) {
+      const type = it.types.find(t => /^image\//.test(t));
+      if (type) { const blob = await it.getType(type); return useImageFile(new File([blob], 'image', { type })); }
+    }
+    alert("Il n'y a pas d'image copiée. Copie d'abord une image (appui long sur l'image → Copier), puis réessaie.");
+  } catch (e) {
+    alert("Ton navigateur ne me laisse pas lire le presse-papier ici. Utilise Ctrl+V (⌘+V sur Mac) dans le formulaire, ou choisis le fichier.");
+  }
+});
+['dragover', 'drop'].forEach(ev => addModalOverlay.addEventListener(ev, e => {
+  if (!e.dataTransfer || ![...e.dataTransfer.types].includes('Files')) return;
+  e.preventDefault();
+  if (ev === 'drop') useImageFile([...e.dataTransfer.files].find(f => /^image\//.test(f.type)));
+}));
+
 // ── Modifier une recette existante ──
 // (son auteur, ou Alissia qui peut tout modifier, y compris les recettes d'origine)
 document.getElementById('modal-edit').addEventListener('click', () => {
