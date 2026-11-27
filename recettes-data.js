@@ -2899,95 +2899,6 @@ const recettes = [
     ]
   },
   {
-    "id": "static-22",
-    "titre": "Biscuits choco caramel viraux de TikTok",
-    "photo": "photos/enattente.png",
-    "temps": "47 min",
-    "personnes": "30",
-    "cat": "dessert",
-    "ingredients": [
-      {
-        "texte": "150 g de farine",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "100 g de beurre très mou",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "beurre très mou"
-      },
-      {
-        "texte": "50 g de sucre",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "2 g de fleur de sel",
-        "valeur": 2,
-        "unite": "g",
-        "reste": "fleur de sel"
-      },
-      {
-        "texte": "0,5 c. à café de levure chimique",
-        "valeur": 0.5,
-        "unite": "c. à café",
-        "reste": "levure chimique"
-      },
-      {
-        "texte": "400 g de lait concentré sucré",
-        "valeur": 400,
-        "unite": "g",
-        "reste": "lait concentré sucré"
-      },
-      {
-        "texte": "100 g de sucre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "100 g de beurre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "15 g de miel",
-        "valeur": 15,
-        "unite": "g",
-        "reste": "miel"
-      },
-      {
-        "texte": "200 g de chocolat au choix",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chocolat au choix"
-      }
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C. Préparer un cadre de cuisson de 20 cm de diamètre ou équivalent pour un moule carré.",
-      "Dans un bol, mélanger farine, beurre mou, sucre, fleur de sel et levure chimique jusqu'à obtenir une pâte sablée homogène.",
-      "Étaler la pâte sablée dans le cadre en une couche uniforme et piquer légèrement pour éviter les bulles.",
-      "Enfourner 12 à 15 minutes jusqu'à dorure légère. Retirer et laisser refroidir complètement.",
-      "Préparer le caramel en faisant chauffer le lait concentré sucré avec le sucre, le beurre et le miel dans une casserole à feu moyen, en remuant jusqu'à obtention d'une texture lisse et légèrement épaisse.",
-      "Étaler une couche de caramel sur le fond sablé refroidi et lisser.",
-      "Préparer le nappage chocolat en faisant fondre le chocolat au bain-marie ou au micro-ondes en pulsant par intervalles, puis étaler sur le caramel de manière uniforme.",
-      "Laisser prendre le nappage à température ambiante ou au réfrigérateur quelques minutes avant de découper.",
-      "Découper le gâteau en carrés d'environ 4 par 4 cm pour obtenir environ une trentaine de carrés.",
-      "Conserver au réfrigérateur dans une boîte hermétique jusqu'au service pour garder le caramel et le chocolat fermes."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C et préparer un cadre de 20 cm.",
-      "Mettre la farine, le beurre très mou, le sucre, la fleur de sel et la levure dans le bol. Mélanger <b>20 s / vitesse 4</b>. Tasser dans le cadre, piquer et cuire 12 à 15 minutes. Laisser refroidir.",
-      "Caramel : mettre le lait concentré, le sucre, le beurre et le miel dans le bol propre. Cuire <b>12 min / 100 °C / vitesse 3</b>, sans le gobelet, jusqu'à ce que le caramel épaississe. L'étaler sur le sablé.",
-      "Chocolat : mettre le chocolat dans le bol propre, hacher <b>10 s / vitesse 7</b> puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. L'étaler sur le caramel.",
-      "Laisser prendre, couper en carrés de 4 cm et conserver au réfrigérateur."
-    ]
-  },
-  {
     "id": "static-23",
     "titre": "Biscuits façon BN au Nutella",
     "photo": "photos/enattente.png",
@@ -19774,80 +19685,172 @@ const recettes = [
     "id": "static-159",
     "titre": "Gâteau millionnaire (sablé, caramel, chocolat)",
     "photo": "photos/millionnaire.png",
-    "temps": "60 min (+ repos)",
-    "personnes": "8",
     "cat": "dessert",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "200 g de farine",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "farine"
+        "nom": "Classique",
+        "temps": "60 min (+ repos)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "200 g de farine",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de beurre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "80 g de sucre",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "1 pincée de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel"
+          },
+          {
+            "texte": "350 g de lait concentré sucré",
+            "valeur": 350,
+            "unite": "g",
+            "reste": "lait concentré sucré"
+          },
+          {
+            "texte": "140 g de beurre (caramel)",
+            "valeur": 140,
+            "unite": "g",
+            "reste": "beurre (caramel)"
+          },
+          {
+            "texte": "90 g de cassonade",
+            "valeur": 90,
+            "unite": "g",
+            "reste": "cassonade"
+          },
+          {
+            "texte": "3 c. à soupe de sirop de glucose ou miel",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "sirop de glucose ou miel"
+          },
+          {
+            "texte": "200 g de chocolat au lait ou noir",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat au lait ou noir"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180°C.",
+          "Préparer la pâte sablée : mélanger le beurre mou avec le sucre et le sel, puis incorporer la farine jusqu'à obtenir une pâte homogène.",
+          "Étaler la pâte dans un moule carré chemisé de papier cuisson et piquer le fond avec une fourchette.",
+          "Cuire à blanc pendant 15 à 18 minutes, jusqu'à ce que le sablé soit doré. Laisser refroidir.",
+          "Préparer le caramel : dans une casserole, faire chauffer le lait concentré sucré, le beurre, la cassonade et le sirop de glucose à feu doux, en remuant constamment pendant 12 à 15 minutes jusqu'à obtenir une texture épaisse et caramélisée (la couche de caramel doit être généreuse, nettement plus épaisse que le sablé).",
+          "Verser le caramel chaud sur le sablé refroidi en une couche généreuse et lisser la surface. Laisser refroidir complètement à température ambiante.",
+          "Faire fondre le chocolat au bain-marie ou au micro-ondes, puis l'étaler uniformément sur le caramel froid.",
+          "Réfrigérer au moins 2 heures avant de découper en carrés."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C.",
+          "Sablé : mettre le beurre mou, le sucre, le sel et la farine dans le bol. Pétrir <b>30 s / mode pétrin</b>. Tasser dans le moule, piquer et cuire 15 à 18 minutes.",
+          "Caramel : bol propre, mettre le lait concentré, le beurre, la cassonade et le sirop. Cuire <b>15 min / 100 °C / vitesse 3</b>, sans le gobelet (panier posé sur le couvercle), jusqu'à ce qu'il soit doré et épais. Verser sur le sablé et laisser prendre.",
+          "Chocolat : bol propre, <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>. Napper et réfrigérer avant de couper."
+        ]
       },
       {
-        "texte": "100 g de beurre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "80 g de sucre",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "1 pincée de sel",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      },
-      {
-        "texte": "350 g de lait concentré sucré",
-        "valeur": 350,
-        "unite": "g",
-        "reste": "lait concentré sucré"
-      },
-      {
-        "texte": "140 g de beurre (caramel)",
-        "valeur": 140,
-        "unite": "g",
-        "reste": "beurre (caramel)"
-      },
-      {
-        "texte": "90 g de cassonade",
-        "valeur": 90,
-        "unite": "g",
-        "reste": "cassonade"
-      },
-      {
-        "texte": "3 c. à soupe de sirop de glucose ou miel",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "sirop de glucose ou miel"
-      },
-      {
-        "texte": "200 g de chocolat au lait ou noir",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chocolat au lait ou noir"
+        "nom": "Version TikTok (fleur de sel, en carrés)",
+        "temps": "47 min",
+        "personnes": "30",
+        "ingredients": [
+          {
+            "texte": "150 g de farine",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "100 g de beurre très mou",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "beurre très mou"
+          },
+          {
+            "texte": "50 g de sucre",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "2 g de fleur de sel",
+            "valeur": 2,
+            "unite": "g",
+            "reste": "fleur de sel"
+          },
+          {
+            "texte": "0,5 c. à café de levure chimique",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "400 g de lait concentré sucré",
+            "valeur": 400,
+            "unite": "g",
+            "reste": "lait concentré sucré"
+          },
+          {
+            "texte": "100 g de sucre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "100 g de beurre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "15 g de miel",
+            "valeur": 15,
+            "unite": "g",
+            "reste": "miel"
+          },
+          {
+            "texte": "200 g de chocolat au choix",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat au choix"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 180°C. Préparer un cadre de cuisson de 20 cm de diamètre ou équivalent pour un moule carré.",
+          "Dans un bol, mélanger farine, beurre mou, sucre, fleur de sel et levure chimique jusqu'à obtenir une pâte sablée homogène.",
+          "Étaler la pâte sablée dans le cadre en une couche uniforme et piquer légèrement pour éviter les bulles.",
+          "Enfourner 12 à 15 minutes jusqu'à dorure légère. Retirer et laisser refroidir complètement.",
+          "Préparer le caramel en faisant chauffer le lait concentré sucré avec le sucre, le beurre et le miel dans une casserole à feu moyen, en remuant jusqu'à obtention d'une texture lisse et légèrement épaisse.",
+          "Étaler une couche de caramel sur le fond sablé refroidi et lisser.",
+          "Préparer le nappage chocolat en faisant fondre le chocolat au bain-marie ou au micro-ondes en pulsant par intervalles, puis étaler sur le caramel de manière uniforme.",
+          "Laisser prendre le nappage à température ambiante ou au réfrigérateur quelques minutes avant de découper.",
+          "Découper le gâteau en carrés d'environ 4 par 4 cm pour obtenir environ une trentaine de carrés.",
+          "Conserver au réfrigérateur dans une boîte hermétique jusqu'au service pour garder le caramel et le chocolat fermes."
+        ],
+        "mc": [
+          "Préchauffer le four à 180 °C et préparer un cadre de 20 cm.",
+          "Mettre la farine, le beurre très mou, le sucre, la fleur de sel et la levure dans le bol. Mélanger <b>20 s / vitesse 4</b>. Tasser dans le cadre, piquer et cuire 12 à 15 minutes. Laisser refroidir.",
+          "Caramel : mettre le lait concentré, le sucre, le beurre et le miel dans le bol propre. Cuire <b>12 min / 100 °C / vitesse 3</b>, sans le gobelet, jusqu'à ce que le caramel épaississe. L'étaler sur le sablé.",
+          "Chocolat : mettre le chocolat dans le bol propre, hacher <b>10 s / vitesse 7</b> puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. L'étaler sur le caramel.",
+          "Laisser prendre, couper en carrés de 4 cm et conserver au réfrigérateur."
+        ],
+        "portion": "carrés"
       }
-    ],
-    "etapes": [
-      "Préchauffer le four à 180°C.",
-      "Préparer la pâte sablée : mélanger le beurre mou avec le sucre et le sel, puis incorporer la farine jusqu'à obtenir une pâte homogène.",
-      "Étaler la pâte dans un moule carré chemisé de papier cuisson et piquer le fond avec une fourchette.",
-      "Cuire à blanc pendant 15 à 18 minutes, jusqu'à ce que le sablé soit doré. Laisser refroidir.",
-      "Préparer le caramel : dans une casserole, faire chauffer le lait concentré sucré, le beurre, la cassonade et le sirop de glucose à feu doux, en remuant constamment pendant 12 à 15 minutes jusqu'à obtenir une texture épaisse et caramélisée (la couche de caramel doit être généreuse, nettement plus épaisse que le sablé).",
-      "Verser le caramel chaud sur le sablé refroidi en une couche généreuse et lisser la surface. Laisser refroidir complètement à température ambiante.",
-      "Faire fondre le chocolat au bain-marie ou au micro-ondes, puis l'étaler uniformément sur le caramel froid.",
-      "Réfrigérer au moins 2 heures avant de découper en carrés."
-    ],
-    "mc": [
-      "Préchauffer le four à 180 °C.",
-      "Sablé : mettre le beurre mou, le sucre, le sel et la farine dans le bol. Pétrir <b>30 s / mode pétrin</b>. Tasser dans le moule, piquer et cuire 15 à 18 minutes.",
-      "Caramel : bol propre, mettre le lait concentré, le beurre, la cassonade et le sirop. Cuire <b>15 min / 100 °C / vitesse 3</b>, sans le gobelet (panier posé sur le couvercle), jusqu'à ce qu'il soit doré et épais. Verser sur le sablé et laisser prendre.",
-      "Chocolat : bol propre, <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>. Napper et réfrigérer avant de couper."
     ]
   },
   {
@@ -46711,5 +46714,9 @@ const recettesFusionnees = {
   "static-296": [
     "static-297",
     2
+  ],
+  "static-22": [
+    "static-159",
+    1
   ]
 };
