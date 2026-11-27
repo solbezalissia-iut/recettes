@@ -37,7 +37,11 @@ import {
   onSnapshot,
   serverTimestamp,
   query,
-  orderBy
+  orderBy,
+  where,
+  deleteField,
+  arrayRemove,
+  FieldPath
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 const RECIPES_COLLECTION = 'recipes';
@@ -66,17 +70,44 @@ if (configLooksEmpty(window.FIREBASE_CONFIG)) {
 
   let currentUser = null;
 
-  // Planning de la semaine + liste de courses : un document privé par compte (planning/{uid}).
+  // Planning de la semaine + liste de courses : un document par compte (planning/{uid}).
+  // Le propriétaire peut le partager avec d'autres comptes Google (champ sharedWith,
+  // liste d'adresses e-mail en minuscules) : ils le voient et le modifient en direct.
   // Utilisé par planning.js. Défini AVANT l'écoute de la connexion pour être prêt dès le login.
+  const planRef = uid => doc(db, PLANNING_COLLECTION, uid);
   window.CloudPlanning = {
+    // Suit un planning (le sien ou un planning partagé)
     subscribe(uid, onData, onError) {
-      return onSnapshot(doc(db, PLANNING_COLLECTION, uid), (snap) => {
+      return onSnapshot(planRef(uid), (snap) => {
         if (snap.metadata.hasPendingWrites) return; // nos propres enregistrements, déjà affichés
         onData(snap.exists() ? snap.data() : null);
       }, onError);
     },
-    async save(uid, data) {
-      await setDoc(doc(db, PLANNING_COLLECTION, uid), { ...data, updatedAt: serverTimestamp() });
+    // Suit la liste des plannings que d'autres ont partagés avec cette adresse
+    subscribeShared(email, onList, onError) {
+      const q = query(collection(db, PLANNING_COLLECTION), where('sharedWith', 'array-contains', email));
+      return onSnapshot(q, (snap) => {
+        onList(snap.docs.map(d => ({ uid: d.id, ownerName: d.data().ownerName || '', ownerEmail: d.data().ownerEmail || '' })));
+      }, onError);
+    },
+    // Enregistre UNE semaine (les autres semaines ne sont pas touchées : deux personnes
+    // peuvent modifier des semaines différentes en même temps sans s'écraser).
+    async saveWeek(uid, key, week) {
+      try {
+        await updateDoc(planRef(uid), new FieldPath('weeks', key), week ? week : deleteField(), 'updatedAt', serverTimestamp());
+      } catch (e) {
+        if (e.code !== 'not-found' || !week) throw e;
+        // Premier enregistrement : le document n'existe pas encore (seul le propriétaire peut le créer)
+        await setDoc(planRef(uid), { weeks: { [key]: week }, updatedAt: serverTimestamp() }, { merge: true });
+      }
+    },
+    // Réservé au propriétaire : avec qui le planning est partagé
+    async setSharing(uid, emails, ownerName, ownerEmail) {
+      await setDoc(planRef(uid), { sharedWith: emails, ownerName: ownerName || '', ownerEmail: ownerEmail || '' }, { merge: true });
+    },
+    // Pour un invité : ne plus voir un planning partagé
+    async leave(uid, email) {
+      await updateDoc(planRef(uid), { sharedWith: arrayRemove(email) });
     }
   };
 

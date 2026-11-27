@@ -383,3 +383,29 @@
 }
 .plan-toast.on { opacity: 1; transform: translate(-50%, 0); }
 @media (max-width: 780px) { .plan-toast { bottom: calc(82px + env(safe-area-inset-bottom)); } }
+
+/* ── Partage du planning ── */
+.plan-sharebar { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 0.75rem; }
+.plan-sharebar[hidden] { display: none; }
+.share-switch { display: flex; gap: 0.35rem; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
+.share-switch::-webkit-scrollbar { display: none; }
+.share-switch button {
+  flex: none; border: 1px solid var(--border); background: #fff; color: var(--espresso);
+  border-radius: 999px; padding: 0.45rem 0.9rem; font: inherit; font-size: 0.85rem; cursor: pointer; white-space: nowrap;
+}
+.share-switch button.on { background: var(--espresso); color: #fff; border-color: var(--espresso); }
+.share-info { flex: 1; min-width: 0; font-size: 0.85rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.share-btn {
+  flex: none; border: 1px solid var(--border); background: var(--cream); color: var(--espresso);
+  border-radius: 999px; padding: 0.45rem 0.9rem; font: inherit; font-size: 0.85rem; font-weight: 500; cursor: pointer;
+}
+.share-btn:hover { background: #fff; }
+.share-p { color: var(--muted); font-size: 0.92rem; line-height: 1.5; margin: 0 0 1rem; }
+.share-add { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+.share-add input { flex: 1; min-width: 0; padding: 0.7rem 0.9rem; border: 1px solid var(--border); border-radius: 12px; font: inherit; font-size: 16px; }
+.share-msg { font-size: 0.88rem; margin: 0 0 1rem; padding: 0.6rem 0.8rem; border-radius: 10px; background: var(--cream); }
+.share-list { list-style: none; padding: 0; margin: 0 0 1rem; }
+.share-list li { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.65rem 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+.share-list li span { overflow: hidden; text-overflow: ellipsis; }
+.share-list button { border: none; background: none; color: var(--blush); font: inherit; font-size: 0.85rem; cursor: pointer; padding: 0.3rem 0.5rem; }
+.share-send, .share-leave { width: 100%; }
