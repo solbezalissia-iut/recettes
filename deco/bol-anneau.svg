@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="rim" cx="38%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#f8f3ea"/>
+      <stop offset="0.9" stop-color="#e8ddca"/><stop offset="1" stop-color="#d6c6a8"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#rim)" fill-rule="evenodd" d="M100 2a98 98 0 1 0 0.001 0zM100 18a82 82 0 1 1 -0.001 0z"/>
+  <path d="M 38 158 A 86 86 0 0 0 176 120" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="100" cy="100" r="83.5" fill="none" stroke="#D8B265" stroke-width="3"/>
+</svg>
