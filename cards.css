@@ -153,3 +153,35 @@
 .photo-preview--free img { max-height: 240px; width: auto; object-fit: contain;
   background: repeating-conic-gradient(#eee 0% 25%, #fff 0% 50%) 50% / 16px 16px; border-radius: 12px; }
 .detour-wait { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
+
+/* ── Choix de la présentation de l'image (formulaire) ── */
+.pres-choice { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+.pres-choice label { cursor: pointer; margin: 0; text-transform: none !important; letter-spacing: 0 !important; }
+.pres-choice input { position: absolute; opacity: 0; pointer-events: none; }
+.pres-choice span {
+  display: flex; flex-direction: column; align-items: center; gap: 0.35rem; text-align: center;
+  padding: 0.7rem 0.4rem; border: 1.5px solid var(--border); border-radius: 14px; background: var(--warm-white);
+  font-size: 0.8rem; font-weight: 500; color: var(--espresso); line-height: 1.2; transition: border-color .15s, background .15s;
+}
+.pres-choice span img, .pres-free-ico { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; }
+.pres-free-ico { font-size: 1.5rem; font-weight: 400; color: var(--caramel);
+  background: repeating-conic-gradient(#eee6da 0 25%, #fff 0 50%) 50% / 12px 12px; border-radius: 10px; }
+.pres-choice input:checked + span { border-color: var(--caramel); background: #FBF1E6; box-shadow: 0 0 0 3px rgba(184,115,58,.15); }
+.pres-choice input:focus-visible + span { outline: 2px solid var(--caramel); outline-offset: 2px; }
+
+/* ── Fiche recette : visuel en grand sur fond clair, comme sur la carte ── */
+.modal-photo-wrap.modal-photo-wrap--illu {
+  height: 330px !important;
+  background: radial-gradient(ellipse at 50% 55%, #FFFDF9 0%, #F6EDE1 60%, #EBDDCB 100%) !important;
+}
+.modal-photo-wrap--illu #modal-photo-placeholder { padding: 1.4rem 0 1.2rem; box-sizing: border-box; }
+.modal-plate { width: auto !important; height: 100%; aspect-ratio: 1; }
+.modal-plate.bowl { height: 88%; }
+.modal-plate.free { aspect-ratio: auto; width: 70% !important; height: 100%; position: relative; }
+.modal-plate.free .vis-cut { filter: drop-shadow(0 14px 18px rgba(60,35,20,.22)); }
+.modal-plate .vis-emo { font-size: 6rem; }
+.modal-plate.free .vis-emo { font-size: 9rem; }
+@media (max-width: 780px) {
+  .modal-photo-wrap.modal-photo-wrap--illu { height: 260px !important; }
+  .modal-plate .vis-emo { font-size: 4.6rem; }
+}
