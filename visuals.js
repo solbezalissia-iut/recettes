@@ -100,10 +100,21 @@
   const hasPhoto = r => !!(r && r.photo && !/enattente/i.test(r.photo));
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  // Contenu d'un visuel (photo ou illustration), sans cadre
+  // Photos détourées (sans arrière-plan) dans photos/detoure/ — seulement celles où le détourage est réussi
+  const DETOURE = ['aperolcerises', 'avocadotoast', 'avocatsthoncaprice', 'bagel', 'bagelthoncaprice', 'baguette', 'bobun',
+    'bouleschocookie', 'courgettefarcis', 'gateauriz', 'gaufresliege', 'gaufrespdtbrunch', 'gnoccipesto', 'kangoo', 'languesdechat',
+    'lasagne', 'mailanderli', 'millionnaire', 'patesbetteravefeta', 'pdtfourreesgruyere', 'saladepomme', 'spitzbuebe', 'tartepecan',
+    'tomatesfarcis', 'wrapraclette'];
+  const baseName = p => String(p).split('/').pop().replace(/\.[a-z0-9]+$/i, '');
+  const cutout = r => hasPhoto(r) && /^photos\//.test(r.photo) && DETOURE.includes(baseName(r.photo)) ? 'photos/detoure/' + baseName(r.photo) + '.webp' : null;
+
+  // Contenu d'un visuel : photo détourée, sinon photo entière, sinon illustration
   function visualInner(r) {
-    if (hasPhoto(r)) return `<img src="${esc(r.photo)}" alt="" loading="lazy" onerror="this.outerHTML='<span class=&quot;vis-emo&quot;>${emojiFor(r)}</span>'">`;
-    return `<span class="vis-emo" aria-hidden="true">${emojiFor(r)}</span>`;
+    const emo = `<span class="vis-emo" aria-hidden="true">${emojiFor(r)}</span>`;
+    const c = cutout(r);
+    if (c) return `<img class="vis-cut" src="${esc(c)}" alt="" loading="lazy" onerror="this.outerHTML='${emo.replace(/"/g, '&quot;')}'">`;
+    if (hasPhoto(r)) return `<img class="vis-photo" src="${esc(r.photo)}" alt="" loading="lazy" onerror="this.outerHTML='${emo.replace(/"/g, '&quot;')}'">`;
+    return emo;
   }
   // Présentation selon la catégorie :
   //  • assiette pour les plats, entrées et desserts
@@ -113,13 +124,9 @@
   const styleOf = r => PLATE_CATS.includes(r.cat) ? 'plate' : (r.cat === 'sauce' ? 'bowl' : 'free');
   function plateHtml(r, cls) {
     const st = styleOf(r);
-    const tint = TINT[r.cat] || '#EFE4D4';
-    if (st === 'free') {
-      return hasPhoto(r)
-        ? `<div class="free free--photo ${cls || ''}" aria-hidden="true">${visualInner(r)}</div>`
-        : `<div class="free ${cls || ''}" aria-hidden="true">${visualInner(r)}</div>`;
-    }
-    return `<div class="${st} ${cls || ''}" aria-hidden="true"><div class="plate-in" style="background:${st === 'bowl' ? '#F3E3C3' : tint}">${visualInner(r)}</div></div>`;
+    if (st === 'free') return `<div class="free ${cls || ''}" aria-hidden="true">${visualInner(r)}</div>`;
+    // Assiette ou bol dessinés d'après le croquis (deco/assiette.svg, deco/bol-sauce.svg), sans fond coloré
+    return `<div class="${st} ${cls || ''}" aria-hidden="true"><div class="plate-in">${visualInner(r)}</div></div>`;
   }
   // Petite vignette carrée arrondie (planning, listes…)
   function thumbHtml(r, cls) {
