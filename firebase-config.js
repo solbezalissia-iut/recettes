@@ -17,10 +17,10 @@ window.FIREBASE_CONFIG = {
 };
 
 // ────────────────────────────────────────────────────────────────────────
-// Recettes inventées par l'IA (onglet « Frigo »).
-// Laisser vide tant que Firebase AI Logic et App Check ne sont pas activés
-// dans la console Firebase. Ensuite, coller ici la clé de site reCAPTCHA
-// Enterprise enregistrée dans App Check (elle n'est pas secrète non plus).
+// Recettes inventées par l'IA directement dans le site (onglet « Frigo »).
+// DÉSACTIVÉ (laisser vide) : ça demanderait le forfait payant Blaze de Firebase.
+// Tant que c'est vide, le bouton du Frigo ouvre Claude (gratuit) avec les
+// aliments restants déjà écrits.
 // ────────────────────────────────────────────────────────────────────────
 window.APP_CHECK_SITE_KEY = "";
 window.AI_MODEL = "gemini-3.8-flash";

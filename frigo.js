@@ -103,7 +103,7 @@
   async function invent() {
     if (busy) return;
     const items = remaining.length ? remaining : frigo();
-    if (!window.CloudAI || !window.CloudAI.available) { current = { kind: 'ia-off' }; render(); return; }
+    if (!window.CloudAI || !window.CloudAI.available) { askClaude(items); return; }
     busy = true; current = { kind: 'ia-wait' }; render();
     try {
       const d = await window.CloudAI.inventRecipe(items, iaTried);
@@ -120,6 +120,17 @@
     }
     busy = false; render();
   }
+  // Gratuit : ouvre une conversation Claude avec les aliments restants déjà écrits
+  function askClaude(items) {
+    const prompt = `Invente-moi une recette avec ces aliments de mon frigo : ${items.join(', ')}. ` +
+      `Tu peux ajouter d'autres ingrédients si besoin. Respecte mes consignes habituelles (étapes non numérotées, temps en heures, ` +
+      `ingrédients en g ou en litres, rien d'oublié) et donne aussi la version Monsieur Cuisine. ` +
+      `Si elle me plaît, je te demanderai de l'ajouter à mon site de recettes.`;
+    const url = 'https://claude.ai/new?q=' + encodeURIComponent(prompt);
+    const w = window.open(url, '_blank', 'noopener');
+    if (!w) { try { navigator.clipboard.writeText(prompt); P().toast('Demande copiée : colle-la dans Claude'); } catch (e) { location.href = url; } }
+  }
+
   async function yesIA() {
     const c = current; if (!c || busy) return;
     busy = true; render();
@@ -180,7 +191,8 @@
       if (!remaining.length) return `<div class="frigo-done">🎉 Tous tes aliments sont utilisés !</div>`;
       return `<div class="frigo-empty">
         <p>Plus aucune recette du site n'utilise : <b>${remaining.map(esc).join(', ')}</b>.</p>
-        <button class="btn-primary" data-invent>✨ Inventer une recette avec ${remaining.length > 1 ? 'ces aliments' : 'cet aliment'}</button></div>`;
+        <button class="btn-primary" data-invent>✨ ${window.CloudAI && window.CloudAI.available ? 'Inventer une recette' : 'Demander une recette à Claude'} avec ${remaining.length > 1 ? 'ces aliments' : 'cet aliment'}</button>
+        ${window.CloudAI && window.CloudAI.available ? '' : '<p class="frigo-small" style="margin-top:.8rem">Ça ouvre Claude avec tes aliments déjà écrits. Si la recette te plaît, demande-lui de l\'ajouter au site.</p>'}</div>`;
     }
     if (current.kind === 'ia-wait') return `<div class="frigo-empty"><div class="frigo-spin"></div><p>Je cuisine une idée avec ${esc(remaining.join(', '))}…</p></div>`;
     if (current.kind === 'ia-off') return `<div class="frigo-empty"><p><b>L'invention de recettes n'est pas encore activée.</b></p>
