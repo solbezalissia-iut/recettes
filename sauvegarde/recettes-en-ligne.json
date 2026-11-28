@@ -4717,6 +4717,107 @@
   "updatedAt": "2026-11-28T08:38:31.747Z"
  },
  {
+  "id": "J56h7yZinCWN6a4XzXEI",
+  "cat": "dessert",
+  "createdAt": "2026-11-28T10:06:16.303Z",
+  "etapes": [
+   "Mélanger le lait tiède, la levure et une pincée de sucre, et laisser mousser 10 minutes.",
+   "Dans un saladier, mélanger la farine, le sucre et le sel, ajouter le lait levuré, les œufs et la fleur d'oranger, puis pétrir 10 minutes.",
+   "Ajouter le beurre mou en morceaux et pétrir encore 8 minutes, jusqu'à ce que la pâte soit lisse, souple et se décolle des parois.",
+   "Couvrir et laisser pousser 1 h 30 dans un endroit tiède, jusqu'à ce que la pâte double de volume.",
+   "Dégazer la pâte, la diviser en 3 boudins de 50 cm et les tresser. Former une couronne en soudant les extrémités, poser sur une plaque et glisser les œufs colorés dans la tresse si on veut.",
+   "Laisser pousser encore 1 h. Préchauffer le four à 180 °C, dorer au jaune d'œuf, parsemer de sucre perlé et cuire 25 à 30 minutes jusqu'à ce que la brioche soit bien dorée."
+  ],
+  "fetes": [
+   "paques"
+  ],
+  "ingredients": [
+   {
+    "reste": "farine T45",
+    "texte": "500 g de farine T45",
+    "unite": "g",
+    "valeur": 500
+   },
+   {
+    "reste": "lait tiède",
+    "texte": "0,2 L de lait tiède",
+    "unite": "L",
+    "valeur": 0.2
+   },
+   {
+    "reste": "levure boulangère sèche",
+    "texte": "10 g de levure boulangère sèche",
+    "unite": "g",
+    "valeur": 10
+   },
+   {
+    "reste": "sucre",
+    "texte": "70 g de sucre",
+    "unite": "g",
+    "valeur": 70
+   },
+   {
+    "reste": "œufs",
+    "texte": "2 œufs",
+    "unite": null,
+    "valeur": 2
+   },
+   {
+    "reste": "beurre mou",
+    "texte": "100 g de beurre mou",
+    "unite": "g",
+    "valeur": 100
+   },
+   {
+    "reste": "sel",
+    "texte": "8 g de sel",
+    "unite": "g",
+    "valeur": 8
+   },
+   {
+    "reste": "eau de fleur d'oranger",
+    "texte": "1 c. à soupe d'eau de fleur d'oranger",
+    "unite": "c. à soupe",
+    "valeur": 1
+   },
+   {
+    "reste": "jaune d'œuf (dorure)",
+    "texte": "1 jaune d'œuf (dorure)",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "sucre perlé",
+    "texte": "30 g de sucre perlé",
+    "unite": "g",
+    "valeur": 30
+   },
+   {
+    "reste": "œufs durs colorés (décor, facultatif)",
+    "texte": "5 œufs durs colorés (décor, facultatif)",
+    "unite": null,
+    "valeur": 5
+   }
+  ],
+  "mc": [
+   "Mettre le lait, la levure et le sucre dans le bol, chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+   "Ajouter la farine, le sel, les œufs et la fleur d'oranger, pétrir <b>3 min / mode pétrin</b>.",
+   "Ajouter le beurre mou en morceaux, pétrir <b>4 min / mode pétrin</b>. Laisser pousser 1 h 30 dans le bol fermé.",
+   "Tresser, laisser pousser 1 h et cuire comme dans la version classique."
+  ],
+  "ownerId": "L7Zsvmp5knQDD6O3g6hT9cGBtgW2",
+  "ownerName": "Alissia Solbez",
+  "personnes": "10",
+  "photo": "photos/site/en-ligne/J56h7yZinCWN6a4XzXEI-cf8e8683.png",
+  "photoDetouree": true,
+  "portion": "",
+  "presentation": "free",
+  "replacesStaticId": "static-705",
+  "temps": "1 h (+ 2 h 30 de pousse)",
+  "titre": "Brioche tressée de Pâques",
+  "updatedAt": "2026-11-28T10:06:16.303Z"
+ },
+ {
   "id": "jecC0Wf0MCxUr2O6Iia8",
   "cat": "dessert",
   "createdAt": "2026-11-28T08:40:16.453Z",
