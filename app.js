@@ -65,7 +65,18 @@ function refreshRecettes() {
   allIngredients = getAllIngredients();
   renderFilters();
   buildGrids();
-  if (currentRecetteIdx !== null) updateModalPermissions();
+  if (currentRecetteIdx !== null) {
+    updateModalPermissions();
+    // La fiche ouverte se met à jour toute seule (modification enregistrée, ou faite par quelqu'un d'autre)
+    const r = allRecettes[currentRecetteIdx];
+    if (r && document.getElementById('modal-overlay').classList.contains('open')) {
+      const keep = currentServings, vi = Math.min(currentVariantIdx, getVariants(r).length - 1);
+      document.getElementById('modal-cat').textContent = catLabels[r.cat];
+      document.getElementById('modal-title').textContent = r.titre;
+      selectVariant(vi);
+      if (keep !== currentServings && typeof updateServingDisplay === 'function') { currentServings = keep; updateServingDisplay(); }
+    }
+  }
 }
 
 // Une recette en ligne qui modifiait une recette d'origine fusionnée depuis dans une autre
@@ -356,6 +367,7 @@ function parseTempsMinutes(temps) {
 }
 
 function cardMatchesFilters(r) {
+  if (window.Extras && !Extras.passes(r)) return false;
   if (searchQuery) {
     // Le titre, le nom d'une version ou un ingrédient ; chaque mot cherché doit s'y trouver
     const hay = normalize([r.titre, catLabels[r.cat] || ''].concat(getVariants(r).flatMap(v => [v.nom || ''].concat((v.ingredients || []).map(ingLabel)))).join(' '));
@@ -426,8 +438,10 @@ function renderCard(card, r, idx, vi) {
         <span><b>${v.nom || 'Version ' + (vi + 1)}</b><small>${vi + 1}/${variants.length}</small></span>
         <button type="button" data-vstep="1" aria-label="Version suivante">›</button>
       </div>` : '';
+  const fav = window.Extras ? Extras.isFav(r) : false;
   card.innerHTML = `
       ${plate}
+      <button type="button" class="card-fav${fav ? ' on' : ''}" data-fav aria-pressed="${fav}" aria-label="${fav ? 'Retirer des favoris' : 'Ajouter aux favoris'}">${fav ? '♥' : '♡'}</button>
       <div class="card-body">
         <div class="card-top">
           <div class="card-cat"><span class="cat-txt">${catLabels[r.cat]}</span>${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
@@ -490,6 +504,11 @@ function makeCard(idx, cat) {
   card.dataset.idx = idx;
   renderCard(card, r, idx, startVariantFor(r, cat));
   card.addEventListener('click', e => {
+    if (e.target.closest('[data-fav]')) {
+      e.stopPropagation();
+      if (window.Extras) { Extras.toggleFav(r); renderCard(card, r, idx, +card.dataset.vi || 0); }
+      return;
+    }
     const step = e.target.closest('[data-vstep]');
     if (step) {
       e.stopPropagation();
@@ -786,6 +805,7 @@ function openModal(idx, vi) {
 
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+  if (window.Extras) Extras.onOpen(r);
 }
 
 document.getElementById('serving-minus').addEventListener('click', () => {
@@ -1523,6 +1543,17 @@ ingRowsBox.addEventListener('keydown', e => {
 });
 
 let submitting = false; // évite d'enregistrer deux fois sur un double clic
+const pendingStaticDocs = {}; // recette d'origine → recette en ligne créée juste avant
+// Rouvre la fiche de la recette enregistrée dès que la version en ligne est arrivée
+function reopenSaved(docId, vi) {
+  if (!docId) return;
+  const t0 = Date.now();
+  (function look() {
+    const i = allRecettes.findIndex(r => r._docId === docId || (r._mergedFrom || []).some(o => o._docId === docId));
+    if (i >= 0) { if (!addModalOverlay.classList.contains('open')) openModal(i, vi || 0); return; }
+    if (Date.now() - t0 < 4000) setTimeout(look, 150);
+  })();
+}
 addForm.addEventListener('submit', async e => {
   e.preventDefault();
 
@@ -1603,6 +1634,8 @@ addForm.addEventListener('submit', async e => {
       throw new Error("les photos de toutes les versions sont trop lourdes ensemble (limite 1 Mo). Recadre-les plus serré ou utilise des photos plus simples.");
     }
     const mergedFrom = (editingSource && editingSource._mergedFrom) || [];
+    let savedDocId = editingDocId;
+    const savedVariant = editingVariants ? editingVariantIdx : 0;
     if (editingDocId) {
       await window.CloudRecipes.updateRecipe(editingDocId, recipeData);
       statusEl.textContent = 'Modifications enregistrées !';
@@ -1610,12 +1643,14 @@ addForm.addEventListener('submit', async e => {
       // Alissia modifie une recette d'origine : on crée une version "live" qui la remplace
       // (ou on met à jour celle qui existe déjà, pour ne jamais en avoir deux)
       recipeData.replacesStaticId = editingStaticId;
+      // (pendingStaticDocs : si on remodifie avant que la connexion ait renvoyé la recette, pas de doublon)
       const existing = liveRecettes.find(o => o.replacesStaticId === editingStaticId);
-      if (existing) await window.CloudRecipes.updateRecipe(existing._docId, recipeData);
-      else await window.CloudRecipes.addRecipe(recipeData);
+      const existingId = existing ? existing._docId : pendingStaticDocs[editingStaticId];
+      if (existingId) { await window.CloudRecipes.updateRecipe(existingId, recipeData); savedDocId = existingId; }
+      else { savedDocId = await window.CloudRecipes.addRecipe(recipeData); pendingStaticDocs[editingStaticId] = savedDocId; }
       statusEl.textContent = 'Modifications enregistrées !';
     } else {
-      await window.CloudRecipes.addRecipe(recipeData);
+      savedDocId = await window.CloudRecipes.addRecipe(recipeData);
       statusEl.textContent = 'Recette publiée ! Elle est visible par tout le monde immédiatement.';
     }
     // La recette seule qui doublait une version est maintenant dans cette recette : on la retire
@@ -1626,8 +1661,12 @@ addForm.addEventListener('submit', async e => {
         if (o._isStatic) await window.CloudRecipes.hideStaticRecipe(o._staticId);
       } catch (err) { console.warn('[fusion]', err); }
     }
-    document.getElementById('add-form-success').classList.add('visible');
-    setTimeout(() => { closeAddModal(); }, 1500);
+    // On ferme tout de suite (avant : 1,5 s d'attente qui pouvait fermer et vider le formulaire
+    // suivant si on enchaînait une autre modification) et on rouvre la fiche à jour.
+    const wasEdit = !!(editingDocId || editingStaticId);
+    closeAddModal();
+    if (window.toast) toast(wasEdit ? 'Modifications enregistrées ✓' : 'Recette publiée ✓', 'ok');
+    reopenSaved(savedDocId, savedVariant);
   } catch (err) {
     console.error(err);
     statusEl.className = 'publish-status visible error';

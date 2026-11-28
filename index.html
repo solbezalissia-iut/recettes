@@ -15,13 +15,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Ultra&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css?v=20261128n">
-<link rel="stylesheet" href="planning.css?v=20261128n">
-<link rel="stylesheet" href="mobile.css?v=20261128n">
+<link rel="stylesheet" href="main.css?v=20261128p">
+<link rel="stylesheet" href="planning.css?v=20261128p">
+<link rel="stylesheet" href="mobile.css?v=20261128p">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
-<link rel="stylesheet" href="frigo.css?v=20261128n">
-<link rel="stylesheet" href="cards.css?v=20261128n">
-<link rel="stylesheet" href="theme.css?v=20261128n">
+<link rel="stylesheet" href="frigo.css?v=20261128p">
+<link rel="stylesheet" href="cards.css?v=20261128p">
+<link rel="stylesheet" href="theme.css?v=20261128p">
+<link rel="stylesheet" href="extras.css?v=20261128p">
 <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
 <body>
@@ -66,6 +67,8 @@
         <input type="search" id="search-input" placeholder="Chercher une recette…" autocomplete="off" enterkeyhint="search">
         <button type="button" class="search-clear" id="search-clear" aria-label="Effacer la recherche" hidden>✕</button>
       </div>
+      <button type="button" class="quick-btn" id="fav-toggle" aria-pressed="false" title="Seulement mes favoris">♡<span class="quick-txt"> Favoris</span></button>
+      <button type="button" class="quick-btn" id="random-btn" title="Une recette au hasard">🎲<span class="quick-txt"> Au hasard</span></button>
       <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filter-more">
         <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
         <span>Filtres</span><i class="filters-count" id="filters-count" hidden></i>
@@ -266,6 +269,12 @@
           <button class="serving-btn" id="serving-plus" aria-label="Plus de personnes">+</button>
         </div>
         <button class="plan-add-btn" id="plan-add-btn">＋ Ajouter à ma semaine</button>
+        <div class="modal-actions" id="modal-actions">
+          <button type="button" class="ma-btn ma-btn--cook" id="ma-cook">👩‍🍳 Mode cuisine</button>
+          <button type="button" class="ma-btn" id="ma-fav" aria-pressed="false">♡ Favori</button>
+          <button type="button" class="ma-btn" id="ma-share">↗ Partager</button>
+          <button type="button" class="ma-btn ma-btn--desk" id="ma-print">🖨 Imprimer</button>
+        </div>
       </div>
       <button class="modal-back" id="modal-back" aria-label="Retour à la liste">← Retour</button>
       <button class="modal-edit" id="modal-edit" aria-label="Modifier cette recette" title="Modifier cette recette">✎</button>
@@ -449,16 +458,18 @@
   </div>
 </footer>
 
-<script src="recettes-data.js?v=20261128n"></script>
-<script src="detour.js?v=20261128n"></script>
-<script src="visuals.js?v=20261128n"></script>
-<script src="app.js?v=20261128n"></script>
-<script src="planning.js?v=20261128n"></script>
-<script src="frigo.js?v=20261128n"></script>
-<script src="timers.js?v=20261128n"></script>
-<script src="nav.js?v=20261128n"></script>
-<script src="firebase-config.js?v=20261128n"></script>
-<script type="module" src="cloud.js?v=20261128n"></script>
+<script src="recettes-data.js?v=20261128p"></script>
+<script src="detour.js?v=20261128p"></script>
+<script src="visuals.js?v=20261128p"></script>
+<script src="ui.js?v=20261128p"></script>
+<script src="app.js?v=20261128p"></script>
+<script src="planning.js?v=20261128p"></script>
+<script src="frigo.js?v=20261128p"></script>
+<script src="extras.js?v=20261128p"></script>
+<script src="timers.js?v=20261128p"></script>
+<script src="nav.js?v=20261128p"></script>
+<script src="firebase-config.js?v=20261128p"></script>
+<script type="module" src="cloud.js?v=20261128p"></script>
 <script>
   // Site plus rapide et disponible hors connexion (voir sw.js)
   if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
