@@ -1,10 +1,10 @@
 name: Sauvegarde du site en ligne
 
-# Toutes les 15 minutes, GitHub enregistre ce qui a été ajouté ou modifié sur le site
+# Toutes les 5 minutes (le plus souvent que GitHub permet), GitHub enregistre ce qui a été ajouté ou modifié sur le site
 # (recettes, photos, recettes masquées). Bouton « Run workflow » pour le faire tout de suite.
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
