@@ -4967,7 +4967,7 @@
   "replacesStaticId": "static-49",
   "temps": "35 min",
   "titre": "Brownies",
-  "updatedAt": "2026-11-28T10:08:13.240Z",
+  "updatedAt": "2026-11-28T10:08:55.104Z",
   "variantes": [
    {
     "etapes": [
@@ -5035,7 +5035,7 @@
     ],
     "nom": "Chocolat noir et noix",
     "personnes": 6,
-    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v0-e786c962.png",
+    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v0-3ae2efcd.png",
     "photoDetouree": true,
     "temps": "35 min"
    },
@@ -5120,6 +5120,8 @@
     ],
     "nom": "Au caramel",
     "personnes": "9",
+    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v1-157128d1.png",
+    "photoDetouree": true,
     "temps": "35 min"
    },
    {
