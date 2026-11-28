@@ -2,7 +2,7 @@ const recettes = [
   {
     "id": "static-621",
     "titre": "Affogato",
-    "photo": "photos/site/static-621.webp",
+    "photo": "photos/site/static-621-cut.webp",
     "cat": "dessert",
     "temps": "5 min",
     "personnes": "1",
@@ -33,12 +33,13 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (glace + expresso versé au dernier moment)."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-659",
     "titre": "Alloco (bananes plantain frites)",
-    "photo": "photos/site/static-659.webp",
+    "photo": "photos/site/static-659-cut.webp",
     "cat": "accompagnement",
     "temps": "20 min",
     "personnes": "4",
@@ -88,7 +89,8 @@ const recettes = [
       "Les frire à la friteuse ou dans une casserole d'huile à 170 °C, 4 à 5 minutes, jusqu'à ce qu'elles soient bien dorées. Égoutter et saler.",
       "Sauce : mettre l'oignon coupé en quatre, les tomates, le piment, un filet d'huile et le sel dans le bol. Hacher <b>5 s / vitesse 5</b>.",
       "Racler les parois et cuire <b>5 min / 100 °C / vitesse 1</b> pour une sauce plus douce (ou la servir crue). Servir avec l'alloco."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-598",
@@ -230,7 +232,8 @@ const recettes = [
           "Mixer <b>30 s / vitesse 5 à 8</b> en augmentant progressivement, jusqu'à obtenir une texture lisse.",
           "Verser sur la glace pilée et décorer d'une cerise."
         ],
-        "photo": "photos/site/static-561-v1.webp"
+        "photo": "photos/site/static-561-v1-cut.webp",
+        "photoDetouree": true
       }
     ],
     "photoDetouree": true
@@ -238,7 +241,7 @@ const recettes = [
   {
     "id": "static-1",
     "titre": "Arepas au fromage fondant façon Encanto",
-    "photo": "photos/site/static-1.webp",
+    "photo": "photos/site/static-1-cut.webp",
     "temps": "30 min",
     "personnes": "4",
     "cat": "apero",
@@ -275,7 +278,8 @@ const recettes = [
       "Mettre la farine de maïs et l'eau dans le bol. Pétrir <b>1 min 30 / mode pétrin</b> (ou <b>vitesse 4 en sens inverse</b>) jusqu'à obtenir une pâte souple.",
       "Façonner des boules de 60 g, les aplatir, mettre le fromage au centre et refermer en boule lisse.",
       "Cuire dans une poêle très chaude 5 à 7 minutes de chaque côté, jusqu'à ce qu'elles soient dorées et le fromage fondu. Servir bien chaud."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-509",
@@ -1065,7 +1069,8 @@ const recettes = [
         "mc": [
           "Pas besoin du Monsieur Cuisine pour cette recette : les bananes se rôtissent au four, suivre la version classique."
         ],
-        "photo": "photos/site/static-660-v0.webp"
+        "photo": "photos/site/static-660-v0-cut.webp",
+        "photoDetouree": true
       },
       {
         "nom": "Caramélisées (dessert)",
@@ -1114,7 +1119,8 @@ const recettes = [
         "mc": [
           "Pas besoin du Monsieur Cuisine pour cette recette : la caramélisation se fait à la poêle, suivre la version classique."
         ],
-        "photo": "photos/site/static-670.webp"
+        "photo": "photos/site/static-660-v1-cut.webp",
+        "photoDetouree": true
       }
     ]
   },
@@ -1502,7 +1508,7 @@ const recettes = [
   {
     "id": "static-11",
     "titre": "Béchamel maison",
-    "photo": "photos/site/static-11.webp",
+    "photo": "photos/site/static-11-cut.webp",
     "temps": "15 min",
     "personnes": "4",
     "cat": "base-culinaire",
@@ -1555,7 +1561,8 @@ const recettes = [
       "Mettre tous les ingrédients dans le bol : beurre, farine, lait, sel, poivre et muscade.",
       "Cuire <b>8 min / 90 °C / vitesse 4</b>, jusqu'à ce que la béchamel épaississe et nappe la spatule.",
       "Utiliser aussitôt dans un gratin, des lasagnes ou un mac and cheese."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-18",
@@ -26830,7 +26837,7 @@ const recettes = [
       {
         "nom": "Coques à la meringue suisse",
         "temps": "34 min",
-        "personnes": "4",
+        "personnes": "15",
         "ingredients": [
           {
             "texte": "75 g de sucre glace",
@@ -26873,12 +26880,13 @@ const recettes = [
           "Torréfier la poudre d'amandes au four comme dans la version classique. Tamiser avec le sucre glace.",
           "Insérer le fouet. Mettre les blancs et le sucre dans le bol, fouetter <b>4 min / 50 °C / vitesse 4</b> (meringue suisse), puis <b>5 min / vitesse 4</b> sans chauffer jusqu'à refroidissement.",
           "Retirer le fouet, macaronner à la spatule avec le mélange amandes-sucre glace, pocher et cuire comme dans la version classique."
-        ]
+        ],
+        "portion": "macarons"
       },
       {
         "nom": "Framboise-fraise, ganache montée",
         "temps": "60 min",
-        "personnes": "6",
+        "personnes": "25",
         "ingredients": [
           {
             "texte": "120 g de poudre d'amandes",
@@ -26957,12 +26965,13 @@ const recettes = [
           "Insérer le fouet. Monter les blancs <b>4 min / vitesse 4</b>, ajouter le sucre par l'ouverture, <b>2 min / vitesse 4</b>. Retirer le fouet et macaronner à la spatule. Pocher et cuire.",
           "Ganache : bol propre, chocolat blanc <b>10 s / vitesse 7</b>, ajouter la crème et les fruits, <b>4 min / 50 °C / vitesse 2</b>, puis le beurre, <b>20 s / vitesse 4</b>. Réfrigérer, puis monter au fouet <b>vitesse 4</b>.",
           "Garnir les coques."
-        ]
+        ],
+        "portion": "macarons"
       },
       {
         "nom": "Chocolat-praliné",
         "temps": "34 min",
-        "personnes": "12",
+        "personnes": "20",
         "ingredients": [
           {
             "texte": "2 blancs d'œuf",
@@ -27026,7 +27035,8 @@ const recettes = [
           "Tamiser la poudre d'amandes, le sucre glace et le cacao.",
           "Insérer le fouet. Monter les blancs <b>4 min / vitesse 4</b>, ajouter le sucre par l'ouverture, <b>2 min / vitesse 4</b>. Retirer le fouet et macaronner à la spatule. Pocher et cuire.",
           "Garniture : bol propre, chocolat noir <b>10 s / vitesse 7</b>, ajouter le beurre et le praliné, <b>3 min / 50 °C / vitesse 2</b>. Laisser épaissir et garnir les coques."
-        ]
+        ],
+        "portion": "macarons"
       },
       {
         "nom": "Citrouilles d’Halloween (meringue italienne)",
@@ -27093,7 +27103,7 @@ const recettes = [
       {
         "nom": "Colorés (meringue française)",
         "temps": "25 min (+ croûtage)",
-        "personnes": "16",
+        "personnes": "20",
         "ingredients": [
           {
             "texte": "100 g de blancs d'œufs",
@@ -27135,6 +27145,816 @@ const recettes = [
           "Insérer le fouet. Monter les blancs <b>4 min / vitesse 4</b>, ajouter le sucre par l'ouverture, <b>2 min / vitesse 4</b> jusqu'à une meringue ferme.",
           "Retirer le fouet. Incorporer la poudre d'amandes et le sucre glace tamisés à la spatule et macaronner.",
           "Colorer, pocher et cuire comme dans la version classique."
+        ],
+        "portion": "macarons"
+      },
+      {
+        "nom": "Chocolat noir",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "135 g de poudre d'amande (coques)",
+            "valeur": 135,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          {
+            "texte": "20 g de cacao non sucré (coques)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "cacao non sucré (coques)"
+          },
+          {
+            "texte": "150 g de chocolat noir à 60–70 % (garniture)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat noir à 60–70 % (garniture)"
+          },
+          {
+            "texte": "0,15 L de crème liquide entière (garniture)",
+            "valeur": 0.15,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "30 g de beurre doux (garniture)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre doux (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace et le cacao, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : hacher le chocolat noir à 60–70 %. Chauffer la crème jusqu'à frémissement, la verser en 3 fois sur le chocolat en mélangeant au centre, ajouter le beurre, puis mixer pour une ganache lisse.",
+          "Filmer au contact et laisser prendre 2 h au réfrigérateur, jusqu'à ce qu'elle ait la texture d'une pâte à tartiner, puis la mettre en poche.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace et le cacao dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : mettre le chocolat noir à 60–70 % dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème, fondre <b>4 min / 50 °C / vitesse 2</b>, ajouter le beurre, <b>20 s / vitesse 4</b>. Filmer et réfrigérer 2 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Pistache",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "120 g de poudre d'amande (coques)",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          {
+            "texte": "30 g de pistaches non salées mixées en poudre fine (coques)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "pistaches non salées mixées en poudre fine (coques)"
+          },
+          "colorant alimentaire en poudre vert (coques)",
+          {
+            "texte": "150 g de chocolat blanc (garniture)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat blanc (garniture)"
+          },
+          {
+            "texte": "0,1 L de crème liquide entière (garniture)",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "60 g de pâte de pistache pure (garniture)",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "pâte de pistache pure (garniture)"
+          },
+          {
+            "texte": "30 g de pistaches concassées (décor)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "pistaches concassées (décor)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace et la poudre de pistache, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec, en ajoutant le colorant vert à la fin.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : hacher le chocolat blanc. Chauffer la crème jusqu'à frémissement, ajouter la pâte de pistache après le chocolat, la verser en 3 fois sur le chocolat en mélangeant au centre, puis ajouter la pâte de pistache, puis mixer pour une ganache lisse.",
+          "Filmer au contact et laisser prendre 2 h au réfrigérateur, jusqu'à ce qu'elle ait la texture d'une pâte à tartiner, puis la mettre en poche.",
+          "Parsemer quelques coques de pistaches concassées avant cuisson pour décorer.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace et la poudre de pistache dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme, avec le colorant vert dans la dernière minute.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et la pâte de pistache, fondre <b>4 min / 50 °C / vitesse 2</b>. Filmer et réfrigérer 2 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Framboise (cœur de confiture)",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          "colorant alimentaire en poudre rose framboise (coques)",
+          {
+            "texte": "150 g de chocolat blanc (garniture)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat blanc (garniture)"
+          },
+          {
+            "texte": "0,08 L de crème liquide entière (garniture)",
+            "valeur": 0.08,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "100 g de framboises (fraîches ou surgelées) mixées et passées au tamis (garniture)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "framboises (fraîches ou surgelées) mixées et passées au tamis (garniture)"
+          },
+          {
+            "texte": "80 g de confiture de framboises sans pépins (cœur) (garniture)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "confiture de framboises sans pépins (cœur) (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec, en ajoutant le colorant rose framboise à la fin.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : hacher le chocolat blanc. Chauffer la crème jusqu'à frémissement, ajouter la purée de framboise, la verser en 3 fois sur le chocolat en mélangeant au centre, puis ajouter la purée de framboise, puis mixer pour une ganache lisse.",
+          "Filmer au contact et laisser prendre 2 h au réfrigérateur, jusqu'à ce qu'elle ait la texture d'une pâte à tartiner, puis la mettre en poche.",
+          "Au montage, pocher un anneau de ganache sur la coque et déposer une pointe de confiture au centre.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme, avec le colorant rose framboise dans la dernière minute.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème, fondre <b>4 min / 50 °C / vitesse 2</b>. Filmer et réfrigérer 2 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Vanille",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          {
+            "texte": "1 c. à café de graines de vanille ou vanille en poudre (coques)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "graines de vanille ou vanille en poudre (coques)"
+          },
+          {
+            "texte": "150 g de chocolat blanc (garniture)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat blanc (garniture)"
+          },
+          {
+            "texte": "0,2 L de crème liquide entière (garniture)",
+            "valeur": 0.2,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "1 gousse de vanille (ou 1 c. à café d'extrait) (garniture)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "gousse de vanille (ou 1 c. à café d'extrait) (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace et la vanille, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : hacher le chocolat blanc. Chauffer la crème jusqu'à frémissement avec la gousse fendue et grattée (la retirer ensuite), la verser en 3 fois sur le chocolat en mélangeant au centre, puis mixer pour une ganache lisse.",
+          "Filmer au contact et réfrigérer au moins 4 h, puis fouetter la ganache bien froide jusqu'à ce qu'elle soit mousseuse et tienne (ganache montée).",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace et la vanille dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et les graines de vanille, fondre <b>4 min / 50 °C / vitesse 2</b>. Filmer et réfrigérer 4 h, puis fouetter au fouet <b>1 min / vitesse 3</b>.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Pomme-caramel",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          {
+            "texte": "1 c. à café de cannelle (coques)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cannelle (coques)"
+          },
+          "colorant alimentaire en poudre jaune doré (coques)",
+          {
+            "texte": "2 pommes (type Golden) (garniture)",
+            "valeur": 2,
+            "unite": null,
+            "reste": "pommes (type Golden) (garniture)"
+          },
+          {
+            "texte": "80 g de sucre (caramel)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "sucre (caramel)"
+          },
+          {
+            "texte": "0,08 L de crème liquide entière (caramel)",
+            "valeur": 0.08,
+            "unite": "L",
+            "reste": "crème liquide entière (caramel)"
+          },
+          {
+            "texte": "60 g de beurre demi-sel (caramel)",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "beurre demi-sel (caramel)"
+          },
+          {
+            "texte": "100 g de chocolat blanc (caramel)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "chocolat blanc (caramel)"
+          },
+          {
+            "texte": "1 pincée de cannelle (garniture)",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "cannelle (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace et la cannelle, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec, en ajoutant le colorant jaune doré à la fin.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : éplucher les pommes, les couper en tout petits dés (3 mm) et les cuire 8 minutes à la poêle avec la cannelle et 10 g du beurre, jusqu'à ce qu'elles soient tendres et sèches. Laisser refroidir.",
+          "Caramel : faire fondre le sucre à sec jusqu'à ambré, ajouter hors du feu la crème chaude puis le reste du beurre, et faire bouillir 1 minute. Verser sur le chocolat blanc haché, mixer et réfrigérer 2 h jusqu'à ce qu'il soit pocheable.",
+          "Au montage, pocher un anneau de caramel sur la coque et mettre quelques dés de pomme au centre.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace et la cannelle dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme, avec le colorant jaune doré dans la dernière minute.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : cuire les dés de pomme à la poêle. Le caramel se fait à la casserole (le robot ne chauffe pas assez) : sucre à sec jusqu'à ambré, puis la crème chaude et le beurre. Mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le caramel chaud, mixer <b>20 s / vitesse 5</b> et réfrigérer 2 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Citron",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          "colorant alimentaire en poudre jaune citron (coques)",
+          {
+            "texte": "3 citrons jaunes non traités (0,1 L de jus et les zestes) (garniture)",
+            "valeur": 3,
+            "unite": null,
+            "reste": "citrons jaunes non traités (0,1 L de jus et les zestes) (garniture)"
+          },
+          {
+            "texte": "2 œufs (garniture)",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs (garniture)"
+          },
+          {
+            "texte": "80 g de sucre (garniture)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "sucre (garniture)"
+          },
+          {
+            "texte": "100 g de beurre doux froid en dés (garniture)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "beurre doux froid en dés (garniture)"
+          },
+          {
+            "texte": "2 g de gélatine (1 feuille de 2 g) (garniture)",
+            "valeur": 2,
+            "unite": "g",
+            "reste": "gélatine (1 feuille de 2 g) (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec, en ajoutant le colorant jaune citron à la fin.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Crème citron (à faire avant les coques) : faire tremper la gélatine. Fouetter les œufs, le sucre, le jus et les zestes de citron dans une casserole et cuire à feu doux sans cesser de fouetter jusqu'à ce que la crème épaississe (environ 5 minutes, 82 °C).",
+          "Hors du feu, ajouter la gélatine essorée, laisser tiédir à 40 °C, puis mixer avec le beurre froid jusqu'à une crème lisse. Réfrigérer 3 h avant de la pocher.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme, avec le colorant jaune citron dans la dernière minute.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Crème citron : faire tremper la gélatine. Mettre les zestes et le sucre dans le bol, mixer <b>10 s / vitesse 8</b>. Ajouter les œufs et le jus, cuire <b>8 min / 80 °C / vitesse 3</b>. Ajouter la gélatine, laisser tiédir 10 minutes, puis le beurre et mixer <b>30 s / vitesse 5</b>. Réfrigérer 3 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Caramel au beurre salé",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          "colorant alimentaire en poudre caramel (ou une pointe de cacao) (coques)",
+          {
+            "texte": "120 g de sucre (garniture)",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "sucre (garniture)"
+          },
+          {
+            "texte": "0,12 L de crème liquide entière (garniture)",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "70 g de beurre demi-sel (garniture)",
+            "valeur": 70,
+            "unite": "g",
+            "reste": "beurre demi-sel (garniture)"
+          },
+          {
+            "texte": "80 g de chocolat au lait (garniture)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "chocolat au lait (garniture)"
+          },
+          {
+            "texte": "1 pincée de fleur de sel (garniture)",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "fleur de sel (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec, en ajoutant le colorant caramel (ou une pointe de cacao) à la fin.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Caramel (à faire avant les coques) : faire fondre le sucre à sec jusqu'à un caramel ambré. Hors du feu, verser la crème chaude petit à petit, puis faire bouillir 1 minute.",
+          "Verser sur le chocolat au lait haché, ajouter le beurre et la fleur de sel, mixer, puis réfrigérer 3 h jusqu'à ce qu'il soit assez ferme pour être poché.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme, avec le colorant caramel (ou une pointe de cacao) dans la dernière minute.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Caramel : le caramel se fait à la casserole (le robot ne chauffe pas assez). Mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le caramel à la crème encore chaud, le beurre et la fleur de sel, mixer <b>30 s / vitesse 5</b>. Réfrigérer 3 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Café",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          {
+            "texte": "1 c. à café de café soluble mixé en poudre (coques)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "café soluble mixé en poudre (coques)"
+          },
+          "colorant alimentaire en poudre marron clair (coques)",
+          {
+            "texte": "150 g de chocolat au lait (garniture)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat au lait (garniture)"
+          },
+          {
+            "texte": "0,12 L de crème liquide entière (garniture)",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "2 c. à café de café soluble (garniture)",
+            "valeur": 2,
+            "unite": "c. à café",
+            "reste": "café soluble (garniture)"
+          },
+          {
+            "texte": "20 g de beurre doux (garniture)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre doux (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace et le café soluble, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec, en ajoutant le colorant marron clair à la fin.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : hacher le chocolat au lait. Chauffer la crème jusqu'à frémissement avec le café soluble, la verser en 3 fois sur le chocolat en mélangeant au centre, ajouter le beurre, puis mixer pour une ganache lisse.",
+          "Filmer au contact et laisser prendre 2 h au réfrigérateur, jusqu'à ce qu'elle ait la texture d'une pâte à tartiner, puis la mettre en poche.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace et le café soluble dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme, avec le colorant marron clair dans la dernière minute.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le café soluble, fondre <b>4 min / 50 °C / vitesse 2</b>, ajouter le beurre, <b>20 s / vitesse 4</b>. Filmer et réfrigérer 2 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Noix de coco",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          {
+            "texte": "150 g de chocolat blanc (garniture)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat blanc (garniture)"
+          },
+          {
+            "texte": "0,1 L de crème liquide entière (garniture)",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "40 g de noix de coco râpée (garniture)",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "noix de coco râpée (garniture)"
+          },
+          {
+            "texte": "0,05 L de lait de coco (garniture)",
+            "valeur": 0.05,
+            "unite": "L",
+            "reste": "lait de coco (garniture)"
+          },
+          {
+            "texte": "20 g de noix de coco râpée (décor des coques)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "noix de coco râpée (décor des coques)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : hacher le chocolat blanc. Chauffer la crème jusqu'à frémissement avec le lait de coco, la verser en 3 fois sur le chocolat en mélangeant au centre, puis mixer, puis ajouter la noix de coco râpée.",
+          "Filmer au contact et laisser prendre 2 h au réfrigérateur, jusqu'à ce qu'elle ait la texture d'une pâte à tartiner, puis la mettre en poche.",
+          "Parsemer les coques de noix de coco râpée juste après les avoir pochées.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le lait de coco, fondre <b>4 min / 50 °C / vitesse 2</b>. Filmer et réfrigérer 2 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
+        ]
+      },
+      {
+        "nom": "Passion et chocolat au lait",
+        "temps": "1 h 30 (+ 1 h de croûtage et de prise, puis 24 h au réfrigérateur)",
+        "personnes": "30",
+        "portion": "macarons",
+        "ingredients": [
+          {
+            "texte": "150 g de poudre d'amande (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "150 g de sucre glace (coques)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "110 g de blancs d'œufs (environ 4, idéalement séparés la veille) (coques)",
+            "valeur": 110,
+            "unite": "g",
+            "reste": "blancs d'œufs (environ 4, idéalement séparés la veille) (coques)"
+          },
+          {
+            "texte": "75 g de sucre (coques)",
+            "valeur": 75,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          "colorant alimentaire en poudre jaune orangé (coques)",
+          {
+            "texte": "170 g de chocolat au lait (garniture)",
+            "valeur": 170,
+            "unite": "g",
+            "reste": "chocolat au lait (garniture)"
+          },
+          {
+            "texte": "0,05 L de crème liquide entière (garniture)",
+            "valeur": 0.05,
+            "unite": "L",
+            "reste": "crème liquide entière (garniture)"
+          },
+          {
+            "texte": "0,08 L de pulpe de fruits de la passion (environ 5 fruits, passée au tamis) (garniture)",
+            "valeur": 0.08,
+            "unite": "L",
+            "reste": "pulpe de fruits de la passion (environ 5 fruits, passée au tamis) (garniture)"
+          },
+          {
+            "texte": "25 g de beurre doux (garniture)",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "beurre doux (garniture)"
+          }
+        ],
+        "etapes": [
+          "Coques : mixer 10 secondes la poudre d'amande avec le sucre glace, puis tamiser. C'est ce qui rend les coques bien lisses.",
+          "Monter les blancs en neige à vitesse moyenne ; quand ils sont mousseux, ajouter le sucre en 3 fois puis fouetter à grande vitesse jusqu'à une meringue ferme et brillante qui forme un bec, en ajoutant le colorant jaune orangé à la fin.",
+          "Macaronner : incorporer les poudres en 2 fois à la maryse, puis écraser la pâte contre les parois et la ramener au centre, jusqu'à ce qu'elle soit brillante et retombe en ruban épais (environ 40 à 50 mouvements, pas plus : trop liquide, les coques s'étalent).",
+          "Pocher avec une douille ronde de 8 à 10 mm des disques de 3,5 cm sur une plaque couverte de papier cuisson (un gabarit glissé dessous aide), bien espacés. Taper la plaque sur le plan de travail pour chasser les bulles.",
+          "Laisser croûter 30 à 45 minutes à l'air : le dessus ne doit plus coller au doigt. C'est ce qui forme la collerette.",
+          "Cuire 13 à 15 minutes à 145 °C (chaleur tournante), une plaque à la fois. Laisser refroidir complètement avant de décoller les coques.",
+          "Garniture (à faire avant les coques) : hacher le chocolat au lait. Chauffer la crème jusqu'à frémissement avec la pulpe de passion, la verser en 3 fois sur le chocolat en mélangeant au centre, ajouter le beurre, puis mixer pour une ganache lisse.",
+          "Filmer au contact et laisser prendre 2 h au réfrigérateur, jusqu'à ce qu'elle ait la texture d'une pâte à tartiner, puis la mettre en poche.",
+          "Garnir une coque sur deux avec une noisette de garniture (douille de 8 mm), poser la seconde coque et tourner légèrement pour bien coller.",
+          "Laisser reposer 24 h au réfrigérateur dans une boîte fermée : c'est ce qui rend les macarons moelleux. Sortir 30 minutes avant de déguster. Ils se gardent 4 jours au frais ou 1 mois au congélateur."
+        ],
+        "mc": [
+          "Coques : mettre la poudre d'amande et le sucre glace dans le bol, mixer <b>10 s / vitesse 7</b>, puis tamiser. Bien laver et sécher le bol.",
+          "Insérer le fouet. Mettre les blancs, fouetter <b>2 min / vitesse 4</b> sans le gobelet, ajouter le sucre en pluie par l'ouverture et fouetter <b>3 min / vitesse 4</b> jusqu'à une meringue ferme, avec le colorant jaune orangé dans la dernière minute.",
+          "Retirer le fouet et macaronner à la maryse (le robot mélangerait trop). Pocher, laisser croûter 30 à 45 minutes et cuire 13 à 15 minutes à 145 °C.",
+          "Garniture : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et la pulpe de passion, fondre <b>4 min / 50 °C / vitesse 2</b>, ajouter le beurre, <b>20 s / vitesse 4</b>. Filmer et réfrigérer 2 h.",
+          "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
         ]
       }
     ],
@@ -30811,7 +31631,7 @@ const recettes = [
   {
     "id": "static-248",
     "titre": "Nuggets de poulet maison",
-    "photo": "photos/site/static-248.webp",
+    "photo": "photos/site/static-248-cut.webp",
     "cat": "accompagnement",
     "variantes": [
       {
@@ -30961,7 +31781,8 @@ const recettes = [
           "Fariner, tremper dans la pâte et frire comme dans la version classique."
         ]
       }
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-249",
@@ -36565,7 +37386,7 @@ const recettes = [
   {
     "id": "static-287",
     "titre": "Pommes de terre fourrées au gruyère râpé",
-    "photo": "photos/site/static-287.webp",
+    "photo": "photos/site/static-287-cut.webp",
     "cat": "accompagnement",
     "temps": "40 min",
     "personnes": "6",
@@ -36611,7 +37432,8 @@ const recettes = [
       "Mettre 500 ml d'eau dans le bol, les pommes de terre en morceaux dans le panier. Cuire <b>20 min / 100 °C / vitesse 1</b>. Vider l'eau et laisser tiédir.",
       "Mettre les pommes de terre dans le bol, écraser <b>10 s / vitesse 4</b>. Ajouter le sel et la farine, pétrir <b>30 s / mode pétrin</b>.",
       "Former les boules, les fourrer de gruyère et les cuire à la poêle."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-293",
@@ -37441,7 +38263,7 @@ const recettes = [
   {
     "id": "static-658",
     "titre": "Potatoes de butternut au parmesan, sauce yaourt fumée",
-    "photo": "photos/potatoesbutternut.jpg",
+    "photo": "photos/site/static-658-cut.webp",
     "cat": "accompagnement",
     "temps": "40 min",
     "personnes": "4",
@@ -37538,7 +38360,8 @@ const recettes = [
     "mc": [
       "Tailler la butternut en bâtonnets, l'enrober du mélange huile-épices-parmesan et cuire au four comme dans la version classique.",
       "Sauce : mettre les ingrédients de la sauce yaourt dans le bol et mélanger <b>10 s / vitesse 3</b>."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-628",
