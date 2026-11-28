@@ -4906,9 +4906,7 @@
    "Ajouter les noix concassées si souhaité.",
    "Verser dans un moule beurré et enfourner à 180 °C pendant 20 à 25 minutes : le centre doit rester fondant."
   ],
-  "fetes": [
-   "halloween"
-  ],
+  "fetes": [],
   "ingredients": [
    {
     "reste": "farine",
@@ -4967,7 +4965,7 @@
   "replacesStaticId": "static-49",
   "temps": "35 min",
   "titre": "Brownies",
-  "updatedAt": "2026-11-28T10:10:38.412Z",
+  "updatedAt": "2026-11-28T10:10:56.279Z",
   "variantes": [
    {
     "etapes": [
