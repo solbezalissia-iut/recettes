@@ -34,7 +34,8 @@ const recettes = [
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (glace + expresso versé au dernier moment)."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-659",
@@ -90,7 +91,8 @@ const recettes = [
       "Sauce : mettre l'oignon coupé en quatre, les tomates, le piment, un filet d'huile et le sel dans le bol. Hacher <b>5 s / vitesse 5</b>.",
       "Racler les parois et cuire <b>5 min / 100 °C / vitesse 1</b> pour une sauce plus douce (ou la servir crue). Servir avec l'alloco."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "plate"
   },
   {
     "id": "static-598",
@@ -136,7 +138,8 @@ const recettes = [
       "Mixer <b>20 s / vitesse 4</b> pour faire mousser le blanc.",
       "Verser dans un verre bas rempli de glaçons et décorer d'une cerise."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-561",
@@ -236,7 +239,8 @@ const recettes = [
         "photoDetouree": true
       }
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-1",
@@ -279,7 +283,8 @@ const recettes = [
       "Façonner des boules de 60 g, les aplatir, mettre le fromage au centre et refermer en boule lisse.",
       "Cuire dans une poêle très chaude 5 à 7 minutes de chaque côté, jusqu'à ce qu'elles soient dorées et le fromage fondu. Servir bien chaud."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "plate"
   },
   {
     "id": "static-509",
@@ -334,7 +339,8 @@ const recettes = [
       "Ajouter les tomates (ou la sauce tomate), sel, poivre et cuire <b>15 min / 100 °C / vitesse 1</b>, sans le gobelet.",
       "Monter le plat en alternant sauce, aubergines, mozzarella, basilic et parmesan, sur 3 couches.",
       "Cuire 35 minutes au four à 180 °C. Laisser reposer 10 minutes avant de servir."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-2",
@@ -414,7 +420,8 @@ const recettes = [
       "Toaster les tranches de pain.",
       "Mettre la chair des avocats, le jus de citron, le sel et le poivre dans le bol. Écraser <b>8 s / vitesse 4</b> (pour une purée avec des morceaux) ou <b>15 s / vitesse 6</b> (pour une purée lisse).",
       "Étaler la purée sur le pain, ajouter le fromage, la garniture choisie, les tomates cerises, un filet d'huile d'olive et les herbes. Servir aussitôt."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-543",
@@ -467,7 +474,8 @@ const recettes = [
       "Mettre la mayonnaise, le ketchup et quelques gouttes de citron dans le bol. Mélanger <b>10 s / vitesse 3</b> : c'est la sauce cocktail.",
       "Ajouter les crevettes et mélanger <b>10 s / sens inverse / vitesse 1</b>.",
       "Couper les avocats en deux, retirer le noyau, arroser de citron, garnir de crevettes et parsemer de ciboulette."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-3",
@@ -520,7 +528,8 @@ const recettes = [
       "Mettre le thon égoutté, le caprice des dieux, le sel, le poivre et la ciboulette dans le bol. Mélanger <b>15 s / vitesse 4</b> : c'est la crème de thon. Réserver.",
       "Mettre la chair des avocats, le jus de citron et le paprika dans le bol. Écraser <b>8 s / vitesse 4</b>, puis ajouter la tomate en cubes et mélanger <b>10 s / sens inverse / vitesse 1</b>.",
       "Remplir les peaux d'avocat de purée, puis de crème de thon. Servir frais."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-4",
@@ -578,7 +587,8 @@ const recettes = [
       "Œuf dur : mettre 500 ml d'eau dans le bol, poser l'œuf dans le panier de cuisson et cuire <b>14 min / 100 °C / vitesse 1</b>. Le rafraîchir à l'eau froide et l'écaler.",
       "Couper le bagel en deux, le tartiner de caprice des dieux poivré.",
       "Ajouter le thon émietté, l'œuf en tranches, la tomate et la salade, un filet d'huile, sel, poivre, et refermer."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-5",
@@ -774,7 +784,8 @@ const recettes = [
       "Mettre le rhum, le Malibu, la liqueur de café, le jus d'ananas et le jus d'orange dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
       "Verser dans un verre haut rempli de glaçons, puis faire couler la grenadine qui tombe au fond."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-600",
@@ -812,7 +823,8 @@ const recettes = [
       "Mettre le Baileys, la glace et le lait froid dans le bol. Mixer <b>20 s / vitesse 6</b>.",
       "Verser dans un grand verre et couvrir de chantilly et de copeaux de chocolat."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-7",
@@ -855,7 +867,8 @@ const recettes = [
       "Former des boules de la taille d'une noix et les laisser se raffermir un peu.",
       "Les frire dans l'huile chaude jusqu'à ce qu'elles soient dorées."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-441",
@@ -939,7 +952,8 @@ const recettes = [
       "Ajouter la farine, la levure, le bicarbonate, la cannelle et le sel. Mélanger <b>15 s / vitesse 4</b> sans plus.",
       "Ajouter les noix ou les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>. Verser dans le moule et cuire 50 à 55 minutes."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-620",
@@ -980,7 +994,8 @@ const recettes = [
       "Sauce chocolat : mettre 100 g de chocolat et 100 ml de crème dans le bol. Faire fondre <b>4 min / 50 °C / vitesse 2</b>.",
       "Couper les bananes en deux dans la longueur, ajouter 3 boules de glace, napper de sauce chocolat, puis chantilly, fruits secs et cerise."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-655",
@@ -1022,7 +1037,8 @@ const recettes = [
     "fetes": [
       "halloween"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-660",
@@ -1122,7 +1138,8 @@ const recettes = [
         "photo": "photos/site/static-660-v1-cut.webp",
         "photoDetouree": true
       }
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-515",
@@ -1190,7 +1207,8 @@ const recettes = [
       "Laisser refroidir, ajouter les pépites de chocolat, réfrigérer 1 heure puis couper en barres."
     ],
     "portion": "barres",
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-8",
@@ -1241,7 +1259,8 @@ const recettes = [
       "Verser dans les cavités et laisser prendre 3 heures au congélateur.",
       "Faire fondre 100 g de chocolat au lait (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>), enrober les barres démoulées et remettre 10 minutes au congélateur."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-9",
@@ -1337,7 +1356,8 @@ const recettes = [
       "Étaler la moitié de la pâte dans le moule, ajouter les Kinder mini et le Nutella, puis le reste de la pâte et les pépites.",
       "Cuire 25 à 30 minutes et laisser refroidir complètement avant de couper."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-688",
@@ -1408,7 +1428,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-10",
@@ -1458,7 +1479,8 @@ const recettes = [
       "Verser dans les moules, ajouter les bâtonnets et congeler au moins 4 heures.",
       "Mettre le chocolat noir dans le bol propre. Hacher <b>10 s / vitesse 7</b>, puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. Tremper les glaces et remettre 30 minutes au congélateur."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-676",
@@ -1503,7 +1525,8 @@ const recettes = [
       "Répartir sur la pâte feuilletée, plier la pâte en deux et couper des bandes de 2 cm.",
       "Cuire 25 minutes sur une plaque recouverte de papier cuisson."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-11",
@@ -1562,7 +1585,8 @@ const recettes = [
       "Cuire <b>8 min / 90 °C / vitesse 4</b>, jusqu'à ce que la béchamel épaississe et nappe la spatule.",
       "Utiliser aussitôt dans un gratin, des lasagnes ou un mac and cheese."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "bowl"
   },
   {
     "id": "static-18",
@@ -2189,7 +2213,8 @@ const recettes = [
           "Frire 2 à 3 minutes par face dans l'huile à 170 °C, égoutter et rouler dans le sucre."
         ]
       }
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-579",
@@ -2221,7 +2246,8 @@ const recettes = [
       "Purée de pêche maison : mettre 1 pêche blanche épluchée et dénoyautée dans le bol et mixer <b>20 s / vitesse 8</b>.",
       "Verser 5 cl de purée dans une flûte et compléter doucement avec le Prosecco. Mélanger une seule fois."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-19",
@@ -2258,7 +2284,8 @@ const recettes = [
       "Égoutter le beurre (garder le babeurre pour remplacer le lait dans d'autres recettes).",
       "Rincer le beurre à l'eau très froide, le presser dans un torchon, ajouter le sel et le conserver au réfrigérateur."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-484",
@@ -2356,7 +2383,8 @@ const recettes = [
       "Mettre 500 ml d'eau dans le bol, les légumes, les épinards et les pousses de soja dans l'accessoire vapeur. Cuire <b>12 min / 120 °C / vitesse 1</b>.",
       "Pendant ce temps, faire sauter le bœuf 2 minutes à feu vif à la poêle et cuire les œufs au plat.",
       "Répartir le riz dans les bols, ajouter les légumes, le bœuf et l'œuf. Servir avec le gochujang, l'huile de sésame et les graines."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-20",
@@ -2466,7 +2494,8 @@ const recettes = [
       "Cuire les steaks à la poêle, salés et poivrés, puis chauffer les tortillas 30 secondes par face.",
       "Assembler : steak, cheddar, cornichons, salade, oignon et une cuillère de sauce sur chaque tortilla."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-553",
@@ -2523,7 +2552,8 @@ const recettes = [
       "La veille, mélanger les flocons avec le jus de pomme et réserver au frais.",
       "Le matin, mettre la pomme coupée en quatre (avec la peau) dans le bol et râper <b>4 s / vitesse 5</b>.",
       "Ajouter les flocons trempés, le yaourt, le miel et la cannelle. Mélanger <b>15 s / sens inverse / vitesse 2</b>. Servir parsemé de noisettes."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-21",
@@ -2589,7 +2619,8 @@ const recettes = [
       "Étaler finement sur la plaque et cuire 8 à 10 minutes.",
       "Rouler le biscuit chaud dans un torchon humide, laisser refroidir, dérouler, garnir et rouler à nouveau."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-381",
@@ -2672,7 +2703,8 @@ const recettes = [
       "Glaçage royal : bol propre et sec, insérer le fouet. Mettre les blancs, le sucre glace et le jus de citron, puis fouetter <b>4 min / vitesse 4</b> jusqu'à un glaçage ferme et brillant.",
       "Glacer les biscuits refroidis et laisser sécher complètement."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-641",
@@ -2864,7 +2896,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-675",
@@ -2940,7 +2973,8 @@ const recettes = [
       "Ajouter la farine, la cardamome et le sel. Pétrir <b>40 s / mode pétrin</b>.",
       "Étaler sur 4 mm, découper les cœurs (évider la moitié), réfrigérer 20 minutes puis cuire 9 minutes à 180 °C.",
       "Une fois froids, garnir de confiture et refermer."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-23",
@@ -3018,7 +3052,8 @@ const recettes = [
       "Ajouter la farine, la maïzena, la levure, le lait et la vanille. Pétrir <b>40 s / mode pétrin</b>. Filmer et réfrigérer 1 heure.",
       "Étaler sur 3 mm, découper des ovales, faire les yeux et la bouche sur la moitié, badigeonner de lait et piquer.",
       "Cuire 13 minutes à 200 °C, puis garnir de Nutella et refermer."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-26",
@@ -3099,7 +3134,8 @@ const recettes = [
       "Ajouter l'œuf et pétrir <b>30 s / mode pétrin</b>. Placer 1 heure au frais.",
       "Étaler sur 2 mm, découper, placer 10 minutes au congélateur, piquer et cuire 12 minutes à 180 °C.",
       "Garnir les sablés refroidis de ganache et refermer."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-25",
@@ -3168,7 +3204,8 @@ const recettes = [
       "Ajouter la farine, le sucre, la levure, le beurre mou et l'eau. Pétrir <b>40 s / mode pétrin</b>.",
       "Étaler sur 4 mm, découper et cuire 15 minutes à 180 °C.",
       "Chocolat : bol propre, hacher le chocolat <b>10 s / vitesse 7</b> puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. Tremper une face de chaque biscuit, décorer au cure-dent et laisser sécher."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-27",
@@ -3270,7 +3307,8 @@ const recettes = [
       "Mettre le beurre, la farine et le bouillon réservé dans le bol. Cuire <b>6 min / 90 °C / vitesse 4</b>.",
       "Pendant ce temps, faire revenir les champignons à la poêle.",
       "Ajouter la crème, le jaune d'œuf et le jus de citron à la sauce et mélanger <b>20 s / vitesse 3</b> (sans chauffer). Verser sur la viande et les légumes et servir avec du riz."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-459",
@@ -3330,7 +3368,8 @@ const recettes = [
       "Cuire des cuillerées de pâte dans une poêle beurrée, retourner quand des bulles apparaissent.",
       "Garnir de crème fraîche, de saumon fumé ou de tarama."
     ],
-    "portion": "blinis"
+    "portion": "blinis",
+    "presentation": "free"
   },
   {
     "id": "static-28",
@@ -3411,7 +3450,8 @@ const recettes = [
       "Ajouter la farine et mélanger <b>15 s / vitesse 4</b>. Ajouter les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>.",
       "Verser dans un moule de 25 cm, ajouter le Nutella en points et les Kinder en morceaux.",
       "Cuire 15 à 20 minutes à 170 °C et réserver 1 heure au frais avant de couper."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-585",
@@ -3467,7 +3507,8 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour ce cocktail : il se prépare directement dans le verre, suivre la version classique."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-592",
@@ -3512,7 +3553,8 @@ const recettes = [
       "Mettre le rhum, le curaçao, la crème de coco, le jus d'ananas et 4 glaçons dans le bol.",
       "Mixer <b>15 s / vitesse 8</b> jusqu'à obtenir un mélange mousseux.",
       "Verser dans un grand verre et décorer d'ananas et d'une cerise."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-29",
@@ -3570,7 +3612,8 @@ const recettes = [
     "mc": [
       "Mettre la vodka, le curaçao, le jus d'ananas, le jus de citron vert et le sirop dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
       "Verser dans un verre haut rempli de glace pilée et décorer d'une tranche d'ananas."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-30",
@@ -3695,7 +3738,8 @@ const recettes = [
       "Ajouter le reste du tapioca et pétrir <b>30 s / mode pétrin</b>.",
       "Former de petites boules et les cuire 20 minutes dans une casserole d'eau bouillante.",
       "Rincer à l'eau froide, mélanger avec l'édulcorant et servir dans un thé."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-32",
@@ -3784,7 +3828,8 @@ const recettes = [
       "Ajouter la viande et la farine, rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b> (sans le gobelet).",
       "Ajouter le vin de la marinade, le bouquet garni, sel et poivre. Cuire <b>90 min / 98 °C / sens inverse / vitesse 1</b>, en laissant le gobelet de côté.",
       "Ajouter les champignons et cuire encore <b>20 min / 98 °C / sens inverse / vitesse 1</b>. Servir avec des pommes de terre vapeur ou des tagliatelles."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-33",
@@ -3831,7 +3876,8 @@ const recettes = [
     "mc": [
       "Mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b> puis faire fondre <b>3 min / 50 °C / vitesse 2</b>. Faire de même avec le chocolat blanc.",
       "Mélanger le yaourt et l'épeautre soufflé dans un bol, verser les deux chocolats et réserver 20 minutes au frais."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-392",
@@ -3911,7 +3957,8 @@ const recettes = [
           "Découper en bandes et les rouler."
         ]
       }
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-469",
@@ -3983,7 +4030,8 @@ const recettes = [
       "Cuire <b>60 min / 98 °C / sens inverse / vitesse 1</b>.",
       "Filtrer et saler légèrement. Se garde 3 jours au réfrigérateur ou se congèle en portions."
     ],
-    "portion": "litres"
+    "portion": "litres",
+    "presentation": "bowl"
   },
   {
     "id": "static-398",
@@ -4084,7 +4132,8 @@ const recettes = [
       "Laisser lever jusqu'à ce que la pâte double (ou une nuit au réfrigérateur).",
       "Farce : mettre le gruyère en morceaux dans le bol propre et râper <b>8 s / vitesse 6</b>. Ajouter le jambon et la moutarde, mélanger <b>10 s / sens inverse / vitesse 2</b>.",
       "Façonner 12 boules farcies, laisser lever, dorer au jaune d'œuf, parsemer de gruyère et cuire à 180 °C jusqu'à ce qu'elles soient bien dorées."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-35",
@@ -4202,7 +4251,8 @@ const recettes = [
           "Faire fondre les 200 g de chocolat blanc de la même façon, enrober, décorer de pâte de Lotus et de miettes."
         ]
       }
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-393",
@@ -4400,7 +4450,8 @@ const recettes = [
       "Ajouter les champignons et rissoler <b>5 min / 120 °C / sens inverse / vitesse 1</b>.",
       "Ajouter la farine, le bouillon (avec le cube), la crème et la moutarde. Cuire <b>8 min / 100 °C / sens inverse / vitesse 1</b>.",
       "Verser la sauce sur les boulettes dans la poêle, laisser mijoter 10 minutes à couvert et parsemer de persil."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-37",
@@ -4456,7 +4507,8 @@ const recettes = [
       "Ajouter la viande, l'œuf, un filet d'huile, sel, poivre et épices. Mélanger <b>20 s / sens inverse / vitesse 3</b>.",
       "Former 7 boulettes et les poser dans un plat sur la purée de tomates assaisonnée.",
       "Cuire 25 à 30 minutes au four à 180 °C."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-38",
@@ -4528,7 +4580,8 @@ const recettes = [
       "Ajouter le poulet en morceaux et le poivron en lamelles. Cuire <b>6 min / 120 °C / sens inverse / vitesse 1</b>.",
       "Ajouter la sauce soja et 300 ml d'eau. Mettre le riz rincé dans le panier de cuisson, l'insérer dans le bol et cuire <b>15 min / 100 °C / vitesse 1</b> (le poulet mijote dessous, le riz cuit dans la vapeur et l'eau).",
       "Vérifier que le poulet est cuit, puis servir le riz surmonté du poulet aux légumes."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-39",
@@ -4574,7 +4627,8 @@ const recettes = [
     "mc": [
       "Chantilly maison : insérer le fouet, mettre la crème bien froide et un peu de sucre glace, fouetter <b>vitesse 4</b> en surveillant (1 à 2 min).",
       "Monter le bol : céréales, chantilly, fruits coupés et moitiés de Kinderjoy. Servir aussitôt."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-669",
@@ -4647,7 +4701,8 @@ const recettes = [
       "Pendant ce temps, dorer les plantains à la poêle 3 minutes par face.",
       "Réchauffer les haricots noirs avec le cumin (dans le bol vidé : <b>4 min / 90 °C / sens inverse / vitesse 1</b>).",
       "Écraser l'avocat avec le citron vert, puis composer les bols avec l'oignon rouge et la coriandre."
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-690",
@@ -4710,7 +4765,8 @@ const recettes = [
       "Incorporer les blancs à la spatule, étaler sur 0,5 cm et cuire 5 minutes. Rouler aussitôt dans un linge sucré.",
       "Sirop : bol rincé, mettre l'eau et 100 g de sucre, cuire <b>5 min / 100 °C / vitesse 1</b>.",
       "Imbiber le biscuit, garnir, rouler et décorer de sucre glace."
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-40",
@@ -4836,7 +4892,8 @@ const recettes = [
           "Sauce : mettre le persil dans le bol propre, hacher <b>3 s / vitesse 7</b>, ajouter le fromage blanc, le citron et l'échalote réservée, mélanger <b>10 s / vitesse 3</b>. Réfrigérer 30 minutes."
         ]
       }
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-42",
@@ -5289,7 +5346,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-47",
@@ -5871,7 +5929,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-52",
@@ -6020,7 +6079,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-686",
@@ -6205,7 +6265,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-53",
@@ -6366,7 +6427,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-637",
@@ -6506,7 +6568,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-54",
@@ -6673,7 +6736,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-635",
@@ -6858,7 +6922,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-634",
@@ -7102,7 +7167,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-55",
@@ -7353,7 +7419,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-636",
@@ -7539,7 +7606,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-508",
@@ -9706,7 +9774,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-461",
@@ -13166,7 +13235,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-98",
@@ -13710,7 +13780,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-104",
@@ -13795,7 +13866,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-105",
@@ -17560,7 +17632,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-480",
@@ -18497,7 +18570,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "free"
   },
   {
     "id": "static-445",
@@ -19276,7 +19350,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-431",
@@ -29044,7 +29119,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-221",
@@ -29372,7 +29448,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-225",
@@ -32239,7 +32316,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-253",
@@ -32961,7 +33039,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-259",
@@ -37226,7 +37305,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-292",
@@ -42763,7 +42843,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-638",
@@ -42806,7 +42887,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-332",
@@ -43319,7 +43401,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "presentation": "plate"
   },
   {
     "id": "static-606",
@@ -47289,7 +47372,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-511",
@@ -47655,7 +47739,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-370",
@@ -47721,7 +47806,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-371",
@@ -48199,7 +48285,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-375",
@@ -48966,7 +49053,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-693",
@@ -49167,7 +49255,8 @@ const recettes = [
     "fetes": [
       "noel"
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-694",
@@ -49226,7 +49315,8 @@ const recettes = [
       "Ajouter le chocolat, attendre 1 minute puis mélanger <b>40 s / vitesse 3</b> (pas plus vite, pour ne pas faire de bulles). Verser dans un pichet et finir au mixeur plongeant, la tête au fond.",
       "Laisser redescendre à 32–35 °C et glacer l'entremets ou la bûche congelé(e) comme dans la version classique."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-695",
@@ -49304,7 +49394,8 @@ const recettes = [
       "Ajouter la crème et le poivre, cuire <b>5 min / 90 °C / vitesse 2</b>. Laisser tiédir 2 minutes, ajouter les jaunes et mélanger <b>20 s / vitesse 3</b>.",
       "Napper les huîtres calées sur le gros sel et gratiner 2 à 3 minutes sous le gril du four."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-696",
@@ -49392,7 +49483,8 @@ const recettes = [
       "Mettre le beurre mou dans le bol rincé et le lisser <b>20 s / vitesse 4</b> pour qu'il s'étale facilement.",
       "Garnir, couper en triangles, remettre dans la croûte et réfrigérer 2 h comme dans la version classique."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-697",
@@ -49450,7 +49542,8 @@ const recettes = [
       "Mettre la préparation congelée en morceaux dans le bol (avec le blanc d'œuf si on en met), mixer <b>20 s / vitesse 8</b> puis <b>20 s / vitesse 5</b> en poussant avec la spatule, jusqu'à un sorbet lisse.",
       "Remplir les écorces, poser les chapeaux et congeler au moins 2 h."
     ],
-    "photoDetouree": true
+    "photoDetouree": true,
+    "presentation": "free"
   },
   {
     "id": "static-698",
@@ -50163,150 +50256,242 @@ const recettes = [
   {
     "id": "static-707",
     "photo": "photos/enattente.png",
-    "titre": "Mini-pavlovas bicolores fruits rouges et mangue",
+    "titre": "Mini-pavlovas",
     "cat": "dessert",
-    "temps": "2 h 30 (dont 55 min de cuisson et 1 h de refroidissement)",
-    "personnes": "8",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "4 blancs d'œufs (120 à 130 g) (meringue)",
-        "valeur": 4,
-        "unite": null,
-        "reste": "blancs d'œufs (120 à 130 g) (meringue)"
+        "nom": "Fruits rouges",
+        "temps": "2 h 30 (dont 55 min de cuisson et 1 h de refroidissement)",
+        "personnes": "8",
+        "portion": "pavlovas",
+        "ingredients": [
+          {
+            "texte": "4 blancs d'œufs (120 à 130 g) (meringue)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "blancs d'œufs (120 à 130 g) (meringue)"
+          },
+          {
+            "texte": "245 g de sucre en poudre (meringue)",
+            "valeur": 245,
+            "unite": "g",
+            "reste": "sucre en poudre (meringue)"
+          },
+          {
+            "texte": "1 c. à café de fécule de maïs (meringue)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "fécule de maïs (meringue)"
+          },
+          {
+            "texte": "1 c. à café de jus de citron (meringue)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "jus de citron (meringue)"
+          },
+          {
+            "texte": "1 pincée de sel (meringue)",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel (meringue)"
+          },
+          {
+            "texte": "250 g de mascarpone (chantilly)",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "mascarpone (chantilly)"
+          },
+          {
+            "texte": "0,3 L de crème liquide entière à 30 % minimum, très froide (chantilly)",
+            "valeur": 0.3,
+            "unite": "L",
+            "reste": "crème liquide entière à 30 % minimum, très froide (chantilly)"
+          },
+          {
+            "texte": "40 g de sucre glace (chantilly)",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre glace (chantilly)"
+          },
+          {
+            "texte": "1 c. à café d'extrait de vanille (chantilly)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "extrait de vanille (chantilly)"
+          },
+          {
+            "texte": "150 g de fraises (garniture)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "fraises (garniture)"
+          },
+          {
+            "texte": "80 g de framboises (garniture)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "framboises (garniture)"
+          },
+          {
+            "texte": "70 g de myrtilles (garniture)",
+            "valeur": 70,
+            "unite": "g",
+            "reste": "myrtilles (garniture)"
+          },
+          {
+            "texte": "150 g de fruits rouges frais ou surgelés (coulis)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "fruits rouges frais ou surgelés (coulis)"
+          },
+          {
+            "texte": "20 g de sucre (coulis)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "sucre (coulis)"
+          },
+          {
+            "texte": "1 c. à café de jus de citron (coulis)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "jus de citron (coulis)"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 110 °C en chaleur traditionnelle (pas de chaleur tournante). Tracer 8 cercles de 7 cm sur une feuille de papier cuisson, espacés de 3 à 4 cm, puis retourner la feuille pour que l'encre ne touche pas la meringue.",
+          "Monter la meringue : dans un bol parfaitement propre et sec, fouetter les blancs avec le sel jusqu'à ce qu'ils moussent, puis ajouter le sucre cuillère par cuillère en continuant de fouetter, jusqu'à une meringue ferme et brillante. Frotter un peu de meringue entre les doigts : on ne doit plus sentir de grains de sucre.",
+          "Saupoudrer la fécule, ajouter le jus de citron et incorporer délicatement à la spatule, sans faire retomber la meringue.",
+          "Coller le papier sur la plaque avec un point de meringue dans chaque coin. Déposer la meringue sur chaque cercle à la cuillère ou à la poche, puis creuser le centre avec le dos d'une cuillère pour former un nid aux bords relevés.",
+          "Cuire 50 minutes à 1 h sans ouvrir le four : les meringues sont prêtes quand l'extérieur est sec et qu'elles se décollent facilement du papier.",
+          "Éteindre le four et laisser refroidir les meringues dedans, porte entrouverte (une cuillère en bois coincée), au moins 1 h : le refroidissement lent évite les fissures. Les garder ensuite en boîte hermétique à température ambiante, jamais au réfrigérateur.",
+          "Coulis : chauffer les fruits rouges avec le sucre et le citron 5 minutes à feu moyen, mixer puis filtrer pour retirer les pépins. Réfrigérer.",
+          "Fruits : couper les fraises en petits morceaux, garder framboises et myrtilles entières. Garder au frais.",
+          "Chantilly (juste avant le montage) : fouetter le mascarpone, la crème très froide, le sucre glace et la vanille jusqu'à ce que ce soit ferme. S'arrêter dès que ça tient : trop fouettée, elle devient granuleuse. Astuce : bol et fouet 15 minutes au congélateur avant.",
+          "Montage au dernier moment : garnir chaque nid de chantilly, ajouter environ 2 c. à soupe de fruits rouges (la meringue doit rester visible) et un petit filet de coulis. Servir aussitôt.",
+          "À l'avance : les meringues se gardent 2 à 3 jours en boîte hermétique et les coulis 2 jours au frais. La chantilly et le montage se font juste avant de servir, sinon la meringue ramollit."
+        ],
+        "mc": [
+          "Préparer le papier avec 8 cercles de 7 cm et préchauffer le four à 110 °C.",
+          "Insérer le fouet. Mettre les blancs et le sel dans le bol propre et sec, fouetter <b>3 min / vitesse 4</b> sans le gobelet. Ajouter le sucre en pluie par l'ouverture et fouetter <b>5 min / vitesse 4</b> jusqu'à une meringue ferme et brillante. Retirer le fouet, incorporer la fécule et le citron à la spatule.",
+          "Former les nids, cuire 50 minutes à 1 h à 110 °C et laisser refroidir 1 h dans le four entrouvert.",
+          "Coulis : bol rincé, mettre les fruits rouges, le sucre et le citron, cuire <b>5 min / 90 °C / vitesse 2</b>, puis mixer <b>20 s / vitesse 8</b> et filtrer.",
+          "Chantilly : bol bien froid, fouet inséré, mettre le mascarpone, la crème, le sucre glace et la vanille, fouetter <b>1 min 30 / vitesse 4</b> en surveillant.",
+          "Monter au dernier moment comme dans la version classique."
+        ]
       },
       {
-        "texte": "245 g de sucre en poudre (meringue)",
-        "valeur": 245,
-        "unite": "g",
-        "reste": "sucre en poudre (meringue)"
-      },
-      {
-        "texte": "1 c. à café de fécule de maïs (meringue)",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "fécule de maïs (meringue)"
-      },
-      {
-        "texte": "1 c. à café de jus de citron (meringue)",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "jus de citron (meringue)"
-      },
-      {
-        "texte": "1 pincée de sel (meringue)",
-        "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel (meringue)"
-      },
-      {
-        "texte": "250 g de mascarpone (chantilly)",
-        "valeur": 250,
-        "unite": "g",
-        "reste": "mascarpone (chantilly)"
-      },
-      {
-        "texte": "0,3 L de crème liquide entière à 30 % minimum, très froide (chantilly)",
-        "valeur": 0.3,
-        "unite": "L",
-        "reste": "crème liquide entière à 30 % minimum, très froide (chantilly)"
-      },
-      {
-        "texte": "40 g de sucre glace (chantilly)",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "sucre glace (chantilly)"
-      },
-      {
-        "texte": "1 c. à café d'extrait de vanille (chantilly)",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "extrait de vanille (chantilly)"
-      },
-      {
-        "texte": "100 g de fraises (garniture)",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "fraises (garniture)"
-      },
-      {
-        "texte": "60 g de framboises (garniture)",
-        "valeur": 60,
-        "unite": "g",
-        "reste": "framboises (garniture)"
-      },
-      {
-        "texte": "50 g de myrtilles (garniture)",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "myrtilles (garniture)"
-      },
-      {
-        "texte": "1 mangue mûre (moitié en dés, moitié en coulis)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "mangue mûre (moitié en dés, moitié en coulis)"
-      },
-      {
-        "texte": "1 fruit de la passion (facultatif)",
-        "valeur": 1,
-        "unite": null,
-        "reste": "fruit de la passion (facultatif)"
-      },
-      {
-        "texte": "100 g de fruits rouges frais ou surgelés (coulis rouge)",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "fruits rouges frais ou surgelés (coulis rouge)"
-      },
-      {
-        "texte": "15 g de sucre (coulis rouge)",
-        "valeur": 15,
-        "unite": "g",
-        "reste": "sucre (coulis rouge)"
-      },
-      {
-        "texte": "1 c. à café de jus de citron (coulis rouge)",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "jus de citron (coulis rouge)"
-      },
-      {
-        "texte": "1 c. à soupe de jus de citron vert (coulis mangue)",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "jus de citron vert (coulis mangue)"
-      },
-      {
-        "texte": "1 c. à soupe d'eau (coulis mangue)",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "eau (coulis mangue)"
+        "nom": "Mangue-passion",
+        "temps": "2 h 30 (dont 55 min de cuisson et 1 h de refroidissement)",
+        "personnes": "8",
+        "portion": "pavlovas",
+        "ingredients": [
+          {
+            "texte": "4 blancs d'œufs (120 à 130 g) (meringue)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "blancs d'œufs (120 à 130 g) (meringue)"
+          },
+          {
+            "texte": "245 g de sucre en poudre (meringue)",
+            "valeur": 245,
+            "unite": "g",
+            "reste": "sucre en poudre (meringue)"
+          },
+          {
+            "texte": "1 c. à café de fécule de maïs (meringue)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "fécule de maïs (meringue)"
+          },
+          {
+            "texte": "1 c. à café de jus de citron (meringue)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "jus de citron (meringue)"
+          },
+          {
+            "texte": "1 pincée de sel (meringue)",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "sel (meringue)"
+          },
+          {
+            "texte": "250 g de mascarpone (chantilly)",
+            "valeur": 250,
+            "unite": "g",
+            "reste": "mascarpone (chantilly)"
+          },
+          {
+            "texte": "0,3 L de crème liquide entière à 30 % minimum, très froide (chantilly)",
+            "valeur": 0.3,
+            "unite": "L",
+            "reste": "crème liquide entière à 30 % minimum, très froide (chantilly)"
+          },
+          {
+            "texte": "40 g de sucre glace (chantilly)",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre glace (chantilly)"
+          },
+          {
+            "texte": "1 c. à café d'extrait de vanille (chantilly)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "extrait de vanille (chantilly)"
+          },
+          {
+            "texte": "1 grosse mangue bien mûre (garniture)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "grosse mangue bien mûre (garniture)"
+          },
+          {
+            "texte": "2 fruits de la passion (garniture)",
+            "valeur": 2,
+            "unite": null,
+            "reste": "fruits de la passion (garniture)"
+          },
+          {
+            "texte": "100 g de chair de mangue, soit ½ mangue (coulis)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "chair de mangue, soit ½ mangue (coulis)"
+          },
+          {
+            "texte": "1 c. à soupe de jus de citron vert (coulis)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "jus de citron vert (coulis)"
+          },
+          {
+            "texte": "1 c. à soupe d'eau (coulis)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "eau (coulis)"
+          }
+        ],
+        "etapes": [
+          "Préchauffer le four à 110 °C en chaleur traditionnelle (pas de chaleur tournante). Tracer 8 cercles de 7 cm sur une feuille de papier cuisson, espacés de 3 à 4 cm, puis retourner la feuille pour que l'encre ne touche pas la meringue.",
+          "Monter la meringue : dans un bol parfaitement propre et sec, fouetter les blancs avec le sel jusqu'à ce qu'ils moussent, puis ajouter le sucre cuillère par cuillère en continuant de fouetter, jusqu'à une meringue ferme et brillante. Frotter un peu de meringue entre les doigts : on ne doit plus sentir de grains de sucre.",
+          "Saupoudrer la fécule, ajouter le jus de citron et incorporer délicatement à la spatule, sans faire retomber la meringue.",
+          "Coller le papier sur la plaque avec un point de meringue dans chaque coin. Déposer la meringue sur chaque cercle à la cuillère ou à la poche, puis creuser le centre avec le dos d'une cuillère pour former un nid aux bords relevés.",
+          "Cuire 50 minutes à 1 h sans ouvrir le four : les meringues sont prêtes quand l'extérieur est sec et qu'elles se décollent facilement du papier.",
+          "Éteindre le four et laisser refroidir les meringues dedans, porte entrouverte (une cuillère en bois coincée), au moins 1 h : le refroidissement lent évite les fissures. Les garder ensuite en boîte hermétique à température ambiante, jamais au réfrigérateur.",
+          "Coulis : mixer la chair de mangue avec le citron vert et l'eau jusqu'à une sauce lisse, goûter et sucrer un peu si besoin. Réfrigérer.",
+          "Fruits : peler la grosse mangue et la couper en petits dés, récupérer la pulpe des fruits de la passion. Garder au frais.",
+          "Chantilly (juste avant le montage) : fouetter le mascarpone, la crème très froide, le sucre glace et la vanille jusqu'à ce que ce soit ferme. S'arrêter dès que ça tient : trop fouettée, elle devient granuleuse. Astuce : bol et fouet 15 minutes au congélateur avant.",
+          "Montage au dernier moment : garnir chaque nid de chantilly, ajouter environ 2 c. à soupe de dés de mangue, un peu de pulpe de passion et un petit filet de coulis. Servir aussitôt.",
+          "À l'avance : les meringues se gardent 2 à 3 jours en boîte hermétique et les coulis 2 jours au frais. La chantilly et le montage se font juste avant de servir, sinon la meringue ramollit."
+        ],
+        "mc": [
+          "Préparer le papier avec 8 cercles de 7 cm et préchauffer le four à 110 °C.",
+          "Insérer le fouet. Mettre les blancs et le sel dans le bol propre et sec, fouetter <b>3 min / vitesse 4</b> sans le gobelet. Ajouter le sucre en pluie par l'ouverture et fouetter <b>5 min / vitesse 4</b> jusqu'à une meringue ferme et brillante. Retirer le fouet, incorporer la fécule et le citron à la spatule.",
+          "Former les nids, cuire 50 minutes à 1 h à 110 °C et laisser refroidir 1 h dans le four entrouvert.",
+          "Coulis : bol rincé, mettre la mangue, le citron vert et l'eau, mixer <b>30 s / vitesse 8</b>.",
+          "Chantilly : bol bien froid, fouet inséré, mettre le mascarpone, la crème, le sucre glace et la vanille, fouetter <b>1 min 30 / vitesse 4</b> en surveillant.",
+          "Monter au dernier moment comme dans la version classique."
+        ]
       }
-    ],
-    "etapes": [
-      "Préchauffer le four à 110 °C en chaleur traditionnelle (pas de chaleur tournante). Tracer 8 cercles de 7 cm sur une feuille de papier cuisson, espacés de 3 à 4 cm, puis retourner la feuille pour que l'encre ne touche pas la meringue.",
-      "Monter la meringue : dans un bol parfaitement propre et sec, fouetter les blancs avec le sel jusqu'à ce qu'ils moussent, puis ajouter le sucre cuillère par cuillère en continuant de fouetter, jusqu'à une meringue ferme et brillante. Frotter un peu de meringue entre les doigts : on ne doit plus sentir de grains de sucre.",
-      "Saupoudrer la fécule, ajouter le jus de citron et incorporer délicatement à la spatule, sans faire retomber la meringue.",
-      "Coller le papier sur la plaque avec un point de meringue dans chaque coin. Déposer la meringue sur chaque cercle à la cuillère ou à la poche, puis creuser le centre avec le dos d'une cuillère pour former un nid aux bords relevés.",
-      "Cuire 50 minutes à 1 h sans ouvrir le four : les meringues sont prêtes quand l'extérieur est sec et qu'elles se décollent facilement du papier.",
-      "Éteindre le four et laisser refroidir les meringues dedans, porte entrouverte (une cuillère en bois coincée), au moins 1 h : le refroidissement lent évite les fissures. Les garder ensuite en boîte hermétique à température ambiante, jamais au réfrigérateur.",
-      "Coulis rouge : chauffer les fruits rouges avec le sucre et le citron 5 minutes à feu moyen, mixer puis filtrer pour retirer les pépins. Réfrigérer. Il en faut à peine 1 c. à café par pavlova.",
-      "Coulis mangue : peler la mangue, couper la moitié en petits dés pour la garniture et mixer l'autre moitié avec le citron vert et l'eau jusqu'à une sauce lisse. Réfrigérer.",
-      "Fruits : couper les fraises en petits morceaux et garder framboises et myrtilles entières. Compter environ 1 c. à soupe bombée de fruits par côté de pavlova : la meringue doit rester bien visible.",
-      "Chantilly (juste avant le montage) : fouetter le mascarpone, la crème très froide, le sucre glace et la vanille jusqu'à ce que ce soit ferme. S'arrêter dès que ça tient : trop fouettée, elle devient granuleuse. Astuce : bol et fouet 15 minutes au congélateur avant.",
-      "Montage au dernier moment : garnir chaque nid de chantilly, mettre les fruits rouges sur une moitié et la mangue arrosée de passion sur l'autre. Ajouter juste un filet de chaque coulis sur le dessus (pas plus, sinon la meringue ramollit) et servir aussitôt.",
-      "À l'avance : les meringues se gardent 2 à 3 jours en boîte hermétique et les coulis 2 jours au frais. La chantilly et le montage se font juste avant de servir, sinon la meringue ramollit."
-    ],
-    "mc": [
-      "Préparer le papier avec 8 cercles de 7 cm et préchauffer le four à 110 °C.",
-      "Insérer le fouet. Mettre les blancs et le sel dans le bol propre et sec, fouetter <b>3 min / vitesse 4</b> sans le gobelet. Ajouter le sucre en pluie par l'ouverture et fouetter <b>5 min / vitesse 4</b> jusqu'à une meringue ferme et brillante. Retirer le fouet, incorporer la fécule et le citron à la spatule.",
-      "Former les nids, cuire 50 minutes à 1 h à 110 °C et laisser refroidir 1 h dans le four entrouvert.",
-      "Coulis rouge : bol rincé, mettre les fruits rouges, le sucre et le citron, cuire <b>5 min / 90 °C / vitesse 2</b>, puis mixer <b>20 s / vitesse 8</b> et filtrer.",
-      "Coulis mangue : bol rincé, mettre la moitié de la mangue, le citron vert et l'eau, mixer <b>30 s / vitesse 8</b>.",
-      "Chantilly : bol bien froid, fouet inséré, mettre le mascarpone, la crème, le sucre glace et la vanille, fouetter <b>1 min 30 / vitesse 4</b> en surveillant.",
-      "Monter au dernier moment comme dans la version classique."
-    ],
-    "portion": "pavlovas"
+    ]
   },
   {
     "id": "static-708",

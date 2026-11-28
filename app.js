@@ -153,7 +153,22 @@ function mergeVersionDuplicates(list) {
 }
 
 // Appelée par cloud.js à chaque changement des recettes ajoutées en ligne.
-window.onLiveRecipesUpdate = function (live) {
+// Copie locale (dans le téléphone) des recettes en ligne : au chargement, on affiche tout de suite
+// la dernière version connue (photo sans fond, présentation…) au lieu d'attendre la connexion.
+const LiveCache = (() => {
+  let dbP = null;
+  const db = () => dbP || (dbP = new Promise((ok, ko) => {
+    const rq = indexedDB.open('recettes-cache', 1);
+    rq.onupgradeneeded = () => rq.result.createObjectStore('kv');
+    rq.onsuccess = () => ok(rq.result); rq.onerror = () => ko(rq.error);
+  }));
+  return {
+    get: k => db().then(d => new Promise(ok => { const r = d.transaction('kv').objectStore('kv').get(k); r.onsuccess = () => ok(r.result); r.onerror = () => ok(null); })).catch(() => null),
+    set: (k, v) => db().then(d => { d.transaction('kv', 'readwrite').objectStore('kv').put(v, k); }).catch(() => {}),
+  };
+})();
+let liveArrived = false, hiddenArrived = false;
+window.onLiveRecipesUpdate = function (live, fromCache) {
   const fix = ings => Array.isArray(ings) ? ings.map(i => (i && typeof i === 'object' && i.texte) ? { ...i, ...parseIngredientLine(i.texte) } : i) : ings;
   // Photo « sans fond » déjà détourée dans les fichiers du site : on l'utilise plutôt que de
   // retirer le fond dans le téléphone à chaque visite (c'est lent).
@@ -163,6 +178,7 @@ window.onLiveRecipesUpdate = function (live) {
     if (window.RecipeVisual && RecipeVisual.styleOf({ cat: r.cat, presentation: o.presentation || r.presentation }) !== 'free') return;
     o.photo = so.photo; o.photoDetouree = true;
   };
+  if (fromCache) { if (liveArrived) return; } else { liveArrived = true; try { LiveCache.set('recipes', live); } catch (e) {} }
   liveRecettes = live.map(r => {
     const o = { ...r };
     const so = r.replacesStaticId && staticById.get(r.replacesStaticId);
@@ -178,7 +194,8 @@ window.onLiveRecipesUpdate = function (live) {
 };
 
 // Appelée par cloud.js à chaque changement des recettes d'origine masquées par Alissia.
-window.onHiddenStaticUpdate = function (ids) {
+window.onHiddenStaticUpdate = function (ids, fromCache) {
+  if (fromCache) { if (hiddenArrived) return; } else { hiddenArrived = true; LiveCache.set('hidden', ids); }
   hiddenStaticIds = new Set(ids);
   refreshRecettes();
 };
@@ -198,8 +215,18 @@ function renderAuthZone() {
       <div class="auth-user">
         ${currentUser.photoURL ? `<img class="auth-avatar" src="${currentUser.photoURL}" alt="">` : `<span class="auth-avatar auth-avatar--fallback">${(currentUser.displayName || '?')[0]}</span>`}
         <span class="auth-name">${currentUser.displayName || 'Vous'}</span>
+        ${isAdmin() ? '<button class="auth-btn auth-btn--ghost" id="auth-github-btn" title="Sauvegarde instantanée sur GitHub">☁︎<span class="auth-long"> GitHub</span></button>' : ''}
         <button class="auth-btn auth-btn--ghost" id="auth-signout-btn">Se déconnecter</button>
       </div>`;
+    const gh = document.getElementById('auth-github-btn');
+    if (gh) gh.addEventListener('click', async () => {
+      const on = await window.CloudRecipes.hasGithubToken();
+      const t = prompt((on ? "La sauvegarde instantanée sur GitHub est ACTIVÉE.\nPour changer de clé, colle la nouvelle ci-dessous (sinon Annuler).\n\n" : "Colle ici ta clé GitHub (elle commence par github_pat_) : tes modifications seront enregistrées sur GitHub quelques secondes après.\n\n") + "Clé GitHub :");
+      if (!t || !t.trim()) return;
+      if (!/^(github_pat_|ghp_)/.test(t.trim())) { alert("Ce n'est pas une clé GitHub : elle doit commencer par github_pat_."); return; }
+      try { await window.CloudRecipes.setGithubToken(t.trim()); alert("C'est enregistré : tes modifications seront sauvegardées sur GitHub quelques secondes après."); }
+      catch (e) { alert("Impossible d'enregistrer la clé : " + (e.message || e) + "\n(As-tu bien mis à jour les règles Firestore ?)"); }
+    });
     document.getElementById('auth-signout-btn').addEventListener('click', async () => {
       try { await window.CloudRecipes.signOutUser(); }
       catch (e) { console.error(e); }
@@ -1577,4 +1604,6 @@ addForm.addEventListener('submit', async e => {
 });
 
 renderAuthZone();
+LiveCache.get('hidden').then(ids => { if (Array.isArray(ids)) window.onHiddenStaticUpdate(ids, true); });
+LiveCache.get('recipes').then(live => { if (Array.isArray(live)) window.onLiveRecipesUpdate(live, true); });
 refreshRecettes(); // fusionne déjà les versions avant que les recettes en ligne arrivent

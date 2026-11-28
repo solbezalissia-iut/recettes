@@ -34,6 +34,7 @@ import {
   deleteDoc,
   doc,
   setDoc,
+  getDoc,
   onSnapshot,
   serverTimestamp,
   query,
@@ -239,6 +240,32 @@ Règles de rédaction (obligatoires) :
     console.error('[cloud.js] Erreur de synchronisation (recettes masquées) :', err);
   });
 
+  // ── Sauvegarde instantanée sur GitHub (seulement pour les modifications d'Alissia) ──
+  // Après chaque ajout / modification / suppression faite par Alissia, on demande à GitHub
+  // de lancer la sauvegarde (.github/workflows/sauvegarde.yml). La clé est rangée dans
+  // Firestore (config/github) et seul le compte d'Alissia peut la lire (firestore.rules).
+  // Les modifications des autres sont sauvegardées par le passage automatique toutes les 5 minutes.
+  const OWNER_EMAIL = 'solbezrigaudalissia@gmail.com';
+  let backupTimer = null;
+  function scheduleBackup() {
+    if (!currentUser || currentUser.email !== OWNER_EMAIL) return;
+    clearTimeout(backupTimer);
+    backupTimer = setTimeout(runBackup, 3000); // plusieurs changements d'affilée = une seule sauvegarde
+  }
+  async function runBackup() {
+    try {
+      const snap = await getDoc(doc(db, 'config', 'github'));
+      const token = snap.exists() && snap.data().token;
+      if (!token) return;
+      const res = await fetch('https://api.github.com/repos/solbezalissia-iut/recettes/actions/workflows/sauvegarde.yml/dispatches', {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
+        body: JSON.stringify({ ref: 'main' })
+      });
+      if (!res.ok) console.warn('[sauvegarde GitHub]', res.status);
+    } catch (e) { console.warn('[sauvegarde GitHub]', e); }
+  }
+
   window.CloudRecipes = {
     getCurrentUser() {
       return currentUser;
@@ -263,6 +290,7 @@ Règles de rédaction (obligatoires) :
         updatedAt: serverTimestamp()
       };
       const ref = await addDoc(collection(db, RECIPES_COLLECTION), payload);
+      scheduleBackup();
       return ref.id;
     },
 
@@ -273,11 +301,22 @@ Règles de rédaction (obligatoires) :
         ...safeData,
         updatedAt: serverTimestamp()
       });
+      scheduleBackup();
     },
 
     async deleteRecipe(docId) {
       if (!currentUser) throw new Error("Il faut être connecté pour supprimer une recette.");
       await deleteDoc(doc(db, RECIPES_COLLECTION, docId));
+      scheduleBackup();
+    },
+
+    // Réservé à Alissia : enregistre la clé GitHub de la sauvegarde instantanée.
+    async setGithubToken(token) {
+      await setDoc(doc(db, 'config', 'github'), { token, updatedAt: serverTimestamp() });
+      scheduleBackup();
+    },
+    async hasGithubToken() {
+      try { const s = await getDoc(doc(db, 'config', 'github')); return !!(s.exists() && s.data().token); } catch (e) { return false; }
     },
 
     // Réservé à Alissia (voir firestore.rules) : masque une recette d'origine du site.
@@ -287,6 +326,7 @@ Règles de rédaction (obligatoires) :
         hiddenBy: currentUser.uid,
         hiddenAt: serverTimestamp()
       });
+      scheduleBackup();
     }
   };
 }
