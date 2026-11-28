@@ -215,16 +215,21 @@ function renderAuthZone() {
       <div class="auth-user">
         ${currentUser.photoURL ? `<img class="auth-avatar" src="${currentUser.photoURL}" alt="">` : `<span class="auth-avatar auth-avatar--fallback">${(currentUser.displayName || '?')[0]}</span>`}
         <span class="auth-name">${currentUser.displayName || 'Vous'}</span>
-        ${isAdmin() ? '<button class="auth-btn auth-btn--ghost" id="auth-github-btn" title="Sauvegarde instantanée sur GitHub">☁︎<span class="auth-long"> GitHub</span></button>' : ''}
+        ${isAdmin() ? '<button class="auth-btn auth-btn--ghost" id="auth-github-btn" title="Sauvegarde instantanée sur GitHub" hidden>☁︎<span class="auth-long"> GitHub</span></button>' : ''}
         <button class="auth-btn auth-btn--ghost" id="auth-signout-btn">Se déconnecter</button>
       </div>`;
     const gh = document.getElementById('auth-github-btn');
+    // Le bouton n'apparaît que s'il faut (re)mettre la clé : pas encore de clé, ou clé refusée par GitHub
+    if (gh) window.CloudRecipes.hasGithubToken().then(on => {
+      let bad = false; try { bad = localStorage.getItem('github-cle-refusee') === '1'; } catch (e) {}
+      gh.hidden = on && !bad;
+    });
     if (gh) gh.addEventListener('click', async () => {
       const on = await window.CloudRecipes.hasGithubToken();
       const t = prompt((on ? "La sauvegarde instantanée sur GitHub est ACTIVÉE.\nPour changer de clé, colle la nouvelle ci-dessous (sinon Annuler).\n\n" : "Colle ici ta clé GitHub (elle commence par github_pat_) : tes modifications seront enregistrées sur GitHub quelques secondes après.\n\n") + "Clé GitHub :");
       if (!t || !t.trim()) return;
       if (!/^(github_pat_|ghp_)/.test(t.trim())) { alert("Ce n'est pas une clé GitHub : elle doit commencer par github_pat_."); return; }
-      try { await window.CloudRecipes.setGithubToken(t.trim()); alert("C'est enregistré : tes modifications seront sauvegardées sur GitHub quelques secondes après."); }
+      try { await window.CloudRecipes.setGithubToken(t.trim()); try { localStorage.removeItem('github-cle-refusee'); } catch (e) {} gh.hidden = true; alert("C'est enregistré : tes modifications seront sauvegardées sur GitHub quelques secondes après."); }
       catch (e) { alert("Impossible d'enregistrer la clé : " + (e.message || e) + "\n(As-tu bien mis à jour les règles Firestore ?)"); }
     });
     document.getElementById('auth-signout-btn').addEventListener('click', async () => {

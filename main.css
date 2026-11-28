@@ -737,3 +737,4 @@ header p {
 .mode-switch button.active { background: var(--espresso); color: var(--cream); font-weight: 500; }
 .mc-note { font-size: 0.78rem; color: var(--muted); background: rgba(196,123,58,0.08); border-left: 3px solid var(--caramel); padding: 0.5rem 0.75rem; border-radius: 0 8px 8px 0; margin-bottom: 0.4rem; }
 .mc-note[hidden] { display: none; }
+.auth-btn[hidden] { display: none !important; }
