@@ -390,3 +390,15 @@
 .fete-choice { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
 .fete-choice label { display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; text-transform: none; letter-spacing: 0; color: var(--espresso); cursor: pointer; }
 .fete-choice input { width: 18px; height: 18px; accent-color: var(--caramel); }
+.grid-sentinel { grid-column: 1 / -1; height: 1px; }
+
+/* Choix de version en liste déroulante (recettes avec beaucoup de versions) */
+.variant-select { position: relative; display: flex; align-items: center; gap: 0.6rem; width: 100%; }
+.variant-select span { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,.65); }
+.variant-select select {
+  flex: 1; min-width: 0; appearance: none; -webkit-appearance: none; padding: 0.6rem 2.2rem 0.6rem 0.9rem;
+  border-radius: 99px; border: 1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.08); color: #fff;
+  font: inherit; font-size: 16px; font-weight: 600;
+}
+.variant-select select option { color: #2B1A10; }
+.variant-select b { position: absolute; right: 0.9rem; pointer-events: none; color: #fff; font-size: 0.8rem; }

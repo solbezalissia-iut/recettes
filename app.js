@@ -83,7 +83,9 @@ function mergeAliasedLive(list) {
       const nv = { ...copy.variantes[vi], temps: ov.temps, personnes: ov.personnes, ingredients: ov.ingredients, etapes: ov.etapes };
       if (ov.mc && ov.mc.length) nv.mc = ov.mc;
       const ph = ov.photo || (getVariants(o).length === 1 ? o.photo : null);
-      if (ph && !/enattente/i.test(ph)) { nv.photo = ph; nv.photoDetouree = !!(ov.photo ? ov.photoDetouree : o.photoDetouree); }
+      const phCut = !!(ov.photo ? ov.photoDetouree : o.photoDetouree);
+      const keepCut = copy.variantes[vi].photoDetouree && !phCut; // la version détourée des fichiers est plus légère
+      if (ph && !/enattente/i.test(ph) && !keepCut) { nv.photo = ph; nv.photoDetouree = phCut; }
       copy.variantes[vi] = nv;
     });
     copy._mergedFrom.push(o); copies.set(t, copy); drop.add(o);
@@ -153,8 +155,21 @@ function mergeVersionDuplicates(list) {
 // Appelée par cloud.js à chaque changement des recettes ajoutées en ligne.
 window.onLiveRecipesUpdate = function (live) {
   const fix = ings => Array.isArray(ings) ? ings.map(i => (i && typeof i === 'object' && i.texte) ? { ...i, ...parseIngredientLine(i.texte) } : i) : ings;
+  // Photo « sans fond » déjà détourée dans les fichiers du site : on l'utilise plutôt que de
+  // retirer le fond dans le téléphone à chaque visite (c'est lent).
+  const staticById = new Map(STATIC_RECETTES.map(x => [x._staticId, x]));
+  const useStaticCut = (o, so, r) => {
+    if (!so || o.photoDetouree || !so.photoDetouree || !/^photos\//.test(so.photo || '')) return;
+    if (window.RecipeVisual && RecipeVisual.styleOf({ cat: r.cat, presentation: o.presentation || r.presentation }) !== 'free') return;
+    o.photo = so.photo; o.photoDetouree = true;
+  };
   liveRecettes = live.map(r => {
     const o = { ...r };
+    const so = r.replacesStaticId && staticById.get(r.replacesStaticId);
+    if (so) {
+      useStaticCut(o, so, r);
+      if (o.variantes && so.variantes) o.variantes = o.variantes.map((v, i) => { const nv = { ...v }; if (nv.photo) useStaticCut(nv, so.variantes.find(x => x.nom === v.nom) || so.variantes[i], r); return nv; });
+    }
     if (o.ingredients) o.ingredients = fix(o.ingredients);
     if (o.variantes) o.variantes = o.variantes.map(v => ({ ...v, ingredients: fix(v.ingredients) }));
     return o;
@@ -404,47 +419,72 @@ function fetesOf(r) {
   return FETES.filter(f => FETE_RE[f].test(t));
 }
 
+// Les grilles ne contiennent que les recettes trouvées, et seule la catégorie affichée est dessinée
+// (les autres le sont quand on ouvre leur onglet) : le site reste fluide même avec 600 recettes.
+let gridLists = {};
+const renderedGrids = new Set();
+let renderToken = 0;
+function makeCard(idx) {
+  const r = allRecettes[idx];
+  const card = document.createElement('div');
+  card.className = 'recipe-card';
+  card.dataset.idx = idx;
+  renderCard(card, r, idx, 0);
+  card.addEventListener('click', e => {
+    const step = e.target.closest('[data-vstep]');
+    if (step) {
+      e.stopPropagation();
+      renderCard(card, r, idx, +card.dataset.vi + +step.dataset.vstep);
+      card.classList.add('vflip'); setTimeout(() => card.classList.remove('vflip'), 250);
+      return;
+    }
+    openModal(idx, +card.dataset.vi || 0);
+  });
+  return card;
+}
+function renderGrid(cat) {
+  if (renderedGrids.has(cat)) return;
+  renderedGrids.add(cat);
+  const g = document.getElementById('grid-' + cat); if (!g) return;
+  g.innerHTML = '';
+  const list = gridLists[cat] || [];
+  const token = renderToken;
+  let i = 0;
+  // Les cartes sont ajoutées par paquets de 24, au fur et à mesure qu'on descend dans la page
+  const sentinel = document.createElement('div');
+  sentinel.className = 'grid-sentinel';
+  const more = () => {
+    if (token !== renderToken) return;
+    const frag = document.createDocumentFragment();
+    const end = Math.min(list.length, i + 24);
+    for (; i < end; i++) frag.appendChild(makeCard(list[i]));
+    g.insertBefore(frag, sentinel.parentNode === g ? sentinel : null);
+    if (i >= list.length) { io && io.disconnect(); sentinel.remove(); }
+  };
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) more(); }, { rootMargin: '1200px 0px' }) : null;
+  g.appendChild(sentinel);
+  more();
+  if (io && i < list.length) io.observe(sentinel);
+  else while (i < list.length) more();
+}
+
 function buildGrids() {
   const cats = ['apero', 'entree', 'plat', 'accompagnement', 'dessert', 'boisson', 'sauce', 'base-culinaire', 'maison', ...FETES];
-  const allGrid = document.getElementById('grid-all');
-  allGrid.innerHTML = '';
-  cats.forEach(cat => { document.getElementById('grid-' + cat).innerHTML = ''; });
-
   const counts = { all: 0, apero: 0, entree: 0, plat: 0, accompagnement: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0, maison: 0, noel: 0, halloween: 0, paques: 0 };
-
+  const lists = { all: [] };
   getSortedIndices().forEach(idx => {
     const r = allRecettes[idx];
-    const matched = cardMatchesFilters(r);
-    const preview = previewVariant(r);
-    const variants = getVariants(r);
-
+    if (!cardMatchesFilters(r)) return;
     ['all', r.cat, ...fetesOf(r)].forEach(gridCat => {
-      const card = document.createElement('div');
-      card.className = 'recipe-card' + (matched ? '' : ' hidden');
-      card.dataset.idx = idx;
-
-      renderCard(card, r, idx, 0);
-      card.addEventListener('click', e => {
-        const step = e.target.closest('[data-vstep]');
-        if (step) {
-          e.stopPropagation();
-          renderCard(card, r, idx, +card.dataset.vi + +step.dataset.vstep);
-          card.classList.add('vflip'); setTimeout(() => card.classList.remove('vflip'), 250);
-          return;
-        }
-        openModal(idx, +card.dataset.vi || 0);
-      });
-
-      if (gridCat === 'all') {
-        allGrid.appendChild(card);
-        if (matched) counts.all++;
-      } else {
-        const g = document.getElementById('grid-' + gridCat); if (!g) return;
-        g.appendChild(card);
-        if (matched) counts[gridCat] = (counts[gridCat] || 0) + 1;
-      }
+      (lists[gridCat] = lists[gridCat] || []).push(idx);
+      counts[gridCat] = (counts[gridCat] || 0) + 1;
     });
   });
+  gridLists = lists;
+  renderToken++;
+  renderedGrids.clear();
+  ['all', ...cats].forEach(c => { if (c !== currentTab) { const g = document.getElementById('grid-' + c); if (g) g.innerHTML = ''; } });
+  renderGrid(currentTab);
 
   cats.forEach(cat => {
     const count = counts[cat] || 0;
@@ -591,6 +631,13 @@ function renderVariantTabs() {
     return;
   }
   wrap.style.display = 'flex';
+  // Beaucoup de versions (ex. 15 goûts de macarons) : une liste déroulante, plus lisible sur téléphone
+  if (variants.length > 5) {
+    wrap.innerHTML = `<label class="variant-select"><span>Version</span><select aria-label="Choisir la version">${variants.map((v, i) =>
+      `<option value="${i}"${i === currentVariantIdx ? ' selected' : ''}>${escapeHtml(v.nom || ('Version ' + (i + 1)))}</option>`).join('')}</select><b aria-hidden="true">▾</b></label>`;
+    wrap.querySelector('select').addEventListener('change', e => selectVariant(+e.target.value));
+    return;
+  }
   wrap.innerHTML = variants.map((v, i) => `
     <button class="variant-tab${i === currentVariantIdx ? ' active' : ''}" data-vidx="${i}">${v.nom || ('Version ' + (i + 1))}</button>
   `).join('');
@@ -599,6 +646,8 @@ function renderVariantTabs() {
       selectVariant(parseInt(btn.dataset.vidx, 10));
     });
   });
+  const act = wrap.querySelector('.variant-tab.active');
+  if (act) wrap.scrollLeft = act.offsetLeft - (wrap.clientWidth - act.offsetWidth) / 2; // version affichée bien visible
 }
 
 function selectVariant(vIdx) {
@@ -785,9 +834,11 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.ing-input-wrap')) sugBox.classList.remove('open');
 });
 
+let searchTimer = null;
 document.getElementById('search-input').addEventListener('input', e => {
   searchQuery = e.target.value.trim();
-  buildGrids();
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(buildGrids, 160); // attend la fin de la frappe
 });
 
 document.getElementById('time-filter').addEventListener('change', e => {
@@ -852,6 +903,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.classList.add('active');
     currentTab = btn.dataset.cat;
     document.getElementById('section-' + currentTab).classList.add('visible');
+    renderGrid(currentTab);
   });
 });
 
