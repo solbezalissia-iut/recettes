@@ -202,17 +202,90 @@
   const ph = () => { if (si) si.placeholder = innerWidth < 700 ? 'Rechercher…' : 'Chercher une recette…'; };
   ph(); addEventListener('resize', ph);
 
-  // ── Catégories : la fête de la saison passe en premier (et tout de suite après « Toutes » sur téléphone) ──
-  (function seasonTabs() {
-    const d = new Date(), m = d.getMonth();
-    const season = (m >= 10 || (m === 0 && d.getDate() <= 6)) ? 'noel' : (m === 8 || m === 9) ? 'halloween' : (m >= 1 && m <= 3) ? 'paques' : null;
-    const sep = document.querySelector('#tabs .tab-sep');
-    const tab = season && document.querySelector(`#tabs .tab-btn[data-cat="${season}"]`);
-    if (tab && sep) { sep.after(tab); tab.classList.add('tab-season'); tab.title = 'C\'est la saison !'; }
-  })();
-
   window.Extras = { isFav, toggleFav, passes, onOpen, keyOf };
   updateFavCount();
   // Les cartes déjà dessinées reçoivent leur cœur
   if (typeof buildGrids === 'function') buildGrids();
+})();
+
+// ═════════ Menu déroulant des catégories ═════════
+// Les anciens boutons (#tabs) restent cachés et font le travail : le menu ne fait que cliquer dessus.
+(function () {
+  const tabs = document.getElementById('tabs');
+  const pick = document.getElementById('cat-pick');
+  if (!tabs || !pick) return;
+  const seasonBtn = document.getElementById('cat-season');
+  const btnOf = cat => tabs.querySelector(`.tab-btn[data-cat="${cat}"]`);
+  const info = b => ({
+    cat: b.dataset.cat,
+    ic: (b.querySelector('.tab-ic') || {}).textContent || '',
+    lab: (b.querySelector('.tab-lab') || {}).textContent || b.textContent.trim(),
+    n: (b.querySelector('.tab-count') || {}).textContent || '',
+    fete: b.classList.contains('tab-fete'),
+    active: b.classList.contains('active'),
+  });
+
+  // Fenêtre de choix (en bas de l'écran sur téléphone, sous le bouton sur ordinateur)
+  const sheet = document.createElement('div');
+  sheet.id = 'cat-sheet';
+  sheet.className = 'cat-sheet';
+  sheet.innerHTML = '<div class="cat-panel" role="listbox" aria-label="Catégories"><div class="cat-grab"></div><div class="cat-head">Choisir une catégorie</div><div class="cat-list" id="cat-list"></div></div>';
+  document.body.appendChild(sheet);
+  if (window.UI) UI.watch(sheet);
+  const list = sheet.querySelector('#cat-list');
+
+  function row(i) {
+    return `<button type="button" class="cat-row${i.active ? ' on' : ''}${i.n === '0' ? ' empty' : ''}" data-cat="${i.cat}" role="option" aria-selected="${i.active}">
+      <span class="cat-row-ic">${i.ic}</span><span class="cat-row-lab">${i.lab}</span><span class="cat-row-n">${i.n}</span>${i.active ? '<span class="cat-row-ok">✓</span>' : ''}</button>`;
+  }
+  function open() {
+    const all = [...tabs.querySelectorAll('.tab-btn')].map(info);
+    const main = all.filter(i => !i.fete), fetes = all.filter(i => i.fete);
+    list.innerHTML = main.map(row).join('') + '<div class="cat-group">Fêtes</div>' + fetes.map(row).join('');
+    if (innerWidth > 780) {
+      const r = pick.getBoundingClientRect();
+      sheet.querySelector('.cat-panel').style.cssText = `top:${r.bottom + 8}px;left:${r.left}px;`;
+    } else sheet.querySelector('.cat-panel').style.cssText = '';
+    sheet.classList.add('open');
+    pick.setAttribute('aria-expanded', 'true');
+    const on = list.querySelector('.cat-row.on'); if (on) on.scrollIntoView({ block: 'nearest' });
+  }
+  function close() { sheet.classList.remove('open'); pick.setAttribute('aria-expanded', 'false'); }
+  pick.addEventListener('click', () => sheet.classList.contains('open') ? close() : open());
+  sheet.addEventListener('click', e => {
+    const b = e.target.closest('.cat-row');
+    if (b) { const t = btnOf(b.dataset.cat); if (t) t.click(); close(); return; }
+    if (e.target === sheet) close();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && sheet.classList.contains('open')) close(); });
+  addEventListener('resize', close);
+
+  // Le bouton affiche la catégorie choisie et son nombre de recettes
+  function sync() {
+    const a = tabs.querySelector('.tab-btn.active'); if (!a) return;
+    const i = info(a);
+    document.getElementById('cat-pick-ic').textContent = i.ic;
+    document.getElementById('cat-pick-lab').textContent = i.lab;
+    document.getElementById('cat-pick-n').textContent = i.n;
+    pick.classList.toggle('is-filtered', i.cat !== 'all');
+    if (seasonBtn) seasonBtn.classList.toggle('on', seasonBtn.dataset.cat === i.cat);
+  }
+  tabs.addEventListener('click', () => setTimeout(sync, 0));
+  new MutationObserver(sync).observe(tabs, { subtree: true, characterData: true, childList: true, attributes: true, attributeFilter: ['class'] });
+
+  // Raccourci vers la fête de la saison (ex. 🎄 Noël en novembre-décembre)
+  const d = new Date(), m = d.getMonth();
+  const season = (m >= 10 || (m === 0 && d.getDate() <= 6)) ? 'noel' : (m === 8 || m === 9) ? 'halloween' : (m >= 1 && m <= 3) ? 'paques' : null;
+  const sb = season && btnOf(season);
+  if (seasonBtn && sb) {
+    const i = info(sb);
+    seasonBtn.dataset.cat = season;
+    seasonBtn.innerHTML = `<span>${i.ic}</span> ${i.lab}`;
+    seasonBtn.hidden = false;
+    seasonBtn.addEventListener('click', () => {
+      // second appui : retour à toutes les recettes
+      const t = btnOf(seasonBtn.classList.contains('on') ? 'all' : season); if (t) t.click();
+    });
+  }
+  sync();
 })();
