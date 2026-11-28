@@ -4935,9 +4935,9 @@
     "valeur": 250
    },
    {
-    "reste": "sachet de sucre vanillé",
+    "reste": "sucre vanillé",
     "texte": "1 sachet de sucre vanillé",
-    "unite": null,
+    "unite": "sachet",
     "valeur": 1
    },
    {
@@ -4967,7 +4967,7 @@
   "replacesStaticId": "static-49",
   "temps": "35 min",
   "titre": "Brownies",
-  "updatedAt": "2026-11-28T10:07:01.523Z",
+  "updatedAt": "2026-11-28T10:07:39.868Z",
   "variantes": [
    {
     "etapes": [
@@ -5003,9 +5003,9 @@
       "valeur": 250
      },
      {
-      "reste": "sachet de sucre vanillé",
+      "reste": "sucre vanillé",
       "texte": "1 sachet de sucre vanillé",
-      "unite": null,
+      "unite": "sachet",
       "valeur": 1
      },
      {
@@ -5035,7 +5035,7 @@
     ],
     "nom": "Chocolat noir et noix",
     "personnes": 6,
-    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v0-3ae2efcd.png",
+    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v0-e786c962.png",
     "photoDetouree": true,
     "temps": "35 min"
    },
