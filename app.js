@@ -451,10 +451,31 @@ const FETE_RE = {
   halloween: /halloween|momie|cimetiere|fantome|sorciere|araignee|monstre|zombie|sanglant|vampire|squelette/,
   paques: /paques|lapin en chocolat|oeufs? en chocolat|nid de paques|poussin|gigot/,
 };
-function fetesOf(r) {
+// Fêtes de la recette entière (sans compter celles d'une seule version)
+function recipeFetes(r) {
   if (Array.isArray(r.fetes) && r.fetes.length) return r.fetes.filter(f => FETES.includes(f));
+  // Fêtes choisies version par version : le titre ne compte plus
+  if (r.variantes && r.variantes.some(v => Array.isArray(v.fetes))) return [];
   const t = normalize(r.titre || '');
   return FETES.filter(f => FETE_RE[f].test(t));
+}
+// Fêtes d'une seule version : choisies sur la version, sinon reconnues dans son nom (« Cimetière d'Halloween »)
+function variantFetes(v) {
+  if (Array.isArray(v.fetes)) return v.fetes.filter(f => FETES.includes(f));
+  const t = normalize(v.nom || '');
+  return t ? FETES.filter(f => FETE_RE[f].test(t)) : [];
+}
+// Toutes les fêtes où la recette apparaît (la recette entière ou au moins une version)
+function fetesOf(r) {
+  const set = new Set(recipeFetes(r));
+  (r.variantes || []).forEach(v => variantFetes(v).forEach(f => set.add(f)));
+  return FETES.filter(f => set.has(f));
+}
+// Dans un onglet de fête, la carte s'ouvre sur la version de cette fête
+function startVariantFor(r, cat) {
+  if (!FETES.includes(cat) || !r.variantes || recipeFetes(r).includes(cat)) return 0;
+  const i = r.variantes.findIndex(v => variantFetes(v).includes(cat));
+  return i < 0 ? 0 : i;
 }
 
 // Les grilles ne contiennent que les recettes trouvées, et seule la catégorie affichée est dessinée
@@ -462,12 +483,12 @@ function fetesOf(r) {
 let gridLists = {};
 const renderedGrids = new Set();
 let renderToken = 0;
-function makeCard(idx) {
+function makeCard(idx, cat) {
   const r = allRecettes[idx];
   const card = document.createElement('div');
   card.className = 'recipe-card';
   card.dataset.idx = idx;
-  renderCard(card, r, idx, 0);
+  renderCard(card, r, idx, startVariantFor(r, cat));
   card.addEventListener('click', e => {
     const step = e.target.closest('[data-vstep]');
     if (step) {
@@ -495,7 +516,7 @@ function renderGrid(cat) {
     if (token !== renderToken) return;
     const frag = document.createDocumentFragment();
     const end = Math.min(list.length, i + 24);
-    for (; i < end; i++) frag.appendChild(makeCard(list[i]));
+    for (; i < end; i++) frag.appendChild(makeCard(list[i], cat));
     g.insertBefore(frag, sentinel.parentNode === g ? sentinel : null);
     if (i >= list.length) { io && io.disconnect(); sentinel.remove(); }
   };
@@ -1120,7 +1141,7 @@ function closeAddModal() {
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   document.getElementById('new-photo-label').textContent = 'Photo (optionnelle)';
   editingVariants = null; editingSource = null;
-  document.getElementById('variant-pick-field').style.display = 'none'; document.getElementById('variant-photo-field').style.display = 'none';
+  document.getElementById('variant-pick-field').style.display = 'none'; document.getElementById('fete-label').textContent = 'Spécial fêtes (facultatif)'; document.getElementById('variant-photo-field').style.display = 'none';
   updateRecropButton();
 }
 
@@ -1288,6 +1309,11 @@ function loadVariantInForm(i) {
   newPhotoPreview.className = 'form-photo-preview photo-preview--' + cropStyle();
   newPhotoPreview.innerHTML = editingOriginalPhoto ? `<img src="${editingOriginalPhoto}" alt="Aperçu">` : 'Aperçu';
   document.getElementById('new-photo-label').textContent = `Photo de la version « ${v.nom || 'Version ' + (i + 1)} »`;
+  // Fêtes de cette version (si la recette entière était classée, la version l'hérite)
+  const src_ = editingSource || {};
+  const vf = Array.isArray(v.fetes) ? v.fetes : [...new Set([...recipeFetes(src_), ...variantFetes(v)])];
+  document.querySelectorAll('#fete-choice input').forEach(x => { x.checked = vf.includes(x.value); });
+  document.getElementById('fete-label').textContent = `Spécial fêtes pour la version « ${v.nom || 'Version ' + (i + 1)} »`;
   const tg = document.getElementById('variant-photo-targets');
   tg.innerHTML = `<label><input type="checkbox" data-vall> Toutes</label>` + editingVariants.map((x, j) =>
     `<label><input type="checkbox" data-vphoto="${j}"${j === i ? ' checked' : ''}> ${escapeHtml(x.nom || 'Version ' + (j + 1))}</label>`).join('');
@@ -1306,6 +1332,7 @@ function saveVariantFromForm() {
   if (ing !== v._ingText) v.ingredients = ing.split('\n').map(l => l.trim()).filter(Boolean).map(parseIngredientLine);
   if (et !== v._etText) v.etapes = et.split('\n').map(l => l.trim()).filter(Boolean);
   v._ingText = ing; v._etText = et;
+  v.fetes = [...document.querySelectorAll('#fete-choice input:checked')].map(x => x.value);
   if (newPhotoDataUrl) {
     // La même photo peut aller sur plusieurs versions cochées
     document.querySelectorAll('#variant-photo-targets [data-vphoto]:checked').forEach(c => {
@@ -1358,7 +1385,7 @@ document.getElementById('modal-edit').addEventListener('click', () => {
     loadVariantInForm(0);
   } else {
     editingVariants = null;
-    document.getElementById('variant-pick-field').style.display = 'none'; document.getElementById('variant-photo-field').style.display = 'none';
+    document.getElementById('variant-pick-field').style.display = 'none'; document.getElementById('fete-label').textContent = 'Spécial fêtes (facultatif)'; document.getElementById('variant-photo-field').style.display = 'none';
     document.getElementById('new-temps').value = r.temps || '';
     document.getElementById('new-personnes').value = r.personnes || '';
     document.getElementById('new-portion').value = r.portion || '';
@@ -1556,7 +1583,10 @@ addForm.addEventListener('submit', async e => {
     if (photo) recipeData.photo = photo;
     if (editingVariants) {
       saveVariantFromForm();
+      // Les versions qu'on n'a pas ouvertes gardent les fêtes qu'elles avaient (celles de la recette entière ou de leur nom)
+      editingVariants.forEach(v => { if (!Array.isArray(v.fetes)) v.fetes = [...new Set([...recipeFetes(editingSource || {}), ...variantFetes(v)])]; });
       recipeData.variantes = editingVariants.map(({ _ingText, _etText, ...v }) => v);
+      recipeData.fetes = []; // les fêtes sont choisies version par version
       const v0 = recipeData.variantes[0];
       Object.assign(recipeData, { temps: v0.temps || '', personnes: v0.personnes || '', ingredients: v0.ingredients || [], etapes: v0.etapes || [] });
     }

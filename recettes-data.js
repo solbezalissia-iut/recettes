@@ -5697,9 +5697,6 @@ const recettes = [
           "Décorer avec la terre, les pierres tombales en biscuits (RIP au glaçage) et les bonbons vers de terre."
         ]
       }
-    ],
-    "fetes": [
-      "halloween"
     ]
   },
   {
@@ -28049,9 +28046,6 @@ const recettes = [
         ],
         "portion": "macarons"
       }
-    ],
-    "fetes": [
-      "halloween"
     ]
   },
   {
