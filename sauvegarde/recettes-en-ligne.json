@@ -1582,6 +1582,119 @@
   "updatedAt": "2026-11-28T08:19:47.812Z"
  },
  {
+  "id": "bjyRsFVhmimUI932wWln",
+  "cat": "dessert",
+  "createdAt": "2026-11-28T10:05:38.634Z",
+  "etapes": [
+   "Dans le bol du robot, mélanger le lait tiède, le sucre, la crème et la levure fraîche activée, puis incorporer la levure instantanée et le sel.",
+   "Ajouter les farines et pétrir à basse vitesse pendant 3 minutes, puis à vitesse moyenne pendant 3 minutes supplémentaires.",
+   "Réduire la vitesse et incorporer le beurre petit à petit jusqu'à ce qu'il soit entièrement intégré et que la pâte soit lisse, environ 10 à 12 minutes.",
+   "Transférer la pâte dans un bol légèrement huilé, couvrir et laisser lever dans un endroit chaud (25-28°C) pendant 75 à 90 minutes jusqu'à ce qu'elle soit presque doublée.",
+   "Étaler la pâte en un rectangle d'environ 60 × 40 cm.",
+   "Étaler uniformément la crème pâtissière à la vanille puis saupoudrer les pépites de chocolat.",
+   "Rabattre la pâte en deux, puis l'enrouler comme une enveloppe. Placer au congélateur 5 à 10 minutes pour raffermir.",
+   "Couper en lanières de 8 à 9 cm de long pour former les brioches, puis les tordre et les rouler.",
+   "Disposer sur des plaques garnies de papier cuisson et laisser lever 60 minutes dans un endroit chaud jusqu'à ce qu'elles soient gonflées.",
+   "Préchauffer le four à 200°C. Badigeonner légèrement les brioches avec la dorure à l'œuf.",
+   "Cuire 13 à 15 minutes jusqu'à coloration légèrement dorée.",
+   "Optionnel : badigeonner d'un sirop léger (2 c. à c. de sucre dissous dans 2 c. à c. d'eau bouillante) pour une brillance à la sortie du four."
+  ],
+  "fetes": [],
+  "ingredients": [
+   {
+    "reste": "lait entier",
+    "texte": "250 ml de lait entier",
+    "unite": "ml",
+    "valeur": 250
+   },
+   {
+    "reste": "crème entière",
+    "texte": "50 ml de crème entière",
+    "unite": "ml",
+    "valeur": 50
+   },
+   {
+    "reste": "sucre",
+    "texte": "75 g de sucre",
+    "unite": "g",
+    "valeur": 75
+   },
+   {
+    "reste": "levure fraîche activée",
+    "texte": "40 g de levure fraîche activée",
+    "unite": "g",
+    "valeur": 40
+   },
+   {
+    "reste": "levure instantanée",
+    "texte": "7 g de levure instantanée",
+    "unite": "g",
+    "valeur": 7
+   },
+   {
+    "reste": "sel",
+    "texte": "3 g de sel",
+    "unite": "g",
+    "valeur": 3
+   },
+   {
+    "reste": "farine de boulanger forte",
+    "texte": "165 g de farine de boulanger forte",
+    "unite": "g",
+    "valeur": 165
+   },
+   {
+    "reste": "farine T45",
+    "texte": "385 g de farine T45",
+    "unite": "g",
+    "valeur": 385
+   },
+   {
+    "reste": "beurre doux",
+    "texte": "70 g de beurre doux",
+    "unite": "g",
+    "valeur": 70
+   },
+   {
+    "reste": "pépites de chocolat noir",
+    "texte": "130 g de pépites de chocolat noir",
+    "unite": "g",
+    "valeur": 130
+   },
+   {
+    "reste": "crème pâtissière à la vanille (voir recette)",
+    "texte": "230 ml de crème pâtissière à la vanille (voir recette)",
+    "unite": "ml",
+    "valeur": 230
+   },
+   {
+    "reste": "jaune d'œuf (dorure)",
+    "texte": "1 jaune d'œuf (dorure)",
+    "unite": null,
+    "valeur": 1
+   }
+  ],
+  "mc": [
+   "Mettre le lait, la crème, le sucre et les levures dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+   "Ajouter les farines et le sel. Pétrir <b>4 min / mode pétrin</b>.",
+   "Ajouter le beurre en morceaux et pétrir encore <b>4 min / mode pétrin</b>. Laisser lever 75 à 90 minutes.",
+   "Crème pâtissière (si elle n'est pas prête) : voir la fiche « Crème pâtissière », version Monsieur Cuisine.",
+   "Étaler la pâte, garnir de crème pâtissière et de pépites, plier, couper en lanières, torsader et laisser lever 1 heure.",
+   "Dorer et cuire 13 à 15 minutes à 200 °C."
+  ],
+  "ownerId": "L7Zsvmp5knQDD6O3g6hT9cGBtgW2",
+  "ownerName": "Alissia Solbez",
+  "personnes": "8",
+  "photo": "photos/site/en-ligne/bjyRsFVhmimUI932wWln-cd547785.png",
+  "photoDetouree": true,
+  "portion": "",
+  "presentation": "free",
+  "replacesStaticId": "static-45",
+  "temps": "40 min (+ 3h de pousse)",
+  "titre": "Brioche roulée moelleuse au chocolat et vanille",
+  "updatedAt": "2026-11-28T10:05:38.634Z"
+ },
+ {
   "id": "Bssax2A3ms4QQIkTgYBx",
   "cat": "entree",
   "createdAt": "2026-11-28T08:24:22.177Z",
