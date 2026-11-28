@@ -14241,12 +14241,12 @@ const recettes = [
     "titre": "Crêpes maison",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "30 min (+ repos)",
-    "personnes": "6",
+    "temps": "25 min (+ 30 min de repos)",
+    "personnes": "8",
     "ingredients": [
       {
-        "texte": "250 g de farine",
-        "valeur": 250,
+        "texte": "333 g de farine",
+        "valeur": 333,
         "unite": "g",
         "reste": "farine"
       },
@@ -14257,10 +14257,10 @@ const recettes = [
         "reste": "œufs"
       },
       {
-        "texte": "500 ml de lait",
-        "valeur": 500,
-        "unite": "ml",
-        "reste": "lait"
+        "texte": "4 c. à soupe de sucre",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "sucre"
       },
       {
         "texte": "1 pincée de sel",
@@ -14269,30 +14269,31 @@ const recettes = [
         "reste": "sel"
       },
       {
-        "texte": "2 c. à soupe de sucre",
-        "valeur": 2,
-        "unite": "c. à soupe",
-        "reste": "sucre"
+        "texte": "0,67 L de lait",
+        "valeur": 0.67,
+        "unite": "L",
+        "reste": "lait"
       },
       {
-        "texte": "50 g de beurre fondu",
-        "valeur": 50,
+        "texte": "40 g de beurre fondu",
+        "valeur": 40,
         "unite": "g",
         "reste": "beurre fondu"
       }
     ],
     "etapes": [
-      "Dans un saladier, mélanger la farine, le sucre et le sel.",
-      "Creuser un puits au centre, casser les œufs, puis commencer à mélanger en incorporant petit à petit le lait pour éviter les grumeaux.",
-      "Ajouter le beurre fondu et fouetter jusqu'à obtenir une pâte lisse et fluide.",
-      "Laisser reposer la pâte au moins 30 minutes à température ambiante (idéalement 1 heure).",
-      "Chauffer une poêle à crêpes légèrement beurrée à feu moyen-vif, verser une louche de pâte et l'étaler en inclinant la poêle.",
-      "Cuire 1 à 2 minutes de chaque côté jusqu'à ce que la crêpe soit dorée, puis répéter avec le reste de la pâte."
+      "Verser la farine dans un grand saladier et creuser un puits au centre.",
+      "Casser les œufs dans le puits, ajouter le sucre et le sel, puis fouetter les œufs au centre en faisant tomber la farine petit à petit depuis les bords : la pâte devient épaisse et lisse, sans grumeaux.",
+      "Quand toute la farine est incorporée, verser le lait petit à petit en fouettant sans arrêt, pour détendre la pâte progressivement.",
+      "Ajouter le beurre fondu tiède et fouetter jusqu'à une pâte bien lisse et fluide.",
+      "Laisser reposer la pâte au moins 30 minutes à température ambiante.",
+      "Chauffer une poêle à crêpes légèrement beurrée à feu moyen-vif, verser une louche de pâte en inclinant la poêle pour bien l'étaler.",
+      "Cuire 1 à 2 minutes de chaque côté jusqu'à ce que la crêpe soit dorée, puis recommencer avec le reste de la pâte."
     ],
     "mc": [
-      "Mettre le lait, les œufs, la farine, le sucre, le sel et le beurre fondu dans le bol.",
-      "Mixer <b>20 s / vitesse 5</b>, racler les parois et mixer encore <b>10 s / vitesse 5</b> : la pâte est lisse, sans grumeaux.",
-      "Laisser reposer 30 minutes à 1 heure, puis cuire les crêpes dans une poêle chaude légèrement beurrée."
+      "Mettre les œufs, le sucre, le sel, la farine et le beurre fondu dans le bol, mixer <b>20 s / vitesse 4</b> pour obtenir une pâte épaisse et lisse.",
+      "Ajouter le lait et mixer <b>20 s / vitesse 5</b>, racler les parois puis mixer encore <b>10 s / vitesse 5</b>.",
+      "Laisser reposer au moins 30 minutes, puis cuire les crêpes à la poêle."
     ]
   },
   {
@@ -29285,58 +29286,6 @@ const recettes = [
       "Mettre les biscuits dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre et le sucre glace, mélanger <b>10 s / vitesse 4</b>.",
       "Garnir la pâte, rouler, découper en bâtonnets et cuire comme dans la version classique.",
       "Chocolat : bol propre, <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>. Tremper les bâtonnets et parsemer de noix."
-    ]
-  },
-  {
-    "id": "static-224",
-    "titre": "Milkshake Kinder Bueno Nutella express",
-    "photo": "photos/enattente.png",
-    "temps": "10 min",
-    "personnes": "2",
-    "cat": "boisson",
-    "ingredients": [
-      {
-        "texte": "400 ml de lait demi-écrémé",
-        "valeur": 400,
-        "unite": "ml",
-        "reste": "lait demi-écrémé"
-      },
-      {
-        "texte": "40 g de Nutella",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "Nutella"
-      },
-      {
-        "texte": "2 Kinder Bueno",
-        "valeur": 2,
-        "unite": null,
-        "reste": "Kinder Bueno"
-      },
-      {
-        "texte": "2 boules de glace vanille",
-        "valeur": 2,
-        "unite": null,
-        "reste": "boules de glace vanille"
-      },
-      {
-        "texte": "1 c. à soupe de sauce chocolatée",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "sauce chocolatée"
-      }
-    ],
-    "etapes": [
-      "Couper les Kinder Bueno en morceaux et les réserver.",
-      "Dans un blender, verser le lait demi-écrémé et ajouter les boules de glace vanille.",
-      "Ajouter le Nutella et les morceaux de Kinder Bueno dans le blender.",
-      "Mixer à puissance élevée jusqu'à obtenir une texture lisse et crémeuse.",
-      "Verser le milkshake dans un grand verre, ajouter une cuillère de sauce chocolatée en décor et garnir avec les morceaux de Kinder Bueno réservés."
-    ],
-    "mc": [
-      "Mettre le lait, la glace, le Nutella et les Kinder Bueno en morceaux dans le bol.",
-      "Mixer <b>30 s / vitesse 9</b>.",
-      "Décorer les verres de sauce chocolat et servir."
     ]
   },
   {
@@ -50274,68 +50223,62 @@ const recettes = [
         "reste": "extrait de vanille (chantilly)"
       },
       {
-        "texte": "175 g de fraises (garniture)",
-        "valeur": 175,
+        "texte": "100 g de fraises (garniture)",
+        "valeur": 100,
         "unite": "g",
         "reste": "fraises (garniture)"
       },
       {
-        "texte": "100 g de framboises (garniture)",
-        "valeur": 100,
+        "texte": "60 g de framboises (garniture)",
+        "valeur": 60,
         "unite": "g",
         "reste": "framboises (garniture)"
       },
       {
-        "texte": "100 g de myrtilles ou mûres (garniture)",
-        "valeur": 100,
+        "texte": "50 g de myrtilles (garniture)",
+        "valeur": 50,
         "unite": "g",
-        "reste": "myrtilles ou mûres (garniture)"
+        "reste": "myrtilles (garniture)"
       },
       {
-        "texte": "1 grosse mangue mûre (garniture)",
+        "texte": "1 mangue mûre (moitié en dés, moitié en coulis)",
         "valeur": 1,
         "unite": null,
-        "reste": "grosse mangue mûre (garniture)"
+        "reste": "mangue mûre (moitié en dés, moitié en coulis)"
       },
       {
-        "texte": "1 fruit de la passion (facultatif) (garniture)",
+        "texte": "1 fruit de la passion (facultatif)",
         "valeur": 1,
         "unite": null,
-        "reste": "fruit de la passion (facultatif) (garniture)"
+        "reste": "fruit de la passion (facultatif)"
       },
       {
-        "texte": "200 g de fruits rouges frais ou surgelés (coulis rouge)",
-        "valeur": 200,
+        "texte": "100 g de fruits rouges frais ou surgelés (coulis rouge)",
+        "valeur": 100,
         "unite": "g",
         "reste": "fruits rouges frais ou surgelés (coulis rouge)"
       },
       {
-        "texte": "30 g de sucre (coulis rouge)",
-        "valeur": 30,
+        "texte": "15 g de sucre (coulis rouge)",
+        "valeur": 15,
         "unite": "g",
         "reste": "sucre (coulis rouge)"
       },
       {
-        "texte": "1 c. à soupe de jus de citron (coulis rouge)",
+        "texte": "1 c. à café de jus de citron (coulis rouge)",
         "valeur": 1,
-        "unite": "c. à soupe",
+        "unite": "c. à café",
         "reste": "jus de citron (coulis rouge)"
       },
       {
-        "texte": "200 g de chair de mangue (1 mangue) (coulis mangue)",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chair de mangue (1 mangue) (coulis mangue)"
-      },
-      {
-        "texte": "1,5 c. à soupe de jus de citron vert (coulis mangue)",
-        "valeur": 1.5,
+        "texte": "1 c. à soupe de jus de citron vert (coulis mangue)",
+        "valeur": 1,
         "unite": "c. à soupe",
         "reste": "jus de citron vert (coulis mangue)"
       },
       {
-        "texte": "2 c. à soupe d'eau (coulis mangue)",
-        "valeur": 2,
+        "texte": "1 c. à soupe d'eau (coulis mangue)",
+        "valeur": 1,
         "unite": "c. à soupe",
         "reste": "eau (coulis mangue)"
       }
@@ -50347,19 +50290,19 @@ const recettes = [
       "Coller le papier sur la plaque avec un point de meringue dans chaque coin. Déposer la meringue sur chaque cercle à la cuillère ou à la poche, puis creuser le centre avec le dos d'une cuillère pour former un nid aux bords relevés.",
       "Cuire 50 minutes à 1 h sans ouvrir le four : les meringues sont prêtes quand l'extérieur est sec et qu'elles se décollent facilement du papier.",
       "Éteindre le four et laisser refroidir les meringues dedans, porte entrouverte (une cuillère en bois coincée), au moins 1 h : le refroidissement lent évite les fissures. Les garder ensuite en boîte hermétique à température ambiante, jamais au réfrigérateur.",
-      "Coulis rouge : chauffer les fruits rouges avec le sucre et le citron 7 minutes à feu moyen, mixer puis filtrer pour retirer les pépins. Réfrigérer.",
-      "Coulis mangue : mixer la chair de mangue avec le citron vert et l'eau jusqu'à une sauce lisse, goûter et sucrer un peu si besoin. Réfrigérer.",
-      "Fruits : couper les fraises en morceaux, garder framboises et myrtilles entières, couper la mangue en petits dés et récupérer la pulpe de passion. Garder au frais séparément.",
+      "Coulis rouge : chauffer les fruits rouges avec le sucre et le citron 5 minutes à feu moyen, mixer puis filtrer pour retirer les pépins. Réfrigérer. Il en faut à peine 1 c. à café par pavlova.",
+      "Coulis mangue : peler la mangue, couper la moitié en petits dés pour la garniture et mixer l'autre moitié avec le citron vert et l'eau jusqu'à une sauce lisse. Réfrigérer.",
+      "Fruits : couper les fraises en petits morceaux et garder framboises et myrtilles entières. Compter environ 1 c. à soupe bombée de fruits par côté de pavlova : la meringue doit rester bien visible.",
       "Chantilly (juste avant le montage) : fouetter le mascarpone, la crème très froide, le sucre glace et la vanille jusqu'à ce que ce soit ferme. S'arrêter dès que ça tient : trop fouettée, elle devient granuleuse. Astuce : bol et fouet 15 minutes au congélateur avant.",
-      "Montage au dernier moment : choisir les 6 plus belles meringues (les 2 autres servent de réserve en cas de casse), garnir chaque nid de chantilly, mettre les fruits rouges sur une moitié et la mangue arrosée de passion sur l'autre. Servir aussitôt avec les deux coulis dans de petits pots.",
+      "Montage au dernier moment : garnir chaque nid de chantilly, mettre les fruits rouges sur une moitié et la mangue arrosée de passion sur l'autre. Ajouter juste un filet de chaque coulis sur le dessus (pas plus, sinon la meringue ramollit) et servir aussitôt.",
       "À l'avance : les meringues se gardent 2 à 3 jours en boîte hermétique et les coulis 2 jours au frais. La chantilly et le montage se font juste avant de servir, sinon la meringue ramollit."
     ],
     "mc": [
       "Préparer le papier avec 8 cercles de 7 cm et préchauffer le four à 110 °C.",
       "Insérer le fouet. Mettre les blancs et le sel dans le bol propre et sec, fouetter <b>3 min / vitesse 4</b> sans le gobelet. Ajouter le sucre en pluie par l'ouverture et fouetter <b>5 min / vitesse 4</b> jusqu'à une meringue ferme et brillante. Retirer le fouet, incorporer la fécule et le citron à la spatule.",
       "Former les nids, cuire 50 minutes à 1 h à 110 °C et laisser refroidir 1 h dans le four entrouvert.",
-      "Coulis rouge : bol rincé, mettre les fruits rouges, le sucre et le citron, cuire <b>7 min / 90 °C / vitesse 2</b>, puis mixer <b>20 s / vitesse 8</b> et filtrer.",
-      "Coulis mangue : bol rincé, mettre la mangue, le citron vert et l'eau, mixer <b>30 s / vitesse 8</b>.",
+      "Coulis rouge : bol rincé, mettre les fruits rouges, le sucre et le citron, cuire <b>5 min / 90 °C / vitesse 2</b>, puis mixer <b>20 s / vitesse 8</b> et filtrer.",
+      "Coulis mangue : bol rincé, mettre la moitié de la mangue, le citron vert et l'eau, mixer <b>30 s / vitesse 8</b>.",
       "Chantilly : bol bien froid, fouet inséré, mettre le mascarpone, la crème, le sucre glace et la vanille, fouetter <b>1 min 30 / vitesse 4</b> en surveillant.",
       "Monter au dernier moment comme dans la version classique."
     ],
@@ -50367,48 +50310,372 @@ const recettes = [
   },
   {
     "id": "static-708",
+    "titre": "Milkshakes maison",
     "photo": "photos/enattente.png",
-    "titre": "Milk-shake à la vanille",
     "cat": "boisson",
-    "temps": "5 min",
-    "personnes": "2",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "275 g de glace à la vanille",
-        "valeur": 275,
-        "unite": "g",
-        "reste": "glace à la vanille"
+        "nom": "Vanille",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace à la vanille",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "0,5 c. à café d'extrait de vanille",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "extrait de vanille"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant pour qu'elle ramollisse un peu et se mixe facilement.",
+          "Mixer la glace, le lait froid et la vanille 30 secondes à vitesse moyenne, jusqu'à une texture lisse. Ne pas mixer plus : ça réchauffe la glace et rend le milk-shake liquide.",
+          "Trop épais : ajouter un peu de lait et mixer quelques secondes. Trop liquide : ajouter une boule de glace.",
+          "Verser dans des verres passés 10 minutes au congélateur, ajouter la chantilly et servir aussitôt avec une paille.",
+          "Variantes : une banane, quelques fraises ou 1 c. à soupe de sauce chocolat dans le mixeur. Pour plus épais, 0,08 L de lait ; plus léger, 0,18 L."
+        ],
+        "mc": [
+          "Sortir la glace 5 minutes avant.",
+          "Mettre la glace en morceaux, le lait et la vanille dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Verser dans des verres bien froids et servir aussitôt."
+        ]
       },
       {
-        "texte": "0,12 L de lait entier bien froid",
-        "valeur": 0.12,
-        "unite": "L",
-        "reste": "lait entier bien froid"
+        "nom": "Chocolat",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace au chocolat (ou vanille)",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace au chocolat (ou vanille)"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "2 c. à soupe de cacao en poudre non sucré ou sauce chocolat",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "cacao en poudre non sucré ou sauce chocolat"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          },
+          {
+            "texte": "10 g de copeaux de chocolat (facultatif)",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "copeaux de chocolat (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant pour qu'elle ramollisse un peu.",
+          "Mixer la glace, le lait et le cacao 30 secondes, jusqu'à une texture lisse : pas plus, sinon le milk-shake devient liquide.",
+          "Décorer l'intérieur des verres d'un filet de sauce chocolat, verser, ajouter la chantilly et les copeaux.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace en morceaux, le lait et le cacao dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Verser dans des verres bien froids et servir aussitôt."
+        ]
       },
       {
-        "texte": "0,5 c. à café d'extrait de vanille",
-        "valeur": 0.5,
-        "unite": "c. à café",
-        "reste": "extrait de vanille"
+        "nom": "Fraise",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "150 g de fraises (fraîches ou surgelées)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "fraises (fraîches ou surgelées)"
+          },
+          {
+            "texte": "200 g de glace à la vanille",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,1 L de lait entier bien froid",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "1 c. à soupe de sucre (si les fraises sont acides)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sucre (si les fraises sont acides)"
+          }
+        ],
+        "etapes": [
+          "Laver et équeuter les fraises (des fraises surgelées donnent un milk-shake plus épais).",
+          "Mixer les fraises avec le sucre, puis ajouter la glace et le lait et mixer 30 secondes.",
+          "Goûter et ajouter un peu de sucre si besoin.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre les fraises et le sucre dans le bol, mixer <b>10 s / vitesse 8</b>.",
+          "Ajouter la glace et le lait, mixer <b>30 s / vitesse 6</b> et servir aussitôt."
+        ]
       },
       {
-        "texte": "20 g de chantilly (facultatif)",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "chantilly (facultatif)"
+        "nom": "Banane",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "2 bananes bien mûres (idéalement coupées en rondelles et congelées)",
+            "valeur": 2,
+            "unite": null,
+            "reste": "bananes bien mûres (idéalement coupées en rondelles et congelées)"
+          },
+          {
+            "texte": "200 g de glace à la vanille",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,15 L de lait entier bien froid",
+            "valeur": 0.15,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "1 c. à café de miel (facultatif)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "miel (facultatif)"
+          },
+          {
+            "texte": "1 pincée de cannelle (facultatif)",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "cannelle (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Couper les bananes en rondelles (congelées, elles rendent le milk-shake très crémeux).",
+          "Mixer les bananes, la glace, le lait, le miel et la cannelle 30 à 40 secondes, jusqu'à une texture lisse.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre les bananes, la glace, le lait, le miel et la cannelle dans le bol, mixer <b>40 s / vitesse 6</b>.",
+          "Servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Caramel au beurre salé",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace à la vanille",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "3 c. à soupe de caramel au beurre salé (+ un peu pour les verres)",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "caramel au beurre salé (+ un peu pour les verres)"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          },
+          {
+            "texte": "1 pincée de fleur de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "fleur de sel"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant.",
+          "Faire couler un filet de caramel sur les parois intérieures des verres.",
+          "Mixer la glace, le lait et le caramel 30 secondes.",
+          "Verser, ajouter la chantilly, un filet de caramel et une pincée de fleur de sel.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace en morceaux, le lait et le caramel dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Verser dans les verres décorés de caramel et servir."
+        ]
+      },
+      {
+        "nom": "Cookies Oreo",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace à la vanille",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "6 biscuits Oreo (+ 1 pour décorer)",
+            "valeur": 6,
+            "unite": null,
+            "reste": "biscuits Oreo (+ 1 pour décorer)"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant.",
+          "Mixer la glace et le lait 20 secondes, puis ajouter les Oreo et mixer seulement 5 secondes : il doit rester des petits morceaux de biscuit.",
+          "Verser, ajouter la chantilly et l'Oreo émietté par-dessus.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace et le lait dans le bol, mixer <b>20 s / vitesse 6</b>.",
+          "Ajouter les Oreo, mixer <b>5 s / vitesse 4</b> et servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Café (frappé)",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "200 g de glace à la vanille ou au café",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "glace à la vanille ou au café"
+          },
+          {
+            "texte": "0,06 L de café fort refroidi (2 expressos)",
+            "valeur": 0.06,
+            "unite": "L",
+            "reste": "café fort refroidi (2 expressos)"
+          },
+          {
+            "texte": "0,08 L de lait entier bien froid",
+            "valeur": 0.08,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "1 c. à soupe de sucre (facultatif)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sucre (facultatif)"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Préparer le café à l'avance et le laisser refroidir complètement (sinon il fait fondre la glace).",
+          "Mixer la glace, le café, le lait et le sucre 30 secondes.",
+          "Verser et ajouter la chantilly et une pincée de cacao.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace, le café froid, le lait et le sucre dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Kinder Bueno Nutella express",
+        "temps": "10 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "400 ml de lait demi-écrémé",
+            "valeur": 400,
+            "unite": "ml",
+            "reste": "lait demi-écrémé"
+          },
+          {
+            "texte": "40 g de Nutella",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "Nutella"
+          },
+          {
+            "texte": "2 Kinder Bueno",
+            "valeur": 2,
+            "unite": null,
+            "reste": "Kinder Bueno"
+          },
+          {
+            "texte": "2 boules de glace vanille",
+            "valeur": 2,
+            "unite": null,
+            "reste": "boules de glace vanille"
+          },
+          {
+            "texte": "1 c. à soupe de sauce chocolatée",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sauce chocolatée"
+          }
+        ],
+        "etapes": [
+          "Couper les Kinder Bueno en morceaux et les réserver.",
+          "Dans un blender, verser le lait demi-écrémé et ajouter les boules de glace vanille.",
+          "Ajouter le Nutella et les morceaux de Kinder Bueno dans le blender.",
+          "Mixer à puissance élevée jusqu'à obtenir une texture lisse et crémeuse.",
+          "Verser le milkshake dans un grand verre, ajouter une cuillère de sauce chocolatée en décor et garnir avec les morceaux de Kinder Bueno réservés."
+        ],
+        "mc": [
+          "Mettre le lait, la glace, le Nutella et les Kinder Bueno en morceaux dans le bol.",
+          "Mixer <b>30 s / vitesse 9</b>.",
+          "Décorer les verres de sauce chocolat et servir."
+        ]
       }
-    ],
-    "etapes": [
-      "Sortir la glace 5 minutes avant pour qu'elle ramollisse un peu et se mixe facilement.",
-      "Mixer la glace, le lait froid et la vanille 30 secondes à vitesse moyenne, jusqu'à une texture lisse. Ne pas mixer plus : ça réchauffe la glace et rend le milk-shake liquide.",
-      "Trop épais : ajouter un peu de lait et mixer quelques secondes. Trop liquide : ajouter une boule de glace.",
-      "Verser dans des verres passés 10 minutes au congélateur, ajouter la chantilly et servir aussitôt avec une paille.",
-      "Variantes : une banane, quelques fraises ou 1 c. à soupe de sauce chocolat dans le mixeur. Pour plus épais, 0,08 L de lait ; plus léger, 0,18 L."
-    ],
-    "mc": [
-      "Sortir la glace 5 minutes avant.",
-      "Mettre la glace en morceaux, le lait et la vanille dans le bol, mixer <b>30 s / vitesse 6</b>.",
-      "Verser dans des verres bien froids et servir aussitôt."
     ]
   },
   {
@@ -50746,11 +51013,114 @@ const recettes = [
     "mc": [
       "Les pommes caramélisent mieux à la poêle : le robot les écraserait. Suivre la version classique (prêt en 10 minutes)."
     ]
+  },
+  {
+    "id": "static-712",
+    "titre": "Fougasse d'Aumelas",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "3 h 30 (dont 2 h 30 de pousse)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "500 g de farine T45",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine T45"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "5 g de sel",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "7 g de levure boulangère sèche (ou 20 g de levure fraîche)",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure boulangère sèche (ou 20 g de levure fraîche)"
+      },
+      {
+        "texte": "0,2 L d'eau tiède",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "eau tiède"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "130 g de beurre mou en dés",
+        "valeur": 130,
+        "unite": "g",
+        "reste": "beurre mou en dés"
+      },
+      {
+        "texte": "1 citron non traité (zeste)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron non traité (zeste)"
+      },
+      {
+        "texte": "3 c. à soupe d'eau de fleur d'oranger",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "eau de fleur d'oranger"
+      },
+      {
+        "texte": "60 g de beurre froid en petits dés (dessus)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "beurre froid en petits dés (dessus)"
+      },
+      {
+        "texte": "60 g de sucre (dessus)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre (dessus)"
+      },
+      {
+        "texte": "1 c. à soupe d'eau de fleur d'oranger (dessus)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "eau de fleur d'oranger (dessus)"
+      }
+    ],
+    "etapes": [
+      "Délayer la levure dans l'eau tiède (pas chaude) avec une pincée du sucre et laisser 10 minutes : elle doit mousser.",
+      "Mélanger la farine, le reste du sucre, le sel et le zeste de citron. Ajouter l'eau levurée, les œufs et la fleur d'oranger, puis pétrir 10 minutes jusqu'à une pâte lisse.",
+      "Ajouter le beurre mou petit à petit en pétrissant encore 8 minutes, jusqu'à ce que la pâte soit souple, brillante et se décolle des parois.",
+      "Couvrir et laisser pousser 1 h 30 dans un endroit tiède, jusqu'à ce que la pâte double de volume.",
+      "Dégazer la pâte et l'étaler directement sur une plaque recouverte de papier cuisson, en un grand rectangle d'environ 1,5 cm d'épaisseur.",
+      "Avec les doigts farinés, enfoncer la pâte un peu partout pour faire des petits trous, puis faire quelques entailles au couteau comme une fougasse.",
+      "Couvrir et laisser pousser encore 1 h. Préchauffer le four à 200 °C.",
+      "Juste avant d'enfourner, piquer les petits dés de beurre froid dans les trous, arroser de la fleur d'oranger et saupoudrer généreusement tout le sucre : il formera une croûte craquante.",
+      "Cuire 18 à 22 minutes, jusqu'à ce que la fougasse soit bien dorée et le sucre caramélisé par endroits.",
+      "Laisser tiédir sur une grille. Elle est meilleure le jour même, ou réchauffée 5 minutes au four le lendemain."
+    ],
+    "mc": [
+      "Mettre l'eau, la levure et une pincée de sucre dans le bol, chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le reste du sucre, le sel, le zeste, les œufs et la fleur d'oranger, pétrir <b>3 min / mode pétrin</b>. Ajouter le beurre mou en morceaux et pétrir <b>4 min / mode pétrin</b>.",
+      "Laisser pousser 1 h 30 dans le bol fermé, puis étaler, trouer, garnir de beurre et de sucre et cuire 18 à 22 minutes à 200 °C comme dans la version classique (le robot ne peut pas faire la croûte de sucre, elle se fait au four)."
+    ]
   }
 ];
 
 // Recettes fusionnées (doublons) : ancien identifiant → [recette qui la contient, numéro de version]
 const recettesFusionnees = {
+  "static-224": [
+    "static-708",
+    7
+  ],
   "static-670": [
     "static-660",
     1

@@ -347,8 +347,7 @@ function cardMatchesFilters(r) {
 
 function getSortedIndices() {
   const indices = allRecettes.map((_, idx) => idx);
-  if (sortMode === 'default') return indices;
-  indices.sort((a, b) => {
+  if (sortMode !== 'default') indices.sort((a, b) => {
     const ra = allRecettes[a], rb = allRecettes[b];
     if (sortMode === 'az') return ra.titre.localeCompare(rb.titre, 'fr');
     if (sortMode === 'za') return rb.titre.localeCompare(ra.titre, 'fr');
@@ -359,6 +358,13 @@ function getSortedIndices() {
     }
     return 0;
   });
+  if (searchQuery) {
+    // Recherche : les recettes dont le TITRE correspond passent avant celles où le mot n'est que dans les ingrédients
+    const words = normalize(searchQuery).split(/\s+/).filter(Boolean);
+    const score = r => { const t = normalize(r.titre || ''); return words.every(w => t.includes(w)) ? 0 : words.some(w => t.includes(w)) ? 1 : 2; };
+    const sc = new Map(indices.map(i => [i, score(allRecettes[i])]));
+    indices.sort((a, b) => sc.get(a) - sc.get(b)); // tri stable : l'ordre choisi est gardé dans chaque groupe
+  }
   return indices;
 }
 
@@ -392,7 +398,7 @@ function renderCard(card, r, idx, vi) {
       ${plate}
       <div class="card-body">
         <div class="card-top">
-          <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
+          <div class="card-cat"><span class="cat-txt">${catLabels[r.cat]}</span>${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
           <div class="card-title">${r.titre}</div>
           <p class="card-ings">${pills}</p>
         </div>

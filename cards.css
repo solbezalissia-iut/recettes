@@ -402,3 +402,10 @@
 }
 .variant-select select option { color: #2B1A10; }
 .variant-select b { position: absolute; right: 0.9rem; pointer-events: none; color: #fff; font-size: 0.8rem; }
+
+/* Catégorie + badges toujours sur une seule ligne : la catégorie se raccourcit si besoin */
+.card-cat { flex-wrap: nowrap !important; white-space: nowrap; overflow: hidden; min-width: 0; }
+.card-cat .cat-txt { overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 0 1 auto; }
+.card-cat .vege-badge, .card-cat .variant-badge { flex: none; white-space: nowrap; }
+/* Sur téléphone, les flèches de version en bas de la carte suffisent : pas de badge « x versions » qui écrase la catégorie */
+@media (max-width: 700px) { .card-cat .variant-badge { display: none !important; } }
