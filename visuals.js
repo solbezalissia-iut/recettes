@@ -10,6 +10,8 @@
 
   // Mots du titre → emoji (le premier qui correspond gagne : du plus précis au plus général)
   const RULES = [
+    ['foie gras|faux gras', '🥖'],
+    ['beurre maison|beurre clarifie', '🧈'],
     ['riz au lait|semoule au lait|panna cotta|flan|creme brulee|creme caramel|creme dessert|ile flottante|iles flottantes|tiramisu|mousse|pudding|creme anglaise|creme patissiere|verrine', '🍮'],
     ['pomme de terre|pommes de terre|puree|potatoes|hasselback|gratin dauphinois|hash brown|ecrabouillee', '🥔'],
     ['alloco|plantain', '🍌'],
@@ -67,7 +69,7 @@
     ['aubergine|moussaka', '🍆'],
     ['courgette|ratatouille|legume|poelee|tian', '🥒'],
     ['carotte', '🥕'],
-    ['mais|polenta', '🌽'],
+    [' mais | mais-|polenta', '🌽'],
     ['brocoli|chou', '🥦'],
     ['potiron|potimarron|butternut|citrouille|courge', '🎃'],
     ['fraise|framboise|fruits rouges|myrtille', '🍓'],

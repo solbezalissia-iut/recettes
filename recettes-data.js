@@ -5641,243 +5641,327 @@ const recettes = [
     "id": "static-51",
     "titre": "Bûche caramel beurre salé et spéculoos",
     "photo": "photos/enattente.png",
-    "temps": "12 h (dont 7h de congélation cumulée)",
-    "personnes": "8",
     "cat": "dessert",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "400 ml de crème liquide entière (ganache : 100 ml chaude + 300 ml froide)",
-        "valeur": 400,
-        "unite": "ml",
-        "reste": "crème liquide entière (ganache : 100 ml chaude + 300 ml froide)"
+        "texte": "0,2 L de lait entier (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "lait entier (insert)"
       },
       {
-        "texte": "200 g de chocolat blanc",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chocolat blanc"
+        "texte": "0,2 L de crème liquide entière (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "crème liquide entière (insert)"
       },
       {
-        "texte": "1 gousse de vanille",
-        "valeur": 1,
+        "texte": "4 jaunes d'œufs (insert)",
+        "valeur": 4,
         "unite": null,
-        "reste": "gousse de vanille"
+        "reste": "jaunes d'œufs (insert)"
       },
       {
-        "texte": "150 g de spéculoos",
-        "valeur": 150,
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (insert)",
+        "valeur": 8,
         "unite": "g",
-        "reste": "spéculoos"
+        "reste": "gélatine (4 feuilles de 2 g) (insert)"
       },
       {
-        "texte": "60 g de beurre doux fondu",
+        "texte": "120 g de sucre (caramel de l'insert)",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "sucre (caramel de l'insert)"
+      },
+      {
+        "texte": "40 g de beurre demi-sel (caramel de l'insert)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre demi-sel (caramel de l'insert)"
+      },
+      {
+        "texte": "4 œufs (biscuit)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs (biscuit)"
+      },
+      {
+        "texte": "90 g de sucre (biscuit)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre (biscuit)"
+      },
+      {
+        "texte": "60 g de poudre d'amande (biscuit)",
         "valeur": 60,
         "unite": "g",
-        "reste": "beurre doux fondu"
+        "reste": "poudre d'amande (biscuit)"
       },
       {
-        "texte": "4 œufs",
-        "valeur": 4,
-        "unite": null,
-        "reste": "œufs"
-      },
-      {
-        "texte": "125 g de sucre",
-        "valeur": 125,
+        "texte": "50 g de farine (biscuit)",
+        "valeur": 50,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "farine (biscuit)"
       },
       {
-        "texte": "125 g de farine",
-        "valeur": 125,
+        "texte": "25 g de beurre fondu (biscuit)",
+        "valeur": 25,
         "unite": "g",
-        "reste": "farine"
+        "reste": "beurre fondu (biscuit)"
       },
       {
-        "texte": "1 sachet sucre vanillé, facultatif",
+        "texte": "1 c. à café de cannelle (biscuit)",
         "valeur": 1,
-        "unite": null,
-        "reste": "sachet sucre vanillé, facultatif"
+        "unite": "c. à café",
+        "reste": "cannelle (biscuit)"
       },
       {
-        "texte": "150 g de sucre (caramel)",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "sucre (caramel)"
-      },
-      {
-        "texte": "80 g de beurre demi-sel",
+        "texte": "80 g de chocolat blanc (croustillant)",
         "valeur": 80,
         "unite": "g",
-        "reste": "beurre demi-sel"
+        "reste": "chocolat blanc (croustillant)"
       },
       {
-        "texte": "20 cl de crème liquide entière chaude (caramel)",
-        "valeur": 20,
-        "unite": "cl",
-        "reste": "crème liquide entière chaude (caramel)"
-      },
-      {
-        "texte": "4 g de gélatine en feuilles (insert caramel)",
-        "valeur": 4,
+        "texte": "30 g de beurre demi-sel fondu (croustillant)",
+        "valeur": 30,
         "unite": "g",
-        "reste": "gélatine en feuilles (insert caramel)"
+        "reste": "beurre demi-sel fondu (croustillant)"
       },
       {
-        "texte": "1 bombe spray velours blanc",
+        "texte": "150 g de biscuits spéculoos (croustillant)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "biscuits spéculoos (croustillant)"
+      },
+      {
+        "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+        "valeur": 0.75,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
+      },
+      {
+        "texte": "150 g de mascarpone bien froid (mousse)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mascarpone bien froid (mousse)"
+      },
+      {
+        "texte": "90 g de sucre glace (mousse)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre glace (mousse)"
+      },
+      {
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "gélatine (4 feuilles de 2 g) (mousse)"
+      },
+      {
+        "texte": "1 gousse de vanille (ou 2 c. à café d'extrait) (mousse)",
         "valeur": 1,
         "unite": null,
-        "reste": "bombe spray velours blanc"
-      }
+        "reste": "gousse de vanille (ou 2 c. à café d'extrait) (mousse)"
+      },
+      {
+        "texte": "60 g de pâte de spéculoos (mousse)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "pâte de spéculoos (mousse)"
+      },
+      {
+        "texte": "1 bombe de spray velours blanc (finition)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bombe de spray velours blanc (finition)"
+      },
+      "décor : copeaux de chocolat blanc, cacao en poudre, étoiles en sucre"
     ],
     "etapes": [
-      "⚠️ Le caramel de l'insert doit être franchement pris et bien froid avant congélation, sinon il reste coulant même congelé et fait éclater la bûche au démoulage : bien respecter la gélatine et le temps de repos.",
-      "Préparer le caramel en premier (il doit congeler le plus longtemps) : faire ramollir la gélatine dans l'eau froide 10 minutes.",
-      "Dans une casserole, faire fondre le sucre à sec à feu moyen jusqu'à obtenir un caramel ambré, sans le brûler.",
-      "Hors du feu, ajouter le beurre demi-sel en morceaux en fouettant, puis incorporer la crème chaude petit à petit en continuant de fouetter (attention aux projections).",
-      "Remettre 1 minute sur feu doux pour bien lisser, puis retirer du feu et incorporer la gélatine essorée jusqu'à dissolution complète.",
-      "Laisser tiédir à température ambiante 10 minutes, puis couler dans un moule à insert nettement plus petit que le moule à bûche (au moins 2 cm d'écart).",
-      "Congeler au moins 4 h, idéalement toute une nuit, jusqu'à ce que l'insert soit totalement dur au toucher.",
-      "Préparer la ganache montée vanille : chauffer 100 ml de crème avec la vanille (graines et gousse) jusqu'à frémissement.",
-      "Verser sur le chocolat blanc haché et mélanger jusqu'à obtenir une ganache lisse, puis ajouter les 300 ml de crème froide restants.",
-      "Filmer au contact et réserver au réfrigérateur minimum 4 h, idéalement toute une nuit.",
-      "Préparer la génoise : fouetter les œufs avec le sucre (et le sucre vanillé) jusqu'à blanchiment, incorporer délicatement la farine tamisée, verser sur une plaque et cuire 20 minutes à 180°C. Laisser refroidir puis découper aux dimensions du moule.",
-      "Préparer le croustillant spéculoos : réduire les spéculoos en miettes fines, ajouter le beurre fondu et mélanger jusqu'à obtenir une texture sableuse humide.",
-      "Étaler en fine couche sur la génoise et réserver au réfrigérateur 15 à 20 minutes pour qu'il fige.",
-      "Sortir la ganache et la monter au batteur jusqu'à texture ferme, juste avant le montage.",
-      "Montage : chemiser le moule de rhodoïd, déposer une couche de ganache montée au fond et sur les côtés.",
-      "Démouler l'insert caramel bien congelé et le centrer sans qu'il touche les bords, puis le recouvrir entièrement de ganache.",
-      "Ajouter la génoise recouverte de son croustillant, face croustillante vers la ganache, et appuyer légèrement pour souder l'ensemble.",
-      "Lisser la base et congeler l'ensemble minimum 6 h, idéalement toute une nuit.",
-      "Démouler la bûche encore congelée, la poser sur une grille et pulvériser le spray velours blanc à 20-25 cm de distance.",
-      "Laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Insert crémeux (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Caramel de l'insert : faire fondre le sucre à sec dans une casserole jusqu'à une couleur ambrée, ajouter le beurre demi-sel hors du feu, puis verser petit à petit le lait et la crème chauds de l'insert en remuant (attention aux projections). Fouetter les jaunes seuls dans un bol.",
+      "Verser le caramel au lait chaud sur les jaunes en fouettant, remettre dans la casserole et cuire à feu doux sans cesser de remuer jusqu'à 82 °C (la crème nappe la cuillère). Ne pas faire bouillir.",
+      "Hors du feu, ajouter la gélatine essorée, mixer 30 secondes pour un crémeux bien lisse, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert caramel au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit amande-cannelle : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la poudre d'amande, la farine tamisée et la cannelle, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes jusqu'à ce qu'il soit doré.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat blanc au bain-marie ou au micro-ondes par 30 secondes, ajouter le beurre fondu, puis incorporer les biscuits spéculoos en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée, les graines de vanille et la pâte de spéculoos. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+      "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+      "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert caramel congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : pulvériser le spray velours blanc à 20–30 cm, en passes régulières, pour l'effet velouté de la photo, puis décorer (copeaux ou feuilles de chocolat, cacao, étoiles).",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
     ],
     "mc": [
-      "Caramel de l'insert : à la casserole (le caramel à sec dépasse la température du Monsieur Cuisine). Suivre les étapes 2 à 7 de la version classique.",
-      "Ganache montée vanille : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter 100 ml de crème et la vanille, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter 300 ml de crème froide, mélanger <b>10 s / vitesse 3</b>. Filmer et réfrigérer au moins 4 heures.",
-      "Génoise : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine à la spatule et cuire 20 minutes à 180 °C.",
-      "Croustillant : mettre les spéculoos dans le bol propre, mixer <b>10 s / vitesse 7</b>, ajouter le beurre fondu et mélanger <b>10 s / vitesse 3</b>. Étaler sur la génoise.",
-      "Monter la ganache bien froide : insérer le fouet et fouetter <b>vitesse 4</b> en surveillant (1 à 2 min) jusqu'à une texture ferme.",
-      "Monter la bûche comme dans la version classique (étapes 15 à 20) : congeler, floquer et décongeler 4 à 5 heures au réfrigérateur."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert crémeux : faire tremper la gélatine. Le caramel se fait à la casserole (le robot ne chauffe pas assez) : faire fondre le sucre à sec jusqu'à ambré, ajouter le beurre puis le lait et la crème chauds. Verser ce caramel au lait et les jaunes dans le bol et cuire <b>8 min / 80 °C / vitesse 3</b>.",
+      "Ajouter la gélatine essorée, mixer <b>30 s / vitesse 5</b>. Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit).",
+      "Biscuit amande-cannelle : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la poudre d'amande, la farine et la cannelle puis le beurre fondu. Étaler et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le beurre fondu et mélanger <b>10 s / vitesse 3</b>, puis les biscuits spéculoos et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée, les graines de vanille et la pâte de spéculoos, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+      "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
     ]
   },
   {
     "id": "static-52",
     "titre": "Bûche chocolat-framboise avec croustillant praliné",
     "photo": "photos/enattente.png",
-    "temps": "12 h (dont 8h de congélation cumulée)",
-    "personnes": "8",
     "cat": "dessert",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "200 g de chocolat noir",
-        "valeur": 200,
+        "texte": "280 g de chocolat noir à 55–65 % (mousse)",
+        "valeur": 280,
         "unite": "g",
-        "reste": "chocolat noir"
+        "reste": "chocolat noir à 55–65 % (mousse)"
       },
       {
-        "texte": "400 ml de crème liquide entière (30% MG minimum)",
-        "valeur": 400,
-        "unite": "ml",
-        "reste": "crème liquide entière (30% MG minimum)"
+        "texte": "0,9 L de crème liquide entière à 30 % minimum (mousse)",
+        "valeur": 0.9,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum (mousse)"
       },
       {
-        "texte": "500 g de framboises fraîches ou surgelées",
-        "valeur": 500,
+        "texte": "6 g de gélatine (3 feuilles de 2 g) (mousse)",
+        "valeur": 6,
         "unite": "g",
-        "reste": "framboises fraîches ou surgelées"
+        "reste": "gélatine (3 feuilles de 2 g) (mousse)"
       },
       {
-        "texte": "150 g de sucre",
-        "valeur": 150,
+        "texte": "450 g de purée de framboises (framboises mixées et passées au tamis) (insert)",
+        "valeur": 450,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "purée de framboises (framboises mixées et passées au tamis) (insert)"
       },
       {
-        "texte": "10 g de gélatine en feuilles (insert)",
+        "texte": "60 g de sucre (insert)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre (insert)"
+      },
+      {
+        "texte": "10 g de gélatine (5 feuilles de 2 g) (insert)",
         "valeur": 10,
         "unite": "g",
-        "reste": "gélatine en feuilles (insert)"
+        "reste": "gélatine (5 feuilles de 2 g) (insert)"
       },
       {
-        "texte": "4 œufs",
+        "texte": "0,02 L de jus de citron (insert)",
+        "valeur": 0.02,
+        "unite": "L",
+        "reste": "jus de citron (insert)"
+      },
+      {
+        "texte": "4 œufs (biscuit)",
         "valeur": 4,
         "unite": null,
-        "reste": "œufs"
+        "reste": "œufs (biscuit)"
       },
       {
-        "texte": "125 g de sucre (génoise)",
-        "valeur": 125,
-        "unite": "g",
-        "reste": "sucre (génoise)"
-      },
-      {
-        "texte": "125 g de farine",
-        "valeur": 125,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1 sachet de sucre vanillé, facultatif",
-        "valeur": 1,
-        "unite": null,
-        "reste": "sachet de sucre vanillé, facultatif"
-      },
-      {
-        "texte": "100 g de praliné noisette maison",
+        "texte": "100 g de sucre (biscuit)",
         "valeur": 100,
         "unite": "g",
-        "reste": "praliné noisette maison"
+        "reste": "sucre (biscuit)"
       },
       {
-        "texte": "40 g de chocolat au lait",
-        "valeur": 40,
+        "texte": "70 g de farine (biscuit)",
+        "valeur": 70,
         "unite": "g",
-        "reste": "chocolat au lait"
+        "reste": "farine (biscuit)"
       },
       {
-        "texte": "50 g de cornflakes non sucrés",
-        "valeur": 50,
+        "texte": "25 g de cacao non sucré (biscuit)",
+        "valeur": 25,
         "unite": "g",
-        "reste": "cornflakes non sucrés"
+        "reste": "cacao non sucré (biscuit)"
       },
       {
-        "texte": "1 bombe de spray velours chocolat",
+        "texte": "30 g de beurre fondu (biscuit)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre fondu (biscuit)"
+      },
+      {
+        "texte": "60 g de chocolat au lait (croustillant)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "chocolat au lait (croustillant)"
+      },
+      {
+        "texte": "120 g de praliné noisette (croustillant)",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "praliné noisette (croustillant)"
+      },
+      {
+        "texte": "70 g de crêpes dentelle (type Gavottes) (croustillant)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "crêpes dentelle (type Gavottes) (croustillant)"
+      },
+      {
+        "texte": "1 bombe de spray velours chocolat (finition)",
         "valeur": 1,
         "unite": null,
-        "reste": "bombe de spray velours chocolat"
-      }
+        "reste": "bombe de spray velours chocolat (finition)"
+      },
+      "décor : copeaux de chocolat, fruits frais, étoiles en sucre"
     ],
     "etapes": [
-      "⚠️ Point clé pour éviter que l'insert ne coule et ne casse la bûche : l'insert doit être congelé À CŒUR (dur comme un glaçon, pas juste pris) et coulé dans un moule à insert nettement plus petit que le moule à bûche final (au moins 2 cm de moins en largeur et hauteur), pour qu'il reste bien enrobé de ganache tout autour sans jamais toucher les parois.",
-      "Préparer la ganache montée : faire chauffer 100 ml de crème jusqu'à frémissement, puis la verser en 3 fois sur le chocolat noir haché en mélangeant entre chaque ajout jusqu'à obtenir une ganache lisse.",
-      "Ajouter les 300 ml de crème restants froids, mélanger, filmer au contact et réserver au réfrigérateur minimum 4 h, idéalement toute une nuit.",
-      "Préparer l'insert framboise : faire ramollir la gélatine dans un grand bol d'eau froide pendant 10 minutes.",
-      "Mixer les framboises crues avec le sucre pour obtenir un coulis, puis le faire chauffer dans une casserole à feu doux jusqu'à ce qu'il soit tiède (ne pas faire bouillir).",
-      "Hors du feu, essorer la gélatine et l'incorporer au coulis tiède en mélangeant bien jusqu'à dissolution complète.",
-      "Passer le coulis au tamis pour retirer les grains, puis le couler dans un moule à insert nettement plus petit que le moule à bûche (par exemple un moule de 4 cm de large pour une bûche de 8 cm).",
-      "Congeler au moins 4 h, idéalement toute une nuit, jusqu'à ce que l'insert soit totalement dur au toucher.",
-      "Préparer la génoise : fouetter les œufs avec le sucre (et le sucre vanillé) jusqu'à blanchiment et doublement de volume, puis incorporer délicatement la farine tamisée.",
-      "Verser sur une plaque ou dans un moule et cuire 20 minutes à 180°C. Laisser refroidir puis découper aux dimensions du moule à bûche.",
-      "Préparer le croustillant : faire fondre le chocolat au lait, ajouter le praliné noisette et mélanger.",
-      "Écraser grossièrement les cornflakes et les incorporer délicatement au mélange chocolat-praliné.",
-      "Étaler le croustillant en fine couche sur la génoise et réserver au réfrigérateur 15 à 20 minutes pour qu'il fige.",
-      "Sortir la ganache du réfrigérateur et la monter au batteur jusqu'à obtenir une texture ferme type chantilly, juste avant le montage (pas avant, elle retomberait).",
-      "Montage : chemiser le moule à bûche de rhodoïd, déposer une couche de ganache montée dans le fond et sur les côtés à la spatule.",
-      "Démouler l'insert congelé (toujours dur) et le centrer sur la ganache sans qu'il touche les bords du moule.",
-      "Recouvrir complètement l'insert de ganache montée, en s'assurant qu'il n'y ait plus aucune partie visible.",
-      "Ajouter la génoise recouverte de son croustillant, face croustillante contre la ganache, et appuyer légèrement pour bien souder l'ensemble.",
-      "Lisser la base et congeler la bûche entière minimum 6 h, idéalement une nuit complète.",
-      "Sortir la bûche bien congelée et la démouler aussitôt (le rhodoïd facilite le démoulage), la poser sur une grille au-dessus d'un plat.",
-      "Pulvériser le spray velours chocolat à 20-25 cm de distance, en mouvements réguliers, pour un effet velouté uniforme.",
-      "Transférer la bûche sur le plat de service et laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Mousse (la veille du montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,25 L de crème jusqu'à frémissement, y faire fondre la gélatine essorée, puis verser en 3 fois sur le chocolat noir à 55–65 % haché en mélangeant au centre pour obtenir une ganache brillante.",
+      "Ajouter les 0,65 L de crème restante bien froide, mélanger, filmer au contact et réfrigérer au moins 8 h (une nuit).",
+      "Juste avant le montage, fouetter la ganache bien froide jusqu'à ce qu'elle soit ferme et tienne au fouet, comme une chantilly. Ne pas trop fouetter : elle deviendrait granuleuse.",
+      "Insert (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer un quart de la purée de framboises (framboises mixées et passées au tamis) avec le sucre jusqu'à ce qu'il fonde (sans bouillir), puis y faire fondre la gélatine essorée hors du feu.",
+      "Ajouter le reste de purée et le jus de citron, bien mélanger, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert framboise au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit cacao : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la farine et le cacao tamisés, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat au lait au bain-marie ou au micro-ondes par 30 secondes, ajouter le praliné, puis incorporer les crêpes dentelle (type Gavottes) en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert framboise congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : pulvériser le spray velours chocolat à 20–30 cm, en passes régulières, puis décorer (copeaux de chocolat, fruits, étoiles).",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
     ],
     "mc": [
-      "Ganache montée : mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter 100 ml de crème, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter 300 ml de crème froide, mélanger <b>10 s / vitesse 3</b>. Filmer et réfrigérer au moins 4 heures.",
-      "Insert framboise : faire tremper la gélatine. Mettre les framboises et le sucre dans le bol propre, mixer <b>20 s / vitesse 8</b>, puis chauffer <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée, mélanger <b>10 s / vitesse 3</b>, filtrer, couler dans le petit moule et congeler à cœur.",
-      "Génoise : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine à la spatule et cuire 20 minutes à 180 °C.",
-      "Croustillant : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>, ajouter le praliné, puis les cornflakes et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur la génoise.",
-      "Monter la ganache froide au fouet <b>vitesse 4</b> en surveillant, puis monter la bûche comme dans la version classique (étapes 15 à 22)."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Mousse (la veille) : faire tremper la gélatine. Mettre le chocolat noir à 55–65 % dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter 0,25 L de crème, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée, mélanger <b>20 s / vitesse 3</b>.",
+      "Ajouter les 0,65 L de crème froide, mélanger <b>15 s / vitesse 3</b>, verser dans un saladier, filmer au contact et réfrigérer une nuit.",
+      "Le jour du montage : bol bien froid, fouet inséré, fouetter la ganache froide <b>1 min / vitesse 4</b> en surveillant, jusqu'à ce qu'elle tienne. Monter la bûche tout de suite.",
+      "Insert : faire tremper la gélatine. Mettre la purée de framboises (framboises mixées et passées au tamis) et le sucre dans le bol, chauffer <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée et le citron, mélanger <b>20 s / vitesse 3</b>.",
+      "Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit), jusqu'à ce qu'il soit dur.",
+      "Biscuit cacao : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la farine et le cacao tamisés puis le beurre fondu. Étaler sur la plaque et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le praliné et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
     ]
   },
   {
@@ -5885,176 +5969,337 @@ const recettes = [
     "titre": "Bûche cookie dough sans cuisson",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "25 min (+ 2 h de prise)",
-    "personnes": "8",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "300 g de farine",
-        "valeur": 300,
+        "texte": "0,2 L de lait entier (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "lait entier (insert)"
+      },
+      {
+        "texte": "0,2 L de crème liquide entière (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "crème liquide entière (insert)"
+      },
+      {
+        "texte": "4 jaunes d'œufs (insert)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "jaunes d'œufs (insert)"
+      },
+      {
+        "texte": "30 g de sucre (insert)",
+        "valeur": 30,
         "unite": "g",
-        "reste": "farine"
+        "reste": "sucre (insert)"
       },
       {
-        "texte": "166 g de beurre mou",
-        "valeur": 166,
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (insert)",
+        "valeur": 8,
         "unite": "g",
-        "reste": "beurre mou"
+        "reste": "gélatine (4 feuilles de 2 g) (insert)"
       },
       {
-        "texte": "130 g de vergeoise brune",
-        "valeur": 130,
+        "texte": "150 g de chocolat au lait (insert)",
+        "valeur": 150,
         "unite": "g",
-        "reste": "vergeoise brune"
+        "reste": "chocolat au lait (insert)"
       },
       {
-        "texte": "40 g de sucre blanc",
-        "valeur": 40,
+        "texte": "150 g de farine (biscuit cookie)",
+        "valeur": 150,
         "unite": "g",
-        "reste": "sucre blanc"
+        "reste": "farine (biscuit cookie)"
       },
       {
-        "texte": "65 g de lait",
-        "valeur": 65,
+        "texte": "90 g de beurre mou (biscuit cookie)",
+        "valeur": 90,
         "unite": "g",
-        "reste": "lait"
+        "reste": "beurre mou (biscuit cookie)"
       },
       {
-        "texte": "1 c. à café d'extrait de vanille",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "extrait de vanille"
+        "texte": "80 g de cassonade (biscuit cookie)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "cassonade (biscuit cookie)"
       },
       {
-        "texte": "1 pincée de sel",
+        "texte": "0,03 L de lait (biscuit cookie)",
+        "valeur": 0.03,
+        "unite": "L",
+        "reste": "lait (biscuit cookie)"
+      },
+      {
+        "texte": "1 pincée de sel (biscuit cookie)",
         "valeur": 1,
         "unite": "pincée",
-        "reste": "sel"
+        "reste": "sel (biscuit cookie)"
       },
       {
-        "texte": "120 g de pépites de chocolat",
-        "valeur": 120,
+        "texte": "60 g de pépites de chocolat (biscuit cookie)",
+        "valeur": 60,
         "unite": "g",
-        "reste": "pépites de chocolat"
+        "reste": "pépites de chocolat (biscuit cookie)"
       },
       {
-        "texte": "200 g de chocolat au lait",
-        "valeur": 200,
+        "texte": "80 g de chocolat au lait (croustillant)",
+        "valeur": 80,
         "unite": "g",
-        "reste": "chocolat au lait"
+        "reste": "chocolat au lait (croustillant)"
       },
       {
-        "texte": "100 g de chocolat noir",
-        "valeur": 100,
+        "texte": "60 g de pâte à tartiner noisette (croustillant)",
+        "valeur": 60,
         "unite": "g",
-        "reste": "chocolat noir"
+        "reste": "pâte à tartiner noisette (croustillant)"
       },
       {
-        "texte": "200 g de crème liquide entière",
-        "valeur": 200,
+        "texte": "50 g de céréales soufflées au chocolat (croustillant)",
+        "valeur": 50,
         "unite": "g",
-        "reste": "crème liquide entière"
+        "reste": "céréales soufflées au chocolat (croustillant)"
       },
       {
-        "texte": "25 g de beurre (ganache)",
-        "valeur": 25,
-        "unite": "g",
-        "reste": "beurre (ganache)"
+        "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+        "valeur": 0.75,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
       },
-      "feuilles d'or (facultatif)"
+      {
+        "texte": "150 g de mascarpone bien froid (mousse)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mascarpone bien froid (mousse)"
+      },
+      {
+        "texte": "60 g de sucre glace (mousse)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre glace (mousse)"
+      },
+      {
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "gélatine (4 feuilles de 2 g) (mousse)"
+      },
+      {
+        "texte": "2 c. à café d'extrait de vanille (mousse)",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "extrait de vanille (mousse)"
+      },
+      {
+        "texte": "40 g de cassonade (à la place d'une partie du sucre glace) (mousse)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "cassonade (à la place d'une partie du sucre glace) (mousse)"
+      },
+      {
+        "texte": "1 bombe de spray velours blanc (finition)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bombe de spray velours blanc (finition)"
+      },
+      "décor : mini cookies, pépites de chocolat"
     ],
     "etapes": [
-      "Étaler la farine sur une plaque et la cuire 10 minutes à 160 °C (pour qu'elle se mange crue sans risque). Laisser complètement refroidir.",
-      "Battre le beurre mou avec la vergeoise et le sucre blanc jusqu'à obtenir une crème.",
-      "Ajouter le lait et l'extrait de vanille, puis la farine refroidie en plusieurs fois et le sel.",
-      "Incorporer les pépites de chocolat.",
-      "Étaler la pâte en rectangle sur du papier cuisson et la placer au réfrigérateur.",
-      "Ganache : verser la crème chaude sur les chocolats hachés, ajouter le beurre, mélanger et laisser épaissir 1 à 2 heures.",
-      "Étaler une partie de la ganache sur la pâte, puis rouler en bûche à l'aide du papier.",
-      "Placer 20 minutes au congélateur.",
-      "Recouvrir la bûche du reste de ganache, décorer de coulures à la poche à douille et de feuilles d'or."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Seul l'insert et la mousse chauffent : le biscuit cookie ne passe pas au four.",
+      "Insert crémeux (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer le lait et la crème de l'insert. Fouetter les jaunes avec le sucre, verser le lait chaud dessus en fouettant, remettre dans la casserole et cuire à feu doux sans cesser de remuer jusqu'à 82 °C (la crème nappe la cuillère). Ne pas faire bouillir.",
+      "Hors du feu, ajouter la gélatine essorée et le chocolat au lait haché, mixer 30 secondes pour un crémeux bien lisse, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert chocolat au lait au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit cookie sans cuisson : chauffer la farine 2 minutes au micro-ondes en remuant toutes les 30 secondes (elle doit atteindre 75 °C, c'est ce qui la rend consommable crue), puis la laisser refroidir.",
+      "Mélanger le beurre mou et la cassonade, ajouter le lait, le sel, la farine refroidie puis les pépites. Étaler la pâte entre deux feuilles de papier cuisson en une bande de la taille de l'ouverture de la gouttière (environ 1 cm d'épaisseur) et réserver au frais.",
+      "Croustillant : faire fondre le chocolat au lait au bain-marie ou au micro-ondes par 30 secondes, ajouter la pâte à tartiner, puis incorporer les céréales soufflées au chocolat en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur la bande de biscuit cookie, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée et la vanille. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+      "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+      "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert au chocolat au lait congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : pulvériser le spray velours blanc à 20–30 cm, en passes régulières, pour l'effet velouté de la photo, puis décorer (copeaux ou feuilles de chocolat, cacao, étoiles).",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
     ],
     "mc": [
-      "Cuire la farine 10 minutes à 160 °C au four et la laisser refroidir.",
-      "Mettre le beurre mou, la vergeoise et le sucre dans le bol. Mélanger <b>30 s / vitesse 4</b>.",
-      "Ajouter le lait, la vanille, la farine refroidie et le sel. Mélanger <b>30 s / vitesse 4</b>. Ajouter les pépites, <b>10 s / sens inverse / vitesse 2</b>.",
-      "Étaler la pâte en rectangle sur du papier cuisson et la réfrigérer.",
-      "Ganache : bol propre, mettre les chocolats, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le beurre, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Laisser épaissir 1 à 2 heures.",
-      "Étaler de la ganache, rouler en bûche, congeler 20 minutes, puis couvrir du reste de ganache et décorer."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert crémeux : faire tremper la gélatine. Mettre le lait, la crème, les jaunes et le sucre dans le bol, cuire <b>8 min / 80 °C / vitesse 3</b>.",
+      "Ajouter la gélatine essorée et le chocolat au lait, mixer <b>30 s / vitesse 5</b>. Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit).",
+      "Biscuit cookie : chauffer la farine 2 minutes au micro-ondes en remuant (75 °C). Mettre le beurre mou et la cassonade dans le bol, mélanger <b>30 s / vitesse 4</b>, ajouter le lait, le sel et la farine refroidie, <b>20 s / vitesse 4</b>, puis les pépites <b>10 s / sens inverse / vitesse 2</b>. Étaler en bande de la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter la pâte à tartiner et mélanger <b>10 s / vitesse 3</b>, puis les céréales soufflées au chocolat et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée et la vanille, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+      "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
     ]
   },
   {
     "id": "static-53",
     "titre": "Bûche de génoise douce et mousse légère",
     "photo": "photos/enattente.png",
-    "temps": "32 min",
-    "personnes": "6",
     "cat": "dessert",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "4 œufs",
+        "texte": "450 g de purée de fruits rouges (framboises et fraises mixées, passées au tamis) (insert)",
+        "valeur": 450,
+        "unite": "g",
+        "reste": "purée de fruits rouges (framboises et fraises mixées, passées au tamis) (insert)"
+      },
+      {
+        "texte": "60 g de sucre (insert)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre (insert)"
+      },
+      {
+        "texte": "10 g de gélatine (5 feuilles de 2 g) (insert)",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "gélatine (5 feuilles de 2 g) (insert)"
+      },
+      {
+        "texte": "0,02 L de jus de citron (insert)",
+        "valeur": 0.02,
+        "unite": "L",
+        "reste": "jus de citron (insert)"
+      },
+      {
+        "texte": "4 œufs (biscuit)",
         "valeur": 4,
         "unite": null,
-        "reste": "œufs"
+        "reste": "œufs (biscuit)"
       },
       {
-        "texte": "120 g de sucre en poudre",
-        "valeur": 120,
+        "texte": "90 g de sucre (biscuit)",
+        "valeur": 90,
         "unite": "g",
-        "reste": "sucre en poudre"
+        "reste": "sucre (biscuit)"
       },
       {
-        "texte": "100 g de farine",
-        "valeur": 100,
+        "texte": "60 g de poudre d'amande (biscuit)",
+        "valeur": 60,
         "unite": "g",
-        "reste": "farine"
+        "reste": "poudre d'amande (biscuit)"
       },
       {
-        "texte": "20 g de beurre fondu",
-        "valeur": 20,
+        "texte": "50 g de farine (biscuit)",
+        "valeur": 50,
         "unite": "g",
-        "reste": "beurre fondu"
+        "reste": "farine (biscuit)"
       },
       {
-        "texte": "1 cl d'extrait de vanille",
-        "valeur": 1,
-        "unite": "cl",
-        "reste": "extrait de vanille"
-      },
-      {
-        "texte": "250 ml de crème chantilly prête à l'emploi",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "crème chantilly prête à l'emploi"
-      },
-      {
-        "texte": "120 g de confiture de fruits rouges",
-        "valeur": 120,
+        "texte": "25 g de beurre fondu (biscuit)",
+        "valeur": 25,
         "unite": "g",
-        "reste": "confiture de fruits rouges"
+        "reste": "beurre fondu (biscuit)"
       },
       {
-        "texte": "30 g de sucre glace",
+        "texte": "80 g de chocolat blanc (croustillant)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chocolat blanc (croustillant)"
+      },
+      {
+        "texte": "30 g de purée d'amande ou beurre fondu (croustillant)",
         "valeur": 30,
         "unite": "g",
-        "reste": "sucre glace"
-      }
+        "reste": "purée d'amande ou beurre fondu (croustillant)"
+      },
+      {
+        "texte": "70 g de crêpes dentelle (type Gavottes) (croustillant)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "crêpes dentelle (type Gavottes) (croustillant)"
+      },
+      {
+        "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+        "valeur": 0.75,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
+      },
+      {
+        "texte": "150 g de mascarpone bien froid (mousse)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mascarpone bien froid (mousse)"
+      },
+      {
+        "texte": "90 g de sucre glace (mousse)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre glace (mousse)"
+      },
+      {
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "gélatine (4 feuilles de 2 g) (mousse)"
+      },
+      {
+        "texte": "1 gousse de vanille (ou 2 c. à café d'extrait) (mousse)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille (ou 2 c. à café d'extrait) (mousse)"
+      },
+      {
+        "texte": "1 bombe de spray velours blanc (finition)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bombe de spray velours blanc (finition)"
+      },
+      "décor : copeaux de chocolat blanc, cacao en poudre, étoiles en sucre"
     ],
     "etapes": [
-      "Préchauffer le four à 180°C et préparer une plaque à pâtisserie en la tapissant de papier sulfurisé.",
-      "Battre les œufs avec le sucre jusqu'à obtenir un mélange mousseux et doublé de volume.",
-      "Tamiser la farine et l'incorporer délicatement en soulevant la masse, puis ajouter le beurre fondu et l'extrait de vanille.",
-      "Étaler la pâte sur la plaque préparée en formant un rectangle uniforme et enfourner pour environ 10 à 12 minutes jusqu'à dorure légère.",
-      "Retourner la génoise sur un torchon légèrement humide et retirer le papier. Rouler délicatement avec le torchon et laisser refroidir.",
-      "Détendre la crème chantilly si nécessaire et étaler une première couche généreuse sur la génoise démoulée.",
-      "Ajouter la confiture en fine couche et rouler à nouveau fermement. Envelopper dans du film et réfrigérer 1 heure.",
-      "Saupoudrer de sucre glace avant de servir et découper des tronçons pour présenter."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Insert (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer un quart de la purée de fruits rouges (framboises et fraises mixées, passées au tamis) avec le sucre jusqu'à ce qu'il fonde (sans bouillir), puis y faire fondre la gélatine essorée hors du feu.",
+      "Ajouter le reste de purée et le jus de citron, bien mélanger, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert fruits rouges au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Génoise douce aux amandes : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la poudre d'amande, la farine tamisée, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes jusqu'à ce qu'il soit doré.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat blanc au bain-marie ou au micro-ondes par 30 secondes, ajouter la purée d'amande, puis incorporer les crêpes dentelle (type Gavottes) en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée et les graines de vanille. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+      "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+      "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert fruits rouges congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : pulvériser le spray velours blanc à 20–30 cm, en passes régulières, pour l'effet velouté de la photo, puis décorer (copeaux ou feuilles de chocolat, cacao, étoiles).",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
     ],
     "mc": [
-      "Préchauffer le four à 180 °C.",
-      "Insérer le fouet. Mettre les œufs et le sucre dans le bol et fouetter <b>6 min / 37 °C / vitesse 4</b>, puis <b>4 min / vitesse 4</b>, jusqu'à ce que le mélange double de volume. Retirer le fouet.",
-      "Incorporer la farine tamisée à la spatule, puis le beurre fondu et la vanille.",
-      "Étaler sur une plaque et cuire 10 à 12 minutes. Rouler dans un torchon humide et laisser refroidir.",
-      "Garnir de chantilly et de confiture, rouler, réfrigérer 1 heure et saupoudrer de sucre glace."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert : faire tremper la gélatine. Mettre la purée de fruits rouges (framboises et fraises mixées, passées au tamis) et le sucre dans le bol, chauffer <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée et le citron, mélanger <b>20 s / vitesse 3</b>.",
+      "Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit), jusqu'à ce qu'il soit dur.",
+      "Génoise douce aux amandes : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la poudre d'amande, la farine puis le beurre fondu. Étaler et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter la purée d'amande et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée et les graines de vanille, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+      "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
     ]
   },
   {
@@ -6062,196 +6307,298 @@ const recettes = [
     "titre": "Bûche glacée vanille et fruits rouges",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "30 min (+ 8 h de congélation)",
-    "personnes": "8",
+    "temps": "3 h (+ 2 nuits de congélation)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "1 l de glace vanille",
-        "valeur": 1,
-        "unite": "l",
-        "reste": "glace vanille"
-      },
-      {
-        "texte": "500 ml de sorbet framboise",
-        "valeur": 500,
-        "unite": "ml",
-        "reste": "sorbet framboise"
-      },
-      {
-        "texte": "150 g de biscuits sablés ou spéculoos",
-        "valeur": 150,
+        "texte": "450 g de purée de fruits rouges (framboises, fraises, myrtilles mixées et passées au tamis) (insert)",
+        "valeur": 450,
         "unite": "g",
-        "reste": "biscuits sablés ou spéculoos"
+        "reste": "purée de fruits rouges (framboises, fraises, myrtilles mixées et passées au tamis) (insert)"
       },
       {
-        "texte": "50 g de beurre fondu",
+        "texte": "80 g de sucre (insert)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre (insert)"
+      },
+      {
+        "texte": "4 g de gélatine (2 feuilles de 2 g) (insert)",
+        "valeur": 4,
+        "unite": "g",
+        "reste": "gélatine (2 feuilles de 2 g) (insert)"
+      },
+      {
+        "texte": "0,02 L de jus de citron (insert)",
+        "valeur": 0.02,
+        "unite": "L",
+        "reste": "jus de citron (insert)"
+      },
+      {
+        "texte": "4 œufs (biscuit)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs (biscuit)"
+      },
+      {
+        "texte": "90 g de sucre (biscuit)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre (biscuit)"
+      },
+      {
+        "texte": "60 g de poudre d'amande (biscuit)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "poudre d'amande (biscuit)"
+      },
+      {
+        "texte": "50 g de farine (biscuit)",
         "valeur": 50,
         "unite": "g",
-        "reste": "beurre fondu"
+        "reste": "farine (biscuit)"
       },
       {
-        "texte": "150 g de fruits rouges",
-        "valeur": 150,
+        "texte": "25 g de beurre fondu (biscuit)",
+        "valeur": 25,
         "unite": "g",
-        "reste": "fruits rouges"
+        "reste": "beurre fondu (biscuit)"
       },
-      "chantilly et meringues pour décorer"
+      {
+        "texte": "80 g de chocolat blanc (croustillant)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chocolat blanc (croustillant)"
+      },
+      {
+        "texte": "20 g d'huile de coco désodorisée (croustillant)",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "huile de coco désodorisée (croustillant)"
+      },
+      {
+        "texte": "70 g de crêpes dentelle (type Gavottes) (croustillant)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "crêpes dentelle (type Gavottes) (croustillant)"
+      },
+      {
+        "texte": "0,6 L de crème liquide entière à 30 % minimum, bien froide (glace vanille)",
+        "valeur": 0.6,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (glace vanille)"
+      },
+      {
+        "texte": "397 g de lait concentré sucré (1 boîte) (glace vanille)",
+        "valeur": 397,
+        "unite": "g",
+        "reste": "lait concentré sucré (1 boîte) (glace vanille)"
+      },
+      {
+        "texte": "2 gousses de vanille (ou 1 c. à soupe d'extrait) (glace vanille)",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses de vanille (ou 1 c. à soupe d'extrait) (glace vanille)"
+      },
+      "décor : fruits rouges frais, copeaux de chocolat blanc, sucre glace"
     ],
     "etapes": [
-      "Sortir la glace et le sorbet 10 minutes pour les ramollir. Chemiser un moule à cake de film alimentaire.",
-      "Étaler la glace vanille au fond et sur les bords du moule en laissant un creux au centre. Congeler 30 minutes.",
-      "Remplir le creux de sorbet framboise et de quelques fruits rouges. Lisser.",
-      "Couvrir d’une couche de biscuits écrasés mélangés au beurre fondu et tasser : ce sera la base.",
-      "Congeler au moins 8 heures. Démouler sur le plat de service, décorer de chantilly, de meringues et de fruits rouges juste avant de servir."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Bûche glacée : l'insert contient peu de gélatine pour rester agréable à manger congelé.",
+      "Insert (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer un quart de la purée de fruits rouges (framboises, fraises, myrtilles mixées et passées au tamis) avec le sucre jusqu'à ce qu'il fonde (sans bouillir), puis y faire fondre la gélatine essorée hors du feu.",
+      "Ajouter le reste de purée et le jus de citron, bien mélanger, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert fruits rouges au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit amande : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la poudre d'amande, la farine tamisée, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes jusqu'à ce qu'il soit doré.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat blanc au bain-marie ou au micro-ondes par 30 secondes, ajouter l'huile de coco, puis incorporer les crêpes dentelle (type Gavottes) en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Glace vanille sans sorbetière (juste avant le montage) : fouetter la crème bien froide en chantilly ferme.",
+      "Mélanger le lait concentré avec les graines de vanille, puis incorporer délicatement la chantilly à la spatule.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert fruits rouges congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : décorer de fruits rouges, de copeaux de chocolat blanc et de sucre glace juste avant de servir.",
+      "Servir glacée : sortir la bûche du congélateur 10 à 15 minutes avant de la couper avec un couteau passé sous l'eau chaude."
     ],
     "mc": [
-      "Ramollir la glace et le sorbet 10 minutes, chemiser un moule à cake.",
-      "Étaler la glace vanille au fond et sur les bords, congeler 30 minutes, puis garnir de sorbet et de fruits rouges.",
-      "Base : mettre les biscuits dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre et mélanger <b>10 s / vitesse 3</b> (ou faire fondre le beurre avant : <b>2 min / 60 °C / vitesse 2</b>). Tasser sur la glace.",
-      "Congeler au moins 8 heures, démouler et décorer."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert : faire tremper la gélatine. Mettre la purée de fruits rouges (framboises, fraises, myrtilles mixées et passées au tamis) et le sucre dans le bol, chauffer <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée et le citron, mélanger <b>20 s / vitesse 3</b>.",
+      "Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit), jusqu'à ce qu'il soit dur.",
+      "Biscuit amande : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la poudre d'amande, la farine puis le beurre fondu. Étaler et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter l'huile de coco et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Glace vanille : bol bien froid, fouet inséré, fouetter la crème <b>1 min 30 / vitesse 4</b> en surveillant. Retirer, ajouter le lait concentré et la vanille à la spatule.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, servir glacée après 10 à 15 minutes hors du congélateur."
     ]
   },
   {
     "id": "static-54",
     "titre": "Bûche marron-vanille au croustillant de tuiles",
     "photo": "photos/enattente.png",
-    "temps": "12 h (dont 7h de congélation cumulée)",
-    "personnes": "8",
     "cat": "dessert",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "4 œufs",
+        "texte": "0,2 L de lait entier (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "lait entier (insert)"
+      },
+      {
+        "texte": "0,2 L de crème liquide entière (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "crème liquide entière (insert)"
+      },
+      {
+        "texte": "4 jaunes d'œufs (insert)",
         "valeur": 4,
         "unite": null,
-        "reste": "œufs"
+        "reste": "jaunes d'œufs (insert)"
       },
       {
-        "texte": "125 g de sucre",
-        "valeur": 125,
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (insert)",
+        "valeur": 8,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "gélatine (4 feuilles de 2 g) (insert)"
       },
       {
-        "texte": "125 g de farine",
-        "valeur": 125,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "1 sachet sucre vanillé, facultatif",
-        "valeur": 1,
-        "unite": null,
-        "reste": "sachet sucre vanillé, facultatif"
-      },
-      {
-        "texte": "250 g de crème de marron",
+        "texte": "250 g de crème de marrons (insert)",
         "valeur": 250,
         "unite": "g",
-        "reste": "crème de marron"
+        "reste": "crème de marrons (insert)"
       },
       {
-        "texte": "1 gousse de vanille (ou 1 c. à c. extrait)",
-        "valeur": 1,
+        "texte": "4 œufs (biscuit)",
+        "valeur": 4,
         "unite": null,
-        "reste": "gousse de vanille (ou 1 c. à c. extrait)"
+        "reste": "œufs (biscuit)"
       },
       {
-        "texte": "6 g de gélatine en feuilles (ganache)",
-        "valeur": 6,
+        "texte": "90 g de sucre (biscuit)",
+        "valeur": 90,
         "unite": "g",
-        "reste": "gélatine en feuilles (ganache)"
+        "reste": "sucre (biscuit)"
       },
       {
-        "texte": "350 g de crème liquide entière (dont 150 g chaude et 200 g froide)",
-        "valeur": 350,
+        "texte": "60 g de poudre d'amande (biscuit)",
+        "valeur": 60,
         "unite": "g",
-        "reste": "crème liquide entière (dont 150 g chaude et 200 g froide)"
+        "reste": "poudre d'amande (biscuit)"
       },
       {
-        "texte": "200 g de yaourt grec",
-        "valeur": 200,
+        "texte": "50 g de farine (biscuit)",
+        "valeur": 50,
         "unite": "g",
-        "reste": "yaourt grec"
+        "reste": "farine (biscuit)"
       },
       {
-        "texte": "40 g de sucre (insert)",
+        "texte": "25 g de beurre fondu (biscuit)",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "beurre fondu (biscuit)"
+      },
+      {
+        "texte": "80 g de chocolat blanc (croustillant)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chocolat blanc (croustillant)"
+      },
+      {
+        "texte": "40 g de pâte de marrons ou praliné (croustillant)",
         "valeur": 40,
         "unite": "g",
-        "reste": "sucre (insert)"
+        "reste": "pâte de marrons ou praliné (croustillant)"
       },
       {
-        "texte": "4 g de gélatine en feuilles (insert)",
-        "valeur": 4,
+        "texte": "80 g de tuiles dentelle émiettées (croustillant)",
+        "valeur": 80,
         "unite": "g",
-        "reste": "gélatine en feuilles (insert)"
+        "reste": "tuiles dentelle émiettées (croustillant)"
       },
       {
-        "texte": "1 c. à soupe de crème liquide (pour dissoudre la gélatine de l'insert)",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "crème liquide (pour dissoudre la gélatine de l'insert)"
+        "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+        "valeur": 0.75,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
       },
       {
-        "texte": "50 g de sucre (croustillant tuile)",
-        "valeur": 50,
+        "texte": "150 g de mascarpone bien froid (mousse)",
+        "valeur": 150,
         "unite": "g",
-        "reste": "sucre (croustillant tuile)"
+        "reste": "mascarpone bien froid (mousse)"
       },
       {
-        "texte": "50 g de beurre fondu",
-        "valeur": 50,
+        "texte": "90 g de sucre glace (mousse)",
+        "valeur": 90,
         "unite": "g",
-        "reste": "beurre fondu"
+        "reste": "sucre glace (mousse)"
       },
       {
-        "texte": "50 g de farine (croustillant tuile)",
-        "valeur": 50,
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+        "valeur": 8,
         "unite": "g",
-        "reste": "farine (croustillant tuile)"
+        "reste": "gélatine (4 feuilles de 2 g) (mousse)"
       },
       {
-        "texte": "30 g de miel",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "miel"
-      },
-      {
-        "texte": "1 bombe spray velours blanc",
+        "texte": "1 gousse de vanille (ou 2 c. à café d'extrait) (mousse)",
         "valeur": 1,
         "unite": null,
-        "reste": "bombe spray velours blanc"
-      }
+        "reste": "gousse de vanille (ou 2 c. à café d'extrait) (mousse)"
+      },
+      {
+        "texte": "1 bombe de spray velours blanc (finition)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bombe de spray velours blanc (finition)"
+      },
+      "décor : marrons glacés, cacao en poudre"
     ],
     "etapes": [
-      "⚠️ Comme pour toutes les bûches à insert : préparer l'insert dans un moule nettement plus petit que le moule à bûche (au moins 2 cm d'écart en largeur), et le congeler jusqu'à ce qu'il soit dur comme un glaçon avant de l'utiliser — c'est ce qui évite qu'il ne coule et ne fasse craquer la bûche à la découpe.",
-      "Préparer l'insert en premier (il doit congeler le plus longtemps) : faire tremper 4 g de gélatine dans l'eau froide 10 minutes.",
-      "Dans un bol, mélanger le yaourt grec, le sucre et les graines de vanille.",
-      "Chauffer légèrement la cuillère de crème liquide (tiède, pas bouillante), y dissoudre la gélatine essorée, puis verser dans le mélange yaourt-vanille en homogénéisant bien.",
-      "Couler dans un moule à insert plus petit que le moule à bûche et congeler au moins 4 h, idéalement toute une nuit, jusqu'à ce qu'il soit totalement dur.",
-      "Préparer la ganache montée marron-vanille : réhydrater les 6 g de gélatine dans l'eau froide.",
-      "Chauffer 150 g de crème liquide avec la vanille jusqu'à frémissement, retirer du feu et incorporer la gélatine essorée jusqu'à dissolution complète.",
-      "Ajouter la crème de marron et mélanger jusqu'à obtenir une base bien lisse, puis incorporer les 200 g de crème froide.",
-      "Filmer au contact et réserver au réfrigérateur minimum 4 h, idéalement toute une nuit.",
-      "Préparer la génoise : fouetter les œufs avec le sucre (et le sucre vanillé) jusqu'à blanchiment et doublement de volume, incorporer délicatement la farine tamisée.",
-      "Verser sur une plaque et cuire 20 minutes à 180°C. Laisser refroidir puis découper aux dimensions du moule à bûche.",
-      "Préparer le croustillant tuile : mélanger le sucre, le beurre fondu, la farine, le miel et un peu de vanille jusqu'à obtenir une pâte lisse.",
-      "Étaler très finement en disques sur une plaque recouverte de papier cuisson et cuire 6 à 8 minutes à 180°C, jusqu'à ce que les bords soient légèrement dorés.",
-      "À la sortie du four, façonner immédiatement les tuiles encore chaudes et souples (sur un rouleau ou à la main) avant qu'elles ne durcissent, puis laisser refroidir : elles deviennent croustillantes en refroidissant.",
-      "Sortir la ganache et la monter au batteur jusqu'à texture ferme, juste avant le montage.",
-      "Montage : chemiser le moule de rhodoïd, déposer une couche de ganache montée au fond et sur les côtés.",
-      "Démouler l'insert bien congelé et le centrer sans qu'il touche les parois du moule, puis le recouvrir entièrement de ganache.",
-      "Ajouter la génoise, appuyer légèrement pour souder, lisser la base.",
-      "Congeler l'ensemble minimum 6 h, idéalement toute une nuit.",
-      "Démouler la bûche encore congelée, la poser sur une grille et pulvériser le spray velours blanc à 20-25 cm de distance.",
-      "Décorer avec les tuiles croustillantes juste avant de servir (elles ramollissent si elles restent trop longtemps au contact de l'humidité du frigo).",
-      "Laisser décongeler 4 à 5 h au réfrigérateur avant dégustation."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Insert crémeux (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer le lait et la crème de l'insert. Fouetter les jaunes, verser le lait chaud dessus en fouettant, remettre dans la casserole et cuire à feu doux sans cesser de remuer jusqu'à 82 °C (la crème nappe la cuillère). Ne pas faire bouillir.",
+      "Hors du feu, ajouter la gélatine essorée et la crème de marrons, mixer 30 secondes pour un crémeux bien lisse, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert marron au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit amande : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la poudre d'amande, la farine tamisée, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes jusqu'à ce qu'il soit doré.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat blanc au bain-marie ou au micro-ondes par 30 secondes, ajouter la pâte de marrons, puis incorporer les tuiles dentelle émiettées en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée et les graines de vanille. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+      "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+      "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert marron congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : pulvériser le spray velours blanc à 20–30 cm, en passes régulières, pour l'effet velouté de la photo, puis décorer (copeaux ou feuilles de chocolat, cacao, étoiles).",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
     ],
     "mc": [
-      "Insert : faire tremper 4 g de gélatine. Mettre le yaourt grec, le sucre et la vanille dans le bol. Chauffer la crème à part, y dissoudre la gélatine, ajouter dans le bol et mélanger <b>10 s / vitesse 3</b>. Couler dans le petit moule et congeler à cœur.",
-      "Ganache marron : faire tremper 6 g de gélatine. Mettre 150 g de crème et la vanille dans le bol propre, chauffer <b>3 min / 80 °C / vitesse 2</b>. Ajouter la gélatine essorée, puis la crème de marron et 200 g de crème froide, mélanger <b>15 s / vitesse 3</b>. Filmer et réfrigérer au moins 4 heures.",
-      "Génoise : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine et cuire 20 minutes à 180 °C.",
-      "Tuiles : mettre le sucre, le beurre fondu, la farine et le miel dans le bol, mélanger <b>15 s / vitesse 4</b>. Étaler finement et cuire 6 à 8 minutes à 180 °C, puis façonner à chaud.",
-      "Monter la ganache froide au fouet <b>vitesse 4</b> en surveillant, puis monter la bûche comme dans la version classique (étapes 16 à 22)."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert crémeux : faire tremper la gélatine. Mettre le lait, la crème et les jaunes dans le bol, cuire <b>8 min / 80 °C / vitesse 3</b>.",
+      "Ajouter la gélatine essorée et la crème de marrons, mixer <b>30 s / vitesse 5</b>. Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit).",
+      "Biscuit amande : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la poudre d'amande, la farine puis le beurre fondu. Étaler et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter la pâte de marrons et mélanger <b>10 s / vitesse 3</b>, puis les tuiles dentelle émiettées et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée et les graines de vanille, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+      "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
     ]
   },
   {
@@ -6259,228 +6606,665 @@ const recettes = [
     "titre": "Bûche praliné et croustillant",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "1 h 15 (+ 4 h au frais)",
-    "personnes": "8",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "4 œufs",
+        "texte": "0,2 L de lait entier (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "lait entier (insert)"
+      },
+      {
+        "texte": "0,2 L de crème liquide entière (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "crème liquide entière (insert)"
+      },
+      {
+        "texte": "4 jaunes d'œufs (insert)",
         "valeur": 4,
         "unite": null,
-        "reste": "œufs"
+        "reste": "jaunes d'œufs (insert)"
       },
       {
-        "texte": "100 g de sucre",
-        "valeur": 100,
+        "texte": "30 g de sucre (insert)",
+        "valeur": 30,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "sucre (insert)"
       },
       {
-        "texte": "100 g de farine",
-        "valeur": 100,
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (insert)",
+        "valeur": 8,
         "unite": "g",
-        "reste": "farine"
+        "reste": "gélatine (4 feuilles de 2 g) (insert)"
       },
       {
-        "texte": "150 g de praliné noisette",
+        "texte": "150 g de praliné noisette (insert)",
         "valeur": 150,
         "unite": "g",
-        "reste": "praliné noisette"
+        "reste": "praliné noisette (insert)"
       },
       {
-        "texte": "80 g de chocolat au lait",
-        "valeur": 80,
+        "texte": "50 g de chocolat au lait (insert)",
+        "valeur": 50,
         "unite": "g",
-        "reste": "chocolat au lait"
+        "reste": "chocolat au lait (insert)"
       },
       {
-        "texte": "60 g de crêpes dentelles émiettées",
+        "texte": "4 œufs (biscuit)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs (biscuit)"
+      },
+      {
+        "texte": "100 g de sucre (biscuit)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre (biscuit)"
+      },
+      {
+        "texte": "70 g de farine (biscuit)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "farine (biscuit)"
+      },
+      {
+        "texte": "25 g de cacao non sucré (biscuit)",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "cacao non sucré (biscuit)"
+      },
+      {
+        "texte": "30 g de beurre fondu (biscuit)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre fondu (biscuit)"
+      },
+      {
+        "texte": "60 g de chocolat au lait (croustillant)",
         "valeur": 60,
         "unite": "g",
-        "reste": "crêpes dentelles émiettées"
+        "reste": "chocolat au lait (croustillant)"
       },
       {
-        "texte": "400 ml de crème liquide entière bien froide",
-        "valeur": 400,
-        "unite": "ml",
-        "reste": "crème liquide entière bien froide"
+        "texte": "80 g de praliné noisette (croustillant)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "praliné noisette (croustillant)"
       },
       {
-        "texte": "100 g de chocolat noir (glaçage)",
+        "texte": "100 g de noisettes torréfiées et concassées (croustillant)",
         "valeur": 100,
         "unite": "g",
-        "reste": "chocolat noir (glaçage)"
+        "reste": "noisettes torréfiées et concassées (croustillant)"
       },
       {
-        "texte": "100 ml de crème liquide (glaçage)",
-        "valeur": 100,
-        "unite": "ml",
-        "reste": "crème liquide (glaçage)"
-      }
+        "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+        "valeur": 0.75,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
+      },
+      {
+        "texte": "150 g de mascarpone bien froid (mousse)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mascarpone bien froid (mousse)"
+      },
+      {
+        "texte": "90 g de sucre glace (mousse)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre glace (mousse)"
+      },
+      {
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "gélatine (4 feuilles de 2 g) (mousse)"
+      },
+      {
+        "texte": "1 gousse de vanille (ou 2 c. à café d'extrait) (mousse)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille (ou 2 c. à café d'extrait) (mousse)"
+      },
+      {
+        "texte": "60 g de praliné noisette (mousse)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "praliné noisette (mousse)"
+      },
+      {
+        "texte": "1 bombe de spray velours blanc (finition)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bombe de spray velours blanc (finition)"
+      },
+      "décor : copeaux de chocolat blanc, cacao en poudre, étoiles en sucre"
     ],
     "etapes": [
-      "Préparer un biscuit roulé : fouetter les œufs et le sucre 10 minutes, incorporer la farine, étaler et cuire 8 à 10 minutes à 200 °C. Rouler dans un torchon humide et laisser refroidir.",
-      "Croustillant : faire fondre le chocolat au lait, ajouter 50 g de praliné et les crêpes dentelles.",
-      "Mousse : fouetter la crème froide en chantilly et incorporer le reste du praliné.",
-      "Dérouler le biscuit, étaler le croustillant puis la moitié de la mousse, rouler serré.",
-      "Couvrir du reste de mousse et réfrigérer 3 heures.",
-      "Glaçage : verser la crème chaude sur le chocolat noir, laisser tiédir et napper la bûche. Réfrigérer encore 1 heure."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Insert crémeux (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer le lait et la crème de l'insert. Fouetter les jaunes avec le sucre, verser le lait chaud dessus en fouettant, remettre dans la casserole et cuire à feu doux sans cesser de remuer jusqu'à 82 °C (la crème nappe la cuillère). Ne pas faire bouillir.",
+      "Hors du feu, ajouter la gélatine essorée, le praliné et le chocolat au lait haché, mixer 30 secondes pour un crémeux bien lisse, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert praliné au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit cacao : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la farine et le cacao tamisés, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat au lait au bain-marie ou au micro-ondes par 30 secondes, ajouter le praliné, puis incorporer les noisettes torréfiées et concassées en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée, les graines de vanille et le praliné. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+      "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+      "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert praliné congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : pulvériser le spray velours blanc à 20–30 cm, en passes régulières, pour l'effet velouté de la photo, puis décorer (copeaux ou feuilles de chocolat, cacao, étoiles).",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
     ],
     "mc": [
-      "Biscuit : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer la farine, étaler et cuire 8 à 10 minutes à 200 °C. Rouler dans un torchon humide.",
-      "Croustillant : bol propre, mettre le chocolat au lait, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter 50 g de praliné et les crêpes dentelles, mélanger <b>10 s / sens inverse / vitesse 2</b>.",
-      "Mousse : bol propre et froid, insérer le fouet, mettre la crème bien froide et fouetter <b>vitesse 4</b> en surveillant (1 à 2 min). Ajouter le reste du praliné, mélanger <b>5 s / vitesse 2</b>.",
-      "Garnir le biscuit de croustillant et de mousse, rouler, couvrir du reste de mousse et réfrigérer 3 heures.",
-      "Glaçage : mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter la crème et faire fondre <b>4 min / 50 °C / vitesse 2</b>. Laisser tiédir, napper et réfrigérer 1 heure."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert crémeux : faire tremper la gélatine. Mettre le lait, la crème, les jaunes et le sucre dans le bol, cuire <b>8 min / 80 °C / vitesse 3</b>.",
+      "Ajouter la gélatine essorée, le praliné et le chocolat au lait, mixer <b>30 s / vitesse 5</b>. Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit).",
+      "Biscuit cacao : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la farine et le cacao tamisés puis le beurre fondu. Étaler sur la plaque et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le praliné et mélanger <b>10 s / vitesse 3</b>, puis les noisettes torréfiées et concassées et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée, les graines de vanille et le praliné, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+      "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
     ]
   },
   {
     "id": "static-634",
-    "titre": "Bûche roulée au chocolat (classique)",
+    "titre": "Bûche tout chocolat",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "1 h (+ 2 h au frais)",
-    "personnes": "8",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "4 œufs",
-        "valeur": 4,
-        "unite": null,
-        "reste": "œufs"
+        "nom": "Façon entremets (gâteau, croustillant, insert, mousse)",
+        "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+        "personnes": "10",
+        "ingredients": [
+          {
+            "texte": "280 g de chocolat noir à 55–65 % (mousse)",
+            "valeur": 280,
+            "unite": "g",
+            "reste": "chocolat noir à 55–65 % (mousse)"
+          },
+          {
+            "texte": "0,9 L de crème liquide entière à 30 % minimum (mousse)",
+            "valeur": 0.9,
+            "unite": "L",
+            "reste": "crème liquide entière à 30 % minimum (mousse)"
+          },
+          {
+            "texte": "6 g de gélatine (3 feuilles de 2 g) (mousse)",
+            "valeur": 6,
+            "unite": "g",
+            "reste": "gélatine (3 feuilles de 2 g) (mousse)"
+          },
+          {
+            "texte": "0,2 L de lait entier (insert)",
+            "valeur": 0.2,
+            "unite": "L",
+            "reste": "lait entier (insert)"
+          },
+          {
+            "texte": "0,2 L de crème liquide entière (insert)",
+            "valeur": 0.2,
+            "unite": "L",
+            "reste": "crème liquide entière (insert)"
+          },
+          {
+            "texte": "4 jaunes d'œufs (insert)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "jaunes d'œufs (insert)"
+          },
+          {
+            "texte": "30 g de sucre (insert)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "sucre (insert)"
+          },
+          {
+            "texte": "8 g de gélatine (4 feuilles de 2 g) (insert)",
+            "valeur": 8,
+            "unite": "g",
+            "reste": "gélatine (4 feuilles de 2 g) (insert)"
+          },
+          {
+            "texte": "150 g de chocolat au lait (insert)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chocolat au lait (insert)"
+          },
+          {
+            "texte": "4 œufs (biscuit)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "œufs (biscuit)"
+          },
+          {
+            "texte": "100 g de sucre (biscuit)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre (biscuit)"
+          },
+          {
+            "texte": "70 g de farine (biscuit)",
+            "valeur": 70,
+            "unite": "g",
+            "reste": "farine (biscuit)"
+          },
+          {
+            "texte": "25 g de cacao non sucré (biscuit)",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "cacao non sucré (biscuit)"
+          },
+          {
+            "texte": "30 g de beurre fondu (biscuit)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre fondu (biscuit)"
+          },
+          {
+            "texte": "80 g de chocolat noir (croustillant)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "chocolat noir (croustillant)"
+          },
+          {
+            "texte": "80 g de praliné noisette (croustillant)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "praliné noisette (croustillant)"
+          },
+          {
+            "texte": "70 g de crêpes dentelle (type Gavottes) (croustillant)",
+            "valeur": 70,
+            "unite": "g",
+            "reste": "crêpes dentelle (type Gavottes) (croustillant)"
+          },
+          {
+            "texte": "1 bombe de spray velours chocolat (finition)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "bombe de spray velours chocolat (finition)"
+          },
+          "décor : copeaux de chocolat, fruits frais, étoiles en sucre"
+        ],
+        "etapes": [
+          "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+          "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+          "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+          "Mousse (la veille du montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+          "Chauffer 0,25 L de crème jusqu'à frémissement, y faire fondre la gélatine essorée, puis verser en 3 fois sur le chocolat noir à 55–65 % haché en mélangeant au centre pour obtenir une ganache brillante.",
+          "Ajouter les 0,65 L de crème restante bien froide, mélanger, filmer au contact et réfrigérer au moins 8 h (une nuit).",
+          "Juste avant le montage, fouetter la ganache bien froide jusqu'à ce qu'elle soit ferme et tienne au fouet, comme une chantilly. Ne pas trop fouetter : elle deviendrait granuleuse.",
+          "Insert crémeux (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+          "Chauffer le lait et la crème de l'insert. Fouetter les jaunes avec le sucre, verser le lait chaud dessus en fouettant, remettre dans la casserole et cuire à feu doux sans cesser de remuer jusqu'à 82 °C (la crème nappe la cuillère). Ne pas faire bouillir.",
+          "Hors du feu, ajouter la gélatine essorée et le chocolat au lait haché, mixer 30 secondes pour un crémeux bien lisse, puis couler dans la gouttière à insert filmée.",
+          "Congeler l'insert chocolat au lait au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+          "Biscuit cacao : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+          "Incorporer délicatement à la spatule la farine et le cacao tamisés, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes.",
+          "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+          "Croustillant : faire fondre le chocolat noir au bain-marie ou au micro-ondes par 30 secondes, ajouter le praliné, puis incorporer les crêpes dentelle (type Gavottes) en petits morceaux.",
+          "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+          "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+          "Démouler l'insert chocolat au lait congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+          "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+          "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+          "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+          "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+          "Finition : pulvériser le spray velours chocolat à 20–30 cm, en passes régulières, puis décorer (copeaux de chocolat, fruits, étoiles).",
+          "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
+        ],
+        "mc": [
+          "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+          "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+          "Mousse (la veille) : faire tremper la gélatine. Mettre le chocolat noir à 55–65 % dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter 0,25 L de crème, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée, mélanger <b>20 s / vitesse 3</b>.",
+          "Ajouter les 0,65 L de crème froide, mélanger <b>15 s / vitesse 3</b>, verser dans un saladier, filmer au contact et réfrigérer une nuit.",
+          "Le jour du montage : bol bien froid, fouet inséré, fouetter la ganache froide <b>1 min / vitesse 4</b> en surveillant, jusqu'à ce qu'elle tienne. Monter la bûche tout de suite.",
+          "Insert crémeux : faire tremper la gélatine. Mettre le lait, la crème, les jaunes et le sucre dans le bol, cuire <b>8 min / 80 °C / vitesse 3</b>.",
+          "Ajouter la gélatine essorée et le chocolat au lait, mixer <b>30 s / vitesse 5</b>. Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit).",
+          "Biscuit cacao : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la farine et le cacao tamisés puis le beurre fondu. Étaler sur la plaque et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+          "Croustillant : mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le praliné et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+          "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+        ]
       },
       {
-        "texte": "100 g de sucre",
-        "valeur": 100,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "80 g de farine",
-        "valeur": 80,
-        "unite": "g",
-        "reste": "farine"
-      },
-      {
-        "texte": "20 g de cacao",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "cacao"
-      },
-      {
-        "texte": "200 g de chocolat noir",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "chocolat noir"
-      },
-      {
-        "texte": "200 ml de crème liquide entière (ganache)",
-        "valeur": 200,
-        "unite": "ml",
-        "reste": "crème liquide entière (ganache)"
-      },
-      {
-        "texte": "50 g de beurre",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      {
-        "texte": "250 ml de crème liquide entière bien froide (garniture)",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "crème liquide entière bien froide (garniture)"
-      },
-      {
-        "texte": "30 g de sucre glace",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "sucre glace"
-      },
-      "décorations de Noël"
-    ],
-    "etapes": [
-      "Préchauffer le four à 200 °C. Fouetter les œufs et le sucre 10 minutes jusqu’à ce que le mélange triple de volume.",
-      "Incorporer délicatement la farine et le cacao tamisés, étaler sur une plaque recouverte de papier cuisson et cuire 8 à 10 minutes.",
-      "Retourner aussitôt le biscuit sur un torchon humide, retirer le papier et le rouler dans le torchon. Laisser refroidir.",
-      "Ganache : verser la crème chaude sur le chocolat haché, mélanger, ajouter le beurre. Laisser épaissir.",
-      "Fouetter la crème froide avec le sucre glace en chantilly. Dérouler le biscuit, l’étaler de chantilly et rouler serré.",
-      "Couvrir de ganache, dessiner des stries à la fourchette pour imiter l’écorce, couper les extrémités en biais et réfrigérer 2 heures. Décorer."
-    ],
-    "mc": [
-      "Préchauffer le four à 200 °C. Insérer le fouet, mettre les œufs et le sucre dans le bol et fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet.",
-      "Incorporer délicatement la farine et le cacao tamisés, étaler sur une plaque et cuire 8 à 10 minutes. Rouler dans un torchon humide.",
-      "Ganache : bol propre, mettre le chocolat, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le beurre, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Laisser épaissir.",
-      "Chantilly : bol propre et froid, insérer le fouet, mettre la crème froide et le sucre glace, fouetter <b>vitesse 4</b> en surveillant.",
-      "Garnir le biscuit de chantilly, rouler, couvrir de ganache, strier à la fourchette et réfrigérer 2 heures."
+        "nom": "Roulée classique (ancienne recette)",
+        "temps": "1 h (+ 2 h au frais)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "4 œufs",
+            "valeur": 4,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "100 g de sucre",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "80 g de farine",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "20 g de cacao",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "cacao"
+          },
+          {
+            "texte": "200 g de chocolat noir",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "chocolat noir"
+          },
+          {
+            "texte": "200 ml de crème liquide entière (ganache)",
+            "valeur": 200,
+            "unite": "ml",
+            "reste": "crème liquide entière (ganache)"
+          },
+          {
+            "texte": "50 g de beurre",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          {
+            "texte": "250 ml de crème liquide entière bien froide (garniture)",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "crème liquide entière bien froide (garniture)"
+          },
+          {
+            "texte": "30 g de sucre glace",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "sucre glace"
+          },
+          "décorations de Noël"
+        ],
+        "etapes": [
+          "Préchauffer le four à 200 °C. Fouetter les œufs et le sucre 10 minutes jusqu’à ce que le mélange triple de volume.",
+          "Incorporer délicatement la farine et le cacao tamisés, étaler sur une plaque recouverte de papier cuisson et cuire 8 à 10 minutes.",
+          "Retourner aussitôt le biscuit sur un torchon humide, retirer le papier et le rouler dans le torchon. Laisser refroidir.",
+          "Ganache : verser la crème chaude sur le chocolat haché, mélanger, ajouter le beurre. Laisser épaissir.",
+          "Fouetter la crème froide avec le sucre glace en chantilly. Dérouler le biscuit, l’étaler de chantilly et rouler serré.",
+          "Couvrir de ganache, dessiner des stries à la fourchette pour imiter l’écorce, couper les extrémités en biais et réfrigérer 2 heures. Décorer."
+        ],
+        "mc": [
+          "Préchauffer le four à 200 °C. Insérer le fouet, mettre les œufs et le sucre dans le bol et fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet.",
+          "Incorporer délicatement la farine et le cacao tamisés, étaler sur une plaque et cuire 8 à 10 minutes. Rouler dans un torchon humide.",
+          "Ganache : bol propre, mettre le chocolat, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et le beurre, faire fondre <b>4 min / 50 °C / vitesse 2</b>. Laisser épaissir.",
+          "Chantilly : bol propre et froid, insérer le fouet, mettre la crème froide et le sucre glace, fouetter <b>vitesse 4</b> en surveillant.",
+          "Garnir le biscuit de chantilly, rouler, couvrir de ganache, strier à la fourchette et réfrigérer 2 heures."
+        ]
+      }
     ]
   },
   {
     "id": "static-55",
-    "titre": "Bûche roulée aux spéculoos et crème au caprice des dieux",
+    "titre": "Bûche spéculoos",
     "photo": "photos/enattente.png",
-    "temps": "35 min",
-    "personnes": "6",
     "cat": "dessert",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "200 g de spéculoos",
-        "valeur": 200,
-        "unite": "g",
-        "reste": "spéculoos"
+        "nom": "Façon entremets (gâteau, croustillant, insert, mousse)",
+        "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+        "personnes": "10",
+        "ingredients": [
+          {
+            "texte": "500 g de pommes (type Golden ou Pink Lady) (insert)",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "pommes (type Golden ou Pink Lady) (insert)"
+          },
+          {
+            "texte": "60 g de sucre (insert)",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "sucre (insert)"
+          },
+          {
+            "texte": "30 g de beurre demi-sel (insert)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre demi-sel (insert)"
+          },
+          {
+            "texte": "0,1 L de jus de pomme (insert)",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "jus de pomme (insert)"
+          },
+          {
+            "texte": "8 g de gélatine (4 feuilles de 2 g) (insert)",
+            "valeur": 8,
+            "unite": "g",
+            "reste": "gélatine (4 feuilles de 2 g) (insert)"
+          },
+          {
+            "texte": "4 œufs (biscuit)",
+            "valeur": 4,
+            "unite": null,
+            "reste": "œufs (biscuit)"
+          },
+          {
+            "texte": "90 g de sucre (biscuit)",
+            "valeur": 90,
+            "unite": "g",
+            "reste": "sucre (biscuit)"
+          },
+          {
+            "texte": "60 g de poudre d'amande (biscuit)",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "poudre d'amande (biscuit)"
+          },
+          {
+            "texte": "50 g de farine (biscuit)",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "farine (biscuit)"
+          },
+          {
+            "texte": "25 g de beurre fondu (biscuit)",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "beurre fondu (biscuit)"
+          },
+          {
+            "texte": "1 c. à café de cannelle (biscuit)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cannelle (biscuit)"
+          },
+          {
+            "texte": "80 g de chocolat blanc (croustillant)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "chocolat blanc (croustillant)"
+          },
+          {
+            "texte": "30 g de beurre fondu (croustillant)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre fondu (croustillant)"
+          },
+          {
+            "texte": "150 g de biscuits spéculoos (croustillant)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "biscuits spéculoos (croustillant)"
+          },
+          {
+            "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+            "valeur": 0.75,
+            "unite": "L",
+            "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
+          },
+          {
+            "texte": "150 g de mascarpone bien froid (mousse)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "mascarpone bien froid (mousse)"
+          },
+          {
+            "texte": "90 g de sucre glace (mousse)",
+            "valeur": 90,
+            "unite": "g",
+            "reste": "sucre glace (mousse)"
+          },
+          {
+            "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+            "valeur": 8,
+            "unite": "g",
+            "reste": "gélatine (4 feuilles de 2 g) (mousse)"
+          },
+          {
+            "texte": "80 g de pâte de spéculoos (mousse)",
+            "valeur": 80,
+            "unite": "g",
+            "reste": "pâte de spéculoos (mousse)"
+          },
+          {
+            "texte": "1 c. à café de cannelle (mousse)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cannelle (mousse)"
+          },
+          {
+            "texte": "1 bombe de spray velours blanc (finition)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "bombe de spray velours blanc (finition)"
+          },
+          "décor : spéculoos, tranches de pomme séchées, cannelle"
+        ],
+        "etapes": [
+          "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+          "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+          "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+          "Insert pomme caramélisée (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+          "Éplucher les pommes et les couper en petits dés. Faire fondre le sucre à sec jusqu'à ambré, ajouter le beurre puis les pommes et cuire 10 minutes à feu moyen jusqu'à ce qu'elles soient tendres mais encore en morceaux.",
+          "Chauffer le jus de pomme, y faire fondre la gélatine essorée hors du feu, mélanger aux pommes, puis couler dans la gouttière à insert filmée.",
+          "Congeler l'insert pomme au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon.",
+          "Biscuit amande-cannelle : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+          "Incorporer délicatement à la spatule la poudre d'amande, la farine tamisée et la cannelle, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes jusqu'à ce qu'il soit doré.",
+          "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+          "Croustillant : faire fondre le chocolat blanc au bain-marie ou au micro-ondes par 30 secondes, ajouter le beurre fondu, puis incorporer les biscuits spéculoos en petits morceaux.",
+          "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+          "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+          "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée, la pâte de spéculoos et la cannelle. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+          "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+          "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+          "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+          "Démouler l'insert pomme congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+          "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+          "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+          "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+          "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+          "Finition : pulvériser le spray velours blanc à 20–30 cm, en passes régulières, pour l'effet velouté de la photo, puis décorer (copeaux ou feuilles de chocolat, cacao, étoiles).",
+          "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
+        ],
+        "mc": [
+          "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+          "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+          "Insert : faire tremper la gélatine. Faire le caramel à la casserole (le robot ne chauffe pas assez), y cuire les pommes en dés 10 minutes. Mettre le jus de pomme dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée, <b>20 s / vitesse 3</b>, mélanger aux pommes, couler dans la gouttière à insert et congeler une nuit.",
+          "Biscuit amande-cannelle : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la poudre d'amande, la farine et la cannelle puis le beurre fondu. Étaler et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+          "Croustillant : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le beurre fondu et mélanger <b>10 s / vitesse 3</b>, puis les biscuits spéculoos et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+          "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée, la pâte de spéculoos et la cannelle, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+          "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+          "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+          "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+        ]
       },
       {
-        "texte": "250 ml de crème liquide entière",
-        "valeur": 250,
-        "unite": "ml",
-        "reste": "crème liquide entière"
-      },
-      {
-        "texte": "50 g de sucre",
-        "valeur": 50,
-        "unite": "g",
-        "reste": "sucre"
-      },
-      {
-        "texte": "150 g de caprice des dieux",
-        "valeur": 150,
-        "unite": "g",
-        "reste": "caprice des dieux"
-      },
-      {
-        "texte": "20 g de beurre maison mou",
-        "valeur": 20,
-        "unite": "g",
-        "reste": "beurre maison mou"
-      },
-      {
-        "texte": "1 c. à café d'extrait de vanille",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "extrait de vanille"
-      },
-      {
-        "texte": "60 g de chocolat noir fondu",
-        "valeur": 60,
-        "unite": "g",
-        "reste": "chocolat noir fondu"
+        "nom": "Roulée crème au caprice des dieux (ancienne recette)",
+        "temps": "35 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "200 g de spéculoos",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "spéculoos"
+          },
+          {
+            "texte": "250 ml de crème liquide entière",
+            "valeur": 250,
+            "unite": "ml",
+            "reste": "crème liquide entière"
+          },
+          {
+            "texte": "50 g de sucre",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "150 g de caprice des dieux",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "caprice des dieux"
+          },
+          {
+            "texte": "20 g de beurre maison mou",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre maison mou"
+          },
+          {
+            "texte": "1 c. à café d'extrait de vanille",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "extrait de vanille"
+          },
+          {
+            "texte": "60 g de chocolat noir fondu",
+            "valeur": 60,
+            "unite": "g",
+            "reste": "chocolat noir fondu"
+          }
+        ],
+        "etapes": [
+          "Placer les spéculoos dans un robot et les réduire en fine poudre.",
+          "Ajouter progressivement 150 ml de crème liquide dans le bol et mixer jusqu'à obtenir une pâte homogène.",
+          "Tapisser une plaque à pâtisserie de papier cuisson.",
+          "Étaler la pâte de spéculoos sur environ 1 cm d'épaisseur pour former la base.",
+          "Enfourner à four préchauffé à 180°C pendant 8 à 10 minutes jusqu'à ce que la base soit juste dorée.",
+          "Préparer la crème : fouetter les 100 ml de crème liquide restants en chantilly. Dans un autre bol, fouetter le caprice des dieux avec le sucre, le beurre mou et la vanille, puis incorporer délicatement la chantilly.",
+          "Une fois la base légèrement refroidie, badigeonner de crème et rouler délicatement en formant une bûche.",
+          "Étaler le reste de crème sur la bûche et rayer légèrement la surface avec une fourchette.",
+          "Faire fondre le chocolat et le répartir en filet sur la surface de la bûche."
+        ],
+        "mc": [
+          "Mettre les spéculoos dans le bol. Mixer <b>15 s / vitesse 8</b>.",
+          "Ajouter 150 ml de crème et mélanger <b>20 s / vitesse 4</b>. Étaler sur 1 cm sur une plaque et cuire 8 à 10 minutes à 180 °C.",
+          "Bol propre et froid, insérer le fouet. Fouetter les 100 ml de crème restants <b>vitesse 4</b> en surveillant. Réserver la chantilly.",
+          "Mettre le caprice des dieux, le sucre, le beurre mou et la vanille dans le bol. Mélanger <b>20 s / vitesse 4</b>, puis ajouter la chantilly et mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+          "Garnir la base tiède, rouler, couvrir de crème et décorer de chocolat fondu (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>)."
+        ]
       }
-    ],
-    "etapes": [
-      "Placer les spéculoos dans un robot et les réduire en fine poudre.",
-      "Ajouter progressivement 150 ml de crème liquide dans le bol et mixer jusqu'à obtenir une pâte homogène.",
-      "Tapisser une plaque à pâtisserie de papier cuisson.",
-      "Étaler la pâte de spéculoos sur environ 1 cm d'épaisseur pour former la base.",
-      "Enfourner à four préchauffé à 180°C pendant 8 à 10 minutes jusqu'à ce que la base soit juste dorée.",
-      "Préparer la crème : fouetter les 100 ml de crème liquide restants en chantilly. Dans un autre bol, fouetter le caprice des dieux avec le sucre, le beurre mou et la vanille, puis incorporer délicatement la chantilly.",
-      "Une fois la base légèrement refroidie, badigeonner de crème et rouler délicatement en formant une bûche.",
-      "Étaler le reste de crème sur la bûche et rayer légèrement la surface avec une fourchette.",
-      "Faire fondre le chocolat et le répartir en filet sur la surface de la bûche."
-    ],
-    "mc": [
-      "Mettre les spéculoos dans le bol. Mixer <b>15 s / vitesse 8</b>.",
-      "Ajouter 150 ml de crème et mélanger <b>20 s / vitesse 4</b>. Étaler sur 1 cm sur une plaque et cuire 8 à 10 minutes à 180 °C.",
-      "Bol propre et froid, insérer le fouet. Fouetter les 100 ml de crème restants <b>vitesse 4</b> en surveillant. Réserver la chantilly.",
-      "Mettre le caprice des dieux, le sucre, le beurre mou et la vanille dans le bol. Mélanger <b>20 s / vitesse 4</b>, puis ajouter la chantilly et mélanger <b>10 s / sens inverse / vitesse 2</b>.",
-      "Garnir la base tiède, rouler, couvrir de crème et décorer de chocolat fondu (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>)."
     ]
   },
   {
@@ -6488,66 +7272,181 @@ const recettes = [
     "titre": "Bûche tiramisu",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "temps": "30 min (+ 6 h au frais)",
-    "personnes": "8",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
     "ingredients": [
       {
-        "texte": "500 g de mascarpone",
-        "valeur": 500,
-        "unite": "g",
-        "reste": "mascarpone"
+        "texte": "0,2 L de lait entier (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "lait entier (insert)"
       },
       {
-        "texte": "4 œufs",
+        "texte": "0,2 L de crème liquide entière (insert)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "crème liquide entière (insert)"
+      },
+      {
+        "texte": "4 jaunes d'œufs (insert)",
         "valeur": 4,
         "unite": null,
-        "reste": "œufs"
+        "reste": "jaunes d'œufs (insert)"
       },
       {
-        "texte": "100 g de sucre",
+        "texte": "50 g de sucre (insert)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "sucre (insert)"
+      },
+      {
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (insert)",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "gélatine (4 feuilles de 2 g) (insert)"
+      },
+      {
+        "texte": "0,06 L de café expresso très fort (insert)",
+        "valeur": 0.06,
+        "unite": "L",
+        "reste": "café expresso très fort (insert)"
+      },
+      {
+        "texte": "1 c. à café de café soluble (insert)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "café soluble (insert)"
+      },
+      {
+        "texte": "4 œufs (biscuit)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs (biscuit)"
+      },
+      {
+        "texte": "90 g de sucre (biscuit)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre (biscuit)"
+      },
+      {
+        "texte": "60 g de poudre d'amande (biscuit)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "poudre d'amande (biscuit)"
+      },
+      {
+        "texte": "50 g de farine (biscuit)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "farine (biscuit)"
+      },
+      {
+        "texte": "25 g de beurre fondu (biscuit)",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "beurre fondu (biscuit)"
+      },
+      {
+        "texte": "0,05 L de café froid sucré pour imbiber (biscuit)",
+        "valeur": 0.05,
+        "unite": "L",
+        "reste": "café froid sucré pour imbiber (biscuit)"
+      },
+      {
+        "texte": "80 g de chocolat noir (croustillant)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chocolat noir (croustillant)"
+      },
+      {
+        "texte": "60 g de praliné noisette (croustillant)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "praliné noisette (croustillant)"
+      },
+      {
+        "texte": "70 g de crêpes dentelle (type Gavottes) (croustillant)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "crêpes dentelle (type Gavottes) (croustillant)"
+      },
+      {
+        "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+        "valeur": 0.75,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
+      },
+      {
+        "texte": "300 g de mascarpone bien froid (mousse)",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "mascarpone bien froid (mousse)"
+      },
+      {
+        "texte": "100 g de sucre glace (mousse)",
         "valeur": 100,
         "unite": "g",
-        "reste": "sucre"
+        "reste": "sucre glace (mousse)"
       },
       {
-        "texte": "30 biscuits à la cuillère",
-        "valeur": 30,
-        "unite": null,
-        "reste": "biscuits à la cuillère"
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "gélatine (4 feuilles de 2 g) (mousse)"
       },
       {
-        "texte": "300 ml de café fort refroidi",
-        "valeur": 300,
-        "unite": "ml",
-        "reste": "café fort refroidi"
-      },
-      {
-        "texte": "3 cl d'amaretto (facultatif)",
-        "valeur": 3,
-        "unite": "cl",
-        "reste": "amaretto (facultatif)"
-      },
-      "cacao en poudre",
-      {
-        "texte": "1 pincée de sel",
+        "texte": "1 c. à soupe d'amaretto (facultatif) (mousse)",
         "valeur": 1,
-        "unite": "pincée",
-        "reste": "sel"
-      }
+        "unite": "c. à soupe",
+        "reste": "amaretto (facultatif) (mousse)"
+      },
+      {
+        "texte": "30 g de cacao non sucré (finition)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "cacao non sucré (finition)"
+      },
+      "décor : grains de café en chocolat, feuilles de chocolat"
     ],
     "etapes": [
-      "Chemiser un moule à cake ou à bûche de film alimentaire en le laissant dépasser.",
-      "Séparer les œufs. Fouetter les jaunes avec le sucre, puis ajouter le mascarpone.",
-      "Monter les blancs en neige avec le sel et les incorporer délicatement.",
-      "Tremper rapidement les biscuits dans le café (et l’amaretto), et alterner couches de biscuits et de crème dans le moule, en finissant par des biscuits.",
-      "Réfrigérer au moins 6 heures, démouler sur le plat, couvrir de crème restante, saupoudrer de cacao et dessiner des stries à la fourchette."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Insert crémeux (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer le lait et la crème de l'insert. Fouetter les jaunes avec le sucre, verser le lait chaud dessus en fouettant, remettre dans la casserole et cuire à feu doux sans cesser de remuer jusqu'à 82 °C (la crème nappe la cuillère). Ne pas faire bouillir.",
+      "Hors du feu, ajouter la gélatine essorée, le café et le café soluble, mixer 30 secondes pour un crémeux bien lisse, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert café au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit amande : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la poudre d'amande, la farine tamisée, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes jusqu'à ce qu'il soit doré.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Le jour du montage, imbiber légèrement la bande de biscuit côté mie avec 0,05 L de café froid sucré (et un trait d'amaretto si on veut).",
+      "Croustillant : faire fondre le chocolat noir au bain-marie ou au micro-ondes par 30 secondes, ajouter le praliné, puis incorporer les crêpes dentelle (type Gavottes) en petits morceaux.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée et l'amaretto. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+      "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+      "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert café congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : saupoudrer généreusement de cacao en poudre à travers une passoire fine, puis décorer de grains de café et de feuilles de chocolat.",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
     ],
     "mc": [
-      "Chemiser un moule à cake ou à bûche de film alimentaire.",
-      "Insérer le fouet. Mettre les blancs d'œufs et le sel dans le bol, fouetter <b>3 min / vitesse 4</b>. Retirer et réserver les blancs.",
-      "Mettre les jaunes et le sucre dans le bol, fouetter <b>2 min / vitesse 4</b>. Ajouter le mascarpone, mélanger <b>20 s / vitesse 3</b>. Retirer le fouet.",
-      "Incorporer les blancs à la spatule.",
-      "Monter la bûche en alternant biscuits trempés dans le café et crème, réfrigérer au moins 6 heures, démouler et saupoudrer de cacao."
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert crémeux : faire tremper la gélatine. Mettre le lait, la crème, les jaunes et le sucre dans le bol, cuire <b>8 min / 80 °C / vitesse 3</b>.",
+      "Ajouter la gélatine essorée, le café et le café soluble, mixer <b>30 s / vitesse 5</b>. Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit).",
+      "Biscuit amande : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la poudre d'amande, la farine puis le beurre fondu. Étaler et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le praliné et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée et l'amaretto, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+      "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
     ]
   },
   {
@@ -17388,10 +18287,67 @@ const recettes = [
   },
   {
     "id": "static-489",
-    "titre": "Foie gras mi-cuit maison",
+    "titre": "Foie gras maison (classique ou végétal)",
     "photo": "photos/enattente.png",
     "cat": "entree",
     "variantes": [
+      {
+        "nom": "Mi-cuit en terrine au four",
+        "temps": "1 h 30 (+ 3 h à température ambiante et 48 h au réfrigérateur)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "600 g de foie gras de canard cru extra (1 beau lobe)",
+            "valeur": 600,
+            "unite": "g",
+            "reste": "foie gras de canard cru extra (1 beau lobe)"
+          },
+          {
+            "texte": "8 g de sel fin",
+            "valeur": 8,
+            "unite": "g",
+            "reste": "sel fin"
+          },
+          {
+            "texte": "2 g de poivre blanc moulu",
+            "valeur": 2,
+            "unite": "g",
+            "reste": "poivre blanc moulu"
+          },
+          {
+            "texte": "1 g de sucre",
+            "valeur": 1,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "0,03 L de cognac, porto ou sauternes (facultatif)",
+            "valeur": 0.03,
+            "unite": "L",
+            "reste": "cognac, porto ou sauternes (facultatif)"
+          },
+          "pour servir : pain d'épices ou pain de campagne grillé, fleur de sel, chutney de figues"
+        ],
+        "etapes": [
+          "Matériel : une terrine de 0,6 L environ (avec couvercle) et un plat allant au four pour le bain-marie. Il faut commencer 3 jours avant de servir.",
+          "Sortir le foie gras 2 à 3 h avant : il doit être à température ambiante et souple, sinon il casse au déveinage.",
+          "Déveiner : séparer les deux lobes, ouvrir chaque lobe par le dessous et retirer les grosses veines en les tirant doucement, en appuyant avec le dos d'une petite cuillère. Ne pas chercher à tout retirer : les fines veines fondent à la cuisson.",
+          "Mélanger le sel, le poivre et le sucre, en saupoudrer le foie sur toutes ses faces, puis l'arroser d'alcool si on en met.",
+          "Tasser le foie dans la terrine, face lisse au-dessus, en appuyant bien pour chasser l'air. Filmer et laisser reposer 1 h au réfrigérateur (ou une nuit).",
+          "Préchauffer le four à 100 °C. Poser la terrine (sans couvercle) dans le plat, verser de l'eau chaude à 70 °C dans le plat jusqu'à mi-hauteur de la terrine.",
+          "Cuire 35 à 40 minutes : le cœur du foie doit atteindre 52 °C au thermomètre (mi-cuit). Sans thermomètre, la graisse doit juste commencer à remonter sur les bords.",
+          "Sortir la terrine, retirer un peu de graisse fondue et la garder. Poser un carton coupé à la taille de la terrine, enveloppé de film, avec un poids léger (200 g) dessus et laisser refroidir 1 h.",
+          "Retirer le poids, couler la graisse gardée sur le dessus pour protéger le foie, couvrir et réfrigérer 48 h avant de déguster (il se garde 6 à 7 jours au froid).",
+          "Pour servir, trancher avec un couteau passé sous l'eau chaude et essuyé entre chaque tranche, et parsemer de fleur de sel et de poivre."
+        ],
+        "mc": [
+          "Le Monsieur Cuisine remplace le four : le foie cuit en boudin à basse température dans l'eau. Préparer, déveiner et assaisonner le foie comme dans la version classique (2 à 3 h à température ambiante avant).",
+          "Rouler le foie très serré en boudin dans 3 couches de film alimentaire, en chassant l'air et en nouant bien les extrémités.",
+          "Mettre 1,5 L d'eau dans le bol et chauffer <b>10 min / 65 °C / vitesse 1</b>.",
+          "Mettre le boudin dans le panier de cuisson, l'insérer dans le bol (le boudin doit être dans l'eau) et cuire <b>40 min / 60 °C / vitesse 1</b>.",
+          "Plonger aussitôt le boudin 5 minutes dans de l'eau glacée, puis le réfrigérer 48 h avant de trancher."
+        ]
+      },
       {
         "nom": "Au torchon",
         "temps": "30 min (+ 48 h de repos)",
@@ -17484,6 +18440,124 @@ const recettes = [
         ],
         "mc": [
           "Pas besoin du Monsieur Cuisine pour cette version : le foie gras se poêle, suivre la version classique."
+        ]
+      },
+      {
+        "nom": "Végétal (sans foie, noix de cajou et champignons)",
+        "temps": "40 min (+ 4 h de trempage et 12 h au réfrigérateur)",
+        "personnes": "8",
+        "ingredients": [
+          {
+            "texte": "150 g de noix de cajou nature (non salées)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "noix de cajou nature (non salées)"
+          },
+          {
+            "texte": "200 g de champignons de Paris",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "champignons de Paris"
+          },
+          {
+            "texte": "1 échalote",
+            "valeur": 1,
+            "unite": null,
+            "reste": "échalote"
+          },
+          {
+            "texte": "1 c. à soupe d'huile d'olive",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          {
+            "texte": "0,03 L de cognac ou porto",
+            "valeur": 0.03,
+            "unite": "L",
+            "reste": "cognac ou porto"
+          },
+          {
+            "texte": "90 g d'huile de coco désodorisée (sans goût de coco)",
+            "valeur": 90,
+            "unite": "g",
+            "reste": "huile de coco désodorisée (sans goût de coco)"
+          },
+          {
+            "texte": "1 c. à soupe de miso blanc (ou 1 c. à soupe de sauce soja)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "miso blanc (ou 1 c. à soupe de sauce soja)"
+          },
+          {
+            "texte": "1 c. à soupe de jus de citron",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "jus de citron"
+          },
+          {
+            "texte": "1 c. à café de levure maltée (facultatif, pour le goût)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "levure maltée (facultatif, pour le goût)"
+          },
+          {
+            "texte": "6 g de sel fin",
+            "valeur": 6,
+            "unite": "g",
+            "reste": "sel fin"
+          },
+          {
+            "texte": "1 g de poivre blanc moulu",
+            "valeur": 1,
+            "unite": "g",
+            "reste": "poivre blanc moulu"
+          },
+          {
+            "texte": "1 pincée de quatre-épices",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "quatre-épices"
+          },
+          {
+            "texte": "1 pincée de curcuma (pour la couleur)",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "curcuma (pour la couleur)"
+          },
+          {
+            "texte": "0,1 L d'eau (agar-agar)",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "eau (agar-agar)"
+          },
+          {
+            "texte": "2 g d'agar-agar (agar-agar)",
+            "valeur": 2,
+            "unite": "g",
+            "reste": "agar-agar (agar-agar)"
+          },
+          "pour servir : pain d'épices grillé, fleur de sel, chutney de figues"
+        ],
+        "etapes": [
+          "Matériel : une petite terrine ou un moule à cake de 0,5 L, et un mixeur puissant.",
+          "Faire tremper les noix de cajou 4 h dans de l'eau froide (ou 15 minutes dans de l'eau bouillante), puis les égoutter.",
+          "Émincer l'échalote et les champignons. Les faire revenir 8 minutes dans l'huile d'olive à feu moyen, jusqu'à ce que l'eau des champignons soit évaporée.",
+          "Déglacer avec le cognac ou le porto et laisser réduire 1 minute.",
+          "Faire fondre l'huile de coco. Mixer longuement les noix de cajou, les champignons, l'huile de coco, le miso, le citron, la levure maltée, le sel, le poivre, le quatre-épices et le curcuma, jusqu'à une crème parfaitement lisse.",
+          "Dans une petite casserole, délayer l'agar-agar dans l'eau, porter à ébullition et laisser bouillir 1 minute en remuant (sinon il ne prend pas).",
+          "Verser aussitôt l'agar-agar dans le mixeur et mixer encore 30 secondes.",
+          "Couler dans la terrine filmée, lisser, couvrir et réfrigérer au moins 12 h. Il se garde 5 jours au froid.",
+          "Démouler, trancher avec un couteau passé sous l'eau chaude et servir avec du pain d'épices grillé et de la fleur de sel."
+        ],
+        "mc": [
+          "Faire tremper les noix de cajou 4 h dans de l'eau froide, puis les égoutter.",
+          "Mettre l'échalote épluchée dans le bol, hacher <b>5 s / vitesse 5</b>. Ajouter l'huile d'olive et faire revenir <b>3 min / 120 °C / vitesse 1</b>.",
+          "Ajouter les champignons coupés en quatre, hacher <b>4 s / vitesse 5</b>, puis cuire <b>10 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet pour que l'eau s'évapore.",
+          "Ajouter le cognac ou le porto et cuire <b>2 min / 100 °C / sens inverse / vitesse 1</b>.",
+          "Ajouter les noix de cajou, l'huile de coco, le miso, le citron, la levure maltée, le sel, le poivre, le quatre-épices et le curcuma, mixer <b>1 min 30 / vitesse 10</b> en montant progressivement, jusqu'à une crème lisse.",
+          "Dans une petite casserole, délayer l'agar-agar dans l'eau et faire bouillir 1 minute. Le verser dans le bol et mixer <b>30 s / vitesse 8</b>.",
+          "Couler dans la terrine filmée et réfrigérer au moins 12 h avant de démouler et de trancher."
         ]
       }
     ]
@@ -46622,6 +47696,181 @@ const recettes = [
       "Faire fermenter 8 à 10 heures au chaud (yaourtière, four éteint lumière allumée), puis réfrigérer comme dans la version classique."
     ],
     "portion": "pots"
+  },
+  {
+    "id": "static-692",
+    "titre": "Bûche mangue-passion et coco",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
+    "ingredients": [
+      {
+        "texte": "350 g de purée de mangue (mangues bien mûres mixées) (insert)",
+        "valeur": 350,
+        "unite": "g",
+        "reste": "purée de mangue (mangues bien mûres mixées) (insert)"
+      },
+      {
+        "texte": "100 g de pulpe de fruits de la passion (environ 6 fruits, passée au tamis) (insert)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "pulpe de fruits de la passion (environ 6 fruits, passée au tamis) (insert)"
+      },
+      {
+        "texte": "40 g de sucre (insert)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre (insert)"
+      },
+      {
+        "texte": "10 g de gélatine (5 feuilles de 2 g) (insert)",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "gélatine (5 feuilles de 2 g) (insert)"
+      },
+      {
+        "texte": "4 œufs (biscuit)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs (biscuit)"
+      },
+      {
+        "texte": "90 g de sucre (biscuit)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre (biscuit)"
+      },
+      {
+        "texte": "60 g de poudre d'amande (biscuit)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "poudre d'amande (biscuit)"
+      },
+      {
+        "texte": "50 g de farine (biscuit)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "farine (biscuit)"
+      },
+      {
+        "texte": "25 g de beurre fondu (biscuit)",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "beurre fondu (biscuit)"
+      },
+      {
+        "texte": "50 g de noix de coco râpée (biscuit)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "noix de coco râpée (biscuit)"
+      },
+      {
+        "texte": "80 g de chocolat blanc (croustillant)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "chocolat blanc (croustillant)"
+      },
+      {
+        "texte": "20 g d'huile de coco ou beurre fondu (croustillant)",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "huile de coco ou beurre fondu (croustillant)"
+      },
+      {
+        "texte": "70 g de crêpes dentelle (type Gavottes) (croustillant)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "crêpes dentelle (type Gavottes) (croustillant)"
+      },
+      {
+        "texte": "30 g de noix de coco râpée toastée (croustillant)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "noix de coco râpée toastée (croustillant)"
+      },
+      {
+        "texte": "0,75 L de crème liquide entière à 30 % minimum, bien froide (mousse)",
+        "valeur": 0.75,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse)"
+      },
+      {
+        "texte": "150 g de mascarpone bien froid (mousse)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "mascarpone bien froid (mousse)"
+      },
+      {
+        "texte": "90 g de sucre glace (mousse)",
+        "valeur": 90,
+        "unite": "g",
+        "reste": "sucre glace (mousse)"
+      },
+      {
+        "texte": "8 g de gélatine (4 feuilles de 2 g) (mousse)",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "gélatine (4 feuilles de 2 g) (mousse)"
+      },
+      {
+        "texte": "0,1 L de lait de coco (en plus, versé dans la crème chaude) (mousse)",
+        "valeur": 0.1,
+        "unite": "L",
+        "reste": "lait de coco (en plus, versé dans la crème chaude) (mousse)"
+      },
+      {
+        "texte": "1 gousse de vanille (ou 2 c. à café d'extrait) (mousse)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "gousse de vanille (ou 2 c. à café d'extrait) (mousse)"
+      },
+      {
+        "texte": "1 bombe de spray velours blanc (finition)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "bombe de spray velours blanc (finition)"
+      },
+      "décor : dés de mangue, graines de passion, coco râpée"
+    ],
+    "etapes": [
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Insert (la veille, ou 2 jours avant) : faire tremper la gélatine de l'insert 10 minutes dans de l'eau très froide.",
+      "Chauffer un quart de la purée de mangue (mangues bien mûres mixées) avec le sucre jusqu'à ce qu'il fonde (sans bouillir), puis y faire fondre la gélatine essorée hors du feu.",
+      "Ajouter le reste de purée de mangue et la pulpe de passion, bien mélanger, puis couler dans la gouttière à insert filmée.",
+      "Congeler l'insert mangue-passion au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon. Le surplus peut être congelé en petits ronds pour des verrines.",
+      "Biscuit coco : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la poudre d'amande, la farine tamisée et la noix de coco râpée, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes jusqu'à ce qu'il soit doré.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat blanc au bain-marie ou au micro-ondes par 30 secondes, ajouter l'huile de coco, puis incorporer les crêpes dentelle (type Gavottes) en petits morceaux et la noix de coco toastée à la poêle.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse (à faire juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Chauffer 0,1 L de la crème de la mousse jusqu'à frémissement, hors du feu y faire fondre la gélatine essorée, le lait de coco et les graines de vanille. Laisser tiédir 10 minutes (le mélange doit rester liquide).",
+      "Fouetter le reste de crème bien froide avec le mascarpone et le sucre glace en chantilly souple (elle doit former un bec qui retombe un peu).",
+      "Verser le mélange à la gélatine tiède en filet sur la chantilly en fouettant doucement, puis fouetter encore quelques secondes jusqu'à ce que la mousse soit lisse et tienne. Monter la bûche tout de suite.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert mangue-passion congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : pulvériser le spray velours blanc à 20–30 cm, en passes régulières, pour l'effet velouté de la photo, puis décorer (copeaux ou feuilles de chocolat, cacao, étoiles).",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
+    ],
+    "mc": [
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Insert : faire tremper la gélatine. Mettre la purée de mangue (mangues bien mûres mixées) et le sucre dans le bol, chauffer <b>4 min / 50 °C / vitesse 2</b>. Ajouter la gélatine essorée et la pulpe de passion, mélanger <b>20 s / vitesse 3</b>.",
+      "Couler dans la gouttière à insert filmée et congeler au moins 6 h (une nuit), jusqu'à ce qu'il soit dur.",
+      "Biscuit coco : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la poudre d'amande, la farine et la noix de coco râpée puis le beurre fondu. Étaler et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter l'huile de coco et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse : faire tremper la gélatine 10 minutes. Mettre 0,1 L de crème dans le bol, chauffer <b>2 min / 60 °C / vitesse 2</b>, ajouter la gélatine essorée, le lait de coco et les graines de vanille, mélanger <b>20 s / vitesse 3</b> et verser dans un bol. Laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
+      "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ]
   }
 ];
 
