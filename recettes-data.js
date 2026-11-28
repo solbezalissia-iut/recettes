@@ -2,7 +2,7 @@ const recettes = [
   {
     "id": "static-621",
     "titre": "Affogato",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-621.webp",
     "cat": "dessert",
     "temps": "5 min",
     "personnes": "1",
@@ -38,7 +38,7 @@ const recettes = [
   {
     "id": "static-659",
     "titre": "Alloco (bananes plantain frites)",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-659.webp",
     "cat": "accompagnement",
     "temps": "20 min",
     "personnes": "4",
@@ -93,7 +93,7 @@ const recettes = [
   {
     "id": "static-598",
     "titre": "Amaretto sour",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-598.webp",
     "cat": "boisson",
     "temps": "5 min",
     "personnes": "1",
@@ -133,12 +133,13 @@ const recettes = [
       "Mettre l'amaretto, le jus de citron, le sirop de sucre et le blanc d'œuf dans le bol (sans glaçons).",
       "Mixer <b>20 s / vitesse 4</b> pour faire mousser le blanc.",
       "Verser dans un verre bas rempli de glaçons et décorer d'une cerise."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-561",
     "titre": "Aperol Spritz",
-    "photo": "photos/aperolcerises.png",
+    "photo": "photos/site/static-561.webp",
     "cat": "boisson",
     "variantes": [
       {
@@ -179,7 +180,9 @@ const recettes = [
         ],
         "mc": [
           "Pas besoin du Monsieur Cuisine pour ce cocktail : suivre la version classique (règle 3-2-1 directement dans le verre)."
-        ]
+        ],
+        "photo": "photos/site/static-561-v0.webp",
+        "photoDetouree": true
       },
       {
         "nom": "Glacé aux cerises",
@@ -226,14 +229,16 @@ const recettes = [
           "Mettre les cerises congelées, l'Aperol, le Prosecco, l'eau pétillante et la gomme xanthane dans le bol.",
           "Mixer <b>30 s / vitesse 5 à 8</b> en augmentant progressivement, jusqu'à obtenir une texture lisse.",
           "Verser sur la glace pilée et décorer d'une cerise."
-        ]
+        ],
+        "photo": "photos/site/static-561-v1.webp"
       }
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-1",
     "titre": "Arepas au fromage fondant façon Encanto",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-1.webp",
     "temps": "30 min",
     "personnes": "4",
     "cat": "apero",
@@ -275,7 +280,7 @@ const recettes = [
   {
     "id": "static-509",
     "titre": "Aubergines à la parmigiana",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-509.webp",
     "cat": "plat",
     "temps": "1 h 15",
     "personnes": "4",
@@ -330,7 +335,7 @@ const recettes = [
   {
     "id": "static-2",
     "titre": "Avocado toast personnalisable",
-    "photo": "photos/avocadotoast.png",
+    "photo": "photos/site/static-2.webp",
     "temps": "20 min",
     "personnes": "4",
     "cat": "entree",
@@ -410,7 +415,7 @@ const recettes = [
   {
     "id": "static-543",
     "titre": "Avocats aux crevettes",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-543.webp",
     "cat": "entree",
     "temps": "15 min",
     "personnes": "4",
@@ -463,7 +468,7 @@ const recettes = [
   {
     "id": "static-3",
     "titre": "Avocats farcis au thon et caprice des dieux",
-    "photo": "photos/avocatsthoncaprice.png",
+    "photo": "photos/site/static-3.webp",
     "temps": "15 min",
     "personnes": "6",
     "cat": "entree",
@@ -516,7 +521,7 @@ const recettes = [
   {
     "id": "static-4",
     "titre": "Bagel thon et caprice des dieux",
-    "photo": "photos/bagelthoncaprice.png",
+    "photo": "photos/site/static-4.webp",
     "temps": "10 min",
     "personnes": "1",
     "cat": "plat",
@@ -713,7 +718,7 @@ const recettes = [
   {
     "id": "static-593",
     "titre": "Bahama Mama",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-593.webp",
     "cat": "boisson",
     "temps": "5 min",
     "personnes": "1",
@@ -764,12 +769,13 @@ const recettes = [
     "mc": [
       "Mettre le rhum, le Malibu, la liqueur de café, le jus d'ananas et le jus d'orange dans le bol. Mélanger <b>10 s / vitesse 4</b>.",
       "Verser dans un verre haut rempli de glaçons, puis faire couler la grenadine qui tombe au fond."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-600",
     "titre": "Baileys milkshake",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-600.webp",
     "cat": "boisson",
     "temps": "5 min",
     "personnes": "1",
@@ -801,12 +807,13 @@ const recettes = [
     "mc": [
       "Mettre le Baileys, la glace et le lait froid dans le bol. Mixer <b>20 s / vitesse 6</b>.",
       "Verser dans un grand verre et couvrir de chantilly et de copeaux de chocolat."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-7",
     "titre": "Balles au fromage",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-7.webp",
     "temps": "25 min",
     "personnes": "4",
     "cat": "apero",
@@ -843,12 +850,13 @@ const recettes = [
       "Ajouter la mozzarella râpée et mélanger <b>20 s / sens inverse / vitesse 3</b>, en aidant avec la spatule si besoin.",
       "Former des boules de la taille d'une noix et les laisser se raffermir un peu.",
       "Les frire dans l'huile chaude jusqu'à ce qu'elles soient dorées."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-441",
     "titre": "Banana bread",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-441.webp",
     "cat": "dessert",
     "temps": "1 h 10",
     "personnes": "8",
@@ -926,12 +934,13 @@ const recettes = [
       "Ajouter les œufs, le sucre et le beurre fondu. Mélanger <b>20 s / vitesse 4</b>.",
       "Ajouter la farine, la levure, le bicarbonate, la cannelle et le sel. Mélanger <b>15 s / vitesse 4</b> sans plus.",
       "Ajouter les noix ou les pépites et mélanger <b>10 s / sens inverse / vitesse 2</b>. Verser dans le moule et cuire 50 à 55 minutes."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-620",
     "titre": "Banana split",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-620.webp",
     "cat": "dessert",
     "temps": "10 min",
     "personnes": "2",
@@ -966,12 +975,13 @@ const recettes = [
     "mc": [
       "Sauce chocolat : mettre 100 g de chocolat et 100 ml de crème dans le bol. Faire fondre <b>4 min / 50 °C / vitesse 2</b>.",
       "Couper les bananes en deux dans la longueur, ajouter 3 boules de glace, napper de sauce chocolat, puis chantilly, fruits secs et cerise."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-655",
     "titre": "Bananes fantômes et clémentines citrouilles",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-655.webp",
     "cat": "dessert",
     "temps": "10 min",
     "personnes": "6",
@@ -1007,7 +1017,8 @@ const recettes = [
     ],
     "fetes": [
       "halloween"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-660",
@@ -1053,7 +1064,8 @@ const recettes = [
         ],
         "mc": [
           "Pas besoin du Monsieur Cuisine pour cette recette : les bananes se rôtissent au four, suivre la version classique."
-        ]
+        ],
+        "photo": "photos/site/static-660-v0.webp"
       },
       {
         "nom": "Caramélisées (dessert)",
@@ -1101,14 +1113,15 @@ const recettes = [
         ],
         "mc": [
           "Pas besoin du Monsieur Cuisine pour cette recette : la caramélisation se fait à la poêle, suivre la version classique."
-        ]
+        ],
+        "photo": "photos/site/static-670.webp"
       }
     ]
   },
   {
     "id": "static-515",
     "titre": "Barres de céréales maison",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-515.webp",
     "cat": "dessert",
     "temps": "30 min (+ 1 h au frais)",
     "personnes": "12",
@@ -1170,12 +1183,13 @@ const recettes = [
       "Tasser fortement dans le moule et cuire 20 minutes.",
       "Laisser refroidir, ajouter les pépites de chocolat, réfrigérer 1 heure puis couper en barres."
     ],
-    "portion": "barres"
+    "portion": "barres",
+    "photoDetouree": true
   },
   {
     "id": "static-8",
     "titre": "Barres glacées façon Mars maison",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-8.webp",
     "temps": "55 min (+ 3 h de congélation)",
     "personnes": "6",
     "cat": "dessert",
@@ -1220,12 +1234,13 @@ const recettes = [
       "Rincer et bien sécher le bol. Insérer le fouet, mettre la crème bien froide et fouetter <b>vitesse 4</b> en surveillant (1 à 2 min) jusqu'à une crème mousseuse. Ajouter le lait concentré chocolat et mélanger <b>10 s / vitesse 2</b>.",
       "Verser dans les cavités et laisser prendre 3 heures au congélateur.",
       "Faire fondre 100 g de chocolat au lait (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>), enrober les barres démoulées et remettre 10 minutes au congélateur."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-9",
     "titre": "Barres moelleuses Kinder et Nutella maison",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-9.webp",
     "temps": "50 min",
     "personnes": "12",
     "cat": "dessert",
@@ -1315,11 +1330,12 @@ const recettes = [
       "Ajouter la farine, la levure et le sel. Mélanger <b>20 s / vitesse 4</b>.",
       "Étaler la moitié de la pâte dans le moule, ajouter les Kinder mini et le Nutella, puis le reste de la pâte et les pépites.",
       "Cuire 25 à 30 minutes et laisser refroidir complètement avant de couper."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-688",
-    "photo": "photos/brunsli.jpg",
+    "photo": "photos/site/static-688.webp",
     "titre": "Basler Brunsli (bruns de Bâle)",
     "cat": "dessert",
     "temps": "35 min (+ 3 h de séchage)",
@@ -1385,12 +1401,13 @@ const recettes = [
     "portion": "biscuits",
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-10",
     "titre": "Bâtonnet de glace",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-10.webp",
     "temps": "240 min",
     "personnes": "4",
     "cat": "dessert",
@@ -1434,12 +1451,13 @@ const recettes = [
       "Ajouter les fruits coupés en morceaux et mélanger <b>10 s / sens inverse / vitesse 2</b> (ou <b>5 s / vitesse 5</b> pour des fruits mixés).",
       "Verser dans les moules, ajouter les bâtonnets et congeler au moins 4 heures.",
       "Mettre le chocolat noir dans le bol propre. Hacher <b>10 s / vitesse 7</b>, puis faire fondre <b>4 min / 50 °C / vitesse 2</b>. Tremper les glaces et remettre 30 minutes au congélateur."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-676",
     "titre": "Bâtonnets feuilletés au cheddar et au bacon",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-676.webp",
     "cat": "apero",
     "temps": "40 min",
     "personnes": "4",
@@ -1478,12 +1496,13 @@ const recettes = [
       "Mettre le cheddar en morceaux dans le bol et râper <b>8 s / vitesse 6</b>. Ajouter le bacon et hacher <b>3 s / vitesse 5</b>.",
       "Répartir sur la pâte feuilletée, plier la pâte en deux et couper des bandes de 2 cm.",
       "Cuire 25 minutes sur une plaque recouverte de papier cuisson."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-11",
     "titre": "Béchamel maison",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-11.webp",
     "temps": "15 min",
     "personnes": "4",
     "cat": "base-culinaire",
@@ -1633,7 +1652,9 @@ const recettes = [
           "Laisser pousser 1 h 30 dans un grand bol fariné, couvert.",
           "Dégazer, étaler sur 1 cm, découper des disques de 9 cm et laisser pousser encore 1 h 30 sous un torchon.",
           "Frire environ 2 minutes par face dans l'huile à 160-170 °C, égoutter et enrober de sucre."
-        ]
+        ],
+        "photo": "photos/site/static-18-v0.webp",
+        "photoDetouree": true
       },
       {
         "nom": "Frits – Petites boules moelleuses",
@@ -2166,7 +2187,7 @@ const recettes = [
   {
     "id": "static-579",
     "titre": "Bellini",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-579.webp",
     "cat": "boisson",
     "temps": "3 min",
     "personnes": "1",
@@ -2192,12 +2213,13 @@ const recettes = [
     "mc": [
       "Purée de pêche maison : mettre 1 pêche blanche épluchée et dénoyautée dans le bol et mixer <b>20 s / vitesse 8</b>.",
       "Verser 5 cl de purée dans une flûte et compléter doucement avec le Prosecco. Mélanger une seule fois."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-19",
     "titre": "Beurre maison",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-19.webp",
     "temps": "10 min",
     "personnes": "10",
     "cat": "base-culinaire",
@@ -2228,12 +2250,13 @@ const recettes = [
       "Fouetter <b>vitesse 4</b> pendant 4 à 6 minutes, jusqu'à ce que le beurre se sépare du babeurre (le liquide). Retirer le fouet.",
       "Égoutter le beurre (garder le babeurre pour remplacer le lait dans d'autres recettes).",
       "Rincer le beurre à l'eau très froide, le presser dans un torchon, ajouter le sel et le conserver au réfrigérateur."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-484",
     "titre": "Bibimbap",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-484.webp",
     "cat": "plat",
     "temps": "45 min",
     "personnes": "2",
@@ -2331,7 +2354,7 @@ const recettes = [
   {
     "id": "static-20",
     "titre": "Big Mac Tacos",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-20.webp",
     "temps": "30 min",
     "personnes": "4",
     "cat": "plat",
@@ -2435,12 +2458,13 @@ const recettes = [
       "Ajouter la mayonnaise, la moutarde, le paprika, l'oignon en poudre et le sel. Mélanger <b>10 s / vitesse 3</b>. Réserver au frais.",
       "Cuire les steaks à la poêle, salés et poivrés, puis chauffer les tortillas 30 secondes par face.",
       "Assembler : steak, cheddar, cornichons, salade, oignon et une cuillère de sauce sur chaque tortilla."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-553",
     "titre": "Bircher muesli",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-553.webp",
     "cat": "dessert",
     "temps": "10 min (+ 1 nuit au frais)",
     "personnes": "2",
@@ -2497,7 +2521,7 @@ const recettes = [
   {
     "id": "static-21",
     "titre": "Biscuit roulé au cacao façon japonais",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-21.webp",
     "temps": "23 min",
     "personnes": "4",
     "cat": "dessert",
@@ -2557,12 +2581,13 @@ const recettes = [
       "Ajouter la farine et le cacao tamisés et incorporer délicatement à la spatule.",
       "Étaler finement sur la plaque et cuire 8 à 10 minutes.",
       "Rouler le biscuit chaud dans un torchon humide, laisser refroidir, dérouler, garnir et rouler à nouveau."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-381",
     "titre": "Biscuits au glaçage royal (recette de base)",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-381.webp",
     "temps": "75 min",
     "personnes": "12",
     "cat": "dessert",
@@ -2639,7 +2664,8 @@ const recettes = [
       "Étaler sur 5 mm, découper les formes et cuire 12 à 15 minutes à 180 °C.",
       "Glaçage royal : bol propre et sec, insérer le fouet. Mettre les blancs, le sucre glace et le jus de citron, puis fouetter <b>4 min / vitesse 4</b> jusqu'à un glaçage ferme et brillant.",
       "Glacer les biscuits refroidis et laisser sécher complètement."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-641",
@@ -2720,7 +2746,9 @@ const recettes = [
           "Ajouter la farine, les épices et le bicarbonate. Pétrir <b>40 s / mode pétrin</b>. Former une boule, filmer et réfrigérer 1 heure.",
           "Préchauffer le four à 180 °C. Étaler sur 5 mm, découper les bonshommes et cuire 8 à 10 minutes.",
           "Décorer au glaçage royal une fois refroidis."
-        ]
+        ],
+        "photo": "photos/site/static-641-v0.webp",
+        "photoDetouree": true
       },
       {
         "nom": "Au sirop doré, glaçage meringue et bonbons",
@@ -2834,7 +2862,7 @@ const recettes = [
   {
     "id": "static-675",
     "titre": "Biscuits aux fraises et à la cardamome",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-675.webp",
     "cat": "dessert",
     "temps": "39 min",
     "personnes": "12",
@@ -3540,7 +3568,7 @@ const recettes = [
   {
     "id": "static-30",
     "titre": "Bo bun au poulet",
-    "photo": "photos/bobun.png",
+    "photo": "photos/site/static-30.webp",
     "temps": "30 min",
     "personnes": "2",
     "cat": "plat",
@@ -5222,7 +5250,7 @@ const recettes = [
   {
     "id": "static-644",
     "titre": "Brochettes Père Noël (fraises et banane)",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-644.webp",
     "cat": "dessert",
     "temps": "15 min",
     "personnes": "8",
@@ -5655,7 +5683,7 @@ const recettes = [
   {
     "id": "static-51",
     "titre": "Bûche caramel beurre salé et spéculoos",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-51.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -5835,12 +5863,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-52",
     "titre": "Bûche chocolat-framboise avec croustillant praliné",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-52.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -5983,12 +6012,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-686",
     "titre": "Bûche cookie dough sans cuisson",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-686.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -6167,12 +6197,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-53",
     "titre": "Bûche de génoise douce et mousse légère",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-53.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -6327,12 +6358,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-637",
     "titre": "Bûche glacée vanille et fruits rouges",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-637.webp",
     "cat": "dessert",
     "temps": "3 h (+ 2 nuits de congélation)",
     "personnes": "10",
@@ -6466,12 +6498,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-54",
     "titre": "Bûche marron-vanille au croustillant de tuiles",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-54.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -6632,12 +6665,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-635",
     "titre": "Bûche praliné et croustillant",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-635.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -6816,7 +6850,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-634",
@@ -6976,7 +7011,9 @@ const recettes = [
           "Biscuit cacao : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la farine et le cacao tamisés puis le beurre fondu. Étaler sur la plaque et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
           "Croustillant : mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le praliné et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
           "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
-        ]
+        ],
+        "photo": "photos/site/static-634-v0.webp",
+        "photoDetouree": true
       },
       {
         "nom": "Roulée classique (ancienne recette)",
@@ -7235,7 +7272,9 @@ const recettes = [
           "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
           "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
           "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
-        ]
+        ],
+        "photo": "photos/site/static-55-v0.webp",
+        "photoDetouree": true
       },
       {
         "nom": "Roulée crème au caprice des dieux (ancienne recette)",
@@ -7312,7 +7351,7 @@ const recettes = [
   {
     "id": "static-636",
     "titre": "Bûche tiramisu",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-636.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -7492,7 +7531,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-508",
@@ -9659,7 +9699,7 @@ const recettes = [
   {
     "id": "static-492",
     "titre": "Chapon ou volaille de fête rôtie aux marrons",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-492.webp",
     "cat": "plat",
     "temps": "3 h 30",
     "personnes": "8",
@@ -9719,7 +9759,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-461",
@@ -12954,7 +12995,7 @@ const recettes = [
   {
     "id": "static-397",
     "titre": "Cookies mangue, chocolat blanc et noix, nappage mangue",
-    "photo": "photos/cookiesmangue.jpg",
+    "photo": "photos/site/static-397.webp",
     "temps": "2 h",
     "personnes": "12",
     "cat": "dessert",
@@ -13136,7 +13177,7 @@ const recettes = [
   {
     "id": "static-491",
     "titre": "Coquilles Saint-Jacques snackées",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-491.webp",
     "cat": "entree",
     "temps": "15 min",
     "personnes": "4",
@@ -13750,7 +13791,7 @@ const recettes = [
   {
     "id": "static-640",
     "titre": "Couronne de Noël caprese",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-640.webp",
     "cat": "apero",
     "temps": "15 min",
     "personnes": "8",
@@ -13794,12 +13835,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-104",
     "titre": "Couronne feuilletée au chèvre, miel et lard",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-104.webp",
     "temps": "45 min",
     "personnes": "6",
     "cat": "apero",
@@ -13878,7 +13920,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-105",
@@ -17703,7 +17746,7 @@ const recettes = [
   {
     "id": "static-642",
     "titre": "Étoiles à la cannelle (Zimtsterne)",
-    "photo": "photos/zimtsterne.jpg",
+    "photo": "photos/site/static-642.webp",
     "cat": "dessert",
     "temps": "40 min (+ 1 h de repos)",
     "personnes": "30",
@@ -17755,7 +17798,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-480",
@@ -18473,7 +18517,9 @@ const recettes = [
           "Mettre 1,5 L d'eau dans le bol et chauffer <b>10 min / 65 °C / vitesse 1</b>.",
           "Mettre le boudin dans le panier de cuisson, l'insérer dans le bol (le boudin doit être dans l'eau) et cuire <b>40 min / 60 °C / vitesse 1</b>.",
           "Plonger aussitôt le boudin 5 minutes dans de l'eau glacée, puis le réfrigérer 48 h avant de trancher."
-        ]
+        ],
+        "photo": "photos/site/static-489-v0.webp",
+        "photoDetouree": true
       },
       {
         "nom": "Au torchon",
@@ -19401,7 +19447,7 @@ const recettes = [
   {
     "id": "static-444",
     "titre": "Galette des rois frangipane",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-444.webp",
     "cat": "dessert",
     "temps": "1 h",
     "personnes": "8",
@@ -19468,7 +19514,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-431",
@@ -28133,7 +28180,7 @@ const recettes = [
   {
     "id": "static-496",
     "titre": "Mendiants au chocolat",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-496.webp",
     "cat": "dessert",
     "temps": "30 min",
     "personnes": "20",
@@ -28488,7 +28535,7 @@ const recettes = [
   {
     "id": "static-380",
     "titre": "Mini biscuits de Noël façon Twix",
-    "photo": "photos/twixnoel.jpg",
+    "photo": "photos/site/static-380.webp",
     "temps": "54 min",
     "personnes": "24",
     "cat": "dessert",
@@ -30764,7 +30811,7 @@ const recettes = [
   {
     "id": "static-248",
     "titre": "Nuggets de poulet maison",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-248.webp",
     "cat": "accompagnement",
     "variantes": [
       {
@@ -31363,7 +31410,7 @@ const recettes = [
   {
     "id": "static-643",
     "titre": "Orangettes",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-643.webp",
     "cat": "dessert",
     "temps": "1 h 30 (+ 1 nuit de séchage)",
     "personnes": "30",
@@ -32046,7 +32093,7 @@ const recettes = [
   {
     "id": "static-494",
     "titre": "Pain d’épices",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-494.webp",
     "cat": "dessert",
     "temps": "1 h 15",
     "personnes": "10",
@@ -32127,7 +32174,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-259",
@@ -36395,7 +36443,7 @@ const recettes = [
   {
     "id": "static-117",
     "titre": "Pommes de pin en chocolat (trompe-l’œil)",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-117.webp",
     "temps": "30 min (+ 1 h au frais)",
     "personnes": "4",
     "cat": "dessert",
@@ -36445,7 +36493,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-292",
@@ -36516,7 +36565,7 @@ const recettes = [
   {
     "id": "static-287",
     "titre": "Pommes de terre fourrées au gruyère râpé",
-    "photo": "photos/pdtfourreesgruyere.jpg",
+    "photo": "photos/site/static-287.webp",
     "cat": "accompagnement",
     "temps": "40 min",
     "personnes": "6",
@@ -41832,7 +41881,7 @@ const recettes = [
   {
     "id": "static-639",
     "titre": "Sapin feuilleté apéritif au pesto",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-639.webp",
     "cat": "apero",
     "temps": "35 min",
     "personnes": "8",
@@ -41875,12 +41924,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-638",
     "titre": "Sapin feuilleté au Nutella",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-638.webp",
     "cat": "dessert",
     "temps": "35 min",
     "personnes": "8",
@@ -41917,7 +41967,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-332",
@@ -42376,7 +42427,7 @@ const recettes = [
   {
     "id": "static-490",
     "titre": "Saumon gravlax",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-490.webp",
     "cat": "entree",
     "temps": "15 min (+ 48 h de marinade)",
     "personnes": "8",
@@ -46355,7 +46406,7 @@ const recettes = [
   {
     "id": "static-497",
     "titre": "Toasts de fête au saumon fumé",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-497.webp",
     "cat": "apero",
     "temps": "15 min",
     "personnes": "6",
@@ -46399,7 +46450,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-511",
@@ -46720,7 +46772,7 @@ const recettes = [
   {
     "id": "static-495",
     "titre": "Truffes au chocolat",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-495.webp",
     "cat": "dessert",
     "temps": "30 min (+ 3 h au frais)",
     "personnes": "30",
@@ -46764,12 +46816,13 @@ const recettes = [
     "portion": "truffes",
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-370",
     "titre": "Tulipes gourmandes à la crème de marron et chantilly",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-370.webp",
     "temps": "30 min",
     "personnes": "6",
     "cat": "dessert",
@@ -46829,7 +46882,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-371",
@@ -47246,7 +47300,7 @@ const recettes = [
   {
     "id": "static-493",
     "titre": "Vin chaud",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-493.webp",
     "cat": "boisson",
     "temps": "20 min",
     "personnes": "6",
@@ -47306,7 +47360,8 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-375",
@@ -47899,7 +47954,7 @@ const recettes = [
   {
     "id": "static-692",
     "titre": "Bûche mangue-passion et coco",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-692.webp",
     "cat": "dessert",
     "temps": "4 h (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -48072,12 +48127,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-693",
     "titre": "Bûche deux chocolats noisettes",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-693.webp",
     "cat": "dessert",
     "temps": "4 h 30 (+ 1 nuit de congélation et 8 h au réfrigérateur)",
     "personnes": "10",
@@ -48272,12 +48328,13 @@ const recettes = [
     ],
     "fetes": [
       "noel"
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-694",
     "titre": "Glaçage miroir au chocolat (pour entremets et bûches)",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-694.webp",
     "cat": "base-culinaire",
     "temps": "40 min (+ refroidissement)",
     "personnes": "1",
@@ -48330,12 +48387,13 @@ const recettes = [
       "Mettre la crème et le glucose dans le bol, chauffer <b>4 min / 90 °C / vitesse 2</b>. Ajouter la gélatine avec son eau, <b>20 s / vitesse 2</b>.",
       "Ajouter le chocolat, attendre 1 minute puis mélanger <b>40 s / vitesse 3</b> (pas plus vite, pour ne pas faire de bulles). Verser dans un pichet et finir au mixeur plongeant, la tête au fond.",
       "Laisser redescendre à 32–35 °C et glacer l'entremets ou la bûche congelé(e) comme dans la version classique."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-695",
     "titre": "Huîtres gratinées au champagne",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-695.webp",
     "cat": "entree",
     "fetes": [
       "noel"
@@ -48407,12 +48465,13 @@ const recettes = [
       "Ajouter le champagne et 0,05 L d'eau des huîtres, réduire <b>8 min / 100 °C / vitesse 1</b>, sans le gobelet.",
       "Ajouter la crème et le poivre, cuire <b>5 min / 90 °C / vitesse 2</b>. Laisser tiédir 2 minutes, ajouter les jaunes et mélanger <b>20 s / vitesse 3</b>.",
       "Napper les huîtres calées sur le gros sel et gratiner 2 à 3 minutes sous le gril du four."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-696",
     "titre": "Pain surprise de fête",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-696.webp",
     "cat": "apero",
     "fetes": [
       "noel"
@@ -48494,12 +48553,13 @@ const recettes = [
       "Mettre la ciboulette et le zeste de citron dans le bol, hacher <b>5 s / vitesse 7</b>. Ajouter le fromage frais et le poivre, mélanger <b>15 s / vitesse 3</b>.",
       "Mettre le beurre mou dans le bol rincé et le lisser <b>20 s / vitesse 4</b> pour qu'il s'étale facilement.",
       "Garnir, couper en triangles, remettre dans la croûte et réfrigérer 2 h comme dans la version classique."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-697",
     "titre": "Clémentines givrées",
-    "photo": "photos/enattente.png",
+    "photo": "photos/site/static-697.webp",
     "cat": "dessert",
     "fetes": [
       "noel"
@@ -48551,7 +48611,8 @@ const recettes = [
       "Mettre l'eau et le sucre dans le bol, chauffer <b>3 min / 90 °C / vitesse 2</b>. Ajouter les jus, mélanger <b>10 s / vitesse 3</b>, verser dans une boîte et congeler en glaçons ou en plaque 4 h.",
       "Mettre la préparation congelée en morceaux dans le bol (avec le blanc d'œuf si on en met), mixer <b>20 s / vitesse 8</b> puis <b>20 s / vitesse 5</b> en poussant avec la spatule, jusqu'à un sorbet lisse.",
       "Remplir les écorces, poser les chapeaux et congeler au moins 2 h."
-    ]
+    ],
+    "photoDetouree": true
   },
   {
     "id": "static-698",
