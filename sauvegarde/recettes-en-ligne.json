@@ -4896,6 +4896,300 @@
   "updatedAt": "2026-11-28T08:40:16.453Z"
  },
  {
+  "id": "Jem9Mk4jajLqIE9nAo1W",
+  "cat": "dessert",
+  "createdAt": "2026-11-28T10:07:01.523Z",
+  "etapes": [
+   "Faire fondre le chocolat cassé en morceaux avec le beurre au bain-marie.",
+   "Pendant ce temps, battre les œufs avec le sucre jusqu'à ce que le mélange blanchisse.",
+   "Ajouter la farine, le sucre vanillé, le sel et le mélange chocolat fondu.",
+   "Ajouter les noix concassées si souhaité.",
+   "Verser dans un moule beurré et enfourner à 180 °C pendant 20 à 25 minutes : le centre doit rester fondant."
+  ],
+  "fetes": [
+   "halloween"
+  ],
+  "ingredients": [
+   {
+    "reste": "farine",
+    "texte": "60 g de farine",
+    "unite": "g",
+    "valeur": 60
+   },
+   {
+    "reste": "sucre",
+    "texte": "150 g de sucre",
+    "unite": "g",
+    "valeur": 150
+   },
+   {
+    "reste": "beurre maison",
+    "texte": "150 g de beurre maison",
+    "unite": "g",
+    "valeur": 150
+   },
+   {
+    "reste": "chocolat noir",
+    "texte": "250 g de chocolat noir",
+    "unite": "g",
+    "valeur": 250
+   },
+   {
+    "reste": "sachet de sucre vanillé",
+    "texte": "1 sachet de sucre vanillé",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "œufs",
+    "texte": "3 œufs",
+    "unite": null,
+    "valeur": 3
+   },
+   {
+    "reste": "sel",
+    "texte": "1 pincée de sel",
+    "unite": "pincée",
+    "valeur": 1
+   },
+   {
+    "reste": "noix (optionnel)",
+    "texte": "100 g de noix (optionnel)",
+    "unite": "g",
+    "valeur": 100
+   }
+  ],
+  "ownerId": "L7Zsvmp5knQDD6O3g6hT9cGBtgW2",
+  "ownerName": "Alissia Solbez",
+  "personnes": 6,
+  "photo": "photos/enattente.png",
+  "presentation": "free",
+  "replacesStaticId": "static-49",
+  "temps": "35 min",
+  "titre": "Brownies",
+  "updatedAt": "2026-11-28T10:07:01.523Z",
+  "variantes": [
+   {
+    "etapes": [
+     "Faire fondre le chocolat cassé en morceaux avec le beurre au bain-marie.",
+     "Pendant ce temps, battre les œufs avec le sucre jusqu'à ce que le mélange blanchisse.",
+     "Ajouter la farine, le sucre vanillé, le sel et le mélange chocolat fondu.",
+     "Ajouter les noix concassées si souhaité.",
+     "Verser dans un moule beurré et enfourner à 180 °C pendant 20 à 25 minutes : le centre doit rester fondant."
+    ],
+    "ingredients": [
+     {
+      "reste": "farine",
+      "texte": "60 g de farine",
+      "unite": "g",
+      "valeur": 60
+     },
+     {
+      "reste": "sucre",
+      "texte": "150 g de sucre",
+      "unite": "g",
+      "valeur": 150
+     },
+     {
+      "reste": "beurre maison",
+      "texte": "150 g de beurre maison",
+      "unite": "g",
+      "valeur": 150
+     },
+     {
+      "reste": "chocolat noir",
+      "texte": "250 g de chocolat noir",
+      "unite": "g",
+      "valeur": 250
+     },
+     {
+      "reste": "sachet de sucre vanillé",
+      "texte": "1 sachet de sucre vanillé",
+      "unite": null,
+      "valeur": 1
+     },
+     {
+      "reste": "œufs",
+      "texte": "3 œufs",
+      "unite": null,
+      "valeur": 3
+     },
+     {
+      "reste": "sel",
+      "texte": "1 pincée de sel",
+      "unite": "pincée",
+      "valeur": 1
+     },
+     {
+      "reste": "noix (optionnel)",
+      "texte": "100 g de noix (optionnel)",
+      "unite": "g",
+      "valeur": 100
+     }
+    ],
+    "mc": [
+     "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+     "Ajouter les œufs, le sucre, le sucre vanillé et le sel. Mélanger <b>20 s / vitesse 4</b>.",
+     "Ajouter la farine, mélanger <b>15 s / vitesse 4</b>. Ajouter les noix et mélanger <b>10 s / sens inverse / vitesse 2</b>.",
+     "Cuire 20 à 25 minutes à 180 °C : le centre doit rester fondant."
+    ],
+    "nom": "Chocolat noir et noix",
+    "personnes": 6,
+    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v0-3ae2efcd.png",
+    "photoDetouree": true,
+    "temps": "35 min"
+   },
+   {
+    "etapes": [
+     "Faire fondre le chocolat noir et le chocolat au lait avec le beurre jusqu'à obtenir une masse lisse et homogène, puis réserver.",
+     "Dans un cul-de-poule, mélanger les œufs avec le sucre glace et le sel jusqu'à obtenir un mélange sans montée de volume.",
+     "Ajouter le mélange chocolat/beurre fondu au mélange œufs-sucre et mélanger rapidement pour lier sans incorporer d'air.",
+     "Tamiser ensemble la farine et le cacao puis les incorporer progressivement à la préparation jusqu'à obtenir une pâte homogène mais encore souple.",
+     "Verser la pâte dans un cadre de cuisson de 20 x 20 cm préalablement beurré ou tapissé de papier sulfurisé.",
+     "Enfourner à 165°C pendant 15 à 20 minutes ; le cœur doit rester bien fondant.",
+     "À la sortie du four, laisser refroidir légèrement puis pocher des boules généreuses de caramel sur le dessus et ajouter des noix pour la touche gourmande."
+    ],
+    "ingredients": [
+     {
+      "reste": "chocolat noir",
+      "texte": "150 g de chocolat noir",
+      "unite": "g",
+      "valeur": 150
+     },
+     {
+      "reste": "chocolat au lait",
+      "texte": "50 g de chocolat au lait",
+      "unite": "g",
+      "valeur": 50
+     },
+     {
+      "reste": "beurre",
+      "texte": "100 g de beurre",
+      "unite": "g",
+      "valeur": 100
+     },
+     {
+      "reste": "sucre glace",
+      "texte": "190 g de sucre glace",
+      "unite": "g",
+      "valeur": 190
+     },
+     {
+      "reste": "œufs",
+      "texte": "3 œufs",
+      "unite": null,
+      "valeur": 3
+     },
+     {
+      "reste": "farine",
+      "texte": "90 g de farine",
+      "unite": "g",
+      "valeur": 90
+     },
+     {
+      "reste": "cacao non sucré",
+      "texte": "30 g de cacao non sucré",
+      "unite": "g",
+      "valeur": 30
+     },
+     {
+      "reste": "sel",
+      "texte": "1 pincée de sel",
+      "unite": "pincée",
+      "valeur": 1
+     },
+     {
+      "reste": "caramel (pour napper)",
+      "texte": "100 g de caramel (pour napper)",
+      "unite": "g",
+      "valeur": 100
+     },
+     {
+      "reste": "noix (pour la touche gourmande)",
+      "texte": "30 g de noix (pour la touche gourmande)",
+      "unite": "g",
+      "valeur": 30
+     }
+    ],
+    "mc": [
+     "Mettre les chocolats dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+     "Ajouter les œufs, le sucre glace et le sel. Mélanger <b>20 s / vitesse 3</b> (sans faire mousser).",
+     "Ajouter la farine et le cacao, mélanger <b>15 s / vitesse 4</b>.",
+     "Verser dans un cadre de 20 cm et cuire 15 à 20 minutes à 165 °C.",
+     "Laisser refroidir, puis ajouter le caramel et les noix."
+    ],
+    "nom": "Au caramel",
+    "personnes": "9",
+    "temps": "35 min"
+   },
+   {
+    "etapes": [
+     "Préchauffer le four à 180 °C. Faire fondre le chocolat et le beurre, ajouter le sucre, les œufs puis la farine.",
+     "Cuire 25 minutes dans un moule carré, puis laisser refroidir.",
+     "Écraser les Oreo en miettes et les répandre dessus : c’est la terre.",
+     "Écrire « RIP » au glaçage blanc sur les biscuits et les planter comme des pierres tombales.",
+     "Ajouter les bonbons vers de terre qui sortent de la terre. Couper en carrés."
+    ],
+    "ingredients": [
+     {
+      "reste": "chocolat noir",
+      "texte": "200 g de chocolat noir",
+      "unite": "g",
+      "valeur": 200
+     },
+     {
+      "reste": "beurre",
+      "texte": "150 g de beurre",
+      "unite": "g",
+      "valeur": 150
+     },
+     {
+      "reste": "sucre",
+      "texte": "200 g de sucre",
+      "unite": "g",
+      "valeur": 200
+     },
+     {
+      "reste": "œufs",
+      "texte": "3 œufs",
+      "unite": null,
+      "valeur": 3
+     },
+     {
+      "reste": "farine",
+      "texte": "100 g de farine",
+      "unite": "g",
+      "valeur": 100
+     },
+     {
+      "reste": "biscuits Oreo",
+      "texte": "8 biscuits Oreo",
+      "unite": null,
+      "valeur": 8
+     },
+     {
+      "reste": "biscuits boudoirs ou petits-beurre",
+      "texte": "12 biscuits boudoirs ou petits-beurre",
+      "unite": null,
+      "valeur": 12
+     },
+     "glaçage blanc ou chocolat blanc fondu",
+     "bonbons vers de terre"
+    ],
+    "mc": [
+     "Préchauffer le four à 180 °C.",
+     "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
+     "Ajouter le sucre et les œufs, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine, <b>15 s / vitesse 4</b>. Cuire 25 minutes dans un moule carré.",
+     "Bol propre : mettre les Oreo et mixer <b>5 s / vitesse 6</b> pour faire « la terre ».",
+     "Décorer avec la terre, les pierres tombales en biscuits (RIP au glaçage) et les bonbons vers de terre."
+    ],
+    "nom": "Cimetière d’Halloween",
+    "personnes": "12",
+    "temps": "50 min"
+   }
+  ]
+ },
+ {
   "id": "KC2CgC5l5FJTYoGfZ626",
   "cat": "plat",
   "createdAt": "2026-11-28T09:11:37.833Z",
