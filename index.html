@@ -15,14 +15,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Ultra&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css?v=20261128t">
-<link rel="stylesheet" href="planning.css?v=20261128t">
-<link rel="stylesheet" href="mobile.css?v=20261128t">
+<link rel="stylesheet" href="main.css?v=20261128u">
+<link rel="stylesheet" href="planning.css?v=20261128u">
+<link rel="stylesheet" href="mobile.css?v=20261128u">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
-<link rel="stylesheet" href="frigo.css?v=20261128t">
-<link rel="stylesheet" href="cards.css?v=20261128t">
-<link rel="stylesheet" href="theme.css?v=20261128t">
-<link rel="stylesheet" href="extras.css?v=20261128t">
+<link rel="stylesheet" href="frigo.css?v=20261128u">
+<link rel="stylesheet" href="cards.css?v=20261128u">
+<link rel="stylesheet" href="theme.css?v=20261128u">
+<link rel="stylesheet" href="extras.css?v=20261128u">
 <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
 <body>
@@ -62,6 +62,15 @@
 <div class="filter-bar">
   <div class="container">
     <div class="filter-top">
+      <div class="cat-bar" id="cat-bar">
+        <button type="button" class="cat-pick" id="cat-pick" aria-haspopup="listbox" aria-expanded="false">
+          <span class="cat-pick-ic" id="cat-pick-ic">🍽️</span>
+          <span class="cat-pick-txt"><small>Catégorie</small><b id="cat-pick-lab">Toutes</b></span>
+          <span class="cat-pick-n" id="cat-pick-n"></span>
+          <span class="cat-pick-arrow" aria-hidden="true">▾</span>
+        </button>
+        <button type="button" class="cat-season" id="cat-season" hidden></button>
+      </div>
       <div class="search-wrap">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input type="search" id="search-input" placeholder="Chercher une recette…" autocomplete="off" enterkeyhint="search">
@@ -105,15 +114,6 @@
       <span class="filter-label">Régimes</span>
       <div class="diet-filters" id="diet-filters"></div>
     </div>
-    </div>
-    <div class="cat-bar" id="cat-bar">
-      <button type="button" class="cat-pick" id="cat-pick" aria-haspopup="listbox" aria-expanded="false">
-        <span class="cat-pick-ic" id="cat-pick-ic">🍽️</span>
-        <span class="cat-pick-txt"><small>Catégorie</small><b id="cat-pick-lab">Toutes</b></span>
-        <span class="cat-pick-n" id="cat-pick-n"></span>
-        <span class="cat-pick-arrow" aria-hidden="true">▾</span>
-      </button>
-      <button type="button" class="cat-season" id="cat-season" hidden></button>
     </div>
     <div class="tabs" id="tabs" role="tablist" aria-label="Catégories">
       <button class="tab-btn active" data-cat="all"><span class="tab-ic" aria-hidden="true">🍽️</span><span class="tab-lab">Toutes</span> <span class="tab-count" id="count-all">0</span></button>
@@ -468,18 +468,18 @@
   </div>
 </footer>
 
-<script src="recettes-data.js?v=20261128t"></script>
-<script src="detour.js?v=20261128t"></script>
-<script src="visuals.js?v=20261128t"></script>
-<script src="ui.js?v=20261128t"></script>
-<script src="app.js?v=20261128t"></script>
-<script src="planning.js?v=20261128t"></script>
-<script src="frigo.js?v=20261128t"></script>
-<script src="extras.js?v=20261128t"></script>
-<script src="timers.js?v=20261128t"></script>
-<script src="nav.js?v=20261128t"></script>
-<script src="firebase-config.js?v=20261128t"></script>
-<script type="module" src="cloud.js?v=20261128t"></script>
+<script src="recettes-data.js?v=20261128u"></script>
+<script src="detour.js?v=20261128u"></script>
+<script src="visuals.js?v=20261128u"></script>
+<script src="ui.js?v=20261128u"></script>
+<script src="app.js?v=20261128u"></script>
+<script src="planning.js?v=20261128u"></script>
+<script src="frigo.js?v=20261128u"></script>
+<script src="extras.js?v=20261128u"></script>
+<script src="timers.js?v=20261128u"></script>
+<script src="nav.js?v=20261128u"></script>
+<script src="firebase-config.js?v=20261128u"></script>
+<script type="module" src="cloud.js?v=20261128u"></script>
 <script>
   // Site plus rapide et disponible hors connexion (voir sw.js)
   if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));

@@ -216,3 +216,24 @@ body.cooking .toasts { bottom: auto; top: calc(70px + env(safe-area-inset-top));
   .cat-row-ic { width: 30px; height: 30px; font-size: 1rem; }
 }
 @media (max-width: 780px) { .cat-bar { margin: .55rem 0 .65rem; } .cat-pick, .cat-season { height: 48px; } .cat-pick { max-width: none; } }
+
+/* ═════════ Barre du haut : tout sur une ligne (ordinateur) ═════════ */
+.filter-top .cat-bar { margin: 0; flex: 0 0 auto; display: flex; gap: .6rem; }
+.filter-top .cat-pick { height: 44px; width: 250px; padding: 0 12px 0 6px; border-radius: 12px; border-width: 1px; }
+.filter-top .cat-pick-ic { width: 32px; height: 32px; font-size: 1.05rem; border-radius: 9px; }
+.filter-top .cat-pick-txt small { display: none; }
+.filter-top .cat-pick-txt b { font-size: .92rem; }
+.filter-top .cat-pick-n { font-size: .72rem; }
+.filter-top .cat-season { height: 44px; border-radius: 12px; border-width: 1px; padding: 0 14px; font-size: .88rem; }
+.filter-top .cat-pick.is-filtered { background: var(--espresso); color: var(--cream); border-color: var(--espresso); }
+.filter-top .cat-pick.is-filtered .cat-pick-ic { background: rgba(255,255,255,.12); }
+.filter-top .cat-pick.is-filtered .cat-pick-arrow { color: var(--sand); }
+.filter-top .cat-pick.is-filtered .cat-pick-n { background: var(--caramel); color: #fff; }
+.filter-top { padding-bottom: .9rem; }
+/* Téléphone : recherche + boutons en haut, catégorie en dessous sur toute la largeur */
+@media (max-width: 780px) {
+  .filter-top { flex-wrap: wrap; row-gap: 8px !important; padding-bottom: .7rem; }
+  .filter-top .cat-bar { order: 10; flex: 1 1 100%; }
+  .filter-top .cat-pick { flex: 1; width: auto; height: 46px; }
+  .filter-top .cat-season { height: 46px; }
+}
