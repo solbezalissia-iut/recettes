@@ -82,7 +82,7 @@
     // d'autres fenêtres restent ouvertes dessous : le prochain retour les fermera aussi
     setTimeout(() => { if (stack.length) addGuard(); }, 0);
   });
-  function scan() { document.querySelectorAll('.modal-overlay, #plan-overlay, #cook-overlay').forEach(watch); }
+  function scan() { document.querySelectorAll('.modal-overlay, #plan-overlay, #cook-overlay, #cat-sheet').forEach(watch); }
   window.UI = { watch, scan };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();
   setTimeout(scan, 1500);
