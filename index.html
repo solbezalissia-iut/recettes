@@ -15,14 +15,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Ultra&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css?v=20261128p">
-<link rel="stylesheet" href="planning.css?v=20261128p">
-<link rel="stylesheet" href="mobile.css?v=20261128p">
+<link rel="stylesheet" href="main.css?v=20261128r">
+<link rel="stylesheet" href="planning.css?v=20261128r">
+<link rel="stylesheet" href="mobile.css?v=20261128r">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
-<link rel="stylesheet" href="frigo.css?v=20261128p">
-<link rel="stylesheet" href="cards.css?v=20261128p">
-<link rel="stylesheet" href="theme.css?v=20261128p">
-<link rel="stylesheet" href="extras.css?v=20261128p">
+<link rel="stylesheet" href="frigo.css?v=20261128r">
+<link rel="stylesheet" href="cards.css?v=20261128r">
+<link rel="stylesheet" href="theme.css?v=20261128r">
+<link rel="stylesheet" href="extras.css?v=20261128r">
 <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
 <body>
@@ -107,19 +107,20 @@
     </div>
     </div>
     <div class="tabs" id="tabs" role="tablist" aria-label="Catégories">
-      <button class="tab-btn active" data-cat="all"><span class="tab-ic" aria-hidden="true">🍽️</span>Toutes <span class="tab-count" id="count-all">0</span></button>
-      <button class="tab-btn tab-fete" data-cat="noel"><span class="tab-ic" aria-hidden="true">🎄</span>Spécial Noël <span class="tab-count" id="count-noel">0</span></button>
-      <button class="tab-btn tab-fete" data-cat="halloween"><span class="tab-ic" aria-hidden="true">🎃</span>Spécial Halloween <span class="tab-count" id="count-halloween">0</span></button>
-      <button class="tab-btn tab-fete" data-cat="paques"><span class="tab-ic" aria-hidden="true">🐣</span>Spécial Pâques <span class="tab-count" id="count-paques">0</span></button>
-      <button class="tab-btn" data-cat="apero"><span class="tab-ic" aria-hidden="true">🥂</span>Apéro <span class="tab-count" id="count-apero">0</span></button>
-      <button class="tab-btn" data-cat="entree"><span class="tab-ic" aria-hidden="true">🥗</span>Entrée <span class="tab-count" id="count-entree">0</span></button>
-      <button class="tab-btn" data-cat="plat"><span class="tab-ic" aria-hidden="true">🍲</span>Plat <span class="tab-count" id="count-plat">0</span></button>
-      <button class="tab-btn" data-cat="accompagnement"><span class="tab-ic" aria-hidden="true">🥔</span>Accompagnement <span class="tab-count" id="count-accompagnement">0</span></button>
-      <button class="tab-btn" data-cat="dessert"><span class="tab-ic" aria-hidden="true">🍰</span>Dessert <span class="tab-count" id="count-dessert">0</span></button>
-      <button class="tab-btn" data-cat="boisson"><span class="tab-ic" aria-hidden="true">🍹</span>Boisson <span class="tab-count" id="count-boisson">0</span></button>
-      <button class="tab-btn" data-cat="sauce"><span class="tab-ic" aria-hidden="true">🥫</span>Sauce <span class="tab-count" id="count-sauce">0</span></button>
-      <button class="tab-btn" data-cat="base-culinaire"><span class="tab-ic" aria-hidden="true">🧂</span>Base culinaire <span class="tab-count" id="count-base-culinaire">0</span></button>
-      <button class="tab-btn" data-cat="maison"><span class="tab-ic" aria-hidden="true">🧺</span>Maison <span class="tab-count" id="count-maison">0</span></button>
+      <button class="tab-btn active" data-cat="all"><span class="tab-ic" aria-hidden="true">🍽️</span><span class="tab-lab">Toutes</span> <span class="tab-count" id="count-all">0</span></button>
+      <button class="tab-btn" data-cat="apero"><span class="tab-ic" aria-hidden="true">🥂</span><span class="tab-lab">Apéro</span> <span class="tab-count" id="count-apero">0</span></button>
+      <button class="tab-btn" data-cat="entree"><span class="tab-ic" aria-hidden="true">🥗</span><span class="tab-lab">Entrées</span> <span class="tab-count" id="count-entree">0</span></button>
+      <button class="tab-btn" data-cat="plat"><span class="tab-ic" aria-hidden="true">🍲</span><span class="tab-lab">Plats</span> <span class="tab-count" id="count-plat">0</span></button>
+      <button class="tab-btn" data-cat="accompagnement"><span class="tab-ic" aria-hidden="true">🥔</span><span class="tab-lab">Accompagnements</span> <span class="tab-count" id="count-accompagnement">0</span></button>
+      <button class="tab-btn" data-cat="sauce"><span class="tab-ic" aria-hidden="true">🥫</span><span class="tab-lab">Sauces</span> <span class="tab-count" id="count-sauce">0</span></button>
+      <button class="tab-btn" data-cat="dessert"><span class="tab-ic" aria-hidden="true">🍰</span><span class="tab-lab">Desserts</span> <span class="tab-count" id="count-dessert">0</span></button>
+      <button class="tab-btn" data-cat="boisson"><span class="tab-ic" aria-hidden="true">🍹</span><span class="tab-lab">Boissons</span> <span class="tab-count" id="count-boisson">0</span></button>
+      <button class="tab-btn" data-cat="base-culinaire"><span class="tab-ic" aria-hidden="true">🧂</span><span class="tab-lab">Bases</span> <span class="tab-count" id="count-base-culinaire">0</span></button>
+      <button class="tab-btn" data-cat="maison"><span class="tab-ic" aria-hidden="true">🧺</span><span class="tab-lab">Maison</span> <span class="tab-count" id="count-maison">0</span></button>
+      <span class="tab-sep" aria-hidden="true"><span>Fêtes</span></span>
+      <button class="tab-btn tab-fete" data-cat="noel"><span class="tab-ic" aria-hidden="true">🎄</span><span class="tab-lab">Noël</span> <span class="tab-count" id="count-noel">0</span></button>
+      <button class="tab-btn tab-fete" data-cat="halloween"><span class="tab-ic" aria-hidden="true">🎃</span><span class="tab-lab">Halloween</span> <span class="tab-count" id="count-halloween">0</span></button>
+      <button class="tab-btn tab-fete" data-cat="paques"><span class="tab-ic" aria-hidden="true">🐣</span><span class="tab-lab">Pâques</span> <span class="tab-count" id="count-paques">0</span></button>
     </div>
   </div>
 </div>
@@ -458,18 +459,18 @@
   </div>
 </footer>
 
-<script src="recettes-data.js?v=20261128p"></script>
-<script src="detour.js?v=20261128p"></script>
-<script src="visuals.js?v=20261128p"></script>
-<script src="ui.js?v=20261128p"></script>
-<script src="app.js?v=20261128p"></script>
-<script src="planning.js?v=20261128p"></script>
-<script src="frigo.js?v=20261128p"></script>
-<script src="extras.js?v=20261128p"></script>
-<script src="timers.js?v=20261128p"></script>
-<script src="nav.js?v=20261128p"></script>
-<script src="firebase-config.js?v=20261128p"></script>
-<script type="module" src="cloud.js?v=20261128p"></script>
+<script src="recettes-data.js?v=20261128r"></script>
+<script src="detour.js?v=20261128r"></script>
+<script src="visuals.js?v=20261128r"></script>
+<script src="ui.js?v=20261128r"></script>
+<script src="app.js?v=20261128r"></script>
+<script src="planning.js?v=20261128r"></script>
+<script src="frigo.js?v=20261128r"></script>
+<script src="extras.js?v=20261128r"></script>
+<script src="timers.js?v=20261128r"></script>
+<script src="nav.js?v=20261128r"></script>
+<script src="firebase-config.js?v=20261128r"></script>
+<script type="module" src="cloud.js?v=20261128r"></script>
 <script>
   // Site plus rapide et disponible hors connexion (voir sw.js)
   if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));

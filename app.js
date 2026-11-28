@@ -568,7 +568,7 @@ function buildGrids() {
     const count = counts[cat] || 0;
     const total = allRecettes.filter(r => FETES.includes(cat) ? fetesOf(r).includes(cat) : r.cat === cat).length;
     const countEl = document.getElementById('count-' + cat);
-    if (countEl) countEl.textContent = count;
+    if (countEl) { countEl.textContent = count; const tb = countEl.closest('.tab-btn'); if (tb) tb.classList.toggle('tab-empty', count === 0 && cat !== currentTab); }
     const emptyEl = document.getElementById('empty-' + cat);
     if (emptyEl) emptyEl.classList.toggle('visible', count === 0);
     const infoEl = document.getElementById('info-' + cat);
