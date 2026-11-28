@@ -4967,7 +4967,7 @@
   "replacesStaticId": "static-49",
   "temps": "35 min",
   "titre": "Brownies",
-  "updatedAt": "2026-11-28T10:08:55.104Z",
+  "updatedAt": "2026-11-28T10:09:43.889Z",
   "variantes": [
    {
     "etapes": [
@@ -5035,7 +5035,7 @@
     ],
     "nom": "Chocolat noir et noix",
     "personnes": 6,
-    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v0-3ae2efcd.png",
+    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v0-ef97e6b6.png",
     "photoDetouree": true,
     "temps": "35 min"
    },
@@ -5187,6 +5187,8 @@
     ],
     "nom": "Cimetière d’Halloween",
     "personnes": "12",
+    "photo": "photos/site/en-ligne/Jem9Mk4jajLqIE9nAo1W-v2-ef97e6b6.png",
+    "photoDetouree": true,
     "temps": "50 min"
    }
   ]
