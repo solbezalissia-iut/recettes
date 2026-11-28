@@ -1060,6 +1060,86 @@
   "updatedAt": "2026-11-27T15:41:49.577Z"
  },
  {
+  "id": "9Fiv7zZyT5ErvnPYCVp1",
+  "cat": "apero",
+  "createdAt": "2026-11-28T09:34:33.665Z",
+  "etapes": [
+   "Couper le brie en tranches épaisses et le bacon en lanières.",
+   "Envelopper chaque tranche de brie avec des morceaux de bacon.",
+   "Préparer l'enrobage : battre l'œuf dans un bol, disposer la farine et la chapelure maison dans deux autres assiettes.",
+   "Enfariner légèrement le brie, tremper dans l'œuf battu, puis rouler dans la chapelure.",
+   "Chauffer l'huile dans une poêle à feu moyen. Déposer délicatement les bries panés et les faire dorer sur chaque face 2 à 3 minutes.",
+   "Égoutter sur du papier absorbant, assaisonner de sel et poivre avant de servir."
+  ],
+  "fetes": [],
+  "ingredients": [
+   {
+    "reste": "brie",
+    "texte": "200 g de brie",
+    "unite": "g",
+    "valeur": 200
+   },
+   {
+    "reste": "bacon",
+    "texte": "bacon",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "œuf",
+    "texte": "1 œuf",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "farine",
+    "texte": "50 g de farine",
+    "unite": "g",
+    "valeur": 50
+   },
+   {
+    "reste": "chapelure maison",
+    "texte": "60 g de chapelure maison",
+    "unite": "g",
+    "valeur": 60
+   },
+   {
+    "reste": "huile de cuisson",
+    "texte": "huile de cuisson",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "sel",
+    "texte": "sel",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "poivre noir",
+    "texte": "poivre noir",
+    "unite": null,
+    "valeur": 1
+   }
+  ],
+  "mc": [
+   "Chapelure maison : mettre du pain sec dans le bol et mixer <b>15 s / vitesse 8</b>.",
+   "Envelopper les tranches de brie de bacon, puis les passer dans la farine, l'œuf battu et la chapelure.",
+   "Dorer 2 à 3 minutes par face à la poêle, égoutter, saler et poivrer."
+  ],
+  "ownerId": "L7Zsvmp5knQDD6O3g6hT9cGBtgW2",
+  "ownerName": "Alissia Solbez",
+  "personnes": "2",
+  "photo": "photos/site/en-ligne/9Fiv7zZyT5ErvnPYCVp1-2911d90e.png",
+  "photoDetouree": true,
+  "portion": "",
+  "presentation": "free",
+  "replacesStaticId": "static-42",
+  "temps": "22 min",
+  "titre": "Brie pané au bacon",
+  "updatedAt": "2026-11-28T09:34:33.665Z"
+ },
+ {
   "id": "9P2guhAB2WRDyPDSxjXT",
   "cat": "dessert",
   "createdAt": "2026-11-27T15:04:24.880Z",
@@ -3638,6 +3718,97 @@
   ]
  },
  {
+  "id": "GLmMFGb4ay7TIO4fC1vj",
+  "cat": "plat",
+  "createdAt": "2026-11-28T09:35:01.115Z",
+  "etapes": [
+   "Préchauffer le four à 180°C.",
+   "Déposer le brie dans un petit plat allant au four et piquer légèrement la surface.",
+   "Badigeonner le brie avec le miel, assaisonner avec sel, poivre, piment d'Espelette, paprika et herbes de Provence. Arroser d'un filet d'huile d'olive.",
+   "Enfourner et cuire pendant 20 à 25 minutes jusqu'à ce qu'il soit fondant.",
+   "Couper les pommes de terre en morceaux et les faire sauter dans une poêle avec un filet d'huile d'olive, l'ail haché et des herbes de Provence.",
+   "Cuire les pommes de terre jusqu'à ce qu'elles soient dorées et croustillantes, environ 15 à 20 minutes.",
+   "Servir le brie rôti avec les pommes de terre sautées, napper d'un filet de miel supplémentaire si désiré."
+  ],
+  "fetes": [],
+  "ingredients": [
+   {
+    "reste": "brie entier",
+    "texte": "1 brie entier",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "sel",
+    "texte": "sel",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "poivre",
+    "texte": "poivre",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "piment d'Espelette",
+    "texte": "piment d'Espelette",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "paprika",
+    "texte": "paprika",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "herbes de Provence",
+    "texte": "herbes de Provence",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "huile d'olive",
+    "texte": "huile d'olive",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "miel",
+    "texte": "15 ml de miel",
+    "unite": "ml",
+    "valeur": 15
+   },
+   {
+    "reste": "pommes de terre",
+    "texte": "4 pommes de terre",
+    "unite": null,
+    "valeur": 4
+   },
+   {
+    "reste": "ail",
+    "texte": "2 gousses d'ail",
+    "unite": "gousses",
+    "valeur": 2
+   }
+  ],
+  "mc": [
+   "Pas besoin du Monsieur Cuisine pour cette recette : le brie rôtit au four et les pommes de terre se font à la poêle, suivre la version classique."
+  ],
+  "ownerId": "L7Zsvmp5knQDD6O3g6hT9cGBtgW2",
+  "ownerName": "Alissia Solbez",
+  "personnes": "2",
+  "photo": "photos/site/en-ligne/GLmMFGb4ay7TIO4fC1vj-c183b36f.png",
+  "photoDetouree": true,
+  "portion": "",
+  "presentation": "free",
+  "replacesStaticId": "static-43",
+  "temps": "35 min",
+  "titre": "Brie rôti au miel et pommes de terre sarladaises",
+  "updatedAt": "2026-11-28T09:35:01.115Z"
+ },
+ {
   "id": "gY43ua3QOlk7qc9BWkhL",
   "cat": "dessert",
   "createdAt": "2026-11-27T15:52:18.304Z",
@@ -5129,6 +5300,88 @@
     "temps": "35 min"
    }
   ]
+ },
+ {
+  "id": "kLLBQrxfg1PYPqPGCM7L",
+  "cat": "base-culinaire",
+  "createdAt": "2026-11-28T09:37:05.414Z",
+  "etapes": [
+   "Délayer la levure dans le lait tiède.",
+   "Mélanger la farine, le sucre et le sel, puis ajouter les œufs et le lait. Pétrir 10 minutes jusqu’à ce que la pâte se décolle.",
+   "Ajouter le beurre mou en morceaux et pétrir encore 10 minutes jusqu’à ce que la pâte soit lisse et élastique.",
+   "Laisser lever 2 heures (ou une nuit au réfrigérateur).",
+   "Dégazer, façonner en tresse ou en boules dans un moule à cake et laisser lever encore 1 heure.",
+   "Dorer au jaune d’œuf et cuire 30 minutes à 180 °C."
+  ],
+  "fetes": [],
+  "ingredients": [
+   {
+    "reste": "farine T45",
+    "texte": "500 g de farine T45",
+    "unite": "g",
+    "valeur": 500
+   },
+   {
+    "reste": "levure de boulanger sèche",
+    "texte": "10 g de levure de boulanger sèche",
+    "unite": "g",
+    "valeur": 10
+   },
+   {
+    "reste": "sucre",
+    "texte": "60 g de sucre",
+    "unite": "g",
+    "valeur": 60
+   },
+   {
+    "reste": "sel",
+    "texte": "10 g de sel",
+    "unite": "g",
+    "valeur": 10
+   },
+   {
+    "reste": "œufs",
+    "texte": "4 œufs",
+    "unite": null,
+    "valeur": 4
+   },
+   {
+    "reste": "lait tiède",
+    "texte": "100 ml de lait tiède",
+    "unite": "ml",
+    "valeur": 100
+   },
+   {
+    "reste": "beurre mou",
+    "texte": "200 g de beurre mou",
+    "unite": "g",
+    "valeur": 200
+   },
+   {
+    "reste": "jaune d'œuf (dorure)",
+    "texte": "1 jaune d'œuf (dorure)",
+    "unite": null,
+    "valeur": 1
+   }
+  ],
+  "mc": [
+   "Mettre le lait et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+   "Ajouter la farine, le sucre, le sel et les œufs. Pétrir <b>4 min / mode pétrin</b>.",
+   "Ajouter le beurre mou en morceaux et pétrir encore <b>4 min / mode pétrin</b>, jusqu'à ce que la pâte se décolle des parois.",
+   "Laisser lever 2 heures (ou une nuit au réfrigérateur).",
+   "Façonner, laisser lever 1 heure, dorer et cuire 30 minutes à 180 °C."
+  ],
+  "ownerId": "L7Zsvmp5knQDD6O3g6hT9cGBtgW2",
+  "ownerName": "Alissia Solbez",
+  "personnes": "8",
+  "photo": "photos/site/en-ligne/kLLBQrxfg1PYPqPGCM7L-ee7f1709.png",
+  "photoDetouree": true,
+  "portion": "",
+  "presentation": "free",
+  "replacesStaticId": "static-440",
+  "temps": "45 min (+ 3 h de pousse)",
+  "titre": "Brioche maison",
+  "updatedAt": "2026-11-28T09:37:05.414Z"
  },
  {
   "id": "KPHxmQr4Advq9kNzKxO8",
@@ -8422,6 +8675,94 @@
   "temps": "40 min (+ 1 h de repos)",
   "titre": "Étoiles à la cannelle (Zimtsterne)",
   "updatedAt": "2026-11-28T08:21:46.850Z"
+ },
+ {
+  "id": "wnYUfXcd0C8WjVS01ILg",
+  "cat": "dessert",
+  "createdAt": "2026-11-28T09:35:37.942Z",
+  "etapes": [
+   "Dans un bol, délayer la levure dans le lait tiède avec une pincée de sucre et laisser agir pendant 5 à 10 minutes jusqu'à ce que le mélange mousse.",
+   "Dans un grand saladier, mélanger la farine, le sucre et ajouter l'œuf.",
+   "Verser le mélange de levure et pétrir jusqu'à obtention d'une pâte homogène.",
+   "Ajouter le beurre mou en petits morceaux et pétrir à nouveau jusqu'à ce que la pâte soit lisse et élastique, environ 8 à 10 minutes.",
+   "Couvrir et laisser lever dans un endroit chaud pendant 1 heure jusqu'à ce que la pâte double de volume.",
+   "Étaler la pâte en rectangle. Étaler le Nutella en couche uniforme sur toute la surface.",
+   "Rouler la pâte et couper des tronçons d'environ 2 à 3 centimètres de largeur.",
+   "Disposer les tronçons dans un moule à brioche ou carré chemisé, en laissant une légère distance entre eux.",
+   "Badigeonner avec l'œuf battu pour obtenir une belle dorure.",
+   "Cuire dans un four préchauffé à 180°C pendant 25 à 30 minutes, jusqu'à ce que la brioche soit dorée et gonflée.",
+   "Laisser refroidir légèrement avant de démouler."
+  ],
+  "fetes": [],
+  "ingredients": [
+   {
+    "reste": "farine de blé",
+    "texte": "350 g de farine de blé",
+    "unite": "g",
+    "valeur": 350
+   },
+   {
+    "reste": "sucre",
+    "texte": "50 g de sucre",
+    "unite": "g",
+    "valeur": 50
+   },
+   {
+    "reste": "levure boulangère sèche",
+    "texte": "7 g de levure boulangère sèche",
+    "unite": "g",
+    "valeur": 7
+   },
+   {
+    "reste": "œuf",
+    "texte": "1 œuf",
+    "unite": null,
+    "valeur": 1
+   },
+   {
+    "reste": "lait tiède",
+    "texte": "200 ml de lait tiède",
+    "unite": "ml",
+    "valeur": 200
+   },
+   {
+    "reste": "beurre maison doux mou",
+    "texte": "60 g de beurre maison doux mou",
+    "unite": "g",
+    "valeur": 60
+   },
+   {
+    "reste": "Nutella",
+    "texte": "180 g de Nutella",
+    "unite": "g",
+    "valeur": 180
+   },
+   {
+    "reste": "œuf battu",
+    "texte": "1 œuf battu",
+    "unite": null,
+    "valeur": 1
+   }
+  ],
+  "mc": [
+   "Mettre le lait, le sucre et la levure dans le bol. Chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+   "Ajouter la farine et l'œuf. Pétrir <b>3 min / mode pétrin</b>.",
+   "Ajouter le beurre mou en morceaux et pétrir encore <b>3 min / mode pétrin</b>.",
+   "Laisser lever 1 heure dans le bol fermé.",
+   "Étaler en rectangle, tartiner de Nutella, rouler, couper des tronçons de 2 à 3 cm et les ranger dans un moule.",
+   "Dorer à l'œuf battu et cuire 25 à 30 minutes à 180 °C."
+  ],
+  "ownerId": "L7Zsvmp5knQDD6O3g6hT9cGBtgW2",
+  "ownerName": "Alissia Solbez",
+  "personnes": "6",
+  "photo": "photos/site/en-ligne/wnYUfXcd0C8WjVS01ILg-a61b6a09.png",
+  "photoDetouree": true,
+  "portion": "",
+  "presentation": "free",
+  "replacesStaticId": "static-44",
+  "temps": "50 min",
+  "titre": "Brioche Buchty au Nutella",
+  "updatedAt": "2026-11-28T09:36:37.089Z"
  },
  {
   "id": "WSMA1pCjLBEUfQQsIhvS",
