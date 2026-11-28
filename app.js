@@ -391,13 +391,26 @@ function renderCard(card, r, idx, vi) {
       </div>`;
 }
 
+// Fêtes : choisies sur la recette (champ fetes) ou reconnues dans le titre
+const FETES = ['noel', 'halloween', 'paques'];
+const FETE_RE = {
+  noel: /noel|buche|foie gras|pain d.epices|sapin|pere noel|vin chaud|marrons glaces|galette des rois|chapon|dinde|huitre|bredele|bonhomme en pain/,
+  halloween: /halloween|momie|cimetiere|fantome|sorciere|araignee|monstre|zombie|sanglant|vampire|squelette/,
+  paques: /paques|lapin en chocolat|oeufs? en chocolat|nid de paques|poussin|gigot/,
+};
+function fetesOf(r) {
+  if (Array.isArray(r.fetes) && r.fetes.length) return r.fetes.filter(f => FETES.includes(f));
+  const t = normalize(r.titre || '');
+  return FETES.filter(f => FETE_RE[f].test(t));
+}
+
 function buildGrids() {
-  const cats = ['apero', 'entree', 'plat', 'accompagnement', 'dessert', 'boisson', 'sauce', 'base-culinaire', 'maison'];
+  const cats = ['apero', 'entree', 'plat', 'accompagnement', 'dessert', 'boisson', 'sauce', 'base-culinaire', 'maison', ...FETES];
   const allGrid = document.getElementById('grid-all');
   allGrid.innerHTML = '';
   cats.forEach(cat => { document.getElementById('grid-' + cat).innerHTML = ''; });
 
-  const counts = { all: 0, apero: 0, entree: 0, plat: 0, accompagnement: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0, maison: 0 };
+  const counts = { all: 0, apero: 0, entree: 0, plat: 0, accompagnement: 0, dessert: 0, boisson: 0, sauce: 0, "base-culinaire": 0, maison: 0, noel: 0, halloween: 0, paques: 0 };
 
   getSortedIndices().forEach(idx => {
     const r = allRecettes[idx];
@@ -405,7 +418,7 @@ function buildGrids() {
     const preview = previewVariant(r);
     const variants = getVariants(r);
 
-    ['all', r.cat].forEach(gridCat => {
+    ['all', r.cat, ...fetesOf(r)].forEach(gridCat => {
       const card = document.createElement('div');
       card.className = 'recipe-card' + (matched ? '' : ' hidden');
       card.dataset.idx = idx;
@@ -426,15 +439,16 @@ function buildGrids() {
         allGrid.appendChild(card);
         if (matched) counts.all++;
       } else {
-        document.getElementById('grid-' + gridCat).appendChild(card);
-        if (matched) counts[r.cat] = (counts[r.cat] || 0) + 1;
+        const g = document.getElementById('grid-' + gridCat); if (!g) return;
+        g.appendChild(card);
+        if (matched) counts[gridCat] = (counts[gridCat] || 0) + 1;
       }
     });
   });
 
   cats.forEach(cat => {
     const count = counts[cat] || 0;
-    const total = allRecettes.filter(r => r.cat === cat).length;
+    const total = allRecettes.filter(r => FETES.includes(cat) ? fetesOf(r).includes(cat) : r.cat === cat).length;
     const countEl = document.getElementById('count-' + cat);
     if (countEl) countEl.textContent = count;
     const emptyEl = document.getElementById('empty-' + cat);
@@ -1232,6 +1246,8 @@ document.getElementById('modal-edit').addEventListener('click', () => {
   presManual = !!r.presentation;
   setPresentation(window.RecipeVisual ? RecipeVisual.styleOf(r) : 'plate');
   editingSource = r;
+  const fs_ = fetesOf(r);
+  document.querySelectorAll('#fete-choice input').forEach(x => { x.checked = fs_.includes(x.value); });
   if (r.variantes) {
     // Recette à plusieurs versions : on modifie une version à la fois
     editingVariants = JSON.parse(JSON.stringify(r.variantes));
@@ -1433,6 +1449,7 @@ addForm.addEventListener('submit', async e => {
       etapes: etapesLines,
     };
     recipeData.presentation = cropStyle();
+    recipeData.fetes = [...document.querySelectorAll('#fete-choice input:checked')].map(x => x.value);
     const portion = document.getElementById('new-portion').value.trim();
     if (!editingVariants) recipeData.portion = portion && portion !== 'pers.' ? portion : '';
     if (photo) recipeData.photo = photo;

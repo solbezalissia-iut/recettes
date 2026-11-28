@@ -383,3 +383,10 @@
 
 /* Les recettes qui ne correspondent pas à la recherche / aux filtres restent cachées */
 .recipe-card.hidden { display: none !important; }
+
+/* ── Catégories spéciales fêtes ── */
+.tab-btn.tab-fete { background: linear-gradient(135deg, #FFF6E6, #F6E3C4); border-color: #E2C08A; }
+.tab-btn.tab-fete.active { background: linear-gradient(135deg, #7A4A22, #4A2A16); color: #fff; border-color: #4A2A16; }
+.fete-choice { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+.fete-choice label { display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; text-transform: none; letter-spacing: 0; color: var(--espresso); cursor: pointer; }
+.fete-choice input { width: 18px; height: 18px; accent-color: var(--caramel); }
