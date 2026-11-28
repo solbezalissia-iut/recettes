@@ -202,6 +202,15 @@
   const ph = () => { if (si) si.placeholder = innerWidth < 700 ? 'Rechercher…' : 'Chercher une recette…'; };
   ph(); addEventListener('resize', ph);
 
+  // ── Catégories : la fête de la saison passe en premier (et tout de suite après « Toutes » sur téléphone) ──
+  (function seasonTabs() {
+    const d = new Date(), m = d.getMonth();
+    const season = (m >= 10 || (m === 0 && d.getDate() <= 6)) ? 'noel' : (m === 8 || m === 9) ? 'halloween' : (m >= 1 && m <= 3) ? 'paques' : null;
+    const sep = document.querySelector('#tabs .tab-sep');
+    const tab = season && document.querySelector(`#tabs .tab-btn[data-cat="${season}"]`);
+    if (tab && sep) { sep.after(tab); tab.classList.add('tab-season'); tab.title = 'C\'est la saison !'; }
+  })();
+
   window.Extras = { isFav, toggleFav, passes, onOpen, keyOf };
   updateFavCount();
   // Les cartes déjà dessinées reçoivent leur cœur
