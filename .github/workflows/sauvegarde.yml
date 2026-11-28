@@ -1,0 +1,34 @@
+name: Sauvegarde du site en ligne
+
+# Toutes les 15 minutes, GitHub enregistre ce qui a été ajouté ou modifié sur le site
+# (recettes, photos, recettes masquées). Bouton « Run workflow » pour le faire tout de suite.
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sauvegarde
+  cancel-in-progress: false
+
+jobs:
+  sauvegarde:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/sauvegarde.mjs
+      - name: Enregistrer s'il y a du nouveau
+        run: |
+          git add -A sauvegarde photos/site/en-ligne
+          if git diff --cached --quiet; then echo "Rien de nouveau"; exit 0; fi
+          git config user.name "Sauvegarde automatique"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sauvegarde automatique du site en ligne"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push

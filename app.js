@@ -347,8 +347,7 @@ function cardMatchesFilters(r) {
 
 function getSortedIndices() {
   const indices = allRecettes.map((_, idx) => idx);
-  if (sortMode === 'default') return indices;
-  indices.sort((a, b) => {
+  if (sortMode !== 'default') indices.sort((a, b) => {
     const ra = allRecettes[a], rb = allRecettes[b];
     if (sortMode === 'az') return ra.titre.localeCompare(rb.titre, 'fr');
     if (sortMode === 'za') return rb.titre.localeCompare(ra.titre, 'fr');
@@ -359,6 +358,13 @@ function getSortedIndices() {
     }
     return 0;
   });
+  if (searchQuery) {
+    // Recherche : les recettes dont le TITRE correspond passent avant celles où le mot n'est que dans les ingrédients
+    const words = normalize(searchQuery).split(/\s+/).filter(Boolean);
+    const score = r => { const t = normalize(r.titre || ''); return words.every(w => t.includes(w)) ? 0 : words.some(w => t.includes(w)) ? 1 : 2; };
+    const sc = new Map(indices.map(i => [i, score(allRecettes[i])]));
+    indices.sort((a, b) => sc.get(a) - sc.get(b)); // tri stable : l'ordre choisi est gardé dans chaque groupe
+  }
   return indices;
 }
 
@@ -392,7 +398,7 @@ function renderCard(card, r, idx, vi) {
       ${plate}
       <div class="card-body">
         <div class="card-top">
-          <div class="card-cat">${catLabels[r.cat]}${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
+          <div class="card-cat"><span class="cat-txt">${catLabels[r.cat]}</span>${variantBadge}${isVege(r) ? '<span class="vege-badge" title="Végétarien">🌱 Végé</span>' : ''}</div>
           <div class="card-title">${r.titre}</div>
           <p class="card-ings">${pills}</p>
         </div>
@@ -1082,7 +1088,7 @@ function closeAddModal() {
   document.getElementById('add-form-submit').textContent = 'Enregistrer la recette';
   document.getElementById('new-photo-label').textContent = 'Photo (optionnelle)';
   editingVariants = null; editingSource = null;
-  document.getElementById('variant-pick-field').style.display = 'none';
+  document.getElementById('variant-pick-field').style.display = 'none'; document.getElementById('variant-photo-field').style.display = 'none';
   updateRecropButton();
 }
 
@@ -1250,6 +1256,11 @@ function loadVariantInForm(i) {
   newPhotoPreview.className = 'form-photo-preview photo-preview--' + cropStyle();
   newPhotoPreview.innerHTML = editingOriginalPhoto ? `<img src="${editingOriginalPhoto}" alt="Aperçu">` : 'Aperçu';
   document.getElementById('new-photo-label').textContent = `Photo de la version « ${v.nom || 'Version ' + (i + 1)} »`;
+  const tg = document.getElementById('variant-photo-targets');
+  tg.innerHTML = `<label><input type="checkbox" data-vall> Toutes</label>` + editingVariants.map((x, j) =>
+    `<label><input type="checkbox" data-vphoto="${j}"${j === i ? ' checked' : ''}> ${escapeHtml(x.nom || 'Version ' + (j + 1))}</label>`).join('');
+  tg.querySelector('[data-vall]').addEventListener('change', e => tg.querySelectorAll('[data-vphoto]').forEach(c => { c.checked = e.target.checked; }));
+  document.getElementById('variant-photo-field').style.display = '';
   newPhotoInput.value = '';
   updateRecropButton();
 }
@@ -1263,6 +1274,12 @@ function saveVariantFromForm() {
   if (ing !== v._ingText) v.ingredients = ing.split('\n').map(l => l.trim()).filter(Boolean).map(parseIngredientLine);
   if (et !== v._etText) v.etapes = et.split('\n').map(l => l.trim()).filter(Boolean);
   v._ingText = ing; v._etText = et;
+  if (newPhotoDataUrl) {
+    // La même photo peut aller sur plusieurs versions cochées
+    document.querySelectorAll('#variant-photo-targets [data-vphoto]:checked').forEach(c => {
+      const w = editingVariants[+c.dataset.vphoto]; if (w && w !== v) { w.photo = newPhotoDataUrl; w.photoDetouree = !!newPhotoCut; }
+    });
+  }
   if (newPhotoDataUrl) { v.photo = newPhotoDataUrl; v.photoDetouree = !!newPhotoCut; editingOriginalPhoto = newPhotoDataUrl; editingOriginalDetouree = !!newPhotoCut; newPhotoDataUrl = ''; }
 }
 document.getElementById('variant-pick').addEventListener('change', e => {
@@ -1309,7 +1326,7 @@ document.getElementById('modal-edit').addEventListener('click', () => {
     loadVariantInForm(0);
   } else {
     editingVariants = null;
-    document.getElementById('variant-pick-field').style.display = 'none';
+    document.getElementById('variant-pick-field').style.display = 'none'; document.getElementById('variant-photo-field').style.display = 'none';
     document.getElementById('new-temps').value = r.temps || '';
     document.getElementById('new-personnes').value = r.personnes || '';
     document.getElementById('new-portion').value = r.portion || '';
@@ -1560,4 +1577,4 @@ addForm.addEventListener('submit', async e => {
 });
 
 renderAuthZone();
-buildGrids();
+refreshRecettes(); // fusionne déjà les versions avant que les recettes en ligne arrivent

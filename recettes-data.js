@@ -8903,7 +8903,7 @@ const recettes = [
         "portion": "pot"
       },
       {
-        "nom": "Au chocolat blanc",
+        "nom": "Au chocolat blanc et fleur de sel",
         "temps": "30 min",
         "personnes": "6",
         "ingredients": [
@@ -8957,67 +8957,6 @@ const recettes = [
           "Pendant ce temps, mettre la crème dans le bol et chauffer <b>4 min / 90 °C / vitesse 1</b>.",
           "Verser le caramel dans le bol avec la crème chaude, ajouter le beurre, la vanille et la fleur de sel. Mélanger <b>3 min / 90 °C / vitesse 3</b>.",
           "Ajouter le chocolat blanc en morceaux et mélanger <b>1 min / vitesse 3</b> jusqu'à ce qu'il soit fondu. Mettre en pots."
-        ]
-      },
-      {
-        "nom": "Au chocolat blanc et fleur de sel, grande quantité",
-        "temps": "50 min (+ 1 nuit au réfrigérateur)",
-        "personnes": "4",
-        "portion": "pots",
-        "ingredients": [
-          {
-            "texte": "490 g de sucre blanc",
-            "valeur": 490,
-            "unite": "g",
-            "reste": "sucre blanc"
-          },
-          {
-            "texte": "385 g de crème liquide entière",
-            "valeur": 385,
-            "unite": "g",
-            "reste": "crème liquide entière"
-          },
-          {
-            "texte": "350 g de beurre doux",
-            "valeur": 350,
-            "unite": "g",
-            "reste": "beurre doux"
-          },
-          {
-            "texte": "175 g de chocolat blanc",
-            "valeur": 175,
-            "unite": "g",
-            "reste": "chocolat blanc"
-          },
-          {
-            "texte": "10,5 g de fleur de sel",
-            "valeur": 10.5,
-            "unite": "g",
-            "reste": "fleur de sel"
-          },
-          {
-            "texte": "1 g de vanille en poudre (ou les graines d'une demi-gousse)",
-            "valeur": 1,
-            "unite": "g",
-            "reste": "vanille en poudre (ou les graines d'une demi-gousse)"
-          }
-        ],
-        "etapes": [
-          "Couper le beurre en morceaux et hacher le chocolat blanc. Préparer 4 pots en verre propres d'environ 0,35 L.",
-          "Faire un caramel à sec : mettre le sucre dans une grande casserole à fond épais à feu moyen, sans remuer, en inclinant la casserole pour répartir le sucre qui fond, jusqu'à un caramel doré et lisse.",
-          "Pendant ce temps, chauffer la crème jusqu'à une ébullition douce dans une autre casserole.",
-          "Hors du feu, verser la crème chaude dans le caramel petit à petit en mélangeant lentement (attention, ça bouillonne et ça projette).",
-          "Remettre sur feu doux et laisser bouillonner légèrement 2 minutes en remuant, jusqu'à ce que le mélange soit homogène et qu'il ne reste aucun morceau de caramel.",
-          "Hors du feu, ajouter le beurre en morceaux, la vanille et la fleur de sel, et mélanger jusqu'à ce que tout soit absorbé.",
-          "Ajouter le chocolat blanc et mélanger jusqu'à ce qu'il soit fondu et que le caramel soit brillant, puis mixer 1 minute au mixeur plongeant pour une texture très lisse.",
-          "Laisser tiédir, verser dans les pots et réfrigérer jusqu'à ce qu'il soit bien pris, idéalement une nuit (s'il presse, 1 h au congélateur). Il se garde 2 semaines au réfrigérateur.",
-          "À utiliser à la cuillère ou en filet sur des gâteaux, biscuits, crêpes ou desserts, ou pour garnir un insert ou des tartelettes."
-        ],
-        "mc": [
-          "Le caramel se fait à la casserole (le robot ne chauffe pas assez pour caraméliser) : faire fondre le sucre à sec jusqu'à un caramel doré.",
-          "Mettre la crème dans le bol, chauffer <b>5 min / 90 °C / vitesse 1</b>, puis la verser petit à petit dans le caramel hors du feu en mélangeant, et laisser bouillonner 2 minutes à feu doux.",
-          "Mettre le chocolat blanc dans le bol rincé, hacher <b>10 s / vitesse 7</b>. Ajouter le caramel chaud, le beurre en morceaux, la vanille et la fleur de sel, mixer <b>1 min / vitesse 5</b> jusqu'à ce que ce soit très lisse.",
-          "Verser dans les pots, laisser tiédir et réfrigérer une nuit."
         ]
       }
     ]
@@ -13533,78 +13472,6 @@ const recettes = [
           "Ajouter les œufs, les jaunes et le sucre, mélanger <b>30 s / vitesse 4</b>. Ajouter la farine, <b>10 s / vitesse 4</b>.",
           "Remplir les moules et cuire comme dans la version classique."
         ]
-      },
-      {
-        "nom": "Hyper gourmand à la vanille",
-        "temps": "29 min",
-        "personnes": "6",
-        "ingredients": [
-          {
-            "texte": "200 g de chocolat noir",
-            "valeur": 200,
-            "unite": "g",
-            "reste": "chocolat noir"
-          },
-          {
-            "texte": "120 g de beurre doux",
-            "valeur": 120,
-            "unite": "g",
-            "reste": "beurre doux"
-          },
-          {
-            "texte": "150 g de sucre en poudre",
-            "valeur": 150,
-            "unite": "g",
-            "reste": "sucre en poudre"
-          },
-          {
-            "texte": "4 œufs",
-            "valeur": 4,
-            "unite": null,
-            "reste": "œufs"
-          },
-          {
-            "texte": "60 g de farine tout usage",
-            "valeur": 60,
-            "unite": "g",
-            "reste": "farine tout usage"
-          },
-          {
-            "texte": "1 cl d'extrait de vanille",
-            "valeur": 1,
-            "unite": "cl",
-            "reste": "extrait de vanille"
-          },
-          {
-            "texte": "1 pincée de sel",
-            "valeur": 1,
-            "unite": "pincée",
-            "reste": "sel"
-          },
-          {
-            "texte": "10 g de beurre pour le moule",
-            "valeur": 10,
-            "unite": "g",
-            "reste": "beurre pour le moule"
-          },
-          "sucre glace (facultatif)"
-        ],
-        "etapes": [
-          "Préchauffer le four à 180°C (thermostat 6). Beurrer et fariner légèrement 6 ramequins individuels.",
-          "Faire fondre le chocolat noir et le beurre ensemble au bain-marie ou au micro-ondes en plusieurs intervalles, puis mélanger jusqu'à obtenir une texture lisse.",
-          "Ajouter le sucre dans le mélange chocolat-beurre et mélanger jusqu'à ce que la préparation soit homogène.",
-          "Incorporer les œufs un à un en battant entre chaque ajout pour intégrer de l'air et obtenir une texture plus légère.",
-          "Ajouter la farine tamisée, l'extrait de vanille et la pincée de sel. Mélanger juste ce qu'il faut pour amalgamer la pâte sans la travailler excessivement.",
-          "Répartir la pâte dans les ramequins. Enfourner et cuire environ 12 à 14 minutes selon le four ; le cœur doit rester coulant.",
-          "Sortir du four et laisser reposer 5 minutes avant de démouler délicatement. Saupoudrer éventuellement de sucre glace avant dégustation.",
-          "Servir tiède avec une boule de glace à la vanille ou une cuillère de crème anglaise si désiré."
-        ],
-        "mc": [
-          "Préchauffer le four à 180 °C et préparer les ramequins.",
-          "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter le beurre et faire fondre <b>3 min / 50 °C / vitesse 2</b>.",
-          "Ajouter le sucre, les œufs, la vanille et le sel, mélanger <b>30 s / vitesse 4</b>. Ajouter la farine, <b>10 s / vitesse 4</b>.",
-          "Remplir les ramequins et cuire comme dans la version classique. Saupoudrer de sucre glace."
-        ]
       }
     ]
   },
@@ -14374,120 +14241,59 @@ const recettes = [
     "titre": "Crêpes maison",
     "photo": "photos/enattente.png",
     "cat": "dessert",
-    "variantes": [
+    "temps": "25 min (+ 30 min de repos)",
+    "personnes": "8",
+    "ingredients": [
       {
-        "nom": "Classiques",
-        "temps": "30 min (+ repos)",
-        "personnes": "6",
-        "ingredients": [
-          {
-            "texte": "250 g de farine",
-            "valeur": 250,
-            "unite": "g",
-            "reste": "farine"
-          },
-          {
-            "texte": "4 œufs",
-            "valeur": 4,
-            "unite": null,
-            "reste": "œufs"
-          },
-          {
-            "texte": "500 ml de lait",
-            "valeur": 500,
-            "unite": "ml",
-            "reste": "lait"
-          },
-          {
-            "texte": "1 pincée de sel",
-            "valeur": 1,
-            "unite": "pincée",
-            "reste": "sel"
-          },
-          {
-            "texte": "2 c. à soupe de sucre",
-            "valeur": 2,
-            "unite": "c. à soupe",
-            "reste": "sucre"
-          },
-          {
-            "texte": "50 g de beurre fondu",
-            "valeur": 50,
-            "unite": "g",
-            "reste": "beurre fondu"
-          }
-        ],
-        "etapes": [
-          "Dans un saladier, mélanger la farine, le sucre et le sel.",
-          "Creuser un puits au centre, casser les œufs, puis commencer à mélanger en incorporant petit à petit le lait pour éviter les grumeaux.",
-          "Ajouter le beurre fondu et fouetter jusqu'à obtenir une pâte lisse et fluide.",
-          "Laisser reposer la pâte au moins 30 minutes à température ambiante (idéalement 1 heure).",
-          "Chauffer une poêle à crêpes légèrement beurrée à feu moyen-vif, verser une louche de pâte et l'étaler en inclinant la poêle.",
-          "Cuire 1 à 2 minutes de chaque côté jusqu'à ce que la crêpe soit dorée, puis répéter avec le reste de la pâte."
-        ],
-        "mc": [
-          "Mettre le lait, les œufs, la farine, le sucre, le sel et le beurre fondu dans le bol.",
-          "Mixer <b>20 s / vitesse 5</b>, racler les parois et mixer encore <b>10 s / vitesse 5</b> : la pâte est lisse, sans grumeaux.",
-          "Laisser reposer 30 minutes à 1 heure, puis cuire les crêpes dans une poêle chaude légèrement beurrée."
-        ]
+        "texte": "333 g de farine",
+        "valeur": 333,
+        "unite": "g",
+        "reste": "farine"
       },
       {
-        "nom": "Façon Stanimirovic",
-        "temps": "25 min (+ repos)",
-        "personnes": "8",
-        "ingredients": [
-          {
-            "texte": "4 œufs",
-            "valeur": 4,
-            "unite": null,
-            "reste": "œufs"
-          },
-          {
-            "texte": "40 g de beurre fondu",
-            "valeur": 40,
-            "unite": "g",
-            "reste": "beurre fondu"
-          },
-          {
-            "texte": "4 c. à soupe de sucre",
-            "valeur": 4,
-            "unite": "c. à soupe",
-            "reste": "sucre"
-          },
-          {
-            "texte": "333 g de farine",
-            "valeur": 333,
-            "unite": "g",
-            "reste": "farine"
-          },
-          {
-            "texte": "666 ml de lait",
-            "valeur": 666,
-            "unite": "ml",
-            "reste": "lait"
-          },
-          {
-            "texte": "1 pincée de sel",
-            "valeur": 1,
-            "unite": "pincée",
-            "reste": "sel"
-          }
-        ],
-        "etapes": [
-          "Dans un saladier, fouetter les œufs avec le sucre et le sel jusqu'à obtenir un mélange mousseux.",
-          "Ajouter le beurre fondu tiède et mélanger.",
-          "Incorporer la farine en trois fois, en alternant avec le lait, tout en fouettant pour éviter les grumeaux.",
-          "Fouetter jusqu'à obtenir une pâte bien lisse et fluide.",
-          "Laisser reposer la pâte au moins 30 minutes à température ambiante.",
-          "Chauffer une poêle à crêpes légèrement beurrée à feu moyen-vif, verser une louche de pâte en inclinant la poêle pour bien l'étaler.",
-          "Cuire 1 à 2 minutes de chaque côté jusqu'à ce que la crêpe soit dorée, puis répéter avec le reste de la pâte."
-        ],
-        "mc": [
-          "Mettre les œufs, le sucre, le sel, le beurre fondu, la farine et le lait dans le bol.",
-          "Mixer <b>30 s / vitesse 5</b>, racler les parois et mixer <b>10 s / vitesse 5</b>.",
-          "Laisser reposer au moins 30 minutes, puis cuire les crêpes à la poêle."
-        ]
+        "texte": "4 œufs",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "4 c. à soupe de sucre",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "0,67 L de lait",
+        "valeur": 0.67,
+        "unite": "L",
+        "reste": "lait"
+      },
+      {
+        "texte": "40 g de beurre fondu",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "beurre fondu"
       }
+    ],
+    "etapes": [
+      "Verser la farine dans un grand saladier et creuser un puits au centre.",
+      "Casser les œufs dans le puits, ajouter le sucre et le sel, puis fouetter les œufs au centre en faisant tomber la farine petit à petit depuis les bords : la pâte devient épaisse et lisse, sans grumeaux.",
+      "Quand toute la farine est incorporée, verser le lait petit à petit en fouettant sans arrêt, pour détendre la pâte progressivement.",
+      "Ajouter le beurre fondu tiède et fouetter jusqu'à une pâte bien lisse et fluide.",
+      "Laisser reposer la pâte au moins 30 minutes à température ambiante.",
+      "Chauffer une poêle à crêpes légèrement beurrée à feu moyen-vif, verser une louche de pâte en inclinant la poêle pour bien l'étaler.",
+      "Cuire 1 à 2 minutes de chaque côté jusqu'à ce que la crêpe soit dorée, puis recommencer avec le reste de la pâte."
+    ],
+    "mc": [
+      "Mettre les œufs, le sucre, le sel, la farine et le beurre fondu dans le bol, mixer <b>20 s / vitesse 4</b> pour obtenir une pâte épaisse et lisse.",
+      "Ajouter le lait et mixer <b>20 s / vitesse 5</b>, racler les parois puis mixer encore <b>10 s / vitesse 5</b>.",
+      "Laisser reposer au moins 30 minutes, puis cuire les crêpes à la poêle."
     ]
   },
   {
@@ -14637,103 +14443,51 @@ const recettes = [
     "titre": "Croque-monsieur",
     "photo": "photos/enattente.png",
     "cat": "plat",
-    "variantes": [
+    "temps": "20 min",
+    "personnes": "4",
+    "ingredients": [
       {
-        "nom": "Classique au four",
-        "temps": "20 min",
-        "personnes": "4",
-        "ingredients": [
-          {
-            "texte": "8 tranches de pain de mie",
-            "valeur": 8,
-            "unite": null,
-            "reste": "tranches de pain de mie"
-          },
-          {
-            "texte": "4 tranches de jambon",
-            "valeur": 4,
-            "unite": null,
-            "reste": "tranches de jambon"
-          },
-          {
-            "texte": "150 g d'emmental râpé",
-            "valeur": 150,
-            "unite": "g",
-            "reste": "emmental râpé"
-          },
-          {
-            "texte": "30 g de beurre mou",
-            "valeur": 30,
-            "unite": "g",
-            "reste": "beurre mou"
-          },
-          {
-            "texte": "4 c. à soupe de crème fraîche ou béchamel",
-            "valeur": 4,
-            "unite": "c. à soupe",
-            "reste": "crème fraîche ou béchamel"
-          },
-          "poivre"
-        ],
-        "etapes": [
-          "Préchauffer le four à 220 °C (ou en position grill).",
-          "Beurrer légèrement les tranches de pain sur une face.",
-          "Sur la face non beurrée de 4 tranches, poser une tranche de jambon et un peu de fromage. Refermer, face beurrée vers l’extérieur.",
-          "Napper le dessus de crème fraîche, parsemer du reste de fromage et poivrer.",
-          "Cuire 10 minutes, jusqu’à ce que le dessus soit gratiné. Ajouter un œuf au plat dessus pour un croque-madame."
-        ],
-        "mc": [
-          "Béchamel express (si besoin) : mettre 20 g de beurre, 20 g de farine et 250 ml de lait dans le bol, cuire <b>6 min / 90 °C / vitesse 4</b>.",
-          "Monter les croques, napper de crème ou de béchamel, parsemer de fromage et cuire 10 minutes à 220 °C."
-        ]
+        "texte": "8 tranches de pain de mie",
+        "valeur": 8,
+        "unite": null,
+        "reste": "tranches de pain de mie"
       },
       {
-        "nom": "Jambon, fromage et mozzarella",
-        "temps": "15 min",
-        "personnes": "4",
-        "ingredients": [
-          {
-            "texte": "8 tranches pain de mie",
-            "valeur": 8,
-            "unite": null,
-            "reste": "tranches pain de mie"
-          },
-          {
-            "texte": "200 g de jambon",
-            "valeur": 200,
-            "unite": "g",
-            "reste": "jambon"
-          },
-          {
-            "texte": "150 g de fromage",
-            "valeur": 150,
-            "unite": "g",
-            "reste": "fromage"
-          },
-          {
-            "texte": "150 g de mozzarella",
-            "valeur": 150,
-            "unite": "g",
-            "reste": "mozzarella"
-          },
-          {
-            "texte": "50 g de beurre",
-            "valeur": 50,
-            "unite": "g",
-            "reste": "beurre"
-          }
-        ],
-        "etapes": [
-          "Préchauffez votre appareil à croque-monsieur ou une poêle à feu moyen.",
-          "Étalez une fine couche de beurre sur un côté de chaque tranche de pain de mie.",
-          "Sur la partie non beurrée, déposez une tranche de jambon, une tranche de fromage et de la mozzarella.",
-          "Recouvrez avec une autre tranche de pain de mie, côté beurré vers l'extérieur.",
-          "Faites cuire dans l'appareil à croque-monsieur ou dans la poêle jusqu'à ce que le pain soit doré et le fromage fondu, environ 5-7 minutes."
-        ],
-        "mc": [
-          "Pas besoin du Monsieur Cuisine pour cette recette : les croques cuisent à l'appareil ou à la poêle, suivre la version classique."
-        ]
-      }
+        "texte": "4 tranches de jambon",
+        "valeur": 4,
+        "unite": null,
+        "reste": "tranches de jambon"
+      },
+      {
+        "texte": "150 g d'emmental râpé",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "emmental râpé"
+      },
+      {
+        "texte": "30 g de beurre mou",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "4 c. à soupe de crème fraîche ou béchamel",
+        "valeur": 4,
+        "unite": "c. à soupe",
+        "reste": "crème fraîche ou béchamel"
+      },
+      "poivre"
+    ],
+    "etapes": [
+      "Préchauffer le four à 220 °C (ou en position grill).",
+      "Beurrer légèrement les tranches de pain sur une face.",
+      "Sur la face non beurrée de 4 tranches, poser une tranche de jambon et un peu de fromage. Refermer, face beurrée vers l’extérieur.",
+      "Napper le dessus de crème fraîche, parsemer du reste de fromage et poivrer.",
+      "Cuire 10 minutes, jusqu’à ce que le dessus soit gratiné. Ajouter un œuf au plat dessus pour un croque-madame."
+    ],
+    "mc": [
+      "Béchamel express (si besoin) : mettre 20 g de beurre, 20 g de farine et 250 ml de lait dans le bol, cuire <b>6 min / 90 °C / vitesse 4</b>.",
+      "Monter les croques, napper de crème ou de béchamel, parsemer de fromage et cuire 10 minutes à 220 °C."
     ]
   },
   {
@@ -22141,6 +21895,67 @@ const recettes = [
           "Ajouter la farine, la levure et le sel, mélanger <b>20 s / vitesse 4</b>.",
           "Cuire au gaufrier."
         ]
+      },
+      {
+        "nom": "Aux pommes râpées (gaufrier)",
+        "temps": "30 min",
+        "personnes": "6",
+        "ingredients": [
+          {
+            "texte": "130 g de farine",
+            "valeur": 130,
+            "unite": "g",
+            "reste": "farine"
+          },
+          {
+            "texte": "5 g de levure chimique",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "levure chimique"
+          },
+          {
+            "texte": "40 g de sucre",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "2 œufs",
+            "valeur": 2,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "200 g de lait",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "lait"
+          },
+          {
+            "texte": "50 g de beurre demi-sel fondu",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "beurre demi-sel fondu"
+          },
+          {
+            "texte": "350 g de pommes (environ 2)",
+            "valeur": 350,
+            "unite": "g",
+            "reste": "pommes (environ 2)"
+          }
+        ],
+        "etapes": [
+          "Mélanger la farine, la levure et le sucre, ajouter les œufs et fouetter.",
+          "Verser le lait petit à petit en fouettant jusqu'à une pâte lisse, puis le beurre fondu.",
+          "Râper finement les pommes (pas besoin de les cuire, elles cuisent dans la gaufre), les presser légèrement dans les mains pour retirer le jus, et les ajouter à la pâte.",
+          "Préchauffer et graisser légèrement le gaufrier. Verser une louche de pâte par empreinte, refermer et cuire 4 à 5 minutes, jusqu'à ce que les gaufres soient bien dorées et qu'il ne sorte presque plus de vapeur. Ne pas ouvrir trop tôt.",
+          "Laisser refroidir sur une grille pour qu'elles restent croustillantes."
+        ],
+        "mc": [
+          "Mettre la farine, la levure, le sucre, les œufs, le lait et le beurre fondu dans le bol, mélanger <b>20 s / vitesse 4</b>.",
+          "Ajouter les pommes en quartiers, râper <b>4 s / vitesse 5</b> (pas plus, elles doivent rester en petits morceaux).",
+          "Cuire au gaufrier 4 à 5 minutes par fournée."
+        ]
       }
     ]
   },
@@ -27956,6 +27771,208 @@ const recettes = [
           "Garniture : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>. Ajouter la crème et la pulpe de passion, fondre <b>4 min / 50 °C / vitesse 2</b>, ajouter le beurre, <b>20 s / vitesse 4</b>. Filmer et réfrigérer 2 h.",
           "Garnir les coques, les assembler et les laisser 24 h au réfrigérateur avant de déguster."
         ]
+      },
+      {
+        "nom": "Pomme-vanille (2 blancs, meringue italienne)",
+        "temps": "1 h 30 (+ 2 h de ganache et 24 h au réfrigérateur)",
+        "personnes": "30",
+        "ingredients": [
+          {
+            "texte": "100 g de chocolat blanc (ganache)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "chocolat blanc (ganache)"
+          },
+          {
+            "texte": "50 g de crème liquide entière à chauffer (ganache)",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "crème liquide entière à chauffer (ganache)"
+          },
+          {
+            "texte": "50 g de crème liquide entière bien froide (ganache)",
+            "valeur": 50,
+            "unite": "g",
+            "reste": "crème liquide entière bien froide (ganache)"
+          },
+          {
+            "texte": "5 g de sucre (ganache)",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "sucre (ganache)"
+          },
+          {
+            "texte": "5 g d'arôme ou extrait de vanille (ganache)",
+            "valeur": 5,
+            "unite": "g",
+            "reste": "arôme ou extrait de vanille (ganache)"
+          },
+          {
+            "texte": "2 pommes (garniture)",
+            "valeur": 2,
+            "unite": null,
+            "reste": "pommes (garniture)"
+          },
+          {
+            "texte": "10 g de beurre (garniture)",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "beurre (garniture)"
+          },
+          {
+            "texte": "15 g de sucre (garniture)",
+            "valeur": 15,
+            "unite": "g",
+            "reste": "sucre (garniture)"
+          },
+          {
+            "texte": "100 g de poudre d'amande (coques)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "100 g de sucre glace (coques)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "35 g de blanc d'œuf n° 1 (pâte) (coques)",
+            "valeur": 35,
+            "unite": "g",
+            "reste": "blanc d'œuf n° 1 (pâte) (coques)"
+          },
+          {
+            "texte": "100 g de sucre (sirop)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "sucre (sirop)"
+          },
+          {
+            "texte": "25 g d'eau (sirop)",
+            "valeur": 25,
+            "unite": "g",
+            "reste": "eau (sirop)"
+          },
+          {
+            "texte": "35 g de blanc d'œuf n° 2 (meringue) (coques)",
+            "valeur": 35,
+            "unite": "g",
+            "reste": "blanc d'œuf n° 2 (meringue) (coques)"
+          }
+        ],
+        "etapes": [
+          "Ganache : faire fondre le chocolat blanc au micro-ondes par 30 secondes en mélangeant entre chaque (il brûle vite). Chauffer la crème à chauffer avec le sucre jusqu'aux premières bulles, la verser sur le chocolat en 3 fois en mélangeant, puis ajouter la crème froide et la vanille. Filmer et réfrigérer au moins 2 h.",
+          "Pommes : les éplucher, retirer le cœur et les couper en tout petits dés de 5 mm. Les cuire dans le beurre à feu moyen jusqu'à ce qu'elles soient tendres, ajouter le sucre et remuer 2 à 3 minutes jusqu'à ce qu'elles soient dorées. Laisser refroidir.",
+          "Peser les blancs et les séparer : 35 g pour la pâte, 35 g pour la meringue.",
+          "Mixer 2 minutes la poudre d'amande et le sucre glace, tamiser, ajouter le premier blanc et mélanger jusqu'à une pâte épaisse comme de la pâte d'amande.",
+          "Sirop : chauffer le sucre et l'eau sans remuer jusqu'à 118 °C (environ 10 minutes). Sans thermomètre : une goutte dans l'eau froide forme une petite boule molle. Dès que le sirop bout, commencer à fouetter le second blanc.",
+          "Verser le sirop en mince filet sur le blanc mousseux, batteur à vitesse lente, le long de la paroi. Puis fouetter à pleine vitesse jusqu'à ce que le bol soit juste tiède : la meringue est ferme et brillante.",
+          "Macaronner : incorporer la meringue en 3 fois à la pâte d'amande, en soulevant, jusqu'à ce que la pâte soit lisse, brillante et retombe en ruban épais qui disparaît en 20 à 30 secondes.",
+          "Pocher 60 ronds de 2 à 3 cm sur papier cuisson, taper la plaque et laisser croûter 30 minutes. Préchauffer le four à 150 °C.",
+          "Cuire 12 à 14 minutes : les coques ne glissent plus sur leur pied. Attendre 10 minutes avant de les décoller.",
+          "Fouetter la ganache froide comme une chantilly ferme, puis y mélanger délicatement les dés de pomme refroidis.",
+          "Garnir une coque sur deux à la petite cuillère (la poche se boucherait avec les morceaux), refermer, et laisser 24 h au réfrigérateur en boîte. Sortir 20 minutes avant de déguster."
+        ],
+        "mc": [
+          "Ganache : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter la crème à chauffer et le sucre, fondre <b>3 min / 50 °C / vitesse 2</b>, ajouter la crème froide et la vanille <b>10 s / vitesse 3</b>. Réfrigérer 2 h.",
+          "Pommes : cuire les dés à la poêle comme dans la version classique.",
+          "Pâte d'amande : bol rincé et sec, mixer la poudre d'amande et le sucre glace <b>10 s / vitesse 7</b>, tamiser, puis mélanger à la main avec le premier blanc.",
+          "Meringue italienne : le sirop à 118 °C se fait à la casserole (le robot ne monte pas assez). Fouet inséré, fouetter le second blanc <b>vitesse 4</b> et verser le sirop en filet par l'ouverture, puis <b>5 min / vitesse 4</b> jusqu'à tiédeur.",
+          "Macaronner à la main, pocher, croûter et cuire 12 à 14 minutes à 150 °C.",
+          "Fouetter la ganache froide <b>40 s / vitesse 3</b> (fouet), y mélanger les pommes, garnir et laisser 24 h au frais."
+        ],
+        "portion": "macarons"
+      },
+      {
+        "nom": "Pomme-cannelle (2 blancs, compotée)",
+        "temps": "1 h 15 (+ 30 min de croûtage et 24 h au réfrigérateur)",
+        "personnes": "20",
+        "ingredients": [
+          {
+            "texte": "70 g de blancs d'œufs (2), à température ambiante (coques)",
+            "valeur": 70,
+            "unite": "g",
+            "reste": "blancs d'œufs (2), à température ambiante (coques)"
+          },
+          {
+            "texte": "35 g de sucre (coques)",
+            "valeur": 35,
+            "unite": "g",
+            "reste": "sucre (coques)"
+          },
+          {
+            "texte": "100 g de poudre d'amande (coques)",
+            "valeur": 100,
+            "unite": "g",
+            "reste": "poudre d'amande (coques)"
+          },
+          {
+            "texte": "120 g de sucre glace (coques)",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "sucre glace (coques)"
+          },
+          {
+            "texte": "1 c. à café de cannelle (coques, facultatif) (coques)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "cannelle (coques, facultatif) (coques)"
+          },
+          {
+            "texte": "2 pommes (Golden ou Reinette) (garniture)",
+            "valeur": 2,
+            "unite": null,
+            "reste": "pommes (Golden ou Reinette) (garniture)"
+          },
+          {
+            "texte": "20 g de beurre (garniture)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "beurre (garniture)"
+          },
+          {
+            "texte": "30 g de cassonade (garniture)",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "cassonade (garniture)"
+          },
+          {
+            "texte": "0,5 c. à café de cannelle ou vanille (garniture) (garniture)",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "cannelle ou vanille (garniture) (garniture)"
+          },
+          {
+            "texte": "1 c. à café de fécule de maïs (garniture)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "fécule de maïs (garniture)"
+          },
+          {
+            "texte": "1 c. à café de jus de citron (garniture)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "jus de citron (garniture)"
+          }
+        ],
+        "etapes": [
+          "Mixer brièvement la poudre d'amande, le sucre glace et la cannelle, puis tamiser.",
+          "Monter les blancs en neige ; quand ils moussent, ajouter le sucre en 3 fois et fouetter jusqu'à une meringue ferme et brillante.",
+          "Macaronner : incorporer les poudres à la maryse en écrasant la pâte contre les parois, jusqu'à ce qu'elle soit lisse et coule en ruban épais. Ne pas trop mélanger.",
+          "Pocher des disques de 3 cm sur papier cuisson, taper la plaque et laisser croûter 30 minutes jusqu'à ce que la surface ne colle plus.",
+          "Cuire 13 à 15 minutes à 150 °C (chaleur tournante) et laisser refroidir complètement avant de décoller.",
+          "Garniture : éplucher et couper les pommes en tout petits dés. Faire fondre le beurre avec la cassonade, ajouter les pommes, la cannelle (ou la vanille) et le citron, et cuire 15 minutes à feu moyen en remuant jusqu'à ce qu'elles soient fondantes.",
+          "Écraser légèrement à la fourchette, ajouter la fécule délayée dans un peu d'eau et cuire encore 2 minutes : la compotée doit être très épaisse, sinon elle détrempe les coques. Laisser refroidir complètement.",
+          "Garnir une coque sur deux d'une petite cuillère de compotée, refermer et laisser 24 h au réfrigérateur en boîte. Sortir 20 minutes avant de servir."
+        ],
+        "mc": [
+          "Mixer la poudre d'amande, le sucre glace et la cannelle <b>10 s / vitesse 7</b>, tamiser. Bien laver et sécher le bol.",
+          "Fouet inséré, fouetter les blancs <b>2 min / vitesse 4</b>, ajouter le sucre par l'ouverture et fouetter <b>3 min / vitesse 4</b>. Macaronner à la main, pocher, croûter et cuire.",
+          "Garniture : bol rincé, mettre le beurre, la cassonade, les dés de pomme, la cannelle et le citron, cuire <b>12 min / 100 °C / sens inverse / vitesse 1</b>. Ajouter la fécule délayée, <b>2 min / 100 °C / sens inverse / vitesse 1</b>. Laisser refroidir et garnir."
+        ],
+        "portion": "macarons"
       }
     ],
     "fetes": [
@@ -29269,58 +29286,6 @@ const recettes = [
       "Mettre les biscuits dans le bol, mixer <b>10 s / vitesse 7</b>. Ajouter le beurre et le sucre glace, mélanger <b>10 s / vitesse 4</b>.",
       "Garnir la pâte, rouler, découper en bâtonnets et cuire comme dans la version classique.",
       "Chocolat : bol propre, <b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>. Tremper les bâtonnets et parsemer de noix."
-    ]
-  },
-  {
-    "id": "static-224",
-    "titre": "Milkshake Kinder Bueno Nutella express",
-    "photo": "photos/enattente.png",
-    "temps": "10 min",
-    "personnes": "2",
-    "cat": "boisson",
-    "ingredients": [
-      {
-        "texte": "400 ml de lait demi-écrémé",
-        "valeur": 400,
-        "unite": "ml",
-        "reste": "lait demi-écrémé"
-      },
-      {
-        "texte": "40 g de Nutella",
-        "valeur": 40,
-        "unite": "g",
-        "reste": "Nutella"
-      },
-      {
-        "texte": "2 Kinder Bueno",
-        "valeur": 2,
-        "unite": null,
-        "reste": "Kinder Bueno"
-      },
-      {
-        "texte": "2 boules de glace vanille",
-        "valeur": 2,
-        "unite": null,
-        "reste": "boules de glace vanille"
-      },
-      {
-        "texte": "1 c. à soupe de sauce chocolatée",
-        "valeur": 1,
-        "unite": "c. à soupe",
-        "reste": "sauce chocolatée"
-      }
-    ],
-    "etapes": [
-      "Couper les Kinder Bueno en morceaux et les réserver.",
-      "Dans un blender, verser le lait demi-écrémé et ajouter les boules de glace vanille.",
-      "Ajouter le Nutella et les morceaux de Kinder Bueno dans le blender.",
-      "Mixer à puissance élevée jusqu'à obtenir une texture lisse et crémeuse.",
-      "Verser le milkshake dans un grand verre, ajouter une cuillère de sauce chocolatée en décor et garnir avec les morceaux de Kinder Bueno réservés."
-    ],
-    "mc": [
-      "Mettre le lait, la glace, le Nutella et les Kinder Bueno en morceaux dans le bol.",
-      "Mixer <b>30 s / vitesse 9</b>.",
-      "Décorer les verres de sauce chocolat et servir."
     ]
   },
   {
@@ -33078,101 +33043,47 @@ const recettes = [
     "titre": "Pain maison simple et croustillant",
     "photo": "photos/enattente.png",
     "cat": "base-culinaire",
-    "variantes": [
+    "temps": "45 min (+ 1 h 30 de pousse)",
+    "personnes": "6",
+    "ingredients": [
       {
-        "nom": "Recette maison sans pétrissage",
-        "temps": "45 min (+ 1 h 30 de pousse)",
-        "personnes": "6",
-        "ingredients": [
-          {
-            "texte": "500 g de farine",
-            "valeur": 500,
-            "unite": "g",
-            "reste": "farine"
-          },
-          {
-            "texte": "10 g de sel",
-            "valeur": 10,
-            "unite": "g",
-            "reste": "sel"
-          },
-          {
-            "texte": "16 g de levure boulangère",
-            "valeur": 16,
-            "unite": "g",
-            "reste": "levure boulangère"
-          },
-          {
-            "texte": "400 ml d'eau tiède",
-            "valeur": 400,
-            "unite": "ml",
-            "reste": "eau tiède"
-          }
-        ],
-        "etapes": [
-          "Diluer la levure avec un peu d'eau tiède, puis ajouter le reste de l'eau.",
-          "Ajouter la farine et le sel, puis mélanger grossièrement à la cuillère en bois.",
-          "Laisser lever pendant 1 h 30, couvert d'un torchon.",
-          "Ne pas travailler la pâte : la verser telle quelle sur une plaque farinée ou dans un moule.",
-          "Préchauffer le four à 240 °C et mettre un peu d'eau dans un plat au fond du four (pour la vapeur).",
-          "Enfourner et cuire 30 minutes."
-        ],
-        "mc": [
-          "Mettre l'eau tiède et la levure dans le bol. Mélanger <b>1 min / 37 °C / vitesse 1</b>.",
-          "Ajouter la farine et le sel. Mélanger <b>30 s / mode pétrin</b>, juste pour rassembler (la pâte ne doit pas être travaillée).",
-          "Laisser lever 1 h 30, couvert, dans le bol ou dans un saladier.",
-          "Verser la pâte sur la plaque, puis cuire 30 minutes à 240 °C avec un peu d'eau au fond du four."
-        ]
+        "texte": "500 g de farine",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine"
       },
       {
-        "nom": "Pain rond croustillant",
-        "temps": "70 min (+ 2h de repos)",
-        "personnes": "4",
-        "ingredients": [
-          {
-            "texte": "400 g de farine",
-            "valeur": 400,
-            "unite": "g",
-            "reste": "farine"
-          },
-          {
-            "texte": "300 ml d'eau tiède",
-            "valeur": 300,
-            "unite": "ml",
-            "reste": "eau tiède"
-          },
-          {
-            "texte": "1 sachet de levure boulangère",
-            "valeur": 1,
-            "unite": "sachet",
-            "reste": "levure boulangère"
-          },
-          {
-            "texte": "1 c. à café de sel",
-            "valeur": 1,
-            "unite": "c. à café",
-            "reste": "sel"
-          }
-        ],
-        "etapes": [
-          "Dans un grand saladier, verser la farine.",
-          "Ajouter le sachet de levure boulangère et le sel, puis mélanger brièvement pour répartir les ingrédients.",
-          "Ajouter progressivement l'eau tiède dans le mélange farine-levure-sel jusqu'à obtenir une pâte légèrement collante et visqueuse.",
-          "Pétrir la pâte à la main ou avec une spatule jusqu'à ce qu'elle soit homogène et élastique.",
-          "Couvrir avec un torchon et laisser poser au moins deux heures pour lever ; idéalement laisser poser toute la nuit pour un meilleur développement aromatique.",
-          "Au bout de la première levée, saupoudrer légèrement le plan de travail de farine et retourner la pâte dessus pour la dégazer délicatement.",
-          "Rabattre la pâte en ramenant un côté puis l'autre, puis replier jusqu'à obtenir une forme lisse et régulière.",
-          "Laisser reposer à nouveau couvert pendant trente minutes sur le plan de travail.",
-          "Préchauffer le four à 230°C et préparer un plat allant au four adapté ; y placer la pâte et couvrir.",
-          "Cuire trente minutes sous couvercle, puis retirer le couvercle et poursuivre la cuisson vingt minutes supplémentaires pour obtenir une croûte dorée et croustillante.",
-          "Laisser refroidir le pain jusqu'à tiède ou refroidir complètement avant de le couper afin de préserver les bulles et la mie."
-        ],
-        "mc": [
-          "Mettre l'eau tiède et la levure dans le bol. Chauffer <b>1 min / 37 °C / vitesse 1</b>.",
-          "Ajouter la farine et le sel. Pétrir <b>4 min / mode pétrin</b>.",
-          "Laisser lever, façonner et cuire comme dans la version classique."
-        ]
+        "texte": "10 g de sel",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "16 g de levure boulangère",
+        "valeur": 16,
+        "unite": "g",
+        "reste": "levure boulangère"
+      },
+      {
+        "texte": "400 ml d'eau tiède",
+        "valeur": 400,
+        "unite": "ml",
+        "reste": "eau tiède"
       }
+    ],
+    "etapes": [
+      "Diluer la levure avec un peu d'eau tiède, puis ajouter le reste de l'eau.",
+      "Ajouter la farine et le sel, puis mélanger grossièrement à la cuillère en bois.",
+      "Laisser lever pendant 1 h 30, couvert d'un torchon.",
+      "Ne pas travailler la pâte : la verser telle quelle sur une plaque farinée ou dans un moule.",
+      "Préchauffer le four à 240 °C et mettre un peu d'eau dans un plat au fond du four (pour la vapeur).",
+      "Enfourner et cuire 30 minutes."
+    ],
+    "mc": [
+      "Mettre l'eau tiède et la levure dans le bol. Mélanger <b>1 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine et le sel. Mélanger <b>30 s / mode pétrin</b>, juste pour rassembler (la pâte ne doit pas être travaillée).",
+      "Laisser lever 1 h 30, couvert, dans le bol ou dans un saladier.",
+      "Verser la pâte sur la plaque, puis cuire 30 minutes à 240 °C avec un peu d'eau au fond du four."
     ]
   },
   {
@@ -38829,58 +38740,162 @@ const recettes = [
     "id": "static-301",
     "titre": "Poulet laqué sauce miel-soja",
     "photo": "photos/enattente.png",
-    "temps": "30 min",
-    "personnes": "4",
     "cat": "plat",
-    "ingredients": [
+    "variantes": [
       {
-        "texte": "600 g de poulet",
-        "valeur": 600,
-        "unite": "g",
-        "reste": "poulet"
+        "nom": "Frit, sauce beurre-miel-soja",
+        "temps": "30 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "600 g de poulet",
+            "valeur": 600,
+            "unite": "g",
+            "reste": "poulet"
+          },
+          {
+            "texte": "3 c. à soupe de miel",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "miel"
+          },
+          {
+            "texte": "3 c. à soupe de sauce soja",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "sauce soja"
+          },
+          {
+            "texte": "1 c. à café de sucre",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "sucre"
+          },
+          {
+            "texte": "30 g de beurre",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "beurre"
+          },
+          "sel",
+          "épices au choix",
+          "un peu d’eau",
+          "farine",
+          "poivre",
+          "huile pour la cuisson"
+        ],
+        "etapes": [
+          "Couper le poulet en cubes.",
+          "Assaisonner avec farine, sel, poivre et épices, ajouter un peu d'eau et mélanger.",
+          "Faire frire les cubes dans un peu d'huile.",
+          "Préparer la sauce dans une petite casserole : faire fondre le beurre maison, ajouter le miel, la sauce soja et le sucre. Mélanger et chauffer à feu moyen.",
+          "Ajouter le poulet frit à la sauce et mélanger pour bien l'enrober."
+        ],
+        "mc": [
+          "Assaisonner, fariner et frire les cubes de poulet comme dans la version classique.",
+          "Sauce : mettre le beurre, le miel, la sauce soja et le sucre dans le bol. Cuire <b>4 min / 100 °C / vitesse 2</b>, sans le gobelet.",
+          "Enrober le poulet de sauce."
+        ]
       },
       {
-        "texte": "3 c. à soupe de miel",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "miel"
-      },
-      {
-        "texte": "3 c. à soupe de sauce soja",
-        "valeur": 3,
-        "unite": "c. à soupe",
-        "reste": "sauce soja"
-      },
-      {
-        "texte": "1 c. à café de sucre",
-        "valeur": 1,
-        "unite": "c. à café",
-        "reste": "sucre"
-      },
-      {
-        "texte": "30 g de beurre",
-        "valeur": 30,
-        "unite": "g",
-        "reste": "beurre"
-      },
-      "sel",
-      "épices au choix",
-      "un peu d’eau",
-      "farine",
-      "poivre",
-      "huile pour la cuisson"
-    ],
-    "etapes": [
-      "Couper le poulet en cubes.",
-      "Assaisonner avec farine, sel, poivre et épices, ajouter un peu d'eau et mélanger.",
-      "Faire frire les cubes dans un peu d'huile.",
-      "Préparer la sauce dans une petite casserole : faire fondre le beurre maison, ajouter le miel, la sauce soja et le sucre. Mélanger et chauffer à feu moyen.",
-      "Ajouter le poulet frit à la sauce et mélanger pour bien l'enrober."
-    ],
-    "mc": [
-      "Assaisonner, fariner et frire les cubes de poulet comme dans la version classique.",
-      "Sauce : mettre le beurre, le miel, la sauce soja et le sucre dans le bol. Cuire <b>4 min / 100 °C / vitesse 2</b>, sans le gobelet.",
-      "Enrober le poulet de sauce."
+        "nom": "Aux carottes caramélisées et paprika fumé",
+        "temps": "30 min",
+        "personnes": "4",
+        "ingredients": [
+          {
+            "texte": "600 g de poulet (filets ou hauts de cuisse sans os)",
+            "valeur": 600,
+            "unite": "g",
+            "reste": "poulet (filets ou hauts de cuisse sans os)"
+          },
+          {
+            "texte": "600 g de carottes (environ 6)",
+            "valeur": 600,
+            "unite": "g",
+            "reste": "carottes (environ 6)"
+          },
+          {
+            "texte": "0,06 L d'eau (sauce)",
+            "valeur": 0.06,
+            "unite": "L",
+            "reste": "eau (sauce)"
+          },
+          {
+            "texte": "1 c. à soupe de jus de citron (sauce)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "jus de citron (sauce)"
+          },
+          {
+            "texte": "3 c. à soupe de miel (sauce)",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "miel (sauce)"
+          },
+          {
+            "texte": "2 c. à soupe de sauce soja (sauce)",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "sauce soja (sauce)"
+          },
+          {
+            "texte": "1 c. à café de paprika fumé (moitié sauce, moitié carottes)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "paprika fumé (moitié sauce, moitié carottes)"
+          },
+          {
+            "texte": "2 gousses d'ail",
+            "valeur": 2,
+            "unite": null,
+            "reste": "gousses d'ail"
+          },
+          {
+            "texte": "2 c. à soupe d'huile d'olive",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "huile d'olive"
+          },
+          {
+            "texte": "3 g de sel",
+            "valeur": 3,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "150 g de skyr ou yaourt grec",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "skyr ou yaourt grec"
+          },
+          {
+            "texte": "30 g de noisettes ou cacahuètes concassées",
+            "valeur": 30,
+            "unite": "g",
+            "reste": "noisettes ou cacahuètes concassées"
+          },
+          {
+            "texte": "2 c. à soupe de coriandre ou persil haché",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "coriandre ou persil haché"
+          }
+        ],
+        "etapes": [
+          "Éplucher les carottes et les couper en fines rondelles en biais de 5 mm. Couper le poulet en morceaux de 2 à 3 cm et hacher l'ail.",
+          "Sauce : mélanger l'eau, le jus de citron, le miel, la sauce soja, l'ail et la moitié du paprika.",
+          "Chauffer 1 c. à soupe d'huile dans une grande poêle à feu moyen-vif, ajouter les carottes, le reste du paprika et le sel, et les faire dorer 8 minutes en remuant de temps en temps : elles doivent être tendres mais encore un peu croquantes. Les réserver.",
+          "Dans la même poêle, chauffer le reste d'huile et faire dorer le poulet 6 minutes sur toutes les faces, jusqu'à ce qu'il soit bien cuit à cœur.",
+          "Remettre les carottes, verser la sauce et laisser réduire 3 à 4 minutes à feu vif en remuant, jusqu'à ce qu'elle soit épaisse et brillante.",
+          "Servir bien chaud avec une cuillerée de skyr, les noisettes et les herbes par-dessus, avec du riz ou de la semoule."
+        ],
+        "mc": [
+          "Éplucher les carottes et les couper en rondelles en biais à la main (le robot les hacherait). Couper le poulet en morceaux.",
+          "Mettre l'ail dans le bol, hacher <b>5 s / vitesse 7</b>. Ajouter l'eau, le citron, le miel, la soja et la moitié du paprika, mélanger <b>10 s / vitesse 3</b> et verser dans un bol.",
+          "Mettre l'huile, le poulet et les carottes dans le bol rincé avec le reste du paprika et le sel, cuire <b>15 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+          "Ajouter la sauce et cuire <b>5 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet, pour qu'elle réduise et nappe. Servir avec le skyr, les noisettes et les herbes."
+        ]
+      }
     ]
   },
   {
@@ -50144,11 +50159,968 @@ const recettes = [
       "Étaler, découper et cuire 10 à 12 minutes à 170 °C.",
       "Glaçage : bol rincé, mettre le sucre glace, le blanc et le citron, mélanger <b>1 min / vitesse 3</b>. Colorer et décorer."
     ]
+  },
+  {
+    "id": "static-707",
+    "photo": "photos/enattente.png",
+    "titre": "Mini-pavlovas bicolores fruits rouges et mangue",
+    "cat": "dessert",
+    "temps": "2 h 30 (dont 55 min de cuisson et 1 h de refroidissement)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "4 blancs d'œufs (120 à 130 g) (meringue)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "blancs d'œufs (120 à 130 g) (meringue)"
+      },
+      {
+        "texte": "245 g de sucre en poudre (meringue)",
+        "valeur": 245,
+        "unite": "g",
+        "reste": "sucre en poudre (meringue)"
+      },
+      {
+        "texte": "1 c. à café de fécule de maïs (meringue)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "fécule de maïs (meringue)"
+      },
+      {
+        "texte": "1 c. à café de jus de citron (meringue)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron (meringue)"
+      },
+      {
+        "texte": "1 pincée de sel (meringue)",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel (meringue)"
+      },
+      {
+        "texte": "250 g de mascarpone (chantilly)",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "mascarpone (chantilly)"
+      },
+      {
+        "texte": "0,3 L de crème liquide entière à 30 % minimum, très froide (chantilly)",
+        "valeur": 0.3,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, très froide (chantilly)"
+      },
+      {
+        "texte": "40 g de sucre glace (chantilly)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre glace (chantilly)"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille (chantilly)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille (chantilly)"
+      },
+      {
+        "texte": "100 g de fraises (garniture)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "fraises (garniture)"
+      },
+      {
+        "texte": "60 g de framboises (garniture)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "framboises (garniture)"
+      },
+      {
+        "texte": "50 g de myrtilles (garniture)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "myrtilles (garniture)"
+      },
+      {
+        "texte": "1 mangue mûre (moitié en dés, moitié en coulis)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "mangue mûre (moitié en dés, moitié en coulis)"
+      },
+      {
+        "texte": "1 fruit de la passion (facultatif)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "fruit de la passion (facultatif)"
+      },
+      {
+        "texte": "100 g de fruits rouges frais ou surgelés (coulis rouge)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "fruits rouges frais ou surgelés (coulis rouge)"
+      },
+      {
+        "texte": "15 g de sucre (coulis rouge)",
+        "valeur": 15,
+        "unite": "g",
+        "reste": "sucre (coulis rouge)"
+      },
+      {
+        "texte": "1 c. à café de jus de citron (coulis rouge)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron (coulis rouge)"
+      },
+      {
+        "texte": "1 c. à soupe de jus de citron vert (coulis mangue)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "jus de citron vert (coulis mangue)"
+      },
+      {
+        "texte": "1 c. à soupe d'eau (coulis mangue)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "eau (coulis mangue)"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 110 °C en chaleur traditionnelle (pas de chaleur tournante). Tracer 8 cercles de 7 cm sur une feuille de papier cuisson, espacés de 3 à 4 cm, puis retourner la feuille pour que l'encre ne touche pas la meringue.",
+      "Monter la meringue : dans un bol parfaitement propre et sec, fouetter les blancs avec le sel jusqu'à ce qu'ils moussent, puis ajouter le sucre cuillère par cuillère en continuant de fouetter, jusqu'à une meringue ferme et brillante. Frotter un peu de meringue entre les doigts : on ne doit plus sentir de grains de sucre.",
+      "Saupoudrer la fécule, ajouter le jus de citron et incorporer délicatement à la spatule, sans faire retomber la meringue.",
+      "Coller le papier sur la plaque avec un point de meringue dans chaque coin. Déposer la meringue sur chaque cercle à la cuillère ou à la poche, puis creuser le centre avec le dos d'une cuillère pour former un nid aux bords relevés.",
+      "Cuire 50 minutes à 1 h sans ouvrir le four : les meringues sont prêtes quand l'extérieur est sec et qu'elles se décollent facilement du papier.",
+      "Éteindre le four et laisser refroidir les meringues dedans, porte entrouverte (une cuillère en bois coincée), au moins 1 h : le refroidissement lent évite les fissures. Les garder ensuite en boîte hermétique à température ambiante, jamais au réfrigérateur.",
+      "Coulis rouge : chauffer les fruits rouges avec le sucre et le citron 5 minutes à feu moyen, mixer puis filtrer pour retirer les pépins. Réfrigérer. Il en faut à peine 1 c. à café par pavlova.",
+      "Coulis mangue : peler la mangue, couper la moitié en petits dés pour la garniture et mixer l'autre moitié avec le citron vert et l'eau jusqu'à une sauce lisse. Réfrigérer.",
+      "Fruits : couper les fraises en petits morceaux et garder framboises et myrtilles entières. Compter environ 1 c. à soupe bombée de fruits par côté de pavlova : la meringue doit rester bien visible.",
+      "Chantilly (juste avant le montage) : fouetter le mascarpone, la crème très froide, le sucre glace et la vanille jusqu'à ce que ce soit ferme. S'arrêter dès que ça tient : trop fouettée, elle devient granuleuse. Astuce : bol et fouet 15 minutes au congélateur avant.",
+      "Montage au dernier moment : garnir chaque nid de chantilly, mettre les fruits rouges sur une moitié et la mangue arrosée de passion sur l'autre. Ajouter juste un filet de chaque coulis sur le dessus (pas plus, sinon la meringue ramollit) et servir aussitôt.",
+      "À l'avance : les meringues se gardent 2 à 3 jours en boîte hermétique et les coulis 2 jours au frais. La chantilly et le montage se font juste avant de servir, sinon la meringue ramollit."
+    ],
+    "mc": [
+      "Préparer le papier avec 8 cercles de 7 cm et préchauffer le four à 110 °C.",
+      "Insérer le fouet. Mettre les blancs et le sel dans le bol propre et sec, fouetter <b>3 min / vitesse 4</b> sans le gobelet. Ajouter le sucre en pluie par l'ouverture et fouetter <b>5 min / vitesse 4</b> jusqu'à une meringue ferme et brillante. Retirer le fouet, incorporer la fécule et le citron à la spatule.",
+      "Former les nids, cuire 50 minutes à 1 h à 110 °C et laisser refroidir 1 h dans le four entrouvert.",
+      "Coulis rouge : bol rincé, mettre les fruits rouges, le sucre et le citron, cuire <b>5 min / 90 °C / vitesse 2</b>, puis mixer <b>20 s / vitesse 8</b> et filtrer.",
+      "Coulis mangue : bol rincé, mettre la moitié de la mangue, le citron vert et l'eau, mixer <b>30 s / vitesse 8</b>.",
+      "Chantilly : bol bien froid, fouet inséré, mettre le mascarpone, la crème, le sucre glace et la vanille, fouetter <b>1 min 30 / vitesse 4</b> en surveillant.",
+      "Monter au dernier moment comme dans la version classique."
+    ],
+    "portion": "pavlovas"
+  },
+  {
+    "id": "static-708",
+    "titre": "Milkshakes maison",
+    "photo": "photos/enattente.png",
+    "cat": "boisson",
+    "variantes": [
+      {
+        "nom": "Vanille",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace à la vanille",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "0,5 c. à café d'extrait de vanille",
+            "valeur": 0.5,
+            "unite": "c. à café",
+            "reste": "extrait de vanille"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant pour qu'elle ramollisse un peu et se mixe facilement.",
+          "Mixer la glace, le lait froid et la vanille 30 secondes à vitesse moyenne, jusqu'à une texture lisse. Ne pas mixer plus : ça réchauffe la glace et rend le milk-shake liquide.",
+          "Trop épais : ajouter un peu de lait et mixer quelques secondes. Trop liquide : ajouter une boule de glace.",
+          "Verser dans des verres passés 10 minutes au congélateur, ajouter la chantilly et servir aussitôt avec une paille.",
+          "Variantes : une banane, quelques fraises ou 1 c. à soupe de sauce chocolat dans le mixeur. Pour plus épais, 0,08 L de lait ; plus léger, 0,18 L."
+        ],
+        "mc": [
+          "Sortir la glace 5 minutes avant.",
+          "Mettre la glace en morceaux, le lait et la vanille dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Verser dans des verres bien froids et servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Chocolat",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace au chocolat (ou vanille)",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace au chocolat (ou vanille)"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "2 c. à soupe de cacao en poudre non sucré ou sauce chocolat",
+            "valeur": 2,
+            "unite": "c. à soupe",
+            "reste": "cacao en poudre non sucré ou sauce chocolat"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          },
+          {
+            "texte": "10 g de copeaux de chocolat (facultatif)",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "copeaux de chocolat (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant pour qu'elle ramollisse un peu.",
+          "Mixer la glace, le lait et le cacao 30 secondes, jusqu'à une texture lisse : pas plus, sinon le milk-shake devient liquide.",
+          "Décorer l'intérieur des verres d'un filet de sauce chocolat, verser, ajouter la chantilly et les copeaux.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace en morceaux, le lait et le cacao dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Verser dans des verres bien froids et servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Fraise",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "150 g de fraises (fraîches ou surgelées)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "fraises (fraîches ou surgelées)"
+          },
+          {
+            "texte": "200 g de glace à la vanille",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,1 L de lait entier bien froid",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "1 c. à soupe de sucre (si les fraises sont acides)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sucre (si les fraises sont acides)"
+          }
+        ],
+        "etapes": [
+          "Laver et équeuter les fraises (des fraises surgelées donnent un milk-shake plus épais).",
+          "Mixer les fraises avec le sucre, puis ajouter la glace et le lait et mixer 30 secondes.",
+          "Goûter et ajouter un peu de sucre si besoin.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre les fraises et le sucre dans le bol, mixer <b>10 s / vitesse 8</b>.",
+          "Ajouter la glace et le lait, mixer <b>30 s / vitesse 6</b> et servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Banane",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "2 bananes bien mûres (idéalement coupées en rondelles et congelées)",
+            "valeur": 2,
+            "unite": null,
+            "reste": "bananes bien mûres (idéalement coupées en rondelles et congelées)"
+          },
+          {
+            "texte": "200 g de glace à la vanille",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,15 L de lait entier bien froid",
+            "valeur": 0.15,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "1 c. à café de miel (facultatif)",
+            "valeur": 1,
+            "unite": "c. à café",
+            "reste": "miel (facultatif)"
+          },
+          {
+            "texte": "1 pincée de cannelle (facultatif)",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "cannelle (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Couper les bananes en rondelles (congelées, elles rendent le milk-shake très crémeux).",
+          "Mixer les bananes, la glace, le lait, le miel et la cannelle 30 à 40 secondes, jusqu'à une texture lisse.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre les bananes, la glace, le lait, le miel et la cannelle dans le bol, mixer <b>40 s / vitesse 6</b>.",
+          "Servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Caramel au beurre salé",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace à la vanille",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "3 c. à soupe de caramel au beurre salé (+ un peu pour les verres)",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "caramel au beurre salé (+ un peu pour les verres)"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          },
+          {
+            "texte": "1 pincée de fleur de sel",
+            "valeur": 1,
+            "unite": "pincée",
+            "reste": "fleur de sel"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant.",
+          "Faire couler un filet de caramel sur les parois intérieures des verres.",
+          "Mixer la glace, le lait et le caramel 30 secondes.",
+          "Verser, ajouter la chantilly, un filet de caramel et une pincée de fleur de sel.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace en morceaux, le lait et le caramel dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Verser dans les verres décorés de caramel et servir."
+        ]
+      },
+      {
+        "nom": "Cookies Oreo",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "275 g de glace à la vanille",
+            "valeur": 275,
+            "unite": "g",
+            "reste": "glace à la vanille"
+          },
+          {
+            "texte": "0,12 L de lait entier bien froid",
+            "valeur": 0.12,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "6 biscuits Oreo (+ 1 pour décorer)",
+            "valeur": 6,
+            "unite": null,
+            "reste": "biscuits Oreo (+ 1 pour décorer)"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Sortir la glace 5 minutes avant.",
+          "Mixer la glace et le lait 20 secondes, puis ajouter les Oreo et mixer seulement 5 secondes : il doit rester des petits morceaux de biscuit.",
+          "Verser, ajouter la chantilly et l'Oreo émietté par-dessus.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace et le lait dans le bol, mixer <b>20 s / vitesse 6</b>.",
+          "Ajouter les Oreo, mixer <b>5 s / vitesse 4</b> et servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Café (frappé)",
+        "temps": "5 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "200 g de glace à la vanille ou au café",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "glace à la vanille ou au café"
+          },
+          {
+            "texte": "0,06 L de café fort refroidi (2 expressos)",
+            "valeur": 0.06,
+            "unite": "L",
+            "reste": "café fort refroidi (2 expressos)"
+          },
+          {
+            "texte": "0,08 L de lait entier bien froid",
+            "valeur": 0.08,
+            "unite": "L",
+            "reste": "lait entier bien froid"
+          },
+          {
+            "texte": "1 c. à soupe de sucre (facultatif)",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sucre (facultatif)"
+          },
+          {
+            "texte": "20 g de chantilly (facultatif)",
+            "valeur": 20,
+            "unite": "g",
+            "reste": "chantilly (facultatif)"
+          }
+        ],
+        "etapes": [
+          "Préparer le café à l'avance et le laisser refroidir complètement (sinon il fait fondre la glace).",
+          "Mixer la glace, le café, le lait et le sucre 30 secondes.",
+          "Verser et ajouter la chantilly et une pincée de cacao.",
+          "Verser dans des verres passés 10 minutes au congélateur et servir aussitôt avec une paille."
+        ],
+        "mc": [
+          "Mettre la glace, le café froid, le lait et le sucre dans le bol, mixer <b>30 s / vitesse 6</b>.",
+          "Servir aussitôt."
+        ]
+      },
+      {
+        "nom": "Kinder Bueno Nutella express",
+        "temps": "10 min",
+        "personnes": "2",
+        "ingredients": [
+          {
+            "texte": "400 ml de lait demi-écrémé",
+            "valeur": 400,
+            "unite": "ml",
+            "reste": "lait demi-écrémé"
+          },
+          {
+            "texte": "40 g de Nutella",
+            "valeur": 40,
+            "unite": "g",
+            "reste": "Nutella"
+          },
+          {
+            "texte": "2 Kinder Bueno",
+            "valeur": 2,
+            "unite": null,
+            "reste": "Kinder Bueno"
+          },
+          {
+            "texte": "2 boules de glace vanille",
+            "valeur": 2,
+            "unite": null,
+            "reste": "boules de glace vanille"
+          },
+          {
+            "texte": "1 c. à soupe de sauce chocolatée",
+            "valeur": 1,
+            "unite": "c. à soupe",
+            "reste": "sauce chocolatée"
+          }
+        ],
+        "etapes": [
+          "Couper les Kinder Bueno en morceaux et les réserver.",
+          "Dans un blender, verser le lait demi-écrémé et ajouter les boules de glace vanille.",
+          "Ajouter le Nutella et les morceaux de Kinder Bueno dans le blender.",
+          "Mixer à puissance élevée jusqu'à obtenir une texture lisse et crémeuse.",
+          "Verser le milkshake dans un grand verre, ajouter une cuillère de sauce chocolatée en décor et garnir avec les morceaux de Kinder Bueno réservés."
+        ],
+        "mc": [
+          "Mettre le lait, la glace, le Nutella et les Kinder Bueno en morceaux dans le bol.",
+          "Mixer <b>30 s / vitesse 9</b>.",
+          "Décorer les verres de sauce chocolat et servir."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "static-709",
+    "photo": "photos/enattente.png",
+    "titre": "Boules briochées farcies",
+    "cat": "apero",
+    "variantes": [
+      {
+        "nom": "jambon, moutarde et gruyère",
+        "temps": "3 h (dont 2 h 15 de pousse)",
+        "personnes": "12",
+        "ingredients": [
+          {
+            "texte": "500 g de farine T45",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "farine T45"
+          },
+          {
+            "texte": "10 g de sel",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "15 g de sucre",
+            "valeur": 15,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "7 g de levure boulangère sèche",
+            "valeur": 7,
+            "unite": "g",
+            "reste": "levure boulangère sèche"
+          },
+          {
+            "texte": "0,1 L de lait tiède",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "lait tiède"
+          },
+          {
+            "texte": "4 œufs",
+            "valeur": 4,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "150 g de beurre mou en dés",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "beurre mou en dés"
+          },
+          {
+            "texte": "1 g de poivre",
+            "valeur": 1,
+            "unite": "g",
+            "reste": "poivre"
+          },
+          {
+            "texte": "200 g de jambon blanc en petits dés (farce)",
+            "valeur": 200,
+            "unite": "g",
+            "reste": "jambon blanc en petits dés (farce)"
+          },
+          {
+            "texte": "150 g de gruyère râpé (+ un peu pour le dessus) (farce)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "gruyère râpé (+ un peu pour le dessus) (farce)"
+          },
+          {
+            "texte": "3 c. à soupe de moutarde à l'ancienne (farce)",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "moutarde à l'ancienne (farce)"
+          },
+          {
+            "texte": "1 jaune d'œuf (dorure)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "jaune d'œuf (dorure)"
+          }
+        ],
+        "etapes": [
+          "Délayer la levure et le sucre dans le lait tiède (pas chaud, sinon la levure meurt) et laisser 10 minutes : ça doit mousser. Sinon, la levure est trop vieille, il faut la changer.",
+          "Mélanger la farine, le sel et le poivre, ajouter le lait levuré et les œufs, puis pétrir 10 minutes jusqu'à une pâte lisse et élastique.",
+          "Ajouter le beurre mou petit à petit en pétrissant encore 8 minutes, jusqu'à ce que la pâte se décolle des parois : elle est souple et un peu collante.",
+          "Couvrir et laisser pousser 1 h 30 dans un endroit tiède, jusqu'à ce qu'elle double (une nuit au réfrigérateur la rend plus facile à façonner).",
+          "Farce : mélanger le jambon, le gruyère et la moutarde.",
+          "Dégazer la pâte et la diviser en 12 pâtons de 75 g. Aplatir chacun en disque, mettre une cuillère de farce au centre, refermer en pinçant bien les bords (sinon le fromage s'échappe), puis rouler en boule sous la paume, soudure en dessous.",
+          "Poser les boules sur une plaque avec du papier cuisson (ou serrées dans un moule rond de 24 cm pour une brioche à partager), couvrir et laisser pousser 45 minutes. Préchauffer le four à 180 °C.",
+          "Dorer au jaune d'œuf délayé avec un peu d'eau, parsemer d'un peu de gruyère et cuire 22 minutes (27 minutes dans le moule), jusqu'à ce que les boules soient bien dorées.",
+          "Laisser tiédir 10 minutes sur une grille. Elles se réchauffent très bien quelques minutes au four."
+        ],
+        "mc": [
+          "Mettre le lait, la levure et le sucre dans le bol, chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sel, le poivre et les œufs, pétrir <b>3 min / mode pétrin</b>. Ajouter le beurre en morceaux, pétrir <b>4 min / mode pétrin</b>. Laisser pousser 1 h 30 dans le bol fermé.",
+          "Farce : bol rincé, mettre le jambon, le gruyère et la moutarde, mélanger <b>10 s / sens inverse / vitesse 3</b>.",
+          "Façonner les 12 boules fourrées, laisser pousser 45 minutes et cuire 22 minutes à 180 °C comme dans la version classique."
+        ],
+        "portion": "boules"
+      },
+      {
+        "nom": "chorizo et moutarde",
+        "temps": "3 h (dont 2 h 15 de pousse)",
+        "personnes": "12",
+        "ingredients": [
+          {
+            "texte": "500 g de farine T45",
+            "valeur": 500,
+            "unite": "g",
+            "reste": "farine T45"
+          },
+          {
+            "texte": "10 g de sel",
+            "valeur": 10,
+            "unite": "g",
+            "reste": "sel"
+          },
+          {
+            "texte": "15 g de sucre",
+            "valeur": 15,
+            "unite": "g",
+            "reste": "sucre"
+          },
+          {
+            "texte": "7 g de levure boulangère sèche",
+            "valeur": 7,
+            "unite": "g",
+            "reste": "levure boulangère sèche"
+          },
+          {
+            "texte": "0,1 L de lait tiède",
+            "valeur": 0.1,
+            "unite": "L",
+            "reste": "lait tiède"
+          },
+          {
+            "texte": "4 œufs",
+            "valeur": 4,
+            "unite": null,
+            "reste": "œufs"
+          },
+          {
+            "texte": "150 g de beurre mou en dés",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "beurre mou en dés"
+          },
+          {
+            "texte": "1 g de poivre",
+            "valeur": 1,
+            "unite": "g",
+            "reste": "poivre"
+          },
+          {
+            "texte": "150 g de chorizo doux en tout petits dés (sans la peau) (farce)",
+            "valeur": 150,
+            "unite": "g",
+            "reste": "chorizo doux en tout petits dés (sans la peau) (farce)"
+          },
+          {
+            "texte": "120 g de gruyère ou mozzarella râpé (+ un peu pour le dessus) (farce)",
+            "valeur": 120,
+            "unite": "g",
+            "reste": "gruyère ou mozzarella râpé (+ un peu pour le dessus) (farce)"
+          },
+          {
+            "texte": "3 c. à soupe de moutarde à l'ancienne (farce)",
+            "valeur": 3,
+            "unite": "c. à soupe",
+            "reste": "moutarde à l'ancienne (farce)"
+          },
+          {
+            "texte": "1 jaune d'œuf (dorure)",
+            "valeur": 1,
+            "unite": null,
+            "reste": "jaune d'œuf (dorure)"
+          }
+        ],
+        "etapes": [
+          "Délayer la levure et le sucre dans le lait tiède (pas chaud, sinon la levure meurt) et laisser 10 minutes : ça doit mousser. Sinon, la levure est trop vieille, il faut la changer.",
+          "Mélanger la farine, le sel et le poivre, ajouter le lait levuré et les œufs, puis pétrir 10 minutes jusqu'à une pâte lisse et élastique.",
+          "Ajouter le beurre mou petit à petit en pétrissant encore 8 minutes, jusqu'à ce que la pâte se décolle des parois : elle est souple et un peu collante.",
+          "Couvrir et laisser pousser 1 h 30 dans un endroit tiède, jusqu'à ce qu'elle double (une nuit au réfrigérateur la rend plus facile à façonner).",
+          "Farce : retirer la peau du chorizo, le couper en tout petits dés (3 mm) et le mélanger avec le fromage et la moutarde. Bien éponger le chorizo s'il est gras, pour que la pâte reste moelleuse.",
+          "Dégazer la pâte et la diviser en 12 pâtons de 75 g. Aplatir chacun en disque, mettre une cuillère de farce au centre, refermer en pinçant bien les bords (sinon le fromage s'échappe), puis rouler en boule sous la paume, soudure en dessous.",
+          "Poser les boules sur une plaque avec du papier cuisson (ou serrées dans un moule rond de 24 cm pour une brioche à partager), couvrir et laisser pousser 45 minutes. Préchauffer le four à 180 °C.",
+          "Dorer au jaune d'œuf délayé avec un peu d'eau, parsemer d'un peu de gruyère et cuire 22 minutes (27 minutes dans le moule), jusqu'à ce que les boules soient bien dorées.",
+          "Laisser tiédir 10 minutes sur une grille. Elles se réchauffent très bien quelques minutes au four."
+        ],
+        "mc": [
+          "Mettre le lait, la levure et le sucre dans le bol, chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+          "Ajouter la farine, le sel, le poivre et les œufs, pétrir <b>3 min / mode pétrin</b>. Ajouter le beurre en morceaux, pétrir <b>4 min / mode pétrin</b>. Laisser pousser 1 h 30 dans le bol fermé.",
+          "Farce : bol rincé, mettre le chorizo sans peau en morceaux, hacher <b>4 s / vitesse 5</b>, puis ajouter le fromage et la moutarde, mélanger <b>10 s / sens inverse / vitesse 3</b>.",
+          "Façonner les 12 boules fourrées, laisser pousser 45 minutes et cuire 22 minutes à 180 °C comme dans la version classique."
+        ],
+        "portion": "boules"
+      }
+    ]
+  },
+  {
+    "id": "static-710",
+    "photo": "photos/enattente.png",
+    "titre": "Wok de courgettes et carottes, sauce soja-miel",
+    "cat": "plat",
+    "temps": "20 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "2 grosses courgettes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "grosses courgettes"
+      },
+      {
+        "texte": "2 carottes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "carottes"
+      },
+      {
+        "texte": "150 g de nouilles (ou riz)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "nouilles (ou riz)"
+      },
+      {
+        "texte": "2 gousses d'ail",
+        "valeur": 2,
+        "unite": null,
+        "reste": "gousses d'ail"
+      },
+      {
+        "texte": "3 c. à soupe de sauce soja",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "sauce soja"
+      },
+      {
+        "texte": "1 c. à soupe de miel",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "miel"
+      },
+      {
+        "texte": "0,5 c. à café de paprika fumé",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "paprika fumé"
+      },
+      {
+        "texte": "1 c. à soupe d'huile neutre",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "huile neutre"
+      },
+      {
+        "texte": "1 c. à soupe de graines de sésame",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "graines de sésame"
+      },
+      {
+        "texte": "1 c. à café d'huile de sésame (facultatif)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "huile de sésame (facultatif)"
+      },
+      "1 œuf par personne (facultatif)"
+    ],
+    "etapes": [
+      "Couper les carottes en fins bâtonnets et les courgettes en demi-rondelles ou bâtonnets un peu plus épais. Émincer l'ail.",
+      "Cuire les nouilles selon le paquet (environ 5 minutes), les égoutter et les réserver.",
+      "Sauce : mélanger la sauce soja, le miel et le paprika fumé.",
+      "Chauffer l'huile à feu vif dans un wok ou une grande poêle et faire sauter les carottes 3 minutes : elles cuisent plus lentement.",
+      "Ajouter les courgettes et l'ail et faire sauter 4 à 5 minutes à feu vif : elles doivent rester un peu croquantes.",
+      "Ajouter les nouilles et la sauce, mélanger 1 minute pour bien enrober. Parsemer de sésame et d'un filet d'huile de sésame. Un œuf au plat par-dessus rend le plat plus copieux."
+    ],
+    "mc": [
+      "Mettre l'ail dans le bol, hacher <b>5 s / vitesse 7</b>. Ajouter l'huile, faire revenir <b>2 min / 120 °C / vitesse 1</b>.",
+      "Ajouter les carottes en bâtonnets, cuire <b>4 min / 120 °C / sens inverse / vitesse 1</b>, puis les courgettes, <b>5 min / 120 °C / sens inverse / vitesse 1</b>, sans le gobelet.",
+      "Ajouter la soja, le miel, le paprika et les nouilles cuites, mélanger <b>1 min / 100 °C / sens inverse / vitesse 1</b>. Parsemer de sésame."
+    ]
+  },
+  {
+    "id": "static-711",
+    "photo": "photos/enattente.png",
+    "titre": "Pommes poêlées caramélisées",
+    "cat": "dessert",
+    "temps": "15 min",
+    "personnes": "2",
+    "ingredients": [
+      {
+        "texte": "2 pommes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "pommes"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "2 c. à soupe de sucre (ou miel)",
+        "valeur": 2,
+        "unite": "c. à soupe",
+        "reste": "sucre (ou miel)"
+      },
+      {
+        "texte": "1 c. à café de jus de citron",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron"
+      },
+      {
+        "texte": "1 c. à café de graines de sésame (facultatif)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "graines de sésame (facultatif)"
+      },
+      "1 boule de glace vanille ou 1 yaourt par personne (pour servir)"
+    ],
+    "etapes": [
+      "Couper les pommes en quartiers épais (sans les éplucher si on veut).",
+      "Faire fondre le beurre avec le sucre dans une poêle à feu moyen jusqu'à un caramel blond.",
+      "Ajouter les pommes et les faire dorer 5 à 6 minutes en les retournant, jusqu'à ce qu'elles soient tendres et brillantes.",
+      "Finir avec le jus de citron et le sésame. Servir tiède, seules ou avec une boule de glace vanille ou un yaourt."
+    ],
+    "mc": [
+      "Les pommes caramélisent mieux à la poêle : le robot les écraserait. Suivre la version classique (prêt en 10 minutes)."
+    ]
+  },
+  {
+    "id": "static-712",
+    "titre": "Fougasse d'Aumelas",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "3 h 30 (dont 2 h 30 de pousse)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "500 g de farine T45",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine T45"
+      },
+      {
+        "texte": "80 g de sucre",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "5 g de sel",
+        "valeur": 5,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "7 g de levure boulangère sèche (ou 20 g de levure fraîche)",
+        "valeur": 7,
+        "unite": "g",
+        "reste": "levure boulangère sèche (ou 20 g de levure fraîche)"
+      },
+      {
+        "texte": "0,2 L d'eau tiède",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "eau tiède"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "130 g de beurre mou en dés",
+        "valeur": 130,
+        "unite": "g",
+        "reste": "beurre mou en dés"
+      },
+      {
+        "texte": "1 citron non traité (zeste)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron non traité (zeste)"
+      },
+      {
+        "texte": "3 c. à soupe d'eau de fleur d'oranger",
+        "valeur": 3,
+        "unite": "c. à soupe",
+        "reste": "eau de fleur d'oranger"
+      },
+      {
+        "texte": "60 g de beurre froid en petits dés (dessus)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "beurre froid en petits dés (dessus)"
+      },
+      {
+        "texte": "60 g de sucre (dessus)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre (dessus)"
+      },
+      {
+        "texte": "1 c. à soupe d'eau de fleur d'oranger (dessus)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "eau de fleur d'oranger (dessus)"
+      }
+    ],
+    "etapes": [
+      "Délayer la levure dans l'eau tiède (pas chaude) avec une pincée du sucre et laisser 10 minutes : elle doit mousser.",
+      "Mélanger la farine, le reste du sucre, le sel et le zeste de citron. Ajouter l'eau levurée, les œufs et la fleur d'oranger, puis pétrir 10 minutes jusqu'à une pâte lisse.",
+      "Ajouter le beurre mou petit à petit en pétrissant encore 8 minutes, jusqu'à ce que la pâte soit souple, brillante et se décolle des parois.",
+      "Couvrir et laisser pousser 1 h 30 dans un endroit tiède, jusqu'à ce que la pâte double de volume.",
+      "Dégazer la pâte et l'étaler directement sur une plaque recouverte de papier cuisson, en un grand rectangle d'environ 1,5 cm d'épaisseur.",
+      "Avec les doigts farinés, enfoncer la pâte un peu partout pour faire des petits trous, puis faire quelques entailles au couteau comme une fougasse.",
+      "Couvrir et laisser pousser encore 1 h. Préchauffer le four à 200 °C.",
+      "Juste avant d'enfourner, piquer les petits dés de beurre froid dans les trous, arroser de la fleur d'oranger et saupoudrer généreusement tout le sucre : il formera une croûte craquante.",
+      "Cuire 18 à 22 minutes, jusqu'à ce que la fougasse soit bien dorée et le sucre caramélisé par endroits.",
+      "Laisser tiédir sur une grille. Elle est meilleure le jour même, ou réchauffée 5 minutes au four le lendemain."
+    ],
+    "mc": [
+      "Mettre l'eau, la levure et une pincée de sucre dans le bol, chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le reste du sucre, le sel, le zeste, les œufs et la fleur d'oranger, pétrir <b>3 min / mode pétrin</b>. Ajouter le beurre mou en morceaux et pétrir <b>4 min / mode pétrin</b>.",
+      "Laisser pousser 1 h 30 dans le bol fermé, puis étaler, trouer, garnir de beurre et de sucre et cuire 18 à 22 minutes à 200 °C comme dans la version classique (le robot ne peut pas faire la croûte de sucre, elle se fait au four)."
+    ]
   }
 ];
 
 // Recettes fusionnées (doublons) : ancien identifiant → [recette qui la contient, numéro de version]
 const recettesFusionnees = {
+  "static-224": [
+    "static-708",
+    7
+  ],
   "static-670": [
     "static-660",
     1
@@ -50203,7 +51175,7 @@ const recettesFusionnees = {
   ],
   "static-114": [
     "static-504",
-    1
+    0
   ],
   "static-121": [
     "static-120",
