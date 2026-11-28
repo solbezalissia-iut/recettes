@@ -262,6 +262,8 @@ Règles de rédaction (obligatoires) :
         headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
         body: JSON.stringify({ ref: 'main' })
       });
+      // Clé expirée ou refusée : le bouton ☁︎ GitHub réapparaît pour en remettre une
+      try { if (res.status === 401 || res.status === 403) localStorage.setItem('github-cle-refusee', '1'); else if (res.ok) localStorage.removeItem('github-cle-refusee'); } catch (e) {}
       if (!res.ok) console.warn('[sauvegarde GitHub]', res.status);
     } catch (e) { console.warn('[sauvegarde GitHub]', e); }
   }
