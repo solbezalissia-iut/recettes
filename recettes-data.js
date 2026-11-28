@@ -1004,6 +1004,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour ce goûter : suivre la version classique."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -1379,7 +1382,10 @@ const recettes = [
       "Mettre la poudre d'amandes, le sucre, la farine et la cannelle dans le bol. Ajouter le chocolat fondu et les blancs, mélanger <b>30 s / sens inverse / vitesse 3</b> jusqu'à une pâte homogène.",
       "Étaler sur 1 cm sur du sucre, découper, laisser sécher 3 à 6 heures, puis cuire 4 à 6 minutes à 250 °C."
     ],
-    "portion": "biscuits"
+    "portion": "biscuits",
+    "fetes": [
+      "noel"
+    ]
   },
   {
     "id": "static-10",
@@ -2820,6 +2826,9 @@ const recettes = [
           "Napper les biscuits, décorer de bonbons et laisser figer."
         ]
       }
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -5242,6 +5251,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour ces brochettes : suivre la version classique (la chantilly peut se faire au fouet du Monsieur Cuisine, vitesse 4)."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -5592,6 +5604,9 @@ const recettes = [
           "Décorer avec la terre, les pierres tombales en biscuits (RIP au glaçage) et les bonbons vers de terre."
         ]
       }
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -5817,6 +5832,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -5962,6 +5980,9 @@ const recettes = [
       "Biscuit cacao : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la farine et le cacao tamisés puis le beurre fondu. Étaler sur la plaque et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
       "Croustillant : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter le praliné et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -6143,6 +6164,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -6300,6 +6324,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -6436,6 +6463,9 @@ const recettes = [
       "Croustillant : mettre le chocolat blanc dans le bol, hacher <b>10 s / vitesse 7</b>, faire fondre <b>3 min / 50 °C / vitesse 2</b>. Ajouter l'huile de coco et mélanger <b>10 s / vitesse 3</b>, puis les crêpes dentelle (type Gavottes) et mélanger <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
       "Glace vanille : bol bien froid, fouet inséré, fouetter la crème <b>1 min 30 / vitesse 4</b> en surveillant. Retirer, ajouter le lait concentré et la vanille à la spatule.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, servir glacée après 10 à 15 minutes hors du congélateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -6599,6 +6629,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -6780,6 +6813,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -7019,6 +7055,9 @@ const recettes = [
           "Garnir le biscuit de chantilly, rouler, couvrir de ganache, strier à la fourchette et réfrigérer 2 heures."
         ]
       }
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -7265,6 +7304,9 @@ const recettes = [
           "Garnir la base tiède, rouler, couvrir de crème et décorer de chocolat fondu (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>)."
         ]
       }
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -7447,6 +7489,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -9205,6 +9250,9 @@ const recettes = [
       "Mettre les œufs, le sucre roux et l'huile dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter la farine, la levure, la cannelle et le sel, <b>15 s / vitesse 4</b>.",
       "Ajouter les carottes et les noix, mélanger <b>15 s / sens inverse / vitesse 2</b>. Cuire 45 à 50 minutes et laisser refroidir.",
       "Glaçage : bol propre, mettre le fromage frais, le beurre mou et le sucre glace, mélanger <b>20 s / vitesse 4</b>. Étaler sur le gâteau froid."
+    ],
+    "fetes": [
+      "paques"
     ]
   },
   {
@@ -9668,6 +9716,9 @@ const recettes = [
       "Farce : mettre l'échalote et le thym dans le bol, hacher <b>3 s / vitesse 5</b>. Ajouter la chair à saucisse, la moitié des marrons, sel et poivre. Mélanger <b>15 s / sens inverse / vitesse 3</b>.",
       "Farcir la volaille, la ficeler, la badigeonner de beurre et la cuire au four comme dans la version classique (environ 50 minutes par kilo en arrosant).",
       "Réchauffer les marrons restants dans le bol avec un peu de bouillon : <b>6 min / 90 °C / sens inverse / vitesse 1</b>."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -13125,6 +13176,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : les Saint-Jacques se saisissent à la poêle très chaude, suivre la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -13737,6 +13791,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : tout s'assemble à froid sur le plat, suivre la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -13818,6 +13875,9 @@ const recettes = [
       "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter l'huile et le lard en dés, rissoler <b>5 min / 120 °C / vitesse 1</b>. Réserver.",
       "Mettre le chèvre, la crème, le miel, sel et poivre dans le bol. Mélanger <b>15 s / vitesse 3</b>.",
       "Garnir la pâte feuilletée, façonner la couronne et cuire comme dans la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -16706,6 +16766,9 @@ const recettes = [
       "Mettre le beurre mou, le sucre glace, l'œuf et la vanille dans le bol. Mélanger <b>20 s / vitesse 4</b>.",
       "Ajouter la farine et pétrir <b>30 s / mode pétrin</b>. Réfrigérer 30 minutes.",
       "Façonner les doigts, poser les amandes et cuire 15 minutes à 170 °C, puis coller les amandes avec la confiture."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -17689,6 +17752,9 @@ const recettes = [
       "Ajouter la poudre d'amandes et la cannelle dans le bol. Mélanger <b>20 s / sens inverse / vitesse 3</b> jusqu'à obtenir une pâte.",
       "Étaler sur 1 cm entre deux feuilles saupoudrées de sucre glace, découper les étoiles, les napper de meringue et laisser sécher 1 heure.",
       "Cuire 10 minutes à 150 °C : le dessus doit rester blanc."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -18621,6 +18687,9 @@ const recettes = [
           "Couler dans la terrine filmée et réfrigérer au moins 12 h avant de démouler et de trancher."
         ]
       }
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -19396,6 +19465,9 @@ const recettes = [
     "mc": [
       "Frangipane : mettre le beurre mou et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter la poudre d'amandes, les œufs et le rhum, mélanger <b>20 s / vitesse 4</b>.",
       "Garnir la pâte, cacher la fève, recouvrir, dorer et cuire comme dans la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -21525,6 +21597,9 @@ const recettes = [
       "Ajouter le sucre, les œufs et la farine, mélanger <b>20 s / vitesse 4</b>. Cuire 25 minutes et laisser refroidir.",
       "Glaçage : bol propre, chocolat noir <b>10 s / vitesse 7</b>, ajouter la crème, <b>4 min / 50 °C / vitesse 2</b>. Napper le gâteau.",
       "Tracer la toile au chocolat blanc fondu comme dans la version classique."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -27015,6 +27090,9 @@ const recettes = [
           "Colorer, pocher et cuire comme dans la version classique."
         ]
       }
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -27549,7 +27627,10 @@ const recettes = [
       "Ajouter la farine et pétrir <b>40 s / mode pétrin</b>. Version chocolat : faire fondre le chocolat avant (<b>10 s / vitesse 7</b> puis <b>3 min / 50 °C / vitesse 2</b>) et l'incorporer à une partie de la pâte.",
       "Filmer et réfrigérer 2 heures, étaler sur 7 mm, découper, dorer au jaune d'œuf et cuire 8 à 10 minutes à 200 °C."
     ],
-    "portion": "biscuits"
+    "portion": "biscuits",
+    "fetes": [
+      "noel"
+    ]
   },
   {
     "id": "static-215",
@@ -28076,6 +28157,9 @@ const recettes = [
       "Mettre le chocolat dans le bol, hacher <b>10 s / vitesse 7</b>.",
       "Tempérer : fondre <b>4 min / 50 °C / vitesse 2</b>, ajouter un tiers de chocolat haché en plus, puis mélanger <b>3 min / 37 °C / vitesse 2</b>.",
       "Déposer des disques sur du papier cuisson et garnir de fruits secs et confits avant qu'ils ne durcissent."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -28453,6 +28537,9 @@ const recettes = [
       "Découper et cuire les biscuits sablés comme dans la version classique.",
       "Mettre le caramel et la crème dans le bol, chauffer <b>3 min / 60 °C / vitesse 2</b>. Napper les biscuits et laisser prendre.",
       "Bol rincé : chocolat <b>10 s / vitesse 7</b>, ajouter l'huile, <b>3 min / 50 °C / vitesse 2</b>. Enrober et laisser figer."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -29067,6 +29154,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (four)."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -30377,6 +30467,9 @@ const recettes = [
       "Ajouter la farine, le concentré, le bouillon, le bouquet garni, sel et poivre. Cuire <b>60 min / 98 °C / sens inverse / vitesse 1</b>.",
       "Ajouter les carottes, les navets et les pommes de terre en morceaux (sans dépasser le repère maxi ; mettre les pommes de terre dans l'accessoire vapeur si le bol est trop plein). Cuire <b>35 min / 100 °C / sens inverse / vitesse 1</b>.",
       "Ajouter les petits pois et cuire <b>10 min / 100 °C / sens inverse / vitesse 1</b>."
+    ],
+    "fetes": [
+      "paques"
     ]
   },
   {
@@ -31310,6 +31403,9 @@ const recettes = [
       "Couper les écorces en bâtonnets. Les blanchir 3 fois à la casserole (départ eau froide).",
       "Mettre l'eau et le sucre dans le bol, chauffer <b>6 min / 100 °C / vitesse 1</b>. Ajouter les écorces dans le panier de cuisson inséré et confire <b>60 min / 90 °C / vitesse 1</b>. Égoutter et sécher sur une grille.",
       "Bol propre : chocolat <b>10 s / vitesse 7</b> puis <b>4 min / 50 °C / vitesse 2</b>. Tremper les orangettes et laisser figer."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -32028,6 +32124,9 @@ const recettes = [
       "Mettre le lait, le miel, le sucre et le beurre dans le bol. Chauffer <b>4 min / 50 °C / vitesse 2</b>.",
       "Ajouter la farine, la levure, les épices, le zeste et les œufs. Mélanger <b>30 s / vitesse 4</b>.",
       "Verser dans le moule et cuire comme dans la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -35734,6 +35833,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : la pizza se garnit et cuit au four, suivre la version classique."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -36285,6 +36387,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : le caramel doit monter à 150 °C, ce que le Monsieur Cuisine ne fait pas. Suivre la version classique à la casserole avec un thermomètre."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -36337,6 +36442,9 @@ const recettes = [
       "Mettre les biscuits dans le bol, mixer <b>10 s / vitesse 7</b>.",
       "Ajouter la pâte à tartiner, le beurre fondu et le sel. Mélanger <b>15 s / vitesse 4</b>.",
       "Réserver 15 minutes au frais, façonner et planter les pétales comme dans la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -38299,6 +38407,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour ce punch : tout se mélange dans le saladier, suivre la version classique."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -41761,6 +41872,9 @@ const recettes = [
     "mc": [
       "Pesto maison si besoin : voir la fiche « Pesto », version Monsieur Cuisine.",
       "Monter, découper et cuire le sapin comme dans la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -41800,6 +41914,9 @@ const recettes = [
     ],
     "mc": [
       "Pas besoin du Monsieur Cuisine pour cette recette : suivre la version classique (pâte, Nutella et four)."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -42310,6 +42427,9 @@ const recettes = [
     "mc": [
       "Mettre l'aneth dans le bol, hacher <b>3 s / vitesse 7</b>. Ajouter le sel, le sucre, le poivre et le zeste, mélanger <b>5 s / vitesse 4</b>.",
       "Couvrir le saumon de ce mélange et le laisser mariner au frais comme dans la version classique."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -42972,6 +43092,9 @@ const recettes = [
       "Mettre l'oignon dans le bol, hacher <b>4 s / vitesse 5</b>. Ajouter un filet d'huile, rissoler <b>3 min / 120 °C / vitesse 1</b>.",
       "Ajouter la chair de citrouille et la pomme de terre en cubes et le bouillon (sans dépasser le repère maxi, en deux fois si besoin). Cuire <b>25 min / 100 °C / vitesse 1</b>.",
       "Ajouter la crème, la muscade, sel et poivre. Mixer <b>1 min / vitesse 10</b> en montant progressivement. Servir dans la citrouille avec les graines grillées."
+    ],
+    "fetes": [
+      "halloween"
     ]
   },
   {
@@ -43294,7 +43417,10 @@ const recettes = [
       "Mettre la gelée de framboise dans le bol propre et chauffer <b>2 min / 50 °C / vitesse 2</b>.",
       "Saupoudrer de sucre glace les biscuits évidés, garnir les biscuits pleins de gelée et les assembler."
     ],
-    "portion": "biscuits"
+    "portion": "biscuits",
+    "fetes": [
+      "noel"
+    ]
   },
   {
     "id": "static-342",
@@ -46270,6 +46396,9 @@ const recettes = [
       "Mettre l'aneth dans le bol, hacher <b>3 s / vitesse 7</b>.",
       "Ajouter le fromage frais, le zeste de citron et le poivre. Mélanger <b>10 s / vitesse 3</b>.",
       "Tartiner les toasts et garnir de saumon."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -46632,7 +46761,10 @@ const recettes = [
       "Ajouter la crème et faire fondre <b>4 min / 50 °C / vitesse 2</b>. Ajouter le beurre, <b>20 s / vitesse 3</b>.",
       "Laisser prendre au réfrigérateur au moins 3 heures, puis former les truffes et les rouler dans le cacao."
     ],
-    "portion": "truffes"
+    "portion": "truffes",
+    "fetes": [
+      "noel"
+    ]
   },
   {
     "id": "static-370",
@@ -46694,6 +46826,9 @@ const recettes = [
       "Mettre le beurre ramolli et les sucres dans le bol, mélanger <b>20 s / vitesse 4</b>. Ajouter la farine puis les blancs, <b>20 s / vitesse 4</b>.",
       "Étaler, cuire et mouler les tulipes comme dans la version classique.",
       "Chantilly : bol propre et froid, fouet, crème bien froide, <b>vitesse 4</b> en surveillant. Garnir de crème de marron et de chantilly."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -47168,6 +47303,9 @@ const recettes = [
       "Mettre le vin, le sucre, l'orange en rondelles et les épices dans le bol.",
       "Chauffer <b>15 min / 80 °C / vitesse 1</b> (sans jamais bouillir).",
       "Filtrer et servir bien chaud."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -47931,6 +48069,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -48128,6 +48269,9 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, fouetter la crème <b>1 min 30 / vitesse 4</b> en surveillant, jusqu'à une chantilly souple. L'incorporer à la spatule à la crème praliné tiède et monter la bûche tout de suite.",
       "Glaçage : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, fondre <b>4 min / 45 °C / vitesse 2</b>, ajouter l'huile et les noisettes, <b>10 s / sens inverse / vitesse 2</b>. Laisser redescendre à 35 °C.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée, glaçage à 35 °C, décor, puis 8 h de décongélation au réfrigérateur."
+    ],
+    "fetes": [
+      "noel"
     ]
   },
   {
@@ -48186,6 +48330,935 @@ const recettes = [
       "Mettre la crème et le glucose dans le bol, chauffer <b>4 min / 90 °C / vitesse 2</b>. Ajouter la gélatine avec son eau, <b>20 s / vitesse 2</b>.",
       "Ajouter le chocolat, attendre 1 minute puis mélanger <b>40 s / vitesse 3</b> (pas plus vite, pour ne pas faire de bulles). Verser dans un pichet et finir au mixeur plongeant, la tête au fond.",
       "Laisser redescendre à 32–35 °C et glacer l'entremets ou la bûche congelé(e) comme dans la version classique."
+    ]
+  },
+  {
+    "id": "static-695",
+    "titre": "Huîtres gratinées au champagne",
+    "photo": "photos/enattente.png",
+    "cat": "entree",
+    "fetes": [
+      "noel"
+    ],
+    "temps": "45 min",
+    "personnes": "4",
+    "ingredients": [
+      {
+        "texte": "24 huîtres creuses n° 3",
+        "valeur": 24,
+        "unite": null,
+        "reste": "huîtres creuses n° 3"
+      },
+      {
+        "texte": "2 échalotes",
+        "valeur": 2,
+        "unite": null,
+        "reste": "échalotes"
+      },
+      {
+        "texte": "0,15 L de champagne ou vin blanc sec",
+        "valeur": 0.15,
+        "unite": "L",
+        "reste": "champagne ou vin blanc sec"
+      },
+      {
+        "texte": "0,15 L de crème liquide entière",
+        "valeur": 0.15,
+        "unite": "L",
+        "reste": "crème liquide entière"
+      },
+      {
+        "texte": "2 jaunes d'œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "jaunes d'œufs"
+      },
+      {
+        "texte": "20 g de beurre",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      },
+      {
+        "texte": "500 g de gros sel (pour caler les huîtres)",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "gros sel (pour caler les huîtres)"
+      }
+    ],
+    "etapes": [
+      "Ouvrir les huîtres, jeter la première eau et les laisser se remplir à nouveau 10 minutes. Les décoller de leur coquille, récupérer leur eau filtrée et laisser les huîtres dans la coquille creuse.",
+      "Émincer finement les échalotes et les faire fondre 3 minutes dans le beurre sans coloration.",
+      "Ajouter le champagne et 0,05 L d'eau des huîtres, laisser réduire de moitié à feu moyen (environ 8 minutes).",
+      "Ajouter la crème et réduire encore 5 minutes jusqu'à ce que la sauce nappe la cuillère. Poivrer (pas de sel, les huîtres sont salées).",
+      "Hors du feu, laisser tiédir 2 minutes puis incorporer les jaunes d'œufs en fouettant.",
+      "Allumer le gril du four. Caler les huîtres sur une plaque couverte de gros sel, napper chaque huître d'une cuillère de sauce.",
+      "Gratiner 2 à 3 minutes sous le gril, juste jusqu'à ce que le dessus soit doré. Servir aussitôt."
+    ],
+    "mc": [
+      "Ouvrir les huîtres, les décoller et récupérer leur eau filtrée.",
+      "Mettre les échalotes épluchées dans le bol, hacher <b>5 s / vitesse 5</b>. Ajouter le beurre, faire revenir <b>3 min / 100 °C / vitesse 1</b>.",
+      "Ajouter le champagne et 0,05 L d'eau des huîtres, réduire <b>8 min / 100 °C / vitesse 1</b>, sans le gobelet.",
+      "Ajouter la crème et le poivre, cuire <b>5 min / 90 °C / vitesse 2</b>. Laisser tiédir 2 minutes, ajouter les jaunes et mélanger <b>20 s / vitesse 3</b>.",
+      "Napper les huîtres calées sur le gros sel et gratiner 2 à 3 minutes sous le gril du four."
+    ]
+  },
+  {
+    "id": "static-696",
+    "titre": "Pain surprise de fête",
+    "photo": "photos/enattente.png",
+    "cat": "apero",
+    "fetes": [
+      "noel"
+    ],
+    "temps": "1 h (+ 2 h au réfrigérateur)",
+    "personnes": "10",
+    "ingredients": [
+      {
+        "texte": "1 grosse miche de pain de campagne ronde (environ 800 g, de la veille)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "grosse miche de pain de campagne ronde (environ 800 g, de la veille)"
+      },
+      {
+        "texte": "150 g de beurre mou",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "150 g de saumon fumé",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "saumon fumé"
+      },
+      {
+        "texte": "150 g de jambon blanc",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "jambon blanc"
+      },
+      {
+        "texte": "100 g de rillettes de thon ou de poulet",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "rillettes de thon ou de poulet"
+      },
+      {
+        "texte": "150 g de fromage frais (type Saint Môret)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "fromage frais (type Saint Môret)"
+      },
+      {
+        "texte": "1 concombre",
+        "valeur": 1,
+        "unite": null,
+        "reste": "concombre"
+      },
+      {
+        "texte": "0,5 botte de ciboulette",
+        "valeur": 0.5,
+        "unite": "botte",
+        "reste": "ciboulette"
+      },
+      {
+        "texte": "1 citron",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron"
+      },
+      {
+        "texte": "1 pincée de poivre",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "poivre"
+      }
+    ],
+    "etapes": [
+      "Couper un chapeau sur le dessus de la miche. Avec un long couteau, découper la mie tout autour en restant à 1 cm de la croûte, puis glisser le couteau par une petite fente sur le côté, à 1 cm du fond, pour détacher le cylindre de mie d'un seul bloc.",
+      "Sortir le cylindre de mie et le couper en 6 grandes tranches horizontales.",
+      "Garnitures : mélanger le fromage frais avec la ciboulette ciselée et le zeste du citron ; couper le concombre en très fines rondelles.",
+      "Beurrer les tranches. Garnir une tranche sur deux : saumon fumé et un filet de citron, jambon, rillettes, fromage frais-concombre. Recouvrir chaque tranche garnie d'une tranche beurrée.",
+      "Couper chaque sandwich géant en 8 parts en triangles, puis les remettre en place dans la croûte, dans l'ordre, et poser le chapeau.",
+      "Filmer et réfrigérer au moins 2 h avant de servir, pour que tout se tienne."
+    ],
+    "mc": [
+      "Évider la miche comme dans la version classique et couper la mie en 6 tranches.",
+      "Mettre la ciboulette et le zeste de citron dans le bol, hacher <b>5 s / vitesse 7</b>. Ajouter le fromage frais et le poivre, mélanger <b>15 s / vitesse 3</b>.",
+      "Mettre le beurre mou dans le bol rincé et le lisser <b>20 s / vitesse 4</b> pour qu'il s'étale facilement.",
+      "Garnir, couper en triangles, remettre dans la croûte et réfrigérer 2 h comme dans la version classique."
+    ]
+  },
+  {
+    "id": "static-697",
+    "titre": "Clémentines givrées",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "noel"
+    ],
+    "temps": "30 min (+ 6 h au congélateur)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "16 clémentines",
+        "valeur": 16,
+        "unite": null,
+        "reste": "clémentines"
+      },
+      {
+        "texte": "100 g de sucre",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "0,1 L d'eau",
+        "valeur": 0.1,
+        "unite": "L",
+        "reste": "eau"
+      },
+      {
+        "texte": "1 citron (jus)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "citron (jus)"
+      },
+      {
+        "texte": "1 blanc d'œuf (facultatif, pour un sorbet plus léger)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc d'œuf (facultatif, pour un sorbet plus léger)"
+      }
+    ],
+    "etapes": [
+      "Couper un chapeau sur 8 clémentines et les évider délicatement avec une petite cuillère au-dessus d'un bol. Garder les écorces et les chapeaux au congélateur.",
+      "Presser la chair récupérée et les 8 autres clémentines pour obtenir environ 0,5 L de jus, et le filtrer.",
+      "Chauffer l'eau et le sucre jusqu'à ce que le sucre fonde, laisser refroidir puis mélanger au jus de clémentine et au jus de citron.",
+      "Verser dans une boîte et congeler 4 h en fouettant à la fourchette toutes les 45 minutes pour casser les cristaux (ou turbiner en sorbetière). Pour un sorbet plus léger, incorporer le blanc d'œuf battu en neige à mi-prise.",
+      "Remplir les écorces congelées de sorbet, poser les chapeaux et remettre au congélateur au moins 2 h.",
+      "Sortir 5 minutes avant de servir."
+    ],
+    "mc": [
+      "Évider et presser les clémentines comme dans la version classique.",
+      "Mettre l'eau et le sucre dans le bol, chauffer <b>3 min / 90 °C / vitesse 2</b>. Ajouter les jus, mélanger <b>10 s / vitesse 3</b>, verser dans une boîte et congeler en glaçons ou en plaque 4 h.",
+      "Mettre la préparation congelée en morceaux dans le bol (avec le blanc d'œuf si on en met), mixer <b>20 s / vitesse 8</b> puis <b>20 s / vitesse 5</b> en poussant avec la spatule, jusqu'à un sorbet lisse.",
+      "Remplir les écorces, poser les chapeaux et congeler au moins 2 h."
+    ]
+  },
+  {
+    "id": "static-698",
+    "titre": "Muffins à la citrouille et aux épices",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "halloween"
+    ],
+    "temps": "45 min",
+    "personnes": "12",
+    "ingredients": [
+      {
+        "texte": "250 g de purée de potiron ou de citrouille (cuite à la vapeur et égouttée)",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "purée de potiron ou de citrouille (cuite à la vapeur et égouttée)"
+      },
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "120 g de cassonade",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "0,08 L d'huile neutre",
+        "valeur": 0.08,
+        "unite": "L",
+        "reste": "huile neutre"
+      },
+      {
+        "texte": "0,08 L de lait",
+        "valeur": 0.08,
+        "unite": "L",
+        "reste": "lait"
+      },
+      {
+        "texte": "1 sachet de levure chimique (11 g)",
+        "valeur": 1,
+        "unite": "sachet",
+        "reste": "levure chimique (11 g)"
+      },
+      {
+        "texte": "2 c. à café de cannelle",
+        "valeur": 2,
+        "unite": "c. à café",
+        "reste": "cannelle"
+      },
+      {
+        "texte": "1 c. à café de gingembre en poudre",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "gingembre en poudre"
+      },
+      {
+        "texte": "1 pincée de muscade",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "muscade"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "80 g de pépites de chocolat",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "pépites de chocolat"
+      },
+      {
+        "texte": "150 g de fromage frais (type Philadelphia) (glaçage)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "fromage frais (type Philadelphia) (glaçage)"
+      },
+      {
+        "texte": "60 g de sucre glace (glaçage)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre glace (glaçage)"
+      },
+      "colorant alimentaire orange et vermicelles chocolat (décor)"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et garnir un moule à 12 muffins de caissettes.",
+      "Fouetter les œufs avec la cassonade, ajouter l'huile, le lait et la purée de citrouille.",
+      "Ajouter la farine, la levure, les épices et le sel, mélanger juste assez pour qu'il n'y ait plus de farine visible (sans trop travailler), puis les pépites de chocolat.",
+      "Remplir les caissettes aux trois quarts et cuire 20 à 22 minutes : une pique doit ressortir sèche.",
+      "Laisser refroidir complètement. Fouetter le fromage frais avec le sucre glace et quelques gouttes de colorant orange, puis décorer chaque muffin d'une rosace et de vermicelles chocolat."
+    ],
+    "mc": [
+      "Mettre les œufs, la cassonade, l'huile, le lait et la purée de citrouille dans le bol, mélanger <b>20 s / vitesse 4</b>.",
+      "Ajouter la farine, la levure, les épices et le sel, mélanger <b>15 s / vitesse 4</b>, puis les pépites <b>10 s / sens inverse / vitesse 2</b>. Cuire 20 à 22 minutes à 180 °C.",
+      "Glaçage : bol rincé, mettre le fromage frais, le sucre glace et le colorant, mélanger <b>20 s / vitesse 3</b>. Décorer les muffins refroidis."
+    ]
+  },
+  {
+    "id": "static-699",
+    "titre": "Cookies araignées",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "halloween"
+    ],
+    "temps": "50 min (+ 30 min au frais)",
+    "personnes": "16",
+    "ingredients": [
+      {
+        "texte": "120 g de beurre mou",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de cassonade",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "cassonade"
+      },
+      {
+        "texte": "50 g de sucre",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "200 g de farine",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "30 g de cacao non sucré",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "cacao non sucré"
+      },
+      {
+        "texte": "0,5 c. à café de bicarbonate de soude",
+        "valeur": 0.5,
+        "unite": "c. à café",
+        "reste": "bicarbonate de soude"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "16 truffes ou boules au chocolat (type Maltesers ou Lindor)",
+        "valeur": 16,
+        "unite": null,
+        "reste": "truffes ou boules au chocolat (type Maltesers ou Lindor)"
+      },
+      {
+        "texte": "32 petits yeux en sucre",
+        "valeur": 32,
+        "unite": null,
+        "reste": "petits yeux en sucre"
+      },
+      {
+        "texte": "50 g de chocolat noir (pattes)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "chocolat noir (pattes)"
+      }
+    ],
+    "etapes": [
+      "Fouetter le beurre mou avec la cassonade et le sucre, puis ajouter l'œuf.",
+      "Ajouter la farine, le cacao, le bicarbonate et le sel et mélanger jusqu'à une pâte homogène. Réfrigérer 30 minutes.",
+      "Préchauffer le four à 180 °C. Former 16 boules de pâte de 30 g, les poser espacées sur une plaque et les aplatir légèrement.",
+      "Cuire 9 à 10 minutes : les cookies sont encore mous au centre. À la sortie du four, enfoncer tout de suite une boule en chocolat au centre de chacun (le corps de l'araignée).",
+      "Laisser refroidir complètement. Faire fondre le chocolat noir, le mettre dans un petit sac congélation coupé au bout et dessiner 8 pattes autour de chaque boule.",
+      "Coller 2 yeux en sucre sur chaque boule avec un point de chocolat fondu. Laisser figer 15 minutes."
+    ],
+    "mc": [
+      "Mettre le beurre mou, la cassonade et le sucre dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter l'œuf, <b>15 s / vitesse 4</b>.",
+      "Ajouter la farine, le cacao, le bicarbonate et le sel, pétrir <b>40 s / mode pétrin</b>. Réfrigérer 30 minutes, former les cookies et cuire 9 à 10 minutes à 180 °C.",
+      "Pattes : mettre le chocolat noir dans le bol rincé, hacher <b>10 s / vitesse 7</b>, fondre <b>3 min / 50 °C / vitesse 2</b>. Décorer comme dans la version classique."
+    ]
+  },
+  {
+    "id": "static-700",
+    "titre": "Meringues fantômes",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "halloween"
+    ],
+    "temps": "2 h 30 (dont 2 h de cuisson)",
+    "personnes": "20",
+    "ingredients": [
+      {
+        "texte": "3 blancs d'œufs (environ 100 g)",
+        "valeur": 3,
+        "unite": null,
+        "reste": "blancs d'œufs (environ 100 g)"
+      },
+      {
+        "texte": "200 g de sucre",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 c. à café de jus de citron",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron"
+      },
+      {
+        "texte": "20 g de chocolat noir (yeux et bouche)",
+        "valeur": 20,
+        "unite": "g",
+        "reste": "chocolat noir (yeux et bouche)"
+      }
+    ],
+    "etapes": [
+      "Préchauffer le four à 100 °C et couvrir 2 plaques de papier cuisson.",
+      "Fouetter les blancs avec le sel jusqu'à ce qu'ils soient mousseux, puis ajouter le sucre en 4 fois en continuant de fouetter, puis le citron. Fouetter jusqu'à une meringue très ferme et brillante qui ne coule pas quand on retourne le bol.",
+      "Mettre la meringue dans une poche à douille ronde de 1,5 cm. Pour chaque fantôme, pocher un rond en appuyant, puis remonter en relâchant la pression pour faire une pointe (environ 6 cm de haut).",
+      "Cuire 2 h à 100 °C, puis laisser sécher dans le four éteint porte entrouverte jusqu'à refroidissement complet.",
+      "Faire fondre le chocolat et dessiner les yeux et la bouche avec un cure-dent. Conserver dans une boîte hermétique au sec."
+    ],
+    "mc": [
+      "Insérer le fouet. Mettre les blancs, le sel et le citron dans le bol propre et bien sec, fouetter <b>3 min / vitesse 4</b> sans le gobelet.",
+      "Ajouter le sucre en pluie par l'ouverture et fouetter encore <b>4 min / vitesse 4</b>, jusqu'à une meringue très ferme et brillante.",
+      "Pocher et cuire 2 h à 100 °C comme dans la version classique. Fondre le chocolat <b>3 min / 50 °C / vitesse 2</b> pour les visages."
+    ]
+  },
+  {
+    "id": "static-701",
+    "titre": "Verrines sanglantes (panna cotta et coulis de framboise)",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "halloween"
+    ],
+    "temps": "40 min (+ 4 h au frais)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "0,5 L de crème liquide entière (panna cotta)",
+        "valeur": 0.5,
+        "unite": "L",
+        "reste": "crème liquide entière (panna cotta)"
+      },
+      {
+        "texte": "60 g de sucre (panna cotta)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sucre (panna cotta)"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille (panna cotta)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille (panna cotta)"
+      },
+      {
+        "texte": "4 g de gélatine (2 feuilles de 2 g) (panna cotta)",
+        "valeur": 4,
+        "unite": "g",
+        "reste": "gélatine (2 feuilles de 2 g) (panna cotta)"
+      },
+      {
+        "texte": "250 g de framboises fraîches ou surgelées (coulis)",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "framboises fraîches ou surgelées (coulis)"
+      },
+      {
+        "texte": "40 g de sucre (coulis)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre (coulis)"
+      },
+      {
+        "texte": "1 c. à soupe de jus de citron (coulis)",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "jus de citron (coulis)"
+      },
+      "6 dentiers ou yeux en bonbon (décor)"
+    ],
+    "etapes": [
+      "Faire tremper la gélatine 10 minutes dans de l'eau très froide.",
+      "Chauffer la crème avec le sucre et la vanille jusqu'à frémissement, puis hors du feu y faire fondre la gélatine essorée.",
+      "Répartir dans 6 verres et réfrigérer au moins 4 h, jusqu'à ce que la panna cotta soit bien prise.",
+      "Coulis : chauffer les framboises avec le sucre 5 minutes, ajouter le citron, mixer puis passer au tamis. Laisser refroidir.",
+      "Juste avant de servir, verser le coulis sur le bord intérieur des verres pour qu'il « coule » comme du sang, et décorer avec les bonbons."
+    ],
+    "mc": [
+      "Faire tremper la gélatine. Mettre la crème, le sucre et la vanille dans le bol, chauffer <b>6 min / 80 °C / vitesse 2</b>. Ajouter la gélatine essorée, <b>20 s / vitesse 3</b>. Verser dans les verres et réfrigérer 4 h.",
+      "Coulis : bol rincé, mettre les framboises et le sucre, cuire <b>5 min / 90 °C / vitesse 2</b>, ajouter le citron, mixer <b>20 s / vitesse 8</b> et passer au tamis.",
+      "Verser le coulis sur les bords des verres au moment de servir et décorer."
+    ]
+  },
+  {
+    "id": "static-702",
+    "titre": "Gâteau nid de Pâques au chocolat",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "paques"
+    ],
+    "temps": "1 h 30 (+ 1 h au frais)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat noir (gâteau)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir (gâteau)"
+      },
+      {
+        "texte": "150 g de beurre (gâteau)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "beurre (gâteau)"
+      },
+      {
+        "texte": "4 œufs (gâteau)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs (gâteau)"
+      },
+      {
+        "texte": "150 g de sucre (gâteau)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre (gâteau)"
+      },
+      {
+        "texte": "60 g de farine (gâteau)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "farine (gâteau)"
+      },
+      {
+        "texte": "1 pincée de sel (gâteau)",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel (gâteau)"
+      },
+      {
+        "texte": "150 g de chocolat au lait (ganache)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "chocolat au lait (ganache)"
+      },
+      {
+        "texte": "0,15 L de crème liquide entière (ganache)",
+        "valeur": 0.15,
+        "unite": "L",
+        "reste": "crème liquide entière (ganache)"
+      },
+      {
+        "texte": "80 g de vermicelles de chocolat ou copeaux (branches du nid) (décor)",
+        "valeur": 80,
+        "unite": "g",
+        "reste": "vermicelles de chocolat ou copeaux (branches du nid) (décor)"
+      },
+      {
+        "texte": "200 g de petits œufs en chocolat (décor)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "petits œufs en chocolat (décor)"
+      },
+      "2 ou 3 poussins décoratifs (décor)"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180 °C et beurrer un moule rond de 22 cm.",
+      "Faire fondre le chocolat noir avec le beurre. Fouetter les œufs avec le sucre jusqu'à ce que le mélange mousse, ajouter le chocolat fondu, puis la farine et le sel.",
+      "Verser dans le moule et cuire 25 minutes : le centre doit rester un peu tremblotant. Laisser refroidir complètement et démouler.",
+      "Ganache : chauffer la crème, la verser sur le chocolat au lait haché et mélanger. Laisser refroidir 30 minutes au frais, puis fouetter 1 minute pour qu'elle soit mousseuse.",
+      "Étaler la ganache sur le gâteau en formant un creux au centre et un bord bombé, comme un nid. Parsemer le bord de vermicelles ou de copeaux de chocolat en les entrecroisant.",
+      "Remplir le creux de petits œufs en chocolat, poser les poussins et réfrigérer 1 h. Sortir 20 minutes avant de servir."
+    ],
+    "mc": [
+      "Mettre le chocolat noir dans le bol, hacher <b>10 s / vitesse 7</b>, ajouter le beurre et fondre <b>3 min / 50 °C / vitesse 2</b>.",
+      "Ajouter les œufs et le sucre, mélanger <b>30 s / vitesse 4</b>, puis la farine et le sel <b>15 s / vitesse 3</b>. Cuire 25 minutes à 180 °C.",
+      "Ganache : bol rincé, hacher le chocolat au lait <b>10 s / vitesse 7</b>, ajouter la crème et fondre <b>4 min / 50 °C / vitesse 2</b>. Refroidir 30 minutes au frais puis, fouet inséré, fouetter <b>40 s / vitesse 3</b>.",
+      "Former le nid et décorer comme dans la version classique."
+    ]
+  },
+  {
+    "id": "static-703",
+    "titre": "Œufs en chocolat maison garnis",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "paques"
+    ],
+    "temps": "1 h 30 (+ 1 h de prise)",
+    "personnes": "6",
+    "ingredients": [
+      {
+        "texte": "300 g de chocolat noir ou au lait de bonne qualité",
+        "valeur": 300,
+        "unite": "g",
+        "reste": "chocolat noir ou au lait de bonne qualité"
+      },
+      {
+        "texte": "150 g de petits bonbons, mini œufs ou fritures en chocolat (garniture)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "petits bonbons, mini œufs ou fritures en chocolat (garniture)"
+      },
+      {
+        "texte": "30 g de chocolat blanc (décor)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "chocolat blanc (décor)"
+      },
+      "1 moule à demi-œufs en plastique ou silicone (6 demi-œufs de 10 cm)"
+    ],
+    "etapes": [
+      "Tempérer le chocolat pour qu'il soit brillant et se démoule bien : faire fondre les deux tiers au bain-marie jusqu'à 50 °C (45 °C pour le chocolat au lait), retirer du feu, ajouter le tiers restant haché et remuer jusqu'à 31 °C (29 °C pour le lait).",
+      "Remplir chaque demi-œuf de chocolat, le faire tourner pour couvrir toutes les parois, puis retourner le moule sur une grille pour égoutter l'excédent. Laisser prendre 10 minutes.",
+      "Passer une deuxième couche de la même façon pour que les coques soient solides, puis réfrigérer 20 minutes.",
+      "Démouler délicatement les coques (elles se décollent toutes seules quand le chocolat est bien tempéré).",
+      "Remplir la moitié des coques de bonbons. Chauffer une assiette, y poser une seconde coque 2 secondes pour faire fondre le bord, puis la coller sur la coque garnie.",
+      "Décorer avec le chocolat blanc fondu en filets. Conserver au frais (15 à 18 °C), pas au réfrigérateur."
+    ],
+    "mc": [
+      "Mettre 200 g de chocolat dans le bol, hacher <b>10 s / vitesse 7</b>, fondre <b>4 min / 50 °C / vitesse 2</b> (45 °C pour le lait).",
+      "Ajouter les 100 g de chocolat restants hachés et mélanger <b>3 min / sans chauffe / vitesse 2</b>, jusqu'à 31 °C (29 °C pour le lait) au thermomètre.",
+      "Mouler, garnir et coller les œufs comme dans la version classique."
+    ]
+  },
+  {
+    "id": "static-704",
+    "titre": "Gigot d'agneau rôti à l'ail et au romarin",
+    "photo": "photos/enattente.png",
+    "cat": "plat",
+    "fetes": [
+      "paques"
+    ],
+    "temps": "2 h (+ 1 h à température ambiante)",
+    "personnes": "8",
+    "ingredients": [
+      {
+        "texte": "2,2 kg de gigot d'agneau avec l'os",
+        "valeur": 2.2,
+        "unite": "kg",
+        "reste": "gigot d'agneau avec l'os"
+      },
+      {
+        "texte": "1 tête d'ail",
+        "valeur": 1,
+        "unite": null,
+        "reste": "tête d'ail"
+      },
+      {
+        "texte": "4 branches de romarin",
+        "valeur": 4,
+        "unite": null,
+        "reste": "branches de romarin"
+      },
+      {
+        "texte": "0,03 L d'huile d'olive",
+        "valeur": 0.03,
+        "unite": "L",
+        "reste": "huile d'olive"
+      },
+      {
+        "texte": "30 g de beurre",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre"
+      },
+      {
+        "texte": "0,2 L d'eau ou bouillon",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "eau ou bouillon"
+      },
+      {
+        "texte": "12 g de sel fin",
+        "valeur": 12,
+        "unite": "g",
+        "reste": "sel fin"
+      },
+      {
+        "texte": "2 g de poivre",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "poivre"
+      },
+      {
+        "texte": "1,2 kg de pommes de terre grenaille (accompagnement)",
+        "valeur": 1.2,
+        "unite": "kg",
+        "reste": "pommes de terre grenaille (accompagnement)"
+      }
+    ],
+    "etapes": [
+      "Sortir le gigot 1 h avant pour qu'il soit à température ambiante. Préchauffer le four à 210 °C.",
+      "Piquer le gigot avec la pointe d'un couteau à 10 endroits et y glisser 4 gousses d'ail coupées en lamelles et quelques aiguilles de romarin.",
+      "Le frotter d'huile d'olive, de sel et de poivre, et le poser dans un grand plat avec le beurre, le reste des gousses d'ail en chemise, le romarin et les pommes de terre coupées en deux.",
+      "Enfourner 20 minutes à 210 °C, puis baisser à 180 °C, ajouter l'eau dans le plat et cuire encore 45 à 55 minutes en arrosant toutes les 15 minutes (compter environ 30 minutes par kg au total, 58 °C à cœur pour un rosé).",
+      "Sortir le gigot, le couvrir de papier aluminium et le laisser reposer 15 minutes : la viande se détend et reste juteuse.",
+      "Déglacer le plat avec un peu d'eau chaude en grattant les sucs pour le jus. Trancher le gigot perpendiculairement à l'os et servir avec les pommes de terre et le jus."
+    ],
+    "mc": [
+      "La cuisson du gigot se fait au four. Le Monsieur Cuisine prépare la marinade et le jus.",
+      "Mettre 4 gousses d'ail et les aiguilles d'une branche de romarin dans le bol, hacher <b>5 s / vitesse 7</b>. Ajouter l'huile, le sel et le poivre, mélanger <b>10 s / vitesse 3</b> et en frotter le gigot piqué.",
+      "Cuire le gigot et les pommes de terre au four comme dans la version classique.",
+      "Jus : verser les sucs déglacés dans le bol avec 0,1 L d'eau, cuire <b>3 min / 100 °C / vitesse 1</b> et filtrer."
+    ]
+  },
+  {
+    "id": "static-705",
+    "titre": "Brioche tressée de Pâques",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "paques"
+    ],
+    "temps": "1 h (+ 2 h 30 de pousse)",
+    "personnes": "10",
+    "ingredients": [
+      {
+        "texte": "500 g de farine T45",
+        "valeur": 500,
+        "unite": "g",
+        "reste": "farine T45"
+      },
+      {
+        "texte": "0,2 L de lait tiède",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "lait tiède"
+      },
+      {
+        "texte": "10 g de levure boulangère sèche",
+        "valeur": 10,
+        "unite": "g",
+        "reste": "levure boulangère sèche"
+      },
+      {
+        "texte": "70 g de sucre",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "sucre"
+      },
+      {
+        "texte": "2 œufs",
+        "valeur": 2,
+        "unite": null,
+        "reste": "œufs"
+      },
+      {
+        "texte": "100 g de beurre mou",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "8 g de sel",
+        "valeur": 8,
+        "unite": "g",
+        "reste": "sel"
+      },
+      {
+        "texte": "1 c. à soupe d'eau de fleur d'oranger",
+        "valeur": 1,
+        "unite": "c. à soupe",
+        "reste": "eau de fleur d'oranger"
+      },
+      {
+        "texte": "1 jaune d'œuf (dorure)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "jaune d'œuf (dorure)"
+      },
+      {
+        "texte": "30 g de sucre perlé",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "sucre perlé"
+      },
+      "5 œufs durs colorés (décor, facultatif)"
+    ],
+    "etapes": [
+      "Mélanger le lait tiède, la levure et une pincée de sucre, et laisser mousser 10 minutes.",
+      "Dans un saladier, mélanger la farine, le sucre et le sel, ajouter le lait levuré, les œufs et la fleur d'oranger, puis pétrir 10 minutes.",
+      "Ajouter le beurre mou en morceaux et pétrir encore 8 minutes, jusqu'à ce que la pâte soit lisse, souple et se décolle des parois.",
+      "Couvrir et laisser pousser 1 h 30 dans un endroit tiède, jusqu'à ce que la pâte double de volume.",
+      "Dégazer la pâte, la diviser en 3 boudins de 50 cm et les tresser. Former une couronne en soudant les extrémités, poser sur une plaque et glisser les œufs colorés dans la tresse si on veut.",
+      "Laisser pousser encore 1 h. Préchauffer le four à 180 °C, dorer au jaune d'œuf, parsemer de sucre perlé et cuire 25 à 30 minutes jusqu'à ce que la brioche soit bien dorée."
+    ],
+    "mc": [
+      "Mettre le lait, la levure et le sucre dans le bol, chauffer <b>2 min / 37 °C / vitesse 1</b>.",
+      "Ajouter la farine, le sel, les œufs et la fleur d'oranger, pétrir <b>3 min / mode pétrin</b>.",
+      "Ajouter le beurre mou en morceaux, pétrir <b>4 min / mode pétrin</b>. Laisser pousser 1 h 30 dans le bol fermé.",
+      "Tresser, laisser pousser 1 h et cuire comme dans la version classique."
+    ]
+  },
+  {
+    "id": "static-706",
+    "titre": "Sablés lapins de Pâques",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "fetes": [
+      "paques"
+    ],
+    "temps": "1 h (+ 1 h au frais)",
+    "personnes": "25",
+    "ingredients": [
+      {
+        "texte": "250 g de farine",
+        "valeur": 250,
+        "unite": "g",
+        "reste": "farine"
+      },
+      {
+        "texte": "125 g de beurre mou",
+        "valeur": 125,
+        "unite": "g",
+        "reste": "beurre mou"
+      },
+      {
+        "texte": "100 g de sucre glace",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre glace"
+      },
+      {
+        "texte": "1 œuf",
+        "valeur": 1,
+        "unite": null,
+        "reste": "œuf"
+      },
+      {
+        "texte": "1 c. à café d'extrait de vanille",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "extrait de vanille"
+      },
+      {
+        "texte": "1 pincée de sel",
+        "valeur": 1,
+        "unite": "pincée",
+        "reste": "sel"
+      },
+      {
+        "texte": "150 g de sucre glace (glaçage)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre glace (glaçage)"
+      },
+      {
+        "texte": "1 blanc d'œuf (glaçage)",
+        "valeur": 1,
+        "unite": null,
+        "reste": "blanc d'œuf (glaçage)"
+      },
+      {
+        "texte": "1 c. à café de jus de citron (glaçage)",
+        "valeur": 1,
+        "unite": "c. à café",
+        "reste": "jus de citron (glaçage)"
+      },
+      "colorants alimentaires pastel (décor)",
+      "1 emporte-pièce lapin"
+    ],
+    "etapes": [
+      "Mélanger le beurre mou avec le sucre glace, ajouter l'œuf et la vanille, puis la farine et le sel jusqu'à une pâte homogène. L'aplatir en disque, filmer et réfrigérer 1 h.",
+      "Préchauffer le four à 170 °C. Étaler la pâte à 4 mm d'épaisseur entre deux feuilles de papier cuisson et découper les lapins.",
+      "Cuire 10 à 12 minutes sur une plaque : les bords doivent juste blondir. Laisser refroidir sur une grille.",
+      "Glaçage : mélanger le sucre glace, le blanc d'œuf et le citron jusqu'à une pâte épaisse et brillante, la diviser et la colorer en pastel.",
+      "Décorer les sablés au cornet (queue, oreilles, nœud) et laisser sécher 1 h. Ils se gardent 1 semaine en boîte métallique."
+    ],
+    "mc": [
+      "Mettre le beurre mou, le sucre glace, l'œuf et la vanille dans le bol, mélanger <b>30 s / vitesse 4</b>. Ajouter la farine et le sel, pétrir <b>30 s / mode pétrin</b>. Réfrigérer 1 h.",
+      "Étaler, découper et cuire 10 à 12 minutes à 170 °C.",
+      "Glaçage : bol rincé, mettre le sucre glace, le blanc et le citron, mélanger <b>1 min / vitesse 3</b>. Colorer et décorer."
     ]
   }
 ];

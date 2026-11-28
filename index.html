@@ -15,13 +15,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Ultra&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css?v=20261128c">
-<link rel="stylesheet" href="planning.css?v=20261128c">
-<link rel="stylesheet" href="mobile.css?v=20261128c">
+<link rel="stylesheet" href="main.css?v=20261128d">
+<link rel="stylesheet" href="planning.css?v=20261128d">
+<link rel="stylesheet" href="mobile.css?v=20261128d">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css">
-<link rel="stylesheet" href="frigo.css?v=20261128c">
-<link rel="stylesheet" href="cards.css?v=20261128c">
-<link rel="stylesheet" href="theme.css?v=20261128c">
+<link rel="stylesheet" href="frigo.css?v=20261128d">
+<link rel="stylesheet" href="cards.css?v=20261128d">
+<link rel="stylesheet" href="theme.css?v=20261128d">
 <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
 </head>
 <body>
@@ -105,6 +105,9 @@
     </div>
     <div class="tabs" id="tabs" role="tablist" aria-label="Catégories">
       <button class="tab-btn active" data-cat="all"><span class="tab-ic" aria-hidden="true">🍽️</span>Toutes <span class="tab-count" id="count-all">0</span></button>
+      <button class="tab-btn tab-fete" data-cat="noel"><span class="tab-ic" aria-hidden="true">🎄</span>Spécial Noël <span class="tab-count" id="count-noel">0</span></button>
+      <button class="tab-btn tab-fete" data-cat="halloween"><span class="tab-ic" aria-hidden="true">🎃</span>Spécial Halloween <span class="tab-count" id="count-halloween">0</span></button>
+      <button class="tab-btn tab-fete" data-cat="paques"><span class="tab-ic" aria-hidden="true">🐣</span>Spécial Pâques <span class="tab-count" id="count-paques">0</span></button>
       <button class="tab-btn" data-cat="apero"><span class="tab-ic" aria-hidden="true">🥂</span>Apéro <span class="tab-count" id="count-apero">0</span></button>
       <button class="tab-btn" data-cat="entree"><span class="tab-ic" aria-hidden="true">🥗</span>Entrée <span class="tab-count" id="count-entree">0</span></button>
       <button class="tab-btn" data-cat="plat"><span class="tab-ic" aria-hidden="true">🍲</span>Plat <span class="tab-count" id="count-plat">0</span></button>
@@ -124,6 +127,21 @@
     <div class="results-info" id="info-all"></div>
     <div class="grid" id="grid-all"></div>
     <div class="no-section" id="empty-all">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-noel">
+    <div class="results-info" id="info-noel"></div>
+    <div class="grid" id="grid-noel"></div>
+    <div class="no-section" id="empty-noel">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-halloween">
+    <div class="results-info" id="info-halloween"></div>
+    <div class="grid" id="grid-halloween"></div>
+    <div class="no-section" id="empty-halloween">Aucune recette ne correspond à vos filtres.</div>
+  </div>
+  <div class="section" id="section-paques">
+    <div class="results-info" id="info-paques"></div>
+    <div class="grid" id="grid-paques"></div>
+    <div class="no-section" id="empty-paques">Aucune recette ne correspond à vos filtres.</div>
   </div>
   <div class="section" id="section-apero">
     <div class="results-info" id="info-apero"></div>
@@ -326,6 +344,14 @@
             </div>
           </div>
           <div class="form-field full">
+            <label>Spécial fêtes (facultatif)</label>
+            <div class="fete-choice" id="fete-choice">
+              <label><input type="checkbox" value="noel"> 🎄 Noël</label>
+              <label><input type="checkbox" value="halloween"> 🎃 Halloween</label>
+              <label><input type="checkbox" value="paques"> 🐣 Pâques</label>
+            </div>
+          </div>
+          <div class="form-field full">
             <label>Présentation de l'image</label>
             <div class="pres-choice" id="pres-choice" role="radiogroup" aria-label="Présentation de l'image">
               <label><input type="radio" name="presentation" value="plate"><span><img src="deco/assiette.svg" alt="">Dans une assiette</span></label>
@@ -418,15 +444,15 @@
   </div>
 </footer>
 
-<script src="recettes-data.js?v=20261128c"></script>
-<script src="detour.js?v=20261128c"></script>
-<script src="visuals.js?v=20261128c"></script>
-<script src="app.js?v=20261128c"></script>
-<script src="planning.js?v=20261128c"></script>
-<script src="frigo.js?v=20261128c"></script>
-<script src="timers.js?v=20261128c"></script>
-<script src="nav.js?v=20261128c"></script>
-<script src="firebase-config.js?v=20261128c"></script>
-<script type="module" src="cloud.js?v=20261128c"></script>
+<script src="recettes-data.js?v=20261128d"></script>
+<script src="detour.js?v=20261128d"></script>
+<script src="visuals.js?v=20261128d"></script>
+<script src="app.js?v=20261128d"></script>
+<script src="planning.js?v=20261128d"></script>
+<script src="frigo.js?v=20261128d"></script>
+<script src="timers.js?v=20261128d"></script>
+<script src="nav.js?v=20261128d"></script>
+<script src="firebase-config.js?v=20261128d"></script>
+<script type="module" src="cloud.js?v=20261128d"></script>
 </body>
 </html>
