@@ -108,5 +108,10 @@ service cloud.firestore {
       allow read: if true;
       allow write: if isAdmin();
     }
+
+    // Clé GitHub de la sauvegarde instantanée : Alissia seule peut la lire et la modifier.
+    match /config/github {
+      allow read, write: if isAdmin();
+    }
   }
 }
