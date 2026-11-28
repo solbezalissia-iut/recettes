@@ -8866,6 +8866,67 @@ const recettes = [
           "Verser le caramel dans le bol avec la crème chaude, ajouter le beurre, la vanille et la fleur de sel. Mélanger <b>3 min / 90 °C / vitesse 3</b>.",
           "Ajouter le chocolat blanc en morceaux et mélanger <b>1 min / vitesse 3</b> jusqu'à ce qu'il soit fondu. Mettre en pots."
         ]
+      },
+      {
+        "nom": "Au chocolat blanc et fleur de sel, grande quantité",
+        "temps": "50 min (+ 1 nuit au réfrigérateur)",
+        "personnes": "4",
+        "portion": "pots",
+        "ingredients": [
+          {
+            "texte": "490 g de sucre blanc",
+            "valeur": 490,
+            "unite": "g",
+            "reste": "sucre blanc"
+          },
+          {
+            "texte": "385 g de crème liquide entière",
+            "valeur": 385,
+            "unite": "g",
+            "reste": "crème liquide entière"
+          },
+          {
+            "texte": "350 g de beurre doux",
+            "valeur": 350,
+            "unite": "g",
+            "reste": "beurre doux"
+          },
+          {
+            "texte": "175 g de chocolat blanc",
+            "valeur": 175,
+            "unite": "g",
+            "reste": "chocolat blanc"
+          },
+          {
+            "texte": "10,5 g de fleur de sel",
+            "valeur": 10.5,
+            "unite": "g",
+            "reste": "fleur de sel"
+          },
+          {
+            "texte": "1 g de vanille en poudre (ou les graines d'une demi-gousse)",
+            "valeur": 1,
+            "unite": "g",
+            "reste": "vanille en poudre (ou les graines d'une demi-gousse)"
+          }
+        ],
+        "etapes": [
+          "Couper le beurre en morceaux et hacher le chocolat blanc. Préparer 4 pots en verre propres d'environ 0,35 L.",
+          "Faire un caramel à sec : mettre le sucre dans une grande casserole à fond épais à feu moyen, sans remuer, en inclinant la casserole pour répartir le sucre qui fond, jusqu'à un caramel doré et lisse.",
+          "Pendant ce temps, chauffer la crème jusqu'à une ébullition douce dans une autre casserole.",
+          "Hors du feu, verser la crème chaude dans le caramel petit à petit en mélangeant lentement (attention, ça bouillonne et ça projette).",
+          "Remettre sur feu doux et laisser bouillonner légèrement 2 minutes en remuant, jusqu'à ce que le mélange soit homogène et qu'il ne reste aucun morceau de caramel.",
+          "Hors du feu, ajouter le beurre en morceaux, la vanille et la fleur de sel, et mélanger jusqu'à ce que tout soit absorbé.",
+          "Ajouter le chocolat blanc et mélanger jusqu'à ce qu'il soit fondu et que le caramel soit brillant, puis mixer 1 minute au mixeur plongeant pour une texture très lisse.",
+          "Laisser tiédir, verser dans les pots et réfrigérer jusqu'à ce qu'il soit bien pris, idéalement une nuit (s'il presse, 1 h au congélateur). Il se garde 2 semaines au réfrigérateur.",
+          "À utiliser à la cuillère ou en filet sur des gâteaux, biscuits, crêpes ou desserts, ou pour garnir un insert ou des tartelettes."
+        ],
+        "mc": [
+          "Le caramel se fait à la casserole (le robot ne chauffe pas assez pour caraméliser) : faire fondre le sucre à sec jusqu'à un caramel doré.",
+          "Mettre la crème dans le bol, chauffer <b>5 min / 90 °C / vitesse 1</b>, puis la verser petit à petit dans le caramel hors du feu en mélangeant, et laisser bouillonner 2 minutes à feu doux.",
+          "Mettre le chocolat blanc dans le bol rincé, hacher <b>10 s / vitesse 7</b>. Ajouter le caramel chaud, le beurre en morceaux, la vanille et la fleur de sel, mixer <b>1 min / vitesse 5</b> jusqu'à ce que ce soit très lisse.",
+          "Verser dans les pots, laisser tiédir et réfrigérer une nuit."
+        ]
       }
     ]
   },
@@ -47870,6 +47931,261 @@ const recettes = [
       "Bol propre et bien froid : insérer le fouet, mettre le reste de crème, le mascarpone et le sucre glace, fouetter <b>1 min 30 / vitesse 4</b> en surveillant par l'ouverture jusqu'à une chantilly souple. ",
       "Verser le mélange à la gélatine tiède par l'ouverture et fouetter <b>15 s / vitesse 3</b>. Retirer le fouet et monter la bûche tout de suite.",
       "Montage, congélation et finition : comme la version classique — mousse sur les parois de la gouttière, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée directement sur le plat, finition puis 8 h de décongélation au réfrigérateur."
+    ]
+  },
+  {
+    "id": "static-693",
+    "titre": "Bûche deux chocolats noisettes",
+    "photo": "photos/enattente.png",
+    "cat": "dessert",
+    "temps": "4 h 30 (+ 1 nuit de congélation et 8 h au réfrigérateur)",
+    "personnes": "10",
+    "ingredients": [
+      {
+        "texte": "200 g de noisettes entières (praliné maison)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "noisettes entières (praliné maison)"
+      },
+      {
+        "texte": "150 g de sucre (praliné maison)",
+        "valeur": 150,
+        "unite": "g",
+        "reste": "sucre (praliné maison)"
+      },
+      {
+        "texte": "60 g de chocolat au lait (insert praliné)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "chocolat au lait (insert praliné)"
+      },
+      {
+        "texte": "120 g de chocolat noir en palets (insert ganache)",
+        "valeur": 120,
+        "unite": "g",
+        "reste": "chocolat noir en palets (insert ganache)"
+      },
+      {
+        "texte": "0,12 L de crème liquide entière (insert ganache)",
+        "valeur": 0.12,
+        "unite": "L",
+        "reste": "crème liquide entière (insert ganache)"
+      },
+      {
+        "texte": "2 g de gélatine (1 feuille de 2 g) (insert ganache)",
+        "valeur": 2,
+        "unite": "g",
+        "reste": "gélatine (1 feuille de 2 g) (insert ganache)"
+      },
+      {
+        "texte": "4 œufs (biscuit)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "œufs (biscuit)"
+      },
+      {
+        "texte": "100 g de sucre (biscuit)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "sucre (biscuit)"
+      },
+      {
+        "texte": "70 g de farine (biscuit)",
+        "valeur": 70,
+        "unite": "g",
+        "reste": "farine (biscuit)"
+      },
+      {
+        "texte": "25 g de cacao non sucré (biscuit)",
+        "valeur": 25,
+        "unite": "g",
+        "reste": "cacao non sucré (biscuit)"
+      },
+      {
+        "texte": "30 g de beurre fondu (biscuit)",
+        "valeur": 30,
+        "unite": "g",
+        "reste": "beurre fondu (biscuit)"
+      },
+      {
+        "texte": "100 g de crêpes dentelle (type Gavottes) (croustillant)",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "crêpes dentelle (type Gavottes) (croustillant)"
+      },
+      {
+        "texte": "50 g de chocolat au lait (croustillant)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "chocolat au lait (croustillant)"
+      },
+      {
+        "texte": "50 g de noisettes concassées (croustillant)",
+        "valeur": 50,
+        "unite": "g",
+        "reste": "noisettes concassées (croustillant)"
+      },
+      {
+        "texte": "0,2 L de lait entier (mousse praliné)",
+        "valeur": 0.2,
+        "unite": "L",
+        "reste": "lait entier (mousse praliné)"
+      },
+      {
+        "texte": "4 jaunes d'œufs (mousse praliné)",
+        "valeur": 4,
+        "unite": null,
+        "reste": "jaunes d'œufs (mousse praliné)"
+      },
+      {
+        "texte": "40 g de sucre (mousse praliné)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "sucre (mousse praliné)"
+      },
+      {
+        "texte": "6 g de gélatine (3 feuilles de 2 g) (mousse praliné)",
+        "valeur": 6,
+        "unite": "g",
+        "reste": "gélatine (3 feuilles de 2 g) (mousse praliné)"
+      },
+      {
+        "texte": "0,6 L de crème liquide entière à 30 % minimum, bien froide (mousse praliné)",
+        "valeur": 0.6,
+        "unite": "L",
+        "reste": "crème liquide entière à 30 % minimum, bien froide (mousse praliné)"
+      },
+      {
+        "texte": "200 g de chocolat au lait (glaçage rocher)",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat au lait (glaçage rocher)"
+      },
+      {
+        "texte": "0,04 L d'huile de pépins de raisin ou de tournesol (glaçage rocher)",
+        "valeur": 0.04,
+        "unite": "L",
+        "reste": "huile de pépins de raisin ou de tournesol (glaçage rocher)"
+      },
+      {
+        "texte": "60 g d'éclats de noisettes (glaçage rocher)",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "éclats de noisettes (glaçage rocher)"
+      },
+      {
+        "texte": "100 g de chocolat noir pour les plaques et les sapins de décoration",
+        "valeur": 100,
+        "unite": "g",
+        "reste": "chocolat noir pour les plaques et les sapins de décoration"
+      },
+      {
+        "texte": "40 g de noisettes entières (décoration)",
+        "valeur": 40,
+        "unite": "g",
+        "reste": "noisettes entières (décoration)"
+      }
+    ],
+    "etapes": [
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Les quantités de mousse sont volontairement larges (environ 1,2 kg pour une gouttière de 30 cm) : il en restera un peu, à mettre en verrines, plutôt que de manquer pour le tour.",
+      "Praliné maison (2 jours avant) : torréfier les noisettes 12 minutes au four à 160 °C, puis les frotter dans un torchon pour retirer la peau.",
+      "Faire fondre le sucre à sec dans une casserole à feu moyen, sans remuer, en inclinant la casserole, jusqu'à un caramel ambré. Le verser sur un tapis en silicone ou du papier cuisson et laisser durcir complètement.",
+      "Casser le caramel en morceaux et le mixer avec les noisettes, par à-coups, jusqu'à une pâte lisse et coulante (environ 330 g). Il servira dans l'insert, la mousse et le croustillant.",
+      "Insert à deux couches (la veille, ou 2 jours avant) — couche praliné : faire fondre le chocolat au lait, le mélanger à 180 g de praliné maison, couler dans la gouttière à insert filmée et congeler 30 minutes (le chocolat la fait figer, elle ne coulera pas).",
+      "Couche ganache : faire tremper la gélatine 10 minutes dans de l'eau très froide. Chauffer la crème jusqu'à frémissement, y faire fondre la gélatine essorée, verser sur le chocolat noir en 3 fois en mélangeant pour une ganache lisse, laisser tiédir puis couler sur la couche praliné figée.",
+      "Congeler l'insert au moins 6 h, idéalement une nuit : il doit être dur comme un glaçon.",
+      "Biscuit cacao : préchauffer le four à 180 °C. Fouetter les œufs et le sucre 8 à 10 minutes jusqu'à ce que le mélange blanchisse et triple de volume.",
+      "Incorporer délicatement à la spatule la farine et le cacao tamisés, puis le beurre fondu tiède. Étaler sur la plaque recouverte de papier cuisson et cuire 10 à 12 minutes.",
+      "Laisser refroidir puis découper deux bandes de la longueur de la gouttière et de la largeur de son ouverture (une bande de secours).",
+      "Croustillant : faire fondre le chocolat au lait, ajouter 70 g de praliné maison, puis les crêpes dentelle émiettées et les noisettes concassées.",
+      "Étaler aussitôt en couche fine et régulière sur une bande de biscuit, jusqu'aux bords, et réserver 30 minutes au congélateur pour qu'il durcisse.",
+      "Mousse praliné (juste avant le montage) : faire tremper la gélatine de la mousse 10 minutes dans de l'eau très froide.",
+      "Crème anglaise : chauffer le lait. Fouetter les jaunes avec le sucre, verser le lait chaud dessus en fouettant, remettre dans la casserole et cuire à feu doux sans cesser de remuer jusqu'à 82 °C (la crème nappe la cuillère).",
+      "Hors du feu, ajouter la gélatine essorée et le reste du praliné maison (environ 80 g), bien mélanger et laisser tiédir à 30 °C environ (tiède au doigt, encore liquide).",
+      "Fouetter la crème bien froide en chantilly souple, puis l'incorporer en 3 fois à la crème anglaise praliné, délicatement à la spatule. Monter la bûche tout de suite.",
+      "Glaçage (le jour du démoulage) : faire fondre le chocolat au lait, ajouter l'huile et les éclats de noisettes, et laisser redescendre à 35 °C.",
+      "Montage (à l'envers) : chemiser la gouttière de rhodoïd ou de film alimentaire. Verser environ la moitié de la mousse, puis la remonter sur les parois avec le dos d'une cuillère pour qu'il n'y ait aucun trou.",
+      "Démouler l'insert deux chocolats congelé (toujours dur) et l'enfoncer au centre, sans qu'il touche les bords ni le fond : il doit rester au moins 1 cm de mousse tout autour.",
+      "Recouvrir l'insert avec le reste de mousse, en gardant 1 cm de libre en haut, et lisser.",
+      "Poser la bande de biscuit recouverte de son croustillant, croustillant contre la mousse, et appuyer doucement pour qu'elle affleure. Lisser ce qui déborde.",
+      "Congeler la bûche au moins 12 h, idéalement une nuit complète.",
+      "Démouler la bûche encore congelée : retirer le rhodoïd ou le film et la poser tout de suite sur la planche à bûche ou le plat de service.",
+      "Finition : poser la bûche congelée sur une grille au-dessus d'un plat, napper d'un seul coup avec le glaçage à 35 °C (il fige au contact du froid), puis la transférer sur la planche à bûche. Décorer de plaques et de sapins en chocolat noir (chocolat fondu étalé finement sur du papier cuisson, découpé avant qu'il durcisse) et de noisettes entières.",
+      "Laisser décongeler 8 h au réfrigérateur (pas à température ambiante) avant de servir. Couper avec un grand couteau passé sous l'eau chaude et essuyé entre chaque part."
+    ],
+    "mc": [
+      "Matériel : une gouttière à bûche de 30 cm (environ 1,5 L), une gouttière à insert de 30 cm (environ 0,35 L) ou à défaut un moule à cake étroit, une feuille de rhodoïd ou du film alimentaire, une plaque de cuisson de 30 x 40 cm et une planche à bûche. Il faut commencer 2 jours avant de servir.",
+      "⚠️ Pour que l'insert ne coule pas et que la bûche ne casse pas : l'insert est gélifié puis congelé dur comme un glaçon (au moins 6 h, idéalement une nuit), la mousse contient de la gélatine pour bien se tenir, la bûche est montée à l'envers puis congelée une nuit entière, et elle est démoulée et posée sur son plat de service encore congelée. Ensuite on ne la déplace plus : elle décongèle doucement au réfrigérateur.",
+      "Praliné maison : torréfier les noisettes 12 minutes au four à 160 °C et retirer la peau. Le caramel se fait à la casserole (le robot ne chauffe pas assez) : faire fondre le sucre à sec jusqu'à ambré, le verser sur un tapis en silicone et laisser durcir.",
+      "Mettre le caramel cassé et les noisettes dans le bol, mixer <b>30 s / vitesse 8</b>, racler, puis <b>2 min / vitesse 10</b> en raclant de temps en temps, jusqu'à une pâte lisse et coulante.",
+      "Insert couche praliné : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, fondre <b>3 min / 50 °C / vitesse 2</b>, ajouter 180 g de praliné, <b>15 s / vitesse 3</b>. Couler dans la gouttière à insert et congeler 30 minutes.",
+      "Insert couche ganache : faire tremper la gélatine. Bol rincé : hacher le chocolat noir <b>10 s / vitesse 7</b>, ajouter la crème et fondre <b>4 min / 50 °C / vitesse 2</b>, ajouter la gélatine essorée, <b>20 s / vitesse 3</b>. Couler sur la couche praliné et congeler une nuit.",
+      "Biscuit cacao : insérer le fouet, mettre les œufs et le sucre, fouetter <b>6 min / 37 °C / vitesse 4</b> puis <b>4 min / vitesse 4</b>. Retirer le fouet, incorporer à la spatule la farine et le cacao tamisés puis le beurre fondu. Étaler sur la plaque et cuire 10 à 12 minutes à 180 °C. Découper deux bandes à la taille de l'ouverture de la gouttière.",
+      "Croustillant : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, fondre <b>3 min / 50 °C / vitesse 2</b>, ajouter 70 g de praliné, <b>10 s / vitesse 3</b>, puis les crêpes dentelle et les noisettes, <b>10 s / sens inverse / vitesse 2</b>. Étaler sur une bande de biscuit et réserver 30 minutes au congélateur.",
+      "Mousse praliné : faire tremper la gélatine. Mettre le lait, les jaunes et le sucre dans le bol, cuire <b>7 min / 80 °C / vitesse 3</b>. Ajouter la gélatine essorée et le reste du praliné, <b>20 s / vitesse 4</b>, verser dans un saladier et laisser tiédir.",
+      "Bol propre et bien froid : insérer le fouet, fouetter la crème <b>1 min 30 / vitesse 4</b> en surveillant, jusqu'à une chantilly souple. L'incorporer à la spatule à la crème praliné tiède et monter la bûche tout de suite.",
+      "Glaçage : mettre le chocolat au lait dans le bol, hacher <b>10 s / vitesse 7</b>, fondre <b>4 min / 45 °C / vitesse 2</b>, ajouter l'huile et les noisettes, <b>10 s / sens inverse / vitesse 2</b>. Laisser redescendre à 35 °C.",
+      "Montage, congélation et finition : comme la version classique — mousse sur les parois, insert congelé au centre, mousse par-dessus, bande de biscuit côté croustillant, congélation une nuit, démoulage congelée, glaçage à 35 °C, décor, puis 8 h de décongélation au réfrigérateur."
+    ]
+  },
+  {
+    "id": "static-694",
+    "titre": "Glaçage miroir au chocolat (pour entremets et bûches)",
+    "photo": "photos/enattente.png",
+    "cat": "base-culinaire",
+    "temps": "40 min (+ refroidissement)",
+    "personnes": "1",
+    "portion": "entremets ou bûche",
+    "ingredients": [
+      {
+        "texte": "200 g de chocolat noir en pistoles",
+        "valeur": 200,
+        "unite": "g",
+        "reste": "chocolat noir en pistoles"
+      },
+      {
+        "texte": "0,18 L de crème liquide entière",
+        "valeur": 0.18,
+        "unite": "L",
+        "reste": "crème liquide entière"
+      },
+      {
+        "texte": "60 g de sirop de glucose",
+        "valeur": 60,
+        "unite": "g",
+        "reste": "sirop de glucose"
+      },
+      {
+        "texte": "6 g de gélatine (3 feuilles de 2 g)",
+        "valeur": 6,
+        "unite": "g",
+        "reste": "gélatine (3 feuilles de 2 g)"
+      },
+      {
+        "texte": "0,06 L d'eau froide",
+        "valeur": 0.06,
+        "unite": "L",
+        "reste": "eau froide"
+      },
+      "1 entremets ou 1 bûche bien congelé(e)",
+      "décorations en chocolat"
+    ],
+    "etapes": [
+      "Faire tremper la gélatine 10 minutes dans l'eau froide.",
+      "Chauffer la crème et le glucose jusqu'à ébullition, puis hors du feu y faire fondre la gélatine avec son eau.",
+      "Verser sur le chocolat en pistoles dans un pichet haut et étroit, attendre 1 minute puis mixer au mixeur plongeant, la tête bien au fond et inclinée, sans le lever, pour ne pas faire de bulles. Le glaçage doit être lisse et brillant.",
+      "Laisser refroidir en remuant de temps en temps jusqu'à 32–35 °C au thermomètre : plus chaud, il coule trop et reste fin ; plus froid, il fait des paquets.",
+      "Sortir l'entremets ou la bûche du congélateur au dernier moment, le poser sur une grille au-dessus d'un plat. Verser le glaçage d'un seul coup en partant du centre (ou d'un bout pour une bûche), sans repasser dessus, et lisser le dessus d'un seul geste de spatule si besoin.",
+      "Laisser égoutter 5 minutes, ébarber le bas avec un couteau, puis poser sur le plat de service. Ajouter les décorations en chocolat sur le dessus et les extrémités.",
+      "Laisser décongeler au réfrigérateur (6 à 8 h pour une bûche). Le glaçage restant se congèle et se réchauffe doucement à 35 °C."
+    ],
+    "mc": [
+      "Faire tremper la gélatine 10 minutes dans l'eau froide.",
+      "Mettre la crème et le glucose dans le bol, chauffer <b>4 min / 90 °C / vitesse 2</b>. Ajouter la gélatine avec son eau, <b>20 s / vitesse 2</b>.",
+      "Ajouter le chocolat, attendre 1 minute puis mélanger <b>40 s / vitesse 3</b> (pas plus vite, pour ne pas faire de bulles). Verser dans un pichet et finir au mixeur plongeant, la tête au fond.",
+      "Laisser redescendre à 32–35 °C et glacer l'entremets ou la bûche congelé(e) comme dans la version classique."
     ]
   }
 ];
